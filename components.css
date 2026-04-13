@@ -1,0 +1,181 @@
+/*
+Table of Contents:
+1. Divider
+2. Tags
+3. Notification Message
+4. Modal
+5. Infinite Marque
+*/
+
+/*Divider*/
+.divider {
+    height: 0.5px; 
+    width: 100%;
+    background-color: #D17FF3;
+}
+
+/*Tags*/
+.tag-purple {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #8722A9;
+}
+
+/*Pill*/
+.pill {
+    border-radius: 99px;
+    display: inline-block;
+    padding: 0px 12px;
+
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.26px;
+    text-align: center;
+}
+
+.pill-website {
+    border: 1px solid #FFD5C7;
+    background-color: #FFE8E1;
+    color: #E54E1D;
+}
+
+
+
+/*Notification Message*/
+.notif-message-primary {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #E2AFF8;
+    background-color:#FBF4FF;
+}
+
+.notif-message-primary p {color:#711E8A;}
+
+/*Modal START*/
+.modal-primary, .modal-secondary {
+    border-radius: 8px;
+    border: #8722A9 solid 0.5px;
+    box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
+}
+
+.modal-no-title {height: 8px;}
+
+.modal-primary-head, .modal-secondary-head {
+    padding-top: 8px; 
+    padding-bottom: 3px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-primary-head img, .modal-secondary-head img {
+    position:relative;
+    top: 1px;
+    left: 32px;
+}
+
+.modal-primary-head h6, .modal-secondary-head h6 {
+    margin-top: -25px;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.modal-primary-body, .modal-secondary-body {
+    padding: 24px 32px;
+    background-color: #F8F9FC;
+}
+
+.modal-primary-footer, .modal-secondary-footer {
+    padding: 8px 32px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.no-modal-footer {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+/*Modal END =====================================*/
+
+/*Infinite Marque START*/
+.client-marque-outer {
+    position: relative; /* badge anchors to this */
+    height: 80px; /* controls the overall row height, adjust to your badge size */
+    display: flex;
+    align-items: center;
+}
+
+.bunny-badge {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 80px; /* match height so it's a circle */
+    height: 80px;
+}
+
+.client-marque-wrapper {
+    overflow: hidden;
+    width: 100%;   
+}
+
+.marquee-track {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center; /* vertically centers logos within the track */
+    width: max-content;
+    animation: marquee 12s linear infinite;
+}
+
+.marquee-track:hover { animation-play-state: paused; }
+
+.marquee-item {
+    flex-shrink: 0;
+    margin-right: 48px;
+}
+
+.marquee-item img {
+    height: 40px; /* adjust to your logo size */
+    width: auto;
+    object-fit: contain;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+/*Infinite Marque END*/
+
+/*Featured Works Vertical Scroll START <-- save for later*/ 
+.outer-wrapper {
+    overscroll-behavior: none;
+    width: 600%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.featured-card {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/*Featured Works Vertical Scroll END*/
+
+/*========================================================================*/
+
+/*Responsive Settings*/
+/*Tablet LG START*/ /*lg*/
+@media screen and (max-width: 992px) {
+    /*Insert Code*/
+}
