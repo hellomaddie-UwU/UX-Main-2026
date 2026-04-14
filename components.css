@@ -151,24 +151,36 @@ Table of Contents:
 /*Infinite Marque END*/
 
 /*Featured Works Vertical Scroll START <-- save for later*/ 
-.outer-wrapper {
-    overscroll-behavior: none;
-    width: 600%;
-    height: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+.featured-works-container {
+    margin-left: 90px;
+    padding-left: 3%;
 }
 
-
-.inner-wrapper {
-    display: flex;
-    flex-direction: row;
-    height: auto;
+.container-fluid {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.featured-card {
-    padding-left: 5%;
-    padding-right: 5%;
+.horiz-gallery-strip,
+.horiz-gallery-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+  position: relative;
+}
+
+.project-wrap {
+  width: 33vw;
+  padding: 2rem;
+  box-sizing: content-box;
+}
+.project-wrap img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 /*Featured Works Vertical Scroll END*/
 

@@ -40,6 +40,8 @@ html, body {
 /*--Color Settings END--*/
 
 /*--Navigation START--*/
+nav {z-index: 2;}
+
 .nav-wrapper svg {
     width: 32px;
     height: 32px;
