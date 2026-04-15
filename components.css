@@ -14,6 +14,14 @@ Table of Contents:
     background-color: #D17FF3;
 }
 
+/*Dots*/
+.orange-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 99px;
+    background-color: #FFA385;
+}
+
 /*Tags*/
 .tag-purple {
     font-weight: 600;
@@ -27,6 +35,7 @@ Table of Contents:
     border-radius: 99px;
     display: inline-block;
     padding: 0px 12px;
+    width: fit-content;
 
     font-size: 13px;
     font-style: normal;
@@ -39,6 +48,12 @@ Table of Contents:
     border: 1px solid #FFD5C7;
     background-color: #FFE8E1;
     color: #E54E1D;
+}
+
+.pill-internal {
+    border: 1px solid #EDD2FC;
+    background-color: #FBF4FF;
+    color: #A12ECB;
 }
 
 
@@ -150,7 +165,7 @@ Table of Contents:
 
 /*Infinite Marque END*/
 
-/*Featured Works Vertical Scroll START <-- save for later*/ 
+/*Featured Works Vertical Scroll START*/ 
 .featured-works-container {
     margin-left: 90px;
     padding-left: 3%;

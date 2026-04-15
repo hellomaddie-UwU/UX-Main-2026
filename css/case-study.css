@@ -1,0 +1,50 @@
+.case-study-title {
+    color: var(--Text-Header, #293056);
+    font-size: 47px;
+    font-weight: 500;
+    line-height: 60px;
+}
+
+.case-study-featured-img {
+    width: 100%;
+    height: 530px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.case-study-excerpt {
+    color: var(--Text-Body, #3E4784);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+.table-of-contents {
+    color: var(--Text-Header, #293056);
+    font-weight: 600;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.table-of-contents-link a {
+    text-decoration: none;
+    color: #3E4784;
+    font-weight: 400;
+}
+
+.block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.block h5 {
+    font-weight: 600;
+}
+
+.block p {
+    font-weight: 300;
+    line-height: 28px;
+    
+}

@@ -144,7 +144,7 @@ nav {z-index: 2;}
     align-items: flex-start;
 }
 
-.wrapper-vertical { /*equivalent of Auto Layout*/
+.v-stack { /*equivalent of Auto Layout*/
     display: flex;
     flex-direction: column;
 }
