@@ -48,3 +48,30 @@
     line-height: 28px;
     
 }
+
+/*========================================================================*/
+
+/*Responsive Settings*/
+@media screen and (min-width: 1920px) {
+    /*insert code*/
+}
+
+/*Widescreen*/ /*xxl*/
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
+/*Tablet LG START*/ /*lg*/
+@media screen and (max-width: 992px) {
+    /*insert code*/
+}
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    /*insert code*/
+}
+/*========================================================================*/
