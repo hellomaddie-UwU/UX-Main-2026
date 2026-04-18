@@ -40,14 +40,15 @@
 }
 
 .block h5 {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .block p {
     font-weight: 300;
     line-height: 28px;
-    
 }
+
+.block-table .thead {font-weight: 600;}
 
 /*========================================================================*/
 

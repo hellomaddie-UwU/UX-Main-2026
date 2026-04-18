@@ -37,8 +37,11 @@ html, body {
     --surface-dark-800: #711E8A;
 
     /*Color Palette*/
+    --clairvoyan-50: #FBF4FF;
+    --clairvoyan-200: #EDD2FC;
     --clairvoyant-300: #E2AFF8;
     --clairvoyant-500: #BB4DE8;
+    --clairvoyant-600: #A12ECB;
     --clairvoyant-700: #8722A9;
 
     /*Spacing*/
@@ -50,6 +53,7 @@ html, body {
     --space-5: 20px;
     --space-6: 24px;
     --space-7: 32px;
+    --space-9: 48px;
 }
 
 /*--Color Settings START--*/
@@ -138,13 +142,14 @@ nav {z-index: 2;}
 /*--Navigation END--*/
 
 /*--Spacing START -> equivalent to Figma Primitive Variables > Spacing--*/
-.space-0 {gap:var(--space-0)}
+.space-0 {gap:var(--space-0);}
 .space-1 {gap:var(--space-1);}
 .space-2 {gap:var(--space-2);}
 .space-3 {gap:var(--space-3);}
 .space-5 {gap:var(--space-5);}
 .space-6 {gap:var(--space-6);}
-.space-7 {gap:var(--space-7)}
+.space-7 {gap:var(--space-7);}
+.space-9 {gap:var(--space-9);}
 
 .space-40 {height: 40px;}
 /*--Spacing END--*/
@@ -172,8 +177,8 @@ nav {z-index: 2;}
     padding: 40px 5% 60px 5%;
 }
 
-.wrapper-horizontal { /*equivalent of Auto Layout*/
-    display: inline-flex;
+.h-stack { /*equivalent of Auto Layout*/
+    display: flex;
     align-items: flex-start;
 }
 

@@ -51,9 +51,15 @@ Table of Contents:
 }
 
 .pill-internal {
-    border: 1px solid #EDD2FC;
-    background-color: #FBF4FF;
-    color: #A12ECB;
+    border: 1px solid var(--clairvoyan-200);
+    background-color: var(--clairvoyan-50);
+    color: var(--clairvoyant-600);
+}
+
+.pill-tech {
+    border: 1px solid #B2DDFF;
+    background-color: #ECFDFF;
+    color: #1570EF;
 }
 
 
