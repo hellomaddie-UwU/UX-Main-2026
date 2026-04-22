@@ -24,3 +24,18 @@ window.addEventListener('load', () => {
     ScrollTrigger.refresh();
 
 });
+
+const btn = document.getElementById('dropdownBtn');
+const menu = document.getElementById('dropdownMenu');
+const arrow = btn.querySelector('.dropdown-arrow');
+
+btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('is-open');
+    arrow.classList.toggle('is-open');
+});
+
+document.addEventListener('click', () => {
+    menu.classList.remove('is-open');
+    arrow.classList.remove('is-open');
+});

@@ -43,6 +43,7 @@ html, body {
     --clairvoyant-500: #BB4DE8;
     --clairvoyant-600: #A12ECB;
     --clairvoyant-700: #8722A9;
+    --clairvoyant-900: #5F1E71 ;
 
     /*Spacing*/
     --space-0: 0px;
@@ -440,6 +441,68 @@ input:user-invalid {
 
     .mobile-menu-item p {color: white;}
 
+    .mobile-dropdown {
+    position: relative;
+    display: block;
+    }
+
+    .mobile-dropdown button {
+        background: none;
+        border: none;
+        outline: none;
+        border-bottom: 1.5px solid var(--clairvoyant-700);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .mobile-dropdown-item {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-dropdown-menu {
+        display: none;
+        position: relative;
+        top: 0px;
+        left: 0;
+        list-style: none;
+        background-color: var(--clairvoyant-900);
+        border: 0.5px solid #8722A9;
+        padding: 0px;
+        
+        z-index: 100;
+    }
+
+    .mobile-dropdown-menu li a {
+        display: block;
+        padding: 14px 12px 14px 32px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        border-bottom: 1.5px solid var(--clairvoyant-700);
+    }
+
+    .mobile-dropdown-menu li a:hover {
+        background-color: #FBF4FF;
+        color: #A12ECB;
+    }
+
+    .mobile-dropdown-menu.is-open {
+        display: block;
+    }
+
+    .dropdown-arrow {
+    transition: transform 0.3s ease;
+    }
+
+    .dropdown-arrow.is-open {
+        transform: rotate(180deg);
+    }
+
     .mobile-nav-socmed {
         display: flex;
         flex-direction: column;
@@ -476,6 +539,9 @@ input:user-invalid {
         padding: 12px 8% 32px 8%;
         border-radius: 0px 0px 20px 20px;
         box-shadow: none;
+        position: absolute;
+        margin-top: 0px;
+        margin-right: 0px;
     }
 
     .mobile-menu-item {
