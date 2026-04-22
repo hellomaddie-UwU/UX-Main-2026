@@ -184,6 +184,8 @@ Table of Contents:
   padding-left: 0;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .horiz-gallery-strip,
@@ -195,14 +197,44 @@ Table of Contents:
 }
 
 .project-wrap {
-  width: 33vw;
-  padding: 2rem;
-  box-sizing: content-box;
+    width: 33vw; /* restore this */
+    padding: 2rem;
+    flex-shrink: 0;
+    box-sizing: content-box;
 }
+
 .project-wrap img {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
+}
+
+.case-study-card {
+    width: fit-content; /* lets GSAP measure it */
+    flex-shrink: 0; /* prevents squishing */
+    padding: 0 1%;
+}
+
+.case-study-card-extra-space {
+    width: 15vw; /* restore this */
+    padding: 2rem;
+    flex-shrink: 0;
+    box-sizing: content-box;
+}
+
+.case-study-thumbnail {
+    height: 500px;
+    width: 540px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
+}
+
+.case-study-info {width: 520px;}
+
+.case-study-cta-wrapper {
+    display: flex;
+    gap: var(--space-3);
 }
 /*Featured Works Vertical Scroll END*/
 
