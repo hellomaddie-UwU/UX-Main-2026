@@ -178,6 +178,70 @@ nav {z-index: 2;}
     padding: 40px 5% 60px 5%;
 }
 
+.gallery-section {
+    min-height: 100vh;
+}
+
+.gallery-header {
+    max-width: 720px;
+    margin-bottom: 32px;
+}
+
+.gallery-intro {
+    max-width: 560px;
+}
+
+.gallery-masonry {
+    column-count: 3;
+    column-gap: 24px;
+}
+
+.gallery-card {
+    break-inside: avoid;
+    margin-bottom: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(135, 34, 169, 0.14);
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 16px 40px rgba(45, 5, 56, 0.08);
+}
+
+.gallery-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.gallery-card-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px 18px 20px;
+}
+
+.gallery-card-note {
+    padding: 24px;
+}
+
+.gallery-card-note h6,
+.gallery-card-note p {
+    color: inherit;
+}
+
+.gallery-card-accent {
+    background: linear-gradient(180deg, #FFF0EA 0%, #FFF7FB 100%);
+    border-color: rgba(255, 163, 133, 0.5);
+}
+
+.gallery-card-tall img {
+    min-height: 420px;
+}
+
+.gallery-card-wide img {
+    min-height: 280px;
+}
+
 .h-stack { /*equivalent of Auto Layout*/
     display: flex;
     align-items: flex-start;
@@ -517,6 +581,22 @@ input:user-invalid {
     .mobile-nav-socmed .md-text {color: var(--clairvoyant-300);}
 
     .service-thumbnail {height: 300px;}
+
+    .gallery-masonry {
+        column-count: 2;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery-masonry {
+        column-count: 1;
+    }
+
+    .gallery-card-tall img,
+    .gallery-card-wide img {
+        min-height: 0;
+    }
 }
 
 /*Tablet*/ /*md*/
