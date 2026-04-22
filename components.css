@@ -123,24 +123,25 @@ Table of Contents:
 /*Infinite Marque START*/
 .client-marque-outer {
     position: relative; /* badge anchors to this */
-    height: 80px; /* controls the overall row height, adjust to your badge size */
+    height: 177.5px; /* controls the overall row height, adjust to your badge size */
     display: flex;
     align-items: center;
 }
 
 .bunny-badge {
     position: absolute;
-    left: 0;
+    left: -10px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(-8deg);
     z-index: 1;
-    width: 80px; /* match height so it's a circle */
-    height: 80px;
+    width: 125.29px; /* match height so it's a circle */
+    height: 177.5px;
 }
 
 .client-marque-wrapper {
     overflow: hidden;
     width: 100%;   
+    margin-top: var(--space-7); /*adjusts the vertical spacing of the logos to align with the badge*/
 }
 
 .marquee-track {
