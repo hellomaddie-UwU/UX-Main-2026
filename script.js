@@ -1,3 +1,4 @@
+//Horizontal Scroll Gallery with GSAP and ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener('load', () => {
@@ -25,6 +26,7 @@ window.addEventListener('load', () => {
 
 });
 
+// Dropdown Menu Functionality
 const btn = document.getElementById('dropdownBtn');
 const menu = document.getElementById('dropdownMenu');
 const arrow = btn.querySelector('.dropdown-arrow');
