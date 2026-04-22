@@ -1,4 +1,30 @@
 /*Table of Contents*/
+.deliverables-parent {
+    position: relative;
+    height: auto;
+}
+
+.deliverables-parent > .h-stack {
+    align-items: stretch;
+}
+
+.deliverables-parent > .h-stack > .v-stack.w-50,
+.deliverables-parent > .h-stack > .deliverables-sticky-parent.w-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.deliverables-sticky-parent {
+    position: relative;
+    align-self: stretch;
+}
+
+.deliverables-sticky-content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+    align-self: flex-start;
+}
 
 
 /*========================================================================*/
@@ -15,11 +41,30 @@
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    /*insert code*/
+    .deliverables-parent > .h-stack {
+        flex-direction: column;
+    }
+
+    .deliverables-parent > .h-stack > .v-stack.w-50,
+    .deliverables-parent > .h-stack > .deliverables-sticky-parent.w-50 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        width: 50% !important;
+    }
+
+    .deliverables-sticky-parent {
+        position: relative;
+        align-self: flex-start;
+    }
+
+    .deliverables-sticky-content {
+        position: static;
+    }
 }
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    
 }
 
 /*Mobile*/ /*sm*/

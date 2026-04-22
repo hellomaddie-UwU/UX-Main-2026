@@ -53,6 +53,8 @@
 .case-study-content {
     position:absolute;
     width: 100%;
+    background-image: url(imgs/line\ bg.svg);
+    background-repeat: repeat;
 }
 
 .progress-sticky-parent {

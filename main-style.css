@@ -23,6 +23,7 @@ Table of Contents
 
 html, body {
     overflow-x: hidden;
+    overflow-x: clip;
     font-family: 'Poppins', sans-serif;
 }
 
