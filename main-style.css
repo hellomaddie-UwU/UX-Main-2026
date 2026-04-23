@@ -146,6 +146,8 @@ nav {z-index: 2;}
     cursor: pointer;
 }
 
+.mobile-menu-overlay {display: none;}
+
 .mobile-menu {display: none;}
 
 /*--Navigation END--*/
@@ -503,21 +505,55 @@ input:user-invalid {
 
     .mobile-menu-toggle {
         display: block;
+        width: 45px;
+        height: 32px;
+        position: relative;
     }
 
     .mobile-menu-toggle span {
+        position: absolute;
+        left: 0;
         display: block;
         width: 45px;
         height: 2px;
         background-color: var(--clairvoyant-500);
-        margin: 9px 0;
+        margin: 0;
+        transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+    }
+
+    .mobile-menu-toggle span:nth-child(1) {
+        top: 0;
+    }
+
+    .mobile-menu-toggle span:nth-child(2) {
+        top: 14px;
+    }
+
+    .mobile-menu-toggle span:nth-child(3) {
+        top: 28px;
+    }
+
+    .mobile-menu-toggle.is-active span:nth-child(1) {
+        top: 14px;
+        transform: rotate(45deg);
+        background-color: var(--text-shadow-color);
+    }
+
+    .mobile-menu-toggle.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-menu-toggle.is-active span:nth-child(3) {
+        top: 14px;
+        transform: rotate(-45deg);
+        background-color: var(--text-shadow-color);
     }
 
     .mobile-menu {
         background: var(--surface-dark);
         padding: 12px 20px 32px 20px;
         width: 390px;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: start;
         gap: var(--space-7);
@@ -528,6 +564,10 @@ input:user-invalid {
         z-index: 2;
         margin-top: 10px;
         margin-right: 4%;
+    }
+
+    .mobile-menu.is-open {
+        display: flex;
     }
 
     .mobile-nav-wrapper {
@@ -648,7 +688,21 @@ input:user-invalid {
 @media screen and (max-width: 567px) {
     .nav-container {
         padding: 16px 8%;
+        position: relative;
+        z-index: 4;
     }
+
+    .mobile-menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(20, 6, 28, 0.62);
+        z-index: 2;
+    }
+
+    .mobile-menu-overlay.is-open {
+        display: block;
+    }
+
     .section-container {
         margin-left: 0px;
         padding-left: 8%;
@@ -661,6 +715,7 @@ input:user-invalid {
         border-radius: 0px 0px 20px 20px;
         box-shadow: none;
         position: absolute;
+        z-index: 11;
         margin-top: 0px;
         margin-right: 0px;
     }

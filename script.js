@@ -1,3 +1,65 @@
+//mobile menu toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+const MOBILE_OVERLAY_MAX_WIDTH = 567;
+
+function shouldUseOverlay() {
+    return window.innerWidth <= MOBILE_OVERLAY_MAX_WIDTH;
+}
+
+function syncOverlayWithMenuState() {
+    if (!mobileMenuToggle || !mobileMenu || !mobileMenuOverlay) {
+        return;
+    }
+
+    if (!shouldUseOverlay()) {
+        mobileMenuOverlay.classList.remove('is-open');
+        return;
+    }
+
+    mobileMenuOverlay.classList.toggle('is-open', mobileMenu.classList.contains('is-open'));
+}
+
+function toggleMobileMenu() {
+    if (!mobileMenuToggle || !mobileMenu || !mobileMenuOverlay) {
+        return;
+    }
+
+    mobileMenuToggle.classList.toggle('is-active');
+    mobileMenu.classList.toggle('is-open');
+    syncOverlayWithMenuState();
+}
+
+if (mobileMenuToggle && mobileMenu && mobileMenuOverlay) {
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+
+    mobileMenuOverlay.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('is-active');
+        mobileMenu.classList.remove('is-open');
+        mobileMenuOverlay.classList.remove('is-open');
+    });
+
+    window.addEventListener('resize', syncOverlayWithMenuState);
+};
+
+// Dropdown Menu Functionality
+const btn = document.getElementById('dropdownBtn');
+const menu = document.getElementById('dropdownMenu');
+const arrow = btn.querySelector('.dropdown-arrow');
+
+btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    menu.classList.toggle('is-open');
+    arrow.classList.toggle('is-open');
+});
+
+document.addEventListener('click', () => {
+    menu.classList.remove('is-open');
+    arrow.classList.remove('is-open');
+});
+
 //Horizontal Scroll Gallery with GSAP and ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,20 +86,4 @@ window.addEventListener('load', () => {
     // Force ScrollTrigger to recalculate after load
     ScrollTrigger.refresh();
 
-});
-
-// Dropdown Menu Functionality
-const btn = document.getElementById('dropdownBtn');
-const menu = document.getElementById('dropdownMenu');
-const arrow = btn.querySelector('.dropdown-arrow');
-
-btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    menu.classList.toggle('is-open');
-    arrow.classList.toggle('is-open');
-});
-
-document.addEventListener('click', () => {
-    menu.classList.remove('is-open');
-    arrow.classList.remove('is-open');
 });
