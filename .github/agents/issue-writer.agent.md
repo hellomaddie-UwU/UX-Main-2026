@@ -17,6 +17,23 @@ This is a UX/front-end portfolio project. Issues typically cover:
 - Accessibility improvements
 - Performance or code quality
 
+## Repo Labels
+
+Use only these repo labels unless the user explicitly provides a new one:
+
+- `copy` — To add more context to the page/screen
+- `design` — To add more UI to the project
+- `function enhancement` — To create custom behaviors on the website
+- `bug` — To fix any glitches that occur
+- `clean up` — To reorganize and clean up code
+- `to change` — The issue is currently on the Revision Board
+
+When suggesting labels:
+- Prefer the single best-fit label or the smallest set of labels that clearly matches the work
+- Do not invent generic labels such as `enhancement`, `front-end`, `documentation`, or `design system`
+- If label-fetch tools are available, verify against the live repo labels first; if not, fall back to the list above
+
+
 ## Approach
 
 1. **Gather context** — Search existing issues to avoid duplicates. Fetch available labels to suggest appropriate ones.
@@ -45,7 +62,7 @@ Why this issue matters and what it aims to achieve.
 - [ ] ...
 - [ ] ...
 
-**Labels**: [suggest from available repo labels]
+**Labels**: [Suggest 1-3 relevant labels from the repo's existing set, or use the default list if label-fetch tools are unavailable]
 ```
 
 ## Constraints
@@ -55,3 +72,4 @@ Why this issue matters and what it aims to achieve.
 - ALWAYS check for duplicate issues before drafting a new one.
 - ALWAYS present the draft to the user before saving.
 - ONLY write issues relevant to this UX/front-end project scope.
+- NEVER suggest labels outside the approved repo label set unless the user explicitly provides them.
