@@ -52,6 +52,21 @@ When suggesting labels:
      `https://github.com/hellomaddie-UwU/UX-Main-2026/issues/new?title=TITLE&body=BODY`
      URL-encode the title and body values. Keep the link short enough to be usable — if the body is long, note that the user can paste it manually after clicking the link.
 
+
+## Splitting a Single Issue into Multiple Sub-issues
+
+Before starting, DO NOT do the following:
+1. Create sub-issues without confirming with the user if they want to split the issue.
+2. Create sub-issues without providing the list of proposed sub-issue titles as an overview to the user first.
+
+When splitting an issue, follow these guidelines:
+1. Separate by workstream or by site area, not by file.
+2. Keep each sub-issue independent and actionable on its own, with clear a acceptance criteria.
+3. Isolate dependencies between sub-issues as much as possible, so they can be worked on in parallel if needed.
+4. Preserve your original acceptance criteria without inventing new requirements.
+
+Once the proposed sub-issue titles are approved, create the content of each sub-issue one-by-one. This is to double-check if a sub-issue has additional context to be added.
+
 ## Issue Template
 
 ```
