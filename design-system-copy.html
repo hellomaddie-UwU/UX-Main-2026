@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design System — hellomaddie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="design-system.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <nav class="ds-topbar">
+    <div class="container-lg d-flex align-items-center justify-content-between">
+      <a href="#" class="brand">hello<span>maddie</span> <span style="font-family: var(--font-sans); font-size: var(--text-sm); font-weight: var(--fw-regular); color: var(--color-text-muted); margin-left: var(--space-2);">/ Design System</span></a>
+      <div class="d-flex align-items-center gap-3">
+        <span class="ds-version">v1.0.0</span>
+        <span class="badge-ds badge-accent">Bootstrap 5.3</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-lg py-5">
+    <div class="row g-5">
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-2 d-none d-lg-block">
+        <nav class="ds-sidebar ds-nav">
+          <div class="ds-nav-label">Tokens</div>
+          <a href="#colors">Colors</a>
+          <a href="#typography-tokens">Typography</a>
+          <a href="#spacing">Spacing</a>
+          <a href="#radii">Border Radius</a>
+          <a href="#shadows">Shadows</a>
+          <a href="#transitions">Transitions</a>
+          <div class="ds-nav-label">Components</div>
+          <a href="#type-styles">Type Styles</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#dividers">Dividers</a>
+          <a href="#swatches">Color Swatches</a>
+          <a href="#badges">Badges & Tags</a>
+          <a href="#forms">Form Elements</a>
+          <a href="#cards">Cards</a>
+          <a href="#alerts">Alerts & Toasts</a>
+          <a href="#tables">Tables</a>
+          <a href="#codeblocks">Code Blocks</a>
+          <a href="#breadcrumbs">Breadcrumbs</a>
+          <a href="#avatars">Avatars</a>
+          <a href="#tooltips">Tooltips</a>
+          <a href="#progress">Progress & Steps</a>
+        </nav>
+      </div>
+
+      <!-- MAIN -->
+      <div class="col-lg-10">
+
+        <!-- PAGE HEADER -->
+        <header class="ds-header">
+          <p class="eyebrow">Design Tokens & Components</p>
+          <h1>Mini Design System</h1>
+          <p class="mt-3" style="max-width: 560px; color: var(--color-text-muted);">
+            A reusable foundation of CSS variables and UI components for <code>hellomaddie</code> web projects.
+            Tweak the tokens in <code>:root</code> — everything updates.
+          </p>
+        </header>
+
+
+        <!-- ══ COLORS ══ -->
+        <section class="ds-section" id="colors">
+          <h2 class="ds-section-title">Colors</h2>
+          <div class="ds-card">
+            <div class="swatch-wrap">
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-primary);"></div>
+                <span class="swatch-name">Primary</span>
+                <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-secondary);"></div>
+                <span class="swatch-name">Secondary</span>
+                <span class="swatch-value">--color-secondary<br>#7A6A5A</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-accent);"></div>
+                <span class="swatch-name">Accent</span>
+                <span class="swatch-value">--color-accent<br>#C97B5A</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-background); border: 1px solid var(--color-border);"></div>
+                <span class="swatch-name">Background</span>
+                <span class="swatch-value">--color-background<br>#F9F6F1</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-surface); border: 1px solid var(--color-border);"></div>
+                <span class="swatch-name">Surface</span>
+                <span class="swatch-value">--color-surface<br>#FFFFFF</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-text-primary);"></div>
+                <span class="swatch-name">Text Primary</span>
+                <span class="swatch-value">--color-text-primary<br>#1E1E1E</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-text-muted);"></div>
+                <span class="swatch-name">Text Muted</span>
+                <span class="swatch-value">--color-text-muted<br>#8A8078</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-border);"></div>
+                <span class="swatch-name">Border</span>
+                <span class="swatch-value">--color-border<br>#E4DED6</span>
+              </div>
+              <div class="swatch">
+                <div class="swatch-block" style="background: var(--color-code-bg);"></div>
+                <span class="swatch-name">Code BG</span>
+                <span class="swatch-value">--color-code-bg<br>#EDE9E3</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ TYPOGRAPHY TOKENS ══ -->
+        <section class="ds-section" id="typography-tokens">
+          <h2 class="ds-section-title">Typography Tokens</h2>
+          <div class="ds-card">
+            <table class="token-table">
+              <thead>
+                <tr>
+                  <th>Token</th>
+                  <th>Value</th>
+                  <th>Usage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><code>--font-serif</code></td><td>Lora, Georgia, serif</td><td>Display, h1–h3</td></tr>
+                <tr><td><code>--font-sans</code></td><td>Jost, sans-serif</td><td>Body, UI, h4–h6</td></tr>
+                <tr><td><code>--font-mono</code></td><td>Courier New, monospace</td><td>Code, tokens</td></tr>
+                <tr><td><code>--text-xs … --text-4xl</code></td><td>0.75rem → 3rem</td><td>Type scale (8 steps)</td></tr>
+                <tr><td><code>--fw-light … --fw-bold</code></td><td>300 → 700</td><td>Font weights</td></tr>
+                <tr><td><code>--lh-tight … --lh-relaxed</code></td><td>1.2 → 1.8</td><td>Line heights</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <!-- ══ SPACING ══ -->
+        <section class="ds-section" id="spacing">
+          <h2 class="ds-section-title">Spacing Scale</h2>
+          <div class="ds-card">
+            <table class="token-table">
+              <thead>
+                <tr><th>Token</th><th>Value</th><th>px equiv.</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>--space-1</code></td><td>0.25rem</td><td>4px</td></tr>
+                <tr><td><code>--space-2</code></td><td>0.5rem</td><td>8px</td></tr>
+                <tr><td><code>--space-3</code></td><td>0.75rem</td><td>12px</td></tr>
+                <tr><td><code>--space-4</code></td><td>1rem</td><td>16px</td></tr>
+                <tr><td><code>--space-5</code></td><td>1.25rem</td><td>20px</td></tr>
+                <tr><td><code>--space-6</code></td><td>1.5rem</td><td>24px</td></tr>
+                <tr><td><code>--space-8</code></td><td>2rem</td><td>32px</td></tr>
+                <tr><td><code>--space-10</code></td><td>2.5rem</td><td>40px</td></tr>
+                <tr><td><code>--space-12</code></td><td>3rem</td><td>48px</td></tr>
+                <tr><td><code>--space-16</code></td><td>4rem</td><td>64px</td></tr>
+                <tr><td><code>--space-20</code></td><td>5rem</td><td>80px</td></tr>
+                <tr><td><code>--space-24</code></td><td>6rem</td><td>96px</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <!-- ══ BORDER RADIUS ══ -->
+        <section class="ds-section" id="radii">
+          <h2 class="ds-section-title">Border Radius</h2>
+          <div class="ds-card">
+            <div class="radius-demo">
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="radius-item" style="border-radius: var(--radius-none);"></div>
+                <span class="swatch-value">--radius-none<br>0px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="radius-item" style="border-radius: var(--radius-sm);"></div>
+                <span class="swatch-value">--radius-sm<br>4px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="radius-item" style="border-radius: var(--radius-md);"></div>
+                <span class="swatch-value">--radius-md<br>8px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="radius-item" style="border-radius: var(--radius-lg);"></div>
+                <span class="swatch-value">--radius-lg<br>12px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="radius-item" style="border-radius: var(--radius-xl);"></div>
+                <span class="swatch-value">--radius-xl<br>20px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="radius-item" style="border-radius: var(--radius-full);"></div>
+                <span class="swatch-value">--radius-full<br>9999px</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ SHADOWS ══ -->
+        <section class="ds-section" id="shadows">
+          <h2 class="ds-section-title">Box Shadows</h2>
+          <div class="ds-card">
+            <div class="shadow-demo">
+              <div class="shadow-item" style="box-shadow: var(--shadow-xs);">
+                <span class="fw-medium" style="font-size: var(--text-sm);">Aa</span>
+                <div class="shadow-label">--shadow-xs</div>
+              </div>
+              <div class="shadow-item" style="box-shadow: var(--shadow-sm);">
+                <span class="fw-medium" style="font-size: var(--text-sm);">Aa</span>
+                <div class="shadow-label">--shadow-sm</div>
+              </div>
+              <div class="shadow-item" style="box-shadow: var(--shadow-md);">
+                <span class="fw-medium" style="font-size: var(--text-sm);">Aa</span>
+                <div class="shadow-label">--shadow-md</div>
+              </div>
+              <div class="shadow-item" style="box-shadow: var(--shadow-lg);">
+                <span class="fw-medium" style="font-size: var(--text-sm);">Aa</span>
+                <div class="shadow-label">--shadow-lg</div>
+              </div>
+              <div class="shadow-item" style="box-shadow: var(--shadow-xl);">
+                <span class="fw-medium" style="font-size: var(--text-sm);">Aa</span>
+                <div class="shadow-label">--shadow-xl</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ TRANSITIONS ══ -->
+        <section class="ds-section" id="transitions">
+          <h2 class="ds-section-title">Transition Timing</h2>
+          <div class="ds-card">
+            <p class="text-caption mb-4">Hover each row to preview the easing — bars expand at each timing.</p>
+            <div class="ease-demo">
+              <div class="ease-bar-wrap">
+                <span class="ease-label">--ease-fast</span>
+                <div class="ease-bar"></div>
+                <span class="text-caption ms-3">0.10s ease</span>
+              </div>
+              <div class="ease-bar-wrap">
+                <span class="ease-label">--ease-base</span>
+                <div class="ease-bar"></div>
+                <span class="text-caption ms-3">0.20s ease</span>
+              </div>
+              <div class="ease-bar-wrap">
+                <span class="ease-label">--ease-smooth</span>
+                <div class="ease-bar"></div>
+                <span class="text-caption ms-3">0.30s cubic-bezier(0.4, 0, 0.2, 1)</span>
+              </div>
+              <div class="ease-bar-wrap">
+                <span class="ease-label">--ease-bounce</span>
+                <div class="ease-bar"></div>
+                <span class="text-caption ms-3">0.40s cubic-bezier(0.34, 1.56, 0.64, 1)</span>
+              </div>
+              <div class="ease-bar-wrap">
+                <span class="ease-label">--ease-slow</span>
+                <div class="ease-bar"></div>
+                <span class="text-caption ms-3">0.60s ease</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <hr class="divider-thick" style="margin: var(--space-12) 0;" />
+
+
+        <!-- ══ TYPE STYLES ══ -->
+        <section class="ds-section" id="type-styles">
+          <h2 class="ds-section-title">Type Styles</h2>
+          <div class="ds-card">
+
+            <div class="type-row">
+              <div class="type-meta"><strong>h1</strong>Lora / 48px / 500 / -0.02em</div>
+              <h1 class="mb-0">Heading One</h1>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>h2</strong>Lora / 36px / 500 / -0.015em</div>
+              <h2 class="mb-0">Heading Two</h2>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>h3</strong>Lora / 30px / 500</div>
+              <h3 class="mb-0">Heading Three</h3>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>h4</strong>Jost / 24px / 600</div>
+              <h4 class="mb-0">Heading Four</h4>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>h5</strong>Jost / 20px / 600</div>
+              <h5 class="mb-0">Heading Five</h5>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>h6</strong>Jost / 16px / 600 / uppercase</div>
+              <h6 class="mb-0">Heading Six</h6>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>body</strong>Jost / 16px / 400 / 1.6</div>
+              <p class="mb-0">Body copy for paragraphs. The quick brown fox jumps over the lazy dog and keeps on going further.</p>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>caption</strong>Jost / 14px / muted</div>
+              <p class="text-caption mb-0">Caption text — metadata, descriptions, helper labels.</p>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>overline</strong>Jost / 12px / 600 / uppercase</div>
+              <span class="text-overline">Section Label</span>
+            </div>
+            <div class="type-row">
+              <div class="type-meta"><strong>inline code</strong>Courier New / 0.875em</div>
+              <p class="mb-0">Use <code>var(--color-accent)</code> to set the brand color.</p>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- ══ BUTTONS ══ -->
+        <section class="ds-section" id="buttons">
+          <h2 class="ds-section-title">Buttons</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Variants</p>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <button class="btn btn-primary-ds">Primary</button>
+              <button class="btn btn-secondary-ds">Secondary</button>
+              <button class="btn btn-ghost-ds">Ghost</button>
+              <button class="btn btn-accent-ds">Accent</button>
+            </div>
+          </div>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Sizes</p>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <button class="btn btn-primary-ds btn-sm-ds">Small</button>
+              <button class="btn btn-primary-ds">Default</button>
+              <button class="btn btn-primary-ds btn-lg-ds">Large</button>
+            </div>
+          </div>
+
+          <div class="ds-card" style="background: var(--color-primary);">
+            <p class="text-overline mb-4" style="color: rgba(255,255,255,0.5);">On dark surface</p>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <button class="btn" style="background: #fff; color: var(--color-primary); border-color: #fff;">Filled Light</button>
+              <button class="btn" style="background: transparent; color: #fff; border-color: rgba(255,255,255,0.4);">Outlined</button>
+              <button class="btn btn-ghost-ds" style="color: rgba(255,255,255,0.7);">Ghost</button>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ DIVIDERS ══ -->
+        <section class="ds-section" id="dividers">
+          <h2 class="ds-section-title">Dividers</h2>
+          <div class="ds-card">
+            <p class="text-caption mb-2">Default — <code>.divider</code></p>
+            <hr class="divider" />
+            <p class="text-caption mb-2">Thick — <code>.divider-thick</code></p>
+            <hr class="divider-thick" />
+            <p class="text-caption mb-2">Accent — <code>.divider-accent</code></p>
+            <hr class="divider-accent" />
+            <p class="text-caption mb-2">Dashed — <code>.divider-dashed</code></p>
+            <hr class="divider-dashed" style="margin-bottom: 0;" />
+          </div>
+        </section>
+
+
+        <!-- ══ SWATCHES (component reference) ══ -->
+        <section class="ds-section" id="swatches">
+          <h2 class="ds-section-title">Color Swatches</h2>
+          <div class="ds-card">
+            <p class="text-caption mb-4">See <a href="#colors" style="color: var(--color-accent);">Colors section</a> above for the full swatch grid. This documents the swatch component structure.</p>
+            <table class="token-table">
+              <thead><tr><th>Class</th><th>Purpose</th></tr></thead>
+              <tbody>
+                <tr><td><code>.swatch-wrap</code></td><td>Flex container for swatch group</td></tr>
+                <tr><td><code>.swatch</code></td><td>Single swatch (block + labels)</td></tr>
+                <tr><td><code>.swatch-block</code></td><td>Colored rectangle — set <code>background</code> inline</td></tr>
+                <tr><td><code>.swatch-name</code></td><td>Token name label</td></tr>
+                <tr><td><code>.swatch-value</code></td><td>Hex value in monospace</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <!-- ══ BADGES ══ -->
+        <section class="ds-section" id="badges">
+          <h2 class="ds-section-title">Badges &amp; Tags</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Semantic Variants</p>
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <span class="badge-ds badge-default">Default</span>
+              <span class="badge-ds badge-primary">Primary</span>
+              <span class="badge-ds badge-accent">Accent</span>
+              <span class="badge-ds badge-success">Success</span>
+              <span class="badge-ds badge-warning">Warning</span>
+              <span class="badge-ds badge-error">Error</span>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <p class="text-overline mb-4">Style Variants</p>
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <span class="badge-ds badge-outline">Outline</span>
+              <span class="badge-ds badge-muted">Muted</span>
+              <span class="badge-ds badge-default">v1.0.0</span>
+              <span class="badge-ds badge-success">✓ Approved</span>
+              <span class="badge-ds badge-warning">⚠ Review</span>
+              <span class="badge-ds badge-error">✕ Rejected</span>
+              <span class="badge-ds badge-accent">New</span>
+              <span class="badge-ds badge-muted">Deprecated</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══ FORM ELEMENTS ══ -->
+        <section class="ds-section" id="forms">
+          <h2 class="ds-section-title">Form Elements</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Text Inputs</p>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label-ds">Default</label>
+                <input class="input-ds" type="text" placeholder="Placeholder text" />
+                <p class="form-hint">Helper text for additional context.</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-ds">Focused (click to see)</label>
+                <input class="input-ds" type="text" placeholder="Click to focus" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-ds">Error State</label>
+                <input class="input-ds input-error" type="text" value="Invalid input" />
+                <p class="form-error-msg">This field is required.</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-ds">Success State</label>
+                <input class="input-ds input-success" type="text" value="valid@email.com" />
+                <p class="form-hint" style="color: #2A6B24;">Looks good!</p>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-ds">Disabled</label>
+                <input class="input-ds" type="text" value="Cannot edit this" disabled />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-ds">Textarea</label>
+                <textarea class="input-ds" rows="3" placeholder="Enter a longer description..."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Select</p>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <label class="form-label-ds">Dropdown Select</label>
+                <select class="input-ds">
+                  <option value="">Choose an option</option>
+                  <option>Web / Mobile App Audit</option>
+                  <option>Marketing Website Audit</option>
+                  <option>Design System Review</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <p class="text-overline mb-4">Checkboxes & Radios</p>
+            <div class="d-flex flex-wrap gap-5">
+              <div class="d-flex flex-column gap-3">
+                <label class="checkbox-ds"><input type="checkbox" checked /> Heuristic Audit</label>
+                <label class="checkbox-ds"><input type="checkbox" /> PRD Write-up</label>
+                <label class="checkbox-ds"><input type="checkbox" disabled /> Disabled option</label>
+              </div>
+              <div class="d-flex flex-column gap-3">
+                <label class="radio-ds"><input type="radio" name="scope" checked /> Web / Mobile App</label>
+                <label class="radio-ds"><input type="radio" name="scope" /> Marketing Website</label>
+                <label class="radio-ds"><input type="radio" name="scope" disabled /> Disabled</label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ CARDS ══ -->
+        <section class="ds-section" id="cards">
+          <h2 class="ds-section-title">Cards</h2>
+
+          <div class="row g-4">
+            <div class="col-md-4">
+              <p class="text-overline mb-3">Basic</p>
+              <div class="card-ds">
+                <div class="card-ds-body">
+                  <h5 class="mb-2">Card Title</h5>
+                  <p class="text-caption mb-3">A simple card with a body section. Use for content grouping, tiles, and feature callouts.</p>
+                  <button class="btn btn-primary-ds btn-sm-ds">Action</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p class="text-overline mb-3">With Header & Footer</p>
+              <div class="card-ds">
+                <div class="card-ds-header">Card Header</div>
+                <div class="card-ds-body">
+                  <p class="text-caption mb-0">Card body content goes here. Supports any inner layout.</p>
+                </div>
+                <div class="card-ds-footer d-flex justify-content-between align-items-center">
+                  <span>Updated 2 days ago</span>
+                  <span class="badge-ds badge-success">Active</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p class="text-overline mb-3">Horizontal</p>
+              <div class="card-ds card-ds-horizontal" style="height: 130px;">
+                <div class="card-ds-img-placeholder">
+                  <span>IMG</span>
+                </div>
+                <div class="card-ds-body d-flex flex-column justify-content-center">
+                  <h6 class="mb-1">Audit Case Study</h6>
+                  <p class="text-caption mb-0">Short description or summary line for this item.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ ALERTS & TOASTS ══ -->
+        <section class="ds-section" id="alerts">
+          <h2 class="ds-section-title">Alerts & Toasts</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Alerts</p>
+            <div class="d-flex flex-column gap-3">
+              <div class="alert-ds alert-info">
+                <span class="alert-ds-icon">ℹ</span>
+                <div><div class="alert-ds-title">Info</div>Your audit report will be ready within 3–5 business days.</div>
+              </div>
+              <div class="alert-ds alert-success">
+                <span class="alert-ds-icon">✓</span>
+                <div><div class="alert-ds-title">Success</div>Payment received. Your project has been confirmed.</div>
+              </div>
+              <div class="alert-ds alert-warning">
+                <span class="alert-ds-icon">⚠</span>
+                <div><div class="alert-ds-title">Warning</div>Your onboarding checklist is incomplete. Please review before proceeding.</div>
+              </div>
+              <div class="alert-ds alert-error">
+                <span class="alert-ds-icon">✕</span>
+                <div><div class="alert-ds-title">Error</div>Something went wrong. Please refresh and try again.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <p class="text-overline mb-4">Toasts</p>
+            <div class="d-flex flex-wrap gap-4">
+              <div class="toast-ds">
+                <div class="toast-dot toast-dot-success"></div>
+                <div>
+                  <div class="alert-ds-title" style="font-size: var(--text-sm);">Report exported</div>
+                  <span style="font-size: var(--text-xs); color: var(--color-text-muted);">audit-report-v2.pdf is ready to download.</span>
+                </div>
+                <button class="toast-ds-close">×</button>
+              </div>
+              <div class="toast-ds">
+                <div class="toast-dot toast-dot-warning"></div>
+                <div>
+                  <div class="alert-ds-title" style="font-size: var(--text-sm);">Session expiring</div>
+                  <span style="font-size: var(--text-xs); color: var(--color-text-muted);">You'll be logged out in 5 minutes.</span>
+                </div>
+                <button class="toast-ds-close">×</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ TABLES ══ -->
+        <section class="ds-section" id="tables">
+          <h2 class="ds-section-title">Tables</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Default</p>
+            <table class="table-ds">
+              <thead><tr><th>Issue</th><th>Heuristic</th><th>Severity</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>No error recovery options</td><td>Error Recovery</td><td><span class="badge-ds badge-error">Critical</span></td><td><span class="badge-ds badge-warning">Open</span></td></tr>
+                <tr><td>Inconsistent button labels</td><td>Consistency</td><td><span class="badge-ds badge-warning">Medium</span></td><td><span class="badge-ds badge-success">Fixed</span></td></tr>
+                <tr><td>Missing loading state</td><td>Visibility</td><td><span class="badge-ds badge-default">Low</span></td><td><span class="badge-ds badge-warning">Open</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Striped</p>
+            <table class="table-ds table-striped">
+              <thead><tr><th>Page</th><th>Issues Found</th><th>Priority</th></tr></thead>
+              <tbody>
+                <tr><td>Dashboard</td><td>12</td><td>High</td></tr>
+                <tr><td>Onboarding</td><td>8</td><td>High</td></tr>
+                <tr><td>Settings</td><td>4</td><td>Medium</td></tr>
+                <tr><td>Billing</td><td>2</td><td>Low</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="ds-card">
+            <p class="text-overline mb-4">Bordered</p>
+            <table class="table-ds table-bordered">
+              <thead><tr><th>Scope</th><th>Price</th><th>Timeline</th></tr></thead>
+              <tbody>
+                <tr><td>Web / Mobile App Audit</td><td>$3,500</td><td>4–5 weeks</td></tr>
+                <tr><td>Marketing Website Audit</td><td>$1,500</td><td>2–3 weeks</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+
+        <!-- ══ CODE BLOCKS ══ -->
+        <section class="ds-section" id="codeblocks">
+          <h2 class="ds-section-title">Code Blocks</h2>
+
+          <div class="d-flex flex-column gap-4">
+            <div>
+              <p class="text-overline mb-3">CSS</p>
+              <div class="codeblock-ds">
+                <div class="codeblock-ds-bar">
+                  <div class="codeblock-ds-dots">
+                    <span style="background:#FF5F57;"></span>
+                    <span style="background:#FFBD2E;"></span>
+                    <span style="background:#28C840;"></span>
+                  </div>
+                  <span class="codeblock-ds-lang">css</span>
+                  <button class="codeblock-copy" onclick="copyCode(this)">Copy</button>
+                </div>
+                <pre><code><span class="code-comment">/* Apply primary button styles */</span>
+<span class="code-key">.btn-primary-ds</span> {
+  <span class="code-key">background-color</span>: <span class="code-val">var(--color-primary)</span>;
+  <span class="code-key">color</span>:            <span class="code-str">#FFFFFF</span>;
+  <span class="code-key">border-radius</span>:   <span class="code-val">var(--radius-md)</span>;
+  <span class="code-key">transition</span>:      <span class="code-val">var(--ease-smooth)</span>;
+}</code></pre>
+              </div>
+            </div>
+
+            <div>
+              <p class="text-overline mb-3">HTML</p>
+              <div class="codeblock-ds">
+                <div class="codeblock-ds-bar">
+                  <div class="codeblock-ds-dots">
+                    <span style="background:#FF5F57;"></span>
+                    <span style="background:#FFBD2E;"></span>
+                    <span style="background:#28C840;"></span>
+                  </div>
+                  <span class="codeblock-ds-lang">html</span>
+                  <button class="codeblock-copy" onclick="copyCode(this)">Copy</button>
+                </div>
+                <pre><code><span class="code-comment">&lt;!-- Audit scope card --&gt;</span>
+&lt;<span class="code-key">div</span> <span class="code-val">class</span>=<span class="code-str">"card-ds"</span>&gt;
+  &lt;<span class="code-key">div</span> <span class="code-val">class</span>=<span class="code-str">"card-ds-header"</span>&gt;Web App Audit&lt;/<span class="code-key">div</span>&gt;
+  &lt;<span class="code-key">div</span> <span class="code-val">class</span>=<span class="code-str">"card-ds-body"</span>&gt;
+    &lt;<span class="code-key">p</span>&gt;11-phase heuristic audit workflow.&lt;/<span class="code-key">p</span>&gt;
+  &lt;/<span class="code-key">div</span>&gt;
+&lt;/<span class="code-key">div</span>&gt;</code></pre>
+              </div>
+            </div>
+
+            <div>
+              <p class="text-overline mb-3">JavaScript</p>
+              <div class="codeblock-ds">
+                <div class="codeblock-ds-bar">
+                  <div class="codeblock-ds-dots">
+                    <span style="background:#FF5F57;"></span>
+                    <span style="background:#FFBD2E;"></span>
+                    <span style="background:#28C840;"></span>
+                  </div>
+                  <span class="codeblock-ds-lang">javascript</span>
+                  <button class="codeblock-copy" onclick="copyCode(this)">Copy</button>
+                </div>
+                <pre><code><span class="code-comment">// Scroll-spy: highlight active nav link</span>
+<span class="code-key">const</span> sections = document.<span class="code-val">querySelectorAll</span>(<span class="code-str">'.ds-section'</span>);
+<span class="code-key">const</span> navLinks = document.<span class="code-val">querySelectorAll</span>(<span class="code-str">'.ds-nav a'</span>);
+
+<span class="code-key">const</span> observer = <span class="code-key">new</span> <span class="code-val">IntersectionObserver</span>((entries) => {
+  entries.<span class="code-val">forEach</span>(entry => {
+    <span class="code-key">if</span> (entry.isIntersecting) {
+      navLinks.<span class="code-val">forEach</span>(a => a.classList.<span class="code-val">remove</span>(<span class="code-str">'active'</span>));
+      <span class="code-key">const</span> active = document.<span class="code-val">querySelector</span>(
+        <span class="code-str">`[href="#${entry.target.id}"]`</span>
+      );
+      <span class="code-key">if</span> (active) active.classList.<span class="code-val">add</span>(<span class="code-str">'active'</span>);
+    }
+  });
+}, { rootMargin: <span class="code-str">'-20% 0px -70% 0px'</span> });
+
+sections.<span class="code-val">forEach</span>(s => observer.<span class="code-val">observe</span>(s));</code></pre>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <!-- ══ BREADCRUMBS ══ -->
+        <section class="ds-section" id="breadcrumbs">
+          <h2 class="ds-section-title">Breadcrumbs</h2>
+          <div class="ds-card">
+            <div class="d-flex flex-column gap-5">
+              <div>
+                <p class="text-overline mb-3">Slash Separator</p>
+                <ol class="breadcrumb-ds">
+                  <li><a href="#">Home</a></li>
+                  <li><span class="sep">/</span><a href="#">Portfolio</a></li>
+                  <li><span class="sep">/</span><span class="current">MSPbots Audit</span></li>
+                </ol>
+              </div>
+              <div>
+                <p class="text-overline mb-3">Arrow Separator</p>
+                <ol class="breadcrumb-ds">
+                  <li><a href="#">Services</a></li>
+                  <li><span class="sep">›</span><a href="#">Web App Audit</a></li>
+                  <li><span class="sep">›</span><span class="current">Discovery Phase</span></li>
+                </ol>
+              </div>
+              <div>
+                <p class="text-overline mb-3">Dot Separator</p>
+                <ol class="breadcrumb-ds">
+                  <li><a href="#">hellomaddie</a></li>
+                  <li><span class="sep">·</span><a href="#">Case Studies</a></li>
+                  <li><span class="sep">·</span><span class="current">SaaS Dashboard</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ AVATARS ══ -->
+        <section class="ds-section" id="avatars">
+          <h2 class="ds-section-title">Avatars</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Circle — Sizes</p>
+            <div class="d-flex align-items-center flex-wrap gap-4">
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="avatar-ds avatar-circle avatar-xs">XS</div>
+                <span class="swatch-value">24px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="avatar-ds avatar-circle avatar-sm">SM</div>
+                <span class="swatch-value">32px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="avatar-ds avatar-circle avatar-md">MD</div>
+                <span class="swatch-value">40px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="avatar-ds avatar-circle avatar-lg">BM</div>
+                <span class="swatch-value">56px</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="avatar-ds avatar-circle avatar-xl">HM</div>
+                <span class="swatch-value">72px</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Square Variant</p>
+            <div class="d-flex align-items-center flex-wrap gap-4">
+              <div class="avatar-ds avatar-square avatar-sm">AB</div>
+              <div class="avatar-ds avatar-square avatar-md">CD</div>
+              <div class="avatar-ds avatar-square avatar-lg" style="background: var(--color-accent); color: #fff; border-color: var(--color-accent);">EF</div>
+              <div class="avatar-ds avatar-square avatar-lg" style="background: var(--color-primary); color: #fff; border-color: var(--color-primary);">GH</div>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <p class="text-overline mb-4">Avatar Group</p>
+            <div class="avatar-group">
+              <div class="avatar-ds avatar-circle avatar-md" style="background: var(--color-accent); color:#fff; border-color:var(--color-accent);">BM</div>
+              <div class="avatar-ds avatar-circle avatar-md" style="background: var(--color-primary); color:#fff; border-color:var(--color-primary);">JD</div>
+              <div class="avatar-ds avatar-circle avatar-md">KL</div>
+              <div class="avatar-ds avatar-circle avatar-md">MN</div>
+              <div class="avatar-ds avatar-circle avatar-md" style="background: var(--color-code-bg); font-size: var(--text-xs);">+4</div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ TOOLTIPS ══ -->
+        <section class="ds-section" id="tooltips">
+          <h2 class="ds-section-title">Tooltips</h2>
+          <div class="ds-card">
+            <p class="text-caption mb-5">Hover each element to see the tooltip.</p>
+            <div class="d-flex flex-wrap gap-5 align-items-start">
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="tooltip-ds-wrap">
+                  <button class="btn btn-secondary-ds">Top (default)</button>
+                  <div class="tooltip-ds">Appears above the element</div>
+                </div>
+                <span class="swatch-value">.tooltip-ds</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="tooltip-ds-wrap tooltip-bottom">
+                  <button class="btn btn-secondary-ds">Bottom</button>
+                  <div class="tooltip-ds">Appears below the element</div>
+                </div>
+                <span class="swatch-value">.tooltip-bottom</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2">
+                <div class="tooltip-ds-wrap" style="margin-top: var(--space-8);">
+                  <span class="badge-ds badge-default" style="cursor: default;">Hover me</span>
+                  <div class="tooltip-ds">Tooltip on any element</div>
+                </div>
+                <span class="swatch-value">on badge</span>
+              </div>
+              <div class="d-flex flex-column align-items-center gap-2" style="margin-top: var(--space-8);">
+                <div class="tooltip-ds-wrap">
+                  <div class="avatar-ds avatar-circle avatar-md" style="cursor: default;">BM</div>
+                  <div class="tooltip-ds">Bianca Maddela</div>
+                </div>
+                <span class="swatch-value">on avatar</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ══ PROGRESS & STEPS ══ -->
+        <section class="ds-section" id="progress">
+          <h2 class="ds-section-title">Progress & Steps</h2>
+
+          <div class="ds-card mb-4">
+            <p class="text-overline mb-4">Progress Bars</p>
+            <div class="d-flex flex-column gap-5">
+              <div class="progress-ds-wrap">
+                <div class="progress-ds-label"><span>Audit Complete</span><span>72%</span></div>
+                <div class="progress-ds-track"><div class="progress-ds-bar" style="width: 72%;"></div></div>
+              </div>
+              <div class="progress-ds-wrap">
+                <div class="progress-ds-label"><span>Discovery</span><span>100%</span></div>
+                <div class="progress-ds-track"><div class="progress-ds-bar bar-success" style="width: 100%;"></div></div>
+              </div>
+              <div class="progress-ds-wrap">
+                <div class="progress-ds-label"><span>PRD Write-up</span><span>40%</span></div>
+                <div class="progress-ds-track track-thin"><div class="progress-ds-bar bar-primary" style="width: 40%;"></div></div>
+              </div>
+              <div class="progress-ds-wrap">
+                <div class="progress-ds-label"><span>Overdue</span><span>85%</span></div>
+                <div class="progress-ds-track track-thick"><div class="progress-ds-bar bar-warning" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ds-card">
+            <p class="text-overline mb-5">Step Indicator</p>
+            <div class="steps-ds">
+              <div class="step-ds complete">
+                <div class="step-node">✓</div>
+                <div class="step-label">Discovery</div>
+              </div>
+              <div class="step-ds complete">
+                <div class="step-node">✓</div>
+                <div class="step-label">Audit</div>
+              </div>
+              <div class="step-ds active">
+                <div class="step-node">3</div>
+                <div class="step-label">PRD</div>
+              </div>
+              <div class="step-ds">
+                <div class="step-node">4</div>
+                <div class="step-label">Review</div>
+              </div>
+              <div class="step-ds">
+                <div class="step-node">5</div>
+                <div class="step-label">Handoff</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <footer style="border-top: 1px solid var(--color-border); padding-top: var(--space-8); margin-top: var(--space-8);">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+            <span class="text-caption">hellomaddie Design System · v1.0.0</span>
+            <div class="d-flex gap-2">
+              <span class="badge-ds badge-default">Bootstrap 5.3</span>
+              <span class="badge-ds badge-default">Lora + Jost</span>
+              <span class="badge-ds badge-default">CSS Variables</span>
+            </div>
+          </div>
+        </footer>
+
+      </div><!-- /col main -->
+    </div><!-- /row -->
+  </div><!-- /container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ── Copy code block to clipboard ──────────────────────────────
+    function copyCode(btn) {
+      const pre  = btn.closest('.codeblock-ds').querySelector('pre');
+
+      // Build clean plain-text from the pre's DOM, decoding HTML entities
+      // by reading textContent (strips all span tags, handles &lt; etc.)
+      const raw  = pre.textContent || pre.innerText || '';
+      const text = raw.replace(/^\n/, '');   // trim leading newline if any
+
+      // Clipboard API (works on HTTPS and localhost)
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => {
+          showCopied(btn);
+        }).catch(() => {
+          fallbackCopy(text, btn);
+        });
+      } else {
+        fallbackCopy(text, btn);
+      }
+    }
+
+    // Fallback for file:// or non-secure contexts
+    function fallbackCopy(text, btn) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.cssText = 'position:fixed;opacity:0;pointer-events:none;';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showCopied(btn);
+      } catch (e) {
+        btn.textContent = 'Failed';
+        setTimeout(() => btn.textContent = 'Copy', 1500);
+      }
+      document.body.removeChild(ta);
+    }
+
+    function showCopied(btn) {
+      btn.textContent = 'Copied!';
+      btn.style.color        = '#A8D5A2';
+      btn.style.borderColor  = 'rgba(168,213,162,0.4)';
+      setTimeout(() => {
+        btn.textContent       = 'Copy';
+        btn.style.color       = '';
+        btn.style.borderColor = '';
+      }, 1800);
+    }
+
+    // ── Scroll-spy: highlight active nav link ─────────────────────
+    const sections = document.querySelectorAll('.ds-section');
+    const navLinks = document.querySelectorAll('.ds-nav a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.remove('active'));
+          const active = document.querySelector(`.ds-nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+</body>
+</html>
