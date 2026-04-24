@@ -17,11 +17,19 @@ This is a UX/front-end portfolio project. Issues typically cover:
 - Accessibility improvements
 - Performance or code quality
 
-## Repo Labels
+## Title
+- Follows propoer capitalization and grammar rules
+- Short, action-oriented, and references what page is to be worked on (e.g. "Fix Nav Overflow on Mobile", "Add Button Component to Design System", "Improve Gallery Page Layout for Better Scannability")
 
+## Acceptance Criteria
+- Groups requirements into clear sections (e.g. "Behavioral Requirements", "Design Requirements", "Technical Requirements")
+- The title of these groups is header level 3 (###) and is followed by a checklist of specific, actionable items that can be checked off when completed.
+- Groups are optional — if the issue is simple, it can just have a single checklist without grouping. But if there are multiple distinct requirements, they should be grouped under clear headers.
+
+## Repo Labels
 Use only these repo labels unless the user explicitly provides a new one:
 
-- `copy` — To add more context to the page/screen
+- `copy` - To add more context to the page/screen
 - `design` — To add more UI to the project
 - `function enhancement` — To create custom behaviors on the website
 - `bug` — To fix any glitches that occur
@@ -38,27 +46,24 @@ When suggesting labels:
 
 1. **Gather context** — Search existing issues to avoid duplicates. Fetch available labels to suggest appropriate ones.
 2. **Draft the issue** — Write a complete issue using the template below.
-3. **Confirm with the user** — Present the draft and ask for approval or edits before saving.
+3. **Confirm with the user** — Present the draft and ask for what texts needs to be revised, if any, and which labels to apply.
 4. **Output for manual filing** — After the user approves, output two things:
-   - A **ready-to-paste issue body** in a fenced code block (plain text, no markdown headers — just the body content ready to drop into GitHub's issue editor).
    - A **direct GitHub link** to open a pre-filled new issue using the URL format:
      `https://github.com/hellomaddie-UwU/UX-Main-2026/issues/new?title=TITLE&body=BODY`
      URL-encode the title and body values. Keep the link short enough to be usable — if the body is long, note that the user can paste it manually after clicking the link.
-5. **Save** — If GitHub tools are available, also attempt to create the issue directly and confirm with the issue URL.
 
 ## Issue Template
 
 ```
-**Title**: [Short, action-oriented, references what page is being worked on . e.g. "Fix nav overflow on mobile", "Add Button component to design system", "Improve gallery page layout for better scannability"]
+**Title**:
 
-**Overview**
+## Overview
 A clear summary of the problem or request.
 
-**Purpose**
+## Purpose
 Why this issue matters and what it aims to achieve.
 
-**Acceptance Criteria**
-(optional) *** Subgroup [ex. "Behavioral Requirements", "Design Requirements", "Technical Requirements"]***
+## Acceptance Criteria
 - [ ] ...
 - [ ] ...
 
