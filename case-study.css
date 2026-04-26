@@ -40,6 +40,28 @@
     font-weight: 400;
 }
 
+.table-of-contents-link a.is-active {
+    font-weight: 600;
+    color: #8722A9;
+}
+
+#toc-heart-row {
+    position: relative;
+}
+
+#toc-heart-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10%;
+    transition: transform 0.35s ease;
+    pointer-events: none;
+}
+
+#toc-links {
+    padding-left: calc(10% + 0.5rem);
+}
+
 .block {
     padding-top: 40px;
     padding-bottom: 40px;

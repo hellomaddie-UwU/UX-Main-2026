@@ -192,26 +192,27 @@
                             <div class="col-3 toc-col">  
                                 <div class="selection-container">
                                     <!--Selector Boxes START-->
-                                    <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selector-box">
-                                    <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selector-box">                    
-                                    <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selector-box">
-                                    <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                    <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
                                     <!--Selector Boxes END-->
                                     <div class="selection-content p-3">
                                         <p class="table-of-contents">Table of Contents</p>
-                                        <div class="d-flex gap-2">
-                                            <div style="width: 10%;">
-                                                <img src="/imgs/heart-point.svg" alt="heart-point">
+                                        <div id="toc-heart-row" class="d-flex gap-2">
+                                            <div id="toc-heart-wrapper" style="width: 10%;">
+                                                <img src="imgs/heart-point.svg" alt="heart-point">
                                             </div>
-                                            <div class="d-flex flex-column gap-2 table-of-contents-link">
-                                                <a href="#">Context</a>
-                                                <a href="#">Impact</a>
-                                                <a style="margin-bottom:40px;" href="#">Features</a>
-                                                <a href="#">Research & Discovery</a>
-                                                <a href="#">Key Insights</a>
-                                                <a href="#">Design Iteration</a>
+                                            <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
+                                                <a href="crafting-guildlines-for-mspbots-asset-team.html#context">Context</a>
+                                                <a href="crafting-guildlines-for-mspbots-asset-team.html#impact">Impact</a>
+                                                <a style="margin-bottom:40px;" href="crafting-guildlines-for-mspbots-asset-team.html#features">Features</a>
+                                                <a href="crafting-guildlines-for-mspbots-asset-team.html#research-discovery">Research & Discovery</a>
+                                                <a href="crafting-guildlines-for-mspbots-asset-team.html#key-insights">Key Insights</a>
+                                                <a href="crafting-guildlines-for-mspbots-asset-team.html#design-iterations">Design Iteration</a>
+                                                <a href="crafting-guildlines-for-mspbots-asset-team.html#reflection">Reflection</a>
                                             </div>
-                                            <div class="row position-absolute" style="top: 153px;">
+                                            <div class="row position-absolute" style="top: 103px;">
                                                 <img class="w-100" src="/imgs/the-ux-stuff.svg" alt="the-ux-stuff">
                                             </div>
                                         </div>
@@ -309,6 +310,15 @@
                                 </div>
                                 <!--Design Iterations END-->
 
+                                <!--Reflection START-->
+                                <div class="block v-stack space-5" id="reflection">
+                                    <div class="v-stack">
+                                        <h5>Reflection</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus modi voluptatibus eaque nostrum neque expedita. Quis nostrum eaque, minima consequatur iusto mollitia tempore enim adipisci saepe accusantium nam amet.</p>
+                                    </div>
+                                </div>
+                                <!--Reflection END-->
+
                                 <!--Copy-paste writing blocks-->
                                 <!--Regular + Carousel Block START-->
                                 <div class="block v-stack space-5">
@@ -381,6 +391,7 @@
         <script src="script.js"></script>
         <script src="progress-bar.js"></script>
         <script src="carousel.js"></script>
+        <script src="toc-highlight.js"></script>
         <!--scripts END-->
     </body>
 </html>
