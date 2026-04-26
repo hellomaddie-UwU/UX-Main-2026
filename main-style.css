@@ -665,6 +665,8 @@ input:user-invalid {
 
     .mobile-nav-socmed .md-text {color: var(--clairvoyant-300);}
 
+    .display-section-text {font-size: 78px;}
+
     .service-thumbnail {height: 300px;}
 
     .gallery-masonry {

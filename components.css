@@ -183,6 +183,8 @@ Table of Contents:
     padding-left: 3%;
 }
 
+.featured-works-tablet-mobile {display: none;}
+
 .container-fluid {
   width: 100%;
   padding-right: 0;
@@ -257,7 +259,19 @@ Table of Contents:
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    /*insert code*/
+    .featured-works-container {display: none;}
+
+    .featured-works-tablet-mobile {display: block;}
+
+    .case-study-thumbnail {
+        height: 250px;
+        width: 100%;
+    }
+
+    .case-study-info {
+        margin-top: var(--space-7);
+        width: 100%;
+    }
 }
 
 /*Tablet*/ /*md*/
@@ -276,6 +290,18 @@ Table of Contents:
     }
     .marquee-item img {
         height: 50px;
+    }
+
+    .case-study-cta-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .case-study-cta-wrapper .btn-primary-outline,
+    .case-study-cta-wrapper .btn-primary {
+        width: 100%;
+        justify-content: center;
     }
 }
 /*========================================================================*/
