@@ -170,6 +170,15 @@ Table of Contents:
     object-fit: contain;
 }
 
+.increase-logo-size img {
+    height: 60px; /* larger size for logos */
+}
+
+.decrease-logo-size img {
+    height: 20px; /* smaller size for logos */
+}
+
+
 @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
@@ -348,6 +357,16 @@ Table of Contents:
     .marquee-item img {
         height: 50px;
     }
+
+
+    .increase-logo-size img {
+        height: 70px; /* larger size for logos */
+    }
+
+    .decrease-logo-size img {
+        height: 30px; /* smaller size for logos */
+    }
+
 
     .case-study-cta-wrapper {
         display: flex;
