@@ -21,6 +21,12 @@
     line-height: 38px;
 }
 
+.toc-col {
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+}
+
 .table-of-contents {
     color: var(--Text-Header, #293056);
     font-weight: 600;
