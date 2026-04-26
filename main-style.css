@@ -422,6 +422,21 @@ a {color: #A12ECB;}
 
 .required-point {color: #F63D68;}
 
+.case-study-point {
+    color: var(--clairvoyant-600);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.case-study-img-caption {
+    color: var(--text-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
 /*========================================================================*/
 
 /*Control Settings*/
