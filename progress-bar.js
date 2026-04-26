@@ -1,6 +1,6 @@
 // Case Study Progress Bar Functionality
 (() => {
-    const caseStudyContent = document.querySelector('.case-study-content');
+    const caseStudyContent = document.querySelector('.case-study-container');
     const progressBar = document.getElementById('scrollProgressBar');
 
     if (!caseStudyContent || !progressBar) {

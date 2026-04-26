@@ -21,6 +21,12 @@
     line-height: 38px;
 }
 
+.toc-col {
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+}
+
 .table-of-contents {
     color: var(--Text-Header, #293056);
     font-weight: 600;
@@ -50,11 +56,16 @@
 
 .block-table .thead {font-weight: 600;}
 
-.case-study-content {
+.case-study-container {
     position:absolute;
     width: 100%;
     background-image: url(imgs/line\ bg.svg);
     background-repeat: repeat;
+}
+
+.mobile-table-of-contents {
+display: none;
+margin-top: var(--space-3);
 }
 
 .progress-sticky-parent {
@@ -108,7 +119,20 @@
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    /*insert code*/
+    .toc-col {display: none;}
+
+    .case-study-container > .container {width: 100%;}
+
+    .case-study-content {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .mobile-table-of-contents {
+        display: block;
+        width: 100%;
+    }
 }
 
 /*Tablet*/ /*md*/
@@ -125,6 +149,9 @@
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
-    /*insert code*/
+    .case-study-content {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
 }
 /*========================================================================*/
