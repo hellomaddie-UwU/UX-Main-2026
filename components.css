@@ -129,7 +129,9 @@ Table of Contents:
     align-items: center;
 }
 
-.bunny-badge {
+.client-logo-section-mobile {display: none;} /* hide mobile logos by default, show in media query */
+
+.bunny-badge { 
     position: absolute;
     left: -10px;
     top: 50%;
@@ -154,6 +156,8 @@ Table of Contents:
 }
 
 .marquee-track:hover { animation-play-state: paused; }
+
+.marquee-track.reverse { animation-direction: reverse; }
 
 .marquee-item {
     flex-shrink: 0;
@@ -242,7 +246,36 @@ Table of Contents:
 /*========================================================================*/
 
 /*Responsive Settings*/
+@media screen and (min-width: 1920px) {
+    /*insert code*/
+}
+
+/*Widescreen*/ /*xxl*/
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    /*Insert Code*/
+    /*insert code*/
 }
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+    /*insert code*/
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    .client-logo-section-desktop {display: none;}
+
+    .client-logo-section-mobile {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+    .marquee-item img {
+        height: 50px;
+    }
+}
+/*========================================================================*/
