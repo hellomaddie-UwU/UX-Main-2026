@@ -51,40 +51,71 @@ Use these rules for each template section.
 
 3. Expected Deliverables
 - Definition: External-facing outputs that portfolio visitors can access, such as client-friendly Figma files, downloadable PDFs, or live URLs. These are what the project intended to produce and should include a link wherever possible.
-- Note: Some deliverables may not exist or may no longer be accessible because they were never formally created, were updated or deleted by the client, or the business closed. In these cases, a GitHub project is an acceptable substitute deliverable output.
-- Action: List each deliverable as a numbered item with its link or access method. If a deliverable is unavailable or was lost, note why and confirm whether a GitHub project exists as a substitute. If all deliverables are missing, ask what the project was expected to produce at kickoff.
+- Note: Some deliverables may not exist or may no longer be accessible because they were never formally created, were updated or deleted by the client, or the business closed. In these cases, note the missing deliverable clearly and ask whether there is any surviving public-facing artifact, archived file, or alternate proof of the original output.
+- Action: List each deliverable as a numbered item with its link or access method. If a deliverable is unavailable or was lost, note why and confirm what evidence of the original output still exists. If all deliverables are missing, ask what the project was expected to produce at kickoff.
 
 4. ✌️ Outcome
 - Definition: Non-tangible results that improved the user, the team, or both as a direct consequence of the Expected Deliverables. This includes positive behavioral shifts (for example how people worked, collaborated, or made decisions) and analytical improvements (for example faster insights, clearer data, reduced ambiguity). Outcomes are not the deliverables themselves — they are what changed because of them.
 - Action: Distinguish outcomes from deliverables. If an outcome sounds like a deliverable, move it to Expected Deliverables. Convert vague claims into observable behavioral or analytical signals, or label them as explicit uncertainty. Ask one follow-up per unclear outcome to surface the real change that occurred.
 
 5. Context
-- Definition: Background, business need, timeline, and why this work mattered.
-- Action: If too short, prompt for trigger event, problem pressure, and constraints.
+- Definition: A short narrative that explains the situation that led to the project and why the work mattered.
+- Action: Keep this section concise and do not repeat information already covered in the project summary table. Focus on what was happening before the project, what triggered the work, and why it needed attention at that moment. If any of those points are missing, ask for them directly.
+- Minimum content: prior state, trigger or problem pressure, and why the work mattered.
+- Preferred length: 2 to 4 sentences or 2 to 3 short bullets.
+- If the project summary table already contains team, timeline, skills, and deliverables, do not restate them in Context unless one of those details directly explains the problem or constraint.
 
 6. Impact
-- Definition: Observable effect on users, team, process, or business.
-- Action: Require at least one concrete indicator (metric, behavior change, stakeholder feedback, or delivery speed).
+- Definition: The full version of what happened as a result of the project, written as a structured expansion of the Outcome section.
+- Action: Treat Impact as the detailed companion to Outcome. Outcome should summarize the main results, while Impact should break those results into individual scenarios or result blocks that explain what happened more fully.
+- Preferred structure:
+	## Impact
+	(Short setup sentence about the scenario or project result)
+
+	### Result #1
+	(What happened)
+
+	### Result #2
+	(What happened)
+- Each result should describe one clear effect on the user, team, workflow, or decision-making process.
+- The "what happened" portion for each result should usually be 1 to 3 sentences.
+- If no formal metric exists, the result can still be valid if it is grounded in observed behavior, stakeholder feedback, or a clearly described workflow change.
+- Do not allow Impact entries that only restate the deliverable or repeat the Outcome wording without adding detail.
+- Do not reuse the Outcome sentence verbatim inside Impact; expand it with scenario-specific detail.
 
 7. Features
-- Definition: Core solutions, components, or capabilities delivered.
-- Action: Group features by user value, not implementation detail. If too technical, rewrite in UX language first.
+- Definition: Core solutions, components, capabilities, or notable parts and sections of the project.
+- Action: Write each feature as value plus function, not just a noun list.
+- Format each item as: what it is, who it helped, and why it mattered.
+- Features can also be used to explain important parts or sections of the project when that structure makes the work easier to understand.
+- If the feature list sounds like implementation detail, rewrite it in UX language.
 
 8. Research & Discovery
 - Definition: Methods used to understand the problem and validate direction.
-- Action: Require method plus key finding pairs. If missing, ask what inputs informed decisions.
+- Action: Pair each method or input with the finding it produced and the decision it influenced.
+- This section can include notable feelings, surprises, or unexpected discoveries that emerged during investigation when they help explain what was learned and why the team needed more context.
+- Do not reuse the full project setup from Context here. Context explains the situation before the work; Research & Discovery explains what was learned once investigation began.
+- Accept informal discovery sources such as stakeholder conversations, audits, support patterns, existing documentation, or competitive review when formal research was not possible.
+- If no formal research happened, explain what informed decisions instead of leaving the section blank.
 
 9. Key Insights
-- Definition: Critical learnings that shaped decisions.
-- Action: Translate observations into decision-driving statements. Remove generic insights that did not change direction.
+- Definition: Critical learnings that shaped decisions from the Research & Discovery phase.
+- Action: Frame each insight as observation, consequence, and an implication that can guide future decisions.
+- Preferred pattern: Because we learned X, we changed Y.
+- Remove insights that did not influence the work.
 
 10. Design Iterations
 - Definition: Meaningful changes over time and why they happened.
-- Action: Show before-and-after reasoning. If missing, ask what was changed based on feedback or constraints.
+- Action: Show the original direction, what changed, what caused the change, and what tradeoff resulted.
+- This section can also include additional work, follow-up explorations, or passion projects created to showcase your own expertise when those projects extend or support the same goals as the Expected Deliverables.
+- If a client-facing deliverable no longer exists, was never formally created, was updated or deleted by the client, or the business closed, a GitHub project can be used here as proof-of-expertise supporting material when it documents a follow-up exploration, iteration, or self-initiated extension rather than the original planned deliverable itself.
+- If the project had only light iteration, document even small but meaningful refinements rather than implying a full redesign cycle.
 
 11. Reflection
 - Definition: Honest retrospective on tradeoffs, limitations, and next improvements.
-- Action: Ensure realism and ownership. Include one lesson and one concrete next-step improvement.
+- Action: Include what worked, what remained unresolved, and what would be improved next.
+- Require one concrete lesson and one realistic next step.
+- Do not allow generic statements like “I learned a lot” or “next time I would do more research.”
 
 ## Red-Flag Claims Check
 Apply this check to every Outcome and Impact statement:
