@@ -44,8 +44,8 @@ html, body {
     --text-shadow-color: #FF6D92;
 
     /*Color Palette*/
-    --clairvoyan-50: #FBF4FF;
-    --clairvoyan-200: #EDD2FC;
+    --clairvoyant-50: #FBF4FF;
+    --clairvoyant-200: #EDD2FC;
     --clairvoyant-300: #E2AFF8;
     --clairvoyant-500: #BB4DE8;
     --clairvoyant-600: #A12ECB;
@@ -421,6 +421,21 @@ a {color: #A12ECB;}
 }
 
 .required-point {color: #F63D68;}
+
+.case-study-point {
+    color: var(--clairvoyant-600);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.case-study-img-caption {
+    color: var(--text-body);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
 
 /*========================================================================*/
 

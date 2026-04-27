@@ -52,8 +52,8 @@ Table of Contents:
 }
 
 .pill-internal {
-    border: 1px solid var(--clairvoyan-200);
-    background-color: var(--clairvoyan-50);
+    border: 1px solid var(--clairvoyant-200);
+    background-color: var(--clairvoyant-50);
     color: var(--clairvoyant-600);
 }
 
@@ -170,6 +170,15 @@ Table of Contents:
     object-fit: contain;
 }
 
+.increase-logo-size img {
+    height: 60px; /* larger size for logos */
+}
+
+.decrease-logo-size img {
+    height: 20px; /* smaller size for logos */
+}
+
+
 @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
@@ -245,6 +254,63 @@ Table of Contents:
 }
 /*Featured Works Vertical Scroll END*/
 
+/*Case Study Tablet & Mobile Slider START*/
+.cs2-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-works-tablet-mobile > .title, .cs2-slider__slide {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+}
+
+.cs2-slider__track {
+    position: relative;
+}
+
+.cs2-slider__slide {
+    width: 100%;
+}
+
+.cs2-slider__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+}
+
+.cs2-slider__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: var(--space-5);
+}
+
+.cs2-slider__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    border: 0;
+    background-color: #d2cde0;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.cs2-slider__dot.is-active {
+    background-color: #bb4de8;
+    transform: scale(1.15);
+}
+/*Case Study Tablet & Mobile Slider END*/
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -292,6 +358,16 @@ Table of Contents:
         height: 50px;
     }
 
+
+    .increase-logo-size img {
+        height: 70px; /* larger size for logos */
+    }
+
+    .decrease-logo-size img {
+        height: 30px; /* smaller size for logos */
+    }
+
+
     .case-study-cta-wrapper {
         display: flex;
         flex-direction: column;
@@ -302,6 +378,11 @@ Table of Contents:
     .case-study-cta-wrapper .btn-primary {
         width: 100%;
         justify-content: center;
+    }
+
+    .featured-works-tablet-mobile > .title, .cs2-slider__slide {
+        padding-left: var(--space-2);
+        padding-right: var(--space-2);
     }
 }
 /*========================================================================*/
