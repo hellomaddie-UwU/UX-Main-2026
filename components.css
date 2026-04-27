@@ -52,8 +52,8 @@ Table of Contents:
 }
 
 .pill-internal {
-    border: 1px solid var(--clairvoyan-200);
-    background-color: var(--clairvoyan-50);
+    border: 1px solid var(--clairvoyant-200);
+    background-color: var(--clairvoyant-50);
     color: var(--clairvoyant-600);
 }
 

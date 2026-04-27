@@ -1,5 +1,7 @@
 /*Table of Contents
 1. Single Accordion Card
+2. Toggle
+3. Timeline Vertical Scroll
 */
 
 /*Single Accordion Card START*/
@@ -78,6 +80,74 @@
     font-weight: 300;
 }
 /*Single Accordion Card END*/
+
+/*Toggle START*/
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    background-color: var(--clairvoyant-900);
+    padding: var(--space-2) var(--space-4);
+    width: fit-content;
+    border-radius: var(--space-6);
+    position: relative;
+}
+
+.toggle-button {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    z-index: 2;
+}
+
+.toggle-active-bg {
+    background-color: var(--clairvoyant-200);
+    height: 60%;
+    width: 200px;
+    position: absolute;
+    left: 16px;
+    border-radius: var(--space-6);
+    z-index: 1;
+    /*transition: left 0.3s ease;*/
+}
+
+.active-toggle {
+    color: var(--clairvoyant-700);
+    font-weight: 600;
+    
+}
+/*Toggle END*/
+
+/*Timeline Vertical Scroll START*/
+.timeline-vertical-scroll {cursor: url('#'), auto;} /*Add an image of the deliverable instead*/
+
+.timeline-bar {
+    width: 41px;
+    height: 363px;
+    background: var(--System-Colors-Teal-50, #F0FDFA);
+    border: 0.75px solid var(--System-Colors-Teal-200, #99F6E0);
+    border-radius: var(--space-6);
+}
+
+.timeline-bar-filled {
+    width: 41px;
+    height: 363px;
+    background: var(--System-Colors-Teal-200, #99F6E0);
+    border-radius: var(--space-6);
+}
+
+.phase-name, .phase-name-active {text-align: center;}
+
+.phase-name p {color:#A4A7AE;}
+
+.phase-name-active p {
+    color: var(--text-body);
+    font-weight: 500;
+}
+/*Timeline Vertical Scroll END*/
 
 
 
