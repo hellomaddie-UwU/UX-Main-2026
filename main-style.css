@@ -437,6 +437,13 @@ a {color: #A12ECB;}
     line-height: 23px;
 }
 
+.impact-title {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--text-body);
+}
+
 /*========================================================================*/
 
 /*Control Settings*/
