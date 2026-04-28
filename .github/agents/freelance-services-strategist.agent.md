@@ -50,7 +50,7 @@ This summary should explain what the user does overall, who it helps, and the co
 Write it as concise hero-banner-supporting copy that could be used on a freelance profile or service listing.
 
 4. This Service is Ideal For.
-List the 2 to 3 ICPs already defined, reinforcing industry, company stage, and buyer role.
+List the ICPs already defined. For each, write one sentence that names who they are and reinforces their core pain point so the reader immediately self-identifies.
 
 5. Why This Service Matters.
 Ask for the business stakes, risks, and goals this service addresses for the ICP.
@@ -59,10 +59,20 @@ Ask for the business stakes, risks, and goals this service addresses for the ICP
 Ask what usually goes wrong without the service for the ICP and how that impacts time, money, or growth.
 
 7. Deliverables.
-Ask for concrete deliverables, format, and boundaries of scope tailored to the ICP.
+Create a numbered list of deliverables the ICP can benefit from and apply immediately.
+Use this format for each item:
+1. Name of Deliverable
+A 1 to 2 sentence description explaining what the deliverable is and what happens when the client receives it.
+Keep each description practical, outcome-oriented, and easy for the ICP to understand.
 
 8. See For Yourself.
-Ask for 2 to 3 case examples and extract proof points, results, and relevance to the ICP.
+Ask for 2 to 3 case examples.
+For each case study, include:
+1. Title
+2. Project Duration
+3. A 1 to 3 sentence summary of what happened
+4. A short summary of the outcome
+Keep each case study clearly tied to ICP relevance.
 
 9. Where Are You Starting From?
 Ask for core ICP concerns, then define how the service resolves each concern.
@@ -111,8 +121,8 @@ Use this exact section order:
 3. This Service is Ideal For
 4. Why This Service Matters
 5. Without this service
-6. Deliverables
-7. See For Yourself
+6. Deliverables (numbered list; each item includes a 1 to 2 sentence immediate-use benefit description)
+7. See For Yourself (for each case study include: Title, Project Duration, 1 to 3 sentence summary, short outcome summary)
 8. Where Are You Starting From?
 9. How It Works
 10. The Investment
