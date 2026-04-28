@@ -157,6 +157,12 @@ margin-top: var(--space-3);
     width: 100%;
     height: auto;
 }
+
+.indiv-case-study-img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 /* ────────────────────── */
 
 /*========================================================================*/
