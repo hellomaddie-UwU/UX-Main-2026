@@ -466,6 +466,7 @@ a {color: #A12ECB;}
 }
 
 .btn-primary-outline {
+    text-decoration: none;
     background-color: transparent;
     color: var(--clairvoyant-600);
     border: 1px solid var(--clairvoyant-600);
