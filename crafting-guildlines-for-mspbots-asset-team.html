@@ -389,11 +389,26 @@
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eaque ducimus ullam repellat.</p>
                                             </div>
                                         </div>
-                                        <p>
-                                            before and after
-                                            <br>
-                                            https://www.youtube.com/watch?v=FssWqsqVAGQ 
-                                        </p>
+                                        <div class="before-and-after-container">
+                                            <div class="compare">
+                                                <div class="before">
+                                                    <div class="p-3 position-absolute top-0" style="background-color: rgba(255, 255, 255, 0.42); color: #000; z-index: 4;">Before</div>
+                                                    <div class="p-3 position-absolute top-0 end-0" style="background-color: rgba(255, 255, 255, 0.42); color: #000; z-index: 4;">After</div>
+                                                    <img src="imgs/placeholder-img-sample.png" alt="Before design version">
+                                                    <div class="after">
+                                                        <img src="imgs/45325d669f7038e8a2f2c1ef4d8ab820.jpg" alt="After design version">
+                                                    </div>
+                                                </div>
+                                                <input
+                                                    type="range"
+                                                    min="0"
+                                                    max="100"
+                                                    step="1"
+                                                    value="50"
+                                                    class="input compare-input"
+                                                    aria-label="Compare before and after design">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!--Regular + Before & After Block END-->
@@ -616,6 +631,7 @@
         <script src="progress-bar.js"></script>
         <script src="carousel.js"></script>
         <script src="toc-highlight.js"></script>
+        <script src="before-after-block.js"></script>
         <!--scripts END-->
     </body>
 </html>
