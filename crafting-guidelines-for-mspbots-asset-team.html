@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--SEO START-->
+        <title>Crafting Guidelines for MSPbot’s Asset Team | hellomaddie</title>
+        <meta name="description" content="insert a brief description of what this case study is about.">
+        <meta name="keywords" content="insert relevant keywords related to this case study.">
+        <meta name="author" content="Bianca Maddela">
+        <!--SEO END-->
+
+        <!--Stylesheet START-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="main-style.css" rel="stylesheet">
+        <link href="components.css" rel="stylesheet">
+        <link href="case-study.css" rel="stylesheet">
+        <!--Stylesheet END-->
+
+        <!--Fonts START-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--Fonts END-->
+    </head>
+
+    <body>
+        <!--Header START-->
+        <nav class="nav-container surface-dark">
+            <a class="brand-logo-desktop" href="index.html">
+                <img src="imgs/logo-desktop.svg" alt="hellomaddie logo">
+            </a>
+            <a class="brand-logo-tablet-mobile" href="index.html">
+                <img src="imgs/hellomaddie-white-logo.svg" alt="hellomaddie logo">
+            </a>
+            <!--Navigation Links-->
+            <div class="v-stack space-5 nav-wrapper text-center">
+                <a href="#">
+                    <div class="nav-item-link-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M11.9998 28V18.1333C11.9998 17.3866 11.9998 17.0132 12.1452 16.728C12.273 16.4771 12.477 16.2732 12.7279 16.1453C13.0131 16 13.3864 16 14.1332 16H17.8665C18.6132 16 18.9866 16 19.2718 16.1453C19.5227 16.2732 19.7267 16.4771 19.8545 16.728C19.9998 17.0132 19.9998 17.3866 19.9998 18.1333V28M2.6665 12.6667L14.7198 3.62667C15.1789 3.28241 15.4084 3.11028 15.6604 3.04393C15.8829 2.98536 16.1168 2.98536 16.3393 3.04393C16.5913 3.11028 16.8208 3.28241 17.2798 3.62667L29.3332 12.6667M5.33318 10.6667V23.7333C5.33318 25.2268 5.33318 25.9735 5.62383 26.544C5.87949 27.0457 6.28744 27.4537 6.7892 27.7094C7.35963 28 8.10637 28 9.59984 28H22.3998C23.8933 28 24.6401 28 25.2105 27.7094C25.7123 27.4537 26.1202 27.0457 26.3759 26.544C26.6665 25.9735 26.6665 25.2268 26.6665 23.7333V10.6667L18.5598 4.58667C17.6418 3.89815 17.1828 3.55389 16.6787 3.42119C16.2337 3.30405 15.766 3.30405 15.321 3.42119C14.8169 3.55389 14.3579 3.89815 13.4398 4.58667L5.33318 10.6667Z" stroke="#FFA385" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text-active">Home</div>
+                    </div>
+                </a>
+
+                <div class="nav-item-link dropdown dropend">
+                    <a class="d-flex align-items-center text-decoration-none text-reset dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Services</div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Heuristic UX Audit & PRD Write-Up</a></li>
+                        <li><a class="dropdown-item" href="#">Design System Build/Clean-up</a></li>
+                        <li><a class="dropdown-item" href="#">Website UX and Copy Optimization</a></li>
+                    </ul>
+                </div>
+
+                <a href="#">
+                    <div class="nav-item-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M11.9998 14.9625L17.0368 19.9996M10.633 27.9661C8.81052 29.7885 5.33317 29.3329 2.6665 29.3329C4.0333 26.6662 2.21086 23.1889 4.0333 21.3664C5.85575 19.544 8.81052 19.544 10.633 21.3664C12.4554 23.1889 12.4554 26.1436 10.633 27.9661ZM15.8953 21.2324L28.0781 8.07497C29.1512 6.91608 29.1166 5.11637 27.9998 3.99958C26.883 2.88279 25.0833 2.84819 23.9244 3.92123L10.767 16.104C10.087 16.7336 9.74708 17.0484 9.54881 17.3841C9.07336 18.1891 9.05423 19.1843 9.49838 20.007C9.68361 20.3501 10.0112 20.6777 10.6664 21.3329C11.3216 21.9881 11.6493 22.3157 11.9923 22.501C12.815 22.9451 13.8103 22.926 14.6153 22.4505C14.951 22.2523 15.2658 21.9123 15.8953 21.2324Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Case Studies</div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="nav-item-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <path d="M28.6665 24.0007L19.8094 16.0007M12.1903 16.0007L3.33322 24.0007M2.6665 9.33398L13.5531 16.9546C14.4346 17.5717 14.8754 17.8802 15.3549 17.9997C15.7784 18.1053 16.2213 18.1053 16.6448 17.9997C17.1243 17.8802 17.565 17.5717 18.4466 16.9546L29.3332 9.33398M9.0665 26.6673H22.9332C25.1734 26.6673 26.2935 26.6673 27.1491 26.2313C27.9018 25.8479 28.5137 25.2359 28.8972 24.4833C29.3332 23.6276 29.3332 22.5075 29.3332 20.2673V11.734C29.3332 9.49377 29.3332 8.37367 28.8972 7.51802C28.5137 6.76537 27.9018 6.15345 27.1491 5.76996C26.2935 5.33398 25.1734 5.33398 22.9332 5.33398H9.0665C6.82629 5.33398 5.70619 5.33398 4.85054 5.76996C4.09789 6.15345 3.48597 6.76537 3.10248 7.51802C2.6665 8.37367 2.6665 9.49377 2.6665 11.734V20.2673C2.6665 22.5075 2.6665 23.6276 3.10248 24.4833C3.48597 25.2359 4.09789 25.8479 4.85054 26.2313C5.70619 26.6673 6.82629 26.6673 9.0665 26.6673Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Contacts</div>
+                    </div>
+                </a>
+            </div>
+            <!--Navigation Links END-->
+            <!--Social Links START-->
+            <div class="social-links-wrapper">
+                <a href="https://www.youtube.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://medium.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/medium.svg" alt="Medium">
+                </a>
+                <a href="https://dribbble.com/hellomaddieUwU" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/dribbble.svg" alt="Dribbble">
+                </a>
+                <!--
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/twitter.svg" alt="Twitter">
+                -->
+            </div>
+            <!--Social Links END-->
+            <!--Mobile Menu Toggle START-->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--Mobile Menu Toggle END-->
+        </nav>
+        <div class="mobile-menu-overlay"></div>
+        <!--Mobile Menu Content START-->
+            <div class="mobile-menu">
+                <div class="mobile-nav-wrapper">
+                    <a class="mobile-menu-item" href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a class="mobile-menu-item" href="#">
+                        <p>Case Studies</p>
+                    </a>
+                    <div class="mobile-dropdown">
+                        <button type="button" class="mobile-menu-item mobile-dropdown-item" id="dropdownBtn">
+                            Services
+                            <img src="imgs/chevron-arrow.svg" alt="toggle" class="dropdown-arrow">
+                        </button>
+                        <ul class="mobile-dropdown-menu" id="dropdownMenu">
+                            <li><a href="#">Heuristic UX Audit & PRD Write-Up</a></li>
+                            <li><a href="#">Design System Build/Clean-up</a></li>
+                            <li><a href="#">Website UX and Copy Optimization</a></li>
+                        </ul>
+                    </div>
+                    <a class="mobile-menu-item" href="#">
+                        <p>Contacts</p>
+                    </a>
+                </div>
+                <div class="mobile-nav-socmed">
+                    <p class="md-text">Follow</p>
+                    <div class="d-flex gap-1">
+                        <img src="imgs/youtube.svg" alt="youtube">
+                        <a href="https://www.youtube.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
+                    </div>
+                    <div class="d-flex gap-1">
+                        <img src="imgs/medium.svg" alt="medium">
+                        <a href="https://medium.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
+                    </div>
+                    <div class="d-flex gap-1">
+                        <img src="imgs/dribbble.svg" alt="dribble">
+                        <a href="https://dribbble.com/hellomaddieUwU" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
+                    </div>
+                </div>
+            </div>
+            <!--Mobile Menu Content END-->
+        <!--Header END-->
+
+        <div class="main-page">
+            <!--Hero Section START-->
+            <header class="section-container">
+                <div class="v-stack">
+                    <div class="h-stack space-2">
+                        <span class="pill pill-internal">Internal Documentation</span>
+                        <span class="pill pill-tech">AI & Technology</span>
+                    </div>
+                    <h1 class="case-study-title">Crafting Guidelines for MSPbot’s Asset Team</h1>
+                </div>
+                <img class="case-study-featured-img" src="imgs/placeholder-img-sample.png" alt="featured image">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="d-flex align-items-center gap-2">
+                                <p class="fw-medium">Contract Duration</p> 
+                                <div class="orange-dot"></div>
+                                <p>3 Weeks</p> <!--contract duration-->
+                            </div>
+                            <h5 class="case-study-excerpt text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi exercitationem, id atque numquam nihil reprehenderit saepe inventore doloribus ex ab voluptatem, iusto rerum sapiente sint eaque incidunt quod similique commodi..</h5>
+                        </div>
+                        <div class="col-5">
+                            <div class="selection-container">
+                                <!--Selector Boxes START-->
+                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                <!--Selector Boxes END-->
+                                <div class="selection-content p-3" style="background-color: rgb(166, 44, 44);">
+                                    <h6 class="mb-3 text-white">Expected Delivery</h6>
+                                    <div class="v-stack space-3 align-items-start">
+                                        <div class="d-flex justify-content-center gap-2">
+                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
+                                            <p class="text-white">**PDF Design Guideline**</p>
+                                            <!--A structured Do's & Don'ts reference covering App Setup, FAQ, Tech Support contact, desktop screen size adjustments (1440px and 1280px), and the custom illustration request process.-->
+                                        </div>
+                                        <div class="d-flex justify-content-center gap-2">
+                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
+                                            <p class="text-white">**CSS Instructions for Section Widgets**</p>
+                                            <!--Added mid-project at the Product Team Manager's direction and incorporated into the PDF.-->
+                                        </div>
+                                        <div class="d-flex justify-content-center gap-2">
+                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
+                                            <p class="text-white">**HTML Widget Templates**</p>
+                                            <!--Built and delivered directly rather than documented. Adopted by the Asset Team immediately upon handoff. Never added to the PDF.-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--Hero Section END-->
+
+            <!--Case Study Content START-->
+            <div class="case-study-container">
+                <div class="section-container">
+                    <!--Progress Bar START-->
+                    <div class="progress-sticky-parent">
+                        <div class="progress-section" aria-label="Reading progress tracker">
+                            <div class="progress-track">
+                                <div
+                                    id="scrollProgressBar"
+                                    class="progress-fill"
+                                    role="progressbar"
+                                    aria-label="Reading progress"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    aria-valuenow="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-table-of-contents">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Table of Contents
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="crafting-guildlines-for-mspbots-asset-team.html#context">Context</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="crafting-guildlines-for-mspbots-asset-team.html#impact">Impact</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="crafting-guildlines-for-mspbots-asset-team.html#features">Features</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="crafting-guildlines-for-mspbots-asset-team.html#research-discovery">Research & Discovery</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="crafting-guildlines-for-mspbots-asset-team.html#key-insights">Key Insights</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="crafting-guildlines-for-mspbots-asset-team.html#design-iterations">Design Iterations</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Progress Bar END-->
+
+                    <div class="container">
+                        <div class="row">
+                            <!--TOC START-->
+                            <div class="col-3 toc-col">  
+                                <div class="selection-container">
+                                    <!--Selector Boxes START-->
+                                    <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                    <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                    <!--Selector Boxes END-->
+                                    <div class="selection-content p-3">
+                                        <p class="table-of-contents">Table of Contents</p>
+                                        <div id="toc-heart-row" class="d-flex gap-2">
+                                            <div id="toc-heart-wrapper" style="width: 10%;">
+                                                <img src="imgs/heart-point.svg" alt="heart-point">
+                                            </div>
+                                            <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
+                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#context">Context</a>
+                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#impact">Impact</a>
+                                                <a style="margin-bottom:40px;" href="crafting-guidelines-for-mspbots-asset-team.html#features">Features</a>
+                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#research-discovery">Research & Discovery</a>
+                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#key-insights">Key Insights</a>
+                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#design-iterations">Design Iteration</a>
+                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#reflection">Reflection</a>
+                                            </div>
+                                            <div class="row position-absolute" style="top: 103px;">
+                                                <img class="w-100" src="imgs/the-ux-stuff.svg" alt="the-ux-stuff">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--TOC END-->
+
+                            <!--Case Study Content START-->
+                            <div class="col-9 case-study-content">
+                                <!--Content Start-->
+                                <!--Context-->
+                                <div class="block v-stack space-5" id="context">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Context</h5>
+                                            <p class="mb-3 text-danger">
+                                                Insert definition card: 
+                                                <br>
+                                                Asset Team
+                                                <br>
+                                                Responsible for building client-facing Welcome Screens inside a paid SaaS product — screens that subscribing clients paid hundreds of dollars a month to access.??
+                                            </p>
+                                            <p class="mb-3">With minimal design background and no existing guidelines to follow, team members King Moya and Glenn Bugtog were relying on ChatGPT to generate HTML, resulting in screens that were visually inconsistent, typographically off-brand, and cluttered with information.</p>
+                                            <p class="text-danger"> The Product Team Head recognized the gap and assigned the task to me specifically because of my hybrid UX/UI and front-end development background — a combination King had already identified when he initiated the request. No brand guideline existed at the time, and the company's design system was scoped exclusively to the web app, placing it out of bounds for this work. </p>
+                                        </div>
+                                        <div class="block-table">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <p class="thead">Team</p>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <div class="orange-dot"></div>
+                                                        <p>Bianca Maddela (Me)</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <div class="orange-dot"></div>
+                                                        <p>King Moya (Asset Team)</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <div class="orange-dot"></div>
+                                                        <p>Glenn Bugtog (Asset Team)</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <p class="thead">Duration</p>
+                                                    <p>3 Weeks</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="thead">Role</p>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <div class="orange-dot"></div>
+                                                        <p>Senior Designer</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <div class="orange-dot"></div>
+                                                        <p>Front-end Developer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="thead text-danger">Skills</p>
+                                                    <p class="text-danger">Define later</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Impact-->
+                                <div class="block v-stack space-5" id="impact">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Impact</h5>
+                                            <p class="text-danger">The Asset Team had no design reference, no templates, and no shared visual standard. The guidelines needed to be something they could actually follow — without requiring a design background to use.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="fw-medium text-danger">Subheader</h6>
+                                            <div class="v-stack space-3 mt-2">
+                                                <div class="h-stack space-3 align-items-start">
+                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <div class="v-stack">
+                                                        <div class="impact-title">Immediate Widget Adoption</div>
+                                                        <p>Glenn adopted the HTML widget templates the same day they were delivered, applying them directly to his active task. No additional onboarding or explanation was needed because the templates were built to be copy-paste ready.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="h-stack space-3 align-items-start">
+                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <div class="v-stack">
+                                                        <div class="impact-title">Visible Quality Improvement</div>
+                                                        <p>Welcome Screens produced after the guideline was delivered were observably more consistent and professional in appearance. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="h-stack space-3 align-items-start">
+                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <div class="v-stack">
+                                                        <div class="impact-title">Stakeholder Confidence Signal</div>
+                                                        <p class="text-danger">The Product Team Head gave an unsolicited compliment on the quality of the work. The Asset Team separately requested a follow-up project to create guidelines for the Settings page — a direct signal of trust and continued need. 
+                                                        <br>
+                                                        *(The follow-up project was never initiated due to other priorities.)*</p>
+                                                    </div>
+                                                </div>
+                                                <div class="h-stack space-3 align-items-start">
+                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <div class="v-stack">
+                                                        <div class="impact-title">Illustration Consistency Gap Remained</div>
+                                                        <p class="text-danger">The custom illustration request process was documented in the guidelines, but the Asset Team gradually shifted to generative AI for illustration assets over time — driven by availability constraints and the growing accessibility of AI tools. Illustration assets remained the one area of visual inconsistency post-handoff. This was acknowledged and accepted as low priority by all parties.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Features-->
+                                <div class="block v-stack space-5" id="features">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Features</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint cumque rerum quidem ut natus, atque accusantium neque earum recusandae nisi culpa aspernatur possimus minima sit ducimus impedit, laborum dolorem.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="features-title">Do's & Don'ts Framework</h6>
+                                            <p class="text-danger">The core of the PDF was structured around clear Do's and Don'ts for each content area: App Setup, FAQ, Tech Support contact, screen size adjustments, and illustration requests. This format was chosen to lower the barrier for non-designers — instead of explaining design principles abstractly, it showed exactly what to do and what to avoid in the context of their actual work.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="features-title">Desktop Breakpoint Guidance</h6>
+                                            <p class="text-danger">Layout and typographic adjustments were documented for two primary desktop breakpoints: 1440px and 1280px. Mobile and tablet were explicitly out of scope. The web app is desktop-only, and the Product Team had previously confirmed that platform-wide mobile responsiveness was not feasible. This was a deliberate and informed scoping decision, not an oversight.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="features-title">CSS Instructions for Section Widgets</h6>
+                                            <p class="text-danger">Mid-project, the Product Team Manager proposed adding CSS guidance for the Section Widgets used in Welcome Screens. Incorporated into the PDF, this addition gave the Asset Team more precise control over styling without requiring them to write CSS from scratch.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="features-title">HTML Widget Templates</h6>
+                                            <p class="text-danger">Rather than writing instructions for how to build HTML widgets, I built the templates directly — a decision made possible by my front-end development background. The templates were ready to copy, paste, and deploy. Glenn used them the same day they were handed off.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="features-title">Marketing Site as Visual Bridge</h6>
+                                            <p class="text-danger">Because no brand guideline existed and the web app's design system was off-limits, I used the marketing site's existing visual style as the reference point for the guidelines. This connected the Welcome Screens to the most publicly visible expression of the brand at the time — creating visual coherence across touchpoints without requiring a formal brand system to exist first.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Research & Discovery-->
+                                <div class="block v-stack space-5" id="research-discovery">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Research & Discovery</h5>
+                                            <p>
+                                                Formal research was not conducted. The primary discovery input was a kick-off meeting with King Moya, during which he walked through all existing Welcome Screens currently live in the app.
+                                                <br><br>
+                                                <span class="text-danger">
+                                                    Seeing them together in sequence made the problem immediately legible: no two screens shared a consistent visual language. Fonts, colors, layout structures, and information density varied across every example. King and I acknowledged the quality gap openly during the same session — there was no ambiguity about what needed to change. We laughed about it.
+                                                </span>
+                                                <br><br>
+                                                <span class="text-danger">
+                                                    With no external benchmarks and no user interviews, the audit of existing screens served as both the research phase and the brief. Content decisions — which widgets to cover, how to structure layout guidance, what edge cases to address — were made from direct observation of the Asset Team's work and my own design judgment.
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Key Insights-->
+                                <div class="block v-stack space-5" id="key-insights">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Key Insights</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, suscipit neque fugiat numquam nihil impedit. Eligendi pariatur expedita magnam iste alias, quos impedit quidem perferendis fuga, harum dicta necessitatibus nihil.</p>
+                                        </div>
+                                        <div>
+                                            <i>**Because the existing screens had no shared visual standard, the guideline needed to be prescriptive rather than flexible.**</i>
+                                            <p>Giving the Asset Team design options would have reproduced the inconsistency problem. The Do's and Don'ts format removed ambiguity by design.</p>
+                                        </div>
+                                        <div>
+                                            <i>**Because no brand guideline existed, the marketing site became the most defensible visual anchor.**</i>
+                                            <p class="text-danger">Connecting Welcome Screens to the marketing site's style wasn't a compromise — it was an opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
+                                        </div>
+                                        <div>
+                                            <i>**Because the Asset Team had no design background, medium and format mattered as much as content.**</i>
+                                            <p class="text-danger">The layout logic section — covering conditional decisions like when to use 3 columns versus a simpler structure — caused the most confusion in practice. A more visual, example-driven approach would have served them better.</p>
+                                        </div>
+                                        <div>
+                                            <i>**Because scope expanded mid-project, the output type deserved to be questioned.**</i>
+                                            <p class="text-danger">The scope additions — CSS instructions, copy-paste HTML — pointed toward a web-based format from the start. A guideline website would have served the Asset Team's actual usage patterns better than a static PDF.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Design Iterations-->
+                                <div class="block v-stack space-5" id="design-iterations">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Design Iterations</h5>
+                                        </div>
+                                        <div>
+                                            <h6 class="design-iteration-title">Iteration 1 — From Over-Written to Concise</h6>
+                                            <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify. The revised version reduced explanatory text significantly, relying on the Do's and Don'ts structure to carry the guidance. The Asset Team needed a quick reference, not a manual.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="design-iteration-title">Iteration 2 — Responsive Breakpoint Section Added</h6>
+                                            <p>King raised a requirement mid-project that hadn't been scoped initially: layout and typographic guidance across desktop screen sizes, specifically 1440px and 1280px. This was incorporated as a dedicated section and became one of the more technically useful parts of the guideline.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="design-iteration-title">Iteration 3 — Pivot from Documenting HTML to Building It</h6>
+                                            <p>Glenn's request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly — a decision that made sense given my front-end background and the team's limited HTML knowledge. Glenn adopted the templates immediately. The tradeoff: they were never formally added to the PDF, leaving a documented gap in the written guideline.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="design-iteration-title">Self-Initiated Extension — Web Version of the Design Guidelines *(In Progress)*</h6>
+                                            <p>The copy-paste gap in the PDF, combined with a post-departure rebrand that made the original file outdated, became the motivation for a self-initiated follow-up: a web-based version of the guidelines built to the branding I co-planned with the Marketing Head before leaving.
+                                            <br><br>
+                                            The web version is currently hosted on GitHub and addresses the one functional gap the PDF couldn't solve — live, copy-paste HTML and CSS that the Asset Team can access directly without opening a document. This project reflects a consistent practice in how I approach portfolio work: I don't just show the plan. I show the thing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Reflection-->
+                                <div class="block v-stack space-5" id="reflection">
+                                    <div class="v-stack space-5">
+                                        <div>
+                                            <h5>Reflection</h5>
+                                        </div>
+                                        <div>
+                                            <h6 class="reflection-title">What Worked</h6>
+                                            <p class="text-danger">Anchoring the guidelines to the marketing site's visual style gave the work immediate credibility without needing a formal brand system to exist first. Building the HTML widgets directly — rather than writing instructions for non-developers to follow — was the right call for the team's actual skill level and eliminated a layer of translation that would have introduced errors.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="reflection-title">What Remained Unresolved</h6>
+                                            <p>The HTML widget templates were never formally documented in the PDF. The illustration guidelines were followed inconsistently and eventually bypassed in favor of generative AI. The layout logic section caused confusion that a more visual, example-heavy format would have prevented.</p>
+                                        </div>
+                                        <div>
+                                            <h6 class="reflection-title">What I'd Do Differently</h6>
+                                            <p>
+                                                I'd scrap the PDF entirely and build a website from the start. The scope additions that came mid-project were signals that a static document wasn't the right medium. A web-based guideline would have accommodated all three deliverables natively, supported Glenn's copy-paste use case from day one, and remained easier to update as the brand evolved.
+                                                <br><br>
+                                                <span class="text-danger">
+                                                    I'd also use AI writing assistance earlier in the drafting process — not to replace judgment, but to keep the text from ballooning. My instinct to over-document is real, and a tool that pushes back on verbosity earlier would have saved a revision cycle.
+                                                </span>
+                                                <br><br>
+                                                Both lessons required the experience to surface. I wouldn't have known the medium was wrong until I saw what the work actually needed to become.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Case Study Content END-->
+                        </div>
+                    </div>
+                </div>
+
+                <!--Thank You START-->
+                <div class="section-container surface-dark">
+                    <div class="text-center" style="margin-bottom: 80px;">
+                        <img src="imgs/ty-badge.svg" alt="thank you badge">
+                    </div>
+                </div>
+                <!--Thank You END-->
+            </div>
+            <!--Case Study Content END-->
+
+
+            <!--Other Case Studies START-->
+            <!--Other Case Studies END-->
+
+            <!--Related Service START-->
+            <!--Related Service END-->
+
+            <!--footer START-->
+            <!--footer END-->
+        </div>
+
+        <!--scripts START-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="progress-bar.js"></script>
+        <script src="carousel.js"></script>
+        <script src="toc-highlight.js"></script>
+        <script src="before-after-block.js"></script>
+        <!--scripts END-->
+    </body>
+</html>
