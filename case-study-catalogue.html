@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--SEO START-->
+        <title>Case Study Catalogue | hellomaddie</title>
+        <meta name="description" content="Browse a growing catalogue of UX case studies across design systems, audits, and product improvements.">
+        <meta name="keywords" content="UX case studies, design system, UX audit, product design, portfolio">
+        <meta name="author" content="Bianca Maddela">
+        <!--SEO END-->
+
+        <!--Stylesheet START-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="main-style.css" rel="stylesheet">
+        <link href="components.css" rel="stylesheet">
+        <link href="catalogue.css" rel="stylesheet">
+        <!--Stylesheet END-->
+
+        <!--Fonts START-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--Fonts END-->
+    </head>
+
+    <body>
+        <!--Header START-->
+        <nav class="nav-container surface-dark">
+            <a class="brand-logo-desktop" href="index.html">
+                <img src="imgs/logo-desktop.svg" alt="hellomaddie logo">
+            </a>
+            <a class="brand-logo-tablet-mobile" href="index.html">
+                <img src="imgs/hellomaddie-white-logo.svg" alt="hellomaddie logo">
+            </a>
+            <!--Navigation Links-->
+            <div class="v-stack space-5 nav-wrapper text-center">
+                <a href="index.html">
+                    <div class="nav-item-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M11.9998 28V18.1333C11.9998 17.3866 11.9998 17.0132 12.1452 16.728C12.273 16.4771 12.477 16.2732 12.7279 16.1453C13.0131 16 13.3864 16 14.1332 16H17.8665C18.6132 16 18.9866 16 19.2718 16.1453C19.5227 16.2732 19.7267 16.4771 19.8545 16.728C19.9998 17.0132 19.9998 17.3866 19.9998 18.1333V28M2.6665 12.6667L14.7198 3.62667C15.1789 3.28241 15.4084 3.11028 15.6604 3.04393C15.8829 2.98536 16.1168 2.98536 16.3393 3.04393C16.5913 3.11028 16.8208 3.28241 17.2798 3.62667L29.3332 12.6667M5.33318 10.6667V23.7333C5.33318 25.2268 5.33318 25.9735 5.62383 26.544C5.87949 27.0457 6.28744 27.4537 6.7892 27.7094C7.35963 28 8.10637 28 9.59984 28H22.3998C23.8933 28 24.6401 28 25.2105 27.7094C25.7123 27.4537 26.1202 27.0457 26.3759 26.544C26.6665 25.9735 26.6665 25.2268 26.6665 23.7333V10.6667L18.5598 4.58667C17.6418 3.89815 17.1828 3.55389 16.6787 3.42119C16.2337 3.30405 15.766 3.30405 15.321 3.42119C14.8169 3.55389 14.3579 3.89815 13.4398 4.58667L5.33318 10.6667Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Home</div>
+                    </div>
+                </a>
+
+                <div class="nav-item-link dropdown dropend">
+                    <a class="d-flex align-items-center text-decoration-none text-reset dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Services</div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Heuristic UX Audit & PRD Write-Up</a></li>
+                        <li><a class="dropdown-item" href="#">Design System Build/Clean-up</a></li>
+                        <li><a class="dropdown-item" href="#">Website UX and Copy Optimization</a></li>
+                    </ul>
+                </div>
+
+                <a href="case-study-catalogue.html">
+                    <div class="nav-item-link-active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M11.9998 14.9625L17.0368 19.9996M10.633 27.9661C8.81052 29.7885 5.33317 29.3329 2.6665 29.3329C4.0333 26.6662 2.21086 23.1889 4.0333 21.3664C5.85575 19.544 8.81052 19.544 10.633 21.3664C12.4554 23.1889 12.4554 26.1436 10.633 27.9661ZM15.8953 21.2324L28.0781 8.07497C29.1512 6.91608 29.1166 5.11637 27.9998 3.99958C26.883 2.88279 25.0833 2.84819 23.9244 3.92123L10.767 16.104C10.087 16.7336 9.74708 17.0484 9.54881 17.3841C9.07336 18.1891 9.05423 19.1843 9.49838 20.007C9.68361 20.3501 10.0112 20.6777 10.6664 21.3329C11.3216 21.9881 11.6493 22.3157 11.9923 22.501C12.815 22.9451 13.8103 22.926 14.6153 22.4505C14.951 22.2523 15.2658 21.9123 15.8953 21.2324Z" stroke="#FFA385" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text-active">Case Studies</div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="nav-item-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <path d="M28.6665 24.0007L19.8094 16.0007M12.1903 16.0007L3.33322 24.0007M2.6665 9.33398L13.5531 16.9546C14.4346 17.5717 14.8754 17.8802 15.3549 17.9997C15.7784 18.1053 16.2213 18.1053 16.6448 17.9997C17.1243 17.8802 17.565 17.5717 18.4466 16.9546L29.3332 9.33398M9.0665 26.6673H22.9332C25.1734 26.6673 26.2935 26.6673 27.1491 26.2313C27.9018 25.8479 28.5137 25.2359 28.8972 24.4833C29.3332 23.6276 29.3332 22.5075 29.3332 20.2673V11.734C29.3332 9.49377 29.3332 8.37367 28.8972 7.51802C28.5137 6.76537 27.9018 6.15345 27.1491 5.76996C26.2935 5.33398 25.1734 5.33398 22.9332 5.33398H9.0665C6.82629 5.33398 5.70619 5.33398 4.85054 5.76996C4.09789 6.15345 3.48597 6.76537 3.10248 7.51802C2.6665 8.37367 2.6665 9.49377 2.6665 11.734V20.2673C2.6665 22.5075 2.6665 23.6276 3.10248 24.4833C3.48597 25.2359 4.09789 25.8479 4.85054 26.2313C5.70619 26.6673 6.82629 26.6673 9.0665 26.6673Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Contacts</div>
+                    </div>
+                </a>
+            </div>
+            <!--Navigation Links END-->
+            <!--Social Links START-->
+            <div class="social-links-wrapper">
+                <a href="https://www.youtube.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/youtube.svg" alt="YouTube">
+                </a>
+                <a href="https://medium.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/medium.svg" alt="Medium">
+                </a>
+                <a href="https://dribbble.com/hellomaddieUwU" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/dribbble.svg" alt="Dribbble">
+                </a>
+                <!--
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="imgs/twitter.svg" alt="Twitter">
+                -->
+            </div>
+            <!--Social Links END-->
+            <!--Mobile Menu Toggle START-->
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--Mobile Menu Toggle END-->
+        </nav>
+        <div class="mobile-menu-overlay"></div>
+        <!--Mobile Menu Content START-->
+            <div class="mobile-menu">
+                <div class="mobile-nav-wrapper">
+                    <a class="mobile-menu-item" href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a class="mobile-menu-item" href="case-study-catalogue.html">
+                        <p>Case Studies</p>
+                    </a>
+                    <div class="mobile-dropdown">
+                        <button type="button" class="mobile-menu-item mobile-dropdown-item" id="dropdownBtn">
+                            Services
+                            <img src="imgs/chevron-arrow.svg" alt="toggle" class="dropdown-arrow">
+                        </button>
+                        <ul class="mobile-dropdown-menu" id="dropdownMenu">
+                            <li><a href="#">Heuristic UX Audit & PRD Write-Up</a></li>
+                            <li><a href="#">Design System Build/Clean-up</a></li>
+                            <li><a href="#">Website UX and Copy Optimization</a></li>
+                        </ul>
+                    </div>
+                    <a class="mobile-menu-item" href="#">
+                        <p>Contacts</p>
+                    </a>
+                </div>
+                <div class="mobile-nav-socmed">
+                    <p class="md-text">Follow</p>
+                    <div class="d-flex gap-1">
+                        <img src="imgs/youtube.svg" alt="youtube">
+                        <a href="https://www.youtube.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
+                    </div>
+                    <div class="d-flex gap-1">
+                        <img src="imgs/medium.svg" alt="medium">
+                        <a href="https://medium.com/@hellomaddieUwU" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
+                    </div>
+                    <div class="d-flex gap-1">
+                        <img src="imgs/dribbble.svg" alt="dribble">
+                        <a href="https://dribbble.com/hellomaddieUwU" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
+                    </div>
+                </div>
+            </div>
+            <!--Mobile Menu Content END-->
+        <!--Header END-->
+
+        <div class="main-page">
+            <!--Case Studies Section START-->
+            <section id="case-studies" class="section-container catalogue-section">
+                <div class="catalogue-head v-stack space-3">
+                    <p class="label-primary">Case Study Catalogue</p>
+                    <h1 class="display-section-text catalogue-title">Case Studies</h1>
+                    <p class="catalogue-intro">A rough first pass to organize work by project type. Content and card polish will be refined in future issues.</p>
+                </div>
+
+                <div class="catalogue-switcher" role="tablist" aria-label="Case study groups">
+                    <button class="catalogue-toggle active" id="systems-tab" data-bs-toggle="tab" data-bs-target="#systems-panel" type="button" role="tab" aria-controls="systems-panel" aria-selected="true">Design Systems</button>
+                    <button class="catalogue-toggle" id="audits-tab" data-bs-toggle="tab" data-bs-target="#audits-panel" type="button" role="tab" aria-controls="audits-panel" aria-selected="false">UX Audits</button>
+                    <button class="catalogue-toggle" id="product-tab" data-bs-toggle="tab" data-bs-target="#product-panel" type="button" role="tab" aria-controls="product-panel" aria-selected="false">Product Improvements</button>
+                </div>
+
+                <div class="tab-content" id="catalogueTabContent">
+                    <div class="tab-pane fade show active" id="systems-panel" role="tabpanel" aria-labelledby="systems-tab" tabindex="0">
+                        <div class="catalogue-grid">
+                            <article class="catalogue-card">
+                                <img src="imgs/case-study-thumbnail-placeholder.svg" alt="Case study thumbnail placeholder">
+                                <div class="v-stack space-2">
+                                    <div class="h-stack space-2"><span class="pill pill-internal">Internal</span><span class="pill pill-tech">AI & Technology</span></div>
+                                    <h5>Crafting Guidelines for MSPbots' Asset Team</h5>
+                                    <p>Placeholder summary for the first catalogue draft. Final project details will be added in the next iteration.</p>
+                                </div>
+                                <a href="crafting-guildlines-for-mspbots-asset-team.html"><button class="btn-primary-outline">View Case Study</button></a>
+                            </article>
+
+                            <article class="catalogue-card">
+                                <img src="imgs/case-study-thumbnail-placeholder.svg" alt="Case study thumbnail placeholder">
+                                <div class="v-stack space-2">
+                                    <div class="h-stack space-2"><span class="pill pill-internal">Internal</span><span class="pill pill-tech">Design Ops</span></div>
+                                    <h5>Restructuring MSPbots' Design System</h5>
+                                    <p>Placeholder summary for the first catalogue draft. Final project details will be added in the next iteration.</p>
+                                </div>
+                                <a href="design-system-build.html"><button class="btn-primary-outline">View Case Study</button></a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="audits-panel" role="tabpanel" aria-labelledby="audits-tab" tabindex="0">
+                        <div class="catalogue-grid">
+                            <article class="catalogue-card">
+                                <img src="imgs/case-study-thumbnail-placeholder.svg" alt="Case study thumbnail placeholder">
+                                <div class="v-stack space-2">
+                                    <div class="h-stack space-2"><span class="pill pill-website">External</span><span class="pill pill-tech">Healthcare</span></div>
+                                    <h5>Heuristic UX Audit for Appointment Booking</h5>
+                                    <p>Placeholder summary for the first catalogue draft. Final project details will be added in the next iteration.</p>
+                                </div>
+                                <a href="ux-audit.html"><button class="btn-primary-outline">View Case Study</button></a>
+                            </article>
+
+                            <article class="catalogue-card">
+                                <img src="imgs/case-study-thumbnail-placeholder.svg" alt="Case study thumbnail placeholder">
+                                <div class="v-stack space-2">
+                                    <div class="h-stack space-2"><span class="pill pill-website">External</span><span class="pill pill-tech">SaaS</span></div>
+                                    <h5>Website UX and Copy Optimization Sprint</h5>
+                                    <p>Placeholder summary for the first catalogue draft. Final project details will be added in the next iteration.</p>
+                                </div>
+                                <a href="#"><button class="btn-primary-outline">View Case Study</button></a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="product-panel" role="tabpanel" aria-labelledby="product-tab" tabindex="0">
+                        <div class="catalogue-grid">
+                            <article class="catalogue-card">
+                                <img src="imgs/case-study-thumbnail-placeholder.svg" alt="Case study thumbnail placeholder">
+                                <div class="v-stack space-2">
+                                    <div class="h-stack space-2"><span class="pill pill-website">External</span><span class="pill pill-tech">Mobile App</span></div>
+                                    <h5>Vyepti Appointment Booking App</h5>
+                                    <p>Placeholder summary for the first catalogue draft. Final project details will be added in the next iteration.</p>
+                                </div>
+                                <a href="design-system-copy.html"><button class="btn-primary-outline">View Case Study</button></a>
+                            </article>
+
+                            <article class="catalogue-card">
+                                <img src="imgs/case-study-thumbnail-placeholder.svg" alt="Case study thumbnail placeholder">
+                                <div class="v-stack space-2">
+                                    <div class="h-stack space-2"><span class="pill pill-website">External</span><span class="pill pill-tech">Lead Gen</span></div>
+                                    <h5>Revamping Urban Rehab Singapore Website</h5>
+                                    <p>Placeholder summary for the first catalogue draft. Final project details will be added in the next iteration.</p>
+                                </div>
+                                <a href="#"><button class="btn-primary-outline">View Case Study</button></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Case Studies Section END-->
+
+            <!--Testimonials START-->
+            <div class="section-container">
+                <h3 class="text-center mb-3">What Clients Are Saying</h3>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item testimonial-carousel-item active">
+                            <div class="p-4 text-center">
+                                <p class="mb-2">"Maddie helped us clarify our UX direction and reduce user confusion."</p>
+                                <h6 class="mb-0">Alex R. • Product Lead</h6>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item testimonial-carousel-item">
+                            <div class="p-4 text-center">
+                                <p class="mb-2">"Our design system became easier to scale after her cleanup process."</p>
+                                <h6 class="mb-0">Jamie T. • Design Manager</h6>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item testimonial-carousel-item">
+                            <div class="p-4 text-center">
+                                <p class="mb-2">"Great balance of UX strategy and practical execution."</p>
+                                <h6 class="mb-0">Morgan P. • Founder</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!--Testimonials END-->
+
+            <!--CTA START-->
+            <section class="section-container catalogue-cta-wrap">
+                <div class="catalogue-cta">
+                    <div class="catalogue-cta-copy v-stack space-4">
+                        <p class="label-primary">Let's Build The Next One</p>
+                        <h3>Have a product flow that feels clunky?</h3>
+                        <p>Send over your current experience map, wireframe, or live page. I can help identify fast UX wins and shape your next iteration.</p>
+                        <div class="catalogue-cta-actions">
+                            <a href="index.html#contact"><button class="btn-primary">Start a Project</button></a>
+                            <a href="index.html#service"><button class="btn-secondary">See Services</button></a>
+                        </div>
+                    </div>
+                    <div class="catalogue-cta-note">
+                        <p class="md-text">Fast Start Checklist</p>
+                        <ul>
+                            <li>Core user flow</li>
+                            <li>Main friction points</li>
+                            <li>Business goal and timeline</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!--CTA END-->
+
+            <footer>
+                <div class="end d-flex justify-content-between">
+                    <p>© 2026 hellomaddie All Rights Reserved</p>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </footer>
+        </div>
+
+        <!--scripts START-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+        <script src="mobile-menu-toggle.js"></script>
+        <!--scripts END-->
+    </body>
+</html>
