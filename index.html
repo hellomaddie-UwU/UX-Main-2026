@@ -44,11 +44,18 @@
                     </div>
                 </a>
 
-                <div class="nav-item-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-                        <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <div class="nav-desktop-text">Services</div>
+                <div class="nav-item-link dropdown dropend">
+                    <a class="d-flex align-items-center text-decoration-none text-reset dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">Services</div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Heuristic UX Audit & PRD Write-Up</a></li>
+                        <li><a class="dropdown-item" href="#">Design System Build/Clean-up</a></li>
+                        <li><a class="dropdown-item" href="#">Website UX and Copy Optimization</a></li>
+                    </ul>
                 </div>
 
                 <a href="#">
@@ -107,7 +114,7 @@
                     </a>
                     <div class="mobile-dropdown">
                         <button type="button" class="mobile-menu-item mobile-dropdown-item" id="dropdownBtn">
-                            Options
+                            Services
                             <img src="imgs/chevron-arrow.svg" alt="toggle" class="dropdown-arrow">
                         </button>
                         <ul class="mobile-dropdown-menu" id="dropdownMenu">
