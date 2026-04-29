@@ -6,6 +6,7 @@ Table of Contents:
 4. Modal
 5. Infinite Marque
 6. Single Accordion Card
+7. Design System Top Bar Nav
 */
 
 /*Divider*/
@@ -361,6 +362,18 @@ Table of Contents:
     filter: brightness(0) saturate(100%);
 }
 /*Testimonial Carousel END*/
+
+/*Design System Top Bar Nav START*/
+.sticky-ds-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--surface-dark);
+    padding: 12px 32px;
+}
+
+.sticky-ds-navigation p {color: var(--clairvoyant-50); line-height: normal;}
+/*Design System Top Bar Nav END*/
 
 /*========================================================================*/
 
