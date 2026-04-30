@@ -1,4 +1,4 @@
-# Restructuring MSPbot's Design System
+# Restructuring MSPbot's Design System 
 
 ## Category
 - **Industry:** AI & Technology
