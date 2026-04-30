@@ -80,6 +80,10 @@
     color: white;
     font-weight: 300;
 }
+
+#solution-02, #solution-03 {
+    display: none;
+}
 /*Single Accordion Card END*/
 
 /*Toggle START*/
