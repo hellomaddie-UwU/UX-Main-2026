@@ -1,7 +1,7 @@
 # Building WoofPay's Design System for Multiple Channels
 
 ## Category
-- **Industry:** Finance, E-commerce, Events, Marketing
+- **Industry:** Finance, E-commerce, Events, Marketing. 
 - **Output Type:** Internal Documentation
 
 ## GDrive Link
