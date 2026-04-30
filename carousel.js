@@ -3,7 +3,47 @@ document.addEventListener('DOMContentLoaded', function () {
         const track = carousel.querySelector('.cs-carousel__track');
         if (!track) return;
 
-        if (track.querySelectorAll('.cs-carousel__slide').length < 2) return;
+        const slides = Array.from(track.querySelectorAll('.cs-carousel__slide'));
+        if (slides.length < 2) return;
+
+        // Fade mode — triggered by data-fade attribute on .cs-carousel
+        if (carousel.dataset.fade !== undefined) {
+            let current = 0;
+
+            track.style.position = 'relative';
+            slides.forEach(function (slide, i) {
+                slide.style.transition = 'opacity 0.4s ease';
+                if (i === 0) {
+                    slide.style.opacity = '1';
+                    slide.style.pointerEvents = '';
+                } else {
+                    slide.style.position = 'absolute';
+                    slide.style.top = '0';
+                    slide.style.left = '0';
+                    slide.style.width = '100%';
+                    slide.style.opacity = '0';
+                    slide.style.pointerEvents = 'none';
+                }
+            });
+
+            function fadeTo(index) {
+                slides[current].style.opacity = '0';
+                slides[current].style.pointerEvents = 'none';
+                slides[current].style.position = 'absolute';
+                current = (index + slides.length) % slides.length;
+                slides[current].style.position = 'relative';
+                slides[current].style.opacity = '1';
+                slides[current].style.pointerEvents = '';
+            }
+
+            const prevBtn = carousel.querySelector('.cs-carousel__btn-prev');
+            if (prevBtn) prevBtn.addEventListener('click', function () { fadeTo(current - 1); });
+
+            const nextBtn = carousel.querySelector('.cs-carousel__btn-next');
+            if (nextBtn) nextBtn.addEventListener('click', function () { fadeTo(current + 1); });
+
+            return;
+        }
 
         let isTransitioning = false;
         let direction = null;
