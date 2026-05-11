@@ -296,6 +296,7 @@ footer {
 .selection-content {
     border: 0.5px #8722A9 solid;
     overflow: hidden;
+    padding: 24px 32px;
 }
 
 .selection-content .row {
@@ -408,16 +409,15 @@ a {color: #A12ECB;}
 
 .label-primary, .label-secondary {
     font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .label-primary {
-    font-weight: 500;
-    color: #8722A9;
+    color: var(--clairvoyant-600);
 }
 
 .label-secondary {
-    font-weight: 600;
-    text-transform: uppercase;
     color: #3E4784;
 }
 
@@ -438,11 +438,19 @@ a {color: #A12ECB;}
     line-height: 23px;
 }
 
-.impact-title, .features-title, .research-title, .design-iteration-title, .reflection-title {
+.case-study-subtitle, .features-title, .research-title, .design-iteration-title, .reflection-title {
     font-size: 17px;
     font-weight: 600;
     line-height: 28px;
     color: var(--text-body);
+}
+
+.side-note {
+    color: var(--clairvoyant-600);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 23px; /* 164.286% */
 }
 
 /*========================================================================*/

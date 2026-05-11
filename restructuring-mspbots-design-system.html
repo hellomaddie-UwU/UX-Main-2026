@@ -156,13 +156,15 @@
                     </div>
                     <h1 class="case-study-title">Restructuring MSPbot's Design System</h1>
                 </div>
-                <img class="case-study-featured-img" src="imgs/placeholder-img-sample.png" alt="featured image">
+                <div class="case-study-featured-wrap">
+                    <img class="case-study-featured-img" src="imgs/placeholder-img-sample.png" alt="featured image">
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-7">
                             <div class="d-flex align-items-center gap-2">
                                 <p class="fw-medium">Contract Duration</p> 
-                                <div class="orange-dot"></div>
+                                <img class="orange-dot" src="imgs/orange-dot.svg" alt="dot divider">
                                 <p>2025</p> <!--contract date-->
                             </div>
                             <h5 class="case-study-excerpt text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi exercitationem, id atque numquam nihil reprehenderit saepe inventore doloribus ex ab voluptatem, iusto rerum sapiente sint eaque incidunt quod similique commodi..</h5>
@@ -175,7 +177,7 @@
                                 <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
                                 <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
                                 <!--Selector Boxes END-->
-                                <div class="selection-content p-3" style="background-color: rgb(166, 44, 44);">
+                                <div class="selection-content" style="background-color: rgb(166, 44, 44);">
                                     <h6 class="mb-3 text-white">Expected Delivery</h6>
                                     <div class="v-stack space-3 align-items-start">
                                         <div class="d-flex justify-content-center gap-2">
@@ -266,7 +268,7 @@
                                     <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
                                     <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
                                     <!--Selector Boxes END-->
-                                    <div class="selection-content p-3">
+                                    <div class="selection-content">
                                         <p class="table-of-contents">Table of Contents</p>
                                         <div id="toc-heart-row" class="d-flex gap-2">
                                             <div id="toc-heart-wrapper" style="width: 10%;">
@@ -318,15 +320,15 @@
                                                 <div class="col-3">
                                                     <p class="thead">Team</p>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <div class="orange-dot"></div>
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
                                                         <p>Bianca Maddela (Me)</p>
                                                     </div>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <div class="orange-dot"></div>
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
                                                         <p>Nora Li (UX/UI Designer)</p>
                                                     </div>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <div class="orange-dot"></div>
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
                                                         <p class="text-danger">Grace [last name]<br>(Product Manager)</p>
                                                     </div>
                                                 </div>
@@ -337,15 +339,15 @@
                                                 <div class="col-3">
                                                     <p class="thead">Role</p>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <div class="orange-dot"></div>
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
                                                         <p>UX/UI Designer</p>
                                                     </div>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <div class="orange-dot"></div>
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
                                                         <p>UX Writer</p>
                                                     </div>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <div class="orange-dot"></div>
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
                                                         <p>AI Agent Developer</p>
                                                     </div>
                                                 </div>
@@ -370,14 +372,14 @@
                                                 <div class="h-stack space-3 align-items-start">
                                                     <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
                                                     <div class="v-stack">
-                                                        <div class="impact-title">Result 1 — Complete Basic Component Library</div>
+                                                        <div class="case-study-subtitle">Result 1 — Complete Basic Component Library</div>
                                                         <p class="text-danger">All basic components were documented by end of year, with variant properties defined and design tokens attached. The Figma file became an internally sourced reference independent of Element Plus' external documentation — the original goal for Phase 1.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
                                                     <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
                                                     <div class="v-stack">
-                                                        <div class="impact-title">Result 2 — Accessibility and Writing Standards Established</div>
+                                                        <div class="case-study-subtitle">Result 2 — Accessibility and Writing Standards Established</div>
                                                         <p>Two additional documentation layers were completed beyond the initial brief: an Accessibility Doc and Writing Guidelines. These were self-initiated based on observed gaps and represent the only written standards of their kind produced for the Legacy Product design system.
                                                         </p>
                                                     </div>
@@ -385,21 +387,21 @@
                                                 <div class="h-stack space-3 align-items-start">
                                                     <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
                                                     <div class="v-stack">
-                                                        <div class="impact-title">Result 3 — Adoption Did Not Occur as Intended</div>
+                                                        <div class="case-study-subtitle">Result 3 — Adoption Did Not Occur as Intended</div>
                                                         <p class="text-danger">By the time the system was complete, the PM and development teams had shifted to using ChatGPT to generate mockups directly. The design system was never adopted as the team's primary source of truth. The organizational conditions that would have driven adoption — designer-led mockup workflows and a stable Legacy Product roadmap — had already changed.*</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
                                                     <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
                                                     <div class="v-stack">
-                                                        <div class="impact-title">Result 4 — Phases 2 and 3 Were Cancelled</div>
+                                                        <div class="case-study-subtitle">Result 4 — Phases 2 and 3 Were Cancelled</div>
                                                         <p>The company's strategic pivot toward AI app development made Legacy Product UI enhancement a lower priority than new feature development. Combined with a mass layoff across multiple departments, Phases 2 and 3 were never initiated. The design system remains a complete Phase 1 artifact with no current continuation plan.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
                                                     <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
                                                     <div class="v-stack">
-                                                        <div class="impact-title">Result 5 — GPT Contribution Interrupted</div>
+                                                        <div class="case-study-subtitle">Result 5 — GPT Contribution Interrupted</div>
                                                         <p class="text-danger">A self-initiated GPT agent — designed to help team members query the design system and assess mockup feasibility — was in progress as part of the company's AI contribution initiative. It was not completed before the layoff. A parallel initiative by teammate Nora Li, a vibe-coded website version of the design system, was similarly interrupted by tooling friction and resource constraints.</p>
                                                     </div>
                                                 </div>
