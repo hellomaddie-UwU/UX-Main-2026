@@ -149,6 +149,13 @@
         <div class="main-page">
             <!--Hero Section START-->
             <header class="section-container">
+                <div aria-label="breadcrumb" style="margin-bottom: 24px;">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="case-study-catalogue.html">Case Studies</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Restructuring MSPbot's Design System</li>
+                    </ol>
+                </div>
                 <div class="v-stack">
                     <div class="h-stack space-2">
                         <span class="pill pill-internal">Internal Documentation</span>
@@ -157,17 +164,17 @@
                     <h1 class="case-study-title">Restructuring MSPbot's Design System</h1>
                 </div>
                 <div class="case-study-featured-wrap">
-                    <img class="case-study-featured-img" src="imgs/placeholder-img-sample.png" alt="featured image">
+                    <img class="case-study-featured-img" src="imgs/featured-imgs/featured-img-2.png" alt="featured image">
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-7">
                             <div class="d-flex align-items-center gap-2">
-                                <p class="fw-medium">Contract Duration</p> 
+                                <p class="fw-medium">Contract Period</p> 
                                 <img class="orange-dot" src="imgs/orange-dot.svg" alt="dot divider">
-                                <p>2025</p> <!--contract date-->
+                                <p>Q1 - Q4 2025</p> <!--contract date-->
                             </div>
-                            <h5 class="case-study-excerpt text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi exercitationem, id atque numquam nihil reprehenderit saepe inventore doloribus ex ab voluptatem, iusto rerum sapiente sint eaque incidunt quod similique commodi..</h5>
+                            <h5 class="case-study-excerpt">A year-long background project with my colleague, Nora Li, where I’ve documented and aligned all basic components, plus authored an Accessibility Doc and Writing Guidelines doc independently.</h5>                           
                         </div>
                         <div class="col-5">
                             <div class="selection-container">
@@ -177,30 +184,23 @@
                                 <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
                                 <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
                                 <!--Selector Boxes END-->
-                                <div class="selection-content" style="background-color: rgb(166, 44, 44);">
-                                    <h6 class="mb-3 text-white">Expected Delivery</h6>
-                                    <div class="v-stack space-3 align-items-start">
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
-                                            <p class="text-white">**Figma Design System File**</p>
-                                            <!--Documentation of all basic components from the Legacy Product, aligned with Element Plus' component structure and enriched with variant properties and design tokens.-->
+                                <div class="selection-content">
+                                    <div class="v-stack space-1">
+                                        <p class="md-text">Deliverables</p>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Figma Design System File</p>
                                         </div>
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
-                                            <p class="text-white">**Accessibility Documentation**</p>
-                                            <!--Written guidelines covering accessibility standards relevant to the design system, authored independently due to English fluency advantage within the team.-->
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Accessibility Documentation</p>
                                         </div>
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
-                                            <p class="text-white">**Writing Guidelines**</p>
-                                            <!--Documentation on writing standards and tone, informed by external design system references and adapted to MSPbots.ai's internal context.-->
-                                        </div>
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
-                                            <p class="text-white">**Design System GPT Agent**</p>
-                                            <!--A self-initiated AI contribution intended to answer design system questions and help team members determine whether a proposed mockup was feasible before execution. Aligned with the company's broader AI-first culture initiative.-->
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Writing Guidelines</p>
                                         </div>
                                     </div>
+                                    <!--Do not add extended scope without it actually being finished first.-->
                                 </div>
                             </div>
                         </div>
@@ -300,37 +300,22 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Context</h5>
-                                            <p class="text-danger">
-                                                MSPbots.ai's existing design system was a rough, personal file built primarily for one designer to understand. It wasn't built for a team — new designers joining had no reliable reference for how the product's components were structured or applied. Components in the system were also incomplete and didn't accurately reflect what existed in the Legacy Product, forcing designers to spend extra time reconciling mockups against the real interface.
-                                                <br><br>
-                                                The project was formally scoped as three phases — documentation, enhancement, and UI application — but was consistently treated as a low-priority background task, worked on between higher-priority assignments throughout the year.
-                                            </p>
-                                            <br><br>
-                                            <p class="text-danger">The restructuring project was initiated to fix this:</p>
-                                            <ol class="text-danger"> 
-                                                <li>create a design system that a new designer could open and understand independently</li>
-                                                <li>that matched the actual product; and</li>
-                                                <li>that could eventually replace the team's reliance on Element Plus' external documentation site</li>
-                                            </ol>
-                                            <p class="text-danger">The project was formally scoped as three phases — documentation, enhancement, and UI application — but was consistently treated as a low-priority background task, worked on between higher-priority assignments throughout the year.</p>
-
+                                            <p>MSPbots’ design system at the time was originally rough and had a lot of missing components. Due to this, the library didn’t reflect the existing Legacy Product, forcing designers to spend extra time reconciling mockups against the real interface.</p>
+                                            <br>
+                                            <p>The restructuring project was initiated to fix the following: </p>
+                                            <ol>
+                                                <li>Have a design system that new designers could open and understand independently</li>
+                                                <li>The components matching the actual product; and  </li>
+                                                <li>The availability to replace the team's reliance on Element Plus' external documentation site. </li>
+                                            </ol>                                           
+                                            <p>The project was also formally scoped into three phases: documentation, enhancement, then UI application, but was consistently treated as a low-priority background task, worked on between higher-priority assignments throughout the year.</p>
                                         </div>
                                         <div class="block-table">
                                             <div class="row">
-                                                <div class="col-3">
+                                                <div class="col-2">
                                                     <p class="thead">Team</p>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>Bianca Maddela (Me)</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>Nora Li (UX/UI Designer)</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p class="text-danger">Grace [last name]<br>(Product Manager)</p>
-                                                    </div>
+                                                    <p>Me</p>
+                                                    <p>Nora Li</p>
                                                 </div>
                                                 <div class="col-2">
                                                     <p class="thead">Duration</p>
@@ -338,22 +323,28 @@
                                                 </div>
                                                 <div class="col-3">
                                                     <p class="thead">Role</p>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>UX/UI Designer</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>UX Writer</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>AI Agent Developer</p>
-                                                    </div>
+                                                    <p>UX/UI Designer</p>
+                                                    <p>UX Writer</p>
+                                                    <p>AI Agent Developer</p>
                                                 </div>
-                                                <div class="col-4">
-                                                    <p class="thead text-danger">Skills</p>
-                                                    <p class="text-danger">Define later</p>
+                                                <div class="col-5">
+                                                    <p class="thead">Skills</p>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>UI Auditing</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>Writing</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>Designing and Project Management</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>Researching</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -364,45 +355,44 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Impact</h5>
-                                            <p>Phase 1 delivered a complete documentation foundation. The conditions for adoption, however, shifted faster than the project could land.</p>
+                                            <p>Phase 1 delivered a complete documentation foundation, however the conditions for adoption was shifted faster than the project could land.</p>
                                         </div>
                                         <div>
-                                            <h6 class="fw-medium text-danger">Subheader</h6>
+                                            <h6 class="w-600">The Design System's Outcome</h6>
                                             <div class="v-stack space-3 mt-2">
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 1 — Complete Basic Component Library</div>
-                                                        <p class="text-danger">All basic components were documented by end of year, with variant properties defined and design tokens attached. The Figma file became an internally sourced reference independent of Element Plus' external documentation — the original goal for Phase 1.</p>
+                                                        <div class="case-study-subtitle">Result 1: Complete Basic and Custom Component Library</div>
+                                                        <p>All components were documented by end of year, with variant properties defined and design tokens attached. The Figma file became an internally sourced reference independent of Element Plus' external documentation.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 2 — Accessibility and Writing Standards Established</div>
-                                                        <p>Two additional documentation layers were completed beyond the initial brief: an Accessibility Doc and Writing Guidelines. These were self-initiated based on observed gaps and represent the only written standards of their kind produced for the Legacy Product design system.
-                                                        </p>
+                                                        <div class="case-study-subtitle">Result 2: Accessibility and Writing Standards Established</div>
+                                                        <p>Two additional documentation layers were completed beyond the initial brief. The Accessibility & Writing Guidelines doc were self-initiated based on observed gaps, and they represent the only written standards of their kind for the Legacy Product design system.</p>
+                                                    </div>
+                                                </div>                                                                                            
+                                                <div class="h-stack space-3 align-items-start">
+                                                    <img class="mt-1" src="imgs/pin-point-sad.svg" alt="room to further improve">
+                                                    <div class="v-stack">
+                                                        <div class="case-study-subtitle">Result 3: Adoption Did Not Occur as Intended</div>
+                                                        <p>By the time the system was complete, the PM and Dev Teams had shifted to using ChatGPT to generate mockups directly. The design system was never fully adopted as the team's primary source of truth. The organizational conditions that would have driven adoption(designer-led mockup workflows and a stable Legacy Product roadmap) had already changed.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sad.svg" alt="room to further improve">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 3 — Adoption Did Not Occur as Intended</div>
-                                                        <p class="text-danger">By the time the system was complete, the PM and development teams had shifted to using ChatGPT to generate mockups directly. The design system was never adopted as the team's primary source of truth. The organizational conditions that would have driven adoption — designer-led mockup workflows and a stable Legacy Product roadmap — had already changed.*</p>
+                                                        <div class="case-study-subtitle">Result 4: Phase 2(Enhancement) and Phase 3(UI Application) Were Cancelled</div>
+                                                        <p>The company's strategic pivot towards AI app development made the Legacy Product’s UI enhancement a lower priority. Combined with a mass layoff across multiple departments, Phases 2 and 3 were never initiated. The design system remains a complete Phase 1 artifact with no current continuation plan.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sad.svg" alt="room to further improve">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 4 — Phases 2 and 3 Were Cancelled</div>
-                                                        <p>The company's strategic pivot toward AI app development made Legacy Product UI enhancement a lower priority than new feature development. Combined with a mass layoff across multiple departments, Phases 2 and 3 were never initiated. The design system remains a complete Phase 1 artifact with no current continuation plan.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
-                                                    <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 5 — GPT Contribution Interrupted</div>
-                                                        <p class="text-danger">A self-initiated GPT agent — designed to help team members query the design system and assess mockup feasibility — was in progress as part of the company's AI contribution initiative. It was not completed before the layoff. A parallel initiative by teammate Nora Li, a vibe-coded website version of the design system, was similarly interrupted by tooling friction and resource constraints.</p>
+                                                        <div class="case-study-subtitle">Result 5: GPT Contribution Interrupted</div>
+                                                        <p>A self-initiated GPT agent that was designed to help team members query the design system and assess mockup feasibility was in progress as part of the company's AI contribution initiative. It was not completed before the layoff. A parallel initiative by Nora was a vibe-coded website version of the design system was finished but got paused due to dev unavailability.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -412,33 +402,244 @@
                                 <!--Features-->
                                 <div class="block v-stack space-5" id="features">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Features</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint cumque rerum quidem ut natus, atque accusantium neque earum recusandae nisi culpa aspernatur possimus minima sit ducimus impedit, laborum dolorem.</p>
+                                        <h5>Features</h5>     
+                                        <!--Feature #1 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 1</div>
+                                                <h6 class="features-title">All Component Documentation</h6>
+                                                <p>Each basic component was documented with its variant properties, design tokens, and applicable states, building a foundation that matched the actual Legacy Product rather than a theoretical or aspirational component set. Discrepancies between the design system and the real product were identified through page-by-page audit of the Legacy App.</p>  
+                                            </div>
+                                            <div class="feature-display">
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                        <div class="case-study-subtitle">Basic Components</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/1.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 1</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/2.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 2</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/3.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 3</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/4.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 4</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <!--Feature #1 END-->                                
+                                        <!--Feature #2 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 2</div>
+                                                <h6 class="features-title">Admin View vs. Client View Differentiation</h6>
+                                                <p>A late-stage discovery revealed that the table component rendered completely differently depending on whether the user was in admin view or client view. These were not minor style differences, they were substantively different UI states of the same component. The inconsistencies were surfaced, documented, and resolved as a feature enhancement rather than being left as silent gaps in the system.</p>
+                                            </div>
+                                            <div class="feature-display">
+                                                <div class="indiv-case-study-img-container mb-4">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="indiv-case-study-img-container">
+                                                                <div class="indiv-case-study-img">
+                                                                    <img src="imgs/case-study-imgs/02/5.png" alt="insert-image-description">
+                                                                </div>                                                
+                                                                <div class="case-study-img-caption">image caption 5</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="indiv-case-study-img-container">
+                                                                <div class="indiv-case-study-img">
+                                                                    <img src="imgs/case-study-imgs/02/6.png" alt="insert-image-description">
+                                                                </div>                                                
+                                                                <div class="case-study-img-caption">image caption 6</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                        <div class="case-study-subtitle">Table Subcomponents</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/7.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 7</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/8.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 8</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/9.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 9</div>
+                                                            </div>
+                                                        </div>                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <!--Feature #2 END-->   
+                                        <!--Feature #3 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 3</div>
+                                                <h6 class="features-title">Accessibility Documentation</h6>
+                                                <p>Written standards covering accessibility considerations for the Legacy Product design system. Informed by external design system references and authored independently. Intended as a baseline reference for designers and eventually, developers.</p>                                               
+                                            </div>
+                                            <div class="feature-display">
+                                                <div>
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img">
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption 10</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <!--Feature #3 END-->
+                                        <!--Feature #4 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 3</div>
+                                                <h6 class="features-title">Writing Guidelines</h6>
+                                                <p>Internal documentation establishing writing standards and tone for the product. Adapted from external references to fit MSPbots.ai's context. Authored independently due to English fluency advantage within the team.</p>                                              
+                                            </div>
+                                            <div class="feature-display">
+                                                <div>
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img">
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption 11</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--Feature #4 END-->
+                                        <!--Feature #5 START-->
+                                        <div class="feature-block-end">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 5</div>
+                                                <h6 class="features-title">Design Tokens and Element Plus Figma Library Integration</h6>
+                                                <p>Upon discovering that Element Plus maintained an official Figma library, the workflow shifted: rather than building components from scratch, components were copy-pasted from the library,  and variant properties were adjusted to match the Legacy Product. 80% of the remaining Primitive and Token Variants were still fleshed out manually, but time saved was still significant nonetheless.</p>
+                                                <div class="side-note">Though observed efficiency was gained, no formal time measurement was tracked*</div>                                           
+                                            </div>
+                                            <div class="feature-display">
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                        <div class="case-study-subtitle">Table Subcomponents</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">
+                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">
+                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/10.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 10</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/11.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 11</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/12.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 12</div>
+                                                            </div>
+                                                        </div>   
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame">
+                                                                    <img src="imgs/case-study-imgs/02/13.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption 13</div>
+                                                            </div>
+                                                        </div>                                                      
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h6 class="features-title">Basic Component Documentation</h6>
-                                            <p class="text-danger">Each basic component was documented with its variant properties, design tokens, and applicable states — building a foundation that matched the actual Legacy Product rather than a theoretical or aspirational component set. Discrepancies between the design system and the real product were identified through page-by-page audit of the Legacy App.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Admin View vs. Client View Differentiation</h6>
-                                            <p class="text-danger">A late-stage discovery revealed that several components rendered completely differently depending on whether the user was in admin view or client view. These were not minor style differences — they were substantively different UI states of the same component. The inconsistencies were surfaced, documented, and resolved as a feature enhancement rather than being left as silent gaps in the system.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Accessibility Documentation</h6>
-                                            <p class="text-danger">Written standards covering accessibility considerations for the Legacy Product design system. Informed by external design system references and authored independently. Intended as a baseline reference for designers and, eventually, developers.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Writing Guidelines</h6>
-                                            <p class="text-danger">Internal documentation establishing writing standards and tone for the product. Adapted from external references to fit MSPbots.ai's context. Authored independently due to English fluency advantage within the team.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Design Tokens and Element Plus Figma Library Integration</h6>
-                                            <p class="text-danger">Upon discovering that Element Plus maintained an official Figma library, the workflow shifted: rather than building components from scratch, components were copy-pasted from the library, variant properties were adjusted to match the Legacy Product, and existing design tokens were attached. This meaningfully reduced the time cost of an already low-priority task.
-                                            <br>
-                                            <i>*(Observed efficiency gain — no formal time measurement was tracked.)*</i>
-                                            </p>
-                                        </div>
+                                        <!--Feature #5 END-->            
                                     </div>
                                 </div>
                                 <!--Research & Discovery-->
