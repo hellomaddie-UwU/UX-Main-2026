@@ -80,6 +80,10 @@
     color: white;
     font-weight: 300;
 }
+
+.ICP-solution-content {
+    display: none;
+}
 /*Single Accordion Card END*/
 
 /*Toggle START*/

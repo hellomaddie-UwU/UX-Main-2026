@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		card.classList.toggle('accordion-card-default', !isActive);
 	};
 
+	const setSolutionVisibility = (activeCardId) => {
+		const solutionId = activeCardId ? activeCardId.replace('scenario-', 'solution-') : null;
+		document.querySelectorAll('.ICP-solution-content').forEach((el) => {
+			el.style.display = el.id === solutionId ? 'block' : 'none';
+		});
+	};
+
 	accordionCards.forEach((card) => {
 		const scenarioSection = card.querySelector('.accordion-scenario');
 		const outcomeSection = card.querySelector('.accordion-outcome');
@@ -20,12 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			if (isCurrentlyActive) {
 				setCardActiveState(card, false);
+				setSolutionVisibility(null);
 				return;
 			}
 
 			accordionCards.forEach((otherCard) => {
 				setCardActiveState(otherCard, otherCard === card);
 			});
+
+			setSolutionVisibility(card.id);
 		};
 
 		if (scenarioSection) {
@@ -36,4 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			outcomeSection.addEventListener('click', handleCardToggle);
 		}
 	});
+
+	// Set initial state: show solution matching the initially active card
+	const initialActive = document.querySelector('.accordion-card-active');
+	if (initialActive) {
+		setSolutionVisibility(initialActive.id);
+	}
 });
