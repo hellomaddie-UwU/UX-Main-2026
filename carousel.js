@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 slides[current].style.opacity = '0';
                 slides[current].style.pointerEvents = 'none';
                 slides[current].style.position = 'absolute';
+                slides[current].style.top = '0';
+                slides[current].style.left = '0';
+                slides[current].style.width = '100%';
                 current = (index + slides.length) % slides.length;
                 slides[current].style.position = 'relative';
                 slides[current].style.opacity = '1';

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const setSolutionVisibility = (activeCardId) => {
 		const solutionId = activeCardId ? activeCardId.replace('scenario-', 'solution-') : null;
-		document.querySelectorAll('.solution-content').forEach((el) => {
+		document.querySelectorAll('.ICP-solution-content').forEach((el) => {
 			el.style.display = el.id === solutionId ? 'block' : 'none';
 		});
 	};
