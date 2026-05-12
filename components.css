@@ -7,6 +7,7 @@ Table of Contents:
 5. Infinite Marque
 6. Single Accordion Card
 7. Design System Top Bar Nav
+8. Gallery Placeholder Image
 */
 
 /*Divider*/
@@ -372,6 +373,14 @@ Table of Contents:
 
 .sticky-ds-navigation p {color: var(--clairvoyant-50); line-height: normal;}
 /*Design System Top Bar Nav END*/
+
+/*Gallery Placeholder Image START*/
+.placeholder-gallery-img {
+    width: 100%;
+    background-color: #E2AFF8;
+    border-radius: 12px;
+}
+/*Gallery Placeholder Image END*/
 
 /*========================================================================*/
 
