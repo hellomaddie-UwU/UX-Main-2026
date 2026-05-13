@@ -627,25 +627,57 @@
                                 <!--Key Insights-->
                                 <div class="block v-stack space-5" id="key-insights">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Key Insights</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, suscipit neque fugiat numquam nihil impedit. Eligendi pariatur expedita magnam iste alias, quos impedit quidem perferendis fuga, harum dicta necessitatibus nihil.</p>
+                                        <h5>Key Insights</h5>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item is-open">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                        <p><span class="situation-bold">Because</span> the existing screens had no shared visual standard... <span class="situation-bold">it lead to</span> the guideline needed to be prescriptive rather than flexible.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Adding a Do’s and Don’ts format would removed design ambiguity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <i>**Because the existing screens had no shared visual standard, the guideline needed to be prescriptive rather than flexible.**</i>
-                                            <p>Giving the Asset Team design options would have reproduced the inconsistency problem. The Do's and Don'ts format removed ambiguity by design.</p>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                        <p><span class="situation-bold">Because</span> no brand guideline existed... <span class="situation-bold">it lead to</span> the marketing site becoming the most defensible visual anchor.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Connecting the Welcome Screens to the marketing site was my opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <i>**Because no brand guideline existed, the marketing site became the most defensible visual anchor.**</i>
-                                            <p class="text-danger">Connecting Welcome Screens to the marketing site's style wasn't a compromise — it was an opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the Asset Team had no design background, medium and format mattered as much as content.**</i>
-                                            <p class="text-danger">The layout logic section — covering conditional decisions like when to use 3 columns versus a simpler structure — caused the most confusion in practice. A more visual, example-driven approach would have served them better.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because scope expanded mid-project, the output type deserved to be questioned.**</i>
-                                            <p class="text-danger">The scope additions — CSS instructions, copy-paste HTML — pointed toward a web-based format from the start. A guideline website would have served the Asset Team's actual usage patterns better than a static PDF.</p>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                        <p><span class="situation-bold">Because</span> the scope expanded mid-project... <span class="situation-bold">it lead to</span> the output type deserving to be questioned.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>On top of the scope additions, it made me realize that this project should have been a web-based format from the start. A guideline website would have served the Asset Team’s actual usage patterns better than a static PDF file.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -714,6 +746,7 @@
         <script src="carousel.js"></script>
         <script src="toc-highlight.js"></script>
         <script src="before-after-block.js"></script>
+        <script src="key-insights-accordion.js"></script>
         <!--scripts END-->
     </body>
 </html>
