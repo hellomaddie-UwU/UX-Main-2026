@@ -43,7 +43,7 @@ html, body {
     /*Shadows*/
     --text-shadow-color: #FF6D92;
 
-    /*Color Palette*/
+    /*Color Palette -- can delete this -- */
     --clairvoyant-50: #FBF4FF;
     --clairvoyant-100: #F6E9FE;
     --clairvoyant-200: #EDD2FC;
@@ -53,6 +53,7 @@ html, body {
     --clairvoyant-700: #8722A9;
     --clairvoyant-900: #5F1E71;
 
+    /*-- can delete this --*/
     --razzmatazz-500: #F93A70;
 
     --tangerine-400: #FFA385;
@@ -705,5 +706,7 @@ input:user-invalid {
     .mobile-menu-item {
         padding: 20px 0px;
     }
+
+    .btn-primary-outline {text-align: center;}
 }
 /*========================================================================*/

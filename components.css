@@ -273,20 +273,6 @@ Table of Contents:
     width: 100%;
 }
 
-.cs2-slider__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: 1px solid currentColor;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    color: inherit;
-    padding: 0;
-}
-
 .cs2-slider__dots {
     display: flex;
     justify-content: center;
@@ -361,7 +347,7 @@ Table of Contents:
     filter: brightness(0) saturate(100%);
 }
 
-.cs-carousel__btn-prev, .cs-carousel__btn-next {
+.cs-carousel__btn-prev, .cs-carousel__btn-next, .cs2-slider__btn {
     padding: 10px 17px;
     border-radius: 99px;
     border: 1px solid #D5D9EB;
@@ -369,7 +355,7 @@ Table of Contents:
     stroke: #B3B8DB;
 }
 
-.cs-carousel__btn-prev:hover, .cs-carousel__btn-next:hover {
+.cs-carousel__btn-prev:hover, .cs-carousel__btn-next:hover, .cs2-slider__btn:hover {
     background-color: #4B095D;
     border-color: #4B095D;
     stroke: #FBF4FF;
@@ -415,8 +401,9 @@ Table of Contents:
     }
 
     .case-study-thumbnail {
-        height: 250px;
+        height: 380px;
         width: 100%;
+        object-position: center;
     }
 
     .case-study-info {
@@ -468,6 +455,10 @@ Table of Contents:
     .featured-works-tablet-mobile > .title, .cs2-slider__slide {
         padding-left: var(--space-2);
         padding-right: var(--space-2);
+    }
+
+    .case-study-thumbnail {
+        height: 320px;
     }
 }
 /*========================================================================*/
