@@ -360,6 +360,20 @@ Table of Contents:
 #testimonialCarousel .carousel-control-next-icon {
     filter: brightness(0) saturate(100%);
 }
+
+.cs-carousel__btn-prev, .cs-carousel__btn-next {
+    padding: 10px 17px;
+    border-radius: 99px;
+    border: 1px solid #D5D9EB;
+    background-color: #EAECF5;
+    stroke: #B3B8DB;
+}
+
+.cs-carousel__btn-prev:hover, .cs-carousel__btn-next:hover {
+    background-color: #4B095D;
+    border-color: #4B095D;
+    stroke: #FBF4FF;
+}
 /*Testimonial Carousel END*/
 
 /*Design System Top Bar Nav START*/
