@@ -17,8 +17,25 @@ Github Issues to Write
         ☐ Create a title, description, and alt text for each image on the home page
         ☐ Create SEO metadata for the home page, including title tags and meta descriptions
     ### Design-related
+    	☐ Create a favicon for the website
         ☐ Create the OG Image for SEO
     ### Component-related
 
+## Design System Zero
+    ### Copy-related
+        ☐ Create a title, description, and alt text for each image on the home page
+        ☐ Create SEO metadata for the home page, including title tags and meta descriptions
+    ### Design-related
+        ☐ Create the OG Image for SEO
+    ### Component-related
+    	☐ Create the 'This Service is Ideal For' accordion.
+    	☐ Create official tab behavior(the one that's connected to the Without Service XYZ, etc)
 
+### Clean Code
+	☐ Unify the inset imgs into one class(case study featured image, case study image, service featured image, etc).
 
+### Service Template
+	### Component-related
+    	☐ Create Tab Interactive Behavior
+        ☐ Create Accordion Component A
+        ☐ Create Accordion Component B

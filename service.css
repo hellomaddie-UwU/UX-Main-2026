@@ -3,6 +3,7 @@
 2. Toggle
 3. Timeline Vertical Scroll
 4. Case Study Image
+5. Featured Image
 */
 
 /*Single Accordion Card START*/
@@ -101,7 +102,9 @@
 .toggle-button {
     cursor: pointer;
     color: white;
-    width: 200px;
+    /*width: 225px;*/
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     font-weight: 400;
     font-size: 14px;
@@ -111,7 +114,9 @@
 .toggle-active-bg {
     background-color: var(--clairvoyant-200);
     height: 60%;
-    width: 200px;
+    /*width: 225px;*/
+    padding-left: 20px;
+    padding-right: 20px;
     position: absolute;
     left: 16px;
     border-radius: var(--space-6);
@@ -218,6 +223,33 @@
         position: static;
     }
 }
+
+/*Featured Image START*/
+.service-featured-wrap {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.service-featured-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    box-shadow: 0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
+}
+
+.service-featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/*Featured Image END*/
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
