@@ -377,15 +377,7 @@ Table of Contents:
 /*Testimonial Carousel END*/
 
 /*Design System Top Bar Nav START*/
-.sticky-ds-navigation {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--surface-dark);
-    padding: 12px 32px;
-}
 
-.sticky-ds-navigation p {color: var(--clairvoyant-50); line-height: normal;}
 /*Design System Top Bar Nav END*/
 
 /*Gallery Placeholder Image START*/

@@ -9,12 +9,17 @@ Github Issues to Write
     ### Design-related
 		☐ Finalize Service Nav dropdown UI
 		☐ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI
+		☐ Tablet & Moble > Replace Featured Case Study carousel buttons to the purple left and right arrow buttons
+		☐ Tablet & Mobile > Populate Featured Case Study slides with the current finished case studies.
 
 ## Design System Zero
     ### Copy-related
         ☐ Create a title, description, and alt text for each image on this service page
     	☐ Create the 'This Service is Ideal For' accordion.
     	☐ Create official tab behavior(the one that's connected to the Without Service XYZ, etc)
+    
+	### Design-related
+		☐ Tablet > Make case study content 100% in width
 
 ### Clean Code
 	☐ Unify the inset imgs into one class(case study featured image, case study image, service featured image, etc).
@@ -24,3 +29,10 @@ Github Issues to Write
     	☐ Create Tab Interactive Behavior
         ☐ Create Accordion Component A
         ☐ Create Accordion Component B
+        
+### Mini Design System
+	### Copy-related
+		☐ SEO content & OG Image
+		
+	### Component-related
+		☐ Create a pallete card component with the ability to clip it's hex color when clicked
