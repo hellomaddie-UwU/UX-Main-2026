@@ -654,13 +654,13 @@
                                             <div class="insight-accordion-item">
                                                 <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
                                                 <div class="v-stack w-100 gap-3">
-                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
                                                         <p><span class="situation-bold">Because</span> no brand guideline existed... <span class="situation-bold">it lead to</span> the marketing site becoming the most defensible visual anchor.</p>
                                                         <div class="insight-chevron">
                                                             <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
                                                         </div>
                                                     </button>
-                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
                                                         <div class="my-insight-title">My Insight</div>
                                                         <p>Connecting the Welcome Screens to the marketing site was my opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
                                                     </div>
@@ -671,13 +671,13 @@
                                             <div class="insight-accordion-item">
                                                 <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
                                                 <div class="v-stack w-100 gap-3">
-                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
                                                         <p><span class="situation-bold">Because</span> the scope expanded mid-project... <span class="situation-bold">it lead to</span> the output type deserving to be questioned.</p>
                                                         <div class="insight-chevron">
                                                             <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
                                                         </div>
                                                     </button>
-                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
                                                         <div class="my-insight-title">My Insight</div>
                                                         <p>On top of the scope additions, it made me realize that this project should have been a web-based format from the start. A guideline website would have served the Asset Team’s actual usage patterns better than a static PDF file.</p>
                                                     </div>
@@ -692,25 +692,65 @@
                                         <div>
                                             <h5>Design Iterations</h5>
                                         </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 1 — From Over-Written to Concise</h6>
-                                            <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify. The revised version reduced explanatory text significantly, relying on the Do's and Don'ts structure to carry the guidance. The Asset Team needed a quick reference, not a manual.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 2 — Responsive Breakpoint Section Added</h6>
-                                            <p>King raised a requirement mid-project that hadn't been scoped initially: layout and typographic guidance across desktop screen sizes, specifically 1440px and 1280px. This was incorporated as a dedicated section and became one of the more technically useful parts of the guideline.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 3 — Pivot from Documenting HTML to Building It</h6>
-                                            <p>Glenn's request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly — a decision that made sense given my front-end background and the team's limited HTML knowledge. Glenn adopted the templates immediately. The tradeoff: they were never formally added to the PDF, leaving a documented gap in the written guideline.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Self-Initiated Extension — Web Version of the Design Guidelines *(In Progress)*</h6>
-                                            <p>The copy-paste gap in the PDF, combined with a post-departure rebrand that made the original file outdated, became the motivation for a self-initiated follow-up: a web-based version of the guidelines built to the branding I co-planned with the Marketing Head before leaving.
-                                            <br><br>
-                                            The web version is currently hosted on GitHub and addresses the one functional gap the PDF couldn't solve — live, copy-paste HTML and CSS that the Asset Team can access directly without opening a document. This project reflects a consistent practice in how I approach portfolio work: I don't just show the plan. I show the thing.</p>
-                                            <br><br>
-                                            <p>*GitHub: [insert link]*</p>
+                                        <div class="design-iteration-accordion" data-design-iteration-accordion>
+                                            <div class="design-iteration-accordion-item is-open">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 1</div>
+                                                        <p>From Over-Written to Concise</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
+                                                    <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify. The revised version reduced explanatory text significantly, relying on the Do's and Don'ts structure to carry the guidance. The Asset Team needed a quick reference, not a manual.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 2</div>
+                                                        <p>Responsive Breakpoint Section Added</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
+                                                    <p>King raised a requirement mid-project that hadn't been scoped initially: layout and typographic guidance across desktop screen sizes, specifically 1440px and 1280px. This was incorporated as a dedicated section and became one of the more technically useful parts of the guideline.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 3</div>
+                                                        <p>Pivot from Documenting HTML to Building It</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
+                                                    <p>Glenn's request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly - a decision that made sense given my front-end background and the team's limited HTML knowledge. Glenn adopted the templates immediately. The tradeoff: they were never formally added to the PDF, leaving a documented gap in the written guideline.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-4" aria-expanded="false" aria-controls="iteration-panel-4">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 4</div>
+                                                        <p>Self-Initiated Extension: Web Version of the Guidelines</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-4" role="region" aria-labelledby="iteration-trigger-4" aria-hidden="true">
+                                                    <p>The copy-paste gap in the PDF, combined with a post-departure rebrand that made the original file outdated, became the motivation for a self-initiated follow-up: a web-based version of the guidelines built to the branding I co-planned with the Marketing Head before leaving.</p>
+                                                    <p class="mt-3">The web version is currently hosted on GitHub and addresses the one functional gap the PDF couldn't solve - live, copy-paste HTML and CSS that the Asset Team can access directly without opening a document. This project reflects a consistent practice in how I approach portfolio work: I don't just show the plan. I show the thing.</p>
+                                                    <p class="mt-3">*GitHub: [insert link]*</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

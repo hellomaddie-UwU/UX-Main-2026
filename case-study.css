@@ -328,7 +328,7 @@ margin-top: var(--space-3);
 }
 /* ────────────────────── */
 
-.insight-accordion {
+.insight-accordion, .design-iteration-accordion {
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
@@ -345,7 +345,19 @@ margin-top: var(--space-3);
     overflow: hidden;
 }
 
-.insight-accordion-header {
+.design-iteration-accordion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-5);
+    border: 1px solid var(--clairvoyant-100);
+    border-radius: 12px;
+    background-color: var(--clairvoyant-50);
+    overflow: hidden;
+}
+
+.insight-accordion-header, .iteration-header {
     width: 100%;
     border: 0;
     background: transparent;
@@ -358,11 +370,11 @@ margin-top: var(--space-3);
     cursor: pointer;
 }
 
-.insight-accordion-header p {
-    margin: 0;
-}
+.insight-accordion-header p {margin: 0;}
 
-.insight-accordion-header:focus-visible {
+.iteration-header p {margin-top: -5px;}
+
+.insight-accordion-header:focus-visible, .iteration-header:focus-visible {
     outline: 2px solid var(--clairvoyant-500);
     outline-offset: 2px;
 }
@@ -384,6 +396,10 @@ margin-top: var(--space-3);
     transform: rotate(0deg);
 }
 
+.design-iteration-accordion-item.is-open .insight-chevron {
+    transform: rotate(0deg);
+}
+
 .insight-accordion-panel {
     display: none;
 }
@@ -392,21 +408,24 @@ margin-top: var(--space-3);
     display: block;
 }
 
-.my-insight {
+.my-insight, .iteration-content {
     display: none;
     padding-top: var(--space-2);
     border-top: 1px solid var(--clairvoyant-400);
 }
 
-.insight-accordion-item.is-open .my-insight {
+.insight-accordion-item.is-open .my-insight,
+.design-iteration-accordion-item.is-open .iteration-content {
     display: block;
 }
 
-.my-insight-title {
-    font-weight: 600;
+.my-insight-title, .iteration-title {
+    font-weight: 700;
     color: var(--clairvoyant-700);
     margin-bottom: var(--space-1);
 }
+
+.iteration-title {text-transform: uppercase;}
 
 /*========================================================================*/
 
