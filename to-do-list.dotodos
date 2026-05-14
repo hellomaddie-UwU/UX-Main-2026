@@ -22,6 +22,7 @@ Github Issues to Write
     
 	### Design-related
 		☐ Tablet > Make case study content 100% in width
+		☐ Tablet & Mobile > adjust sectiony-padding so the Section Header is visible when scrolling from TOC. Continuation of #46.
 
 ### Clean Code
 	☐ Unify the inset imgs into one class(case study featured image, case study image, service featured image, etc).

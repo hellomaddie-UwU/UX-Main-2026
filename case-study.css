@@ -113,6 +113,7 @@
 
 .mobile-table-of-contents {
 display: none;
+width: 100%;
 margin-top: var(--space-3);
 }
 
@@ -431,9 +432,16 @@ margin-top: var(--space-3);
         padding-right: 8%;
     }
 
-    .mobile-table-of-contents {
+    .mobile-table-of-contents  {
         display: block;
         width: 100%;
+        border: 1px solid var(--clairvoyant-300);
+        border-radius: 4px;
+    }
+
+    .mobile-table-of-contents .dropdown, .mobile-table-of-contents .dropdown-toggle, .mobile-table-of-contents .dropdown-menu {
+        width: 100%;
+        color: var(--Text-Body);
     }
 }
 
