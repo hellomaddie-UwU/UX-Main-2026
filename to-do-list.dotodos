@@ -11,13 +11,13 @@ Github Issues to Write
 		☐ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI
 		☐ Tablet & Moble > Replace Featured Case Study carousel buttons to the purple left and right arrow buttons
 		☐ Tablet & Mobile > Populate Featured Case Study slides with the current finished case studies.
+		☐ Double-check and update contents of the contact form to fit the new info on the overall site(i.e. name of the services, price availability, etc).
 	### Component-related
 		☐ Continuation to #28, create a show-hide toggle for the Expected Deliverables
 
 ## Design System Zero
     ### Copy-related
         ☐ Create a title, description, and alt text for each image on this service page
-    	☐ Create the 'This Service is Ideal For' accordion.
     	☐ Create official tab behavior(the one that's connected to the Without Service XYZ, etc)
     
 	### Design-related
@@ -29,8 +29,8 @@ Github Issues to Write
 ### Service Template
 	### Component-related
     	☐ Create Tab Interactive Behavior
-        ☐ Create Accordion Component A
-        ☐ Create Accordion Component B
+    	
+	### Create lottie animation of deliverable timeline bar instead
         
 ### Mini Design System
 	### Copy-related

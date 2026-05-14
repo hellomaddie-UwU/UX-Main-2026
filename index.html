@@ -725,7 +725,7 @@
                 <div class="row">
                     <div class="col">
                         <!--Contact Form START-->
-                        <div class="form">
+                        <form id="contactForm" class="form" action="https://formspree.io/f/maqvzdbo" method="POST" novalidate>
                             <!--Modal START-->
                             <div class="modal-primary">
                                 <div class="modal-primary-head surface-dark">
@@ -735,63 +735,64 @@
                                 <div class="modal-primary-body">
                                     <p>Please fill out this form and we can talk about your project. I typically respond within 24 hours.</p>
                                     <br>
+                                    <input type="hidden" name="_subject" value="New portfolio inquiry from hellomaddie.com">
+                                    <input type="hidden" name="page_url" value="">
+                                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0;">
                                     <!--Client Name-->
                                     <div class="row mb-2">
                                         <!--FName-->
                                         <div class="col">
                                             <label for="FirstName">First Name<span class="required-point">*</span></label>
-                                            <input type="text" class="form-control" aria-label="First name" required>
+                                            <input type="text" id="FirstName" name="first_name" class="form-control" aria-label="First name" required>
                                         </div>
                                         <!--LName-->
                                         <div class="col">
                                             <label for="LastName">Last Name<span class="required-point">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Last name" required>
+                                            <input type="text" id="LastName" name="last_name" class="form-control" aria-label="Last name" required>
                                         </div>
                                     </div>
                                     <!--Organization-->
                                     <div class="mb-3">
                                         <label for="Organization">Organization<span class="required-point">*</span></label>
-                                        <input type="text" class="form-control" aria-label="Organization" required>
+                                        <input type="text" id="Organization" name="organization" class="form-control" aria-label="Organization" required>
                                     </div>
                                     <!--Service-->
                                     <div class="mb-3">
                                         <label for="Service">Service<span class="required-point">*</span></label>
-                                        <select class="form-select" aria-label="Default select example" aria-placeholder="Select">
-                                            <option selected>Select</option>
-                                            <option value="1">Heuristic UX Audit & PRD Write-Up</option>
-                                            <option value="2">Design System Clean-Up</option>
-                                            <option value="3">General Inquiry</option>
-                                            <option value="4">Others</option>
+                                        <select id="Service" name="service" class="form-select" aria-label="Service" required>
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Heuristic UX Audit & PRD Write-Up">Heuristic UX Audit & PRD Write-Up</option>
+                                            <option value="Design System Clean-Up">Design System Clean-Up</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Others">Others</option>
                                         </select>
                                     </div>
                                     <!--Estimated Budget-->
                                     <div class="mb-3">
                                         <label for="Budget">Estimated Budget($$)<span class="required-point">*</span></label>
-                                        <select class="form-select" aria-label="Default select example" aria-placeholder="Select">
-                                            <option selected>Select</option>
-                                            <option value="1">$500+</option>
-                                            <option value="2">$1,000 - $3,000</option>
-                                            <option value="3">$3,500 - $5,000</option>
+                                        <select id="Budget" name="budget" class="form-select" aria-label="Estimated budget" required>
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="$500+">$500+</option>
+                                            <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                                            <option value="$3,500 - $5,000">$3,500 - $5,000</option>
                                         </select>
                                     </div>
                                     <!--Brief Project Description-->
                                     <div class="mb-3">
-                                        <label for="Project Description">Brief Project Description<span class="required-point">*</span></label>
-                                        <textarea class="form-control" rows="4"></textarea>
+                                        <label for="ProjectDescription">Brief Project Description<span class="required-point">*</span></label>
+                                        <textarea id="ProjectDescription" name="project_description" class="form-control" rows="4" required></textarea>
                                     </div>
-                                    <!--Spam Detector-->
                                 </div>
                                 <!--Submit Button-->
                                 <div class="modal-primary-footer surface-dark">
                                     <div class="d-flex justify-content-end gap-2">
-                                        <a href="#">
-                                            <button class="btn-primary" type="submit">Submit</button>
-                                        </a>
+                                        <p id="contactFormStatus" class="mb-0 me-auto small" role="status" aria-live="polite" hidden></p>
+                                        <button class="btn-primary" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </div>
                             <!--Modal END-->
-                        </div>
+                        </form>
                         <!--Contact Form END-->
                     </div>
                     <div class="col">
@@ -870,6 +871,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
         <script src="script.js"></script>
+        <script src="contact-form.js"></script>
         <script src="mobile-menu-toggle.js"></script>
         <!--scripts END-->
     </body>
