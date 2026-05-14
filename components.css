@@ -8,6 +8,7 @@ Table of Contents:
 6. Single Accordion Card
 7. Design System Top Bar Nav
 8. Gallery Placeholder Image
+9. Breadcrumb
 */
 
 /*Divider*/
@@ -362,10 +363,6 @@ Table of Contents:
 }
 /*Testimonial Carousel END*/
 
-/*Design System Top Bar Nav START*/
-
-/*Design System Top Bar Nav END*/
-
 /*Gallery Placeholder Image START*/
 .placeholder-gallery-img {
     width: 100%;
@@ -373,6 +370,43 @@ Table of Contents:
     border-radius: 12px;
 }
 /*Gallery Placeholder Image END*/
+
+/*Breadcrumb START*/
+.site-breadcrumb {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.site-breadcrumb a {
+    color: var(--text-body);
+    text-decoration: none;
+}
+
+
+.site-breadcrumb a:hover, .bc-home:hover {color: var(--clairvoyant-600);}
+
+.site-breadcrumb a:hover svg,
+.bc-home:hover svg,
+.bc-home svg:hover {
+    fill: var(--clairvoyant-600);
+}
+
+.bc-home svg {fill: #717BBC;}
+
+.bc-home {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.current-bc {
+    font-weight:600;
+    color: var(--clairvoyant-700);
+}
+/*Breadcrumb END*/
 
 /*========================================================================*/
 
