@@ -132,6 +132,40 @@ nav {z-index: 2;}
     line-height: 14px; /* 181.818% */
 }
 
+.nav-service-dropdown-menu {
+    display: none;
+    padding: 8px 20px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    position: absolute;
+    top: 250px;
+    left: 95px;
+    width: 270px;
+
+    background-color: var(--surface-dark);
+    border-radius: var(--space-2);
+    box-shadow: 0 0 17px 0 var(--System-Colors-Gray-Blue-400, #717BBC);
+}
+
+.nav-service-dropdown-menu.dropdown-open {
+    display: inline-flex;
+}
+
+.nav-service-dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.nav-service-dropdown-menu a:hover {
+    color: var(--tangerine-400);
+}
+
 .social-links-wrapper {
     display: flex;
     width: auto;

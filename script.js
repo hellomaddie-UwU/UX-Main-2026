@@ -1,3 +1,52 @@
+//nav service dropdown functionality
+(function () {
+    var trigger = document.getElementById('desktopServicesBtn');
+    var dropdown = document.getElementById('desktopServicesDropdown');
+
+    if (!trigger || !dropdown) return;
+
+    function openDropdown() {
+        dropdown.classList.add('dropdown-open');
+        trigger.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeDropdown() {
+        dropdown.classList.remove('dropdown-open');
+        trigger.setAttribute('aria-expanded', 'false');
+    }
+
+    function isOpen() {
+        return dropdown.classList.contains('dropdown-open');
+    }
+
+    // Toggle on Services click
+    trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        isOpen() ? closeDropdown() : openDropdown();
+    });
+
+    // Click inside dropdown closes it
+    dropdown.addEventListener('click', function () {
+        closeDropdown();
+    });
+
+    // Click outside both trigger and dropdown closes it
+    document.addEventListener('click', function (e) {
+        if (!trigger.contains(e.target) && !dropdown.contains(e.target)) {
+            closeDropdown();
+        }
+    });
+
+    // Escape key closes it and returns focus to trigger
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && isOpen()) {
+            closeDropdown();
+            trigger.focus();
+        }
+    });
+}());
+
 //mobile menu toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
