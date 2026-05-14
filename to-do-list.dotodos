@@ -1,4 +1,4 @@
-Github Issues to Write
+GitHub Issues to Write
 ## Design System
 	☐ Finalize the breadcrumb component and implement it across the site
 	
@@ -9,7 +9,7 @@ Github Issues to Write
     ### Design-related
 		☐ Finalize Service Nav dropdown UI
 		☐ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI
-		☐ Tablet & Moble > Replace Featured Case Study carousel buttons to the purple left and right arrow buttons
+		☐ Tablet & Mobile > Replace Featured Case Study carousel buttons to the purple left and right arrow buttons
 		☐ Tablet & Mobile > Populate Featured Case Study slides with the current finished case studies.
 		☐ Double-check and update contents of the contact form to fit the new info on the overall site(i.e. name of the services, price availability, etc).
 	### Component-related
@@ -38,4 +38,4 @@ Github Issues to Write
 		☐ SEO content & OG Image
 		
 	### Component-related
-		☐ Create a pallete card component with the ability to clip it's hex color when clicked
+		☐ Create a palette card component with the ability to clip it's hex color when clicked
