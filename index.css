@@ -14,11 +14,15 @@
 }
 
 .profile-pic {
-    margin-top: -115px;
     width: 100%;
-    height: 600px;
+    height: 700px;
     /* desktop illustration loads by default */
-    content: url('imgs/profile-pic-placeholder.svg');
+    background-image: url('imgs/wip-profile-pic.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 999px;
+    position: relative;
+    box-shadow: 0 5px 5px rgba(62, 71, 132, 0.20);
 }
 
 .pink-gradient-bg {
@@ -37,6 +41,12 @@
     /* Dialog Shadow */
     box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
 }
+
+.cs2-slider__controls {
+    display: flex;
+    gap: var(--space-2);
+}
+
 
 #service-1-info {
     padding-left: 60px;
@@ -66,13 +76,19 @@
 @media screen and (max-width: 992px) {
     .profile-pic {
         /* tablet/mobile illustration swaps in here */
-        content: url('imgs/mobile-profile-pic-placeholder.svg');
-        height: auto;
+        margin-top: 60px;
+        background-image: url('imgs/wip-profile-pic.png');
+        height: 390px;
+        background-position: 50% 35%;
     }
 }
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .featured-card-thumbnail {
+        height: 450px;
+    }
+    .suzzie-pic {height: 150px;}
 }
 
 /*Mobile*/ /*sm*/

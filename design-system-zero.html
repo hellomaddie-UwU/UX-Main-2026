@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--SEO START-->
-        <title>Gallery | hellomaddie</title>
-        <meta name="description" content="insert a brief description of your illustratin gallery page, highlighting the type of work showcased and your design philosophy.">
-        <meta name="keywords" content="insert relevant keywords` related to your illustration work, such as 'digital art', 'character design', 'concept art', 'hellomaddie portfolio', etc.">
+        <title>Design System Zero</title>
+        <meta name="description" content="insert a brief description of your portfolio website here, highlighting your skills, services, and experience in UX design as a Multi-disciplinary Designer.">
+        <meta name="keywords" content="insert relevant keywords related to this service, such as UX design, user experience, multi-disciplinary design, etc.">
         <meta name="author" content="Bianca Maddela">
         <!--SEO END-->
 
@@ -13,14 +14,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="main-style.css" rel="stylesheet">
         <link href="components.css" rel="stylesheet">
+        <link href="service.css" rel="stylesheet">
         <!--Stylesheet END-->
-
-        <!--Fonts START-->
+        <!-- Google Fonts START -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!--Fonts END--></head>
-
+        <!-- Google Fonts END -->
+    </head>
+    
     <body>
         <!--Navigation START-->
         <nav class="nav-container surface-dark">
@@ -144,7 +146,8 @@
         <!--Navigation END-->
 
         <div class="main-page">
-            <header class="section-container">
+            <!--Hero Section START-->
+            <div class="section-container">
                 <div class="site-breadcrumb">
                     <a href="index.html" class="bc-home">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -153,85 +156,113 @@
                         Home
                     </a>
                     <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
-                    <p class="current-bc">Gallery</p>
+                    <a href="services.html">Services</a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <p class="current-bc">Design System Zero</p>
                 </div>
-                <h1 class="display-text">Gallery</h1>
-                <h3>A collection of illustrations, sketches, and brain dumps I made throughout the years.</h3>
-            </header>
-            <section class="section-container mb-4">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="row">
-                            <div class="col">
-                                <div class="placeholder-gallery-img" style="height: 600px;"></div>
-                                <p>Athena</p>
-                            </div>
-                            <div class="col">
-                                <div class="placeholder-gallery-img" style="height: 600px;"></div>
-                                <p>Himeno</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Wallie Sketches</p>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex flex-column">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Wallie peaking</p>
-                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                            <p>Wallie laughing</p>
-                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                            <p>Suzzie Profile</p>
-                        </div>
-                    </div>
+                <div class="service-featured-wrap">
+                    <img class="service-featured-img" src="imgs/featured-imgs/featured-img-1.png" alt="featured image">
                 </div>
                 <div class="row">
-                    <div class="col-4">
-                        <div class="d-flex flex-column">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Wedding</p>
-                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                            <p>2024 Profile</p>
-                        </div>
+                    <div class="col-7">
+                        <div class="v-stack space-4">
+                            <div>
+                                <h3 class="w-600">Design System Zero</h3>
+                                <div class="service-extended-title">Aligning your design foundations for cross-platform teams with Agentic AI Builds</div>
+                            </div>
+                            <p class="mb-3">I help teams and solopreneurs identify exactly where their product can improve even further, scout hidden frustrations before negative ratings hit, and provide a clear roadmap to execute these solutions.</p>
+                            <a href="#"><button class="btn-primary">Request Discovery Call</button></a>
+                        </div>                      
                     </div>
-                    <div class="col-8">
-                        <div class="row">
-                            <div class="col">
-                                <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                                <p>Wallie on the grass</p>
+                    <div class="col-5">
+                        <div class="selection-container">
+                            <!--Selector Boxes START-->
+                            <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                            <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                            <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                            <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                            <!--Selector Boxes END-->
+                            <div class="selection-content p-4">
+                                <div class="d-flex justify-content-between mb-3">
+                                    <p class="small-title">This Service is Ideal For:</p>
+                                    <a href="design-system-zero.html#HAUPW-ICP">Check Where You Are</a>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>">
+                                    <p>SaaS teams preparing to scale and needs a solid UX foundation to amplify growth while reducing existing problems.</p>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>">
+                                    <p>Founders struggling with conversion and can’t pinpoint where their visitors exit.</p>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>"> 
+                                    <p>Companies preparing for funding and want their product’s UX to reflect the quality of what they’ve built.</p>
+                                </div>
                             </div>
-                            <div class="col">
-                                <p>free space</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Makima</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                        <p>Being a UX Designer</p>
-                    </div>
-                    <div class="col-4">
-                        <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                        <p>Mitsuri</p>
-                    </div>
-                </div>
-            </section>
+            </div>
+            <!--Hero Section END-->
 
-            <!--Newsletter CTA Banner-->
-            <!--Footer-->
+            <!--About the Service Section START-->
+            <div class="section-container">
+                <p class="text-center">ribbon img</p>
+                <h5 class="text-center mb-2">Recalibrating Foundations</h5>
+                <p class="text-center w-75 mx-auto">I audit every channel your company possesses, and build a <u class="underline">system of outputs every team needs</u>.
+                <br><br>
+                The result is a unified visual language across every surface your users see. A system your team uses to ship enhancements faster, and AI setup that answers design questions using your own rules. Whether you’re a SaaS startup sitting on years of UI debt, or an enterprise team building AI tools on a foundation that was never properly designed, this is where coherence begins.</p>
+            </div>
+            <!--About the Service Section END-->
+
+            <!--Without the Service Section START-->
+            <div class="section-container">
+                <h5 class="text-center mb-2">Without Rebuilding Your Design System...</h5>
+                <div class="toggle-container mx-auto mb-3" role="group" aria-label="Audience type">
+                    <span type="button" class="toggle-button active-toggle" aria-pressed="true">SaaS Startup</span>
+                    <span type="button" class="toggle-button" aria-pressed="false">Digital Agencies</span>
+                    <span type="button" class="toggle-button" aria-pressed="false">E-Commerce/DTC Brands</span>
+                    <div class="toggle-active-bg"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p>Accordion Card</p>
+                            <p>Accordion Card</p>
+                            <p>Accordion Card</p>
+                        </div>
+                        <div class="col">
+                            <p>Accordion Card</p>
+                            <p>Accordion Card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Without the Service Section END-->
+
+            <!--What's In This Service Section START-->
+            <div class="section-container">
+                <h5 class="text-center mb-2">What's In This Service?</h5>
+                <p class="text-center">*Exact contents may vary depending on your project needs!</p>
+                <div class="toggle-container mx-auto mb-3" role="group" aria-label="Deliverables type">
+                    <span type="button" class="toggle-button active-toggle" aria-pressed="true">Marketing Only</span>
+                    <span type="button" class="toggle-button" aria-pressed="false">Marketing + App</span>
+                    <span type="button" class="toggle-button" aria-pressed="false">Marketing + Multiple Products</span>
+                    <div class="toggle-active-bg"></div>
+                </div>
+                <p>Content</p>
+            </div>
+            <!--What's In This Service Section END-->
+
+            <!--Case Study Section START-->
+            <!--Case Study Section END-->
         </div>
-
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
         <script src="script.js"></script>
+        <script src="accordion.js"></script>
+        <script src="carousel.js"></script>
         <!--scripts END-->
     </body>
 </html>

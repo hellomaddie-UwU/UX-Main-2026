@@ -25,7 +25,7 @@
     </head>
 
     <body>
-        <!--Header START-->
+        <!--Navigation START-->
         <nav class="nav-container surface-dark">
             <a class="brand-logo-desktop" href="index.html">
                 <img src="imgs/logo-desktop.svg" alt="hellomaddie logo">
@@ -44,19 +44,19 @@
                     </div>
                 </a>
 
-                <div class="nav-item-link dropdown dropend">
-                    <a class="d-flex align-items-center text-decoration-none text-reset dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a id="desktopServicesBtn" href="#" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-                            <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.3332 23.5449V26.6667C13.3332 28.1395 14.5271 29.3334 15.9998 29.3334C17.4726 29.3334 18.6665 28.1395 18.6665 26.6667V23.5449M15.9998 2.66675V4.00008M3.99984 16.0001H2.6665M7.33317 7.33341L6.53304 6.53328M24.6665 7.33341L25.4668 6.53328M29.3332 16.0001H27.9998M23.9998 16.0001C23.9998 20.4184 20.4181 24.0001 15.9998 24.0001C11.5816 24.0001 7.99984 20.4184 7.99984 16.0001C7.99984 11.5818 11.5816 8.00008 15.9998 8.00008C20.4181 8.00008 23.9998 11.5818 23.9998 16.0001Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div class="nav-desktop-text">Services</div>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Heuristic UX Audit & PRD Write-Up</a></li>
-                        <li><a class="dropdown-item" href="#">Design System Build/Clean-up</a></li>
-                        <li><a class="dropdown-item" href="#">Website UX and Copy Optimization</a></li>
-                    </ul>
-                </div>
+                    </div>
+                    <div id="desktopServicesDropdown" class="nav-service-dropdown-menu">
+                        <a href="ux-audit.html">Heuristic UX Audit & PRD Write-Up</a>
+                        <a href="design-system-zero.html">Design System Zero</a>
+                        <a href="#">UX, Rewritten</a>
+                    </div>
+                </a>               
 
                 <a href="#">
                     <div class="nav-item-link">
@@ -144,17 +144,22 @@
                 </div>
             </div>
             <!--Mobile Menu Content END-->
-        <!--Header END-->
+        <!--Navigation END-->
 
         <div class="main-page">
             <!--Hero Section START-->
             <header class="section-container">
-                <div aria-label="breadcrumb" style="margin-bottom: 24px;">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="case-study-catalogue.html">Case Studies</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Restructuring MSPbot's Design System</li>
-                    </ol>
+                <div class="site-breadcrumb">
+                    <a href="index.html" class="bc-home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
+                        </svg>
+                        Home
+                    </a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <a href="case-study-catalogue.html">Case Studies</a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <p class="current-bc">Restructuring MSPbot's Design System</p>
                 </div>
                 <div class="v-stack">
                     <div class="h-stack space-2">
@@ -413,16 +418,22 @@
                                             <div class="feature-display">
                                                 <div class="cs-carousel">
                                                     <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
                                                         <div class="case-study-subtitle">Basic Components</div>
                                                         <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
                                                             </button>
-                                                            <button class="cs-carousel__btn-next" type="button">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
                                                             </button>
                                                         </div>
                                                     </div>
@@ -495,16 +506,22 @@
                                                 </div>
                                                 <div class="cs-carousel">
                                                     <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
                                                         <div class="case-study-subtitle">Table Subcomponents</div>
                                                         <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
                                                             </button>
-                                                            <button class="cs-carousel__btn-next" type="button">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
                                                             </button>
                                                         </div>
                                                     </div>
@@ -588,16 +605,22 @@
                                             <div class="feature-display">
                                                 <div class="cs-carousel">
                                                     <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
                                                         <div class="case-study-subtitle">Table Subcomponents</div>
                                                         <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
                                                             </button>
-                                                            <button class="cs-carousel__btn-next" type="button">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
                                                             </button>
                                                         </div>
                                                     </div>
@@ -779,6 +802,7 @@
         <script src="carousel.js"></script>
         <script src="toc-highlight.js"></script>
         <script src="before-after-block.js"></script>
+        <script src="key-insights-accordion.js"></script>
         <!--scripts END-->
     </body>
 </html>

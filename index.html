@@ -25,7 +25,7 @@
     </head>
 
     <body>
-        <!--Header START-->
+        <!--Navigation START-->
         <nav class="nav-container surface-dark">
             <a class="brand-logo-desktop" href="index.html">
                 <img src="imgs/logo-desktop.svg" alt="hellomaddie logo">
@@ -44,19 +44,19 @@
                     </div>
                 </a>
 
-                <div class="nav-item-link dropdown dropend">
-                    <a class="d-flex align-items-center text-decoration-none text-reset dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a id="desktopServicesBtn" href="#" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-                            <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.3332 23.5449V26.6667C13.3332 28.1395 14.5271 29.3334 15.9998 29.3334C17.4726 29.3334 18.6665 28.1395 18.6665 26.6667V23.5449M15.9998 2.66675V4.00008M3.99984 16.0001H2.6665M7.33317 7.33341L6.53304 6.53328M24.6665 7.33341L25.4668 6.53328M29.3332 16.0001H27.9998M23.9998 16.0001C23.9998 20.4184 20.4181 24.0001 15.9998 24.0001C11.5816 24.0001 7.99984 20.4184 7.99984 16.0001C7.99984 11.5818 11.5816 8.00008 15.9998 8.00008C20.4181 8.00008 23.9998 11.5818 23.9998 16.0001Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div class="nav-desktop-text">Services</div>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Heuristic UX Audit & PRD Write-Up</a></li>
-                        <li><a class="dropdown-item" href="#">Design System Build/Clean-up</a></li>
-                        <li><a class="dropdown-item" href="#">Website UX and Copy Optimization</a></li>
-                    </ul>
-                </div>
+                    </div>
+                    <div id="desktopServicesDropdown" class="nav-service-dropdown-menu">
+                        <a href="ux-audit.html">Heuristic UX Audit & PRD Write-Up</a>
+                        <a href="design-system-zero.html">Design System Zero</a>
+                        <a href="#">UX, Rewritten</a>
+                    </div>
+                </a>               
 
                 <a href="#">
                     <div class="nav-item-link">
@@ -144,7 +144,7 @@
                 </div>
             </div>
             <!--Mobile Menu Content END-->
-        <!--Header END-->
+        <!--Navigation END-->
 
         <div class="main-page">
             <!--Hero Section START-->
@@ -205,8 +205,11 @@
                         <!--Client Logos END-->
                     </div>
                     <div class="col-xxl-5 col-lg-5 col-md-12 text-center">
-                        <img class="suzzie-pic" src="imgs/Suzzie-placeholder.png" alt="my beloved cat" height="175px">
-                        <img class="profile-pic" src="imgs/profile-pic-placeholder.svg" alt="profile picture">
+                        <a href="gallery.html">
+                            <img class="suzzie-pic" src="imgs/suzzie-the-cat.png" alt="my beloved cat" height="175px">
+                        </a>           
+                        <!--<img class="profile-pic" src="imgs/wip-profile-pic.png" alt="profile picture">-->
+                        <div class="profile-pic"></div>
                     </div>
                 </div>
             </header> 
@@ -259,35 +262,98 @@
                             <div class="case-study-title">
                                 <h1 class="display-section-text" style="transform: rotate(-16.541deg);">Featured Works</h1>
                             </div>
+                            <!--Case Study Card 1 START-->
                             <div class="case-study-card">
                                 <div class="row align-items-center gap-3">
                                     <div class="col">
-                                        <img class="case-study-thumbnail" alt="case stidy title" src="imgs/case-study-thumbnail-placeholder.svg">
+                                        <img class="case-study-thumbnail" alt="case study title" src="imgs/featured-imgs/square-featured-img-1.png">
                                     </div>
                                     <div class="col">
-                                        <div class="case-study-info d-flex flex-column gap-4">
-                                            <div class="v-stack">
+                                        <div class="case-study-info v-stack space-5">
+                                            <div class="v-stack space-1">
                                                 <div class="h-stack space-2">
-                                                    <span class="pill pill-internal">Internal</span>
+                                                    <span class="pill pill-internal">Internal Documentation</span>
                                                     <span class="pill pill-tech">AI & Technology</span>
                                                 </div>
-                                                <h4 class="fw-semibold">Crafting Guidelines for MSPbots’ Asset Team</h4>
+                                                <h4 class="w-500">Crafting Guidelines for MSPbots’ Asset Team</h4>
                                             </div>
                                             <div>
-                                                <p class="md-text">Outputs</p>
-                                                <p>Insert content later</p>
+                                                <p>Outputs</p>
+                                                <div class="v-stack space-3">
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
+                                                        <p class="w-600">Immediate Adaption</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
+                                                        <p class="w-600">Visible Quality Improvement</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
+                                                        <p class="w-600">Visible Quality Improvement</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis esse nobis unde ad! At quam alias atque ipsam animi quisquam tempora architecto pariatur explicabo. </p>
+                                            <p>A 3-week internal project where I was requested to create a design guideline PDF for the company’s Asset Team on constructing the Welcome Screens of our apps.</p>
                                             <div class="case-study-cta-wrapper">
-                                                <a class="btn-primary-outline" href="crafting-guildlines-for-mspbots-asset-team.html">Learn More</a>
+                                                <a class="btn-primary-outline" href="crafting-guidelines-for-mspbots-asset-team.html">Learn More</a>
+                                                <!--
                                                 <a href="#">
                                                     <button class="btn-primary">Visit Site</button>
                                                 </a>
+                                                -->
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--Case Study Card 1 END-->
+                            <!--Case Study Card 2 START-->
+                            <div class="case-study-card">
+                                <div class="row align-items-center gap-3">
+                                    <div class="col">
+                                        <img class="case-study-thumbnail" alt="case stidy title" src="imgs/featured-imgs/square-featured-img-2.png">
+                                    </div>
+                                    <div class="col">
+                                        <div class="case-study-info v-stack space-5">
+                                            <div class="v-stack space-1">
+                                                <div class="h-stack space-2">
+                                                    <span class="pill pill-internal">Internal Documentation</span>
+                                                    <span class="pill pill-tech">AI & Technology</span>
+                                                </div>
+                                                <h4 class="w-500">Restructuring MSPbots’ Design System</h4>
+                                            </div>
+                                            <div>
+                                                <p>Outputs</p>
+                                                <div class="v-stack space-3">
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p class="w-600">Figma Design System File</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p class="w-600">Accessibility Documentation</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p class="w-600">Writing Guidelines</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>A year-long background project with my colleague, Nora Li, where I’ve documented and aligned all basic components, plus authored an Accessibility Doc and Writing Guidelines doc independently.</p>
+                                            <div class="case-study-cta-wrapper">
+                                                <a class="btn-primary-outline" href="restructuring-mspbots-design-system.html">Learn More</a>
+                                                <!--
+                                                <a href="#">
+                                                    <button class="btn-primary">Visit Site</button>
+                                                </a>
+                                                -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Case Study Card 2 END-->
                             <div class="case-study-card">
                                 <div class="row align-items-center gap-3">
                                     <div class="col">
@@ -346,35 +412,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="case-study-card">
-                                <div class="row align-items-center gap-3">
-                                    <div class="col">
-                                        <img class="case-study-thumbnail" alt="case stidy title" src="imgs/case-study-thumbnail-placeholder.svg">
-                                    </div>
-                                    <div class="col">
-                                        <div class="case-study-info d-flex flex-column gap-4">
-                                            <div class="v-stack">
-                                                <div class="h-stack space-2">
-                                                    <span class="pill pill-internal">Internal</span>
-                                                    <span class="pill pill-tech">AI & Technology</span>
-                                                </div>
-                                                <h4 class="fw-semibold">Execution vs. Professional Opinions: Vyepti Appointment Booking App</h4>
-                                            </div>
-                                            <div>
-                                                <p class="md-text">Outputs</p>
-                                                <p>Insert content later</p>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis esse nobis unde ad! At quam alias atque ipsam animi quisquam tempora architecto pariatur explicabo. </p>
-                                            <div class="case-study-cta-wrapper">
-                                                <a class="btn-primary-outline" href="#">Learn More</a>
-                                                <a href="#">
-                                                    <button class="btn-primary">Visit Site</button>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="case-study-card-extra-space"></div>
                         </div>
                     </div>
@@ -384,14 +421,22 @@
             <!--Tablet & Mobile START-->
             <div class="featured-works-tablet-mobile section-container">
                 <div class="d-flex justify-content-between align-items-center title">
-                    <h1 class="display-section-text">Featured Works</h1>
-                    <div class="cs2-slider__controls d-flex gap-2">
-                        <button class="cs2-slider__btn cs2-slider__btn-prev" aria-label="Previous slide">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </button>
-                        <button class="cs2-slider__btn cs2-slider__btn-next" aria-label="Next slide">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        </button>
+                    <h1 class="display-section-text">Featured Works</h1> 
+                    <div class="cs2-slider__controls">
+                        <a class="cs2-slider__btn cs2-slider__btn-prev" aria-label="Previous slide" type="button">            
+                            <span aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>                                               
+                        </a>
+                        <a class="cs2-slider__btn cs2-slider__btn-next" aria-label="Next slide" type="button">                                                  
+                            <span aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>                                                     
+                        </a>
                     </div>
                 </div>
                 <!--Slider START-->
@@ -399,49 +444,51 @@
                     <div class="cs2-slider__track">
                         <!--Slide 1-->
                         <div class="cs2-slider__slide">
-                            <img class="case-study-thumbnail" alt="Crafting Guidelines for MSPbots' Asset Team" src="imgs/case-study-thumbnail-placeholder.svg">
-                            <div class="case-study-info d-flex flex-column gap-4">
-                                <div class="v-stack">
+                            <img class="case-study-thumbnail" alt="case stidy title" src="imgs/featured-imgs/square-featured-img-1.png">
+                            <div class="case-study-info v-stack space-5">
+                                <div class="v-stack space-1">
                                     <div class="h-stack space-2">
-                                        <span class="pill pill-internal">Internal</span>
+                                        <span class="pill pill-internal">Internal Documentation</span>
                                         <span class="pill pill-tech">AI & Technology</span>
                                     </div>
-                                    <h4 class="fw-semibold">Crafting Guidelines for MSPbots' Asset Team</h4>
+                                    <h4 class="w-500">Crafting Guidelines for MSPbots’ Asset Team</h4>
                                 </div>
+                                <p>hide-show outcome</p>
                                 <div>
-                                    <p class="md-text">Outputs</p>
-                                    <p>Insert content later</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis esse nobis unde ad! At quam alias atque ipsam animi quisquam tempora architecto pariatur explicabo. </p>
-                                <div class="case-study-cta-wrapper">
-                                    <a class="btn-primary-outline" href="#">Learn More</a>
-                                    <a href="#">
-                                        <button class="btn-primary">Visit Site</button>
-                                    </a>
+                                    <p class="mb-3">A 3-week internal project where I was requested to create a design guideline PDF for the company’s Asset Team on constructing the Welcome Screens of our apps.</p>
+                                    <div class="case-study-cta-wrapper">
+                                        <a class="btn-primary-outline" href="crafting-guidelines-for-mspbots-asset-team.html">Learn More</a>
+                                        <!--
+                                        <a href="#">
+                                            <button class="btn-primary">Visit Site</button>
+                                        </a>
+                                        -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!--Slide 2-->
                         <div class="cs2-slider__slide">
-                            <img class="case-study-thumbnail" alt="Restructuring MSPbots' Design System" src="imgs/case-study-thumbnail-placeholder.svg">
-                            <div class="case-study-info d-flex flex-column gap-4">
-                                <div class="v-stack">
+                            <img class="case-study-thumbnail" alt="case stidy title" src="imgs/featured-imgs/square-featured-img-2.png">
+                            <div class="case-study-info v-stack space-5">
+                                <div class="v-stack space-1">
                                     <div class="h-stack space-2">
-                                        <span class="pill pill-internal">Internal</span>
+                                        <span class="pill pill-internal">Internal Documentation</span>
                                         <span class="pill pill-tech">AI & Technology</span>
                                     </div>
-                                    <h4 class="fw-semibold">Restructuring MSPbots' Design System</h4>
+                                    <h4 class="w-500">Restructuring MSPbots’ Design System</h4>
                                 </div>
+                                <p>hide-show outcome</p>
                                 <div>
-                                    <p class="md-text">Outputs</p>
-                                    <p>Insert content later</p>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facilis esse nobis unde ad! At quam alias atque ipsam animi quisquam tempora architecto pariatur explicabo. </p>
-                                <div class="case-study-cta-wrapper">
-                                    <a class="btn-primary-outline" href="#">Learn More</a>
-                                    <a href="#">
-                                        <button class="btn-primary">Visit Site</button>
-                                    </a>
+                                    <p class="mb-3">A year-long background project with my colleague, Nora Li, where I’ve documented and aligned all basic components, plus authored an Accessibility Doc and Writing Guidelines doc independently.</p>
+                                    <div class="case-study-cta-wrapper">
+                                        <a class="btn-primary-outline" href="restructuring-mspbots-design-system.html">Learn More</a>
+                                        <!--
+                                        <a href="#">
+                                            <button class="btn-primary">Visit Site</button>
+                                        </a>
+                                        -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -681,7 +728,7 @@
                 <div class="row">
                     <div class="col">
                         <!--Contact Form START-->
-                        <div class="form">
+                        <form id="contactForm" class="form" action="https://formspree.io/f/maqvzdbo" method="POST" novalidate>
                             <!--Modal START-->
                             <div class="modal-primary">
                                 <div class="modal-primary-head surface-dark">
@@ -691,63 +738,64 @@
                                 <div class="modal-primary-body">
                                     <p>Please fill out this form and we can talk about your project. I typically respond within 24 hours.</p>
                                     <br>
+                                    <input type="hidden" name="_subject" value="New portfolio inquiry from hellomaddie.com">
+                                    <input type="hidden" name="page_url" value="">
+                                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0;">
                                     <!--Client Name-->
                                     <div class="row mb-2">
                                         <!--FName-->
                                         <div class="col">
                                             <label for="FirstName">First Name<span class="required-point">*</span></label>
-                                            <input type="text" class="form-control" aria-label="First name" required>
+                                            <input type="text" id="FirstName" name="first_name" class="form-control" aria-label="First name" required>
                                         </div>
                                         <!--LName-->
                                         <div class="col">
                                             <label for="LastName">Last Name<span class="required-point">*</span></label>
-                                            <input type="text" class="form-control" aria-label="Last name" required>
+                                            <input type="text" id="LastName" name="last_name" class="form-control" aria-label="Last name" required>
                                         </div>
                                     </div>
                                     <!--Organization-->
                                     <div class="mb-3">
                                         <label for="Organization">Organization<span class="required-point">*</span></label>
-                                        <input type="text" class="form-control" aria-label="Organization" required>
+                                        <input type="text" id="Organization" name="organization" class="form-control" aria-label="Organization" required>
                                     </div>
                                     <!--Service-->
                                     <div class="mb-3">
                                         <label for="Service">Service<span class="required-point">*</span></label>
-                                        <select class="form-select" aria-label="Default select example" aria-placeholder="Select">
-                                            <option selected>Select</option>
-                                            <option value="1">Heuristic UX Audit & PRD Write-Up</option>
-                                            <option value="2">Design System Clean-Up</option>
-                                            <option value="3">General Inquiry</option>
-                                            <option value="4">Others</option>
+                                        <select id="Service" name="service" class="form-select" aria-label="Service" required>
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="Heuristic UX Audit & PRD Write-Up">Heuristic UX Audit & PRD Write-Up</option>
+                                            <option value="Design System Clean-Up">Design System Clean-Up</option>
+                                            <option value="General Inquiry">General Inquiry</option>
+                                            <option value="Others">Others</option>
                                         </select>
                                     </div>
                                     <!--Estimated Budget-->
                                     <div class="mb-3">
                                         <label for="Budget">Estimated Budget($$)<span class="required-point">*</span></label>
-                                        <select class="form-select" aria-label="Default select example" aria-placeholder="Select">
-                                            <option selected>Select</option>
-                                            <option value="1">$500+</option>
-                                            <option value="2">$1,000 - $3,000</option>
-                                            <option value="3">$3,500 - $5,000</option>
+                                        <select id="Budget" name="budget" class="form-select" aria-label="Estimated budget" required>
+                                            <option value="" selected disabled>Select</option>
+                                            <option value="$500+">$500+</option>
+                                            <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                                            <option value="$3,500 - $5,000">$3,500 - $5,000</option>
                                         </select>
                                     </div>
                                     <!--Brief Project Description-->
                                     <div class="mb-3">
-                                        <label for="Project Description">Brief Project Description<span class="required-point">*</span></label>
-                                        <textarea class="form-control" rows="4"></textarea>
+                                        <label for="ProjectDescription">Brief Project Description<span class="required-point">*</span></label>
+                                        <textarea id="ProjectDescription" name="project_description" class="form-control" rows="4" required></textarea>
                                     </div>
-                                    <!--Spam Detector-->
                                 </div>
                                 <!--Submit Button-->
                                 <div class="modal-primary-footer surface-dark">
                                     <div class="d-flex justify-content-end gap-2">
-                                        <a href="#">
-                                            <button class="btn-primary" type="submit">Submit</button>
-                                        </a>
+                                        <p id="contactFormStatus" class="mb-0 me-auto small" role="status" aria-live="polite" hidden></p>
+                                        <button class="btn-primary" type="submit">Submit</button>
                                     </div>
                                 </div>
                             </div>
                             <!--Modal END-->
-                        </div>
+                        </form>
                         <!--Contact Form END-->
                     </div>
                     <div class="col">
@@ -826,6 +874,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
         <script src="script.js"></script>
+        <script src="contact-form.js"></script>
         <script src="mobile-menu-toggle.js"></script>
         <!--scripts END-->
     </body>

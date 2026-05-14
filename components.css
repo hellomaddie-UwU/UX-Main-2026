@@ -7,6 +7,8 @@ Table of Contents:
 5. Infinite Marque
 6. Single Accordion Card
 7. Design System Top Bar Nav
+8. Gallery Placeholder Image
+9. Breadcrumb
 */
 
 /*Divider*/
@@ -238,8 +240,8 @@ Table of Contents:
 }
 
 .case-study-thumbnail {
-    height: 500px;
-    width: 540px;
+    height: 550px;
+    width: 535px;
     object-fit: cover;
     border-radius: 14px;
     box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
@@ -270,20 +272,6 @@ Table of Contents:
 
 .cs2-slider__slide {
     width: 100%;
-}
-
-.cs2-slider__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: 1px solid currentColor;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
-    color: inherit;
-    padding: 0;
 }
 
 .cs2-slider__dots {
@@ -359,19 +347,66 @@ Table of Contents:
 #testimonialCarousel .carousel-control-next-icon {
     filter: brightness(0) saturate(100%);
 }
-/*Testimonial Carousel END*/
 
-/*Design System Top Bar Nav START*/
-.sticky-ds-navigation {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: var(--surface-dark);
-    padding: 12px 32px;
+.cs-carousel__btn-prev, .cs-carousel__btn-next, .cs2-slider__btn {
+    padding: 10px 17px;
+    border-radius: 99px;
+    border: 1px solid #D5D9EB;
+    background-color: #EAECF5;
+    stroke: #B3B8DB;
 }
 
-.sticky-ds-navigation p {color: var(--clairvoyant-50); line-height: normal;}
-/*Design System Top Bar Nav END*/
+.cs-carousel__btn-prev:hover, .cs-carousel__btn-next:hover, .cs2-slider__btn:hover {
+    background-color: #4B095D;
+    border-color: #4B095D;
+    stroke: #FBF4FF;
+}
+/*Testimonial Carousel END*/
+
+/*Gallery Placeholder Image START*/
+.placeholder-gallery-img {
+    width: 100%;
+    background-color: #E2AFF8;
+    border-radius: 12px;
+}
+/*Gallery Placeholder Image END*/
+
+/*Breadcrumb START*/
+.site-breadcrumb {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.site-breadcrumb a {
+    color: var(--text-body);
+    text-decoration: none;
+}
+
+
+.site-breadcrumb a:hover, .bc-home:hover {color: var(--clairvoyant-600);}
+
+.site-breadcrumb a:hover svg,
+.bc-home:hover svg,
+.bc-home svg:hover {
+    fill: var(--clairvoyant-600);
+}
+
+.bc-home svg {fill: #717BBC;}
+
+.bc-home {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.current-bc {
+    font-weight:600;
+    color: var(--clairvoyant-700);
+}
+/*Breadcrumb END*/
 
 /*========================================================================*/
 
@@ -400,8 +435,9 @@ Table of Contents:
     }
 
     .case-study-thumbnail {
-        height: 250px;
+        height: 380px;
         width: 100%;
+        object-position: center;
     }
 
     .case-study-info {
@@ -453,6 +489,10 @@ Table of Contents:
     .featured-works-tablet-mobile > .title, .cs2-slider__slide {
         padding-left: var(--space-2);
         padding-right: var(--space-2);
+    }
+
+    .case-study-thumbnail {
+        height: 320px;
     }
 }
 /*========================================================================*/

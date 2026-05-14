@@ -25,7 +25,7 @@
     </head>
 
     <body>
-        <!--Header START-->
+        <!--Navigation START-->
         <nav class="nav-container surface-dark">
             <a class="brand-logo-desktop" href="index.html">
                 <img src="imgs/logo-desktop.svg" alt="hellomaddie logo">
@@ -44,19 +44,19 @@
                     </div>
                 </a>
 
-                <div class="nav-item-link dropdown dropend">
-                    <a class="d-flex align-items-center text-decoration-none text-reset dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a id="desktopServicesBtn" href="#" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-                            <path d="M13.3332 23.5441V26.666C13.3332 28.1388 14.5271 29.3327 15.9998 29.3327C17.4726 29.3327 18.6665 28.1388 18.6665 26.666V23.5441M15.9998 2.66602V3.99935M3.99984 15.9993H2.6665M7.33317 7.33268L6.53304 6.53255M24.6665 7.33268L25.4668 6.53255M29.3332 15.9993H27.9998M23.9998 15.9993C23.9998 20.4176 20.4181 23.9993 15.9998 23.9993C11.5816 23.9993 7.99984 20.4176 7.99984 15.9993C7.99984 11.5811 11.5816 7.99935 15.9998 7.99935C20.4181 7.99935 23.9998 11.5811 23.9998 15.9993Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.3332 23.5449V26.6667C13.3332 28.1395 14.5271 29.3334 15.9998 29.3334C17.4726 29.3334 18.6665 28.1395 18.6665 26.6667V23.5449M15.9998 2.66675V4.00008M3.99984 16.0001H2.6665M7.33317 7.33341L6.53304 6.53328M24.6665 7.33341L25.4668 6.53328M29.3332 16.0001H27.9998M23.9998 16.0001C23.9998 20.4184 20.4181 24.0001 15.9998 24.0001C11.5816 24.0001 7.99984 20.4184 7.99984 16.0001C7.99984 11.5818 11.5816 8.00008 15.9998 8.00008C20.4181 8.00008 23.9998 11.5818 23.9998 16.0001Z" stroke="#BB4DE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <div class="nav-desktop-text">Services</div>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Heuristic UX Audit & PRD Write-Up</a></li>
-                        <li><a class="dropdown-item" href="#">Design System Build/Clean-up</a></li>
-                        <li><a class="dropdown-item" href="#">Website UX and Copy Optimization</a></li>
-                    </ul>
-                </div>
+                    </div>
+                    <div id="desktopServicesDropdown" class="nav-service-dropdown-menu">
+                        <a href="ux-audit.html">Heuristic UX Audit & PRD Write-Up</a>
+                        <a href="design-system-zero.html">Design System Zero</a>
+                        <a href="#">UX, Rewritten</a>
+                    </div>
+                </a>               
 
                 <a href="#">
                     <div class="nav-item-link">
@@ -144,17 +144,22 @@
                 </div>
             </div>
             <!--Mobile Menu Content END-->
-        <!--Header END-->
+        <!--Navigation END-->
 
         <div class="main-page">
             <!--Hero Section START-->
             <header class="section-container">
-                <div aria-label="breadcrumb" style="margin-bottom: 24px;">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="case-study-catalogue.html">Case Studies</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Crafting Guidelines for MSPbot's Asset Team</li>
-                    </ol>
+                <div class="site-breadcrumb">
+                    <a href="index.html" class="bc-home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
+                        </svg>
+                        Home
+                    </a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <a href="case-study-catalogue.html">Case Studies</a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <p class="current-bc">Crafting Guidelines for MSPbots’ Asset Team</p>
                 </div>
                 <div class="v-stack">
                     <div class="h-stack space-2">
@@ -381,16 +386,22 @@
                                             <div class="feature-display">
                                                 <div class="cs-carousel">
                                                     <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
                                                         <div class="case-study-subtitle">Customization Rules</div>
                                                         <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
                                                             </button>
-                                                            <button class="cs-carousel__btn-next" type="button">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
                                                             </button>
                                                         </div>
                                                     </div>
@@ -443,16 +454,22 @@
                                             <div class="feature-display">
                                                 <div class="cs-carousel">
                                                     <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
                                                         <div class="case-study-subtitle">Screen Layout Guide</div>
                                                         <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
                                                             </button>
-                                                            <button class="cs-carousel__btn-next" type="button">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
                                                             </button>
                                                         </div>
                                                     </div>
@@ -497,16 +514,22 @@
                                             <div class="feature-display">
                                                 <div class="cs-carousel">
                                                     <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2">
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
                                                         <div class="case-study-subtitle">How It Works</div>
                                                         <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">
-                                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Previous</span>
+                                                            <button class="cs-carousel__btn-prev" type="button">            
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
                                                             </button>
-                                                            <button class="cs-carousel__btn-next" type="button">
-                                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                                <span class="visually-hidden">Next</span>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
                                                             </button>
                                                         </div>
                                                     </div>
@@ -609,25 +632,57 @@
                                 <!--Key Insights-->
                                 <div class="block v-stack space-5" id="key-insights">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Key Insights</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, suscipit neque fugiat numquam nihil impedit. Eligendi pariatur expedita magnam iste alias, quos impedit quidem perferendis fuga, harum dicta necessitatibus nihil.</p>
+                                        <h5>Key Insights</h5>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item is-open">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                        <p><span class="situation-bold">Because</span> the existing screens had no shared visual standard... <span class="situation-bold">it led to</span> the guideline needing to be prescriptive rather than flexible.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Adding a Do’s and Don’ts format would remove design ambiguity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <i>**Because the existing screens had no shared visual standard, the guideline needed to be prescriptive rather than flexible.**</i>
-                                            <p>Giving the Asset Team design options would have reproduced the inconsistency problem. The Do's and Don'ts format removed ambiguity by design.</p>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
+                                                        <p><span class="situation-bold">Because</span> no brand guideline existed... <span class="situation-bold">it led to</span> the marketing site becoming the most defensible visual anchor.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Connecting the Welcome Screens to the marketing site was my opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <i>**Because no brand guideline existed, the marketing site became the most defensible visual anchor.**</i>
-                                            <p class="text-danger">Connecting Welcome Screens to the marketing site's style wasn't a compromise — it was an opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the Asset Team had no design background, medium and format mattered as much as content.**</i>
-                                            <p class="text-danger">The layout logic section — covering conditional decisions like when to use 3 columns versus a simpler structure — caused the most confusion in practice. A more visual, example-driven approach would have served them better.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because scope expanded mid-project, the output type deserved to be questioned.**</i>
-                                            <p class="text-danger">The scope additions — CSS instructions, copy-paste HTML — pointed toward a web-based format from the start. A guideline website would have served the Asset Team's actual usage patterns better than a static PDF.</p>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
+                                                        <p><span class="situation-bold">Because</span> the scope expanded mid-project... <span class="situation-bold">it led to</span> the output type deserving to be questioned.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>On top of the scope additions, it made me realize that this project should have been a web-based format from the start. A guideline website would have served the Asset Team’s actual usage patterns better than a static PDF file.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -637,25 +692,65 @@
                                         <div>
                                             <h5>Design Iterations</h5>
                                         </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 1 — From Over-Written to Concise</h6>
-                                            <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify. The revised version reduced explanatory text significantly, relying on the Do's and Don'ts structure to carry the guidance. The Asset Team needed a quick reference, not a manual.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 2 — Responsive Breakpoint Section Added</h6>
-                                            <p>King raised a requirement mid-project that hadn't been scoped initially: layout and typographic guidance across desktop screen sizes, specifically 1440px and 1280px. This was incorporated as a dedicated section and became one of the more technically useful parts of the guideline.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 3 — Pivot from Documenting HTML to Building It</h6>
-                                            <p>Glenn's request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly — a decision that made sense given my front-end background and the team's limited HTML knowledge. Glenn adopted the templates immediately. The tradeoff: they were never formally added to the PDF, leaving a documented gap in the written guideline.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Self-Initiated Extension — Web Version of the Design Guidelines *(In Progress)*</h6>
-                                            <p>The copy-paste gap in the PDF, combined with a post-departure rebrand that made the original file outdated, became the motivation for a self-initiated follow-up: a web-based version of the guidelines built to the branding I co-planned with the Marketing Head before leaving.
-                                            <br><br>
-                                            The web version is currently hosted on GitHub and addresses the one functional gap the PDF couldn't solve — live, copy-paste HTML and CSS that the Asset Team can access directly without opening a document. This project reflects a consistent practice in how I approach portfolio work: I don't just show the plan. I show the thing.</p>
-                                            <br><br>
-                                            <p>*GitHub: [insert link]*</p>
+                                        <div class="design-iteration-accordion" data-design-iteration-accordion>
+                                            <div class="design-iteration-accordion-item is-open">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 1</div>
+                                                        <p>From Over-Written to Concise</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
+                                                    <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify. The revised version reduced explanatory text significantly, relying on the Do's and Don'ts structure to carry the guidance. The Asset Team needed a quick reference, not a manual.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 2</div>
+                                                        <p>Responsive Breakpoint Section Added</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
+                                                    <p>King raised a requirement mid-project that hadn't been scoped initially: layout and typographic guidance across desktop screen sizes, specifically 1440px and 1280px. This was incorporated as a dedicated section and became one of the more technically useful parts of the guideline.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 3</div>
+                                                        <p>Pivot from Documenting HTML to Building It</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
+                                                    <p>Glenn's request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly - a decision that made sense given my front-end background and the team's limited HTML knowledge. Glenn adopted the templates immediately. The tradeoff: they were never formally added to the PDF, leaving a documented gap in the written guideline.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-4" aria-expanded="false" aria-controls="iteration-panel-4">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 4</div>
+                                                        <p>Self-Initiated Extension: Web Version of the Guidelines</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-4" role="region" aria-labelledby="iteration-trigger-4" aria-hidden="true">
+                                                    <p>The copy-paste gap in the PDF, combined with a post-departure rebrand that made the original file outdated, became the motivation for a self-initiated follow-up: a web-based version of the guidelines built to the branding I co-planned with the Marketing Head before leaving.</p>
+                                                    <p class="mt-3">The web version is currently hosted on GitHub and addresses the one functional gap the PDF couldn't solve - live, copy-paste HTML and CSS that the Asset Team can access directly without opening a document. This project reflects a consistent practice in how I approach portfolio work: I don't just show the plan. I show the thing.</p>
+                                                    <p class="mt-3">*GitHub: [insert link]*</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -696,6 +791,7 @@
         <script src="carousel.js"></script>
         <script src="toc-highlight.js"></script>
         <script src="before-after-block.js"></script>
+        <script src="key-insights-accordion.js"></script>
         <!--scripts END-->
     </body>
 </html>
