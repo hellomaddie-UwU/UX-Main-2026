@@ -254,33 +254,24 @@
                 <div class="service-tabs" data-service-tabs>
                     <div class="service-tabs-list mx-auto" role="tablist" aria-label="Design system impact scenarios">
                         <button
-                            type="button"
-                            class="service-tab-btn is-active"
-                            id="impact-tab-1"
-                            role="tab"
-                            aria-selected="true"
-                            aria-controls="impact-panel-1"
+                            type="button"        class="service-tab-btn is-active"
+                            id="impact-tab-1"    role="tab"
+                            aria-selected="true" aria-controls="impact-panel-1"
                         >
                             Handoff Delays
                         </button>
                         <button
-                            type="button"
-                            class="service-tab-btn"
-                            id="impact-tab-2"
-                            role="tab"
-                            aria-selected="false"
-                            aria-controls="impact-panel-2"
+                            type="button"         class="service-tab-btn"
+                            id="impact-tab-2"     role="tab"
+                            aria-selected="false" aria-controls="impact-panel-2"
                             tabindex="-1"
                         >
                             Inconsistent UI
                         </button>
                         <button
-                            type="button"
-                            class="service-tab-btn"
-                            id="impact-tab-3"
-                            role="tab"
-                            aria-selected="false"
-                            aria-controls="impact-panel-3"
+                            type="button"         class="service-tab-btn"
+                            id="impact-tab-3"     role="tab"
+                            aria-selected="false" aria-controls="impact-panel-3"
                             tabindex="-1"
                         >
                             Slow Releases
@@ -295,9 +286,91 @@
                             aria-labelledby="impact-tab-1"
                         >
                             <!--Content Goes Here START-->
-                            <p>Accordion Card 1</p>
-                            <p>Accordion Card 1</p>
-                            <p>Accordion Card 1</p>
+                            <div class="selection-accordion" data-selection-accordion>
+                                <div class="selection-accordion-wrapper">
+                                    <!--Selector Boxes START-->
+                                    <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                    <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                    <!--Selector Boxes END-->
+                                    <div class="selection-accordion-item">
+                                        <button 
+                                            class="selection-accordion-header"  type="button" 
+                                            id="selection-trigger-1"            aria-expanded="false" 
+                                            aria-controls="selection-panel-1"
+                                        >
+                                            <p>01: Accordion Header</p>
+                                            <div class="selection-plus">
+                                                <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                            </div>
+                                        </button>
+                                        <div 
+                                            class="selection-accordion-content" id="selection-panel-1" 
+                                            role="region"                       aria-labelledby="selection-trigger-1"
+                                            aria-hidden="true"
+                                        >
+                                            <p>content here</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="selection-accordion-wrapper">
+                                    <!--Selector Boxes START-->
+                                    <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                    <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                    <!--Selector Boxes END-->
+                                    <div class="selection-accordion-item">
+                                        <button 
+                                            class="selection-accordion-header"  type="button" 
+                                            id="selection-trigger-2"            aria-expanded="false" 
+                                            aria-controls="selection-panel-2"
+                                        >
+                                            <p>02: Accordion Header</p>
+                                            <div class="selection-plus">
+                                                <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                            </div>
+                                        </button>
+                                        <div 
+                                            class="selection-accordion-content" id="selection-panel-2" 
+                                            role="region"                       aria-labelledby="selection-trigger-2"
+                                            aria-hidden="true"
+                                        >
+                                            <p>content here</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="selection-accordion-wrapper">
+                                    <!--Selector Boxes START-->
+                                    <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                    <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                    <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                    <!--Selector Boxes END-->
+                                    <div class="selection-accordion-item">
+                                        <button 
+                                            class="selection-accordion-header"  type="button" 
+                                            id="selection-trigger-3"            aria-expanded="false" 
+                                            aria-controls="selection-panel-3"
+                                        >
+                                            <p>03: Accordion Header</p>
+                                            <div class="selection-plus">
+                                                <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                            </div>
+                                        </button>
+                                        <div 
+                                            class="selection-accordion-content" id="selection-panel-3" 
+                                            role="region"                       aria-labelledby="selection-trigger-3"
+                                            aria-hidden="true"
+                                        >
+                                            <p>content here</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <!--Content Goes Here END-->
                         </section>
                         <section

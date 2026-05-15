@@ -15,7 +15,8 @@ GitHub Issues to Write
 ## Design System Zero
     ### Copy-related
         ☐ Create a title, description, and alt text for each image on this service page
-    	☐ Create official tab behavior(the one that's connected to the Without Service XYZ, etc)
+    	☑ Create official tab behavior(the one that's connected to the Without Service XYZ, etc) @2026-05-16 01:20:25
+    	☐ 
     
 	### Design-related
 		☐ Tablet > Make case study content 100% in width
@@ -26,7 +27,8 @@ GitHub Issues to Write
 
 ### Service Template
 	### Component-related
-    	☐ Create Tab Interactive Behavior
+    	☑ Create Tab Interactive Behavior @2026-05-16 01:13:53
+    	☐ 
     	
 	### Create lottie animation of deliverable timeline bar instead
         

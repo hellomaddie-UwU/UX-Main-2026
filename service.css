@@ -5,6 +5,7 @@
 4. Case Study Image
 5. Featured Image
 6. Simple Accordion Card
+7. Selection Accordion
 */
 
 /*Single Accordion Card START*/
@@ -287,6 +288,58 @@
     padding-left: 32px;
 }
 /*Simple Accordion Card END*/
+
+/*Selection Accordion START*/
+.selection-accordion {
+    display: flex;
+    flex-direction: column; 
+    gap: var(--space-7);
+}
+
+.selection-accordion-wrapper {
+    position: relative;
+}
+
+.selection-accordion-item {
+    border: 0.5px #8722A9 solid;
+    overflow: hidden;
+    padding: 16px;
+}
+
+.selection-accordion-header {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    text-align: left;
+    cursor: pointer;
+}
+
+.selection-accordion-header p {font-weight: 500;}
+
+.selection-plus img {
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.selection-accordion-item.is-open .selection-plus img {
+    transform: rotate(45deg);
+}
+
+.selection-accordion-content {
+    display: none;
+    border-top: 1px solid #FFA1B7;
+    margin-top: var(--space-3);
+    padding-top: var(--space-3);
+}
+
+.selection-accordion-item.is-open .selection-accordion-content {
+    display: block;
+}
+/*Selection Accordion END*/
 
 /*========================================================================*/
 

@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
             panelSelector: '.reflection-content'
         },
         {
+            containerSelector: '.selection-accordion[data-selection-accordion]',
+            itemSelector: '.selection-accordion-item',
+            triggerSelector: '.selection-accordion-header',
+            panelSelector: '.selection-accordion-content'
+        },
+        {
             containerSelector: '.ICP-intro-accordion',
             itemSelector: '.ICP-intro-accordion-item',
             triggerSelector: '.ICP-intro-header',
