@@ -83,8 +83,12 @@
     padding-bottom: 40px;
 }
 
-.block h5 {
+.block h5, .ending-case h5 {
     font-weight: 500;
+}
+
+.ending-case h5 {
+    color: var(--clairvoyant-500);
 }
 
 .block p {
@@ -328,11 +332,14 @@ margin-top: var(--space-3);
 }
 /* ────────────────────── */
 
-.insight-accordion, .design-iteration-accordion {
+.insight-accordion, .design-iteration-accordion, .reflection-accordion {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
 }
+
+.insight-accordion, .design-iteration-accordion {gap: var(--space-3);}
+
+.reflection-accordion {gap: var(--space-5);}
 
 .insight-accordion-item {
     display: flex;
@@ -357,7 +364,7 @@ margin-top: var(--space-3);
     overflow: hidden;
 }
 
-.insight-accordion-header, .iteration-header {
+.insight-accordion-header, .iteration-header, .reflection-header {
     width: 100%;
     border: 0;
     background: transparent;
@@ -374,7 +381,13 @@ margin-top: var(--space-3);
 
 .iteration-header p {margin-top: -5px;}
 
-.insight-accordion-header:focus-visible, .iteration-header:focus-visible {
+.reflection-header p, .reflection-header h6, .reflection-content p {color: white;}
+
+.reflection-header h6 {font-weight: 500;}
+
+.reflection-content p {font-weight: 300; line-height: 28px;}
+
+.insight-accordion-header:focus-visible, .iteration-header:focus-visible, .reflection-header:focus-visible {
     outline: 2px solid var(--clairvoyant-500);
     outline-offset: 2px;
 }
@@ -400,6 +413,20 @@ margin-top: var(--space-3);
     transform: rotate(0deg);
 }
 
+.reflection-plus {
+    width: 24px;
+    height: 24px;
+}
+
+.reflection-plus img {
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.reflection-accordion-item.is-open .reflection-plus img {
+    transform: rotate(45deg);
+}
+
 .insight-accordion-panel {
     display: none;
 }
@@ -414,8 +441,14 @@ margin-top: var(--space-3);
     border-top: 1px solid var(--clairvoyant-400);
 }
 
+.reflection-content {
+    display: none;
+    border-top: none;
+}
+
 .insight-accordion-item.is-open .my-insight,
-.design-iteration-accordion-item.is-open .iteration-content {
+.design-iteration-accordion-item.is-open .iteration-content,
+.reflection-accordion-item.is-open .reflection-content {
     display: block;
 }
 
@@ -426,6 +459,11 @@ margin-top: var(--space-3);
 }
 
 .iteration-title {text-transform: uppercase;}
+
+.ending-case {
+    background-color: var(--surface-dark);
+}
+
 
 /*========================================================================*/
 

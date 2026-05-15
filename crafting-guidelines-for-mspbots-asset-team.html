@@ -760,25 +760,72 @@
                     </div>
                 </div>
 
-                <!--Thank You START-->
-                <div class="section-container surface-dark">
-                    <div class="text-center" style="margin-bottom: 80px;">
-                        <img src="imgs/ty-badge.svg" alt="thank you badge">
+                <!--End START-->
+                <div class="section-container ending-case">
+                    <!--Reflection START-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imgs/ty-badge.svg" alt="bunny badge">
+                        </div>
+                        <div class="col-10">
+                            <div class="v-stack space-5">
+                                <h5>Reflection</h5>
+                                <div class="reflection-accordion" data-reflection-accordion>
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-1" aria-expanded="false" aria-controls="reflection-panel-1">
+                                            <h6>What Worked</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="toggle reflection">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-1" role="region" aria-labelledby="reflection-trigger-1" aria-hidden="true">
+                                            <p>Anchoring the guidelines to the marketing site’s visual style gave the work immediate credibility without needing a formal brand system to exist first. Building the HTML widgets directly rather than writing instructions for non-developers to follow was the right call for the team's actual skill level and eliminated a layer of translation that would have introduced errors.</p>
+                                        </div>
+                                    </div>  
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-2" aria-expanded="false" aria-controls="reflection-panel-2">
+                                            <h6>What Remained Unsolved</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="toggle reflection">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-2" role="region" aria-labelledby="reflection-trigger-2" aria-hidden="true">
+                                            <p>The HTML widget templates were never formally documented in the PDF. The illustration guidelines were followed inconsistently and eventually bypassed in favor of generative AI. The layout logic section caused confusion that a more visual, example-heavy format would have prevented.</p>
+                                        </div>
+                                    </div>  
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-3" aria-expanded="false" aria-controls="reflection-panel-3">
+                                            <h6>What I’d Do Differently</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="toggle reflection">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-3" role="region" aria-labelledby="reflection-trigger-3" aria-hidden="true">
+                                            <p>I’d scrap the PDF entirely and build a website from the start. The scope additions that came mid-project were signals that a static document wasn't the right medium. A web-based guideline would have accommodated all three deliverables natively, supported Glenn's copy-paste use case from day one, and remained easier to update as the brand evolved.
+                                            <br><br>
+                                            I'd also use an AI writing assistance earlier in the drafting process. My instinct to over-document is real, and a tool that pushes back on verbosity earlier would have saved a revision cycle. 
+                                            <br><br>
+                                            Both lessons required the experience to surface. I wouldn't have known the medium was wrong until I saw what the work actually needed to become.</p>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
+                    <!--Reflection END-->
+
+                    <!--Other Case Studies START-->
+                    <!--Other Case Studies END-->
+
+                    <!--Related Service START-->
+                    <!--Related Service END-->
                 </div>
-                <!--Thank You END-->
+                <!--End END-->
+
+                <!--footer START-->
+                <!--footer END-->
             </div>
-            <!--Case Study Content END-->
-
-
-            <!--Other Case Studies START-->
-            <!--Other Case Studies END-->
-
-            <!--Related Service START-->
-            <!--Related Service END-->
-
-            <!--footer START-->
-            <!--footer END-->
         </div>
 
         <!--scripts START-->
@@ -792,6 +839,7 @@
         <script src="toc-highlight.js"></script>
         <script src="before-after-block.js"></script>
         <script src="key-insights-accordion.js"></script>
+        <script src="simple-accordion.js"></script>
         <!--scripts END-->
     </body>
 </html>
