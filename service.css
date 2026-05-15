@@ -1,9 +1,10 @@
 /*Table of Contents
-1. Single Accordion Card
+1. Single Accordion Card -> ICP Section
 2. Toggle
 3. Timeline Vertical Scroll
 4. Case Study Image
 5. Featured Image
+6. Simple Accordion Card
 */
 
 /*Single Accordion Card START*/
@@ -188,6 +189,53 @@
     align-self: flex-start;
 }
 
+/*Simple Accordion Card START*/
+.ICP-intro-accordion {
+    display: flex;
+    flex-direction: column; 
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+}
+
+.ICP-intro-header {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ICP-intro-accordion-item.is-open .ICP-plus img {
+    transform: rotate(45deg);
+}
+
+.ICP-plus img {
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.ICP-intro-header p  {
+    color: var(--text-body);
+    font-weight: 600;
+}
+
+.ICP-content {
+    display: none;
+}
+
+.ICP-intro-accordion-item.is-open .ICP-content {
+    display: block;
+}
+
+.ICP-content p {
+    padding-left: 32px;
+}
+/*Simple Accordion Card END*/
 
 /*========================================================================*/
 

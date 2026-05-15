@@ -334,7 +334,7 @@ margin-top: var(--space-3);
 
 .insight-accordion, .design-iteration-accordion, .reflection-accordion {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .insight-accordion, .design-iteration-accordion {gap: var(--space-3);}

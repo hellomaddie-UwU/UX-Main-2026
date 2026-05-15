@@ -184,21 +184,53 @@
                             <!--Selector Boxes END-->
                             <div class="selection-content p-4">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <p class="small-title">This Service is Ideal For:</p>
-                                    <a href="design-system-zero.html#HAUPW-ICP">Check Where You Are</a>
+                                    <h6 class="ICP-header-section">This Service is Ideal For:</h6>
                                 </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>">
-                                    <p>SaaS teams preparing to scale and needs a solid UX foundation to amplify growth while reducing existing problems.</p>
+                                <div class="ICP-intro-accordion">
+                                    <div class="ICP-intro-accordion-item">
+                                        <button class="ICP-intro-header" type="button" id="ICP-intro-trigger-1" aria-expanded="false" aria-controls="ICP-intro-panel-1">
+                                            <div class="d-flex gap-2">
+                                                <img src="imgs/heart-point.svg" alt="heart point>">
+                                                <p>Text goes here</p>
+                                            </div>                            
+                                            <div class="ICP-plus">
+                                                <img src="imgs/plus-dark.svg" alt="toggle ICP intro">
+                                            </div>
+                                        </button>
+                                        <div class="ICP-content" id="ICP-intro-panel-1" role="region" aria-labelledby="ICP-intro-trigger-1" aria-hidden="true">
+                                            <p>Whose marketing site and web app look like they belong to two different companies; and whose dev team is rebuilding components every sprint because there's nothing reusable to work from.</p>
+                                        </div>
+                                    </div>
+                                    <div class="ICP-intro-accordion-item">
+                                        <button class="ICP-intro-header" type="button" id="ICP-intro-trigger-2" aria-expanded="false" aria-controls="ICP-intro-panel-2">
+                                            <div class="d-flex gap-2">
+                                                <img src="imgs/heart-point.svg" alt="heart point>">
+                                                <p>Text goes here</p>
+                                            </div>                            
+                                            <div class="ICP-plus">
+                                                <img src="imgs/plus-dark.svg" alt="toggle ICP intro">
+                                            </div>
+                                        </button>
+                                        <div class="ICP-content" id="ICP-intro-panel-2" role="region" aria-labelledby="ICP-intro-trigger-2" aria-hidden="true">
+                                            <p>Whose marketing site and web app look like they belong to two different companies; and whose dev team is rebuilding components every sprint because there's nothing reusable to work from.</p>
+                                        </div>
+                                    </div>
+                                    <div class="ICP-intro-accordion-item">
+                                        <button class="ICP-intro-header" type="button" id="ICP-intro-trigger-3" aria-expanded="false" aria-controls="ICP-intro-panel-3">
+                                            <div class="d-flex gap-2">
+                                                <img src="imgs/heart-point.svg" alt="heart point>">
+                                                <p>Text goes here</p>
+                                            </div>                            
+                                            <div class="ICP-plus">
+                                                <img src="imgs/plus-dark.svg" alt="toggle ICP intro">
+                                            </div>
+                                        </button>
+                                        <div class="ICP-content" id="ICP-intro-panel-3" role="region" aria-labelledby="ICP-intro-trigger-3" aria-hidden="true">
+                                            <p>Whose marketing site and web app look like they belong to two different companies; and whose dev team is rebuilding components every sprint because there's nothing reusable to work from.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>">
-                                    <p>Founders struggling with conversion and can’t pinpoint where their visitors exit.</p>
-                                </div>
-                                <div class="d-flex align-items-start">
-                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>"> 
-                                    <p>Companies preparing for funding and want their product’s UX to reflect the quality of what they’ve built.</p>
-                                </div>
+                                <a href="design-system-zero.html#HAUPW-ICP">Check Where You Are</a> 
                             </div>
                         </div>
                     </div>
@@ -262,6 +294,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
         <script src="accordion.js"></script>
+        <script src="simple-accordion.js"></script>
         <script src="carousel.js"></script>
         <!--scripts END-->
     </body>

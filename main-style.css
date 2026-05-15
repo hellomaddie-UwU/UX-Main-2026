@@ -434,6 +434,11 @@ a, .underline {color: #A12ECB;}
     line-height: 38px; /* 146.154% */
 }
 
+.ICP-header-section {
+    font-size: 19px;
+    font-weight: 600;
+}
+
 /*========================================================================*/
 
 /*Control Settings*/

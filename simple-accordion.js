@@ -5,6 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
             itemSelector: '.reflection-accordion-item',
             triggerSelector: '.reflection-header',
             panelSelector: '.reflection-content'
+        },
+        {
+            containerSelector: '.ICP-intro-accordion',
+            itemSelector: '.ICP-intro-accordion-item',
+            triggerSelector: '.ICP-intro-header',
+            panelSelector: '.ICP-content'
         }
     ];
 
