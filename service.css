@@ -132,6 +132,57 @@
 }
 /*Toggle END*/
 
+/*Service Tabs START*/
+
+.service-tabs-list {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    width: fit-content;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--space-8);
+    background-color: var(--clairvoyant-900);
+}
+
+.service-tab-btn {
+    border: 1px solid transparent;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 4px 18px;
+    border-radius: var(--space-6);
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.service-tab-btn.is-active {
+    color: var(--clairvoyant-700);
+    font-weight: 600;
+    background-color: var(--clairvoyant-200);
+    border-color: var(--clairvoyant-300);
+}
+
+.service-tab-btn:focus-visible {
+    outline: 2px solid var(--tangerine-400);
+    outline-offset: 2px;
+}
+
+.service-tabs-panels {
+    margin-top: var(--space-6);
+}
+
+.service-tab-panel h6 {
+    margin-bottom: var(--space-3);
+    color: var(--text-header);
+}
+
+.service-tab-panel p {
+    margin: 0;
+}
+/*Service Tabs END*/
+
 /*Timeline Vertical Scroll START*/
 .timeline-vertical-scroll {cursor: url('#'), auto;} /*Add an image of the deliverable instead*/
 

@@ -251,25 +251,84 @@
             <!--Without the Service Section START-->
             <div class="section-container">
                 <h5 class="text-center mb-2">Without Rebuilding Your Design System...</h5>
-                <div class="toggle-container mx-auto mb-3" role="group" aria-label="Audience type">
-                    <span type="button" class="toggle-button active-toggle" aria-pressed="true">SaaS Startup</span>
-                    <span type="button" class="toggle-button" aria-pressed="false">Digital Agencies</span>
-                    <span type="button" class="toggle-button" aria-pressed="false">E-Commerce/DTC Brands</span>
-                    <div class="toggle-active-bg"></div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <p>Accordion Card</p>
-                            <p>Accordion Card</p>
-                            <p>Accordion Card</p>
-                        </div>
-                        <div class="col">
-                            <p>Accordion Card</p>
-                            <p>Accordion Card</p>
-                        </div>
+                <div class="service-tabs" data-service-tabs>
+                    <div class="service-tabs-list mx-auto" role="tablist" aria-label="Design system impact scenarios">
+                        <button
+                            type="button"
+                            class="service-tab-btn is-active"
+                            id="impact-tab-1"
+                            role="tab"
+                            aria-selected="true"
+                            aria-controls="impact-panel-1"
+                        >
+                            Handoff Delays
+                        </button>
+                        <button
+                            type="button"
+                            class="service-tab-btn"
+                            id="impact-tab-2"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="impact-panel-2"
+                            tabindex="-1"
+                        >
+                            Inconsistent UI
+                        </button>
+                        <button
+                            type="button"
+                            class="service-tab-btn"
+                            id="impact-tab-3"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="impact-panel-3"
+                            tabindex="-1"
+                        >
+                            Slow Releases
+                        </button>
+                    </div>
+
+                    <div class="service-tabs-panels">
+                        <section
+                            class="service-tab-panel is-active"
+                            id="impact-panel-1"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-1"
+                        >
+                            <!--Content Goes Here START-->
+                            <p>Accordion Card 1</p>
+                            <p>Accordion Card 1</p>
+                            <p>Accordion Card 1</p>
+                            <!--Content Goes Here END-->
+                        </section>
+                        <section
+                            class="service-tab-panel"
+                            id="impact-panel-2"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-2"
+                            hidden
+                        >
+                            <!--Content Goes Here START-->
+                            <p>Accordion Card 2</p>
+                            <p>Accordion Card 2</p>
+                            <p>Accordion Card 2</p>
+                            <!--Content Goes Here END-->
+                        </section>
+                        <section
+                            class="service-tab-panel"
+                            id="impact-panel-3"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-3"
+                            hidden
+                        >
+                            <!--Content Goes Here START-->
+                            <p>Accordion Card 3</p>
+                            <p>Accordion Card 3</p>
+                            <p>Accordion Card 3</p>
+                            <!--Content Goes Here END-->
+                        </section>
                     </div>
                 </div>
+                 
             </div>
             <!--Without the Service Section END-->
 
@@ -296,6 +355,7 @@
         <script src="accordion.js"></script>
         <script src="simple-accordion.js"></script>
         <script src="carousel.js"></script>
+        <script src="tabs.js"></script>
         <!--scripts END-->
     </body>
 </html>
