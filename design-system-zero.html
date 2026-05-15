@@ -258,7 +258,7 @@
                             id="impact-tab-1"    role="tab"
                             aria-selected="true" aria-controls="impact-panel-1"
                         >
-                            Handoff Delays
+                            Saas Startups
                         </button>
                         <button
                             type="button"         class="service-tab-btn"
@@ -266,7 +266,7 @@
                             aria-selected="false" aria-controls="impact-panel-2"
                             tabindex="-1"
                         >
-                            Inconsistent UI
+                            Digital Agencies
                         </button>
                         <button
                             type="button"         class="service-tab-btn"
@@ -274,7 +274,7 @@
                             aria-selected="false" aria-controls="impact-panel-3"
                             tabindex="-1"
                         >
-                            Slow Releases
+                            E-Commerce / DTC Brands
                         </button>
                     </div>
 
@@ -408,18 +408,100 @@
             <!--What's In This Service Section START-->
             <div class="section-container">
                 <h5 class="text-center mb-2">What's In This Service?</h5>
-                <p class="text-center">*Exact contents may vary depending on your project needs!</p>
-                <div class="toggle-container mx-auto mb-3" role="group" aria-label="Deliverables type">
-                    <span type="button" class="toggle-button active-toggle" aria-pressed="true">Marketing Only</span>
-                    <span type="button" class="toggle-button" aria-pressed="false">Marketing + App</span>
-                    <span type="button" class="toggle-button" aria-pressed="false">Marketing + Multiple Products</span>
-                    <div class="toggle-active-bg"></div>
+                <p class="text-center mb-2">*Exact contents may vary depending on your project needs!</p>
+                
+                <div class="service-tabs" data-service-tabs>
+                    <div class="service-tabs-list mx-auto" role="tablist" aria-label="Design system impact scenarios">
+                        <button
+                            type="button"        class="service-tab-btn is-active"
+                            id="impact-tab-1"    role="tab"
+                            aria-selected="true" aria-controls="impact-panel-1"
+                        >
+                            Marketing Only
+                        </button>
+                        <button
+                            type="button"         class="service-tab-btn"
+                            id="impact-tab-2"     role="tab"
+                            aria-selected="false" aria-controls="impact-panel-2"
+                            tabindex="-1"
+                        >
+                            Marketing + App
+                        </button>
+                        <button
+                            type="button"         class="service-tab-btn"
+                            id="impact-tab-3"     role="tab"
+                            aria-selected="false" aria-controls="impact-panel-3"
+                            tabindex="-1"
+                        >
+                            Marketing + Multiple Products
+                        </button>
+                    </div>
+
+                    <div class="service-tabs-panels">
+                        <section
+                            class="service-tab-panel is-active"
+                            id="impact-panel-1"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-1"
+                        >
+                            <!--Content Goes Here START-->
+                            <div class="text-center mb-3">
+                                <div class="label-primary">Package 1</div>
+                                <h6>Marketing Only</h6>
+                                <p>For companies whose primary digital channel is a marketing website.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="deliverables-img-placeholder"></div>
+                                    <p class="fw-medium">Name</p>
+                                    <p>Brief description of this deliverable, and how it contributes to the overall service.</p>
+                                </div>
+                                <div class="col">
+                                    <div class="deliverables-img-placeholder"></div>
+                                    <p class="fw-medium">Name</p>
+                                    <p>Brief description of this deliverable, and how it contributes to the overall service.</p>
+                                </div>
+                                <div class="col">
+                                    <div class="deliverables-img-placeholder"></div>
+                                    <p class="fw-medium">Name</p>
+                                    <p>Brief description of this deliverable, and how it contributes to the overall service.</p>
+                                </div>
+                            </div>
+                            <!--Content Goes Here END-->
+                        </section>
+                        <section
+                            class="service-tab-panel"
+                            id="impact-panel-2"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-2"
+                            hidden
+                        >
+                            <!--Content Goes Here START-->
+                            <p>Accordion Card 2</p>
+                            <p>Accordion Card 2</p>
+                            <p>Accordion Card 2</p>
+                            <!--Content Goes Here END-->
+                        </section>
+                        <section
+                            class="service-tab-panel"
+                            id="impact-panel-3"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-3"
+                            hidden
+                        >
+                            <!--Content Goes Here START-->
+                            <p>Accordion Card 3</p>
+                            <p>Accordion Card 3</p>
+                            <p>Accordion Card 3</p>
+                            <!--Content Goes Here END-->
+                        </section>
+                    </div>
                 </div>
-                <p>Content</p>
             </div>
             <!--What's In This Service Section END-->
 
             <!--Case Study Section START-->
+
             <!--Case Study Section END-->
         </div>
         <!--scripts START-->
