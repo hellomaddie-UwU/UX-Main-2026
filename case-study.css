@@ -462,6 +462,7 @@ margin-top: var(--space-3);
 
 .ending-case {
     background-color: var(--surface-dark);
+    box-shadow: 8px 2px 20px 0 rgba(255, 194, 155, 0.25) inset;
 }
 
 
