@@ -58,6 +58,7 @@ html, body {
     /*-- can delete this --*/
     --razzmatazz-500: #F93A70;
 
+    --tangerine-50: #FFF4F1;
     --tangerine-400: #FFA385;
 
     /*Spacing*/
@@ -427,6 +428,11 @@ a, .underline {color: #A12ECB;}
     line-height: 23px; /* 164.286% */
 }
 
+.side-note-2 { /*Used for additional context na <h6> and above.*/
+    color: var(--text-body);
+    font-size: 19px;
+} 
+
 .service-extended-title {
     color: var(--clairvoyant-500);
     font-size: 26px;
@@ -451,7 +457,10 @@ a, .underline {color: #A12ECB;}
     cursor: pointer;
     line-height: 30px;
     font-size: 15px;
+    width: fit-content;
 }
+.btn-primary a {color: white; text-decoration: none;}
+
 
 .btn-primary:hover, .btn-primary-outline:hover, .btn-secondary:hover {
     background-color: #FFA385;

@@ -38,3 +38,4 @@ GitHub Issues to Write
 		
 	### Component-related
 		☐ Create a palette card component with the ability to clip it's hex color when clicked
+		☐ Clean up button component(<a> tag inside the button)

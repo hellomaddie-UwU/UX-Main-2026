@@ -7,6 +7,7 @@
 6. Simple Accordion Card
 7. Selection Accordion
 8. Deliverables Placeholder
+9. Investment Section
 */
 
 /*Single Accordion Card START*/
@@ -88,6 +89,8 @@
 .ICP-solution-content {
     display: none;
 }
+
+.ICP-solution-content h5 {color: var(--text-body);}
 /*Single Accordion Card END*/
 
 /*Toggle START*/
@@ -135,7 +138,6 @@
 /*Toggle END*/
 
 /*Service Tabs START*/
-
 .service-tabs-list {
     display: flex;
     justify-content: center;
@@ -144,6 +146,7 @@
     padding: var(--space-2) var(--space-3);
     border-radius: var(--space-8);
     background-color: var(--clairvoyant-900);
+    margin-top: var(--space-4);
 }
 
 .service-tab-btn {
@@ -172,7 +175,7 @@
 }
 
 .service-tabs-panels {
-    margin-top: var(--space-6);
+    padding-top: var(--space-8);
 }
 
 
@@ -296,10 +299,12 @@
 
 .selection-accordion-wrapper {
     position: relative;
+    margin-bottom: var(--space-7);
 }
 
 .selection-accordion-item {
     border: 0.5px #8722A9 solid;
+    background-color: white;
     overflow: hidden;
     padding: 16px;
 }
@@ -348,6 +353,13 @@
     margin-bottom: var(--space-2);
 }
 /*Deliverables Placeholder END*/
+
+/*Investment Section START*/
+.investment-section {
+    background: var(--tangerine-50);
+    margin-top: -25px;
+}
+/*Investment Section END*/
 
 /*========================================================================*/
 
