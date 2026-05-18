@@ -411,6 +411,7 @@ a, .underline {color: #A12ECB;}
     font-size: 14px;
     font-weight: 400;
     line-height: 23px;
+    margin-top: var(--space-1);
 }
 
 .case-study-subtitle, .features-title, .research-title, .design-iteration-title, .reflection-title {
