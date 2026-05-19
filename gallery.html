@@ -155,77 +155,121 @@
                     <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
                     <p class="current-bc">Gallery</p>
                 </div>
-                <h1 class="display-text">Gallery</h1>
-                <h3>A collection of illustrations, sketches, and brain dumps I made throughout the years.</h3>
+                <h1 class="display-text">Gallery</h1><br>
+                <h3 class="display-paragraph">A collection of illustrations, sketches, and brain dumps<br>I made throughout the years.</h3>
             </header>
-            <section class="section-container mb-4">
-                <div class="row">
-                    <div class="col-8">
-                        <div class="row">
-                            <div class="col">
+            <section class="section-container-mt-0 mb-4">
+                <div class="d-flex gap-4">
+                    <div class="w-67">
+                        <div class="d-flex gap-4 mb-4">
+                            <div class="w-50">
                                 <div class="placeholder-gallery-img" style="height: 600px;"></div>
                                 <p>Athena</p>
                             </div>
-                            <div class="col">
+                            <div class="w-50">
                                 <div class="placeholder-gallery-img" style="height: 600px;"></div>
                                 <p>Himeno</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Wallie Sketches</p>
-                        </div>
+                        <div class="placeholder-gallery-img" style="height: 400px;"></div>
+                        <p>Wallie Sketches</p>
                     </div>
-                    <div class="col-4">
-                        <div class="d-flex flex-column">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Wallie peaking</p>
-                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                            <p>Wallie laughing</p>
-                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                            <p>Suzzie Profile</p>
+                    <div class="w-33">
+                        <div class="d-flex flex-column gap-4">
+                            <div>
+                                <div class="placeholder-gallery-img" style="height: 400px;"></div>
+                                <p>Wallie peaking</p>
+                            </div>   
+                            <div>
+                                <div class="placeholder-gallery-img" style="height: 300px;"></div>
+                                <p>Wallie laughing</p>
+                            </div>                       
+                            <div>
+                                <div class="placeholder-gallery-img" style="height: 300px;"></div>
+                                <p>Suzzie Profile</p>
+                            </div>              
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="d-flex flex-column">
-                            <div class="placeholder-gallery-img" style="height: 400px;"></div>
-                            <p>Wedding</p>
-                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                            <p>2024 Profile</p>
+                <div class="d-flex gap-4" style="margin-top: -40px;">
+                    <div class="w-33">
+                        <div class="d-flex flex-column gap-4">
+                            <div>
+                                <div class="placeholder-gallery-img" style="height: 400px;"></div>
+                                <p>Wedding</p>
+                            </div>
+                            <div>
+                                <div class="placeholder-gallery-img" style="height: 300px;"></div>
+                                <p>2024 Profile</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-8">
-                        <div class="row">
-                            <div class="col">
+                    <div class="w-67 gap-4">
+                        <div class="d-flex gap-5 mb-4">
+                            <div class="w-50">
                                 <div class="placeholder-gallery-img" style="height: 300px;"></div>
                                 <p>Wallie on the grass</p>
                             </div>
-                            <div class="col">
-                                <p>free space</p>
+                            <div class="w-50">
+                                <div style="width: 100%; text-align: center; padding-top: 90px;">
+                                    <img class="w-25" src="imgs/heart-point.svg" alt="heart">
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div>
                             <div class="placeholder-gallery-img" style="height: 400px;"></div>
                             <p>Makima</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                        <p>Being a UX Designer</p>
+                <div class="d-flex gap-4">
+                    <div class="w-67">
+                        <div>
+                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
+                            <p>Being a UX Designer</p>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <div class="placeholder-gallery-img" style="height: 300px;"></div>
-                        <p>Mitsuri</p>
+                    <div class="w-33">
+                        <div>
+                            <div class="placeholder-gallery-img" style="height: 300px;"></div>
+                            <p>Mitsuri</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <!--Newsletter CTA Banner-->
-            <!--Footer-->
+            <!--Newsletter CTA Banner START-->
+            <div class="section-container newsletter">
+                <div class="d-flex gap-3">
+                    <div class="w-25">
+                        <h6 class="fw-semibold">Join My Newsletter</h6>
+                        <p>Get exclusive news, behind-the-scenes content, insider tips delivered straight to your inbox.</p>
+                    </div>
+                    <div class="w-75">
+                        <form>
+                             <!--FName-->
+                            <label for="FirstName">First Name<span class="required-point">*</span></label>
+                            <input type="text" id="FirstName" name="first_name" class="form-control" aria-label="First name" required>
+                            <!--Email-->
+                            <label for="Email">Email Address<span class="required-point">*</span></label>
+                            <input type="email" id="Email" name="email_address" class="form-control" aria-label="Email address" required>
+                            <!--Submit Button-->
+                            <p id="contactFormStatus" class="mb-0 me-auto small" role="status" aria-live="polite" hidden></p>
+                            <button class="btn-primary" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--Newsletter CTA Banner END-->
+
+            <!--Footer START-->
+            <footer>
+                <div class="end d-flex justify-content-between">
+                    <p>© 2026 hellomaddie All Rights Reserved</p>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </footer>
+            <!--Footer END-->
         </div>
 
         <!--scripts START-->

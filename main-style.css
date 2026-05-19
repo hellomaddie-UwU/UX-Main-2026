@@ -56,6 +56,7 @@ html, body {
     --clairvoyant-900: #5F1E71;
 
     /*-- can delete this --*/
+    --razzmatazz-400: #FF6D92;
     --razzmatazz-500: #F93A70;
 
     --tangerine-50: #FFF4F1;
@@ -233,6 +234,19 @@ nav {z-index: 2;}
     padding: 40px 5% 60px 5%;
 }
 
+.section-container-mt-0 {
+    margin-left: 90px;
+    padding: 0px 5% 60px 5%;
+}
+
+.newsletter {
+    background-color: white;
+    border-top: 1px solid #FFA1B7;
+}
+
+.w-67 {width: 67%;}
+.w-33 {width: 33%}
+
 .h-stack { /*equivalent of Auto Layout*/
     display: flex;
     align-items: flex-start;
@@ -341,15 +355,32 @@ p {
     margin-bottom: 0px;
 }
 
-.display-text {
+.display-text { /*The pink one*/
     font-family: "Hello Radio";
     font-size: 94px;
-    font-style: normal;
     font-weight: 400;
     line-height: 60px; /* 63.83% */
+
+    color: var(--razzmatazz-400);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--Brand-Razzmatazz-50, #FFF1F4);
+    paint-order: stroke fill;
+    transform: rotate(-7.45deg);
+    display: inline-block;
 }
 
-.display-section-text {
+.display-paragraph {
+    color: var(--text-body);
+    font-family: "Hello Radio";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 46px; /* 92% */
+
+    transform: rotate(-3.45deg);
+    display: inline-block;
+}
+
+.display-section-text { /*The white one with the pink stroke*/
     color: var(--dialog-body);
     text-shadow: -3px 3px 0 var(--text-shadow-color);
     -webkit-text-stroke-width: 2px;
