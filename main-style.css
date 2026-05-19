@@ -245,7 +245,7 @@ nav {z-index: 2;}
 }
 
 .w-67 {width: 67%;}
-.w-33 {width: 33%}
+.w-33 {width: 33%;}
 
 .h-stack { /*equivalent of Auto Layout*/
     display: flex;
@@ -490,6 +490,7 @@ a, .underline {color: #A12ECB;}
     line-height: 30px;
     font-size: 15px;
     width: fit-content;
+    text-decoration: none;
 }
 .btn-primary a {color: white; text-decoration: none;}
 

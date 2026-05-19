@@ -388,7 +388,7 @@ margin-top: var(--space-3);
 .iteration-header p {margin-top: -5px;}
 
 .discovery-accordion-header > h6 {
-    font-weight: 300px; 
+    font-weight: 300; 
     color:#3E4784;
 }
 
