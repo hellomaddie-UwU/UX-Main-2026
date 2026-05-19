@@ -64,6 +64,12 @@ Table of Contents:
     color: #1570EF;
 }
 
+.pill-health {
+    border: 1px solid #C7D7FE;
+    background-color: #EEF4FF;
+    color: #6172F3;
+}
+
 
 
 /*Notification Message*/

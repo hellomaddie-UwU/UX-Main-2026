@@ -23,20 +23,24 @@ GitHub Issues to Write
 		☐ Tablet > Make case study content 100% in width
 		☐ Tablet & Mobile > adjust sectiony-padding so the Section Header is visible when scrolling from TOC. Continuation of #46.
 
-### Clean Code
+## Clean Code
 	☐ Unify the inset imgs into one class(case study featured image, case study image, service featured image, etc).
 
-### Service Template
+## Service Template
 	### Component-related
     	☑ Create Tab Interactive Behavior @2026-05-16 01:13:53
     	☐ 
     	
 	### Create lottie animation of deliverable timeline bar instead
         
-### Mini Design System
+## Mini Design System
 	### Copy-related
 		☐ SEO content & OG Image
 		
 	### Component-related
 		☐ Create a palette card component with the ability to clip it's hex color when clicked
 		☐ Clean up button component(<a> tag inside the button)
+		
+## Vyepti Case Study
+	### Copy-related
+		☐ Add the official URL of Vyepti's site onto the context section
