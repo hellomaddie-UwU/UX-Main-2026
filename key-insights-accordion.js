@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const accordionTypes = [
         {
+            containerSelector: '[data-discovery-accordion]',
+            itemSelector: '.discovery-accordion-item',
+            triggerSelector: '.discovery-accordion-header',
+            panelSelector: '.discovery-accordion-panel'
+        },
+        {
             containerSelector: '[data-insight-accordion]',
             itemSelector: '.insight-accordion-item',
             triggerSelector: '.insight-accordion-header',

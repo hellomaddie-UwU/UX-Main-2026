@@ -5,9 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--SEO START-->
         <title>Restructuring MSPbot's Design System | hellomaddie</title>
-        <meta name="description" content="insert a brief description of what this case study is about.">
-        <meta name="keywords" content="insert relevant keywords related to this case study.">
-        <meta name="author" content="Bianca Maddela">
+        <meta name="description" content="#">
+        <meta name="author" content="hellomaddie">
+
+        <!-- Universal Open Graph -->
+        <meta property="og:title" content="Restructuring MSPbot's Design System | hellomaddie">
+        <meta property="og:description" content="#">
+        <meta property="og:image" content="imgs/SEO/case-studies/02-og.png"> <!-- Replace with actual image URL: 1200×630px -->
+        <meta property="og:image:alt" content="#">
+        <meta property="og:url" content="#"> <!-- Needs to be the official URL -->
+        <meta property="og:type" content="website">
+
+        <!-- Twitter/X Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="#">
+        <meta name="twitter:description" content="#">
+        <meta name="twitter:image" content="imgs/SEO/case-studies/02-og.png"> <!-- Replace with actual image URL: 1200×630px -->
         <!--SEO END-->
 
         <!--Stylesheet START-->
@@ -286,7 +299,6 @@
                                                 <a href="restructuring-mspbots-design-system.html#research-discovery">Research & Discovery</a>
                                                 <a href="restructuring-mspbots-design-system.html#key-insights">Key Insights</a>
                                                 <a href="restructuring-mspbots-design-system.html#design-iterations">Design Iteration</a>
-                                                <a href="restructuring-mspbots-design-system.html#reflection">Reflection</a>
                                             </div>
                                             <div class="row position-absolute" style="top: 103px;">
                                                 <img class="w-100" src="imgs/the-ux-stuff.svg" alt="the-ux-stuff">
@@ -690,30 +702,122 @@
                                             <h6 class="research-title">**Manager as PM Team Proxy**</h6>
                                             <p>The full PM Team was based in China; the user was the only Philippines-based team member. Direct access to PM stakeholders was not available. Feedback from the PM Team was consolidated and relayed through the direct manager, who served as the primary stakeholder representative throughout the project.</p>
                                         </div>
+                                        <div class="discovery-accordion" data-discovery-accordion>
+                                            <div class="discovery-accordion-item is-open">
+                                                <img class="mt-1" src="imgs/pin-point.svg" alt="discovery-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-1" aria-expanded="true" aria-controls="discovery-panel-1">
+                                                        <h6>Header</h6>
+                                                        <div class="discovery-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle discovery">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-discovery discovery-accordion-panel" id="discovery-panel-1" role="region" aria-labelledby="discovery-trigger-1" aria-hidden="false">
+                                                        <p>Always going back to Nora for questions, clarifications, and history-related context on pages and specific components as her foundation work was extremely valuable to the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="discovery-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point.svg" alt="discovery-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-2" aria-expanded="false" aria-controls="discovery-panel-2">
+                                                        <h6>Header</h6>
+                                                        <div class="discovery-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle discovery">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-discovery discovery-accordion-panel" id="discovery-panel-2" role="region" aria-labelledby="discovery-trigger-2" aria-hidden="true">
+                                                        <p>Always going back to Nora for questions, clarifications, and history-related context on pages and specific components as her foundation work was extremely valuable to the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="discovery-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point.svg" alt="discovery-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-3" aria-expanded="false" aria-controls="discovery-panel-3">
+                                                        <h6>Header</h6>
+                                                        <div class="discovery-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle discovery">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-discovery discovery-accordion-panel" id="discovery-panel-3" role="region" aria-labelledby="discovery-trigger-3" aria-hidden="true">
+                                                        <p>Always going back to Nora for questions, clarifications, and history-related context on pages and specific components as her foundation work was extremely valuable to the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <!--Key Insights-->
                                 <div class="block v-stack space-5" id="key-insights">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Key Insights</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, suscipit neque fugiat numquam nihil impedit. Eligendi pariatur expedita magnam iste alias, quos impedit quidem perferendis fuga, harum dicta necessitatibus nihil.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the existing design system was built for one person, it couldn't scale until it was rebuilt for a team.**</i>
-                                            <p class="text-danger">Nora's foundational work was valuable — but a system only one person can navigate is a personal tool, not a shared resource. Restructuring meant translating undocumented institutional knowledge into something transferable.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the audience shifted mid-project, the documentation had to be rewritten, not just extended.**</i>
-                                            <p class="text-danger">PM-facing instructions and developer-facing HTML attribute documentation are fundamentally different content types. The pivot from one to the other wasn't additive — it required rethinking what "useful documentation" meant for an entirely different reader.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the Legacy App was never fully audited before the project started, the real scope was larger than scoped.**</i>
-                                            <p>The page-by-page audit revealed that components had more states, more variations, and more view-dependent differences than anticipated. A pre-project audit would have produced a more accurate timeline estimate and potentially changed the three-phase plan.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the project was always low-priority, the medium was never seriously questioned.**</i>
-                                            <p>A Figma file is the right home for design assets. It is not the right home for PM instructions, developer HTML attributes, accessibility standards, and writing guidelines. An internal documentation website would have served all three audiences more effectively and been significantly easier to maintain and update as the product evolved.</p>
+                                        <h5>Key Insights</h5>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item is-open">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                        <p><span class="situation-bold">Because</span> the existing design system was built for one person... <span class="situation-bold">it led to</span> the file needing to be rebuilt so it could scale for a team.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Always going back to Nora for questions, clarifications, and history-related context on pages and specific components as her foundation work was extremely valuable to the project.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
+                                                        <p><span class="situation-bold">Because</span> the target audience shifted mid-way... <span class="situation-bold">it led to</span> the documentation portions had to rewritten, not just extended.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Since PM-facing and Dev-facing instructions are fundamentally different, I changed my original approach(Do’s and Don’ts) to something like how Element Plus does it(attributes). The only components that still had the original format were the Foundational ones(i.e. Logo & Favicon, Typography, Colors, et)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
+                                                        <p><span class="situation-bold">Because</span> the Legacy App was never fully audited before the project started... <span class="situation-bold">it led to</span> the real scope actually being larger than anticipated.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>The page-by-page audit revealed that components had more states, more variations, and more view-dependent differences than expected. A pre-project audit would have produced a more accurate timeline estimate and potentially changed the three-phase plan.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight-point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-4" aria-expanded="false" aria-controls="insight-panel-4">
+                                                        <p><span class="situation-bold">Because</span> the project was always low-priority... <span class="situation-bold">it led to</span> the medium was never seriously questioned.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="toggle insight">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-4" role="region" aria-labelledby="insight-trigger-4" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>A Figma file is the right home for design assets, but it’s not the right home for PM instructions, developer HTML attributes, accessibility standards, and writing guidelines. Personally, an internal documentation website would have served all three audiences more effectively and been significantly easier to maintain and update as the product evolved.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -722,56 +826,74 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Design Iterations</h5>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 1 — From Over-Written to Concise</h6>
-                                            <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify. The revised version reduced explanatory text significantly, relying on the Do's and Don'ts structure to carry the guidance. The Asset Team needed a quick reference, not a manual.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 1 — Atomic Design Proposal (Scrapped)</h6>
-                                            <p>Early in the project, an Atomic Design structure was proposed — organizing the system into Sub-atoms, Atoms, Molecules, Organisms, and so on. The proposal was reviewed and ultimately rejected in favor of following Element Plus' existing documentation structure. The rationale: consistency with the external reference the team already used. The tradeoff: a structure optimized for Element Plus rather than one that reflected the product's actual component hierarchy.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 2 — Documentation Method Evolved Over the Year</h6>
-                                            <p>Early component documentation was more manual and text-heavy. The discovery of the Element Plus official Figma library changed the production workflow mid-project — components could be copied directly, adjusted, and tokenized rather than built from scratch. Additionally, a cleaner method for displaying components alongside their states was developed later in the year. Earlier documented components predate this improvement and reflect a less refined presentation approach.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Iteration 3 — Scope Shifted from PM-Facing to Dev-Facing</h6>
-                                            <p>From Q2 onward, the writing audience shifted from PMs needing instructional guidance to developers needing HTML attributes and technical documentation. This wasn't a minor tone adjustment — it was a fundamental change in content type, requiring a different understanding of the reader's context and what counts as useful information for each audience.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Self-Initiated Addition — Design System GPT Agent *(Incomplete)*</h6>
-                                            <p>As MSPbots.ai moved toward an AI-first culture and required all employees to submit AI contributions, a GPT agent was initiated to serve as an interactive layer on top of the design system. The intent: allow any team member to query the system conversationally, receive component guidance, and assess mockup feasibility without needing to navigate the Figma file directly.</p>
-                                            <br>
-                                            <p class="text-danger">The agent was not completed before the layoff. A parallel initiative by teammate Nora Li — a vibe-coded website version of the design system — was also left unfinished due to tooling friction with Cursor and a developer collaborator who was pulled to higher-priority tasks.</p>
-                                            <br>
-                                            <p>In hindsight, the more effective split would have been to swap contributions: the front-end development background required to vibe-code the website was already present on the team. Neither team member knew the other's AI contribution scope until both were already in progress.</p>
-                                            <br>
-                                            <p>*GitHub / additional artifacts: [insert if applicable]*</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Reflection-->
-                                <div class="block v-stack space-5" id="reflection">
-                                    <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Reflection</h5>
-                                        </div>
-                                        <div>
-                                            <h6 class="reflection-title">What Worked</h6>
-                                            <p class="text-danger">The collaboration structure with Nora was effective throughout — weekly syncs kept the work moving despite the low-priority status, and the informal knowledge-sharing dynamic meant gaps were caught before they became permanent. Discovering the Element Plus Figma library was a genuine process improvement that made an under-resourced project more sustainable. The Accessibility Doc and Writing Guidelines were completed without being formally requested, and represent the only written standards of their kind for the Legacy Product.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="reflection-title">What Remained Unresolved</h6>
-                                            <p class="text-danger">Phase 1 was completed, but the system was never adopted. The audience for the documentation changed twice during the project — PM to developer — and the Figma file format served neither audience as well as a purpose-built internal website would have. The GPT agent, which might have driven adoption by lowering the barrier to accessing the system, was never finished. Components documented in the early part of the year reflect an older, less refined display approach that wasn't updated retroactively.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="reflection-title">What I'd Do Differently</h6>
-                                            <p class="text-danger">I'd push for a vibe-coded internal website from the start — and given what I know now, I would have taken on the front-end build myself. A website would have served the PM audience, the developer audience, and the copy-paste use case in ways a Figma file structurally cannot.</p>
-                                            <br>
-                                            <p class="text-danger">I'd also follow the Atomic Design structure over Element Plus' documentation hierarchy. The project was building an internal system for a specific product — organizing it around that product's actual component relationships would have produced something more useful long-term than mirroring an external library's structure.</p>
-                                            <br>
-                                            <p class="text-danger">The broader lesson is about medium and audience alignment. The same mistake made in the MSPbot Guidelines project — choosing a static document over a living, accessible website — showed up here again on a larger scale. The difference is that this time, the scope was larger, the audiences were more varied, and the cost of the wrong medium compounded across a full year of work.</p>
+                                        </div> 
+                                        <div class="design-iteration-accordion" data-design-iteration-accordion>
+                                            <div class="design-iteration-accordion-item is-open">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 1</div>
+                                                        <p>Atomic Design Proposal (Scrapped)</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
+                                                    <p>Early in the project, an Atomic Design structure was proposed: organizing the system into Sub-atoms, Atoms, Molecules, Organisms, and so on. The proposal was reviewed and was actually approved, however over time, the feedbacks afterwards shifted to following Element Plus' existing documentation structure. 
+                                                    <br><br>
+                                                    <b>The Rationale</b><br>
+                                                    Consistency with the external reference the team already used. 
+                                                    <br><br>
+                                                    <b>The Tradeoff</b><br>
+                                                    A structure optimized for Element Plus rather than one that reflected the product's actual component hierarchy.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 2</div>
+                                                        <p>Documentation Method Evolved Over the Year</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
+                                                    <p>Early component documentation was more manual and text-heavy. The discovery of the Element Plus official Figma library changed the production workflow mid-project with components being copy-pasted directly rather than building from scratch. Additionally, a cleaner method for displaying components alongside their states was developed later in the year. Earlier documented components predate this improvement and reflect a less refined presentation approach.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 3</div>
+                                                        <p>Scope Shifted from PM-facing to Dev-Facing</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
+                                                    <p>From Q2 onward, the writing audience shifted from PMs needing instructional guidance to developers needing HTML attributes and technical documentation. This wasn't a minor tone adjustment, as it was a fundamental change in content type, requiring a different understanding of the reader's context and what counts as useful information for each audience.</p>
+                                                </div>
+                                            </div>  
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-4" aria-expanded="false" aria-controls="iteration-panel-4">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 4</div>
+                                                        <p>Self-Initiated Addition: Design System GPT Agent (currently incomplete)</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="toggle iteration">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-4" role="region" aria-labelledby="iteration-trigger-4" aria-hidden="true">
+                                                    <p>As MSPbots moved toward an AI-first culture and required all employees to submit AI contributions, a GPT agent was initiated to serve as an interactive layer on top of the design system. The intent: allow any team member to query the system conversationally, receive component guidance, and assess mockup feasibility without needing to navigate the Figma file directly.
+                                                    <br><br>
+                                                    The agent was not completed before the layoff. A parallel initiative by teammate Nora, which was a vibe-coded website version of the design system was also left unfinished due to tooling friction with Cursor and a developer collaborator who was pulled to higher-priority tasks.
+                                                    <br><br>
+                                                    In hindsight, the more effective split would have been to swap contributions as the front-end development background required to vibe-code the website was already present on the team.</p>
+                                                </div>
+                                            </div>                                           
                                         </div>
                                     </div>
                                 </div>
@@ -781,13 +903,76 @@
                     </div>
                 </div>
 
-                <!--Thank You START-->
-                <div class="section-container surface-dark">
-                    <div class="text-center" style="margin-bottom: 80px;">
-                        <img src="imgs/ty-badge.svg" alt="thank you badge">
+                <!--End START-->
+                <div class="section-container ending-case">
+                    <!--Reflection START-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imgs/ty-badge.svg" alt="bunny badge">
+                        </div>
+                        <div class="col-10">
+                            <div class="v-stack space-5">
+                                <h5>Reflection</h5>
+                                <div class="reflection-accordion" data-reflection-accordion>
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-1" aria-expanded="false" aria-controls="reflection-panel-1">
+                                            <h6>What Worked</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="toggle reflection">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-1" role="region" aria-labelledby="reflection-trigger-1" aria-hidden="true">
+                                            <p>The collaboration structure with Nora was effective throughout as we had weekly catch-up meetings. We’d shared the work that was normally prioritized more, as well as informal knowledge-sharing that prevented us from hitting any walls while working on the design system. Discovering the Element Plus Figma library was a genuine process improvement that made an under-resourced project more sustainable. The Accessibility Doc and Writing Guidelines were completed without being formally requested, and represent the only written standards of their kind for the Legacy Product.</p>
+                                        </div>
+                                    </div>  
+                                    <div class="reflection-accordion-item"> 
+                                        <button class="reflection-header" type="button" id="reflection-trigger-2" aria-expanded="false" aria-controls="reflection-panel-2">
+                                            <h6>What Remained Unsolved</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="toggle reflection">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-2" role="region" aria-labelledby="reflection-trigger-2" aria-hidden="true">
+                                            <p>Phase 1 was completed, but the system was never adopted. The audience for the documentation changed twice during the project. Plus the Figma file format served neither audience, as a purpose-built internal website would have. The GPT agent might have driven adoption by lowering the barrier to accessing the system, but was never finished. 
+                                            <br><br>
+                                            Components documented in the early part of the year reflect an older, less refined display approach that wasn't updated retroactively.</p>
+                                        </div>
+                                    </div>  
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-3" aria-expanded="false" aria-controls="reflection-panel-3">
+                                            <h6>What I’d Do Differently</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="toggle reflection">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-3" role="region" aria-labelledby="reflection-trigger-3" aria-hidden="true">
+                                            <p>I’d push for a vibe-coded internal website from the start, and given what I know now, I would have taken on the front-end build myself. A website would have served the PM audience, the developer audience, and the copy-paste use case in ways a Figma file structurally cannot.
+                                            <br><br>
+                                            I'd also follow the Atomic Design structure over Element Plus' documentation hierarchy. The project was building an internal system for a specific product, and organizing it around that product's actual component relationships would have produced something more useful long-term than mirroring an external library's structure.
+                                            <br><br>
+                                            The broader lesson is about medium and audience alignment. The same mistake made in the MSPbot Welcome Screen Guidelines project, on choosing a static document over a living accessible website, showed up here again on a larger scale. Some differences were that the audiences varied, and the cost of the wrong medium compounded across a full year of work.</p>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
+                    <!--Reflection END-->
+
+                    <!--Other Case Studies START-->
+                    <div class="my-5 py-5">
+                        <p class="text-white">Other Case Studies</p>     
+                    </div>           
+                    <!--Other Case Studies END-->
+
+                    <!--Related Service START-->
+                    <div class="my-5 py-5">
+                        <p class="text-white">Related Service</p>     
+                    </div>     
+                    <!--Related Service END-->
                 </div>
-                <!--Thank You END-->
+                <!--End END-->
             </div>
             <!--Case Study Content END-->
         </div>
@@ -803,6 +988,7 @@
         <script src="toc-highlight.js"></script>
         <script src="before-after-block.js"></script>
         <script src="key-insights-accordion.js"></script>
+        <script src="simple-accordion.js"></script>
         <!--scripts END-->
     </body>
 </html>

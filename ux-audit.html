@@ -158,14 +158,21 @@
                     <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
                     <a href="services.html">Services</a>
                     <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
-                    <p class="current-bc">Heuristic UX Audit & PRD Write-Up</p>
+                    <p class="current-bc">Heuristic UX Audit & PRD Write-Ups</p>
                 </div>
-                <img class="w-100 mb-3" src="imgs/service-img-banner-placeholder.png" alt="ux-audit-banner">
+                <div class="service-featured-wrap">
+                    <img class="service-featured-img" src="imgs/placeholder-img-sample.png" alt="featured image">
+                </div>
                 <div class="row">
                     <div class="col-7">
-                        <h3>Heuristic UX Audit & PRD Write-up</h3>
-                        <p class="mb-4">I help teams and solopreneurs identify exactly where their product can improve even further, scout hidden frustrations before negative ratings hit, and provide a clear roadmap to execute these solutions.</p>
-                        <a href="#"><button class="btn-primary">Request Discovery Call</button></a>
+                        <div class="v-stack space-4">
+                            <div>
+                                <h3 class="w-600">Heuristic UX Audit & PRD Write-Ups</h3>
+                                <div class="service-extended-title">Insert text here</div>
+                            </div>
+                            <p class="mb-3">Most products don't fail because of missing features, they fail because the experience quietly working against the people using it. </p>
+                            <a href="contacts.html" class="btn-primary">Request Discovery Call</a>
+                        </div>                      
                     </div>
                     <div class="col-5">
                         <div class="selection-container">
@@ -177,21 +184,53 @@
                             <!--Selector Boxes END-->
                             <div class="selection-content p-4">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <p class="small-title">This Service is Ideal For:</p>
-                                    <a href="#HAUPW-ICP">Check Where You Are</a>
+                                    <h6 class="ICP-header-section">This Service is Ideal For:</h6>
                                 </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>">
-                                    <p>SaaS teams preparing to scale and needs a solid UX foundation to amplify growth while reducing existing problems.</p>
+                                <div class="ICP-intro-accordion">
+                                    <div class="ICP-intro-accordion-item">
+                                        <button class="ICP-intro-header" type="button" id="ICP-intro-trigger-1" aria-expanded="false" aria-controls="ICP-intro-panel-1">
+                                            <div class="d-flex gap-2">
+                                                <img src="imgs/heart-point.svg" alt="">
+                                                <p>SaaS Founders & Product Leads</p>
+                                            </div>                            
+                                            <div class="ICP-plus">
+                                                <img src="imgs/plus-dark.svg" alt="toggle ICP intro">
+                                            </div>
+                                        </button>
+                                        <div class="ICP-content" id="ICP-intro-panel-1" role="region" aria-labelledby="ICP-intro-trigger-1" aria-hidden="true">
+                                            <p>Whose churn rate is climbing, has a team with no structured sprints tickets to act on, and needs clear, evidence-based direction before moving forward.</p>
+                                        </div>
+                                    </div>
+                                    <div class="ICP-intro-accordion-item">
+                                        <button class="ICP-intro-header" type="button" id="ICP-intro-trigger-2" aria-expanded="false" aria-controls="ICP-intro-panel-2">
+                                            <div class="d-flex gap-2">
+                                                <img src="imgs/heart-point.svg" alt="heart point>">
+                                                <p>DTC Brand Founders & Marketing Leads</p>
+                                            </div>                            
+                                            <div class="ICP-plus">
+                                                <img src="imgs/plus-dark.svg" alt="toggle ICP intro">
+                                            </div>
+                                        </button>
+                                        <div class="ICP-content" id="ICP-intro-panel-2" role="region" aria-labelledby="ICP-intro-trigger-2" aria-hidden="true">
+                                            <p>Who are spending on ads or redesigns without knowing what's actually broken, and needs an honest diagnosis before committing more budget to the wrong what’s fix.</p>
+                                        </div>
+                                    </div>
+                                    <div class="ICP-intro-accordion-item">
+                                        <button class="ICP-intro-header" type="button" id="ICP-intro-trigger-3" aria-expanded="false" aria-controls="ICP-intro-panel-3">
+                                            <div class="d-flex gap-2">
+                                                <img src="imgs/heart-point.svg" alt="heart point>">
+                                                <p>Agency Owners & Project Managers</p>
+                                            </div>                            
+                                            <div class="ICP-plus">
+                                                <img src="imgs/plus-dark.svg" alt="toggle ICP intro">
+                                            </div>
+                                        </button>
+                                        <div class="ICP-content" id="ICP-intro-panel-3" role="region" aria-labelledby="ICP-intro-trigger-3" aria-hidden="true">
+                                            <p>Who need a structured, defensible audit methodology they can sell as a discovery offering. Present with confidence and use to protect project scope from day one.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="d-flex align-items-start mb-3">
-                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>">
-                                    <p>Founders struggling with conversion and can’t pinpoint where their visitors exit.</p>
-                                </div>
-                                <div class="d-flex align-items-start">
-                                    <img class="me-2" src="imgs/heart-point.svg" alt="heart point>"> 
-                                    <p>Companies preparing for funding and want their product’s UX to reflect the quality of what they’ve built.</p>
-                                </div>
+                                <a href="ux-audit.html#ICP-section">Check Where You Are</a> 
                             </div>
                         </div>
                     </div>
@@ -199,11 +238,507 @@
             </div>
             <!--Hero Section END-->
 
-            <!--Why It Matters Section START-->
-            <div class="section-container">
-                <p>Skip for now</p>
+            <!--About the Service Section START-->
+            <div class="section-container text-center">
+                <img src="imgs/ribbon.svg" alt="ribbon emoji">
+                <h5 class="mb-2">Bringing Forth Hidden Problems</h5>
+                <p class="w-75 mx-auto">I conduct expert heuristic UX audits for web apps and websites, combining established design principles with calibrated design judgment to surface the friction points your team hasn't been able to name yet. 
+                <br><br>
+                Every engagement ends with a ranked findings report, structured PRD tickets delivered directly into your workspace, and a sequenced roadmap your team can execute from immediately with no translation work required.</p>
             </div>
-            <!--Why It Matters Section END-->
+            <!--About the Service Section END-->
+
+            <!--Without the Service Section START-->
+            <div class="section-container">
+                <h5 class="text-center mb-2">Without Rebuilding Your Design System...</h5>
+                <div class="service-tabs" data-service-tabs>
+                    <div class="service-tabs-list mx-auto" role="tablist" aria-label="Heuristic UX impact scenarios">
+                        <button
+                            type="button"        class="service-tab-btn is-active"
+                            id="impact-tab-1"    role="tab"
+                            aria-selected="true" aria-controls="impact-panel-1"
+                        >
+                            Saas Startups
+                        </button>
+                        <button
+                            type="button"         class="service-tab-btn"
+                            id="impact-tab-2"     role="tab"
+                            aria-selected="false" aria-controls="impact-panel-2"
+                            tabindex="-1"
+                        >
+                            E-Commerce / DTC Brand
+                        </button>
+                        <button
+                            type="button"         class="service-tab-btn"
+                            id="impact-tab-3"     role="tab"
+                            aria-selected="false" aria-controls="impact-panel-3"
+                            tabindex="-1"
+                        >
+                            Digital Agency
+                        </button>
+                    </div>
+
+                    <div class="service-tabs-panels">
+                        <section
+                            class="service-tab-panel is-active"
+                            id="impact-panel-1"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-1"
+                        >
+                            <!--Content Goes Here START-->      
+                            <div class="selection-accordion" data-selection-accordion>   
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-flex flex-column">
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-1"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-1"
+                                                    >
+                                                        <p>01: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-1" 
+                                                        role="region"                       aria-labelledby="selection-trigger-1"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-3"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-3"
+                                                    >
+                                                        <p>03: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-3" 
+                                                        role="region"                       aria-labelledby="selection-trigger-3"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-5"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-5"
+                                                    >
+                                                        <p>05: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-5" 
+                                                        role="region"                       aria-labelledby="selection-trigger-5"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="col">
+                                        <div class="d-flex flex-column">                              
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-2"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-2"
+                                                    >
+                                                        <p>02: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-2" 
+                                                        role="region"                       aria-labelledby="selection-trigger-2"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-4"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-4"
+                                                    >
+                                                        <p>04: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-4" 
+                                                        role="region"                       aria-labelledby="selection-trigger-4"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>                                    
+                            </div>
+                            <!--Content Goes Here END-->
+                        </section>
+
+                        <section
+                            class="service-tab-panel"
+                            id="impact-panel-2"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-2"
+                            hidden
+                        >
+                            <!--Content Goes Here START-->
+                            <div class="selection-accordion" data-selection-accordion>   
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-flex flex-column">
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-1"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-1"
+                                                    >
+                                                        <p>01: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-1" 
+                                                        role="region"                       aria-labelledby="selection-trigger-1"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-3"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-3"
+                                                    >
+                                                        <p>03: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-3" 
+                                                        role="region"                       aria-labelledby="selection-trigger-3"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="col">
+                                        <div class="d-flex flex-column">                              
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-2"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-2"
+                                                    >
+                                                        <p>02: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-2" 
+                                                        role="region"                       aria-labelledby="selection-trigger-2"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-4"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-4"
+                                                    >
+                                                        <p>04: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-4" 
+                                                        role="region"                       aria-labelledby="selection-trigger-4"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>                                    
+                            </div>
+                            <!--Content Goes Here END-->
+                        </section>
+
+                        <section
+                            class="service-tab-panel"
+                            id="impact-panel-3"
+                            role="tabpanel"
+                            aria-labelledby="impact-tab-3"
+                            hidden
+                        >
+                            <!--Content Goes Here START-->
+                            <div class="selection-accordion" data-selection-accordion>   
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="d-flex flex-column">
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-1"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-1"
+                                                    >
+                                                        <p>01: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-1" 
+                                                        role="region"                       aria-labelledby="selection-trigger-1"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-3"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-3"
+                                                    >
+                                                        <p>03: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-3" 
+                                                        role="region"                       aria-labelledby="selection-trigger-3"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-5"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-5"
+                                                    >
+                                                        <p>05: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-5" 
+                                                        role="region"                       aria-labelledby="selection-trigger-5"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    
+                                    <div class="col">
+                                        <div class="d-flex flex-column">                              
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-2"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-2"
+                                                    >
+                                                        <p>02: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-2" 
+                                                        role="region"                       aria-labelledby="selection-trigger-2"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="selection-accordion-wrapper">
+                                                <!--Selector Boxes START-->
+                                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
+                                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
+                                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                                <!--Selector Boxes END-->
+                                                <div class="selection-accordion-item">
+                                                    <button 
+                                                        class="selection-accordion-header"  type="button" 
+                                                        id="selection-trigger-4"            aria-expanded="false" 
+                                                        aria-controls="selection-panel-4"
+                                                    >
+                                                        <p>04: Header</p>
+                                                        <div class="selection-plus">
+                                                            <img src="imgs/plus-pink.svg" alt="toggle selection">
+                                                        </div>
+                                                    </button>
+                                                    <div 
+                                                        class="selection-accordion-content" id="selection-panel-4" 
+                                                        role="region"                       aria-labelledby="selection-trigger-4"
+                                                        aria-hidden="true"
+                                                    >
+                                                        <p>Context</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                </div>                                    
+                            </div>
+                            <!--Content Goes Here END-->
+                        </section>
+                    </div>                                  
+                </div>
+            </div>
+            <!--Without the Service Section END-->
 
             <!--Deliverables START-->
             <div class="section-container deliverables-parent">
@@ -350,7 +885,7 @@
             <!--Case Studies Carousel END-->
 
             <!--ICP Profile START-->
-            <div id="HAUPW-ICP" class="section-container">
+            <div id="ICP-section" class="section-container">
                 <div class="text-center mb-3">
                     <h4>Where are you starting from?</h4>
                     <h6 class="w-400">
@@ -628,7 +1163,9 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
         <script src="accordion.js"></script>
+        <script src="simple-accordion.js"></script>
         <script src="carousel.js"></script>
+        <script src="tabs.js"></script>
         <!--scripts END-->
     </body>
 </html>

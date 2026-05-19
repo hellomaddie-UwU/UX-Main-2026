@@ -56,8 +56,10 @@ html, body {
     --clairvoyant-900: #5F1E71;
 
     /*-- can delete this --*/
+    --razzmatazz-400: #FF6D92;
     --razzmatazz-500: #F93A70;
 
+    --tangerine-50: #FFF4F1;
     --tangerine-400: #FFA385;
 
     /*Spacing*/
@@ -232,6 +234,19 @@ nav {z-index: 2;}
     padding: 40px 5% 60px 5%;
 }
 
+.section-container-mt-0 {
+    margin-left: 90px;
+    padding: 0px 5% 60px 5%;
+}
+
+.newsletter {
+    background-color: white;
+    border-top: 1px solid #FFA1B7;
+}
+
+.w-67 {width: 67%;}
+.w-33 {width: 33%;}
+
 .h-stack { /*equivalent of Auto Layout*/
     display: flex;
     align-items: flex-start;
@@ -340,15 +355,32 @@ p {
     margin-bottom: 0px;
 }
 
-.display-text {
+.display-text { /*The pink one*/
     font-family: "Hello Radio";
     font-size: 94px;
-    font-style: normal;
     font-weight: 400;
     line-height: 60px; /* 63.83% */
+
+    color: var(--razzmatazz-400);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--Brand-Razzmatazz-50, #FFF1F4);
+    paint-order: stroke fill;
+    transform: rotate(-7.45deg);
+    display: inline-block;
 }
 
-.display-section-text {
+.display-paragraph {
+    color: var(--text-body);
+    font-family: "Hello Radio";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 46px; /* 92% */
+
+    transform: rotate(-3.45deg);
+    display: inline-block;
+}
+
+.display-section-text { /*The white one with the pink stroke*/
     color: var(--dialog-body);
     text-shadow: -3px 3px 0 var(--text-shadow-color);
     -webkit-text-stroke-width: 2px;
@@ -410,6 +442,7 @@ a, .underline {color: #A12ECB;}
     font-size: 14px;
     font-weight: 400;
     line-height: 23px;
+    margin-top: var(--space-1);
 }
 
 .case-study-subtitle, .features-title, .research-title, .design-iteration-title, .reflection-title {
@@ -427,11 +460,21 @@ a, .underline {color: #A12ECB;}
     line-height: 23px; /* 164.286% */
 }
 
+.side-note-2 { /*Used for additional context na <h6> and above.*/
+    color: var(--text-body);
+    font-size: 19px;
+} 
+
 .service-extended-title {
     color: var(--clairvoyant-500);
     font-size: 26px;
     font-weight: 500;
     line-height: 38px; /* 146.154% */
+}
+
+.ICP-header-section {
+    font-size: 19px;
+    font-weight: 600;
 }
 
 /*========================================================================*/
@@ -446,7 +489,11 @@ a, .underline {color: #A12ECB;}
     cursor: pointer;
     line-height: 30px;
     font-size: 15px;
+    width: fit-content;
+    text-decoration: none;
 }
+.btn-primary a {color: white; text-decoration: none;}
+
 
 .btn-primary:hover, .btn-primary-outline:hover, .btn-secondary:hover {
     background-color: #FFA385;

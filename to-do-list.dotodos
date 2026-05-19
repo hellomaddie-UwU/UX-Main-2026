@@ -3,6 +3,7 @@ GitHub Issues to Write
     ### Copy-related
         ☐ Create the alt text for each image on the home page
     	☐ Create a favicon for the website
+    	☐ Change the Service Names on the Mobile Nav
     ### Design-related
 		☑ Finalize Service Nav dropdown UI @2026-05-14 22:12:35
 		☐ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI
@@ -14,26 +15,32 @@ GitHub Issues to Write
 
 ## Design System Zero
     ### Copy-related
-        ☐ Create a title, description, and alt text for each image on this service page
-    	☐ Create official tab behavior(the one that's connected to the Without Service XYZ, etc)
-    	☐ Start on the Reflection Section
+        ☑ Create a title, description, and alt text for each image on this service page @2026-05-19 18:29:22
+    	☑ Create official tab behavior(the one that's connected to the Without Service XYZ, etc) @2026-05-16 01:20:25
+    	☐ Squeeze in a "What's Excluded" in the Deliverables section
     
 	### Design-related
 		☐ Tablet > Make case study content 100% in width
 		☐ Tablet & Mobile > adjust sectiony-padding so the Section Header is visible when scrolling from TOC. Continuation of #46.
 
-### Clean Code
+## Clean Code
 	☐ Unify the inset imgs into one class(case study featured image, case study image, service featured image, etc).
 
-### Service Template
+## Service Template
 	### Component-related
-    	☐ Create Tab Interactive Behavior
+    	☑ Create Tab Interactive Behavior @2026-05-16 01:13:53
+    	☐ 
     	
 	### Create lottie animation of deliverable timeline bar instead
         
-### Mini Design System
+## Mini Design System
 	### Copy-related
 		☐ SEO content & OG Image
 		
 	### Component-related
 		☐ Create a palette card component with the ability to clip it's hex color when clicked
+		☐ Clean up button component(<a> tag inside the button)
+		
+## Vyepti Case Study
+	### Copy-related
+		☐ Add the official URL of Vyepti's site onto the context section
