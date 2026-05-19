@@ -355,10 +355,11 @@
 /*Deliverables Placeholder END*/
 
 /*Investment Section START*/
-.investment-section {
+.investment-section, .FAQ-section {
     background: var(--tangerine-50);
-    margin-top: -25px;
 }
+
+.investment-section {margin-top: -25px;}
 /*Investment Section END*/
 
 /*========================================================================*/
