@@ -197,6 +197,7 @@ Table of Contents:
 .featured-works-container {
     margin-left: 90px;
     padding-left: 3%;
+    background-color: white;
 }
 
 .featured-works-tablet-mobile {display: none;}
