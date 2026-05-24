@@ -2,10 +2,9 @@ GitHub Issues to Write
 ## Home Page
     ### Copy-related
         ☐ Create the alt text for each image on the home page
-    	☐ Create a favicon for the website
+    	☑ Create a favicon for the website @2026-05-25 01:49:33
     	☐ Change the Service Names on the Mobile Nav
     ### Design-related
-		☑ Finalize Service Nav dropdown UI @2026-05-14 22:12:35
 		☐ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI
 		☐ Tablet & Mobile > Replace Featured Case Study carousel buttons to the purple left and right arrow buttons
 		☐ Tablet & Mobile > Populate Featured Case Study slides with the current finished case studies.
@@ -15,8 +14,6 @@ GitHub Issues to Write
 
 ## Design System Zero
     ### Copy-related
-        ☑ Create a title, description, and alt text for each image on this service page @2026-05-19 18:29:22
-    	☑ Create official tab behavior(the one that's connected to the Without Service XYZ, etc) @2026-05-16 01:20:25
     	☐ Squeeze in a "What's Excluded" in the Deliverables section
     
 	### Design-related
@@ -28,8 +25,7 @@ GitHub Issues to Write
 
 ## Service Template
 	### Component-related
-    	☑ Create Tab Interactive Behavior @2026-05-16 01:13:53
-    	☐ 
+    	
     	
 	### Create lottie animation of deliverable timeline bar instead
         
