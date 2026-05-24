@@ -501,8 +501,8 @@ margin-top: var(--space-3);
 
     .case-study-content {
         width: 100%;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .mobile-table-of-contents  {
@@ -520,6 +520,11 @@ margin-top: var(--space-3);
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .case-study-content {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
     .progress-section {
         gap: 8px;
     }
