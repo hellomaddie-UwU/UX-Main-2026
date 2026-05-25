@@ -1,14 +1,6 @@
 GitHub Issues to Write	
 ## Home Page
-    ### Copy-related
-        ☐ Create the alt text for each image on the home page
-    	☑ Create a favicon for the website @2026-05-25 01:49:33
-    	☑ Change the Service Names on the Mobile Nav @2026-05-25 02:01:42
-    	☐ 
     ### Design-related
-		☑ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI @2026-05-25 02:20:54
-		☐ Tablet & Mobile > Replace Featured Case Study carousel buttons to the purple left and right arrow buttons
-		☐ Tablet & Mobile > Populate Featured Case Study slides with the current finished case studies.
 		☐ Double-check and update contents of the contact form to fit the new info on the overall site(i.e. name of the services, price availability, etc).
 	### Component-related
 		☐ Continuation to #28, create a show-hide toggle for the Expected Deliverables
@@ -18,7 +10,6 @@ GitHub Issues to Write
     	☐ Squeeze in a "What's Excluded" in the Deliverables section
     
 	### Design-related
-		☑ Tablet > Make case study content 100% in width @2026-05-25 02:29:38
 		☐ Tablet & Mobile > adjust sectiony-padding so the Section Header is visible when scrolling from TOC. Continuation of #46.
 
 ## Clean Code
@@ -27,17 +18,23 @@ GitHub Issues to Write
 ## Service Template
 	### Component-related
     	
-    	
-	### Create lottie animation of deliverable timeline bar instead
+	☐ Create lottie animation of deliverable timeline bar instead
         
 ## Mini Design System
 	### Copy-related
 		☐ SEO content & OG Image
 		
 	### Component-related
-		☐ Create a palette card component with the ability to clip it's hex color when clicked
+		☑ Create a palette card component with the ability to clip it's hex color when clicked @2026-05-26 00:43:32
 		☐ Clean up button component(<a> tag inside the button)
 		
 ## Vyepti Case Study
 	### Copy-related
 		☐ Add the official URL of Vyepti's site onto the context section
+		
+
+## Finished Task
+    	☑ Create a favicon for the website @2026-05-25 01:49:33
+    	☑ Change the Service Names on the Mobile Nav @2026-05-25 02:01:42
+		☑ Create new section after hero section: Personal Opinion on AI section about how I'm better than AI @2026-05-25 02:20:54
+		☑ Tablet > Make case study content 100% in width @2026-05-25 02:29:38
