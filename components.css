@@ -376,6 +376,11 @@ Table of Contents:
     background-color: #E2AFF8;
     border-radius: 12px;
 }
+
+.gallery-img {
+    width: 100%;
+    border-radius: 12px;
+} 
 /*Gallery Placeholder Image END*/
 
 /*Breadcrumb START*/
