@@ -18,6 +18,7 @@
         --clairvoyant-500: #BB4DE8;
         --clairvoyant-600: #A12ECB;
         --clairvoyant-700: #8722A9;
+        --clairvoyant-800: #711E8A;
         --clairvoyant-900: #5F1E71;
         --clairvoyant-950: #4B095D; /*Primary*/
 
@@ -35,6 +36,17 @@
         --razzmatazz-950:#4E0320;
 
         /*Vivid Tangerine*/
+        --vivid-tangerine-50:#FFF4F1;
+        --vivid-tangerine-100:#FFE8E1;
+        --vivid-tangerine-200:#FFD5C7;
+        --vivid-tangerine-300:#FFB7A0;
+        --vivid-tangerine-400:#FFA385; /*Primary*/
+        --vivid-tangerine-500:#F8693B;
+        --vivid-tangerine-600:#E54E1D;
+        --vivid-tangerine-700:#C13F14;
+        --vivid-tangerine-800:#A03614;
+        --vivid-tangerine-900:#843318;
+        --vivid-tangerine-950:#481707;
 
     }
 
@@ -138,17 +150,46 @@
       display:       flex;
       flex-direction:column;
       gap:           8px;
-      min-width:     110px;
+      min-width:     155px;
     }
     .swatch-block {
-      width:          100%;
-      height:         60px;
-      border-radius:  8px;
-      box-shadow:     0 4px 6px rgba(45, 5, 56, 0.1);
-      border:         1px solid rgba(0,0,0,0.05);
-      transition:     all 0.30s cubic-bezier(0.4, 0, 0.2, 1);
+        width:          100%;
+        height:         60px;
+        cursor:         pointer;
+        border-radius:  8px;
+        box-shadow:     0 4px 6px rgba(45, 5, 56, 0.1);
+        border:         1px solid rgba(0,0,0,0.05);
+        transition:     all 0.30s cubic-bezier(0.4, 0, 0.2, 1);
     }
     .swatch-block:hover { transform: scale(1.04); box-shadow: 0 6px 12px rgba(45, 5, 56, 0.2); }
+    .swatch-block.is-copied {
+        transform:   scale(1.02);
+        border-color: var(--razzmatazz-400);
+        box-shadow:  0 0 0 3px rgba(249, 58, 112, 0.24), 0 6px 12px rgba(45, 5, 56, 0.2);
+    }
+    .copy-notification {
+        position:        fixed;
+        right:           32px;
+        bottom:          32px;
+        z-index:         200;
+        max-width:       min(320px, calc(100vw - 64px));
+        padding:         12px 16px;
+        border-radius:    999px;
+        background:      rgba(45, 5, 56, 0.96);
+        color:           var(--clairvoyant-50);
+        font-size:       13px;
+        font-weight:     600;
+        letter-spacing:  0.02em;
+        box-shadow:      0 12px 24px rgba(45, 5, 56, 0.22);
+        opacity:         0;
+        transform:       translateY(12px);
+        pointer-events:  none;
+        transition:      opacity 0.25s ease, transform 0.25s ease;
+    }
+    .copy-notification.is-visible {
+        opacity:   1;
+        transform: translateY(0);
+    }
     .swatch-name {
       font-size:    13px;
       font-weight:  600;

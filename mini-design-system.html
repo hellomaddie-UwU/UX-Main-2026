@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg" href="imgs/favicon.svg">
         <!--SEO START-->
         <title>Mini Design System | hellomaddie</title>
         <meta name="description" content="insert a brief description of what this page is">
@@ -24,7 +25,7 @@
         <!--Fonts END-->
     </head>
 
-    <body style="background-color:#fdf9ff;">
+    <body style="background-image: url('imgs/line\ bg.svg');">
         <!--This is where the actual design system page will be and is connected to the global settings-->
         <!--Top Bar START-->
         <nav class="sticky-ds-navigation">
@@ -50,6 +51,7 @@
                     <div class="ds-sidebar">
                         <!--Chapter 1 START-->
                         <p class="md-text">Primitives</p>
+                        <a href="#logo">Logo</a>
                         <a href="#brand-palette">Brand Palette</a>
                         <a href="#spacing">Spacing</a>
                         <!--Chapter 1 END-->
@@ -79,112 +81,181 @@
                     </header>
 
                     <h6 class="pt-5">Primitive Tokens</h6>
+                    <!--  Logo START -->
+                    <section class="ds-section" id="logo">
+                        <h2 class="ds-section-title">✦ Logo</h2>
+                        <div class="ds-card">
+                            <img src="#" alt="hellomaddie logo">
+                        </div>
+                    </section>
+                    <!--  Logo END -->
+
                     <!--  Brand Palette START -->
+                        <!--Copy Clipboard Notif START-->
+                            <div class="copy-notification" role="status" aria-live="polite" aria-atomic="true">
+                                Color copied to clipboard
+                            </div>
+                        <!--Copy Clipboard Notif END-->
                     <section class="ds-section" id="brand-palette">
                         <h2 class="ds-section-title">✦ Brand Palette</h2>
                         <div class="ds-card">
                             
                             <div class="swatch-wrap mb-5">
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-950);"></div> 
+                                    <span class="swatch-name">Clairvoyant</span>
+                                    <span class="swatch-value">--clairvoyant-950<br>#4B095D</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-500);"></div> 
+                                    <span class="swatch-name">Razzmatazz</span>
+                                    <span class="swatch-value">--razzmatazz-500<br>#F93A70</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-400);"></div>
+                                    <span class="swatch-name">Vivid Tangerine</span>
+                                    <span class="swatch-value">--vivid-tangerine-400<br>#FFA385</span>
                                 </div>
                             </div>
                             <p class="fw-medium">Clairvoyant</p>
                             <div class="swatch-wrap mb-5">
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-50);"></div> 
+                                    <span class="swatch-value">--clairvoyant-50<br>#FBF4FF</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-100);"></div> 
+                                    <span class="swatch-value">--clairvoyant-100<br>#F6E9FE</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-200);"></div> 
+                                    <span class="swatch-value">--clairvoyant-200<br>#EDD2FC</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-300);"></div> 
+                                    <span class="swatch-value">--clairvoyant-300<br>#E2AFF8</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-400);"></div> 
+                                    <span class="swatch-value">--clairvoyant-400<br>#D17FF3</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-500);"></div> 
+                                    <span class="swatch-value">--clairvoyant-500<br>#BB4DE8</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-600);"></div> 
+                                    <span class="swatch-value">--clairvoyant-600<br>#A12ECB</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-700);"></div> 
+                                    <span class="swatch-value">--clairvoyant-700<br>#8722A9</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-800);"></div> 
+                                    <span class="swatch-value">--clairvoyant-800<br>#711E8A</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-900);"></div> 
+                                    <span class="swatch-value">--clairvoyant-900<br>#5F1E71;</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--clairvoyant-950);"></div> 
+                                    <span class="swatch-value">--clairvoyant-950<br>#4B095D</span>
                                 </div>
                             </div>
                             <p class="fw-medium">Razzmatazz</p>
-                            <div class="swatch-wrap ">
+                            <div class="swatch-wrap  mb-5">
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-50);"></div> 
+                                    <span class="swatch-value">--razzmatazz-50<br>#FFF1F4</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-100);"></div> 
+                                    <span class="swatch-value">--razzmatazz-100<br>#FFE3E8</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-200);"></div> 
+                                    <span class="swatch-value">--razzmatazz-200<br>#FFCCD8</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-300);"></div> 
+                                    <span class="swatch-value">--razzmatazz-300<br>#FFA1B7</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-400);"></div> 
+                                    <span class="swatch-value">--razzmatazz-400<br>#FF6D92</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-500);"></div> 
+                                    <span class="swatch-value">--razzmatazz-500<br>#F93A70</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-600);"></div> 
+                                    <span class="swatch-value">--razzmatazz-600<br>#D91656</span>
                                 </div>
                                 <div class="swatch">
-                                    <div class="swatch-block"></div> <!--add inline css background-color for the swatch-block-->
-                                    <span class="swatch-name">Primary</span>
-                                    <span class="swatch-value">--color-primary<br>#2C2C2C</span>
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-700);"></div> 
+                                    <span class="swatch-value">--razzmatazz-700<br>#C30D4D</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-800);"></div> 
+                                    <span class="swatch-value">--razzmatazz-800<br>#A30E47</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-900);"></div> 
+                                    <span class="swatch-value">--razzmatazz-900<br>#8B1043</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--razzmatazz-950);"></div> 
+                                    <span class="swatch-value">--razzmatazz-950<br>#4E0320</span>
+                                </div>
+                            </div>
+                            <p class="fw-medium">Vivid Tangerine</p>
+                            <div class="swatch-wrap">
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-50);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-50<br>#FFF4F1</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-100);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-100<br>#FFE8E1</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-200);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-200<br>#FFD5C7</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-300);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-300<br>#FFB7A0</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-400);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-400<br>#FFA385</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-500);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-500<br>#F8693B</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-600);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-600<br>#E54E1D</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-700);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-700<br>#C13F14</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-800);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-800<br>#A03614</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-900);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-900<br>#843318</span>
+                                </div>
+                                <div class="swatch">
+                                    <div class="swatch-block" style="background-color: var(--vivid-tangerine-950);"></div> 
+                                    <span class="swatch-value">--vivid-tangerine-950<br>#481707</span>
                                 </div>
                             </div>
                         </div>
@@ -218,6 +289,7 @@
 
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="swatch-copy.js"></script>
         <!--scripts END-->
     </body>
 </html>

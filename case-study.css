@@ -91,6 +91,23 @@
     color: var(--clairvoyant-500);
 }
 
+.ending-case h4 {
+    font-family: 'Hello Radio', sans-serif;
+    color: white;
+    font-size: 46px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.ending-case h6 {
+    color: var(--clairvoyant-50);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.ending-case a {text-decoration: none; color: var(--tangerine-400);}
+
 .block p {
     font-weight: 400;
     line-height: 28px;
@@ -501,8 +518,8 @@ margin-top: var(--space-3);
 
     .case-study-content {
         width: 100%;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .mobile-table-of-contents  {
@@ -520,6 +537,11 @@ margin-top: var(--space-3);
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .case-study-content {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
     .progress-section {
         gap: 8px;
     }

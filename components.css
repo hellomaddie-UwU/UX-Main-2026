@@ -197,6 +197,7 @@ Table of Contents:
 .featured-works-container {
     margin-left: 90px;
     padding-left: 3%;
+    background-color: white;
 }
 
 .featured-works-tablet-mobile {display: none;}
@@ -375,6 +376,11 @@ Table of Contents:
     background-color: #E2AFF8;
     border-radius: 12px;
 }
+
+.gallery-img {
+    width: 100%;
+    border-radius: 12px;
+} 
 /*Gallery Placeholder Image END*/
 
 /*Breadcrumb START*/

@@ -60,7 +60,9 @@ html, body {
     --razzmatazz-500: #F93A70;
 
     --tangerine-50: #FFF4F1;
+    --tangerine-300: #FFB7A0;
     --tangerine-400: #FFA385;
+    --tangerine-600: #E54E1D;
 
     /*Spacing*/
     --space-0: 0px;
@@ -387,10 +389,11 @@ p {
     -webkit-text-stroke-color: var(--dialog-border);
     paint-order: stroke fill;
     font-family: "Hello Radio";
-    font-size: 94px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: 73px; /* 77.66% */
+    transform: rotate(-7.45deg);
 }
 
 .md-text {
@@ -524,10 +527,127 @@ a, .underline {color: #A12ECB;}
     font-size: 15px;
 }
 
+.btn-secondary-outline {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--tangerine-600);
+    border: 1.5px solid var(--tangerine-300);
+    border-radius: 30px;
+    padding: 4px 28px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 15px;
+}
+
 /* only shows error state after user has interacted with it */
 input:user-invalid {
     border: 1px solid red;
 }
+
+/* Gallery Lightbox START */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(20, 6, 28, 0.86);
+    padding: 24px;
+}
+
+.lightbox-overlay.is-open {
+    display: grid;
+    place-items: center;
+}
+
+.lightbox-dialog {
+    width: min(1080px, 100%);
+    max-height: calc(100vh - 48px);
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.lightbox-figure {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: var(--dialog-body);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+}
+
+.lightbox-image {
+    display: block;
+    width: 100%;
+    max-height: calc(100vh - 230px);
+    object-fit: contain;
+    background-color: #1f0327;
+}
+
+.lightbox-meta {
+    padding: 18px 20px 20px;
+}
+
+.lightbox-title {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.lightbox-date {
+    margin: 8px 0 0;
+    color: var(--clairvoyant-700);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.lightbox-description {
+    margin: 8px 0 0;
+    color: var(--text-body);
+    line-height: 1.5;
+}
+
+.lightbox-close,
+.lightbox-nav {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -52px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.lightbox-nav {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover,
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible {
+    background-color: rgba(255, 163, 133, 0.88);
+    border-color: #FFA385;
+    outline: none;
+}
+
+.gallery-img {
+    cursor: zoom-in;
+}
+/* Gallery Lightbox END */
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -729,6 +849,14 @@ input:user-invalid {
 
     .service-thumbnail {height: 300px;}
 
+    .lightbox-dialog {
+        width: min(780px, 100%);
+    }
+
+    .lightbox-title {
+        font-size: 24px;
+    }
+
     .gallery-masonry {
         column-count: 2;
         column-gap: 20px;
@@ -791,5 +919,49 @@ input:user-invalid {
     }
 
     .btn-primary-outline {text-align: center;}
+
+    .lightbox-overlay {
+        padding: 12px;
+    }
+
+    .lightbox-dialog {
+        width: 100%;
+        max-height: calc(100vh - 24px);
+        display: block;
+    }
+
+    .lightbox-close {
+        top: 8px;
+        right: 8px;
+        z-index: 1;
+    }
+
+    .lightbox-nav {
+        position: absolute;
+        top: 42%;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .lightbox-prev {
+        left: 8px;
+    }
+
+    .lightbox-next {
+        right: 8px;
+    }
+
+    .lightbox-image {
+        max-height: calc(100vh - 280px);
+    }
+
+    .lightbox-meta {
+        padding: 16px;
+    }
+
+    .lightbox-title {
+        font-size: 20px;
+    }
 }
 /*========================================================================*/
