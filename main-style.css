@@ -60,7 +60,9 @@ html, body {
     --razzmatazz-500: #F93A70;
 
     --tangerine-50: #FFF4F1;
+    --tangerine-300: #FFB7A0;
     --tangerine-400: #FFA385;
+    --tangerine-600: #E54E1D;
 
     /*Spacing*/
     --space-0: 0px;
@@ -387,10 +389,11 @@ p {
     -webkit-text-stroke-color: var(--dialog-border);
     paint-order: stroke fill;
     font-family: "Hello Radio";
-    font-size: 94px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: 73px; /* 77.66% */
+    transform: rotate(-7.45deg);
 }
 
 .md-text {
@@ -517,6 +520,18 @@ a, .underline {color: #A12ECB;}
     background-color: transparent;
     color: #FBF4FF;
     border: 1px solid #FBF4FF;
+    border-radius: 30px;
+    padding: 4px 28px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.btn-secondary-outline {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--tangerine-600);
+    border: 1.5px solid var(--tangerine-300);
     border-radius: 30px;
     padding: 4px 28px;
     cursor: pointer;

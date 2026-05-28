@@ -26,7 +26,7 @@ GitHub Issues to Write
 		
 	### Component-related
 		☑ Create a palette card component with the ability to clip it's hex color when clicked @2026-05-26 00:43:32
-		☐ Clean up button component(<a> tag inside the button)
+		☐ Clean up button component -> <a class="the-button-class" href="#">text</a>
 		
 ## Vyepti Case Study
 	### Copy-related
