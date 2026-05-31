@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/svg" href="imgs/favicon.svg">
         <!--SEO START-->
         <title>Building WoofPay's Design System for Multiple Channels | hellomaddie</title>
-        <meta name="description" content="insert a brief description of what this case study is about.">
-        <meta name="keywords" content="insert relevant keywords related to this case study.">
-        <meta name="author" content="Bianca Maddela">
+        <meta name="description" content="#">
+        <meta name="author" content="hellomaddie">
+
+        <!-- Universal Open Graph -->
+        <meta property="og:title" content="building Woofpays' Design System for Multiple Channels | hellomaddie">
+        <meta property="og:description" content="#">
+        <meta property="og:image" content="#"> <!-- Replace with actual image URL: 1200×630px -->
+        <meta property="og:image:alt" content="#">
+        <meta property="og:url" content="#"> <!-- Needs to be the official URL -->
+        <meta property="og:type" content="website">
+
+        <!-- Twitter/X Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="#">
+        <meta name="twitter:description" content="#">
+        <meta name="twitter:image" content="#"> <!-- Replace with actual image URL: 1200×630px -->
         <!--SEO END-->
 
         <!--Stylesheet START-->
@@ -150,13 +163,26 @@
         <div class="main-page">
             <!--Hero Section START-->
             <header class="section-container">
+                <div class="site-breadcrumb">
+                    <a href="index.html" class="bc-home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
+                        </svg>
+                        Home
+                    </a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <a href="case-study-catalogue.html">Case Studies</a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <p class="current-bc">Building WoofPay's Design System for Multiple Channels</p>
+                </div>
                 <div class="v-stack">
                     <div class="h-stack space-2">
                         <span class="pill pill-internal">Internal Documentation</span>
-                        <span class="pill pill-tech">Finance</span>
-                        <span class="pill pill-tech">E-commerce</span>
-                        <span class="pill pill-tech">Events</span>
-                        <span class="pill pill-tech">Marketing</span>
+                        <span class="pill pill-tech">AI & Technology</span>
+                        <span class="pill pill-finance">Finance</span>
+                        <span class="pill pill-e-commerce">E-commerce</span>
+                        <span class="pill pill-event">Events</span>
+                        <span class="pill pill-market">Marketing</span>
                     </div>
                     <h1 class="case-study-title">Building WoofPay's Design System for Multiple Channels</h1>
                 </div>
@@ -167,11 +193,11 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="d-flex align-items-center gap-2">
-                                <p class="fw-medium">Contract Duration</p> 
+                                <p class="fw-medium">Contract Period</p> 
                                 <img class="orange-dot" src="imgs/orange-dot.svg" alt="dot divider">
-                                <p>????</p> <!--contract date-->
+                                <p>#</p> <!--contract date-->
                             </div>
-                            <h5 class="case-study-excerpt text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi exercitationem, id atque numquam nihil reprehenderit saepe inventore doloribus ex ab voluptatem, iusto rerum sapiente sint eaque incidunt quod similique commodi..</h5>
+                            <h5 class="case-study-excerpt">Insert Summary</h5>                           
                         </div>
                         <div class="col-5">
                             <div class="selection-container">
@@ -181,16 +207,23 @@
                                 <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
                                 <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
                                 <!--Selector Boxes END-->
-                                <div class="selection-content" style="background-color: rgb(166, 44, 44);">
-                                    <h6 class="mb-3 text-white">Expected Delivery</h6>
-                                    <div class="v-stack space-3 align-items-start">
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
-                                            <p class="text-white">**Figma Design System File**</p>
-                                            <!-- A brand-new design system built from scratch to serve two distinct products: WoofPay Payments and WoofEvents. Includes all basic components with variant properties adjusted to match WoofPay's visual identity.
-                                            *(Completed within the one-month engagement. Developer had full Figma access from handoff.)* -->
+                                <div class="selection-content">
+                                    <div class="v-stack space-1">
+                                        <p class="md-text">Deliverables</p>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Figma Design System File</p>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Accessibility Documentation</p>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Writing Guidelines</p>
                                         </div>
                                     </div>
+                                    <!--Do not add extended scope without it actually being finished first.-->
                                 </div>
                             </div>
                         </div>
@@ -290,34 +323,41 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Context</h5>
-                                            <p class="text-danger">WoofPay was a passion project initiated by the user's boss at Webpuppies, a Singaporean IT company. The product vision was twofold: WoofPay Payments, an affordable alternative to Shopify that helped small business owners with taxes, payments, and a social-media-embeddable online store; and WoofEvents, a form-driven social media post generator designed for entrepreneurs without a marketing team — an early, pre-AI version of what generative tools now do for content creation.</p>
+                                            <p>WoofPay was a passion project initiated by my boss at Webpuppies, a Singaporean IT company. The product vision was two-fold:</p>
                                             <br>
-                                            <p class="text-danger">With no existing brand, no prior design system, and a one-month window, a design system needed to be built from scratch while product screens were being designed simultaneously. As the sole UX/UI designer at Webpuppies, the design system wasn't just a deliverable — it was a personal necessity. Without it, maintaining visual consistency across two products and all future marketing outputs would have been unmanageable for one person to sustain.</p>
+                                            <p><b>WoofPay</b></p>
+                                            <p>An affordable alternative to Shopify that helped small business owners with taxes, payments, and a social-media-embeddable online store; and </p>
+                                            <br>
+                                            <p><b>WoofEvents</b></p>
+                                            <p>A form-driven social media post generator designed for entrepreneurs without a marketing team. This was considered an early, pre-AI version of what generative tools now do for content creation.</p>
+                                            <br><br>
+                                            <p>With no existing brand, no prior design system, and a one-month window, a design system needed to be built from scratch while product screens were being designed simultaneously. As the sole UX/UI Designer at Webpuppies, the design system was both a deliverable and a personal necessity. </p>
                                         </div>
                                         <div class="block-table">
                                             <div class="row">
                                                 <div class="col-3">
                                                     <p class="thead">Team</p>
-                                                    <p>Bianca Maddela (Me)</p>
+                                                    <p>Me</p>
+                                                    <p>Richard Tamala Jr.</p>
                                                 </div>
                                                 <div class="col-2">
-                                                    <p class="thead text-danger">Duration</p>
-                                                    <p class="text-danger">double-check</p>
+                                                    <p class="thead">Duration</p>
+                                                    <p>1 Year</p>
                                                 </div>
                                                 <div class="col-3">
                                                     <p class="thead">Role</p>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>UX/UI Designer</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>Illustrator</p>
-                                                    </div>
+                                                    <p>UX/UI Designer</p>                                     
                                                 </div>
                                                 <div class="col-4">
-                                                    <p class="thead text-danger">Skills</p>
-                                                    <p class="text-danger">Define later</p>
+                                                    <p class="thead">Skills</p>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>UI Researcher</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>Designing and Project Management</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,33 +368,32 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Impact</h5>
-                                            <p>The design system was built to serve a lean team moving fast. Its success was measured not by formal adoption metrics, but by what didn't happen after handoff.</p>
+                                            <p>The design system was built to serve a lean team moving fast. It’s success was measured by how scalable and easily adaptable it was for the Dev Team.</p>
                                         </div>
                                         <div>
-                                            <h6 class="fw-medium text-danger">Subheader</h6>
+                                            <h6 class="w-600">The Design System's Outcome</h6>
                                             <div class="v-stack space-3 mt-2">
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 1 — Development Proceeded Without Interruption</div>
-                                                        <p class="text-danger">Richard worked from the design system for two months after handoff without returning with questions or requests. Richard was known to reach out when something was unclear — his continued silence throughout development is interpreted as a signal that the system was coherent and complete enough to build from independently.</p>
-                                                        <i class="text-danger">*(Inferred from observed behavior — no formal confirmation was given.)*</i>
+                                                        <div class="case-study-subtitle">Result 1: Development Proceeded Without Interruption</div>
+                                                        <p>Richard worked from the design system for two months after handoff without returning with questions or requests. Richard was known to reach out when something was unclear, so his continued silence throughout development is interpreted as a signal that the system was coherent and complete enough to build from independently.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 2 — Consistent Visual Foundation Across Two Products</div>
-                                                        <p class="text-danger">By establishing the design system before development began in earnest, both WoofPay Payments and WoofEvents were built from the same visual foundation — the same tokens, components, and interaction patterns — rather than diverging as separate implementations.</p>
+                                                        <div class="case-study-subtitle">Result 2: Consistent Visual Foundation Across Two Products</div>
+                                                        <p>By establishing the design system before development began in earnest, both WoofPay Payments and WoofEvents were built from the same visual foundation(same tokens, components, and interaction patterns); rather than diverging as separate implementations.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 3 — Scope Was Clean and Held</div>
-                                                        <p>No components were requested retroactively. No gaps were identified post-handoff. The scope held exactly as planned, which in a one-month greenfield engagement is a meaningful signal of upfront alignment between design, development, and the product owner.</p>
+                                                        <div class="case-study-subtitle">Result 3: Scope Was Clean and Held</div>
+                                                        <p>No components were requested retroactively and no gaps were identified post-handoff. The scope was delivered as planned and submission happened upfront between the dev team and the product owner.</p>
                                                     </div>
-                                                </div>
+                                                </div>                                                                                                                                          
                                             </div>
                                         </div>
                                     </div>
@@ -362,26 +401,170 @@
                                 <!--Features-->
                                 <div class="block v-stack space-5" id="features">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Features</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint cumque rerum quidem ut natus, atque accusantium neque earum recusandae nisi culpa aspernatur possimus minima sit ducimus impedit, laborum dolorem.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Brand-New Visual Identity System</h6>
-                                            <p class="text-danger">WoofPay had no existing brand when the project began. Style guide options were presented to the boss upfront — his selection became the locked creative direction for the entire project and all future outputs. This approach prevented mid-project pivots and gave the developer a stable visual reference from day one.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Cross-Product Component Consistency</h6>
-                                            <p class="text-danger">All basic components were designed to work across both WoofPay Payments and WoofEvents — ensuring that shared UI patterns (buttons, forms, inputs, navigation) were visually and functionally consistent regardless of which product a user was in.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Tax Filing Flow (WoofPay Payments)</h6>
-                                            <p class="text-danger">A custom flow built on top of the basic components, informed by direct research into Xero's tax filing structure and Taxumo's simpler approach. The complexity of Xero's American-oriented tax system informed a deliberate decision to simplify — the WoofPay tax flow was scoped for accessibility and ease of use, not feature parity with enterprise tools.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Social Media Post Generator Flow (WoofEvents)</h6>
-                                            <p class="text-danger">A custom Typeform-inspired form flow that outputs a ready-to-edit social media post — the core product experience of WoofEvents. The editing interface was intentionally simplified per the boss's direction: no lasso tools or Photoshop-adjacent features, just a text editor and basic shape controls. The rationale was reducing cognitive load for small business owners who weren't designers.</p>
-                                        </div>
+                                        <h5>Features</h5>     
+                                        <!--Feature #1 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 1</div>
+                                                <h6 class="features-title">Brand-New Visual Identity System</h6>
+                                                <p>WoofPay had no existing brand when the project began. Style guide options were presented to the boss upfront. His selection became the locked creative direction for the entire project and all future outputs. This approach prevented mid-project pivots and gave me a stable visual reference from day one.</p>
+                                            </div>
+                                            <div class="feature-display">                                               
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption</div>
+                                                    </div>                  
+                                            </div>
+                                        </div>   
+                                        <!--Feature #1 END-->                                
+                                        <!--Feature #2 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 2</div>
+                                                <h6 class="features-title">Cross-Product Component Consistency</h6>
+                                                <p>All basic components were designed to work across both WoofPay Payments and WoofEvents, ensuring that shared UI patterns (buttons, forms, inputs, navigation) were visually and functionally consistent regardless of which product a user was in.</p>
+                                            </div>
+                                            <div class="feature-display">
+                                                <div class="cs-carousel mb-5">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                        <div class="case-study-subtitle">WoofPay</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                        <div class="case-study-subtitle">WoofEvents</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <!--Feature #2 END-->   
+                                        <!--Feature #3 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 3</div>
+                                                <h6 class="features-title">Tax Filling Flow on WoofPay</h6>
+                                                <p>I created a custom flow built on top of the basic components I made was informed by my direct research into Xero’s tax filing structure and Paymaya’s overall user journey flows. The complexity of Xero’s American-oriented tax system pushed me to apply a simplified tax flow that’s accessible and easy to use for all types of users(beginners to seasoned business owners).</p>
+                                            </div>
+                                            <div class="feature-display">                                               
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption</div>
+                                                    </div>                  
+                                            </div>
+                                        </div>   
+                                        <!--Feature #3 END-->
+                                        <!--Feature #4 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 4</div>
+                                                <h6 class="features-title">Social Media Post Generator Flow on WoofEvents</h6>
+                                                <p>
+                                                A custom Typeform-inspired form flow that outputs a ready-to-edit social media post is the core product experience of WoofEvents. The editing interface was intentionally simplified per my boss's direction: no lasso tools or Photoshop-adjacent features; just a text editor and basic shape controls. 
+                                                <br><br>
+                                                The rationale was reducing cognitive load for small business owners who weren't designers.</p>
+                                            </div>
+                                            <div class="feature-display">                                               
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption</div>
+                                                    </div>                  
+                                            </div>
+                                        </div>   
+                                        <!--Feature #4 END-->                                              
                                     </div>
                                 </div>
                                 <!--Research & Discovery-->

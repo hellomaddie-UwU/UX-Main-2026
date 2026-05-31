@@ -70,6 +70,30 @@ Table of Contents:
     color: #6172F3;
 }
 
+.pill-finance {
+    border: 1px solid #D0F8AB;
+    background-color: #F3FEE7;
+    color: #4CA30D;
+}
+
+.pill-e-commerce {
+    border: 1px solid #99F6E0;
+    background-color: #F0FDF9;
+    color: #15B79E;
+}
+
+.pill-event {
+    border: 1px solid #FEEE95;
+    background-color: #FEFBE8;
+    color: #CA8504;
+}
+
+.pill-market {
+    border: 1px solid #FECDD6;
+    background-color: #FFF1F3;
+    color: #F63D68;
+}
+
 
 
 /*Notification Message*/
