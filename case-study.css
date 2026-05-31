@@ -405,7 +405,7 @@ margin-top: var(--space-3);
 .iteration-header p {margin-top: -5px;}
 
 .discovery-accordion-header > h6 {
-    font-weight: 300; 
+    font-weight: 500; 
     color:#3E4784;
 }
 
@@ -476,6 +476,13 @@ margin-top: var(--space-3);
 .reflection-content {
     display: none;
     border-top: none;
+}
+
+.my-discovery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: var(--space-3);
 }
 
 .insight-accordion-item.is-open .my-insight,
