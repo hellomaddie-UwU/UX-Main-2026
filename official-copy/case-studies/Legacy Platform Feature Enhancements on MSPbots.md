@@ -2,7 +2,7 @@
 
 ## Category
 - **Industry:** MSP Technology
-- **Output Type:** Web App
+- **Output Type:** Web App 
 
 ---
 
