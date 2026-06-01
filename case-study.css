@@ -504,6 +504,13 @@ margin-top: var(--space-3);
     box-shadow: 8px 2px 20px 0 rgba(255, 194, 155, 0.25) inset;
 }
 
+.other-case-study-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 12px;
+    margin-bottom: var(--space-3);
+}
+
 
 /*========================================================================*/
 
