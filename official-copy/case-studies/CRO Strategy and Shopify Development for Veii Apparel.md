@@ -57,13 +57,13 @@ A dedicated landing page for an upcoming women's collection was scoped and parti
 ## Features
 
 **Size Chart Prominence**
-Moved the size chart above the fold on the product page template so visitors could resolve sizing questions before reaching the CTA, rather than after. Addressed the rage-click and drop-off pattern concentrated on product pages in the Clarity data.
+Moved the size chart above the fold on the product page template so visitors could resolve sizing questions before reaching the CTA. Addressed the rage-click and drop-off pattern concentrated on product pages in Clarity's data.
 
 **CTA Banner on Catalogue Pages**
-Added a persistent call-to-action banner to catalogue page templates to create a clearer next step for users browsing without converting. Responded to the Clarity finding of low exploration depth across the catalogue.
+Added a persistent call-to-action banner to catalogue page templates to create a clearer next step for users browsing without converting. Responded to Clarity finding of low exploration depth across the catalogue.
 
 **Collection Dropdown Navigation**
-Surfaced collection categories as a dropdown on catalogue pages to reduce the clicks required to reach a relevant product. Intended to shorten the path between browse behavior and product page arrival.
+Surfaced collection categories as a dropdown on catalogue pages to reduce the clicks. This is so that a visitor doesn't always have to click through the menu over and over again. Intended to shorten the path between browsing behavior and product page arrival.
 
 **Reward and Loyalty System**
 Built and launched an on-site reward system designed to incentivise repeat purchases from existing buyers. Collaboratively scoped with the founder as a retention strategy, not an acquisition one.
@@ -81,9 +81,9 @@ Microsoft Clarity was the sole research tool used throughout the project, instal
 
 **Rage clicks on product pages:** Concentrated rage-click activity pointed to user frustration, most likely caused by sizing information being unavailable at the moment users needed it to commit to a purchase.
 
-**Low catalogue exploration:** Visitors were not navigating between collections or exploring catalog depth. Most appeared to land and leave without browsing further, indicating that the catalog structure was not drawing users deeper into the funnel.
+**Low catalogue exploration:** Visitors were not navigating between collections or exploring a catalog in-depth. Most appeared to land and leave without browsing further, indicating that the catalog structure was not drawing users deeper into the funnel.
 
-No formal user interviews or surveys were conducted. All design decisions were grounded in Clarity behavioral data and informed by a Udemy CRO course provided by the founder, which supported applying CRO methodology correctly to the findings.
+No formal user interviews or surveys were conducted. All design decisions were grounded in Clarity's behavioral data.
 
 ---
 
