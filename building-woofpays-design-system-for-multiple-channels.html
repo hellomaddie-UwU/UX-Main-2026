@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/svg" href="imgs/favicon.svg">
         <!--SEO START-->
         <title>Building WoofPay's Design System for Multiple Channels | hellomaddie</title>
-        <meta name="description" content="insert a brief description of what this case study is about.">
-        <meta name="keywords" content="insert relevant keywords related to this case study.">
-        <meta name="author" content="Bianca Maddela">
+        <meta name="description" content="#">
+        <meta name="author" content="hellomaddie">
+
+        <!-- Universal Open Graph -->
+        <meta property="og:title" content="Building Woofpays' Design System for Multiple Channels | hellomaddie">
+        <meta property="og:description" content="#">
+        <meta property="og:image" content="#"> <!-- Replace with actual image URL: 1200×630px -->
+        <meta property="og:image:alt" content="#">
+        <meta property="og:url" content="#"> <!-- Needs to be the official URL -->
+        <meta property="og:type" content="website">
+
+        <!-- Twitter/X Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="#">
+        <meta name="twitter:description" content="#">
+        <meta name="twitter:image" content="#"> <!-- Replace with actual image URL: 1200×630px -->
         <!--SEO END-->
 
         <!--Stylesheet START-->
@@ -150,13 +163,26 @@
         <div class="main-page">
             <!--Hero Section START-->
             <header class="section-container">
+                <div class="site-breadcrumb">
+                    <a href="index.html" class="bc-home">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
+                        </svg>
+                        Home
+                    </a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <a href="case-study-catalogue.html">Case Studies</a>
+                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <p class="current-bc">Building WoofPay's Design System for Multiple Channels</p>
+                </div>
                 <div class="v-stack">
                     <div class="h-stack space-2">
                         <span class="pill pill-internal">Internal Documentation</span>
-                        <span class="pill pill-tech">Finance</span>
-                        <span class="pill pill-tech">E-commerce</span>
-                        <span class="pill pill-tech">Events</span>
-                        <span class="pill pill-tech">Marketing</span>
+                        <span class="pill pill-tech">AI & Technology</span>
+                        <span class="pill pill-finance">Finance</span>
+                        <span class="pill pill-e-commerce">E-commerce</span>
+                        <span class="pill pill-event">Events</span>
+                        <span class="pill pill-market">Marketing</span>
                     </div>
                     <h1 class="case-study-title">Building WoofPay's Design System for Multiple Channels</h1>
                 </div>
@@ -167,11 +193,11 @@
                     <div class="row">
                         <div class="col-7">
                             <div class="d-flex align-items-center gap-2">
-                                <p class="fw-medium">Contract Duration</p> 
+                                <p class="fw-medium">Contract Period</p> 
                                 <img class="orange-dot" src="imgs/orange-dot.svg" alt="dot divider">
-                                <p>????</p> <!--contract date-->
+                                <p>#</p> <!--contract date-->
                             </div>
-                            <h5 class="case-study-excerpt text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi exercitationem, id atque numquam nihil reprehenderit saepe inventore doloribus ex ab voluptatem, iusto rerum sapiente sint eaque incidunt quod similique commodi..</h5>
+                            <h5 class="case-study-excerpt">Insert Summary</h5>                           
                         </div>
                         <div class="col-5">
                             <div class="selection-container">
@@ -181,16 +207,23 @@
                                 <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
                                 <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
                                 <!--Selector Boxes END-->
-                                <div class="selection-content" style="background-color: rgb(166, 44, 44);">
-                                    <h6 class="mb-3 text-white">Expected Delivery</h6>
-                                    <div class="v-stack space-3 align-items-start">
-                                        <div class="d-flex justify-content-center gap-2">
-                                            <img src="imgs/heart-point.svg" alt="checkmark icon">
-                                            <p class="text-white">**Figma Design System File**</p>
-                                            <!-- A brand-new design system built from scratch to serve two distinct products: WoofPay Payments and WoofEvents. Includes all basic components with variant properties adjusted to match WoofPay's visual identity.
-                                            *(Completed within the one-month engagement. Developer had full Figma access from handoff.)* -->
+                                <div class="selection-content">
+                                    <div class="v-stack space-1">
+                                        <p class="md-text">Deliverables</p>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Figma Design System File</p>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Accessibility Documentation</p>
+                                        </div>
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                            <p>Writing Guidelines</p>
                                         </div>
                                     </div>
+                                    <!--Do not add extended scope without it actually being finished first.-->
                                 </div>
                             </div>
                         </div>
@@ -271,7 +304,6 @@
                                                 <a href="building-woofpays-design-system-for-multiple-channels.html#research-discovery">Research & Discovery</a>
                                                 <a href="building-woofpays-design-system-for-multiple-channels.html#key-insights">Key Insights</a>
                                                 <a href="building-woofpays-design-system-for-multiple-channels.html#design-iterations">Design Iteration</a>
-                                                <a href="building-woofpays-design-system-for-multiple-channels.html#reflection">Reflection</a>
                                             </div>
                                             <div class="row position-absolute" style="top: 103px;">
                                                 <img class="w-100" src="imgs/the-ux-stuff.svg" alt="the-ux-stuff">
@@ -290,34 +322,41 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Context</h5>
-                                            <p class="text-danger">WoofPay was a passion project initiated by the user's boss at Webpuppies, a Singaporean IT company. The product vision was twofold: WoofPay Payments, an affordable alternative to Shopify that helped small business owners with taxes, payments, and a social-media-embeddable online store; and WoofEvents, a form-driven social media post generator designed for entrepreneurs without a marketing team — an early, pre-AI version of what generative tools now do for content creation.</p>
+                                            <p>WoofPay was a passion project initiated by my boss at Webpuppies, a Singaporean IT company. The product vision was two-fold:</p>
                                             <br>
-                                            <p class="text-danger">With no existing brand, no prior design system, and a one-month window, a design system needed to be built from scratch while product screens were being designed simultaneously. As the sole UX/UI designer at Webpuppies, the design system wasn't just a deliverable — it was a personal necessity. Without it, maintaining visual consistency across two products and all future marketing outputs would have been unmanageable for one person to sustain.</p>
+                                            <p><b>WoofPay</b></p>
+                                            <p>An affordable alternative to Shopify that helped small business owners with taxes, payments, and a social-media-embeddable online store; and </p>
+                                            <br>
+                                            <p><b>WoofEvents</b></p>
+                                            <p>A form-driven social media post generator designed for entrepreneurs without a marketing team. This was considered an early, pre-AI version of what generative tools now do for content creation.</p>
+                                            <br><br>
+                                            <p>With no existing brand, no prior design system, and a one-month window, a design system needed to be built from scratch while product screens were being designed simultaneously. As the sole UX/UI Designer at Webpuppies, the design system was both a deliverable and a personal necessity. </p>
                                         </div>
                                         <div class="block-table">
                                             <div class="row">
                                                 <div class="col-3">
                                                     <p class="thead">Team</p>
-                                                    <p>Bianca Maddela (Me)</p>
+                                                    <p>Me</p>
+                                                    <p>Richard Tamala Jr.</p>
                                                 </div>
                                                 <div class="col-2">
-                                                    <p class="thead text-danger">Duration</p>
-                                                    <p class="text-danger">double-check</p>
+                                                    <p class="thead">Duration</p>
+                                                    <p>1 Year</p>
                                                 </div>
                                                 <div class="col-3">
                                                     <p class="thead">Role</p>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>UX/UI Designer</p>
-                                                    </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
-                                                        <p>Illustrator</p>
-                                                    </div>
+                                                    <p>UX/UI Designer</p>                                     
                                                 </div>
                                                 <div class="col-4">
-                                                    <p class="thead text-danger">Skills</p>
-                                                    <p class="text-danger">Define later</p>
+                                                    <p class="thead">Skills</p>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>UI Researcher</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-start align-items-center gap-2">
+                                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                        <p>Designing and Project Management</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -328,33 +367,32 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Impact</h5>
-                                            <p>The design system was built to serve a lean team moving fast. Its success was measured not by formal adoption metrics, but by what didn't happen after handoff.</p>
+                                            <p>The design system was built to serve a lean team moving fast. It’s success was measured by how scalable and easily adaptable it was for the Dev Team.</p>
                                         </div>
                                         <div>
-                                            <h6 class="fw-medium text-danger">Subheader</h6>
+                                            <h6 class="w-600">The Design System's Outcome</h6>
                                             <div class="v-stack space-3 mt-2">
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 1 — Development Proceeded Without Interruption</div>
-                                                        <p class="text-danger">Richard worked from the design system for two months after handoff without returning with questions or requests. Richard was known to reach out when something was unclear — his continued silence throughout development is interpreted as a signal that the system was coherent and complete enough to build from independently.</p>
-                                                        <i class="text-danger">*(Inferred from observed behavior — no formal confirmation was given.)*</i>
+                                                        <div class="case-study-subtitle">Result 1: Development Proceeded Without Interruption</div>
+                                                        <p>Richard worked from the design system for two months after handoff without returning with questions or requests. Richard was known to reach out when something was unclear, so his continued silence throughout development is interpreted as a signal that the system was coherent and complete enough to build from independently.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 2 — Consistent Visual Foundation Across Two Products</div>
-                                                        <p class="text-danger">By establishing the design system before development began in earnest, both WoofPay Payments and WoofEvents were built from the same visual foundation — the same tokens, components, and interaction patterns — rather than diverging as separate implementations.</p>
+                                                        <div class="case-study-subtitle">Result 2: Consistent Visual Foundation Across Two Products</div>
+                                                        <p>By establishing the design system before development began in earnest, both WoofPay Payments and WoofEvents were built from the same visual foundation(same tokens, components, and interaction patterns); rather than diverging as separate implementations.</p>
                                                     </div>
                                                 </div>
                                                 <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="imgs/pin-point.svg" alt="pin point">
+                                                    <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
                                                     <div class="v-stack">
-                                                        <div class="case-study-subtitle">Result 3 — Scope Was Clean and Held</div>
-                                                        <p>No components were requested retroactively. No gaps were identified post-handoff. The scope held exactly as planned, which in a one-month greenfield engagement is a meaningful signal of upfront alignment between design, development, and the product owner.</p>
+                                                        <div class="case-study-subtitle">Result 3: Scope Was Clean and Held</div>
+                                                        <p>No components were requested retroactively and no gaps were identified post-handoff. The scope was delivered as planned and submission happened upfront between the dev team and the product owner.</p>
                                                     </div>
-                                                </div>
+                                                </div>                                                                                                                                          
                                             </div>
                                         </div>
                                     </div>
@@ -362,78 +400,371 @@
                                 <!--Features-->
                                 <div class="block v-stack space-5" id="features">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Features</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint cumque rerum quidem ut natus, atque accusantium neque earum recusandae nisi culpa aspernatur possimus minima sit ducimus impedit, laborum dolorem.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Brand-New Visual Identity System</h6>
-                                            <p class="text-danger">WoofPay had no existing brand when the project began. Style guide options were presented to the boss upfront — his selection became the locked creative direction for the entire project and all future outputs. This approach prevented mid-project pivots and gave the developer a stable visual reference from day one.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Cross-Product Component Consistency</h6>
-                                            <p class="text-danger">All basic components were designed to work across both WoofPay Payments and WoofEvents — ensuring that shared UI patterns (buttons, forms, inputs, navigation) were visually and functionally consistent regardless of which product a user was in.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Tax Filing Flow (WoofPay Payments)</h6>
-                                            <p class="text-danger">A custom flow built on top of the basic components, informed by direct research into Xero's tax filing structure and Taxumo's simpler approach. The complexity of Xero's American-oriented tax system informed a deliberate decision to simplify — the WoofPay tax flow was scoped for accessibility and ease of use, not feature parity with enterprise tools.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="features-title">Social Media Post Generator Flow (WoofEvents)</h6>
-                                            <p class="text-danger">A custom Typeform-inspired form flow that outputs a ready-to-edit social media post — the core product experience of WoofEvents. The editing interface was intentionally simplified per the boss's direction: no lasso tools or Photoshop-adjacent features, just a text editor and basic shape controls. The rationale was reducing cognitive load for small business owners who weren't designers.</p>
-                                        </div>
+                                        <h5>Features</h5>     
+                                        <!--Feature #1 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 1</div>
+                                                <h6 class="features-title">Brand-New Visual Identity System</h6>
+                                                <p>WoofPay had no existing brand when the project began. Style guide options were presented to the boss upfront. His selection became the locked creative direction for the entire project and all future outputs. This approach prevented mid-project pivots and gave me a stable visual reference from day one.</p>
+                                            </div>
+                                            <div class="feature-display">                                               
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption</div>
+                                                    </div>                  
+                                            </div>
+                                        </div>   
+                                        <!--Feature #1 END-->                                
+                                        <!--Feature #2 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 2</div>
+                                                <h6 class="features-title">Cross-Product Component Consistency</h6>
+                                                <p>All basic components were designed to work across both WoofPay Payments and WoofEvents, ensuring that shared UI patterns (buttons, forms, inputs, navigation) were visually and functionally consistent regardless of which product a user was in.</p>
+                                            </div>
+                                            <div class="feature-display">
+                                                <div class="cs-carousel mb-5">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                        <div class="case-study-subtitle">WoofPay</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                        <div class="case-study-subtitle">WoofEvents</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <!--Feature #2 END-->   
+                                        <!--Feature #3 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 3</div>
+                                                <h6 class="features-title">Tax Filling Flow on WoofPay</h6>
+                                                <p>I created a custom flow built on top of the basic components I made was informed by my direct research into Xero’s tax filing structure and Paymaya’s overall user journey flows. The complexity of Xero’s American-oriented tax system pushed me to apply a simplified tax flow that’s accessible and easy to use for all types of users(beginners to seasoned business owners).</p>
+                                            </div>
+                                            <div class="feature-display">                                               
+                                                    <div class="indiv-case-study-img-container">
+                                                        <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                            <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                        </div>                                                
+                                                        <div class="case-study-img-caption">image caption</div>
+                                                    </div>                  
+                                            </div>
+                                        </div>   
+                                        <!--Feature #3 END-->
+                                        <!--Feature #4 START-->
+                                        <div class="feature-block">
+                                            <div class="feature-info">
+                                                <div class="label-primary">FEATURE 4</div>
+                                                <h6 class="features-title">Social Media Post Generator Flow on WoofEvents</h6>
+                                                <p>
+                                                A custom Typeform-inspired form flow that outputs a ready-to-edit social media post is the core product experience of WoofEvents. The editing interface was intentionally simplified per my boss's direction: no lasso tools or Photoshop-adjacent features; just a text editor and basic shape controls. 
+                                                <br><br>
+                                                The rationale was reducing cognitive load for small business owners who weren't designers.</p>
+                                            </div>
+                                            <div class="feature-display">                                               
+                                                <div class="indiv-case-study-img-container">
+                                                    <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                        <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                    </div>                                                
+                                                    <div class="case-study-img-caption">image caption</div>
+                                                </div>                  
+                                            </div>
+                                        </div>   
+                                        <!--Feature #4 END-->                                              
                                     </div>
                                 </div>
                                 <!--Research & Discovery-->
                                 <div class="block v-stack space-5" id="research-discovery">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Research & Discovery</h5>
-                                            <p>
-                                                Formal research was not conducted. Discovery happened through three primary inputs.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <h6 class="research-title">**Competitor Research — WoofPay Payments**</h6>
-                                            <p class="text-danger">Maya's web app was studied in full — its structure, purpose, functionality, and interaction patterns. Ecwid was researched as the primary benchmark for affordable Shopify alternatives. A Xero account was created independently to study tax filing workflows firsthand — a self-initiated step beyond the project brief. The Xero deep-dive revealed that American tax filing structures are significantly more complex than the simpler formats used in other markets, which directly informed the decision to simplify WoofPay's Tax Filing flow for a broader, more accessible audience.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="research-title">**Competitor Research — WoofEvents**</h6>
-                                            <p>Typeform was studied for its form creation UX and structural approach. Canva's full UI setup and editing experience was mapped to understand what a capable-but-simple editing tool looks and feels like. These two references defined the product's end-to-end experience: guided input on one end, ready-to-use output on the other.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="research-title">**User Persona**</h6>
-                                            <p class="text-danger">Both products targeted small business owners and entrepreneurs seeking affordable alternatives to build their business — specifically those who couldn't justify the cost of Shopify, a physical store, or a marketing team. The target audience was designed to be as inclusive and market-agnostic as possible.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="research-title">**Style Guide Options as Stakeholder Alignment Tool**</h6>
-                                            <p class="text-danger">Rather than presenting a single direction to the boss, multiple style guide options were developed upfront. The boss's selection locked the visual direction for the entire project — preventing mid-project feedback loops and giving the team a shared reference from the start. This is a consistent personal practice applied across all projects, not a one-off process decision.</p>
-                                        </div>
+                                        <h5>Research & Discovery</h5>
+                                        <!--Discover #1 START-->
+                                        <div class="discovery-block">
+                                            <div class="discovery">
+                                                <div class="label-primary">DISCOVERY 1</div>
+                                                <h6 class="discovery-title">WoofPay’s Competitors</h6>
+                                                <p>Maya’s web app was studied in full, its structure, purpose, functionality, and interaction patterns. Ecwid was researched as the primary benchmark for affordable Shopify alternatives. While for Xero, I made an account to independently study tax filing workflows firsthand(a self-initiated step beyond the project brief). 
+                                                <br><br>
+                                                The Xero deep-dive revealed that American tax filing structures are significantly more complex than the simpler formats used in other markets. This directly informed the decision to simplify WoofPay's Tax Filing flow for a broader, more accessible audience.</p>
+                                            </div>
+                                            <div class="discovery-display">    
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                        <div class="case-study-subtitle">Carousel Title</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>                                                           
+                                            </div>
+                                        </div>   
+                                        <!--Discover #1 END--> 
+                                        <!--Discover #2 START-->
+                                        <div class="discovery-block">
+                                            <div class="discovery">
+                                                <div class="label-primary">DISCOVERY 2</div>
+                                                <h6 class="discovery-title">WoofEvent’s Competitors</h6>
+                                                <p>Typeform was studied for its form creation UX and structural approach. Canva's full UI setup and editing experience was mapped to understand what a capable-but-simple editing tool looks and feels like. These two references defined the product's end-to-end experience: guided input on one end, and ready-to-use output on the other.</p>
+                                            </div>
+                                            <div class="discovery-display">    
+                                                <div class="cs-carousel">
+                                                    <!-- Controls -->
+                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                        <div class="case-study-subtitle">Carousel Title</div>
+                                                        <div>
+                                                            <button class="cs-carousel__btn-prev" type="button">           
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                               
+                                                            </button>
+                                                            <button class="cs-carousel__btn-next" type="button">                                                  
+                                                                <span aria-hidden="true">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>                                                     
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Slides -->
+                                                    <div class="cs-carousel__track">
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="cs-carousel__slide">
+                                                            <div class="case-study-img-container">
+                                                                <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                </div>
+                                                                <div class="case-study-img-caption">image caption</div>
+                                                            </div>
+                                                        </div>                                                    
+                                                    </div>
+                                                </div>                                                           
+                                            </div>
+                                        </div>   
+                                        <!--Discover #2 END--> 
+                                        <!--Discover #3 START-->
+                                        <div class="discovery-block">
+                                            <div class="discovery">
+                                                <div class="label-primary">RESEARCH</div>
+                                                <h6 class="discovery-title">User Persona</h6>
+                                                <p>Both products targeted small business owners and entrepreneurs seeking affordable alternatives to build their business, specifically those who couldn't justify the cost of Shopify, a physical store, or a marketing team. The target audience was designed to be as inclusive and market-agnostic as possible.</p>
+                                                <div class="side-note">This was before Shopify launched their Lite Plan*</div>
+                                            </div>
+                                            <div class="discovery-display">    
+                                                <div class="indiv-case-study-img-container">
+                                                    <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                        <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                    </div>                                                
+                                                    <div class="case-study-img-caption">image caption</div>
+                                                </div>                                                                                                        
+                                            </div>
+                                        </div>   
+                                        <!--Discover #3 END--> 
                                     </div>
                                 </div>
                                 <!--Key Insights-->
                                 <div class="block v-stack space-5" id="key-insights">
                                     <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Key Insights</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, suscipit neque fugiat numquam nihil impedit. Eligendi pariatur expedita magnam iste alias, quos impedit quidem perferendis fuga, harum dicta necessitatibus nihil.</p>
+                                        <h5>Key Insights</h5>
+                                        <div class="insight-accordion" data-insight-accordion>
+                                            <div class="insight-accordion-item is-open">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                        <p><span class="situation-bold">Because</span> the developer could extrapolate from clear basics... <span class="situation-bold">it led to</span> completeness mattered more than comprehensiveness.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>Richard’s request to stop adding components was feedback that the system was legible. A design system that communicates clearly enough for a developer to continue without the designer present is more valuable than an exhaustive one that still requires constant explanation.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
+                                                        <p><span class="situation-bold">Because</span> both products shared a user base... <span class="situation-bold">it led to</span> the design system having to translate across two very different product experiences.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>WoofPay and WoofEvents serve the same user persona but in entirely different contexts(financial management vs. content creation). The design system needed to feel cohesive across both without flattening the distinct experience each product required.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="insight-accordion-item">
+                                                <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight point">
+                                                <div class="v-stack w-100 gap-3">
+                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
+                                                        <p><span class="situation-bold">Because</span> the project was a one-month engagement... <span class="situation-bold">it led to</span> medium fidelity mattering more.</p>
+                                                        <div class="insight-chevron">
+                                                            <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                        </div>
+                                                    </button>
+                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
+                                                        <div class="my-insight-title">My Insight</div>
+                                                        <p>A Figma file served the immediate handoff need. With current tooling and vibe-coding capabilities, an internal component website would have served the developer better. The website would have possessed copy-pasting live components faster than hand-coding from a Figma reference. The constraint was the platform and the timeline, not the approach.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <i>**Because there was no existing brand, the design system and the brand had to be created simultaneously.**</i>
-                                            <p>In most design system engagements, a brand already exists and the system codifies it. Here, both had to be invented at the same time. Presenting style options upfront and locking a direction early was essential to avoid the system becoming a moving target.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the developer could extrapolate from clear basics, completeness mattered more than comprehensiveness.**</i>
-                                            <p class="text-danger">Richard's request to stop adding components wasn't a limitation — it was feedback that the system was legible. A design system that communicates clearly enough for a developer to continue without the designer present is more valuable than an exhaustive one that still requires constant explanation.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because both products shared a user base, the design system had to translate across two very different product experiences.**</i>
-                                            <p class="text-danger">WoofPay Payments and WoofEvents serve the same user persona but in entirely different contexts — financial management vs. content creation. The design system needed to feel cohesive across both without flattening the distinct experience each product required.</p>
-                                        </div>
-                                        <div>
-                                            <i>**Because the project was a one-month engagement, medium fidelity mattered.**</i>
-                                            <p class="text-danger">A Figma file served the immediate handoff need. With current tooling and vibe-coding capabilities, an internal component website would have served the developer better — copy-pasting live components is faster than hand-coding from a Figma reference. The constraint was the platform and the timeline, not the approach.</p>
-                                        </div>                                       
                                     </div>
                                 </div>
                                 <!--Design Iterations-->
@@ -441,40 +772,36 @@
                                     <div class="v-stack space-5">
                                         <div>
                                             <h5>Design Iterations</h5>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Style Guide Selection as Direction Lock</h6>
-                                            <p class="text-danger">Early in the project, multiple style guide options were developed and presented to the boss for selection. Once chosen, the direction was treated as locked — no deviations were made throughout the project. This wasn't rigidity; it was a deliberate process for protecting creative credibility and preventing stakeholder-driven drift. Changing an approved direction mid-project signals inconsistency to stakeholders and senior team members.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">WoofEvents Editing Interface Simplified</h6>
-                                            <p class="text-danger">The initial concept for WoofEvents included a more full-featured editing environment — closer to a design tool with lasso and selection capabilities. The boss requested a significant simplification: remove complex tools, retain only a text editor and basic shape controls. The rationale was explicit — reduce cognitive load for non-designer users, make the tool feel like editing, not designing. This pivot clarified the product's identity and made the interaction model more coherent for its target audience.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="design-iteration-title">Component Scope Closed Early by Developer</h6>
-                                            <p class="text-danger">After the basic components were completed, Richard indicated he had enough context to continue independently and didn't need further component documentation. Rather than continuing to build components for their own sake, the scope was closed. Overachieving on a clear instruction is not a virtue in professional work — the right call was to respect the boundary and move on.</p>
-                                        </div>                         
-                                    </div>
-                                </div>
-                                <!--Reflection-->
-                                <div class="block v-stack space-5" id="reflection">
-                                    <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Reflection</h5>
-                                        </div>
-                                        <div>
-                                            <h6 class="reflection-title">What Worked</h6>
-                                            <p class="text-danger">Locking the visual direction early through the style guide selection process gave the entire project a stable foundation — no mid-project pivots, no stakeholder-driven rework. Working in parallel with Richard meant the developer had something real to build from almost immediately, rather than waiting for a sequential design-then-develop process. The competitor research — especially the Xero deep-dive — grounded product decisions in real user experience rather than assumptions.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="reflection-title">What Remained Unresolved</h6>
-                                            <p class="text-danger">The design system was scoped for the two web apps only — marketing outputs (website, emailers, collaterals) were deferred to a future phase. Figma's token/variable system was not yet available at the time of the project; design tokens would have made the system more maintainable and scalable had the platform supported them.</p>
-                                        </div>
-                                        <div>
-                                            <h6 class="reflection-title">What I'd Do Differently</h6>
-                                            <p class="text-danger">I'd build a component website instead of a Figma file — the same conclusion reached on the MSPbot projects. For a developer working in code, a live component library with copy-paste functionality is faster and more practical than navigating a Figma file. The one-month timeline and platform limitations were the real constraints at the time, not the approach itself.</p>
-                                            <br>
-                                            <p class="text-danger">I'd also apply Figma's token and variable system from the start — a feature that didn't exist yet when this project was built, but one that would have made cross-product consistency easier to maintain and update as the brand evolved.</p>
+                                        </div> 
+                                        <div class="design-iteration-accordion" data-design-iteration-accordion>
+                                            <div class="design-iteration-accordion-item is-open">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 1</div>
+                                                        <p>WoofEvents Editing Interface Simplified</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
+                                                    <p>The initial concept for WoofEvents included a full-featured editing environment that’s closer to a design tool like Canva. The boss requested a significant simplification of removing complex tools; retain only a text editor and basic shape controls. The rationale was explicit, reduce cognitive load for non-designer users, making the tool feel you’re editing, not designing. This pivot clarified the product's identity and made the interaction model more coherent for its target audience.</p>
+                                                </div>
+                                            </div>
+                                            <div class="design-iteration-accordion-item">
+                                                <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
+                                                    <div>
+                                                        <div class="iteration-title">Iteration 2</div>
+                                                        <p>Component Scope Closed Early by Developer</p>
+                                                    </div>
+                                                    <div class="insight-chevron">
+                                                        <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
+                                                    <p>After the basic components were completed, Richard indicated he had enough context to continue independently and didn't need further component documentation. Rather than continuing to build components for their own sake, the scope was closed. Overachieving on a clear instruction is not a virtue in professional work. The right call was to respect the boundary and move on.</p>
+                                                </div>
+                                            </div>                                                                  
                                         </div>
                                     </div>
                                 </div>
@@ -484,13 +811,102 @@
                     </div>
                 </div>
 
-                <!--Thank You START-->
-                <div class="section-container surface-dark">
-                    <div class="text-center" style="margin-bottom: 80px;">
-                        <img src="imgs/ty-badge.svg" alt="thank you badge">
+                <!--End START-->
+                <div class="section-container ending-case">
+                    <!--Reflection START-->
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="imgs/ty-badge.svg" alt="Illustrated thank-you bunny badge">
+                        </div>
+                        <div class="col-10">
+                            <div class="v-stack space-5">
+                                <h5>Reflection</h5>
+                                <div class="reflection-accordion" data-reflection-accordion>
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-1" aria-expanded="false" aria-controls="reflection-panel-1">
+                                            <h6>What Worked</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="plus">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-1" role="region" aria-labelledby="reflection-trigger-1" aria-hidden="true">
+                                            <p>Locking the visual direction early through the style guide selection process gave the entire project a stable foundation; no mid-project pivots, no stakeholder-driven rework, no additional headaches. Working in parallel with Richard meant the developer had something real to build from almost immediately, rather than waiting for a sequential design-then-develop process. The competitor research grounded the product decisions in real user experience rather than assumptions.</p>
+                                        </div>
+                                    </div>  
+                                    <div class="reflection-accordion-item"> 
+                                        <button class="reflection-header" type="button" id="reflection-trigger-2" aria-expanded="false" aria-controls="reflection-panel-2">
+                                            <h6>What Remained Unsolved</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="plus">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-2" role="region" aria-labelledby="reflection-trigger-2" aria-hidden="true">
+                                            <p>The design system was scoped for the two web apps only — marketing outputs (website, emailers, collaterals) were deferred to a future phase. Figma's token/variable system was not yet available at the time of the project; design tokens would have made the system more maintainable and scalable had the platform supported them.</p>
+                                        </div>
+                                    </div>  
+                                    <div class="reflection-accordion-item">
+                                        <button class="reflection-header" type="button" id="reflection-trigger-3" aria-expanded="false" aria-controls="reflection-panel-3">
+                                            <h6>What I’d Do Differently</h6>
+                                            <div class="reflection-plus">
+                                                <img src="imgs/plus.svg" alt="plus">
+                                            </div>
+                                        </button>
+                                        <div class="reflection-content" id="reflection-panel-3" role="region" aria-labelledby="reflection-trigger-3" aria-hidden="true">
+                                            <p>
+                                                I’d build a component website instead of a Figma file, which was the same conclusion reached on the MSPbot Welcome Screens Guideline and Design System Project. For a developer working in code, a live component library with copy-paste functionality is faster and more practical than navigating a Figma file. The one-month timeline and platform limitations were the real constraints at the time, not the approach itself.
+                                                <br><br>
+                                                I'd also apply Figma's token and variable system from the start. This feature that didn't exist yet when this project was built, but one that would have made cross-product consistency easier to maintain and update as the brand evolved.</p>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            
+                        </div>
                     </div>
+                    <!--Reflection END-->
+
+                    <!--Other Case Studies START-->
+                    <div class="my-5 py-5">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="mt-5 pt-5">
+                                    <h5>Other</h5>
+                                    <h4>Case Studies</h4>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="h-stack space-5">
+                                    <div>
+                                        <img class="other-case-study-img" src="imgs/featured-imgs/square-featured-img-2.png" alt="">
+                                        <span class="pill pill-internal">Internal Documentation</span>
+                                        <span class="pill pill-tech">AI & Technology</span>
+                                        <h6>Restructuring MSPbot's Design System</h6>
+                                        <a href="restructuring-mspbots-design-system.html">Read More</a>
+                                    </div>
+                                    <div>
+                                        <img class="other-case-study-img" src="imgs/featured-imgs/square-featured-img-2.png" alt="">
+                                        <span class="pill pill-internal">Internal Documentation</span>
+                                        <span class="pill pill-tech">AI & Technology</span>
+                                        <h6>Case Study Title</h6>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                    <div>
+                                        <img class="other-case-study-img" src="imgs/featured-imgs/square-featured-img-2.png" alt="">
+                                        <span class="pill pill-internal">Internal Documentation</span>
+                                        <span class="pill pill-tech">AI & Technology</span>
+                                        <h6>Case Study Title</h6>
+                                        <a href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>           
+                    <!--Other Case Studies END-->
+
+                    <!--Related Service START-->
+                    <!--Related Service END-->
                 </div>
-                <!--Thank You END-->
+                <!--End END-->
             </div>
             <!--Case Study Content END-->
         </div>
@@ -506,6 +922,7 @@
         <script src="toc-highlight.js"></script>
         <script src="before-after-block.js"></script>
         <script src="key-insights-accordion.js"></script>
+        <script src="simple-accordion.js"></script>
         <!--scripts END-->
     </body>
 </html>

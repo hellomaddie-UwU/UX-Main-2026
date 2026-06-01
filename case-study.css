@@ -115,13 +115,13 @@
 
 .block-table .thead {font-weight: 600;}
 
-.feature-block, .feature-block-end {
+.feature-block, .feature-block-end, .discovery-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.feature-block {margin-bottom: 80px;}
+.feature-block, .discovery-block {margin-bottom: 80px;}
 
 .feature-block-end {margin-bottom: 0;}
 
@@ -405,7 +405,7 @@ margin-top: var(--space-3);
 .iteration-header p {margin-top: -5px;}
 
 .discovery-accordion-header > h6 {
-    font-weight: 300; 
+    font-weight: 500; 
     color:#3E4784;
 }
 
@@ -478,6 +478,13 @@ margin-top: var(--space-3);
     border-top: none;
 }
 
+.my-discovery img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: var(--space-3);
+}
+
 .insight-accordion-item.is-open .my-insight,
 .design-iteration-accordion-item.is-open .iteration-content,
 .reflection-accordion-item.is-open .reflection-content {
@@ -495,6 +502,13 @@ margin-top: var(--space-3);
 .ending-case {
     background-color: var(--surface-dark);
     box-shadow: 8px 2px 20px 0 rgba(255, 194, 155, 0.25) inset;
+}
+
+.other-case-study-img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 12px;
+    margin-bottom: var(--space-3);
 }
 
 

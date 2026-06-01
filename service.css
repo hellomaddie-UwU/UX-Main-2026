@@ -424,13 +424,40 @@
 }
 /*Featured Image END*/
 
+/*Timeline Lottie Container START*/
+.timeline-lottie-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin: var(--space-7) auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.timeline-lottie-container svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+/*Timeline Lottie Container END*/
+
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    
+    .timeline-lottie-container {
+        max-width: 100%;
+        margin: var(--space-5) auto;
+    }
 }
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
-    /*insert code*/
+    .timeline-lottie-container {
+        max-width: 100%;
+        margin: var(--space-4) auto;
+    }
 }
 /*========================================================================*/
