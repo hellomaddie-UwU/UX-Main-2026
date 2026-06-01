@@ -115,13 +115,13 @@
 
 .block-table .thead {font-weight: 600;}
 
-.feature-block, .feature-block-end {
+.feature-block, .feature-block-end, .discovery-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.feature-block {margin-bottom: 80px;}
+.feature-block, .discovery-block {margin-bottom: 80px;}
 
 .feature-block-end {margin-bottom: 0;}
 
