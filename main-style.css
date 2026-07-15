@@ -178,6 +178,14 @@ nav {z-index: 2;}
     gap: 12px;
 }
 
+.hm-nav-outbound-links {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
 .social-links-wrapper-2 {
     text-decoration: none;
     display: flex;
@@ -239,6 +247,11 @@ nav {z-index: 2;}
 .section-container-mt-0 {
     margin-left: 90px;
     padding: 0px 5% 60px 5%;
+}
+
+.testimonials-container {
+    margin-left: 90px;
+    padding: 40px 5% 170px 5%;
 }
 
 .newsletter {
@@ -394,6 +407,8 @@ p {
     font-weight: 400;
     line-height: 73px; /* 77.66% */
     transform: rotate(-7.45deg);
+    z-index: 2;
+    position: relative;
 }
 
 .md-text {
@@ -498,7 +513,7 @@ a, .underline {color: #A12ECB;}
 .btn-primary a {color: white; text-decoration: none;}
 
 
-.btn-primary:hover, .btn-primary-outline:hover, .btn-secondary:hover {
+.btn-primary:hover, .btn-primary-outline:hover, .btn-secondary:hover, .btn-outline-white:hover {
     background-color: #FFA385;
     border: 1px solid #FFA385;
     color: white;
@@ -532,6 +547,18 @@ a, .underline {color: #A12ECB;}
     background-color: transparent;
     color: var(--tangerine-600);
     border: 1.5px solid var(--tangerine-300);
+    border-radius: 30px;
+    padding: 4px 28px;
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.btn-outline-white {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: 1.5px solid white;
     border-radius: 30px;
     padding: 4px 28px;
     cursor: pointer;
@@ -685,7 +712,7 @@ input:user-invalid {
 
     .brand-logo-tablet-mobile img {height: 28px;}
 
-    .brand-logo-desktop, .nav-wrapper, .social-links-wrapper {display: none;}
+    .brand-logo-desktop, .nav-wrapper, .hm-nav-outbound-links {display: none;}
 
     .mobile-menu-toggle {
         display: block;
@@ -848,6 +875,13 @@ input:user-invalid {
     .display-section-text {font-size: 78px;}
 
     .service-thumbnail {height: 300px;}
+
+    .testimonials-container {
+        margin-left: 0px;
+        width: auto;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 
     .lightbox-dialog {
         width: min(780px, 100%);
