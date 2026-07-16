@@ -3,6 +3,28 @@
     background-repeat: repeat;
 }
 
+.home-pink-gradient {
+    position: absolute;
+    width: 60%;
+    top: 0; left: 0; margin-top: -20px; margin-left: -20px; z-index: 0;
+}
+
+.home-orange-gradient {
+    position: absolute;
+    width: 65%;
+    right: 0; 
+    z-index: 0;
+    margin-top: 180px;
+}
+
+.home-purple-gradient {
+    position:absolute;
+    right: 0;
+    z-index: 0;
+    width: 60%;
+    margin-top: -140px;
+}
+
 .hero-dialog-text h4, .hero-dialog-text h6  {
     font-weight: 400;
     color: #3E4784;
@@ -116,6 +138,15 @@
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
+    .home-pink-gradient {
+    width: 90%;
+    margin-left: -170px;
+}
+
+.home-orange-gradient {
+    width: 100%;
+    margin-top: 220px;
+}
     .profile-pic {
         /* tablet/mobile illustration swaps in here */
         margin-top: 60px;
@@ -131,6 +162,14 @@
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .home-pink-gradient {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: -170px;
+}
+
+.home-orange-gradient {margin-top: 300px;}
+
     .featured-card-thumbnail {
         height: 450px;
     }

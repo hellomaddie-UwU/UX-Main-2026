@@ -429,7 +429,7 @@ p {
     line-height: 60px; /* 63.83% */
 
     color: var(--razzmatazz-400);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: var(--Brand-Razzmatazz-50, #FFF1F4);
     paint-order: stroke fill;
     transform: rotate(-7.45deg);
