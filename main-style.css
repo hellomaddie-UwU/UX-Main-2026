@@ -310,6 +310,55 @@ nav {z-index: 2;}
     background-color: white;
     border-top: 1px solid #FFA1B7;
 }
+.newsletter-inner {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.newsletter-copy {width: 25%;}
+
+.newsletter-form-col {
+    width: 75%;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: var(--space-3);
+    align-items: end;
+}
+
+.newsletter-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    flex: 1 0 0;
+}
+
+.newsletter-field label {
+    color: var(--text-header);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.newsletter-field .form-control {
+    height: 44px;
+    border: 0.5px solid var(--clairvoyant-700);
+    border-radius: var(--space-1);
+    padding: var(--space-2) 10px;
+    box-shadow: none;
+}
+
+.newsletter-field .form-control:focus {
+    border-color: var(--clairvoyant-700);
+    box-shadow: none;
+}
+
+.newsletter-submit {
+    flex-shrink: 0;
+    width: 184px;
+    text-align: center;
+}
 
 .w-67 {width: 67%;}
 .w-33 {width: 33%;}
@@ -331,6 +380,9 @@ footer {
 .end {
     background-color: #F8F9FC;
     padding: 10px 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .end p, .end a {
@@ -749,6 +801,23 @@ input:user-invalid {
         padding-left: 4%;
         padding-right: 4%;
     }
+    .newsletter-copy {width: 50%;}
+
+    .newsletter-form-col {width: 50%;}
+
+    .newsletter-form-col {
+        width: 100%;
+    }
+
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+
+    .newsletter-field {width: 100%;}
+    
+    .newsletter-submit {align-self:flex-start;}
 
     .nav-container {
         width: 100vw;
@@ -758,6 +827,10 @@ input:user-invalid {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+
+    footer {
+        margin-left: 0px;
     }
 
     .brand-logo-tablet-mobile {display: block;}
@@ -983,6 +1056,11 @@ input:user-invalid {
         display: block;
     }
 
+    .end {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .section-container {
         margin-left: 0px;
         padding-left: 8%;
@@ -1003,6 +1081,17 @@ input:user-invalid {
     .mobile-menu-item {
         padding: 20px 0px;
     }
+
+    .newsletter-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter-copy {width: 100%;}
+
+    .newsletter-form-col {width: 100%;}
+
+    .newsletter-submit {align-self:center; width: 100%;}
 
     .btn-primary-outline {text-align: center;}
 

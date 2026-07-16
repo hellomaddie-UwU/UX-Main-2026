@@ -2,12 +2,25 @@
 <html lang="en">
     <head><meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/svg" href="imgs/favicon.svg">
+        <link rel="icon" type="image/svg" href="/imgs/favicon.svg">
         <!--SEO START-->
         <title>Gallery | hellomaddie</title>
-        <meta name="description" content="insert a brief description of your illustratin gallery page, highlighting the type of work showcased and your design philosophy.">
-        <meta name="keywords" content="insert relevant keywords` related to your illustration work, such as 'digital art', 'character design', 'concept art', 'hellomaddie portfolio', etc.">
-        <meta name="author" content="Bianca Maddela">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!-- Universal Open Graph -->
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content=""> <!-- Replace with actual image URL: 1200×630px -->
+        <meta property="og:image:alt" content="">
+        <meta property="og:url" content="#"> <!-- Needs to be the official URL -->
+        <meta property="og:type" content="website">
+
+        <!-- Twitter/X Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content=""> <!-- Replace with actual image URL: 1200×630px -->
         <!--SEO END-->
 
         <!--Stylesheet START-->
@@ -319,38 +332,42 @@
                 </div>
             </section>
 
-            <!--Newsletter CTA Banner START-->
+            <!-- ===== Newsletter CTA START ===== -->
             <div class="section-container newsletter">
-                <div class="d-flex gap-3">
-                    <div class="w-25">
+                <div class="newsletter-inner">
+                    <div class="newsletter-copy">
                         <h6 class="fw-semibold">Join My Newsletter</h6>
                         <p>Get exclusive news, behind-the-scenes content, insider tips delivered straight to your inbox.</p>
                     </div>
-                    <div class="w-75">
-                        <form>
+                    <div class="newsletter-form-col">
+                        <form class="newsletter-form">
                              <!--FName-->
-                            <label for="FirstName">First Name<span class="required-point">*</span></label>
-                            <input type="text" id="FirstName" name="first_name" class="form-control" aria-label="First name" required>
+                            <div class="newsletter-field">
+                                <label for="FirstName">First Name<span class="required-point">*</span></label>
+                                <input type="text" id="FirstName" name="first_name" class="form-control" aria-label="First name" autocomplete="given-name" required>
+                            </div>
                             <!--Email-->
-                            <label for="Email">Email Address<span class="required-point">*</span></label>
-                            <input type="email" id="Email" name="email_address" class="form-control" aria-label="Email address" required>
+                            <div class="newsletter-field pb-1">
+                                <label for="Email">Email Address<span class="required-point">*</span></label>
+                                <input type="email" id="Email" name="email_address" class="form-control" aria-label="Email address" autocomplete="email" required>
+                            </div>
                             <!--Submit Button-->
-                            <p id="contactFormStatus" class="mb-0 me-auto small" role="status" aria-live="polite" hidden></p>
-                            <button class="btn-primary" type="submit">Submit</button>
+                            <button class="btn-primary newsletter-submit mb-2" type="submit">Submit</button>
                         </form>
+                        <p id="contactFormStatus" class="mb-0 mt-2 small" role="status" aria-live="polite" hidden></p>
                     </div>
                 </div>
             </div>
-            <!--Newsletter CTA Banner END-->
+            <!-- ===== Newsletter CTA END ===== -->
 
-            <!--Footer START-->
+            <!-- ===== Footer START ===== -->
             <footer>
-                <div class="end d-flex justify-content-between">
+                <div class="end">
                     <p>© 2026 hellomaddie All Rights Reserved</p>
                     <a href="#">Privacy Policy</a>
                 </div>
             </footer>
-            <!--Footer END-->
+            <!-- ===== Footer END ===== -->
         </div>
 
         <!--scripts START-->
