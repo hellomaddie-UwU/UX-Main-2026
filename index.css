@@ -1,3 +1,30 @@
+.grid-bg {
+    background-image: url(imgs/line\ bg.svg);
+    background-repeat: repeat;
+}
+
+.home-pink-gradient {
+    position: absolute;
+    width: 60%;
+    top: 0; left: 0; margin-top: -20px; margin-left: -20px; z-index: 0;
+}
+
+.home-orange-gradient {
+    position: absolute;
+    width: 65%;
+    right: 0; 
+    z-index: 0;
+    margin-top: 180px;
+}
+
+.home-purple-gradient {
+    position:absolute;
+    right: 0;
+    z-index: 0;
+    width: 60%;
+    margin-top: -140px;
+}
+
 .hero-dialog-text h4, .hero-dialog-text h6  {
     font-weight: 400;
     color: #3E4784;
@@ -17,12 +44,16 @@
     width: 100%;
     height: 700px;
     /* desktop illustration loads by default */
-    background-image: url('imgs/wip-profile-pic.png');
+    background-image: url('imgs/Profile_Pic_2026\ 2.png');
     background-size: cover;
     background-position: center;
     border-radius: 999px;
     position: relative;
     box-shadow: 0 5px 5px rgba(62, 71, 132, 0.20);
+}
+
+.col-xxl-5:has(.suzzie-pic:hover) .profile-pic {
+    background-image: url('imgs/Profile_Pic_2026-react.png');
 }
 
 .pink-gradient-bg {
@@ -60,6 +91,39 @@
     background-position: right;
 }
 
+.testimonials-row {
+    display: flex;
+    align-items: stretch;
+    gap: var(--space-5);
+    margin-top: var(--space-5);
+}
+
+.testimonial-card {
+    flex: 1 1 0;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    background-color: white;
+}
+
+.testimonial-card .selection-content {
+    display: flex;
+    height: 100%;
+}
+
+.testimonial-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-5);
+}
+
+.testimonial-card-content img {
+    align-self: flex-start;
+}
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -74,6 +138,15 @@
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
+    .home-pink-gradient {
+    width: 90%;
+    margin-left: -170px;
+}
+
+.home-orange-gradient {
+    width: 100%;
+    margin-top: 220px;
+}
     .profile-pic {
         /* tablet/mobile illustration swaps in here */
         margin-top: 60px;
@@ -81,10 +154,22 @@
         height: 390px;
         background-position: 50% 35%;
     }
+
+    .testimonials-row {
+        flex-direction: column;
+    }
 }
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .home-pink-gradient {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: -170px;
+}
+
+.home-orange-gradient {margin-top: 300px;}
+
     .featured-card-thumbnail {
         height: 450px;
     }

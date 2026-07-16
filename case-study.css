@@ -511,6 +511,13 @@ margin-top: var(--space-3);
     margin-bottom: var(--space-3);
 }
 
+/*Feature Gallery START*/
+.feature-gallery-img {
+    height: 300px; 
+    object-fit:cover; 
+    border-radius: 12px;
+}
+/*Feature Gallery END*/
 
 /*========================================================================*/
 
