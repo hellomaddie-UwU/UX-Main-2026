@@ -321,6 +321,10 @@ nav {z-index: 2;}
     width: 75%;
 }
 
+.formkit-form[data-uid="2cce5a189f"] {max-width: none !important; width: 100%;}
+
+.formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding-top: 0 !important;}
+
 .newsletter-form {
     display: flex;
     gap: var(--space-3);
@@ -1035,10 +1039,18 @@ input:user-invalid {
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .formkit-form[data-uid="2cce5a189f"] .formkit-field {
+        flex: 1 1 100% !important;
+        width: 100%;
+    }
 }
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {
+        padding: 0 !important;
+    }
+
     .nav-container {
         padding: 16px 8%;
         position: relative;
