@@ -47,8 +47,14 @@ Table of Contents:
 }
 
 .pill-website {
-    border: 1px solid #FFD5C7;
+    border: 1px solid #FFD6AE;
     background-color: #FFE8E1;
+    color: #FF4405;
+}
+
+.pill-mobile {
+    border: 1px solid #FFD5C7;
+    background-color: #FFF4ED;
     color: #E54E1D;
 }
 
