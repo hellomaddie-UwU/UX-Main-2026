@@ -63,6 +63,21 @@
     background-position: center;
 }
 
+.wavy-text {
+    margin-left: 80px; 
+    width: 100%; 
+    margin-top: 80px;
+}
+
+.wavy-speech { 
+    text-align: center;
+    font-weight: 500;
+    width: 75%;
+    padding-bottom: var(--space-5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .featured-card-thumbnail {
     width: 100%;
     height: auto;
@@ -143,17 +158,19 @@
     margin-left: -170px;
 }
 
-.home-orange-gradient {
-    width: 100%;
-    margin-top: 220px;
-}
+    .home-orange-gradient {
+        width: 100%;
+        margin-top: 220px;
+    }
     .profile-pic {
         /* tablet/mobile illustration swaps in here */
         margin-top: 60px;
-        background-image: url('imgs/wip-profile-pic.png');
-        height: 390px;
+        background-image: url('imgs/Profile_Pic_2026\ 2.png');
+        height: 570px;
         background-position: 50% 35%;
     }
+
+    .wavy-text {margin-left: 0px;}
 
     .testimonials-row {
         flex-direction: column;
@@ -168,16 +185,18 @@
     margin-left: -170px;
 }
 
-.home-orange-gradient {margin-top: 300px;}
+    .home-orange-gradient {margin-top: 300px;}
 
     .featured-card-thumbnail {
         height: 450px;
     }
     .suzzie-pic {height: 150px;}
+
+    .profile-pic {height: 300px;}
 }
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
-    /*insert code*/
+    .wavy-speech {margin-left: 0px; margin-right: 0px; width: 100%;}
 }
 /*========================================================================*/
