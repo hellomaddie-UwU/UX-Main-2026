@@ -8,7 +8,8 @@ Table of Contents:
 6. Single Accordion Card
 7. Design System Top Bar Nav
 8. Gallery Placeholder Image
-9. Breadcrumb
+9. Gallery Lightbox
+10. Breadcrumb
 */
 
 /*Divider*/
@@ -248,14 +249,6 @@ Table of Contents:
   padding-bottom: 50px;
 }
 
-.horiz-gallery-strip,
-.horiz-gallery-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  will-change: transform;
-  position: relative;
-}
-
 .project-wrap {
     width: 33vw; /* restore this */
     padding: 2rem;
@@ -418,6 +411,111 @@ Table of Contents:
     border-radius: 12px;
 } 
 /*Gallery Placeholder Image END*/
+
+/* Gallery Lightbox START */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(20, 6, 28, 0.86);
+    padding: 24px;
+}
+
+.lightbox-overlay.is-open {
+    display: grid;
+    place-items: center;
+}
+
+.lightbox-dialog {
+    width: min(1080px, 100%);
+    max-height: calc(100vh - 48px);
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.lightbox-figure {
+    margin: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: var(--dialog-body);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+}
+
+.lightbox-image {
+    display: block;
+    width: 100%;
+    max-height: calc(100vh - 230px);
+    object-fit: contain;
+    background-color: #1f0327;
+}
+
+.lightbox-meta {
+    padding: 18px 20px 20px;
+}
+
+.lightbox-title {
+    margin: 0;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.lightbox-date {
+    margin: 8px 0 0;
+    color: var(--clairvoyant-700);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.lightbox-description {
+    margin: 8px 0 0;
+    color: var(--text-body);
+    line-height: 1.5;
+}
+
+.lightbox-close,
+.lightbox-nav {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    cursor: pointer;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -52px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    font-size: 32px;
+    line-height: 30px;
+}
+
+.lightbox-nav {
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover,
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible {
+    background-color: rgba(255, 163, 133, 0.88);
+    border-color: #FFA385;
+    outline: none;
+}
+
+.gallery-img {
+    cursor: zoom-in;
+}
+/* Gallery Lightbox END */
 
 /*Breadcrumb START*/
 .site-breadcrumb {
