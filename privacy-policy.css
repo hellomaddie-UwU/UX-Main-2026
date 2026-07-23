@@ -1,0 +1,118 @@
+/*
+Table of Contents:
+1. Header
+2. Layout / Table of Contents
+3. Mobile Dropdown TOC
+4. Content Blocks
+*/
+
+/*Header START*/
+.privacy-title {
+    color: var(--text-header);
+    font-size: 41px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+/*Header END*/
+
+/*Layout / Table of Contents START*/
+.privacy-toc-col {
+    position: sticky;
+    top: 40px;
+    align-self: flex-start;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+
+.privacy-toc-title {
+    color: var(--text-header);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.privacy-toc-links a {
+    display: block;
+    color: var(--text-body);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 4px 0 4px 10px;
+    border-left: 2px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.privacy-toc-links a:hover {
+    color: var(--clairvoyant-600);
+    border-left-color: var(--tangerine-400);
+}
+/*Layout / Table of Contents END*/
+
+/*Mobile Dropdown TOC START*/
+.privacy-mobile-toc .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    border: 1px solid var(--clairvoyant-200);
+    border-radius: 8px;
+    color: var(--text-header);
+    font-weight: 600;
+    padding: 10px 16px;
+    background-color: white;
+}
+
+.privacy-mobile-toc .dropdown-menu {
+    width: 100%;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.privacy-mobile-toc .dropdown-item {
+    white-space: normal;
+    color: var(--text-body);
+}
+
+.privacy-mobile-toc .dropdown-item:hover,
+.privacy-mobile-toc .dropdown-item:focus {
+    background-color: var(--clairvoyant-50);
+    color: var(--clairvoyant-600);
+}
+/*Mobile Dropdown TOC END*/
+
+/*Content Blocks START*/
+.privacy-block {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--clairvoyant-100);
+    scroll-margin-top: 24px;
+}
+
+.privacy-block:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.privacy-block ul {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.privacy-block ul li {
+    color: var(--text-body);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.privacy-block ul li::marker {
+    color: var(--clairvoyant-500);
+}
+
+.privacy-disclaimer {
+    color: var(--text-body);
+    font-style: italic;
+    font-size: 14px;
+    line-height: 22px;
+    opacity: 0.75;
+}
+/*Content Blocks END*/
