@@ -331,6 +331,16 @@ nav {z-index: 2;}
 
 .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding-top: 0 !important;}
 
+/*Newsletter Modal Kit Form*/
+.formkit-form[data-uid="e53b34d164"] {max-width: none !important; width: 100%;}
+
+.formkit-form[data-uid="e53b34d164"] [data-style="clean"] {padding: 0 !important;}
+
+.formkit-form[data-uid="e53b34d164"] .formkit-field {
+    flex: 1 1 100% !important;
+    width: 100%;
+}
+
 .newsletter-form {
     display: flex;
     gap: var(--space-3);
