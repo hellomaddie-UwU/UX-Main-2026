@@ -8,7 +8,8 @@ Table of Contents:
 6. Single Accordion Card
 7. Design System Top Bar Nav
 8. Gallery Placeholder Image
-9. Breadcrumb
+9. Gallery Lightbox
+10. Breadcrumb
 */
 
 /*Divider*/
@@ -47,8 +48,14 @@ Table of Contents:
 }
 
 .pill-website {
-    border: 1px solid #FFD5C7;
+    border: 1px solid #FFD6AE;
     background-color: #FFE8E1;
+    color: #FF4405;
+}
+
+.pill-mobile {
+    border: 1px solid #FFD5C7;
+    background-color: #FFF4ED;
     color: #E54E1D;
 }
 
@@ -117,14 +124,14 @@ Table of Contents:
 
 .modal-primary-head, .modal-secondary-head {
     padding-top: 8px; 
-    padding-bottom: 3px;
+    padding-bottom: 5px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .modal-primary-head img, .modal-secondary-head img {
     position:relative;
-    top: 1px;
+    top: -2px;
     left: 32px;
 }
 
@@ -149,6 +156,12 @@ Table of Contents:
 .no-modal-footer {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+}
+
+.modal-primary-footer-cta {
+    display: flex;
+    justify-content: end;
+    gap: var(--space-3);
 }
 /*Modal END =====================================*/
 
@@ -234,14 +247,6 @@ Table of Contents:
   margin-left: auto;
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-.horiz-gallery-strip,
-.horiz-gallery-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  will-change: transform;
-  position: relative;
 }
 
 .project-wrap {
@@ -407,6 +412,183 @@ Table of Contents:
 } 
 /*Gallery Placeholder Image END*/
 
+/* Gallery Lightbox START */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(20, 6, 28, 0.86);
+    padding: 24px;
+}
+
+.lightbox-overlay.is-open {
+    display: grid;
+    place-items: center;
+}
+
+.lightbox-dialog {
+    width: min(1150px, 100%);
+    max-height: calc(100vh - 48px);
+    position: relative;
+}
+
+/*Card shell*/
+.lightbox-card {
+    --lightbox-dominant: #4B095D;
+    --lightbox-dominant-tint: rgba(75, 9, 93, 0.8);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 0 #9E9EDD;
+    overflow: hidden;
+    max-height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.lightbox-card.is-loading { opacity: 0.97; }
+
+/*Media panel (holds the artwork) — bordered, letterboxed, natural-ratio artwork*/
+.lightbox-media {
+    background-color: var(--lightbox-dominant-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    flex-shrink: 0;
+    align-self: stretch;
+    transition: background-color 0.35s ease;
+}
+
+.lightbox-media-frame {
+    display: inline-block;
+    line-height: 0;
+    border: 1px solid var(--lightbox-dominant);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.lightbox-image {
+    display: block;
+    max-width: min(45vw, 514px);
+    max-height: min(70vh, 688px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/*Info panel (text)*/
+.lightbox-info {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    padding: 40px;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.lightbox-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    min-width: 0;
+}
+
+.lightbox-title {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+    color: var(--text-header);
+}
+
+.lightbox-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.lightbox-label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: var(--clairvoyant-600);
+}
+
+.lightbox-date {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--text-body);
+}
+
+.lightbox-description {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--text-body);
+}
+
+/*Close / Nav buttons*/
+.lightbox-close,
+.lightbox-nav {
+    position: absolute;
+    border: none;
+    background-color: var(--clairvoyant-600);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.lightbox-close {
+    top: -52px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    font-size: 26px;
+    line-height: 1;
+}
+
+.lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    font-size: 20px;
+}
+
+.lightbox-prev { left: -60px; }
+.lightbox-next { right: -60px; }
+
+.lightbox-close:hover,
+.lightbox-nav:hover,
+.lightbox-close:focus-visible,
+.lightbox-nav:focus-visible {
+    background-color: #8722A9;
+    outline: none;
+}
+
+.lightbox-nav:hover {
+    transform: translateY(-50%) scale(1.05);
+}
+
+.gallery-img {
+    cursor: zoom-in;
+}
+/* Gallery Lightbox END */
+
 /*Breadcrumb START*/
 .site-breadcrumb {
     display: flex;
@@ -489,6 +671,16 @@ Table of Contents:
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .modal-primary-footer-cta {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .modal-primary-footer-cta button {width: 100%;}
+
     .client-logo-section-desktop {display: none;}
 
     .client-logo-section-mobile {
