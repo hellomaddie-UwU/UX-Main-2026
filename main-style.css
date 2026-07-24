@@ -935,11 +935,30 @@ input:user-invalid {
         padding-right: 4%;
     }
 
-    .lightbox-dialog {
+    .lightbox-overlay.is-open .lightbox-dialog {
         width: min(780px, 100%);
     }
 
-    .lightbox-title {
+    .lightbox-overlay.is-open .lightbox-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .lightbox-overlay.is-open .lightbox-media {
+        width: 100%;
+        height: auto;
+    }
+
+    .lightbox-overlay.is-open .lightbox-image {
+        max-width: 100%;
+    }
+
+    .lightbox-overlay.is-open .lightbox-info {
+        flex: initial;
+        align-items: flex-start;
+    }
+
+    .lightbox-overlay.is-open .lightbox-title {
         font-size: 24px;
     }
 
@@ -1032,48 +1051,57 @@ input:user-invalid {
 
     .btn-primary-outline {text-align: center;}
 
-    .lightbox-overlay {
+    .lightbox-overlay.is-open {
         padding: 12px;
     }
 
-    .lightbox-dialog {
+    .lightbox-overlay.is-open .lightbox-dialog {
         width: 100%;
         max-height: calc(100vh - 24px);
-        display: block;
     }
 
-    .lightbox-close {
+    .lightbox-overlay.is-open .lightbox-card {
+        max-height: calc(100vh - 24px);
+    }
+
+    .lightbox-overlay.is-open .lightbox-media {
+        padding: 20px;
+    }
+
+    .lightbox-overlay.is-open .lightbox-media-frame,
+    .lightbox-overlay.is-open .lightbox-image {
+        max-height: 46vh;
+    }
+
+    .lightbox-overlay.is-open .lightbox-info {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .lightbox-overlay.is-open .lightbox-close {
         top: 8px;
         right: 8px;
         z-index: 1;
     }
 
-    .lightbox-nav {
-        position: absolute;
+    .lightbox-overlay.is-open .lightbox-nav {
         top: 42%;
         width: 40px;
         height: 40px;
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .lightbox-prev {
+    .lightbox-overlay.is-open .lightbox-prev {
         left: 8px;
     }
 
-    .lightbox-next {
+    .lightbox-overlay.is-open .lightbox-next {
         right: 8px;
     }
 
-    .lightbox-image {
-        max-height: calc(100vh - 280px);
-    }
-
-    .lightbox-meta {
-        padding: 16px;
-    }
-
-    .lightbox-title {
+    .lightbox-overlay.is-open .lightbox-title {
         font-size: 20px;
+        line-height: 28px;
     }
 }
 /*========================================================================*/

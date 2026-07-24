@@ -428,88 +428,160 @@ Table of Contents:
 }
 
 .lightbox-dialog {
-    width: min(1080px, 100%);
+    width: min(1150px, 100%);
     max-height: calc(100vh - 48px);
     position: relative;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 12px;
 }
 
-.lightbox-figure {
-    margin: 0;
-    border-radius: 14px;
+/*Card shell*/
+.lightbox-card {
+    --lightbox-dominant: #4B095D;
+    --lightbox-dominant-tint: rgba(75, 9, 93, 0.8);
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px 0 #9E9EDD;
     overflow: hidden;
-    background-color: var(--dialog-body);
-    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+    max-height: calc(100vh - 48px);
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.lightbox-card.is-loading { opacity: 0.97; }
+
+/*Media panel (holds the artwork) — bordered, letterboxed, natural-ratio artwork*/
+.lightbox-media {
+    background-color: var(--lightbox-dominant-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 40px;
+    flex-shrink: 0;
+    align-self: stretch;
+    transition: background-color 0.35s ease;
+}
+
+.lightbox-media-frame {
+    display: inline-block;
+    line-height: 0;
+    border: 1px solid var(--lightbox-dominant);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .lightbox-image {
     display: block;
-    width: 100%;
-    max-height: calc(100vh - 230px);
+    max-width: min(45vw, 514px);
+    max-height: min(70vh, 688px);
+    width: auto;
+    height: auto;
     object-fit: contain;
-    background-color: #1f0327;
 }
 
-.lightbox-meta {
-    padding: 18px 20px 20px;
+/*Info panel (text)*/
+.lightbox-info {
+    display: flex;
+    flex: 1 1 0;
+    align-items: center;
+    padding: 40px;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.lightbox-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    min-width: 0;
 }
 
 .lightbox-title {
     margin: 0;
-    font-size: 28px;
-    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 38px;
+    color: var(--text-header);
+}
+
+.lightbox-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.lightbox-label {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: var(--clairvoyant-600);
 }
 
 .lightbox-date {
-    margin: 8px 0 0;
-    color: var(--clairvoyant-700);
+    margin: 0;
+    font-size: 16px;
     font-weight: 500;
-    font-size: 14px;
+    line-height: 28px;
+    color: var(--text-body);
 }
 
 .lightbox-description {
-    margin: 8px 0 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
     color: var(--text-body);
-    line-height: 1.5;
 }
 
+/*Close / Nav buttons*/
 .lightbox-close,
 .lightbox-nav {
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    background-color: rgba(255, 255, 255, 0.12);
+    position: absolute;
+    border: none;
+    background-color: var(--clairvoyant-600);
     color: white;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .lightbox-close {
-    position: absolute;
     top: -52px;
     right: 0;
     width: 40px;
     height: 40px;
     border-radius: 999px;
-    font-size: 32px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 1;
 }
 
 .lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
     width: 44px;
     height: 44px;
     border-radius: 999px;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 20px;
 }
+
+.lightbox-prev { left: -60px; }
+.lightbox-next { right: -60px; }
 
 .lightbox-close:hover,
 .lightbox-nav:hover,
 .lightbox-close:focus-visible,
 .lightbox-nav:focus-visible {
-    background-color: rgba(255, 163, 133, 0.88);
-    border-color: #FFA385;
+    background-color: #8722A9;
     outline: none;
+}
+
+.lightbox-nav:hover {
+    transform: translateY(-50%) scale(1.05);
 }
 
 .gallery-img {
