@@ -478,7 +478,7 @@ margin-top: var(--space-3);
     border-top: none;
 }
 
-.my-discovery img {
+.my-discovery img, .iteration-content img {
     width: 100%;
     height: auto;
     border-radius: 12px;
