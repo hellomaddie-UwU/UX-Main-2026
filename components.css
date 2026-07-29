@@ -10,6 +10,8 @@ Table of Contents:
 8. Gallery Placeholder Image
 9. Gallery Lightbox
 10. Breadcrumb
+11. Tooltip
+12. Disabled Nav Item
 */
 
 /*Divider*/
@@ -590,6 +592,69 @@ Table of Contents:
     color: var(--clairvoyant-700);
 }
 /*Breadcrumb END*/
+
+/*Tooltip START*/
+/* Wrap any trigger element in .tooltip-wrap, then add a
+   .tooltip element inside it with the message as its content.
+   Tooltip appears to the right on hover/focus.
+   Only sets positioning context — deliberately leaves display alone
+   so it never changes how the wrapped trigger element itself lays out. */
+.tooltip-wrap {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 28px);
+    z-index: 300;
+    transform: translateY(-50%) translateX(-4px);
+
+    width: max-content;
+    max-width: 241px;
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    border-radius: 8px;
+    background-color: var(--surface-dark);
+
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 8px solid var(--surface-dark);
+}
+
+.tooltip-wrap:hover .tooltip,
+.tooltip-wrap:focus-within .tooltip {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+/*Tooltip END*/
+
+/*Disabled Nav Item START*/
+.mobile-menu-item-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/*Disabled Nav Item END*/
 
 /*========================================================================*/
 
