@@ -75,6 +75,7 @@ html, body {
     --space-7: 32px;
     --space-8: 40px;
     --space-9: 48px;
+    --space-10: 60px;
 }
 
 /*--Color Settings START--*/
@@ -92,7 +93,7 @@ html, body {
 /*--Color Settings END--*/
 
 /*--Navigation START--*/
-nav {z-index: 2;}
+nav {z-index: 10;}
 
 .brand-logo-tablet-mobile {display: none;}
 
@@ -269,6 +270,7 @@ nav {z-index: 2;}
 .space-7 {gap:var(--space-7);}
 .space-8 {gap:var(--space-8);}  
 .space-9 {gap:var(--space-9);}  
+.space-10 {gap: var(--space-10);}
 
 .space-40 {height: 40px;}
 /*--Spacing END--*/
@@ -372,6 +374,14 @@ nav {z-index: 2;}
 .newsletter-field .form-control:focus {
     border-color: var(--clairvoyant-700);
     box-shadow: none;
+}
+
+.formkit-input::placeholder {
+    color: #717680 !important;
+}
+
+.form-select:required:invalid {
+    color: #717680;
 }
 
 .newsletter-submit {

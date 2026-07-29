@@ -478,7 +478,7 @@ margin-top: var(--space-3);
     border-top: none;
 }
 
-.my-discovery img {
+.my-discovery img, .iteration-content img {
     width: 100%;
     height: auto;
     border-radius: 12px;
@@ -599,3 +599,67 @@ margin-top: var(--space-3);
     }
 }
 /*========================================================================*/
+
+/* Case Study Image Lightbox START */
+.cs-carousel__track img,
+.indiv-case-study-img img,
+.discovery-accordion-panel img,
+.iteration-content img {
+    cursor: zoom-in;
+}
+
+.cs-lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background-color: rgba(20, 6, 28, 0.86);
+    padding: 24px;
+}
+
+.cs-lightbox-overlay.is-open {
+    display: grid;
+    place-items: center;
+}
+
+.cs-lightbox-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+    line-height: 0;
+}
+
+.cs-lightbox-image {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.cs-lightbox-close {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--clairvoyant-600);
+    color: white;
+    cursor: pointer;
+    font-size: 26px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.cs-lightbox-close:hover,
+.cs-lightbox-close:focus-visible {
+    background-color: #8722A9;
+    outline: none;
+}
+/* Case Study Image Lightbox END */

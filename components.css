@@ -10,6 +10,9 @@ Table of Contents:
 8. Gallery Placeholder Image
 9. Gallery Lightbox
 10. Breadcrumb
+11. Tooltip
+12. Disabled Nav Item
+13. Custom Cursor
 */
 
 /*Divider*/
@@ -230,15 +233,7 @@ Table of Contents:
 
 /*Infinite Marque END*/
 
-/*Featured Works Vertical Scroll START*/ 
-.featured-works-container {
-    margin-left: 90px;
-    padding-left: 3%;
-    background-color: white;
-}
-
-.featured-works-tablet-mobile {display: none;}
-
+/*Bootstrap Overrides START*/
 .container-fluid {
   width: 100%;
   padding-right: 0;
@@ -248,58 +243,13 @@ Table of Contents:
   padding-top: 50px;
   padding-bottom: 50px;
 }
+/*Bootstrap Overrides END*/
 
-.project-wrap {
-    width: 33vw; /* restore this */
-    padding: 2rem;
-    flex-shrink: 0;
-    box-sizing: content-box;
-}
+/*Case Study Mobile Slider START*/
+.featured-works-mobile {display: none;}
 
-.project-wrap img {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-.case-study-card {
-    width: fit-content; /* lets GSAP measure it */
-    flex-shrink: 0; /* prevents squishing */
-    padding: 0 1%;
-}
-
-.case-study-card-extra-space {
-    width: 15vw; /* restore this */
-    padding: 2rem;
-    flex-shrink: 0;
-    box-sizing: content-box;
-}
-
-.case-study-thumbnail {
-    height: 550px;
-    width: 535px;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
-}
-
-.case-study-info {width: 520px;}
-
-.case-study-cta-wrapper {
-    display: flex;
-    gap: var(--space-3);
-}
-/*Featured Works Vertical Scroll END*/
-
-/*Case Study Tablet & Mobile Slider START*/
 .cs2-slider {
     position: relative;
-    overflow: hidden;
-}
-
-.featured-works-tablet-mobile > .title, .cs2-slider__slide {
-    padding-left: var(--space-4);
-    padding-right: var(--space-4);
 }
 
 .cs2-slider__track {
@@ -307,7 +257,26 @@ Table of Contents:
 }
 
 .cs2-slider__slide {
-    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.cs2-slider__slide.is-active {
+    display: flex;
+}
+
+.cs2-slider__img-wrap {
+    height: auto;
+    aspect-ratio: 1212 / 560;
+}
+
+.cs2-slider__excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .cs2-slider__dots {
@@ -332,7 +301,7 @@ Table of Contents:
     background-color: #bb4de8;
     transform: scale(1.15);
 }
-/*Case Study Tablet & Mobile Slider END*/
+/*Case Study Mobile Slider END*/
 
 /*Testimonial Carousel START*/
 .testimonial-carousel-item {
@@ -384,7 +353,7 @@ Table of Contents:
     filter: brightness(0) saturate(100%);
 }
 
-.cs-carousel__btn-prev, .cs-carousel__btn-next, .cs2-slider__btn {
+.cs-carousel__btn-prev, .cs-carousel__btn-next {
     padding: 10px 17px;
     border-radius: 99px;
     border: 1px solid #D5D9EB;
@@ -392,7 +361,7 @@ Table of Contents:
     stroke: #B3B8DB;
 }
 
-.cs-carousel__btn-prev:hover, .cs-carousel__btn-next:hover, .cs2-slider__btn:hover {
+.cs-carousel__btn-prev:hover, .cs-carousel__btn-next:hover {
     background-color: #4B095D;
     border-color: #4B095D;
     stroke: #FBF4FF;
@@ -626,6 +595,100 @@ Table of Contents:
 }
 /*Breadcrumb END*/
 
+/*Tooltip START*/
+/* Wrap any trigger element in .tooltip-wrap, then add a
+   .tooltip element inside it with the message as its content.
+   Tooltip appears to the right on hover/focus.
+   Only sets positioning context — deliberately leaves display alone
+   so it never changes how the wrapped trigger element itself lays out. */
+.tooltip-wrap {
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 28px);
+    z-index: 4;
+    transform: translateY(-50%) translateX(-4px);
+
+    width: max-content;
+    max-width: 241px;
+    padding: var(--space-5) var(--space-5) var(--space-4);
+    border-radius: 8px;
+    background-color: var(--surface-dark);
+
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: left;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 8px solid var(--surface-dark);
+}
+
+.tooltip-wrap:hover .tooltip,
+.tooltip-wrap:focus-within .tooltip {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+/* Add .tooltip-top alongside .tooltip to open the tooltip upward
+   instead of to the right — for triggers near a right edge or bottom edge. */
+.tooltip.tooltip-top {
+    top: auto;
+    left: 50%;
+    bottom: calc(100% + 16px);
+    transform: translateX(-50%) translateY(4px);
+}
+
+.tooltip.tooltip-top::before {
+    top: 100%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    border-top: 8px solid var(--surface-dark);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: none;
+}
+
+.tooltip-wrap:hover .tooltip.tooltip-top,
+.tooltip-wrap:focus-within .tooltip.tooltip-top {
+    transform: translateX(-50%) translateY(0);
+}
+/*Tooltip END*/
+
+/*Disabled Nav Item START*/
+.mobile-menu-item-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+/*Disabled Nav Item END*/
+
+/*Custom Cursor START*/
+.cursor-coming-soon {
+    cursor: url('imgs/coming-soon-badge.svg') 46 46, pointer;
+}
+/*Custom Cursor END*/
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -640,27 +703,12 @@ Table of Contents:
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    .featured-works-container {display: none;}
-
-    .featured-works-tablet-mobile {display: block;}
-
     #testimonialCarousel .carousel-control-prev {
         left: -16px;
     }
 
     #testimonialCarousel .carousel-control-next {
         right: -16px;
-    }
-
-    .case-study-thumbnail {
-        height: 380px;
-        width: 100%;
-        object-position: center;
-    }
-
-    .case-study-info {
-        margin-top: var(--space-7);
-        width: 100%;
     }
 }
 
@@ -702,25 +750,8 @@ Table of Contents:
     }
 
 
-    .case-study-cta-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-3);
-    }
-    
-    .case-study-cta-wrapper .btn-primary-outline,
-    .case-study-cta-wrapper .btn-primary {
-        width: 100%;
-        justify-content: center;
-    }
+    .featured-works-desktop {display: none;}
 
-    .featured-works-tablet-mobile > .title, .cs2-slider__slide {
-        padding-left: var(--space-2);
-        padding-right: var(--space-2);
-    }
-
-    .case-study-thumbnail {
-        height: 320px;
-    }
+    .featured-works-mobile {display: block;}
 }
 /*========================================================================*/
