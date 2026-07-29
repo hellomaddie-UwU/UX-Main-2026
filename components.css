@@ -648,6 +648,31 @@ Table of Contents:
     opacity: 1;
     transform: translateY(-50%) translateX(0);
 }
+
+/* Add .tooltip-top alongside .tooltip to open the tooltip upward
+   instead of to the right — for triggers near a right edge or bottom edge. */
+.tooltip.tooltip-top {
+    top: auto;
+    left: 50%;
+    bottom: calc(100% + 16px);
+    transform: translateX(-50%) translateY(4px);
+}
+
+.tooltip.tooltip-top::before {
+    top: 100%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    border-top: 8px solid var(--surface-dark);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: none;
+}
+
+.tooltip-wrap:hover .tooltip.tooltip-top,
+.tooltip-wrap:focus-within .tooltip.tooltip-top {
+    transform: translateX(-50%) translateY(0);
+}
 /*Tooltip END*/
 
 /*Disabled Nav Item START*/

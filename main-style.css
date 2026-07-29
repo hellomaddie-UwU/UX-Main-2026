@@ -376,6 +376,14 @@ nav {z-index: 10;}
     box-shadow: none;
 }
 
+.formkit-input::placeholder {
+    color: #717680 !important;
+}
+
+.form-select:required:invalid {
+    color: #717680;
+}
+
 .newsletter-submit {
     flex-shrink: 0;
     width: 184px;
