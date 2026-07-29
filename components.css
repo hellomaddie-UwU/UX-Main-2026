@@ -12,6 +12,7 @@ Table of Contents:
 10. Breadcrumb
 11. Tooltip
 12. Disabled Nav Item
+13. Custom Cursor
 */
 
 /*Divider*/
@@ -273,6 +274,7 @@ Table of Contents:
 .cs2-slider__excerpt {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -607,7 +609,7 @@ Table of Contents:
     position: absolute;
     top: 50%;
     left: calc(100% + 28px);
-    z-index: 300;
+    z-index: 4;
     transform: translateY(-50%) translateX(-4px);
 
     width: max-content;
@@ -655,6 +657,12 @@ Table of Contents:
     pointer-events: none;
 }
 /*Disabled Nav Item END*/
+
+/*Custom Cursor START*/
+.cursor-coming-soon {
+    cursor: url('imgs/coming-soon-badge.svg') 46 46, pointer;
+}
+/*Custom Cursor END*/
 
 /*========================================================================*/
 

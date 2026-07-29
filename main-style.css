@@ -93,7 +93,7 @@ html, body {
 /*--Color Settings END--*/
 
 /*--Navigation START--*/
-nav {z-index: 2;}
+nav {z-index: 10;}
 
 .brand-logo-tablet-mobile {display: none;}
 
