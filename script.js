@@ -93,6 +93,33 @@ if (mobileMenuToggle && mobileMenu && mobileMenuOverlay) {
     window.addEventListener('resize', syncOverlayWithMenuState);
 };
 
+// Featured work cards: fade + slide up into view on scroll (desktop/tablet)
+(function () {
+    var cards = document.querySelectorAll('.featured-works-desktop .reveal-card');
+    if (!cards.length) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    if (!('IntersectionObserver' in window)) {
+        cards.forEach(function (card) { card.classList.add('is-visible'); });
+        return;
+    }
+
+    var observer = new IntersectionObserver(function (entries, obs) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -10% 0px'
+    });
+
+    cards.forEach(function (card) { observer.observe(card); });
+}());
+
 // Dropdown Menu Functionality
 const btn = document.getElementById('dropdownBtn');
 const menu = document.getElementById('dropdownMenu');
