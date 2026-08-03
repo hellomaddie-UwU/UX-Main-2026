@@ -440,6 +440,15 @@ footer {
     --bs-gutter-x: 0;
 }
 
+.selection-content .d-flex {
+    min-width: 0;
+}
+
+.selection-content p {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
 .selector-box-top-left, .selector-box-top-right, .selector-box-bottom-left, .selector-box-bottom-right {position: absolute;}
 
 .selector-box-top-left, .selector-box-top-right {top: -8px;}
