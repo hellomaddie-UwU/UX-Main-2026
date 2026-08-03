@@ -470,7 +470,6 @@ footer {
     width: 50%;
     z-index: 0;
     margin-top: -40px;
-    margin-right: -40px;
 }
 
 
@@ -546,8 +545,9 @@ p {
     font-weight: 400;
     line-height: 46px; /* 92% */
 
-    transform: rotate(-3.45deg);
+    transform: rotate(-7deg);
     display: inline-block;
+    margin-top: -12px;
 }
 
 .display-section-text { /*The white one with the pink stroke*/
