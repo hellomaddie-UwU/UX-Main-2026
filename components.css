@@ -626,6 +626,32 @@ clears the close button that sits inside the card's top-right corner*/
     font-weight:600;
     color: var(--clairvoyant-700);
 }
+
+/*Tablet/mobile collapsed breadcrumb -- menu trigger replaces Home/divider/Case
+Studies; hidden on desktop, shown via the max-width:768px override in the
+Responsive Settings section at the bottom of this file*/
+.breadcrumb-menu {
+    display: none;
+}
+
+.breadcrumb-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.breadcrumb-menu-btn img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /*Breadcrumb END*/
 
 /*Tooltip START*/
@@ -747,7 +773,32 @@ clears the close button that sits inside the card's top-right corner*/
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    /*insert code*/
+    /*Collapsed breadcrumb: Home, first divider, and the section link give way
+    to the menu dropdown; the menu icon centers next to a wrapped title, while
+    the divider (given its own align-self) still stretches to match its height
+    (breadcrumb.js sets its exact pixel height to match)*/
+    .site-breadcrumb {
+        align-items: center;
+    }
+
+    .site-breadcrumb .bc-desktop-only {
+        display: none;
+    }
+
+    .site-breadcrumb .breadcrumb-menu {
+        display: block;
+    }
+
+    .site-breadcrumb .breadcrumb-divider {
+        align-self: stretch;
+        width: auto;
+    }
+
+    .current-bc {
+        min-width: 0;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
 }
 
 /*Mobile*/ /*sm*/
