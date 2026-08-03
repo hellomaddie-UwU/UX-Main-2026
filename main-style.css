@@ -311,6 +311,8 @@ nav {z-index: 10;}
 .gallery-wrapper {
     display: flex;
     gap: var(--space-4);
+    position: relative;
+    z-index: 1;
 }
 
 .newsletter {
@@ -460,6 +462,16 @@ footer {
 .selector-box-top-right, .selector-box-bottom-right {right: -8px;}
 
 .service-thumbnail {height: 650px;}
+
+.page-header-gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 0;
+    margin-top: -40px;
+    margin-right: -40px;
+}
 
 
 /*Container Settings END*/
@@ -961,6 +973,7 @@ input:user-invalid {
     .lightbox-overlay.is-open .lightbox-card {
         flex-direction: column;
         align-items: stretch;
+        height: auto;
     }
 
     .lightbox-overlay.is-open .lightbox-media {
@@ -968,13 +981,18 @@ input:user-invalid {
         height: auto;
     }
 
+    .lightbox-overlay.is-open .lightbox-media-frame,
     .lightbox-overlay.is-open .lightbox-image {
         max-width: 100%;
+        max-height: 50vh;
+        width: auto;
+        height: auto;
     }
 
     .lightbox-overlay.is-open .lightbox-info {
         flex: initial;
         align-items: flex-start;
+        padding: 40px;
     }
 
     .lightbox-overlay.is-open .lightbox-title {
@@ -1105,9 +1123,8 @@ input:user-invalid {
 
     .lightbox-overlay.is-open .lightbox-nav {
         top: 42%;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
+        width: 48px;
+        height: 32px;
     }
 
     .lightbox-overlay.is-open .lightbox-prev {

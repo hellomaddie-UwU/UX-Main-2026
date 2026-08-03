@@ -6,11 +6,12 @@
 
         var overlayMarkup = [
             '<div class="cs-lightbox-overlay" id="csLightbox" aria-hidden="true">',
-            '  <button type="button" class="cs-lightbox-close" aria-label="Close">',
-            '    <span aria-hidden="true">&times;</span>',
-            '  </button>',
+            '  <div class="cs-lightbox-backdrop"></div>',
             '  <div class="cs-lightbox-dialog" role="dialog" aria-modal="true" aria-label="Image preview">',
             '    <img class="cs-lightbox-image" src="" alt="">',
+            '    <button type="button" class="cs-lightbox-close" aria-label="Close">',
+            '      <img src="/imgs/close.svg" alt="" aria-hidden="true">',
+            '    </button>',
             '  </div>',
             '</div>'
         ].join('');
@@ -18,6 +19,7 @@
         document.body.insertAdjacentHTML('beforeend', overlayMarkup);
 
         var overlay = document.getElementById('csLightbox');
+        var backdrop = overlay.querySelector('.cs-lightbox-backdrop');
         var dialog = overlay.querySelector('.cs-lightbox-dialog');
         var closeBtn = overlay.querySelector('.cs-lightbox-close');
         var imageEl = overlay.querySelector('.cs-lightbox-image');
@@ -103,7 +105,7 @@
         closeBtn.addEventListener('click', close);
 
         overlay.addEventListener('click', function (event) {
-            if (event.target === overlay) {
+            if (event.target === overlay || event.target === backdrop) {
                 close();
             }
         });

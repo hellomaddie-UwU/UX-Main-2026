@@ -7,12 +7,13 @@
 
         var lightboxMarkup = [
             '<div class="lightbox-overlay" id="galleryLightbox" aria-hidden="true">',
+            '  <div class="lightbox-backdrop"></div>',
             '  <div class="lightbox-dialog">',
             '    <button type="button" class="lightbox-close" aria-label="Close lightbox">',
-            '      <span aria-hidden="true">&times;</span>',
+            '      <img src="imgs/close.svg" alt="" aria-hidden="true">',
             '    </button>',
             '    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous image">',
-            '      <span aria-hidden="true">&#10094;</span>',
+            '      <img src="imgs/arrow-left.svg" alt="" aria-hidden="true">',
             '    </button>',
             '    <div class="lightbox-card" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" aria-describedby="lightboxDescription">',
             '      <div class="lightbox-media">',
@@ -35,7 +36,7 @@
             '      </div>',
             '    </div>',
             '    <button type="button" class="lightbox-nav lightbox-next" aria-label="Next image">',
-            '      <span aria-hidden="true">&#10095;</span>',
+            '      <img src="imgs/arrow-right.svg" alt="" aria-hidden="true">',
             '    </button>',
             '  </div>',
             '</div>'
@@ -44,17 +45,19 @@
         document.body.insertAdjacentHTML('beforeend', lightboxMarkup);
 
         var overlay = document.getElementById('galleryLightbox');
+        var backdrop = overlay ? overlay.querySelector('.lightbox-backdrop') : null;
         var dialog = overlay ? overlay.querySelector('.lightbox-dialog') : null;
         var card = overlay ? overlay.querySelector('.lightbox-card') : null;
         var closeBtn = overlay ? overlay.querySelector('.lightbox-close') : null;
         var prevBtn = overlay ? overlay.querySelector('.lightbox-prev') : null;
         var nextBtn = overlay ? overlay.querySelector('.lightbox-next') : null;
         var imageEl = overlay ? overlay.querySelector('.lightbox-image') : null;
+        var mediaFrame = overlay ? overlay.querySelector('.lightbox-media-frame') : null;
         var titleEl = overlay ? overlay.querySelector('.lightbox-title') : null;
         var dateEl = overlay ? overlay.querySelector('.lightbox-date') : null;
         var descriptionEl = overlay ? overlay.querySelector('.lightbox-description') : null;
 
-        if (!overlay || !dialog || !card || !closeBtn || !prevBtn || !nextBtn || !imageEl || !titleEl || !dateEl || !descriptionEl) {
+        if (!overlay || !backdrop || !dialog || !card || !closeBtn || !prevBtn || !nextBtn || !imageEl || !mediaFrame || !titleEl || !dateEl || !descriptionEl) {
             return;
         }
 
@@ -190,6 +193,9 @@
             currentIndex = safeIndex;
             var token = ++renderToken;
 
+            mediaFrame.classList.remove('is-zoomed');
+            imageEl.style.transformOrigin = 'center center';
+
             imageEl.src = item.src;
             imageEl.alt = item.alt;
             titleEl.textContent = item.title;
@@ -258,8 +264,32 @@
         nextBtn.addEventListener('click', goToNext);
         prevBtn.addEventListener('click', goToPrev);
 
+        /*Hover-to-zoom: the image scales up around whatever point the cursor is
+        over, clipped by lightbox-media-frame so it never spills past the
+        existing 40px lightbox-media padding.*/
+        function updateZoomOrigin(event) {
+            var rect = mediaFrame.getBoundingClientRect();
+            var xPercent = ((event.clientX - rect.left) / rect.width) * 100;
+            var yPercent = ((event.clientY - rect.top) / rect.height) * 100;
+            xPercent = Math.max(0, Math.min(100, xPercent));
+            yPercent = Math.max(0, Math.min(100, yPercent));
+            imageEl.style.transformOrigin = xPercent + '% ' + yPercent + '%';
+        }
+
+        mediaFrame.addEventListener('mouseenter', function (event) {
+            updateZoomOrigin(event);
+            mediaFrame.classList.add('is-zoomed');
+        });
+
+        mediaFrame.addEventListener('mousemove', updateZoomOrigin);
+
+        mediaFrame.addEventListener('mouseleave', function () {
+            mediaFrame.classList.remove('is-zoomed');
+            imageEl.style.transformOrigin = 'center center';
+        });
+
         overlay.addEventListener('click', function (event) {
-            if (event.target === overlay) {
+            if (event.target === overlay || event.target === backdrop) {
                 close();
             }
         });
