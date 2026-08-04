@@ -37,6 +37,8 @@
     line-height: 38px;
 }
 
+.case-study-deliverables {margin-top: 0px;}
+
 .toc-col {
     position: sticky;
     top: 80px;
@@ -114,6 +116,8 @@
 }
 
 .block-table .thead {font-weight: 600;}
+
+.block-table-col {padding-top: 0px;}
 
 .feature-block, .feature-block-end, .discovery-block {
     display: flex;
@@ -525,81 +529,6 @@ margin-top: var(--space-3);
 }
 /*Feature Gallery END*/
 
-/*========================================================================*/
-
-/*Responsive Settings*/
-@media screen and (min-width: 1920px) {
-    /*insert code*/
-}
-
-/*Widescreen*/ /*xxl*/
-@media screen and (min-width: 1440px) {
-    /*insert code*/
-}
-
-/*Tablet LG START*/ /*lg*/
-@media screen and (max-width: 992px) {
-    .toc-col {display: none;}
-
-    .case-study-container > .container {width: 100%;}
-
-    .case-study-content {
-        width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    .mobile-table-of-contents  {
-        display: block;
-        width: 100%;
-        border: 1px solid var(--clairvoyant-300);
-        border-radius: 4px;
-    }
-
-    .mobile-table-of-contents .dropdown, .mobile-table-of-contents .dropdown-toggle, .mobile-table-of-contents .dropdown-menu {
-        width: 100%;
-        color: var(--Text-Body);
-    }
-}
-
-/*Tablet*/ /*md*/
-@media screen and (max-width: 768px) {
-    .case-study-content {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-    
-    .progress-section {
-        gap: 8px;
-    }
-
-    .progress-label {
-        min-width: 40px;
-        font-size: 12px;
-    }
-}
-
-/*Mobile*/ /*sm*/
-@media screen and (max-width: 567px) {
-    .case-study-content {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
-
-    .compare {
-        height: 280px;
-    }
-
-    .other-case-study-cards {
-        flex-direction: column;
-    }
-
-    .other-case-study-card {
-        width: 100%;
-    }
-}
-/*========================================================================*/
-
 /* Case Study Image Lightbox START */
 .cs-carousel__track img,
 .indiv-case-study-img img,
@@ -677,3 +606,81 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
     outline: none;
 }
 /* Case Study Image Lightbox END */
+
+/*========================================================================*/
+
+/*Responsive Settings*/
+@media screen and (min-width: 1920px) {
+    /*insert code*/
+}
+
+/*Widescreen*/ /*xxl*/
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
+/*Tablet LG START*/ /*lg*/
+@media screen and (max-width: 992px) {
+    .case-study-featured-wrap {height: auto;}
+
+    .toc-col {display: none;}
+
+    .case-study-container > .container {width: 100%;}
+
+    .case-study-content {
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .mobile-table-of-contents  {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--clairvoyant-300);
+        border-radius: 4px;
+    }
+
+    .mobile-table-of-contents .dropdown, .mobile-table-of-contents .dropdown-toggle, .mobile-table-of-contents .dropdown-menu {
+        width: 100%;
+        color: var(--Text-Body);
+    }
+}
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+    .case-study-deliverables {margin-top: 24px;}
+    
+    .progress-section {
+        gap: 8px;
+    }
+
+    .progress-label {
+        min-width: 40px;
+        font-size: 12px;
+    }
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    .case-study-featured-wrap {height: auto;}
+
+    .case-study-content {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .block-table-col {padding-top: 24px;}
+
+    .compare {
+        height: 280px;
+    }
+
+    .other-case-study-cards {
+        flex-direction: column;
+    }
+
+    .other-case-study-card {
+        width: 100%;
+    }
+}
+/*========================================================================*/
