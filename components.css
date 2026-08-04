@@ -799,6 +799,8 @@ Responsive Settings section at the bottom of this file*/
         overflow-wrap: break-word;
         white-space: normal;
     }
+
+    .cs-carousel__btn-prev, .cs-carousel__btn-next {padding: 5px 17px;}
 }
 
 /*Mobile*/ /*sm*/
