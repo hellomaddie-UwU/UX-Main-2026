@@ -177,15 +177,15 @@
             <div class="mobile-nav-socmed">
                 <p class="md-text">Follow</p>
                 <div class="d-flex gap-2">
-                    <img src="imgs/contra.svg" alt="contra">
+                    <img src="/imgs/contra.svg" alt="contra">
                     <a href="https://contra.com/maddieand_sushi_qmywdk86/work" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
                 </div>
                 <div class="d-flex gap-2">
-                    <img src="imgs/twitter.svg" alt="twitter">
+                    <img src="/imgs/twitter.svg" alt="twitter">
                     <a href="https://x.com/hellomaddie_uwu" target="_blank" rel="noopener noreferrer">@hellomaddieUwU</a>
                 </div>
                 <div class="d-flex gap-2">
-                    <img src="imgs/linkedin.svg" alt="dribble">
+                    <img src="/imgs/linkedin.svg" alt="dribble">
                     <a href="https://www.linkedin.com/in/bianca-maddela-9a75a5155/" target="_blank" rel="noopener noreferrer">@Bianca Maddela</a>
                 </div>
             </div>
@@ -197,15 +197,24 @@
             <!--Hero Section START-->
             <header class="section-container">
                 <div class="site-breadcrumb">
-                    <a href="index.html" class="bc-home">
+                    <div class="breadcrumb-menu dropdown">
+                        <button class="breadcrumb-menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open page menu">
+                            <img src="/imgs/horizontal-menu.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="http://hellomaddie.com">Home</a></li>
+                            <li><a class="dropdown-item" href="https://hellomaddie.com/case-study-catalogue.html">Case Study Catalogue</a></li>
+                        </ul>
+                    </div>
+                    <a href="http://hellomaddie.com" class="bc-home bc-desktop-only">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
                         </svg>
                         Home
                     </a>
-                    <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
-                    <a href="case-study-catalogue.html">Case Studies</a>
-                    <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
+                    <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="bc-desktop-only">
+                    <a href="https://hellomaddie.com/case-study-catalogue.html" class="bc-desktop-only">Case Studies</a>
+                    <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="breadcrumb-divider">
                     <p class="current-bc">Crafting Guidelines for MSPbots’ Asset Team</p>
                 </div>
                 <div class="v-stack">
@@ -216,33 +225,34 @@
                     <h1 class="case-study-title">Crafting Guidelines for MSPbot’s Asset Team</h1>
                 </div>
                 <div class="case-study-featured-wrap">
-                    <img class="case-study-featured-img" src="/imgs/featured-imgs/featured-img-1.png" alt="Cover spread of the MSPbots welcome screen design guideline PDF">
+                    <picture>
+                        <source media="(max-width: 567px)" srcset="/imgs/featured-imgs/square-featured-img-1.png">
+                        <img class="case-study-featured-img" src="/imgs/featured-imgs/featured-img-1.png" alt="Cover spread of the MSPbots welcome screen design guideline PDF">
+                    </picture>
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-7">
-                            <div class="d-flex align-items-center gap-2">
-                                <p class="fw-medium">Contract Duration</p> 
-                                <img class="orange-dot" src="/imgs/orange-dot.svg" alt="">
-                                <p>Q2 2025</p> <!--contract duration-->
-                            </div>
-                            <h5 class="case-study-excerpt">A 3-week internal project where I was requested to create a design guideline PDF for the company’s Asset Team. The guideline revolved around constructing the Welcome Screens of our apps.</h5>
+                <div class="row">
+                    <div class="col-lg-7 col-md-12">
+                        <div class="d-flex align-items-center gap-2">
+                            <p class="fw-medium">Contract Duration</p> 
+                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="">
+                            <p>Q2 2025</p> <!--contract duration-->
                         </div>
-                        <div class="col-5">
-                            <div class="selection-container">
-                                <!--Selector Boxes START-->
-                                <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selection box">
-                                <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selection box">                    
-                                <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selection box">
-                                <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selection box">
-                                <!--Selector Boxes END-->
-                                <div class="selection-content">
-                                    <div class="v-stack space-1">
-                                        <p class="md-text">Deliverables</p>
-                                        <p class="w-500">PDF Design Guidelines</p>
-                                    </div>
-                                    <!--Do not add extended scope without it actually being finished first.-->
+                        <h5 class="case-study-excerpt">A 3-week internal project where I was requested to create a design guideline PDF for the company’s Asset Team. The guideline revolved around constructing the Welcome Screens of our apps.</h5>
+                    </div>
+                    <div class="col-lg-5 col-md-12 case-study-deliverables">
+                        <div class="selection-container">
+                            <!--Selector Boxes START-->
+                            <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selection box">
+                            <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selection box">                    
+                            <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selection box">
+                            <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selection box">
+                            <!--Selector Boxes END-->
+                            <div class="selection-content">
+                                <div class="v-stack space-1">
+                                    <p class="md-text">Deliverables</p>
+                                    <p class="w-500">PDF Design Guidelines</p>
                                 </div>
+                                <!--Do not add extended scope without it actually being finished first.-->
                             </div>
                         </div>
                     </div>
@@ -287,506 +297,504 @@
                     </div>
                     <!--Progress Bar END-->
 
-                    <div class="container">
-                        <div class="row">
-                            <!--TOC START-->
-                            <div class="col-3 toc-col">  
-                                <div class="selection-container">
-                                    <!--Selector Boxes START-->
-                                    <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selection box">
-                                    <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selection box">                    
-                                    <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selection box">
-                                    <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selection box">
-                                    <!--Selector Boxes END-->
-                                    <div class="selection-content">
-                                        <p class="table-of-contents">Table of Contents</p>
-                                        <div id="toc-heart-row" class="d-flex gap-2">
-                                            <div id="toc-heart-wrapper" style="width: 10%;">
-                                                <img src="/imgs/heart-point.svg" alt="heart">
+                    <div class="row">
+                        <!--TOC START-->
+                        <div class="col-3 toc-col">  
+                            <div class="selection-container">
+                                <!--Selector Boxes START-->
+                                <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selection box">
+                                <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selection box">                    
+                                <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selection box">
+                                <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selection box">
+                                <!--Selector Boxes END-->
+                                <div class="selection-content">
+                                    <p class="table-of-contents">Table of Contents</p>
+                                    <div id="toc-heart-row" class="d-flex gap-2">
+                                        <div id="toc-heart-wrapper" style="width: 10%;">
+                                            <img src="/imgs/heart-point.svg" alt="heart">
+                                        </div>
+                                        <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
+                                            <a href="crafting-guidelines-for-mspbots-asset-team.html#context">Context</a>
+                                            <a href="crafting-guidelines-for-mspbots-asset-team.html#impact">Impact</a>
+                                            <a style="margin-bottom:40px;" href="crafting-guidelines-for-mspbots-asset-team.html#features">Features</a>
+                                            <a href="crafting-guidelines-for-mspbots-asset-team.html#research-discovery">Research & Discovery</a>
+                                            <a href="crafting-guidelines-for-mspbots-asset-team.html#key-insights">Key Insights</a>
+                                            <a href="crafting-guidelines-for-mspbots-asset-team.html#design-iterations">Design Iteration</a>
+                                        </div>
+                                        <div class="row position-absolute" style="top: 103px;">
+                                            <img class="w-100" src="/imgs/the-ux-stuff.svg" alt="The UX Stuff">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--TOC END-->
+
+                        <!--Case Study Content START-->
+                        <div class="col-9 case-study-content">
+                            <!--Content Start-->
+                            <!--Context-->
+                            <div class="block v-stack space-5" id="context">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Context</h5>
+                                        <p>
+                                            One of the Asset Team’s main responsibilities are building bespoke client-facing apps that can be utilized for specific use cases. However, due to time constraints, the welcome screen would normally be the last task within their to-do list. With limited knowledge in HTML, the team would rely on ChatGPT to generate code for them, resulting in visually inconsistent sections. This lead to multiple off-brand pages within the company’s product.
+                                            <br><br>
+                                            King Moya reached out to the Product Head and specifically requested me to create a Welcome Screen Design Guideline PDF because of my hybrid UX/UI and Front-end Development background. The brand guidelines were several years outdated, and the company’s design system only contained basic components at the time.
+                                        </p>
+                                    </div>
+                                    <div class="block-table">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                                <p class="thead">Team</p>
+                                                <p>Me</p>
+                                                <p>King Moya</p>
+                                                <p>Glenn Bugtog</p>
                                             </div>
-                                            <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
-                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#context">Context</a>
-                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#impact">Impact</a>
-                                                <a style="margin-bottom:40px;" href="crafting-guidelines-for-mspbots-asset-team.html#features">Features</a>
-                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#research-discovery">Research & Discovery</a>
-                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#key-insights">Key Insights</a>
-                                                <a href="crafting-guidelines-for-mspbots-asset-team.html#design-iterations">Design Iteration</a>
+                                            <div class="col-lg-2 col-md-4 col-sm-6 block-table-col">
+                                                <p class="thead">Duration</p>
+                                                <p>3 Weeks</p>
                                             </div>
-                                            <div class="row position-absolute" style="top: 103px;">
-                                                <img class="w-100" src="/imgs/the-ux-stuff.svg" alt="The UX Stuff">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
+                                                <p class="thead">Role</p>
+                                                <p>Senior Designer</p>
+                                                <p>Front-end Developer</p>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 pt-lg-0 pt-md-4 pt-sm-3 block-table-col">
+                                                <p class="thead">Skills</p>
+                                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                    <p>Design, Copywriting & Layout</p>
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                    <p>Vanilla HTML & CSS</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--TOC END-->
-
-                            <!--Case Study Content START-->
-                            <div class="col-9 case-study-content">
-                                <!--Content Start-->
-                                <!--Context-->
-                                <div class="block v-stack space-5" id="context">
-                                    <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Context</h5>
-                                            <p>
-                                                One of the Asset Team’s main responsibilities are building bespoke client-facing apps that can be utilized for specific use cases. However, due to time constraints, the welcome screen would normally be the last task within their to-do list. With limited knowledge in HTML, the team would rely on ChatGPT to generate code for them, resulting in visually inconsistent sections. This lead to multiple off-brand pages within the company’s product.
-                                                <br><br>
-                                                King Moya reached out to the Product Head and specifically requested me to create a Welcome Screen Design Guideline PDF because of my hybrid UX/UI and Front-end Development background. The brand guidelines were several years outdated, and the company’s design system only contained basic components at the time.
-                                            </p>
-                                        </div>
-                                        <div class="block-table">
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <p class="thead">Team</p>
-                                                    <p>Me</p>
-                                                    <p>King Moya</p>
-                                                    <p>Glenn Bugtog</p>
+                            <!--Impact-->
+                            <div class="block v-stack space-5" id="impact">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Impact</h5>
+                                        <p>Once the Design Guideline PDF and HTML widget templates were done, the efficiency of the Asset Team increased due to clearer design parameters and easier access for custom design requests to me at the time.</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="w-600">Asset Team's Outcome</h6>
+                                        <div class="v-stack space-3 mt-2">
+                                            <div class="h-stack space-3 align-items-start">
+                                                <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="Positive impact">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Immediate Widget Adoption</div>
+                                                    <p>Glenn adopted the HTML widget templates the same day they were delivered, applying them directly to his active tasks. No additional onboarding or explanation was needed because the templates were built to be copy-paste ready.</p>
                                                 </div>
-                                                <div class="col-2">
-                                                    <p class="thead">Duration</p>
-                                                    <p>3 Weeks</p>
+                                            </div>
+                                            <div class="h-stack space-3 align-items-start">
+                                                <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="Positive impact">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Visible Quality Improvement</div>
+                                                    <p>Welcome Screens produced were observably more consistent and professional in appearance.</p>
+                                                    <div class="side-note">Anecdotally confirmed by the team*</div>
                                                 </div>
-                                                <div class="col-3">
-                                                    <p class="thead">Role</p>
-                                                    <p>Senior Designer</p>
-                                                    <p>Front-end Developer</p>
-                                                </div>
-                                                <div class="col-4">
-                                                    <p class="thead">Skills</p>
+                                            </div>
+                                            <div class="h-stack space-3 align-items-start">
+                                                <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="Positive impact">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Stakeholder Confidence Signal</div>
                                                     <div class="d-flex justify-content-start align-items-center gap-2">
                                                         <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
-                                                        <p>Design, Copywriting & Layout</p>
+                                                        <p>The Product Team Head gave an unsolicited compliment on the quality of the work.</p>
                                                     </div>
-                                                    <div class="d-flex justify-content-start align-items-center gap-2">
-                                                        <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
-                                                        <p>Vanilla HTML & CSS</p>
+                                                    <div class="d-flex justify-content-start align-items-start gap-2">
+                                                        <img class="orange-dot mt-2" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                        <p>The Asset Team separately requested a follow-up project to create guidelines for the Settings page → a direct signal of trust and continued need.</p>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="h-stack space-3 align-items-start">
+                                                <img class="mt-1" src="/imgs/pin-point-sad.svg" alt="Area for improvement">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Illustration Consistency Gap Remained</div>
+                                                    <p>The custom illustration request process was documented in the guidelines but due to availability constraints and the growing accessibility of AI tools, the team shifted to using generative AI for illustration assets instead. Illustration assets remained as the only area of visual inconsistency post hand-off.</p>
+                                                    <div class="side-note">This was acknowledged and accepted as low priority by all parties*.</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!--Impact-->
-                                <div class="block v-stack space-5" id="impact">
-                                    <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Impact</h5>
-                                            <p>Once the Design Guideline PDF and HTML widget templates were done, the efficiency of the Asset Team increased due to clearer design parameters and easier access for custom design requests to me at the time.</p>
+                            </div>
+                            <!--Features-->
+                            <div class="block v-stack space-5" id="features">
+                                <div class="v-stack space-5">
+                                    <h5>Features</h5>     
+                                    <!--Feature #1 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 1</div>
+                                            <h6 class="features-title">Do's & Don'ts Framework</h6>
+                                            <p>The PDF outlines essential Do’s and Don’ts for foundational understanding and basic customizations. I choose this approach so as to lowers the barrier for non-designers. This format also avoids abstract design principles, and instead focuses on practical applications to their work.</p>  
                                         </div>
-                                        <div>
-                                            <h6 class="w-600">Asset Team's Outcome</h6>
-                                            <div class="v-stack space-3 mt-2">
-                                                <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="Positive impact">
-                                                    <div class="v-stack">
-                                                        <div class="case-study-subtitle">Immediate Widget Adoption</div>
-                                                        <p>Glenn adopted the HTML widget templates the same day they were delivered, applying them directly to his active tasks. No additional onboarding or explanation was needed because the templates were built to be copy-paste ready.</p>
+                                        <div class="feature-display">
+                                            <div class="cs-carousel">
+                                                <!-- Controls -->
+                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                    <div class="case-study-subtitle">Customization Rules</div>
+                                                    <div>
+                                                        <button class="cs-carousel__btn-prev" type="button">           
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                               
+                                                        </button>
+                                                        <button class="cs-carousel__btn-next" type="button">                                                  
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                                     
+                                                        </button>
                                                     </div>
                                                 </div>
-                                                <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="Positive impact">
-                                                    <div class="v-stack">
-                                                        <div class="case-study-subtitle">Visible Quality Improvement</div>
-                                                        <p>Welcome Screens produced were observably more consistent and professional in appearance.</p>
-                                                        <div class="side-note">Anecdotally confirmed by the team*</div>
-                                                    </div>
-                                                </div>
-                                                <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="Positive impact">
-                                                    <div class="v-stack">
-                                                        <div class="case-study-subtitle">Stakeholder Confidence Signal</div>
-                                                        <div class="d-flex justify-content-start align-items-center gap-2">
-                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
-                                                            <p>The Product Team Head gave an unsolicited compliment on the quality of the work.</p>
-                                                        </div>
-                                                        <div class="d-flex justify-content-start align-items-start gap-2">
-                                                            <img class="orange-dot mt-2" src="/imgs/orange-dot.svg" alt="orange dot">
-                                                            <p>The Asset Team separately requested a follow-up project to create guidelines for the Settings page → a direct signal of trust and continued need.</p>
+                                                <!-- Slides -->
+                                                <div class="cs-carousel__track">
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/1.png" alt="Foundational Do's and Don'ts slide from the MSPbots welcome screen design guideline PDF">
+                                                            </div>
+                                                            <div class="case-study-img-caption">Reminders on a foundational level</div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="h-stack space-3 align-items-start">
-                                                    <img class="mt-1" src="/imgs/pin-point-sad.svg" alt="Area for improvement">
-                                                    <div class="v-stack">
-                                                        <div class="case-study-subtitle">Illustration Consistency Gap Remained</div>
-                                                        <p>The custom illustration request process was documented in the guidelines but due to availability constraints and the growing accessibility of AI tools, the team shifted to using generative AI for illustration assets instead. Illustration assets remained as the only area of visual inconsistency post hand-off.</p>
-                                                        <div class="side-note">This was acknowledged and accepted as low priority by all parties*.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Features-->
-                                <div class="block v-stack space-5" id="features">
-                                    <div class="v-stack space-5">
-                                        <h5>Features</h5>     
-                                        <!--Feature #1 START-->
-                                        <div class="feature-block">
-                                            <div class="feature-info">
-                                                <div class="label-primary">FEATURE 1</div>
-                                                <h6 class="features-title">Do's & Don'ts Framework</h6>
-                                                <p>The PDF outlines essential Do’s and Don’ts for foundational understanding and basic customizations. I choose this approach so as to lowers the barrier for non-designers. This format also avoids abstract design principles, and instead focuses on practical applications to their work.</p>  
-                                            </div>
-                                            <div class="feature-display">
-                                                <div class="cs-carousel">
-                                                    <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
-                                                        <div class="case-study-subtitle">Customization Rules</div>
-                                                        <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">           
-                                                                <span aria-hidden="true">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>                                               
-                                                            </button>
-                                                            <button class="cs-carousel__btn-next" type="button">                                                  
-                                                                <span aria-hidden="true">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>                                                     
-                                                            </button>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/2.png" alt="Layout rules for Data Analysts creating new sections, from the MSPbots welcome screen guidelines">
+                                                            </div>
+                                                            <div class="case-study-img-caption">Layout rules if a DA wants to create new sections</div>
                                                         </div>
                                                     </div>
-                                                    <!-- Slides -->
-                                                    <div class="cs-carousel__track">
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/1.png" alt="Foundational Do's and Don'ts slide from the MSPbots welcome screen design guideline PDF">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Reminders on a foundational level</div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/3.png" alt="Guidelines on avoiding empty spaces and overuse of emojis in MSPbots welcome screens">
                                                             </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/2.png" alt="Layout rules for Data Analysts creating new sections, from the MSPbots welcome screen guidelines">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Layout rules if a DA wants to create new sections</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/3.png" alt="Guidelines on avoiding empty spaces and overuse of emojis in MSPbots welcome screens">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Avoidance of empty spaces and overuse of emojis</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/4.png" alt="Guidelines on creating new assets and checking readability, from the MSPbots welcome screen PDF">
-                                                                </div>
-                                                                <div class="case-study-img-caption">On creating new assets and checking readability</div>
-                                                            </div>
+                                                            <div class="case-study-img-caption">Avoidance of empty spaces and overuse of emojis</div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>   
-                                        <!--Feature #1 END-->                                
-                                        <!--Feature #2 START-->
-                                        <div class="feature-block">
-                                            <div class="feature-info">
-                                                <div class="label-primary">FEATURE 2</div>
-                                                <h6 class="features-title">Desktop Breakdown Guidance</h6>
-                                                <p>Layout and typographic adjustments were documented for three primary desktop breakpoints: 1920px, 1440px, and 1280px. Mobile and tablet were explicitly out of scope because the legacy product was desktop-only. </p>  
-                                            </div>
-                                            <div class="feature-display">
-                                                <div class="cs-carousel">
-                                                    <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
-                                                        <div class="case-study-subtitle">Screen Layout Guide</div>
-                                                        <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">           
-                                                                <span aria-hidden="true">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>                                               
-                                                            </button>
-                                                            <button class="cs-carousel__btn-next" type="button">                                                  
-                                                                <span aria-hidden="true">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>                                                     
-                                                            </button>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/4.png" alt="Guidelines on creating new assets and checking readability, from the MSPbots welcome screen PDF">
+                                                            </div>
+                                                            <div class="case-study-img-caption">On creating new assets and checking readability</div>
                                                         </div>
                                                     </div>
-                                                    <!-- Slides -->
-                                                    <div class="cs-carousel__track">
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/5.png" alt="Typography size guide for MSPbots welcome screen desktop breakpoints">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Text size guide</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/6.png" alt="Grid and section size reference for MSPbots welcome screen desktop layouts">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Grids for section sizes</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/7.png" alt="Desktop screen size reminder slide from the MSPbots welcome screen design guidelines">
-                                                                </div>
-                                                                <div class="case-study-img-caption">A reminder on the desktop sizes</div>
-                                                            </div>
-                                                        </div>                                                       
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>   
-                                        <!--Feature #2 END-->   
-                                        <!--Feature #3 START-->
-                                        <div class="feature-block">
-                                            <div class="feature-info">
-                                                <div class="label-primary">FEATURE 3</div>
-                                                <h6 class="features-title">CSS Instructions for Section Widgets</h6>
-                                                <p>Mid-project, my Manager proposed adding CSS guidance for the section widgets.</p>                                               
-                                            </div>
-                                            <div class="feature-display">
-                                                <div class="cs-carousel">
-                                                    <!-- Controls -->
-                                                    <div class="d-flex justify-content-between align-items-center space-2 mb-2">
-                                                        <div class="case-study-subtitle">How It Works</div>
-                                                        <div>
-                                                            <button class="cs-carousel__btn-prev" type="button">            
-                                                                <span aria-hidden="true">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                        <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>                                               
-                                                            </button>
-                                                            <button class="cs-carousel__btn-next" type="button">                                                  
-                                                                <span aria-hidden="true">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                        <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    </svg>
-                                                                </span>                                                     
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <!-- Slides -->
-                                                    <div class="cs-carousel__track">
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/8.png" alt="CSS layout guide for the hero section, the first section on every MSPbots welcome screen">
-                                                                </div>
-                                                                <div class="case-study-img-caption">The first section seen on every Welcome Screen</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/9.png" alt="CSS spacing and gap reference per HTML element for MSPbots section widgets">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Sizes on the spacing/gaps per html element</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/10.png" alt="CSS guide for the dashboard link section in MSPbots welcome screen widgets">
-                                                                </div>
-                                                                <div class="case-study-img-caption">Leads to the dashboards within an app</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="cs-carousel__slide">
-                                                            <div class="case-study-img-container">
-                                                                <div class="case-study-img-frame">
-                                                                    <img src="/imgs/case-study-imgs/01/11.png" alt="CSS guide for the Tech Support call-to-action section in MSPbots welcome screen widgets">
-                                                                </div>
-                                                                <div class="case-study-img-caption">To immediately call Tech Support</div>
-                                                            </div>
-                                                        </div>                                                         
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>   
-                                        <!--Feature #3 END-->
-                                        <!--Feature #4 START-->
-                                        <div class="feature-block">
-                                            <div class="feature-info">
-                                                <div class="label-primary">FEATURE 4</div>
-                                                <h6 class="features-title">HTML Widget Templates</h6>
-                                                <p>I built the templates directly into the legacy app because I already had a background in front-end web development. This saved us a lot of time because the templates were ready to use right from the get-go. When I handed over the templates to Glenn, he already used it within the same day.</p>                                               
-                                            </div>
-                                            <div class="feature-display">
-                                                <div class="indiv-case-study-img-container">
-                                                    <div class="indiv-case-study-img">
-                                                        <img src="/imgs/case-study-imgs/01/12.png" alt="HTML widget template built inside the MSPbots Widget Builder using its WYSIWYG HTML editor">
-                                                    </div>                                                   
-                                                    <div class="case-study-img-caption">Chart type used to build this was the HTML Widget in where a separate pop-up modal opens containg a WYSIWYG HTML builder. I had to go back and forth to see how the layout design was slowly coming together.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--Feature #4 END-->
-                                        <!--Feature #5 START-->
-                                        <div class="feature-block-end">
-                                            <div class="feature-info">
-                                                <div class="label-primary">FEATURE 5</div>
-                                                <h6 class="features-title">Marketing Site as Visual Bridge</h6>
-                                                <p>I used the marketing site’s existing visual style as the reference point for the PDF guidelines because there were no updated company-level brand guidelines. 
-                                                <br><br>
-                                                This connected the Welcome Screens to the most publicly visible expression of the brand at the time; creating visual coherence across touch points without requiring a formal brand system to exist first.</p>                                               
-                                            </div>
-                                            <div class="feature-display">
-                                                <div class="indiv-case-study-img-container">
-                                                    <div class="indiv-case-study-img">
-                                                        <img src="/imgs/case-study-imgs/01/13.png" alt="MSPbots marketing site in its space-themed era, used as the visual reference for welcome screen design guidelines">
-                                                    </div>                                                
-                                                    <div class="case-study-img-caption">Back when the marketing site was <i>"space-themed"</i></div>
+                                    </div>   
+                                    <!--Feature #1 END-->                                
+                                    <!--Feature #2 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 2</div>
+                                            <h6 class="features-title">Desktop Breakdown Guidance</h6>
+                                            <p>Layout and typographic adjustments were documented for three primary desktop breakpoints: 1920px, 1440px, and 1280px. Mobile and tablet were explicitly out of scope because the legacy product was desktop-only. </p>  
+                                        </div>
+                                        <div class="feature-display">
+                                            <div class="cs-carousel">
+                                                <!-- Controls -->
+                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                    <div class="case-study-subtitle">Screen Layout Guide</div>
+                                                    <div>
+                                                        <button class="cs-carousel__btn-prev" type="button">           
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                               
+                                                        </button>
+                                                        <button class="cs-carousel__btn-next" type="button">                                                  
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                                     
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Slides -->
+                                                <div class="cs-carousel__track">
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/5.png" alt="Typography size guide for MSPbots welcome screen desktop breakpoints">
+                                                            </div>
+                                                            <div class="case-study-img-caption">Text size guide</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/6.png" alt="Grid and section size reference for MSPbots welcome screen desktop layouts">
+                                                            </div>
+                                                            <div class="case-study-img-caption">Grids for section sizes</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/7.png" alt="Desktop screen size reminder slide from the MSPbots welcome screen design guidelines">
+                                                            </div>
+                                                            <div class="case-study-img-caption">A reminder on the desktop sizes</div>
+                                                        </div>
+                                                    </div>                                                       
                                                 </div>
                                             </div>
                                         </div>
-                                        <!--Feature #5 END-->            
-                                    </div>
-                                </div>
-                                <!--Research & Discovery-->
-                                <div class="block v-stack space-5" id="research-discovery">
-                                    <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Research & Discovery</h5>
-                                            <p>Formal research was not conducted. The primary discovery input was a kick-off meeting with King Moya. During the meeting, he walked through the existing Welcome Screens that were currently live in the app. Seeing the existing Welcome Screens made the problem really obvious, no two screens shared a consistent visual language(fonts, colors, layout structures, and information density). 
-                                            <br><br>
-                                            With no external benchmarks and no user interviews, the audit of existing screens served as both the research phase and the brief. </p>
+                                    </div>   
+                                    <!--Feature #2 END-->   
+                                    <!--Feature #3 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 3</div>
+                                            <h6 class="features-title">CSS Instructions for Section Widgets</h6>
+                                            <p>Mid-project, my Manager proposed adding CSS guidance for the section widgets.</p>                                               
                                         </div>
-                                        <div>
+                                        <div class="feature-display">
+                                            <div class="cs-carousel">
+                                                <!-- Controls -->
+                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                    <div class="case-study-subtitle">How It Works</div>
+                                                    <div>
+                                                        <button class="cs-carousel__btn-prev" type="button">            
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                               
+                                                        </button>
+                                                        <button class="cs-carousel__btn-next" type="button">                                                  
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                                     
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Slides -->
+                                                <div class="cs-carousel__track">
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/8.png" alt="CSS layout guide for the hero section, the first section on every MSPbots welcome screen">
+                                                            </div>
+                                                            <div class="case-study-img-caption">The first section seen on every Welcome Screen</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/9.png" alt="CSS spacing and gap reference per HTML element for MSPbots section widgets">
+                                                            </div>
+                                                            <div class="case-study-img-caption">Sizes on the spacing/gaps per html element</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/10.png" alt="CSS guide for the dashboard link section in MSPbots welcome screen widgets">
+                                                            </div>
+                                                            <div class="case-study-img-caption">Leads to the dashboards within an app</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame">
+                                                                <img src="/imgs/case-study-imgs/01/11.png" alt="CSS guide for the Tech Support call-to-action section in MSPbots welcome screen widgets">
+                                                            </div>
+                                                            <div class="case-study-img-caption">To immediately call Tech Support</div>
+                                                        </div>
+                                                    </div>                                                         
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <!--Feature #3 END-->
+                                    <!--Feature #4 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 4</div>
+                                            <h6 class="features-title">HTML Widget Templates</h6>
+                                            <p>I built the templates directly into the legacy app because I already had a background in front-end web development. This saved us a lot of time because the templates were ready to use right from the get-go. When I handed over the templates to Glenn, he already used it within the same day.</p>                                               
+                                        </div>
+                                        <div class="feature-display">
                                             <div class="indiv-case-study-img-container">
                                                 <div class="indiv-case-study-img">
-                                                    <img src="/imgs/case-study-imgs/01/14.png" alt="Audit of existing MSPbots welcome screens showing visual inconsistency across the product">
+                                                    <img src="/imgs/case-study-imgs/01/12.png" alt="HTML widget template built inside the MSPbots Widget Builder using its WYSIWYG HTML editor">
+                                                </div>                                                   
+                                                <div class="case-study-img-caption">Chart type used to build this was the HTML Widget in where a separate pop-up modal opens containg a WYSIWYG HTML builder. I had to go back and forth to see how the layout design was slowly coming together.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Feature #4 END-->
+                                    <!--Feature #5 START-->
+                                    <div class="feature-block-end">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 5</div>
+                                            <h6 class="features-title">Marketing Site as Visual Bridge</h6>
+                                            <p>I used the marketing site’s existing visual style as the reference point for the PDF guidelines because there were no updated company-level brand guidelines. 
+                                            <br><br>
+                                            This connected the Welcome Screens to the most publicly visible expression of the brand at the time; creating visual coherence across touch points without requiring a formal brand system to exist first.</p>                                               
+                                        </div>
+                                        <div class="feature-display">
+                                            <div class="indiv-case-study-img-container">
+                                                <div class="indiv-case-study-img">
+                                                    <img src="/imgs/case-study-imgs/01/13.png" alt="MSPbots marketing site in its space-themed era, used as the visual reference for welcome screen design guidelines">
                                                 </div>                                                
-                                                <div class="case-study-img-caption">Collected screenshots of how majority of the Welcome Screens looked like</div>
+                                                <div class="case-study-img-caption">Back when the marketing site was <i>"space-themed"</i></div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!--Feature #5 END-->            
                                 </div>
-                                <!--Key Insights-->
-                                <div class="block v-stack space-5" id="key-insights">
-                                    <div class="v-stack space-5">
-                                        <h5>Key Insights</h5>
-                                        <div class="insight-accordion" data-insight-accordion>
-                                            <div class="insight-accordion-item is-open">
-                                                <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
-                                                <div class="v-stack w-100 gap-3">
-                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
-                                                        <p><span class="situation-bold">Because</span> the existing screens had no shared visual standard... <span class="situation-bold">it led to</span> the guideline needing to be prescriptive rather than flexible.</p>
-                                                        <div class="insight-chevron">
-                                                            <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                        </div>
-                                                    </button>
-                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
-                                                        <div class="my-insight-title">My Insight</div>
-                                                        <p>Adding a Do’s and Don’ts format would remove design ambiguity.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="insight-accordion-item">
-                                                <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
-                                                <div class="v-stack w-100 gap-3">
-                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
-                                                        <p><span class="situation-bold">Because</span> no brand guideline existed... <span class="situation-bold">it led to</span> the marketing site becoming the most defensible visual anchor.</p>
-                                                        <div class="insight-chevron">
-                                                            <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                        </div>
-                                                    </button>
-                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
-                                                        <div class="my-insight-title">My Insight</div>
-                                                        <p>Connecting the Welcome Screens to the marketing site was my opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="insight-accordion-item">
-                                                <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
-                                                <div class="v-stack w-100 gap-3">
-                                                    <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
-                                                        <p><span class="situation-bold">Because</span> the scope expanded mid-project... <span class="situation-bold">it led to</span> the output type deserving to be questioned.</p>
-                                                        <div class="insight-chevron">
-                                                            <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                        </div>
-                                                    </button>
-                                                    <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
-                                                        <div class="my-insight-title">My Insight</div>
-                                                        <p>On top of the scope additions, it made me realize that this project should have been a web-based format from the start. A guideline website would have served the Asset Team’s actual usage patterns better than a static PDF file.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                            </div>
+                            <!--Research & Discovery-->
+                            <div class="block v-stack space-5" id="research-discovery">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Research & Discovery</h5>
+                                        <p>Formal research was not conducted. The primary discovery input was a kick-off meeting with King Moya. During the meeting, he walked through the existing Welcome Screens that were currently live in the app. Seeing the existing Welcome Screens made the problem really obvious, no two screens shared a consistent visual language(fonts, colors, layout structures, and information density). 
+                                        <br><br>
+                                        With no external benchmarks and no user interviews, the audit of existing screens served as both the research phase and the brief. </p>
                                     </div>
-                                </div>
-                                <!--Design Iterations-->
-                                <div class="block v-stack space-5" id="design-iterations">
-                                    <div class="v-stack space-5">
-                                        <div>
-                                            <h5>Design Iterations</h5>
-                                        </div> 
-                                        <div class="design-iteration-accordion" data-design-iteration-accordion>
-                                            <div class="design-iteration-accordion-item is-open">
-                                                <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
-                                                    <div>
-                                                        <div class="iteration-title">Iteration 1</div>
-                                                        <p>From Over-Written to Concise</p>
-                                                    </div>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                    </div>
-                                                </button>
-                                                <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
-                                                    <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify it.</p>
-                                                </div>
-                                            </div>
-                                            <div class="design-iteration-accordion-item">
-                                                <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
-                                                    <div>
-                                                        <div class="iteration-title">Iteration 2</div>
-                                                        <p>Responsive Breakpoint Section Added</p>
-                                                    </div>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                    </div>
-                                                </button>
-                                                <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
-                                                    <p>King raised a requirement mid-project that hadn’t been scoped initially: layout and typographic guidance across desktop screen sizes(specifically 1440px and 1280px).</p>
-                                                </div>
-                                            </div>
-                                            <div class="design-iteration-accordion-item">
-                                                <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
-                                                    <div>
-                                                        <div class="iteration-title">Iteration 3</div>
-                                                        <p>Pivot from Documenting HTML to Building It</p>
-                                                    </div>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                    </div>
-                                                </button>
-                                                <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
-                                                    <p>Glenn’s request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly in the Widget Builder.<br><br>
-                                                    <b>The tradeoff:</b> the code was never formally added to the PDF, leaving a documented gap in the written guideline.</p>
-                                                </div>
-                                            </div>                                           
+                                    <div>
+                                        <div class="indiv-case-study-img-container">
+                                            <div class="indiv-case-study-img">
+                                                <img src="/imgs/case-study-imgs/01/14.png" alt="Audit of existing MSPbots welcome screens showing visual inconsistency across the product">
+                                            </div>                                                
+                                            <div class="case-study-img-caption">Collected screenshots of how majority of the Welcome Screens looked like</div>
                                         </div>
-                                        <p>CTA banner of Extended Scope</p>
                                     </div>
                                 </div>
                             </div>
-                            <!--Case Study Content END-->
+                            <!--Key Insights-->
+                            <div class="block v-stack space-5" id="key-insights">
+                                <div class="v-stack space-5">
+                                    <h5>Key Insights</h5>
+                                    <div class="insight-accordion" data-insight-accordion>
+                                        <div class="insight-accordion-item is-open">
+                                            <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                    <p><span class="situation-bold">Because</span> the existing screens had no shared visual standard... <span class="situation-bold">it led to</span> the guideline needing to be prescriptive rather than flexible.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>Adding a Do’s and Don’ts format would remove design ambiguity.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
+                                                    <p><span class="situation-bold">Because</span> no brand guideline existed... <span class="situation-bold">it led to</span> the marketing site becoming the most defensible visual anchor.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>Connecting the Welcome Screens to the marketing site was my opportunity to create coherence across two surfaces that had never been visually aligned before.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
+                                                    <p><span class="situation-bold">Because</span> the scope expanded mid-project... <span class="situation-bold">it led to</span> the output type deserving to be questioned.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>On top of the scope additions, it made me realize that this project should have been a web-based format from the start. A guideline website would have served the Asset Team’s actual usage patterns better than a static PDF file.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Design Iterations-->
+                            <div class="block v-stack space-5" id="design-iterations">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Design Iterations</h5>
+                                    </div> 
+                                    <div class="design-iteration-accordion" data-design-iteration-accordion>
+                                        <div class="design-iteration-accordion-item is-open">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 1</div>
+                                                    <p>From Over-Written to Concise</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
+                                                <p>The first draft leaned heavily on written explanation. My instinct was to document thoroughly and anticipate every edge case in prose. My manager reviewed it and directed me to simplify it.</p>
+                                            </div>
+                                        </div>
+                                        <div class="design-iteration-accordion-item">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 2</div>
+                                                    <p>Responsive Breakpoint Section Added</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
+                                                <p>King raised a requirement mid-project that hadn’t been scoped initially: layout and typographic guidance across desktop screen sizes(specifically 1440px and 1280px).</p>
+                                            </div>
+                                        </div>
+                                        <div class="design-iteration-accordion-item">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 3</div>
+                                                    <p>Pivot from Documenting HTML to Building It</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
+                                                <p>Glenn’s request for copy-paste HTML code started as a documentation task. Rather than writing instructions for how to build the widgets, I built them directly in the Widget Builder.<br><br>
+                                                <b>The tradeoff:</b> the code was never formally added to the PDF, leaving a documented gap in the written guideline.</p>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                    <p>CTA banner of Extended Scope</p>
+                                </div>
+                            </div>
                         </div>
+                        <!--Case Study Content END-->
                     </div>
                 </div>
 
@@ -794,12 +802,12 @@
                 <div class="section-container ending-case">
                     <!--Reflection START-->
                     <div class="row">
-                        <div class="col-2">
-                            <img src="/imgs/ty-badge.svg" alt="Illustrated thank-you bunny badge">
+                        <div class="col-lg-2 col-md-12 text-md-center text-sm-start mb-4">
+                            <img class="ty-bunny-badge" src="/imgs/ty-badge.svg" alt="Illustrated thank-you bunny badge">
                         </div>
-                        <div class="col-10">
+                        <div class="col-lg-10 col-md-12">
                             <div class="v-stack space-5">
-                                <h5>Reflection</h5>
+                                <h5 class="text-lg-start text-md-center">Reflection</h5>
                                 <div class="reflection-accordion" data-reflection-accordion>
                                     <div class="reflection-accordion-item">
                                         <button class="reflection-header" type="button" id="reflection-trigger-1" aria-expanded="false" aria-controls="reflection-panel-1">
@@ -871,11 +879,12 @@
                                         <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html">Read More</a>
                                     </div>
                                     <div class="other-case-study-card">
-                                        <img class="other-case-study-img" src="/imgs/featured-imgs/square-featured-img-2.png" alt="">
-                                        <span class="pill pill-internal">Internal Documentation</span>
+                                        <img class="other-case-study-img" src="/imgs/featured-imgs/square-featured-img-4.png" alt="">
                                         <span class="pill pill-tech">AI & Technology</span>
-                                        <h6>Case Study Title</h6>
-                                        <a href="#">Read More</a>
+                                        <span class="pill pill-mobile">Mobile App</span>
+                                        <span class="pill pill-health">Health & Wellness</span>
+                                        <h6>The Duck Stops Here: Designing Kuushy’s Posture-Coaching App</h6>
+                                        <a href="designing-kuushys-posture-coaching-app.html">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -917,6 +926,7 @@
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/script.js"></script>
+        <script src="/breadcrumb.js"></script>
         <script src="/mobile-menu-toggle.js"></script>
 
         <!--Case Study JS-->

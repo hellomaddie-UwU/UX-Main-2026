@@ -88,6 +88,30 @@
     box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
 }
 
+.reveal-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-card:nth-child(1) { transition-delay: 0s; }
+.reveal-card:nth-child(2) { transition-delay: 0.12s; }
+.reveal-card:nth-child(3) { transition-delay: 0.24s; }
+.reveal-card:nth-child(4) { transition-delay: 0.36s; }
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-card {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
 .cs2-slider__controls {
     display: flex;
     gap: var(--space-2);
@@ -139,6 +163,23 @@
     align-self: flex-start;
 }
 
+.form-container {
+    position: relative;
+    z-index: 2;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.contact-info {
+    width: fit-content;
+    margin-bottom: var(--space-6);
+}
+
+.newsletter-modal {
+    float: right;
+    width: 80%;
+}
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -187,16 +228,45 @@
 
     .home-orange-gradient {margin-top: 300px;}
 
-    .featured-card-thumbnail {
-        height: 450px;
-    }
     .suzzie-pic {height: 150px;}
 
     .profile-pic {height: 300px;}
+
+    .form-container {
+        padding-left: 84px;
+        padding-right: 84px;
+    }
+
+    .contact-info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newsletter-modal {
+        width: 100%;
+        float: none;
+    }
+
+    .row.my-5 {
+        flex-direction: column;
+        gap: var(--space-6);
+    }
 }
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
     .wavy-speech {margin-left: 0px; margin-right: 0px; width: 100%;}
+
+    .form-container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .row.mb-2 {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .contact-info {width: 100%;}
 }
 /*========================================================================*/

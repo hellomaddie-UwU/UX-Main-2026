@@ -37,6 +37,8 @@
     line-height: 38px;
 }
 
+.case-study-deliverables {margin-top: 0px;}
+
 .toc-col {
     position: sticky;
     top: 80px;
@@ -114,6 +116,8 @@
 }
 
 .block-table .thead {font-weight: 600;}
+
+.block-table-col {padding-top: 0px;}
 
 .feature-block, .feature-block-end, .discovery-block {
     display: flex;
@@ -504,6 +508,8 @@ margin-top: var(--space-3);
     box-shadow: 8px 2px 20px 0 rgba(255, 194, 155, 0.25) inset;
 }
 
+.ty-bunny-badge {height: 160px; width: auto;}
+
 .other-case-study-img {
     width: 100%;
     height: auto;
@@ -525,6 +531,276 @@ margin-top: var(--space-3);
 }
 /*Feature Gallery END*/
 
+/* Case Study Image Lightbox START */
+.cs-carousel__track img,
+.indiv-case-study-img img,
+.discovery-accordion-panel img,
+.iteration-content img {
+    cursor: zoom-in;
+}
+
+.cs-lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    padding: 24px;
+}
+
+.cs-lightbox-overlay.is-open {
+    display: grid;
+    place-items: center;
+}
+
+/*Darkened backdrop -- a sibling behind the dialog, not a wrapper, so opacity/blend
+never gets applied to (and leak into) the opaque image/close button sitting on top of it*/
+.cs-lightbox-backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: var(--surface-dark);
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+.cs-lightbox-dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cs-lightbox-image {
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.cs-lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.cs-lightbox-close img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cs-lightbox-close:hover,
+.cs-lightbox-close:focus-visible {
+    transform: scale(1.05);
+    outline: none;
+}
+/* Case Study Image Lightbox END */
+
+/* Feature Modal START */
+/*Overlay + backdrop are the shared .cs-lightbox-overlay / .cs-lightbox-backdrop from above*/
+.feature-link {
+    cursor: pointer;
+}
+
+.feature-modal-dialog {
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: stretch;
+    width: 1136px;
+    height: 646px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-modal-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    width: 440px;
+    flex-shrink: 0;
+    height: 100%;
+    padding: var(--space-7);
+}
+
+.feature-modal-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-modal-eyebrow {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    color: var(--clairvoyant-600);
+    margin-bottom: 0;
+}
+
+.feature-modal-title {
+    margin-bottom: 0;
+}
+
+.feature-modal-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    padding-right: var(--space-3);
+    scrollbar-width: thin;
+    scrollbar-color: #717BBC #EAECF5;
+}
+
+.feature-modal-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.feature-modal-scroll::-webkit-scrollbar-track {
+    background-color: #EAECF5;
+    border-radius: 99px;
+}
+
+.feature-modal-scroll::-webkit-scrollbar-thumb {
+    background-color: #717BBC;
+    border-radius: 99px;
+}
+
+.feature-modal-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.feature-modal-block h6,
+.feature-modal-block p {
+    margin-bottom: 0;
+}
+
+.feature-modal-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 100%;
+}
+
+.feature-modal-image-wrap {
+    flex: 1 1 auto;
+    min-height: 0;
+    position: relative;
+    background-color: var(--clairvoyant-50);
+    border-top-right-radius: 12px;
+    box-shadow: inset 0 0 10px 0 rgba(113, 30, 138, 0.3);
+    overflow: hidden;
+}
+
+.feature-modal-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.2s ease;
+}
+
+.feature-modal-close img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-modal-close:hover,
+.feature-modal-close:focus-visible {
+    transform: scale(1.05);
+    outline: none;
+}
+
+.feature-modal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-5);
+    flex-shrink: 0;
+}
+
+.feature-modal-prev,
+.feature-modal-next {
+    width: 58px;
+    height: 38px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.feature-modal-prev img,
+.feature-modal-next img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-modal-prev:hover,
+.feature-modal-prev:focus-visible,
+.feature-modal-next:hover,
+.feature-modal-next:focus-visible {
+    transform: scale(1.05);
+    outline: none;
+}
+
+.feature-modal-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.feature-modal-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background-color: var(--clairvoyant-200);
+    flex-shrink: 0;
+}
+
+.feature-modal-dots .dot.is-active {
+    background-color: var(--clairvoyant-600);
+}
+/* Feature Modal END */
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -539,14 +815,16 @@ margin-top: var(--space-3);
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
+    .case-study-featured-wrap {height: auto;}
+
     .toc-col {display: none;}
 
     .case-study-container > .container {width: 100%;}
 
     .case-study-content {
         width: 100%;
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .mobile-table-of-contents  {
@@ -564,10 +842,7 @@ margin-top: var(--space-3);
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    .case-study-content {
-        padding-left: 0%;
-        padding-right: 0%;
-    }
+    .case-study-deliverables {margin-top: 24px;}
     
     .progress-section {
         gap: 8px;
@@ -581,10 +856,14 @@ margin-top: var(--space-3);
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .case-study-featured-wrap {height: auto;}
+
     .case-study-content {
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
+
+    .block-table-col {padding-top: 24px;}
 
     .compare {
         height: 280px;
@@ -599,67 +878,3 @@ margin-top: var(--space-3);
     }
 }
 /*========================================================================*/
-
-/* Case Study Image Lightbox START */
-.cs-carousel__track img,
-.indiv-case-study-img img,
-.discovery-accordion-panel img,
-.iteration-content img {
-    cursor: zoom-in;
-}
-
-.cs-lightbox-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    z-index: 99;
-    background-color: rgba(20, 6, 28, 0.86);
-    padding: 24px;
-}
-
-.cs-lightbox-overlay.is-open {
-    display: grid;
-    place-items: center;
-}
-
-.cs-lightbox-dialog {
-    max-width: 90vw;
-    max-height: 90vh;
-    line-height: 0;
-}
-
-.cs-lightbox-image {
-    display: block;
-    max-width: 90vw;
-    max-height: 90vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 12px;
-}
-
-.cs-lightbox-close {
-    position: fixed;
-    top: 24px;
-    right: 24px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 999px;
-    background-color: var(--clairvoyant-600);
-    color: white;
-    cursor: pointer;
-    font-size: 26px;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s ease;
-}
-
-.cs-lightbox-close:hover,
-.cs-lightbox-close:focus-visible {
-    background-color: #8722A9;
-    outline: none;
-}
-/* Case Study Image Lightbox END */
