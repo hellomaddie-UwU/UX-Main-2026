@@ -86,30 +86,6 @@
     margin-right: auto;
 }
 
-.current-passion-prj-thumbnail-container {
-    width: 100%;
-}
-
-.current-passion-prj-thumbnail {
-    position: relative;
-    border-radius: var(--space-3);
-    overflow: hidden;
-}
-
-.current-passion-prj-thumbnail::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    box-shadow: 0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
-}
-
-.current-passion-prj-thumbnail img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .featured-card-thumbnail {
     width: 100%;
     height: auto;
