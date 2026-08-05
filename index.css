@@ -3,7 +3,14 @@
     background-repeat: repeat;
 }
 
+.home-hero-heart {
+    font-size: 47px; 
+    margin-top: -40px; 
+    margin-left: 8px;
+}
+
 .home-pink-gradient {
+    display: block;
     position: absolute;
     width: 60%;
     top: 0; left: 0; margin-top: -20px; margin-left: -20px; z-index: 0;
@@ -18,6 +25,7 @@
 }
 
 .home-purple-gradient {
+    display: block;
     position:absolute;
     right: 0;
     z-index: 0;
@@ -76,6 +84,30 @@
     padding-bottom: var(--space-5);
     margin-left: auto;
     margin-right: auto;
+}
+
+.current-passion-prj-thumbnail-container {
+    width: 100%;
+}
+
+.current-passion-prj-thumbnail {
+    position: relative;
+    border-radius: var(--space-3);
+    overflow: hidden;
+}
+
+.current-passion-prj-thumbnail::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    box-shadow: 0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
+}
+
+.current-passion-prj-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .featured-card-thumbnail {
@@ -175,6 +207,10 @@
     margin-bottom: var(--space-6);
 }
 
+.contact-info-desktop {display: block;}
+
+.contact-info-mobile {display: none;}
+
 .newsletter-modal {
     float: right;
     width: 80%;
@@ -220,11 +256,7 @@
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    .home-pink-gradient {
-    width: 100%;
-    margin-top: 40px;
-    margin-left: -170px;
-}
+    .home-pink-gradient {display: none;}
 
     .home-orange-gradient {margin-top: 300px;}
 
@@ -232,14 +264,15 @@
 
     .profile-pic {height: 300px;}
 
+    .home-purple-gradient {display: none;}
+
     .form-container {
         padding-left: 84px;
         padding-right: 84px;
     }
 
     .contact-info {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 32px auto;
     }
 
     .newsletter-modal {
@@ -255,6 +288,8 @@
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .home-hero-heart {margin-top: -29px;}
+
     .wavy-speech {margin-left: 0px; margin-right: 0px; width: 100%;}
 
     .form-container {
@@ -268,5 +303,9 @@
     }
 
     .contact-info {width: 100%;}
+
+    .contact-info-desktop {display: none;}
+
+    .contact-info-mobile {display: block;}
 }
 /*========================================================================*/
