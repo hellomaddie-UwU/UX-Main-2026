@@ -1,5 +1,5 @@
 .case-study-title {
-    color: var(--Text-Header, #293056);
+    color: var(--text-header, #293056);
     font-size: 47px;
     font-weight: 500;
     line-height: 60px;
@@ -31,7 +31,7 @@
 }
 
 .case-study-excerpt {
-    color: var(--Text-Body, #3E4784);
+    color: var(--text-body, #3E4784);
     font-size: 26px;
     font-weight: 400;
     line-height: 38px;
@@ -46,7 +46,7 @@
 }
 
 .table-of-contents {
-    color: var(--Text-Header, #293056);
+    color: var(--text-header, #293056);
     font-weight: 600;
     margin-bottom: 12px;
     position: relative;
@@ -88,6 +88,8 @@
 .block h5, .ending-case h5 {
     font-weight: 500;
 }
+
+.block li {color: var(--text-body);}
 
 .ending-case h5 {
     color: var(--clairvoyant-500);
@@ -836,7 +838,7 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .mobile-table-of-contents .dropdown, .mobile-table-of-contents .dropdown-toggle, .mobile-table-of-contents .dropdown-menu {
         width: 100%;
-        color: var(--Text-Body);
+        color: var(--text-body);
     }
 }
 
