@@ -91,6 +91,17 @@
 
 .block li {color: var(--text-body);}
 
+.impact-item {
+    display: flex;
+    gap: var(--space-3);
+    align-items: start;
+}
+
+.insight-icon, .r-and-d-icon {
+    display: block;
+    margin-top: var(--space-1);
+}
+
 .ending-case h5 {
     color: var(--clairvoyant-500);
 }
@@ -419,7 +430,11 @@ margin-top: var(--space-3);
 
 .reflection-header h6 {font-weight: 500;}
 
-.reflection-content p {font-weight: 300; line-height: 28px;}
+.reflection-content p {
+    font-weight: 300; 
+    line-height: 28px; 
+    margin-top: 8px;
+}
 
 .insight-accordion-header:focus-visible, .iteration-header:focus-visible, .reflection-header:focus-visible, .discovery-accordion-header:focus-visible {
     outline: 2px solid var(--clairvoyant-500);
@@ -867,6 +882,14 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .block-table-col {padding-top: 24px;}
 
+    .impact-item {
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .insight-icon, .r-and-d-icon {display: none;}
+
     .compare {
         height: 280px;
     }
@@ -877,6 +900,14 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .other-case-study-card {
         width: 100%;
+        margin-bottom: 40px;
     }
+
+    .ending-case h6 {
+        margin-top: 4px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
 }
 /*========================================================================*/

@@ -24,6 +24,13 @@ Table of Contents:
     background-color: #D17FF3;
 }
 
+.breadcrumb-divider {
+        width: 1px;
+        height: 20px;
+        background-color: var(--razzmatazz-400);
+        rotate: 25deg;
+    }
+
 /*Dots*/
 .orange-dot {
     height: 8px;
@@ -1415,7 +1422,12 @@ Responsive Settings section at the bottom of this file*/
         display: block;
     }
 
-    .site-breadcrumb .breadcrumb-divider {
+    .breadcrumb-divider {
+        height: 100%;
+        margin-left: 4px;
+    }
+
+    .site-breadcrumb {
         align-self: stretch;
         width: auto;
     }
