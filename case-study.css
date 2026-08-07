@@ -257,7 +257,8 @@ margin-top: var(--space-3);
     box-shadow: 0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
 }
 
-.indiv-case-study-img img {
+.indiv-case-study-img img,
+.indiv-case-study-img video {
     display: block;
     width: 100%;
     height: auto;
