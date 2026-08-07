@@ -1424,7 +1424,8 @@ Responsive Settings section at the bottom of this file*/
 
     .breadcrumb-divider {
         height: 100%;
-        margin-left: 4px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     .site-breadcrumb {

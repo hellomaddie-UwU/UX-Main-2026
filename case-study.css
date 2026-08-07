@@ -91,7 +91,7 @@
 
 .block li {color: var(--text-body);}
 
-.impact-item {
+.impact-item, .r-and-d-item {
     display: flex;
     gap: var(--space-3);
     align-items: start;
@@ -241,6 +241,8 @@ margin-top: var(--space-3);
     width: 100%;
 }
 
+.indiv-2-col-space {margin-bottom: 0px;}
+
 .indiv-case-study-img {
     position: relative;
     border-radius: 12px;
@@ -283,7 +285,7 @@ margin-top: var(--space-3);
     width: 100%;
     height: 570px;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: 0 0 10px 0 rgba(71, 5, 91, 0.811) inset;
 }
 
@@ -865,6 +867,10 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
         gap: 8px;
     }
 
+    .indiv-case-study-img, .compare, .case-study-featured-wrap {border-radius: 10px;}
+
+    .compare {height: 460px;}
+
     .progress-label {
         min-width: 40px;
         font-size: 12px;
@@ -882,7 +888,9 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .block-table-col {padding-top: 24px;}
 
-    .impact-item {
+    .indiv-2-col-space {margin-bottom: 32px;}
+
+    .impact-item, .r-and-d-item {
         flex-direction: column;
         gap: 4px;
         margin-bottom: 8px;
@@ -891,7 +899,7 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
     .insight-icon, .r-and-d-icon {display: none;}
 
     .compare {
-        height: 280px;
+        height: 310px;
     }
 
     .other-case-study-cards {
