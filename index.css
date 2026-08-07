@@ -3,7 +3,14 @@
     background-repeat: repeat;
 }
 
+.home-hero-heart {
+    font-size: 47px; 
+    margin-top: -40px; 
+    margin-left: 8px;
+}
+
 .home-pink-gradient {
+    display: block;
     position: absolute;
     width: 60%;
     top: 0; left: 0; margin-top: -20px; margin-left: -20px; z-index: 0;
@@ -18,6 +25,7 @@
 }
 
 .home-purple-gradient {
+    display: block;
     position:absolute;
     right: 0;
     z-index: 0;
@@ -64,9 +72,14 @@
 }
 
 .wavy-text {
-    margin-left: 80px; 
-    width: 100%; 
+    margin-left: 92px;
+    width: 100%;
     margin-top: 80px;
+}
+
+#wavy-text-lottie {
+    aspect-ratio: 1920 / 300;
+    width: 93%;
 }
 
 .wavy-speech { 
@@ -130,39 +143,6 @@
     background-position: right;
 }
 
-.testimonials-row {
-    display: flex;
-    align-items: stretch;
-    gap: var(--space-5);
-    margin-top: var(--space-5);
-}
-
-.testimonial-card {
-    flex: 1 1 0;
-    display: flex;
-    position: relative;
-    z-index: 0;
-    background-color: white;
-}
-
-.testimonial-card .selection-content {
-    display: flex;
-    height: 100%;
-}
-
-.testimonial-card-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: var(--space-4);
-    padding: var(--space-5);
-}
-
-.testimonial-card-content img {
-    align-self: flex-start;
-}
-
 .form-container {
     position: relative;
     z-index: 2;
@@ -174,6 +154,10 @@
     width: fit-content;
     margin-bottom: var(--space-6);
 }
+
+.contact-info-desktop {display: block;}
+
+.contact-info-mobile {display: none;}
 
 .newsletter-modal {
     float: right;
@@ -213,18 +197,15 @@
 
     .wavy-text {margin-left: 0px;}
 
-    .testimonials-row {
-        flex-direction: column;
+    #wavy-text-lottie {
+        width: 120%;
+        margin-left: -7.5%;
     }
 }
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    .home-pink-gradient {
-    width: 100%;
-    margin-top: 40px;
-    margin-left: -170px;
-}
+    .home-pink-gradient {display: none;}
 
     .home-orange-gradient {margin-top: 300px;}
 
@@ -232,14 +213,19 @@
 
     .profile-pic {height: 300px;}
 
+    #wavy-text-lottie {width: 150%;}
+
+    .wavy-speech {width: 90%;}
+
+    .home-purple-gradient {display: none;}
+
     .form-container {
         padding-left: 84px;
         padding-right: 84px;
     }
 
     .contact-info {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 32px auto;
     }
 
     .newsletter-modal {
@@ -255,6 +241,10 @@
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .home-hero-heart {margin-top: -29px;}
+
+    #wavy-text-lottie {width: 200%;}
+
     .wavy-speech {margin-left: 0px; margin-right: 0px; width: 100%;}
 
     .form-container {
@@ -268,5 +258,9 @@
     }
 
     .contact-info {width: 100%;}
+
+    .contact-info-desktop {display: none;}
+
+    .contact-info-mobile {display: block;}
 }
 /*========================================================================*/

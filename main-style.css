@@ -308,6 +308,21 @@ nav {z-index: 10;}
     padding: 40px 5% 170px 5%;
 }
 
+.testimonials-row {
+    display: flex;
+    align-items: stretch;
+    gap: var(--space-5);
+    margin-top: var(--space-5);
+}
+
+.testimonial-card {
+    flex: 1 1 0;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    background-color: white;
+}
+
 .gallery-wrapper {
     display: flex;
     gap: var(--space-4);
@@ -470,6 +485,14 @@ footer {
     width: 50%;
     z-index: 0;
     margin-top: -40px;
+}
+
+.flower-divider {
+    width: 100%;
+    height: 52px;
+    background-image: url(imgs/flower-divider.svg);
+    background-repeat: repeat-x;
+    background-position: left center;
 }
 
 
@@ -759,6 +782,10 @@ input:user-invalid {
         gap: 12px;
     }
 
+    .testimonials-row {
+        flex-direction: column;
+    }
+
     .newsletter-copy {width: 50%;}
 
     .newsletter-form-col {width: 50%;}
@@ -1045,6 +1072,11 @@ input:user-invalid {
 
     .mobile-menu-overlay.is-open {
         display: block;
+    }
+
+    .display-section-text, .display-text {
+        font-size: 64px;
+        line-height: 59px;
     }
 
     .end {

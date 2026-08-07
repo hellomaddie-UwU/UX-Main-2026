@@ -1,5 +1,5 @@
 .case-study-title {
-    color: var(--Text-Header, #293056);
+    color: var(--text-header, #293056);
     font-size: 47px;
     font-weight: 500;
     line-height: 60px;
@@ -31,7 +31,7 @@
 }
 
 .case-study-excerpt {
-    color: var(--Text-Body, #3E4784);
+    color: var(--text-body, #3E4784);
     font-size: 26px;
     font-weight: 400;
     line-height: 38px;
@@ -46,7 +46,7 @@
 }
 
 .table-of-contents {
-    color: var(--Text-Header, #293056);
+    color: var(--text-header, #293056);
     font-weight: 600;
     margin-bottom: 12px;
     position: relative;
@@ -87,6 +87,19 @@
 
 .block h5, .ending-case h5 {
     font-weight: 500;
+}
+
+.block li {color: var(--text-body);}
+
+.impact-item, .r-and-d-item {
+    display: flex;
+    gap: var(--space-3);
+    align-items: start;
+}
+
+.insight-icon, .r-and-d-icon {
+    display: block;
+    margin-top: var(--space-1);
 }
 
 .ending-case h5 {
@@ -228,6 +241,8 @@ margin-top: var(--space-3);
     width: 100%;
 }
 
+.indiv-2-col-space {margin-bottom: 0px;}
+
 .indiv-case-study-img {
     position: relative;
     border-radius: 12px;
@@ -242,7 +257,8 @@ margin-top: var(--space-3);
     box-shadow: 0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
 }
 
-.indiv-case-study-img img {
+.indiv-case-study-img img,
+.indiv-case-study-img video {
     display: block;
     width: 100%;
     height: auto;
@@ -270,7 +286,7 @@ margin-top: var(--space-3);
     width: 100%;
     height: 570px;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 12px;
     box-shadow: 0 0 10px 0 rgba(71, 5, 91, 0.811) inset;
 }
 
@@ -417,7 +433,11 @@ margin-top: var(--space-3);
 
 .reflection-header h6 {font-weight: 500;}
 
-.reflection-content p {font-weight: 300; line-height: 28px;}
+.reflection-content p {
+    font-weight: 300; 
+    line-height: 28px; 
+    margin-top: 8px;
+}
 
 .insight-accordion-header:focus-visible, .iteration-header:focus-visible, .reflection-header:focus-visible, .discovery-accordion-header:focus-visible {
     outline: 2px solid var(--clairvoyant-500);
@@ -836,7 +856,7 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .mobile-table-of-contents .dropdown, .mobile-table-of-contents .dropdown-toggle, .mobile-table-of-contents .dropdown-menu {
         width: 100%;
-        color: var(--Text-Body);
+        color: var(--text-body);
     }
 }
 
@@ -847,6 +867,10 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
     .progress-section {
         gap: 8px;
     }
+
+    .indiv-case-study-img, .compare, .case-study-featured-wrap {border-radius: 10px;}
+
+    .compare {height: 460px;}
 
     .progress-label {
         min-width: 40px;
@@ -865,8 +889,18 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .block-table-col {padding-top: 24px;}
 
+    .indiv-2-col-space {margin-bottom: 32px;}
+
+    .impact-item, .r-and-d-item {
+        flex-direction: column;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .insight-icon, .r-and-d-icon {display: none;}
+
     .compare {
-        height: 280px;
+        height: 310px;
     }
 
     .other-case-study-cards {
@@ -875,6 +909,14 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 
     .other-case-study-card {
         width: 100%;
+        margin-bottom: 40px;
     }
+
+    .ending-case h6 {
+        margin-top: 4px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
 }
 /*========================================================================*/
