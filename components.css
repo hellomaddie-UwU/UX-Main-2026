@@ -312,56 +312,7 @@ Table of Contents:
 }
 /*Case Study Mobile Slider END*/
 
-/*Testimonial Carousel START*/
-.testimonial-carousel-item {
-    background-color: #FFD5C7;
-}
-
-#testimonialCarousel {
-    margin-bottom: 44px;
-}
-
-#testimonialCarousel .carousel-indicators {
-    bottom: -34px;
-    margin-bottom: 0;
-}
-
-#testimonialCarousel .carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 0;
-    margin: 0 6px;
-    background-color: #d2cde0;
-    opacity: 1;
-}
-
-#testimonialCarousel .carousel-indicators .active {
-    background-color: #bb4de8;
-}
-
-#testimonialCarousel .carousel-control-prev,
-#testimonialCarousel .carousel-control-next {
-    width: 40px;
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
-    opacity: 1;
-}
-
-#testimonialCarousel .carousel-control-prev {
-    left: -52px;
-}
-
-#testimonialCarousel .carousel-control-next {
-    right: -52px;
-}
-
-#testimonialCarousel .carousel-control-prev-icon,
-#testimonialCarousel .carousel-control-next-icon {
-    filter: brightness(0) saturate(100%);
-}
-
+/*Case Study Carousel Buttons START*/
 .cs-carousel__btn-prev, .cs-carousel__btn-next {
     padding: 10px 17px;
     border-radius: 99px;
@@ -375,7 +326,27 @@ Table of Contents:
     border-color: #4B095D;
     stroke: #FBF4FF;
 }
-/*Testimonial Carousel END*/
+/*Case Study Carousel Buttons END*/
+
+/*Testimonial Card START*/
+.testimonial-card .selection-content {
+    display: flex;
+    height: 100%;
+}
+
+.testimonial-card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-5);
+}
+
+.testimonial-card-content img {
+    align-self: flex-start;
+}
+/*Testimonial Card END*/
 
 /*Gallery Placeholder Image START*/
 .placeholder-gallery-img {
@@ -1395,13 +1366,7 @@ Responsive Settings section at the bottom of this file*/
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    #testimonialCarousel .carousel-control-prev {
-        left: -16px;
-    }
-
-    #testimonialCarousel .carousel-control-next {
-        right: -16px;
-    }
+    /*insert code*/
 }
 
 /*Tablet*/ /*md*/
