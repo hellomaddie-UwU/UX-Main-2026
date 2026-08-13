@@ -14,7 +14,8 @@ Table of Contents:
 12. Disabled Nav Item
 13. Custom Cursor
 14. Thumbnail
-15. Newletter Form
+15. Projects
+16. Newletter Form
 */
 
 /*Divider*/
@@ -52,7 +53,7 @@ Table of Contents:
     padding: 0px 12px;
     width: fit-content;
 
-    font-size: 13px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0.26px;
@@ -1385,7 +1386,11 @@ Responsive Settings section at the bottom of this file*/
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    /*insert code*/
+    /* Stopgap until the tablet mockup for the Projects section is ready */
+    .project-thumbnail {
+        flex: 0 0 auto;
+        height: 400px;
+    }
 }
 
 /*Tablet*/ /*md*/
