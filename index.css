@@ -4,38 +4,48 @@
 }
 
 .home-hero-heart {
-    font-size: 47px; 
+    font-size:   47px; 
     margin-top: -40px; 
     margin-left: 8px;
 }
 
 .home-pink-gradient {
-    display: block;
-    position: absolute;
-    width: 60%;
-    top: 0; left: 0; margin-top: -20px; margin-left: -20px; z-index: 0;
+    display:      block;
+    position:     absolute;
+    width:        60%;
+    top:          0; 
+    left:         0; 
+    margin-top:  -20px; 
+    margin-left: -20px; 
+    z-index:      0;
 }
 
 .home-orange-gradient {
-    position: absolute;
-    width: 65%;
-    right: 0; 
-    z-index: 0;
+    position:   absolute;
+    width:      65%;
+    right:      0; 
+    z-index:    0;
     margin-top: 180px;
 }
 
+.home-light-blue-gradient {
+    position: absolute; 
+    left:     80px;
+}
+
 .home-purple-gradient {
-    display: block;
-    position:absolute;
-    right: 0;
-    z-index: 0;
-    width: 60%;
+    display:     block;
+    position:    absolute;
+    right:       0;
+    z-index:     0;
+    width:       60%;
     margin-top: -140px;
 }
 
-.hero-dialog-text h4, .hero-dialog-text h6  {
+.hero-dialog-text h4, 
+.hero-dialog-text h6  {
     font-weight: 400;
-    color: #3E4784;
+    color:     #3E4784;
 }
 
 .hero-dialog-text h4 {line-height: 41px;}
@@ -90,6 +100,10 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.case-study-home-container {
+    border-bottom: 1px solid var(--razzmatazz-400); 
+    border-top:    1px solid var(--razzmatazz-400);}
 
 .featured-card-thumbnail {
     width: 100%;
@@ -179,26 +193,29 @@
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
     .home-pink-gradient {
-    width: 90%;
+    width:        90%;
     margin-left: -170px;
 }
 
     .home-orange-gradient {
-        width: 100%;
+        width:      100%;
         margin-top: 220px;
     }
+
+    .home-light-blue-gradient {left: 0px;}
+
     .profile-pic {
         /* tablet/mobile illustration swaps in here */
-        margin-top: 60px;
-        background-image: url('imgs/Profile_Pic_2026\ 2.png');
-        height: 570px;
+        margin-top:          60px;
+        background-image:    url('imgs/Profile_Pic_2026\ 2.png');
+        height:              570px;
         background-position: 50% 35%;
     }
 
     .wavy-text {margin-left: 0px;}
 
     #wavy-text-lottie {
-        width: 120%;
+        width:        120%;
         margin-left: -7.5%;
     }
 }
@@ -220,13 +237,11 @@
     .home-purple-gradient {display: none;}
 
     .form-container {
-        padding-left: 84px;
+        padding-left:  84px;
         padding-right: 84px;
     }
 
-    .contact-info {
-        margin: 32px auto;
-    }
+    .contact-info {margin: 32px auto;}
 
     .newsletter-modal {
         width: 100%;
@@ -235,7 +250,7 @@
 
     .row.my-5 {
         flex-direction: column;
-        gap: var(--space-6);
+        gap:            var(--space-6);
     }
 }
 
@@ -245,16 +260,19 @@
 
     #wavy-text-lottie {width: 200%;}
 
-    .wavy-speech {margin-left: 0px; margin-right: 0px; width: 100%;}
+    .wavy-speech {
+        margin-left:  0px; 
+        margin-right: 0px; 
+        width:        100%;}
 
     .form-container {
-        padding-left: 0px;
+        padding-left:  0px;
         padding-right: 0px;
     }
 
     .row.mb-2 {
         flex-direction: column;
-        gap: var(--space-2);
+        gap:            var(--space-2);
     }
 
     .contact-info {width: 100%;}

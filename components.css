@@ -724,7 +724,26 @@ Responsive Settings section at the bottom of this file*/
 
 /*Custom Cursor START*/
 .cursor-coming-soon {
-    cursor: url('imgs/coming-soon-badge.svg') 46 46, pointer;
+    position: relative;
+    cursor: none;
+}
+
+.passion-prj-cursor-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 241px;
+    max-width: 70vw;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.15s ease;
+    z-index: 999;
+}
+
+.passion-prj-cursor-card.is-active {
+    opacity: 1;
 }
 /*Custom Cursor END*/
 
