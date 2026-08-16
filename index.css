@@ -246,10 +246,10 @@
 }
 
 .project-modal-left {
-    width:      420px;
+    width:       420px;
     flex-shrink: 0;
-    height:     100%;
-    padding:    var(--space-7) var(--space-5) var(--space-7) var(--space-7);
+    height:      100%;
+    padding:     var(--space-9) var(--space-5) var(--space-9) var(--space-7);
 }
 
 .project-modal-scroll {
@@ -295,21 +295,53 @@
 .project-modal-client {
     display:        flex;
     flex-direction: column;
+    gap:            var(--space-1);
 }
 
-.project-modal-logo,
-.project-modal-clients-label {
-    font-weight:   600;
-    line-height:   28px;
-    margin-bottom: 0;
+.project-modal-logo {
+    display:    block;
+    align-self: flex-start;
+    width:      auto;
+    height:     auto;
+    max-width:  100%;
+    max-height: 40px;
+    object-fit: contain;
 }
 
-.project-modal-logo {color: var(--text-body);}
-
 .project-modal-clients-label {
-    color:           #717BBC;
-    font-size:       14px;
-    text-transform:  uppercase;
+    font-weight:    600;
+    line-height:    28px;
+    margin-bottom:  0;
+    color:          #717BBC;
+    font-size:      14px;
+    text-transform: uppercase;
+}
+
+.project-modal-tools {
+    display:    flex;
+    flex-wrap:  wrap;
+    gap:        var(--space-2);
+    margin:     0;
+    padding:    0;
+    list-style: none;
+}
+
+.project-modal-tools li {
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    width:            52px;
+    height:           52px;
+    padding:          10px;
+    border-radius:    var(--space-2);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52'%3E%3Crect x='0.5' y='0.5' width='51' height='51' rx='7.5' ry='7.5' fill='none' stroke='%23B3B8DB' stroke-width='1' stroke-dasharray='6%2C6'/%3E%3C/svg%3E");
+}
+
+.project-modal-tools img {
+    display:    block;
+    width:      32px;
+    height:     32px;
+    object-fit: contain;
 }
 
 .project-modal-block {
@@ -320,6 +352,7 @@
 .project-modal-block p {margin-bottom: 0;}
 
 .project-modal-context,
+.project-modal-behind,
 .project-modal-results {color: var(--text-body);}
 
 .project-modal-right {

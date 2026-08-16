@@ -11,7 +11,10 @@
             var logoEl = card ? card.querySelector('.project-thumbnail-logo') : null;
             var copyTemplate = card ? card.querySelector('.project-modal-copy') : null;
             var copyContent = copyTemplate ? copyTemplate.content : null;
+            var logoImgEl = copyContent ? copyContent.querySelector('.project-modal-copy-logo') : null;
+            var toolEls = copyContent ? Array.prototype.slice.call(copyContent.querySelectorAll('.project-modal-copy-tools img')) : [];
             var contextEl = copyContent ? copyContent.querySelector('.project-modal-copy-context') : null;
+            var behindEl = copyContent ? copyContent.querySelector('.project-modal-copy-behind') : null;
             var resultsEl = copyContent ? copyContent.querySelector('.project-modal-copy-results') : null;
             var imageEls = copyContent ? Array.prototype.slice.call(copyContent.querySelectorAll('.project-modal-copy-images img')) : [];
 
@@ -19,8 +22,14 @@
                 tagsHTML: tagsEl ? tagsEl.innerHTML : '',
                 title: titleEl ? titleEl.textContent.trim() : '',
                 logo: logoEl ? logoEl.textContent.trim() : '',
-                context: contextEl ? contextEl.textContent.trim() : '',
-                results: resultsEl ? resultsEl.textContent.trim() : '',
+                logoSrc: logoImgEl ? (logoImgEl.getAttribute('src') || '') : '',
+                logoAlt: logoImgEl ? (logoImgEl.getAttribute('alt') || '') : '',
+                tools: toolEls.map(function (img) {
+                    return { src: img.getAttribute('src') || '', alt: img.getAttribute('alt') || '' };
+                }),
+                context: contextEl ? contextEl.innerHTML.trim() : '',
+                behind: behindEl ? behindEl.innerHTML.trim() : '',
+                results: resultsEl ? resultsEl.innerHTML.trim() : '',
                 images: imageEls.map(function (img) {
                     return { src: img.getAttribute('src') || '', alt: img.getAttribute('alt') || '' };
                 })
@@ -33,7 +42,9 @@
         var tagsEl = overlay.querySelector('.project-modal-tags');
         var titleEl = overlay.querySelector('.project-modal-title');
         var logoEl = overlay.querySelector('.project-modal-logo');
+        var toolsEl = overlay.querySelector('.project-modal-tools');
         var contextEl = overlay.querySelector('.project-modal-context');
+        var behindEl = overlay.querySelector('.project-modal-behind');
         var resultsEl = overlay.querySelector('.project-modal-results');
         var imagesEl = overlay.querySelector('.project-modal-images');
 
@@ -48,9 +59,15 @@
 
             tagsEl.innerHTML = project.tagsHTML;
             titleEl.textContent = project.title;
-            logoEl.textContent = project.logo;
-            contextEl.textContent = project.context;
-            resultsEl.textContent = project.results;
+            logoEl.src = project.logoSrc;
+            logoEl.alt = project.logoAlt;
+            contextEl.innerHTML = project.context;
+            behindEl.innerHTML = project.behind;
+            resultsEl.innerHTML = project.results;
+
+            toolsEl.innerHTML = project.tools.map(function (tool) {
+                return '<li><img src="' + tool.src + '" alt="' + tool.alt + '"></li>';
+            }).join('');
 
             imagesEl.innerHTML = project.images.map(function (image) {
                 return '<img class="project-modal-image" src="' + image.src + '" alt="' + image.alt + '">';
