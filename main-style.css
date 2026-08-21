@@ -294,7 +294,7 @@ nav {z-index: 10;}
 .main-page {
     background-image: url(imgs/line\ bg.svg);
     background-repeat: repeat;
-}
+} 
 
 .section-container,
 .section-container-mt-0,
@@ -512,6 +512,20 @@ footer {
     background-image: url(imgs/flower-divider.svg);
     background-repeat: repeat-x;
     background-position: left center;
+}
+
+.tools-dialog {
+    flex: 0 1 380px;
+    max-width: 413px;
+    min-width: 300px;
+    margin-top: var(--space-9);
+}
+
+.intro-tools-connector {
+    align-self: flex-start;
+    margin-top: 70px;
+    width: clamp(70px, 8vw, 120px);
+    height: auto;
 }
 
 
@@ -809,6 +823,10 @@ input:user-invalid {
 
     .testimonials-row,
     .projects-row {flex-direction: column;}
+
+    .intro-tools-connector {display: none;}
+
+    .tools-dialog {margin-top: 0;}
 
     .gallery-wrapper {gap: 12px;}
 

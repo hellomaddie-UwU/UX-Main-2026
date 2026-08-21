@@ -16,6 +16,7 @@ Table of Contents:
 14. Thumbnail
 15. Projects
 16. Newletter Form
+17. Tools Icon Grid
 */
 
 /*Divider*/
@@ -1371,6 +1372,41 @@ Responsive Settings section at the bottom of this file*/
     font-weight: 700;
 }
 /*Newsletter Form END*/
+
+/*Tools Icon Grid START*/
+.tools-group-label {
+    font-weight:   500;
+    font-size:     14px;
+    line-height:   23px;
+    color:         var(--text-header);
+    margin-bottom: 0;
+}
+
+.tools-icon-grid {
+    display:   flex;
+    flex-wrap: wrap;
+    gap:       10px;
+    width:     100%;
+}
+
+.tools-icon {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    width:           68px;
+    height:          68px;
+    padding:         10px;
+    border:          1px dashed #B3B8DB;
+    border-radius:   var(--space-2);
+}
+
+.tools-icon img {
+    max-width:  48px;
+    max-height: 48px;
+    width:      auto;
+    height:     auto;
+}
+/*Tools Icon Grid END*/
 
 /*========================================================================*/
 
