@@ -150,7 +150,9 @@ if (btn && menu) {
         var card = container.querySelector('.passion-prj-cursor-card');
         if (!card) return;
 
-        container.addEventListener('mouseenter', function () {
+        container.addEventListener('mouseenter', function (e) {
+            card.style.left = e.clientX + 'px';
+            card.style.top = e.clientY + 'px';
             card.classList.add('is-active');
         });
 
