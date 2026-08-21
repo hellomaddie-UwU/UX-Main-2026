@@ -16,7 +16,17 @@
             var contextEl = copyContent ? copyContent.querySelector('.project-modal-copy-context') : null;
             var behindEl = copyContent ? copyContent.querySelector('.project-modal-copy-behind') : null;
             var resultsEl = copyContent ? copyContent.querySelector('.project-modal-copy-results') : null;
-            var imageEls = copyContent ? Array.prototype.slice.call(copyContent.querySelectorAll('.project-modal-copy-images img')) : [];
+            var contentEl = copyContent ? copyContent.querySelector('.project-modal-content') : null;
+            var contentItems = contentEl ? Array.prototype.slice.call(contentEl.children).map(function (el) {
+                if (el.tagName === 'IMG') {
+                    return { type: 'image', src: el.getAttribute('src') || '', alt: el.getAttribute('alt') || '' };
+                }
+                var img = el.querySelector('img');
+                if (img) {
+                    return { type: 'image', src: img.getAttribute('src') || '', alt: img.getAttribute('alt') || '' };
+                }
+                return { type: 'label', text: el.textContent.trim() };
+            }) : [];
 
             return {
                 tagsHTML: tagsEl ? tagsEl.innerHTML : '',
@@ -30,9 +40,7 @@
                 context: contextEl ? contextEl.innerHTML.trim() : '',
                 behind: behindEl ? behindEl.innerHTML.trim() : '',
                 results: resultsEl ? resultsEl.innerHTML.trim() : '',
-                images: imageEls.map(function (img) {
-                    return { src: img.getAttribute('src') || '', alt: img.getAttribute('alt') || '' };
-                })
+                content: contentItems
             };
         });
 
@@ -46,7 +54,7 @@
         var contextEl = overlay.querySelector('.project-modal-context');
         var behindEl = overlay.querySelector('.project-modal-behind');
         var resultsEl = overlay.querySelector('.project-modal-results');
-        var imagesEl = overlay.querySelector('.project-modal-images');
+        var contentEl = overlay.querySelector('.project-modal-content');
 
         var activeProjectIndex = 0;
         var activeTrigger = null;
@@ -69,12 +77,15 @@
                 return '<li><img src="' + tool.src + '" alt="' + tool.alt + '"></li>';
             }).join('');
 
-            imagesEl.innerHTML = project.images.map(function (image) {
-                return '<img class="project-modal-image" src="' + image.src + '" alt="' + image.alt + '">';
+            contentEl.innerHTML = project.content.map(function (item) {
+                if (item.type === 'label') {
+                    return '<p class="project-modal-image-label">' + item.text + '</p>';
+                }
+                return '<img class="project-modal-image" src="' + item.src + '" alt="' + item.alt + '">';
             }).join('');
 
             scrollEl.scrollTop = 0;
-            imagesEl.scrollTop = 0;
+            contentEl.scrollTop = 0;
         }
 
         function open(index) {
