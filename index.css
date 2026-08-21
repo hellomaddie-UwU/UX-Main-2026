@@ -430,6 +430,93 @@
 }
 /* Project Modal END */
 
+/* Blog Section START */
+.blog-container {
+    position:          relative;
+    overflow-x:        hidden;
+    background-color:  #390646;
+    padding:           60px 5% 160px 5%;
+}
+
+.blog-container .display-section-text {
+    position: relative;
+    z-index:  2;
+}
+
+.blog-bg-decor {
+    position:       absolute;
+    right:          0;
+    bottom:         0;
+    height:         223px;
+    width:          auto;
+    z-index:        0;
+    pointer-events: none;
+}
+
+.blog-row {
+    position:   relative;
+    z-index:    1;
+    margin-top: var(--space-7);
+}
+
+.blog-secondary-row {margin-top: 44px;}
+
+.blog-card-featured .selection-content {
+    border-color: #FFA1B7;
+    padding:      var(--space-7) var(--space-5);
+    gap:          var(--space-4);
+}
+
+.blog-card-featured p,
+.blog-card-featured h5,
+.blog-card-secondary h6 {color: var(--on-dark-text);}
+
+.blog-card-secondary {height: 100%;}
+
+
+.blog-card-thumbnail {
+    display:           block;
+    width:             100%;
+    object-fit:        cover;
+    border-radius:     var(--space-3);
+    background-color:  var(--clairvoyant-50);
+    box-shadow:        inset 0 0 10px 0 rgba(113, 30, 138, 0.3);
+}
+
+.blog-card-thumbnail-lg {height: 280px;}
+
+.blog-card-secondary .blog-card-thumbnail {aspect-ratio: 318 / 180;}
+
+.blog-card-meta {
+    display:     flex;
+    align-items: center;
+    gap:         var(--space-2);
+    height:      23px;
+}
+
+.blog-card-meta p,
+.blog-card-meta a {
+    color:           var(--clairvoyant-50);
+    font-size:       14px;
+    font-weight:     500;
+    line-height:     23px;
+    margin-bottom:   0;
+    text-decoration: none;
+}
+
+.blog-card-meta a:hover {text-decoration: underline;}
+
+.blog-card-featured .v-stack > a,
+.blog-card-secondary > a {
+    color:           var(--tangerine-400);
+    font-weight:     500;
+    text-decoration: none;
+}
+
+.blog-card-featured .v-stack > a:hover,
+.blog-card-secondary > a:hover {text-decoration: underline;}
+/* Blog Section END */
+
 
 #service-1-info {
     padding-left:  60px;
@@ -521,6 +608,13 @@
     .wavy-speech {width: 90%;}
 
     .home-purple-gradient {display: none;}
+
+    .blog-bg-decor {display: none;}
+
+    .blog-container {
+        padding-left:  4%;
+        padding-right: 4%;
+    }
 
     .form-container {
         padding-left:  84px;

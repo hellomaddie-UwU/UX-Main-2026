@@ -43,6 +43,10 @@ html, body {
     /*Shadows*/
     --text-shadow-color: #FF6D92;
 
+    /*Divider*/
+    --divider:         #D17FF3;
+    --divider-on-dark: #FFA1B7;
+
     /*Color Palette -- can delete this -- */
     --clairvoyant-50:  #FBF4FF;
     --clairvoyant-100: #F6E9FE;
@@ -295,7 +299,8 @@ nav {z-index: 10;}
 .section-container,
 .section-container-mt-0,
 .projects-section,
-.testimonials-container {margin-left: 90px;}
+.testimonials-container,
+.blog-container {margin-left: 90px;}
 
 .section-container {padding: 40px 5% 60px 5%;}
 
@@ -792,7 +797,8 @@ input:user-invalid {
         padding:     0px 4% 60px 4%;
     }
 
-    .projects-section {
+    .projects-section,
+    .blog-container {
         margin-left: 0px;
     }
 

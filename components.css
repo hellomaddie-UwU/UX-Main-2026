@@ -22,7 +22,7 @@ Table of Contents:
 .divider {
     height: 0.5px; 
     width: 100%;
-    background-color: #D17FF3;
+    background-color: var(--divider);
 }
 
 .breadcrumb-divider {
@@ -31,6 +31,12 @@ Table of Contents:
         background-color: var(--razzmatazz-400);
         rotate: 25deg;
     }
+
+.vertical-divider {
+    height: 100%;
+    width: 0.5px;
+    background-color: var(--divider-on-dark);
+}
 
 /*Dots*/
 .orange-dot {
