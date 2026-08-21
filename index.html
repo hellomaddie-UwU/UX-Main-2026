@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-16N40MD9RW"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-16N40MD9RW');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/svg" href="imgs/favicon.svg">
@@ -91,7 +100,19 @@
                 -->
                 <!-- Services END -->
                 
+                <!--
+                <a href="about-me.html">
+                    <div class="nav-item-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9902 6.84775C13.3244 3.7312 8.87901 2.89286 5.53894 5.74668C2.19887 8.60051 1.72864 13.372 4.35161 16.7472C6.53244 19.5535 13.1324 25.4721 15.2955 27.3878C15.5375 27.6021 15.6585 27.7093 15.7996 27.7514C15.9228 27.7881 16.0576 27.7881 16.1808 27.7514C16.3219 27.7093 16.4429 27.6021 16.685 27.3878C18.8481 25.4721 25.448 19.5535 27.6288 16.7472C30.2518 13.372 29.839 8.57049 26.4415 5.74668C23.044 2.92288 18.656 3.7312 15.9902 6.84775Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div class="nav-desktop-text">About Me</div>
+                    </div>
+                </a>
+                -->
+                
                 <!-- Demos START -->
+                <!--
                 <a href="#" class="tooltip-wrap">
                     <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
@@ -101,6 +122,7 @@
                     </div>
                 <span class="tooltip" role="tooltip">Demo Page is still under development.</span>
                 </a>
+                -->
                 <!-- Demos END -->
 
                 <!-- Contacts START -->
@@ -153,10 +175,14 @@
                 <a class="mobile-menu-item" href="case-study-catalogue.html">
                     <p>Case Studies</p>
                 </a>
+                <!--
+                <a class="mobile-menu-item" href="about-me.html">
+                    <p>About Me</p>
+                </a>
                 <a class="mobile-menu-item mobile-menu-item-disabled" href="#" aria-disabled="true" tabindex="-1">
                     <p>Demos</p>
                 </a>
-                <!--
+
                 <div class="mobile-dropdown">
                     <button type="button" class="mobile-menu-item mobile-dropdown-item" id="dropdownBtn">
                         Services
@@ -220,7 +246,7 @@
                                 </div>
                                 <div class="modal-primary-footer surface-dark">
                                     <div class="modal-primary-footer-cta">
-                                        <a href="resume-cv jun 2026.pdf" download>
+                                        <a href="Resume_CV 2026.pdf" download>
                                             <button class="btn-secondary">Download UX Resume</button>
                                         </a>
                                         <a href="#contact">
@@ -272,7 +298,7 @@
 
             <!-- ===== Opening Statement START ===== -->
             <div id="wavy-text-lottie" class="wavy-text"></div>
-            <div class="section-container">
+            <div class="section-container" style="padding-bottom: 200px;">
                 <h5 class="wavy-speech">Tools change and trends eventually get recycled. But taste, craft, and the judgement to know what actually serves people long-term is not something you outsource...
                 <br><br>
                 ✨ It’s something you develop ✨</h5>
@@ -280,22 +306,11 @@
             <!-- ===== Opening Statement END ===== -->
         </div>
 
-        <div class="section-container" style="border-bottom: 1px solid var(--razzmatazz-400); border-top: 1px solid var(--razzmatazz-400);">
-            <!-- ===== Current Passion Project START ===== -->
-            <div class="pb-5">
-                <h2 class="display-section-text">Current<br>Passion Project</h2> 
-                <a href="#" class="cursor-coming-soon">
-                    <div class="current-passion-prj-thumbnail-container">
-                        <div class="current-passion-prj-thumbnail">
-                            <img src="imgs/passion-prj-desktop.png">
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <!-- ===== Current Passion Project END ===== -->
-            
+        <img class="home-light-blue-gradient" src="imgs/light-blue-gradient.png">
+
+        <div class="section-container case-study-home-container">
             <!-- ===== Case Studies START ===== -->
-            <div class="py-5">
+            <div class="pb-5">
                 <h2 class="display-section-text">Case Studies</h2>
                 <!-- Desktop View START-->
                 <div class="v-stack space-10 featured-works-desktop" style="margin-top: 40px;">
@@ -437,9 +452,9 @@
                             <div class="v-stack space-5">
                                 <div>
                                     <div class="h-stack space-2">
+                                        <span class="pill pill-internal">Mobile App</span>
                                         <span class="pill pill-tech">AI & Technology</span>
-                                        <span class="pill pill-health">Health & Wellness</span>
-                                        <span class="pill pill-mobile">Mobile App</span>
+                                        <span class="pill pill-health">Health & Wellness</span>                                     
                                     </div>
                                     <h4 class="w-500">The Duck Stops Here: Designing Kuushys Posture Coaching App</h4>
                                 </div>
@@ -535,9 +550,9 @@
                                 </div>
                                 <div class="v-stack space-2">
                                     <div class="h-stack space-2">
+                                        <span class="pill pill-internal">Mobile App</span>
                                         <span class="pill pill-tech">AI & Technology</span>
-                                        <span class="pill pill-health">Health & Wellness</span>
-                                        <span class="pill pill-mobile">Mobile App</span>
+                                        <span class="pill pill-health">Health & Wellness</span>                                      
                                     </div>
                                     <h4 class="w-500">The Duck Stops Here: Designing Kuushy's Posture-Coaching App</h4>
                                 </div>
@@ -564,7 +579,235 @@
                 </div>-->
             </div>
             <!-- ===== Case Studies END ===== -->
+
+            <!-- ===== Current Passion Project START ===== -->
+            <div class="pb-5">
+                <h2 class="display-section-text">Current<br>Passion Project</h2> 
+                <div class="cursor-coming-soon">
+                    <div class="current-passion-prj-thumbnail-container">
+                        <div class="current-passion-prj-thumbnail">
+                            <img src="imgs/passion-prj-desktop.png">
+                        </div>
+                    </div>
+                    <img src="imgs/coming-soon-cursor.png" class="passion-prj-cursor-card" alt="" aria-hidden="true">
+                </div>
+            </div>
+            <!-- ===== Current Passion Project END ===== -->
         </div>
+
+        <!-- ===== Projects START ===== -->
+        <!--
+        <div class="projects-section">
+            <div class="projects-heading">
+                <h2 class="display-section-text">Other Past Works</h2><br>
+                <h3 class="display-paragraph">A collection of designs created throughout the years</h3>
+            </div>
+            <div class="projects-row">
+                Project 1 START
+                <div class="project-thumbnail">
+                    <img class="project-thumbnail-img" src="imgs/case-study-thumbnail-placeholder.svg" alt="">
+                    <div class="project-thumbnail-content">
+                        <div class="project-thumbnail-tags">
+                            <span class="pill pill-internal">Website</span>
+                            <span class="pill pill-tech">AI & Technology</span>
+                            <span class="pill pill-market">Marketing</span>
+                        </div>
+                        <p class="project-thumbnail-title">MSPbots Product Page Launches</p>
+                        <p class="project-thumbnail-logo">Logo img</p>
+                        <button type="button" class="project-thumbnail-cta">
+                            Learn More
+                            <img src="imgs/light-arrow.svg" alt="" aria-hidden="true">
+                        </button>
+                        <template class="project-modal-copy">
+                            <img class="project-modal-copy-logo" src="imgs/client-logos/mspbots-colored.svg" alt="MSPbots">
+                            <ul class="project-modal-copy-tools">
+                                <li><img src="imgs/figma.svg" alt="Figma"></li>
+                                <li><img src="imgs/webflow.svg" alt="Webflow"></li>
+                            </ul>
+                            <div class="project-modal-copy-context">
+                                <p>MSPbots is an AI-focused analytics company that targets other MSP provides. At the time, the marketing team was understaffed, so they reached out to my team for help in creating and updating the company website.</p>
+                                <br>
+                                <p class="fw-medium">Within the span of 1 year:</p>
+                                <ul>
+                                    <li>4 new pages</li>
+                                    <li>4 updated pages</li>
+                                </ul>
+                                <p>were produced.</p>
+                            </div>
+                            <div class="project-modal-copy-behind">
+                                <p>For each new page that needed to be made, I first had to take note what the current site wasn't answering.</p>
+                                <br>
+                                <p>This included:</p>
+                                <ol>
+                                    <li>What is the product?</li>
+                                    <li>Why even use it?</li>
+                                    <li>What can I expect when using the product? and a quick</li>
+                                    <li>How to set up the product?</li>
+                                </ol>
+                                <p>I then used this approach with all the pages that came my way in order to keep the information uniformed.</p>
+                                <br>
+                                <p>Then midway through the year, the Marketing Team did a rebrand. so I simply followed how the new visuals were in order to stay consistent.</p>
+                            </div>           
+                            <div class="project-modal-copy-results">
+                                <p>Each new page increased profile registration within their respective marketing campaign. Marketing team also reported instead traffic onto the website.</p>
+                            </div>       
+                            <div class="project-modal-content">
+                                <h6>New Pages</h6>
+                                <img src="imgs/project-imgs/1.png" alt="">
+                                <img src="imgs/project-imgs/2.png" alt="">
+                                <img src="imgs/project-imgs/3.png" alt="">
+                                <img src="imgs/project-imgs/4.gif" alt="">
+                                <img src="imgs/project-imgs/5.gif" alt="">
+                                <img src="imgs/project-imgs/6.png" alt="">
+                                <h6>Revamped Pages</h6>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                Project 1 END
+
+                Project 2 START
+                <div class="project-thumbnail">
+                    <img class="project-thumbnail-img" src="imgs/case-study-thumbnail-placeholder.svg" alt="">
+                    <div class="project-thumbnail-content">
+                        <div class="project-thumbnail-tags">
+                            <span class="pill pill-internal">Website</span>
+                            <span class="pill pill-education">Education</span>
+                        </div>
+                        <p class="project-thumbnail-title">Korn Ferry Academy Site Revamp</p>
+                        <p class="project-thumbnail-logo">Logo img</p>
+                        <button type="button" class="project-thumbnail-cta">
+                            Learn More
+                            <img src="imgs/light-arrow.svg" alt="" aria-hidden="true">
+                        </button>
+                        <template class="project-modal-copy">
+                            <img class="project-modal-copy-logo" src="imgs/client-logos/korn-ferry-colored.svg" alt="Korn Ferry Academy">
+                            <ul class="project-modal-copy-tools">
+                                <li><img src="imgs/figma.svg" alt="Figma"></li>
+                                <li><img src="imgs/photoshop.svg" alt="Photoshop"></li>
+                                <li><img src="imgs/elementor.svg" alt="Elementor"></li>
+                            </ul>
+                            <div class="project-modal-copy-context">
+                                <p>Korn Ferry is a private Singapore organization that provides specialized training towards individual professionals and corporations. At the time, I was the sole UX/UI Designer within Webpuppies Digital and they reached out for a website revamp.</p>
+                            </div>
+                            <div class="project-modal-copy-behind">
+                                <p>Initially, their original website was simple and lacked the nessesary information to fully convert new visitors into registered students.</p>
+                                <br>
+                                <p>Because they sent us a detailed website of their brand bible, I mostly prioritized mixing their company visuals with all the go-to intel every course registration website is to be expected.</p>
+                                <br>
+                                <p>Korn Ferry was a very important client, so the CEO was involved in the brainstorming/design initiative as well. We went back and forth with multiple options on the mid-fidelity wireframe and eventually, we came with the layout and templates the representative wanted.</p>
+                            </div>
+                            <div class="project-modal-copy-results">
+                                <p>In the end, we were able to launch the site revamp.</p>
+                            </div>
+                            <div class="project-modal-content">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                Project 2 END
+
+                Project 3 START
+                <div class="project-thumbnail">
+                    <img class="project-thumbnail-img" src="imgs/case-study-thumbnail-placeholder.svg" alt="">
+                    <div class="project-thumbnail-content">
+                        <div class="project-thumbnail-tags">
+                            <span class="pill pill-internal">Software</span>
+                            <span class="pill pill-tech">Robotics</span>                       
+                        </div>
+                        <p class="project-thumbnail-title">Creating MFSG's AMR Control Software</p>
+                        <p class="project-thumbnail-logo">Logo img</p>
+                        <button type="button" class="project-thumbnail-cta">
+                            Learn More
+                            <img src="imgs/light-arrow.svg" alt="" aria-hidden="true">
+                        </button>
+                        <template class="project-modal-copy">
+                            <img class="project-modal-copy-logo" src="imgs/client-logos/MFSG-colored.png" alt="MFSG">
+                            <ul class="project-modal-copy-tools">
+                                <li><img src="imgs/figma.svg" alt="Figma"></li>
+                                <li><img src="imgs/zoom.svg" alt="Zoom"></li>
+                            </ul>
+                            <div class="project-modal-copy-context">
+                                <p>MFSG is a Singapore-based provider of Automated Material Handling Systems (AMHS) to major semiconductor manufacturers.</p>
+                                <br>
+                                <p>They reached out to the IT company I was working under at the time(Webpuppies Digital) and requested that we designed the factory software that manuvers their AMR(Autonomous Mobile Robot) machines.</p></p>
+                            </div>
+                            <div class="project-modal-copy-behind">
+                                <p>Initially we had an orientation from the employees to educate us on how the AMR works and how they wanted their software to function. On the agreement, we start first with the Path Tracking screen and then the other screens followed afterwards.</p>
+                                <br>
+                                <p>While working on the Path Tracking page, I proposed to add in a Trackball indicator as I got inspired by Stock Selling Apps.</p>
+                            </div>
+                            <div class="project-modal-copy-results">
+                                <p>In the end, the client was happy with the screens provided and the task was then moved to the Dev Team(within the company I used to worked at).</p>
+                            </div>                                                  
+                            <div class="project-modal-content">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                Project 3 END
+
+                Project 4 START
+                <div class="project-thumbnail">
+                    <img class="project-thumbnail-img" src="imgs/case-study-thumbnail-placeholder.svg" alt="">
+                    <div class="project-thumbnail-content">
+                        <div class="project-thumbnail-tags">
+                            <span class="pill pill-internal">Website</span>
+                            <span class="pill pill-health">Health & Wellness</span>
+                        </div>
+                        <p class="project-thumbnail-title">Urban Rehab Singapore's Official Website</p>
+                        <p class="project-thumbnail-logo">Logo img</p>
+                        <button type="button" class="project-thumbnail-cta">
+                            Learn More
+                            <img src="imgs/light-arrow.svg" alt="" aria-hidden="true">
+                        </button>
+                        <template class="project-modal-copy">
+                            <img class="project-modal-copy-logo" src="imgs/client-logos/urban-rehab-colored.svg" alt="Urban Rehab Singapore">
+                            <ul class="project-modal-copy-tools">
+                                <li><img src="imgs/figma.svg" alt="Figma"></li>
+                            </ul>
+                            <div class="project-modal-copy-context">
+                                <p>Urban Rehab(the Singaporian branch) is a physiotherapy and rehab that needed a website to showcase their therapists and the services the treatments they provide. Before this design request, they mostly depended on social media and hotline for their appointment scheduling.</p>
+                                <br>
+                                <p>Their hope was to have potential clients have an easier time in checking who they are what they can provide. A key note they mentioned was that it was mostly a loved one, reaching out to them, not the intended patient.</p>
+                            </div>
+                            <div class="project-modal-copy-behind">
+                                <p>After the kick-off meeting, I went to work on how they wanted their visuals to look like along with the information architecture. Once I got their approvals, I went to work on the home page, and template pages.</p>
+                            </div>
+                            <div class="project-modal-copy-results">
+                                <p>In the end, the client was happy with the outcome of the website and the site was launched.</p>
+                            </div>                                               
+                            <div class="project-modal-content">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                                <img src="imgs/placeholder-img-sample.png" alt="">
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                Project 4 END
+            </div>
+        </div>
+        -->
+        <!-- ===== Projects END ===== -->
+
+        <!--
+        <div class="flower-divider" style="position: relative; margin-top: -24px; z-index: 2;" role="img" aria-label="flower divider"></div>
+        -->
+
+        <!-- ===== Blog START ===== -->
+        <!--
+        <div class="section-container" style="background-color: var(--tangerine-50);">
+
+        </div>
+        -->
+        <!-- ===== Blog END===== -->
 
         <!-- ===== Testimonials START ===== -->
         <div class="testimonials-container" style="background-color: var(--tangerine-50);">
@@ -613,7 +856,7 @@
                 <!-- Testimonial 2 END -->
             </div>
         </div>
-         <div class="flower-divider" style="margin-top: -24px;" role="img" aria-label="flower divider"></div>
+        <div class="flower-divider" style="margin-top: -24px;" role="img" aria-label="flower divider"></div>
         <!-- ===== Testimonials END ===== -->
 
         <div class="grid-bg" id="contact">
@@ -790,6 +1033,49 @@
             </footer>
         </div>
 
+        <!--Project Modal START-->
+        <div class="cs-lightbox-overlay" id="projectModal" aria-hidden="true">
+            <div class="cs-lightbox-backdrop"></div>
+            <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+                <div class="project-modal-left">
+                    <div class="project-modal-scroll">
+                        <div class="project-modal-heading">
+                            <div class="project-modal-tags"></div>
+                            <h5 class="project-modal-title" id="projectModalTitle">Project Title</h5>
+                        </div>
+                        <div class="project-modal-client">
+                            <img class="project-modal-logo" src="" alt="">
+                            <p class="project-modal-clients-label">Clients</p>
+                        </div>
+                        <div class="project-modal-block">
+                            <p class="fw-semibold">Tools</p>
+                            <ul class="project-modal-tools"></ul>
+                        </div>
+                        <div class="project-modal-block">
+                            <p class="fw-semibold">Context</p>
+                            <div class="project-modal-context"></div>
+                        </div>
+                        <div class="project-modal-block">
+                            <p class="fw-semibold">Behind-the-Scenes</p>
+                            <div class="project-modal-behind"></div>
+                        </div>
+                        <div class="project-modal-block">
+                            <p class="fw-semibold">Results</p>
+                            <div class="project-modal-results"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-modal-right">
+                    <div class="project-modal-content"></div>
+                    <div class="project-modal-fade" aria-hidden="true"></div>
+                    <button type="button" class="project-modal-close" aria-label="Close">
+                        <img src="imgs/close.svg" alt="" aria-hidden="true">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Project Modal END-->
+
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
@@ -800,6 +1086,7 @@
         <script src="case-study-slider.js"></script>
         <script src="mobile-menu-toggle.js"></script>
         <script src="wavy-text-lottie.js"></script>
+        <script src="project-modal.js"></script>
         <!--scripts END-->
     </body>
 </html>

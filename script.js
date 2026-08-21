@@ -123,15 +123,46 @@ if (mobileMenuToggle && mobileMenu && mobileMenuOverlay) {
 // Dropdown Menu Functionality
 const btn = document.getElementById('dropdownBtn');
 const menu = document.getElementById('dropdownMenu');
-const arrow = btn.querySelector('.dropdown-arrow');
 
-btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    menu.classList.toggle('is-open');
-    arrow.classList.toggle('is-open');
-});
+if (btn && menu) {
+    const arrow = btn.querySelector('.dropdown-arrow');
 
-document.addEventListener('click', () => {
-    menu.classList.remove('is-open');
-    arrow.classList.remove('is-open');
-});
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menu.classList.toggle('is-open');
+        arrow.classList.toggle('is-open');
+    });
+
+    document.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        arrow.classList.remove('is-open');
+    });
+}
+
+// Current Passion Project: explanation card follows the mouse on hover
+(function () {
+    var containers = document.querySelectorAll('.cursor-coming-soon');
+    if (!containers.length) return;
+
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+    containers.forEach(function (container) {
+        var card = container.querySelector('.passion-prj-cursor-card');
+        if (!card) return;
+
+        container.addEventListener('mouseenter', function (e) {
+            card.style.left = e.clientX + 'px';
+            card.style.top = e.clientY + 'px';
+            card.classList.add('is-active');
+        });
+
+        container.addEventListener('mousemove', function (e) {
+            card.style.left = e.clientX + 'px';
+            card.style.top = e.clientY + 'px';
+        });
+
+        container.addEventListener('mouseleave', function () {
+            card.classList.remove('is-active');
+        });
+    });
+}());

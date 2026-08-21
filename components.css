@@ -14,7 +14,8 @@ Table of Contents:
 12. Disabled Nav Item
 13. Custom Cursor
 14. Thumbnail
-15. Newletter Form
+15. Projects
+16. Newletter Form
 */
 
 /*Divider*/
@@ -39,87 +40,81 @@ Table of Contents:
 
 /*Tags*/
 .tag-purple {
-    font-weight: 600;
-    font-size: 14px;
+    font-weight:    600;
+    font-size:      14px;
     text-transform: uppercase;
-    color: #8722A9;
+    color:        #8722A9;
 }
 
 /*Pill*/
 .pill {
     border-radius: 99px;
-    display: inline-block;
-    padding: 0px 12px;
-    width: fit-content;
+    display:       inline-block;
+    padding:       0px 12px;
+    width:         fit-content;
 
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
+    font-size:      12px;
+    font-style:     normal;
+    font-weight:    500;
     letter-spacing: 0.26px;
-    text-align: center;
-}
-
-.pill-website {
-    border: 1px solid #FFD6AE;
-    background-color: #FFE8E1;
-    color: #FF4405;
-}
-
-.pill-mobile {
-    border: 1px solid #FFD5C7;
-    background-color: #FFF4ED;
-    color: #E54E1D;
+    text-align:     center;
 }
 
 .pill-internal {
-    border: 1px solid var(--clairvoyant-200);
+    border:           1px solid var(--clairvoyant-200);
     background-color: var(--clairvoyant-50);
-    color: var(--clairvoyant-600);
+    color:            var(--clairvoyant-600);
 }
 
 .pill-tech {
-    border: 1px solid #B2DDFF;
+    border:           1px solid #B2DDFF;
     background-color: #ECFDFF;
-    color: #1570EF;
+    color:            #1570EF;
 }
 
 .pill-health {
-    border: 1px solid #C7D7FE;
-    background-color: #EEF4FF;
-    color: #6172F3;
+    border:           1px solid #99F6E0;
+    background-color: #F0FDF9;
+    color:            #0E9384;
 }
 
 .pill-finance {
-    border: 1px solid #D0F8AB;
+    border:           1px solid #D0F8AB;
     background-color: #F3FEE7;
-    color: #4CA30D;
+    color:            #4CA30D;
 }
 
 .pill-e-commerce {
-    border: 1px solid #99F6E0;
-    background-color: #F0FDF9;
-    color: #15B79E;
+    border:           1px solid #C7D7FE;
+    background-color: #EEF4FF;
+    color:            #6172F3;
+}
+
+.pill-education {
+    border:           1px solid #C7D7FE;
+    background-color: #EEF4FF;
+    color:            #6172F3;
 }
 
 .pill-event {
-    border: 1px solid #FEEE95;
+    border:           1px solid #FEEE95;
     background-color: #FEFBE8;
-    color: #CA8504;
+    color:            #CA8504;
 }
 
 .pill-market {
-    border: 1px solid #FECDD6;
+    border:           1px solid #FECDD6;
     background-color: #FFF1F3;
-    color: #F63D68;
+    color:            #F63D68;
 }
 
 
 
 /*Notification Message*/
 .notif-message-primary {
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: 1px solid #E2AFF8;
+    padding:         8px 16px;
+    border-radius:   4px;
+    border:          1px solid #E2AFF8;
     background-color:#FBF4FF;
 }
 
@@ -128,52 +123,52 @@ Table of Contents:
 /*Modal START*/
 .modal-primary, .modal-secondary {
     border-radius: 8px;
-    border: #8722A9 solid 0.5px;
-    box-shadow: 10px 14px 0 0 rgba(255, 163, 133, 0.40);
+    border:      #8722A9 solid 0.5px;
+    box-shadow:    10px 14px 0 0 rgba(255, 163, 133, 0.40);
 }
 
 .modal-no-title {height: 8px;}
 
 .modal-primary-head, .modal-secondary-head {
-    padding-top: 8px; 
-    padding-bottom: 5px;
-    border-top-left-radius: 8px;
+    padding-top:             8px; 
+    padding-bottom:          5px;
+    border-top-left-radius:  8px;
     border-top-right-radius: 8px;
 }
 
 .modal-primary-head img, .modal-secondary-head img {
     position:relative;
-    top: -2px;
-    left: 32px;
+    top:     -2px;
+    left:    32px;
 }
 
 .modal-primary-head h6, .modal-secondary-head h6 {
-    margin-top: -25px;
-    color: white;
+    margin-top:  -25px;
+    color:     white;
     font-weight: 400;
-    font-size: 18px;
+    font-size:   18px;
 }
 
 .modal-primary-body, .modal-secondary-body {
-    padding: 24px 32px;
+    padding:          24px 32px;
     background-color: #F8F9FC;
 }
 
 .modal-primary-footer, .modal-secondary-footer {
-    padding: 8px 32px;
-    border-bottom-left-radius: 8px;
+    padding:                    8px 32px;
+    border-bottom-left-radius:  8px;
     border-bottom-right-radius: 8px;
 }
 
 .no-modal-footer {
-    border-bottom-left-radius: 8px;
+    border-bottom-left-radius:  8px;
     border-bottom-right-radius: 8px;
 }
 
 .modal-primary-footer-cta {
-    display: flex;
+    display:         flex;
     justify-content: end;
-    gap: var(--space-3);
+    gap:             var(--space-3);
 }
 /*Modal END =====================================*/
 
@@ -724,7 +719,26 @@ Responsive Settings section at the bottom of this file*/
 
 /*Custom Cursor START*/
 .cursor-coming-soon {
-    cursor: url('imgs/coming-soon-badge.svg') 46 46, pointer;
+    position: relative;
+    cursor: none;
+}
+
+.passion-prj-cursor-card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 241px;
+    max-width: 70vw;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.15s ease;
+    z-index: 999;
+}
+
+.passion-prj-cursor-card.is-active {
+    opacity: 1;
 }
 /*Custom Cursor END*/
 
@@ -1366,7 +1380,11 @@ Responsive Settings section at the bottom of this file*/
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    /*insert code*/
+    /* Stopgap until the tablet mockup for the Projects section is ready */
+    .project-thumbnail {
+        flex: 0 0 auto;
+        height: 400px;
+    }
 }
 
 /*Tablet*/ /*md*/
