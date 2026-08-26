@@ -1,0 +1,173 @@
+/*Table of Contents
+1. Global Layout Settings
+    1.A. Custom Width Measurements
+    1.B. Auto Layouts
+2. Global Page Settings
+    2.A. Main Page
+    2.B. Navidation
+    2.C. Footer
+    2.D. Global Section Container
+3. Section Settings
+    3.A. Project Section
+    3.B. Testimonial Section
+    3.C. Blog Section
+    3.D. Galley Section
+    3.E. Newsletter CTA Banner
+4. Responsive Settings
+*/
+
+/* ───────────────────────────────────────────────
+Custom Width Measurements
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Auto Layouts
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Main Page: the grid background
+───────────────────────────────────────────────*/
+.main-page, .grid-bg {
+    background-image:  url(../imgs/line\ bg.svg);
+    background-repeat: repeat;
+}
+
+/* ───────────────────────────────────────────────
+Navidation
+───────────────────────────────────────────────*/
+.nav-container {
+    width:           90px;
+    display:         inline-flex;
+    position:        fixed;
+    height:          100vh;
+    padding:         var(--space-8) var(--space-4);
+    flex-direction:  column;
+    justify-content: space-between;
+}
+
+/* ───────────────────────────────────────────────
+Footer
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Global Section Container
+───────────────────────────────────────────────*/
+.section-container,
+.section-container-mt-0,
+.projects-section,
+.testimonials-container,
+.blog-container {margin-left: 90px;}
+
+.section-container {padding: 40px 5% 60px 5%;}
+
+.section-container-mt-0 {padding: 0px 5% 60px 5%;}
+
+/* ───────────────────────────────────────────────
+Project Section
+───────────────────────────────────────────────*/
+.projects-section {padding-top: 120px;}
+
+/* ───────────────────────────────────────────────
+Testimonial Section
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Blog Section
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Galley Section
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Newsletter CTA Banner
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Responsive Settings
+───────────────────────────────────────────────*/
+@media screen and (min-width: 1920px) {
+    /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+    .section-container {
+        padding-left:  15%;
+        padding-right: 15%;
+    }
+}
+
+/*Widescreen*/ /*xxl*/ 
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
+/*Tablet LG START*/ /*lg*/
+@media screen and (max-width: 992px) {
+    /* ───────────────────────────────────────────────
+    Navidation
+    ───────────────────────────────────────────────*/
+    .nav-container {
+        width:           100vw;
+        height:          80px;
+        position:        static;
+        padding:         16px 4%;
+        flex-direction:  row;
+        justify-content: space-between;
+        align-items:     center;
+    }
+
+
+   /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+
+    .section-container {
+        margin-left:   0px;
+        padding-left:  4%;
+        padding-right: 4%;
+    }
+
+    .section-container-mt-0 {
+        margin-left: 0px;
+        padding:     0px 4% 60px 4%;
+    }
+
+
+    /* ───────────────────────────────────────────────
+    Project Section
+    ───────────────────────────────────────────────*/
+    .projects-section {margin-left: 0px;}
+}
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+    /*insert code*/
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    /* ───────────────────────────────────────────────
+    Navidation
+    ───────────────────────────────────────────────*/
+    .nav-container {
+        padding:  16px 8%;
+        position: relative;
+        z-index:  4;
+    }
+
+    /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+    .section-container {
+        margin-left:   0px;
+        padding-left:  8%;
+        padding-right: 8%;
+    }
+}
