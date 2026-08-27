@@ -166,3 +166,26 @@ if (btn && menu) {
         });
     });
 }());
+
+// Tool icon tooltips: hover/focus a .tools-icon to see its tool name
+(function () {
+    var toolIcons = document.querySelectorAll('.tools-icon');
+    if (!toolIcons.length) return;
+
+    toolIcons.forEach(function (icon) {
+        var img = icon.querySelector('img');
+        if (!img || !img.alt) return;
+
+        icon.classList.add('tooltip-wrap');
+        if (!icon.hasAttribute('tabindex')) {
+            icon.setAttribute('tabindex', '0');
+        }
+
+        var tooltip = document.createElement('span');
+        tooltip.className = 'tooltip tooltip-top';
+        tooltip.setAttribute('role', 'tooltip');
+        tooltip.textContent = img.alt;
+
+        icon.appendChild(tooltip);
+    });
+}());

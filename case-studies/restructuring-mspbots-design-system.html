@@ -277,19 +277,19 @@
                         <div class="simple-table mb-4">
                             <div class="simple-table-row">
                                 <p class="simple-table-label">Contract Duration</p>
-                                <div class="simple-table-value-wrap">
+                                <div class="simple-table-value-wrap-horizontal">
                                     <p class="simple-table-value">Q1 - Q4 2025</p> <!--contract date-->
                                 </div>
                             </div>
                             <div class="simple-table-row">
                                 <p class="simple-table-label">Industry</p>
-                                <div class="simple-table-value-wrap">
+                                <div class="simple-table-value-wrap-horizontal">
                                     <span class="pill pill-internal">Internal Documentation</span>
                                 </div>
                             </div>
                             <div class="simple-table-row">
                                 <p class="simple-table-label">Output Type</p>
-                                <div class="simple-table-value-wrap">
+                                <div class="simple-table-value-wrap-horizontal">
                                     <span class="pill pill-tech">AI & Technology</span>
                                 </div>
                             </div>
@@ -420,8 +420,9 @@
                             <!-- ===== Context ===== -->
                             <div class="block v-stack space-5" id="context">
                                 <div class="v-stack space-5">
+                                    <!-- ----- Text Block ----- -->
                                     <div>
-                                        <h5>Context</h5> 
+                                        <h5>Context</h5>
                                         <p>MSPbots’ design system at the time was originally rough and had a lot of missing components. Due to this, the library didn’t reflect the existing Legacy Product, forcing designers to spend extra time reconciling mockups against the real interface.</p>
                                         <br>
                                         <p>The restructuring project was initiated to fix the following: </p>
@@ -429,43 +430,62 @@
                                             <li>Have a design system that new designers could open and understand independently</li>
                                             <li>The components matching the actual product; and  </li>
                                             <li>The availability to replace the team's reliance on Element Plus' external documentation site. </li>
-                                        </ol>                                           
+                                        </ol>
                                         <p>The project was also formally scoped into three phases: documentation, enhancement, then UI application, but was consistently treated as a low-priority background task, worked on between higher-priority assignments throughout the year.</p>
                                     </div>
+
+                                    <!-- ----- No Outline Table ----- -->
                                     <div class="block-table">
                                         <div class="row">
                                             <div class="col-lg-2 col-md-4 col-sm-6">
                                                 <p class="thead">Team</p>
                                                 <p>Me</p>
                                                 <p>Nora Li</p>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-6 block-table-col">
-                                                <p class="thead">Duration</p>
-                                                <p>1 Year</p>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
+                                            </div>                            
+                                            <div class="col-lg-6 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
                                                 <p class="thead">Role</p>
                                                 <p>UX/UI Designer</p>
                                                 <p>UX Writer</p>
                                                 <p>AI Agent Developer</p>
+                                            </div>                          
+                                        </div>
+                                    </div>
+
+                                    <!-- ----- Simple Table ----- -->
+                                    <div class="simple-table">
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Skills</p>
+                                            <div class="simple-table-value-wrap-vertical">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>UI Auditing</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Writing</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Designing and Project Management</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Researching</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-lg-5 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
-                                                <p class="thead">Skills</p>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>UI Auditing</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>Writing</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>Designing and Project Management</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>Researching</p>
+                                        </div>
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Tools</p>
+                                            <div class="simple-table-value-wrap-horizontal">
+                                                <div class="tools-icon-grid">
+                                                    <div class="tools-icon"><img src="/imgs/tools/figma.svg" alt="Figma"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/clickup.svg" alt="Procreate"></div>
                                                 </div>
                                             </div>
                                         </div>

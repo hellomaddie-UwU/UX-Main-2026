@@ -320,13 +320,6 @@ nav {z-index: 10;}
 
 /*========================================================================*/
 /*Container Settings START*/
-
-.projects-row {
-    display:    flex;
-    width:      100%;
-    margin-top: var(--space-5);
-}
-
 .testimonials-container {padding: 40px 5% 170px 5%;}
 
 .testimonials-row {
@@ -837,8 +830,7 @@ input:user-invalid {
         padding-right: 4%;
     }
 
-    .testimonials-row,
-    .projects-row {flex-direction: column;}
+    .testimonials-row {flex-direction: column;}
 
     .intro-tools-connector {display: none;}
 

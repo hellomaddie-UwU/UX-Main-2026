@@ -133,32 +133,57 @@ at the bottom of this file*/
 .simple-table-row {display: contents;}
 
 .simple-table-label,
-.simple-table-value-wrap {
+.simple-table-value-wrap-horizontal,
+.simple-table-value-wrap-vertical {
     display:       flex;
-    align-items:   center;
     width:         100%;
     min-height:    48px;
-    padding:       10px 12px;
+    padding:       12px 16px;
     border-bottom: 0.5px solid var(--dialog-border);
+}
+
+.simple-table-label,
+.simple-table-value-wrap-horizontal {
+    align-items: center;
 }
 
 .simple-table-label {
     border-right: 0.5px solid var(--dialog-border);
-    white-space:  nowrap;
     font-weight:  var(--font-weight-medium);
 }
 
-.simple-table-value-wrap {
+.simple-table-context-first-col {
+    width: 100px;
+    font-weight:  var(--font-weight-medium) !important;
+}
+
+.simple-table-value-wrap-horizontal {
     flex-wrap: wrap;
     gap:       6px;
 }
+
+/*Already stacked on desktop, so it stays stacked at the mobile breakpoint
+too — no override needed in the Responsive Settings section for direction,
+just the same padding/border reset as the other value cell*/
+.simple-table-value-wrap-vertical {
+    flex-direction: column;
+    align-items:    flex-start;
+    gap:            4px;
+}
+
+/*align-items:flex-start above lets plain stacked text/pills hug their own
+content width, but it also shrinks a nested Bootstrap .row to fit-content
+instead of the 100% width its .col-* percentages need to compute against —
+this stretches it back out without affecting flat (non-.row) content*/
+.simple-table-value-wrap-vertical .row {width: 100%;}
 
 .simple-table-value {white-space: nowrap;}
 
 .table-content-mt {margin-top: 0px;}
 
 .simple-table-row:last-child .simple-table-label,
-.simple-table-row:last-child .simple-table-value-wrap {border-bottom: none;}
+.simple-table-row:last-child .simple-table-value-wrap-horizontal,
+.simple-table-row:last-child .simple-table-value-wrap-vertical {border-bottom: none;}
 /* ────────────────────── */
 
 
@@ -1534,7 +1559,8 @@ Responsive Settings section at the bottom of this file*/
     .simple-table-row:last-child {border-bottom: none;}
 
     .simple-table-label,
-    .simple-table-value-wrap {
+    .simple-table-value-wrap-horizontal,
+    .simple-table-value-wrap-vertical {
         min-height: auto;
         padding:    0;
         border:     none;
