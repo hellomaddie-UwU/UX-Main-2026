@@ -1,4 +1,4 @@
-/*
+/* ───────────────────────────────────────────────
 Table of Contents
 1. Global Setting
     A. Color Settings
@@ -7,14 +7,18 @@ Table of Contents
 2. Container Settings
     A. Navigation
     B. Page Layout
-3. Font Settings
+3. Typography Settings
+    A. Global
+    B. Custom
+    C. Sections
 4. Control Settings
     A. Buttons
 5. Responsive Settings
-==========================================================
-*/
+───────────────────────────────────────────────*/
 
-/*Global Setting START*/
+/* ───────────────────────────────────────────────
+Global Settings
+───────────────────────────────────────────────*/
 * {
     margin:     0;
     padding:    0;
@@ -28,6 +32,9 @@ html, body {
 }
 
 :root {
+    /* ───────────────────────────────────────────────
+    Primitive Tokens > Color Palettes
+    ───────────────────────────────────────────────*/
     /*Typography*/
     --text-header:  #293056;
     --text-body:    #3E4784;
@@ -36,6 +43,7 @@ html, body {
     /*Surfaces*/
     --surface-dark:     #2D0538;
     --surface-dark-800: #711E8A;
+
     /*Modal Component*/
     --dialog-body:   #F8F9FC;
     --dialog-border: #8722A9;
@@ -505,54 +513,66 @@ footer {
 /*Container Settings END*/
 /*========================================================================*/
 
-/*Font Settings*/
+/* ───────────────────────────────────────────────
+Typography Section
+───────────────────────────────────────────────*/
+/* ----- Global ----- */
 @font-face {
     font-family: 'Hello Radio';
-    src: url(Hello\ Radio.ttf);
+    src:          url(Hello\ Radio.ttf);
 }
 
-h1, h2, h3, h4, h5, h6 {color: #293056; margin-bottom: 0px;}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    color:         var(--text-header); 
+    margin-bottom: 0px;
+}
 
 h2 {
-    font-size: 41px;
+    font-size:   41px;
     line-height: 48px;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 36px;
+    font-size:   36px;
     line-height: 36px;
     font-weight: 500;
 }
 
 h4 {
-    font-size: 31px;
+    font-size:   31px;
     line-height: 36px;
     font-weight: 600;
 }
 
 h5 {
-    font-size: 26px;
-    font-style: normal;
+    font-size:   26px;
+    font-style:  normal;
     font-weight: 600;
-    line-height: 38px; /* 146.154% */
+    line-height: 38px;
 }
 
 h6 {
-    font-size: 20px;
+    font-size:   20px;
     line-height: 28px;
     font-weight: 600;
 }
 
 p {
-    color: #3E4784;
-    font-size: 16px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 28px;
+    color:         var(--text-body);
+    font-size:     16px;
+    font-weight:   400;
+    font-style:    normal;
+    line-height:   28px;
     margin-bottom: 0px;
 }
 
+/* ----- Custom ----- */
 .display-text { /*The pink one*/
     font-family: "Hello Radio";
     font-size: 94px;
@@ -678,6 +698,7 @@ a, .underline {color: #A12ECB;}
     font-size: 19px;
     font-weight: 600;
 }
+
 
 /*========================================================================*/
 
