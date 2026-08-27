@@ -9,8 +9,8 @@ Table of Contents
     B. Page Layout
 3. Typography Settings
     A. Global
-    B. Custom
-    C. Sections
+    B. Custom: reusable
+    C. Sections: will only be seen within said sections
 4. Control Settings
     A. Buttons
 5. Responsive Settings
@@ -29,6 +29,11 @@ html, body {
     overflow-x:  hidden;
     overflow-x:  clip;
     font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Hello Radio';
+    src:          url(Hello\ Radio.ttf);
 }
 
 :root {
@@ -76,7 +81,33 @@ html, body {
     --tangerine-400: #FFA385;
     --tangerine-600: #E54E1D;
 
-    /*Spacing*/
+    /* ───────────────────────────────────────────────
+    Primitive Tokens > Typography
+    ───────────────────────────────────────────────*/
+    --font-sans:   'Poppins';
+    --font-script: 'Hello Radio';
+    /*--font-mono:  for coding if ever I finally need it :)*/
+    
+    --text-xs:   0.75rem;    /* 12px */
+    --text-sm:   0.875rem;   /* 14px */
+    --text-base: 1rem;       /* 16px */
+    --text-md:   1.125rem;   /* 18px */
+    --text-lg:   1.3rem;     /* 21px */
+    --text-xl:   1.5rem;     /* 24px */
+    --text-2xl:  1.875rem;   /* 30px */
+    --text-3xl:  2.3rem;     /* 38px */
+    --text-4xl:  3rem;       /* 48px */
+
+    --font-weight-light:     300;
+    --font-weight-regular:   400;
+    --font-weight-medium:    500;
+    --font-weight-semibold:  600;
+    --font-weight-bold:      700;
+    --font-weight-extrabold: 800;
+
+    /* ───────────────────────────────────────────────
+    Primitive Tokens > Spacing Tokens
+    ───────────────────────────────────────────────*/
     --space-0:  0px;
     --space-1:  4px;
     --space-2:  8px;
@@ -289,16 +320,6 @@ nav {z-index: 10;}
 
 /*========================================================================*/
 /*Container Settings START*/
-.projects-heading {
-    padding-left:  5%;
-    padding-right: 5%;
-    z-index: 3;
-    position: relative;
-}
-
-.projects-heading h2 {display: inline-block; margin-bottom: -20px;}
-
-.projects-heading h3 {margin-top: -10px;}
 
 .projects-row {
     display:    flex;
@@ -516,189 +537,205 @@ footer {
 /* ───────────────────────────────────────────────
 Typography Section
 ───────────────────────────────────────────────*/
-/* ----- Global ----- */
-@font-face {
-    font-family: 'Hello Radio';
-    src:          url(Hello\ Radio.ttf);
-}
+    /* ───────────────────────────────────────────────
+    Global
+    ───────────────────────────────────────────────*/
+    h1, 
+    h2, 
+    h3, 
+    h4, 
+    h5, 
+    h6 {
+        color:         var(--text-header); 
+        margin-bottom: 0px;
+    }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6 {
-    color:         var(--text-header); 
-    margin-bottom: 0px;
-}
+    h2 {
+        font-size:   41px;
+        line-height: 48px;
+        font-weight: 600;
+    }
 
-h2 {
-    font-size:   41px;
-    line-height: 48px;
-    font-weight: 600;
-}
+    h3 {
+        font-size:   36px;
+        line-height: 36px;
+        font-weight: 500;
+    }
 
-h3 {
-    font-size:   36px;
-    line-height: 36px;
-    font-weight: 500;
-}
+    h4 {
+        font-size:   31px;
+        line-height: 36px;
+        font-weight: 600;
+    }
 
-h4 {
-    font-size:   31px;
-    line-height: 36px;
-    font-weight: 600;
-}
+    h5 {
+        font-size:   26px;
+        font-style:  normal;
+        font-weight: 600;
+        line-height: 38px;
+    }
 
-h5 {
-    font-size:   26px;
-    font-style:  normal;
-    font-weight: 600;
-    line-height: 38px;
-}
+    h6 {
+        font-size:   20px;
+        line-height: 28px;
+        font-weight: 600;
+    }
 
-h6 {
-    font-size:   20px;
-    line-height: 28px;
-    font-weight: 600;
-}
+    p {
+        color:         var(--text-body);
+        font-size:     16px;
+        font-weight:   400;
+        font-style:    normal;
+        line-height:   28px;
+        margin-bottom: 0px;
+    }
 
-p {
-    color:         var(--text-body);
-    font-size:     16px;
-    font-weight:   400;
-    font-style:    normal;
-    line-height:   28px;
-    margin-bottom: 0px;
-}
+    /* ───────────────────────────────────────────────
+    Custom: reusable
+    ───────────────────────────────────────────────*/
+    .display-text { /*The pink one*/
+        font-family: "Hello Radio";
+        font-size: 94px;
+        font-weight: 400;
+        line-height: 60px; /* 63.83% */
 
-/* ----- Custom ----- */
-.display-text { /*The pink one*/
-    font-family: "Hello Radio";
-    font-size: 94px;
-    font-weight: 400;
-    line-height: 60px; /* 63.83% */
+        color: var(--razzmatazz-400);
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: var(--Brand-Razzmatazz-50, #FFF1F4);
+        paint-order: stroke fill;
+        transform: rotate(-7.45deg);
+        display: inline-block;
+    }
 
-    color: var(--razzmatazz-400);
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--Brand-Razzmatazz-50, #FFF1F4);
-    paint-order: stroke fill;
-    transform: rotate(-7.45deg);
-    display: inline-block;
-}
+    .display-paragraph {
+        color: var(--text-body);
+        font-family: "Hello Radio";
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 46px; /* 92% */
 
-.display-paragraph {
-    color: var(--text-body);
-    font-family: "Hello Radio";
-    font-size: 50px;
-    font-weight: 400;
-    line-height: 46px; /* 92% */
+        transform: rotate(-7deg);
+        display: inline-block;
+        margin-top: -12px;
+    }
 
-    transform: rotate(-7deg);
-    display: inline-block;
-    margin-top: -12px;
-}
+    .display-section-text { /*The white one with the pink stroke*/
+        color: var(--dialog-body);
+        text-shadow: -3px 3px 0 var(--text-shadow-color);
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: var(--dialog-border);
+        paint-order: stroke fill;
+        font-family: "Hello Radio";
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 73px; /* 77.66% */
+        transform: rotate(-7.45deg);
+        z-index: 2;
+        position: relative;
+    }
 
-.display-section-text { /*The white one with the pink stroke*/
-    color: var(--dialog-body);
-    text-shadow: -3px 3px 0 var(--text-shadow-color);
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: var(--dialog-border);
-    paint-order: stroke fill;
-    font-family: "Hello Radio";
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 73px; /* 77.66% */
-    transform: rotate(-7.45deg);
-    z-index: 2;
-    position: relative;
-}
+    .md-text {
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 600;
+    }
 
-.md-text {
-    font-size: 14px;
-    line-height: 23px;
-    font-weight: 600;
-}
+    .sm-text {
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 400;
+    }
 
-.sm-text {
-    font-size: 14px;
-    line-height: 23px;
-    font-weight: 400;
-}
+    .w-400 {font-weight: 400;}
+    .w-500 {font-weight: 500;}
+    .w-600 {font-weight: 600;}
 
-.w-400 {font-weight: 400;}
-.w-500 {font-weight: 500;}
-.w-600 {font-weight: 600;}
+    a, .underline {color: #A12ECB;}
 
-a, .underline {color: #A12ECB;}
+    .small-title {font-weight: 600;}
 
-.small-title {font-weight: 600;}
+    .label-primary, .label-secondary {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
 
-.label-primary, .label-secondary {
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
+    .label-primary {
+        color: var(--clairvoyant-600);
+    }
 
-.label-primary {
-    color: var(--clairvoyant-600);
-}
+    .label-secondary {
+        color: #3E4784;
+    }
 
-.label-secondary {
-    color: #3E4784;
-}
+    .required-point {color: #F63D68;}
 
-.required-point {color: #F63D68;}
+    .case-study-point {
+        color: var(--clairvoyant-600);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
 
-.case-study-point {
-    color: var(--clairvoyant-600);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 23px;
-    text-transform: uppercase;
-}
+    .case-study-img-caption {
+        color: var(--text-body);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-top: var(--space-1);
+    }
 
-.case-study-img-caption {
-    color: var(--text-body);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    margin-top: var(--space-1);
-}
+    .case-study-subtitle, .features-title, .research-title, .design-iteration-title, .reflection-title, .discovery-title {
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 28px;
+        color: var(--text-body);
+    }
 
-.case-study-subtitle, .features-title, .research-title, .design-iteration-title, .reflection-title, .discovery-title {
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 28px;
-    color: var(--text-body);
-}
+    .side-note {
+        color: var(--clairvoyant-600);
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 23px; /* 164.286% */
+    }
 
-.side-note {
-    color: var(--clairvoyant-600);
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 23px; /* 164.286% */
-}
+    .side-note-2 { /*Used for additional context na <h6> and above.*/
+        color: var(--text-body);
+        font-size: 19px;
+    } 
 
-.side-note-2 { /*Used for additional context na <h6> and above.*/
-    color: var(--text-body);
-    font-size: 19px;
-} 
+    .service-extended-title {
+        color: var(--clairvoyant-500);
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 38px; /* 146.154% */
+    }
 
-.service-extended-title {
-    color: var(--clairvoyant-500);
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 38px; /* 146.154% */
-}
+    .ICP-header-section {
+        font-size: 19px;
+        font-weight: 600;
+    }
 
-.ICP-header-section {
-    font-size: 19px;
-    font-weight: 600;
-}
+    /* ───────────────────────────────────────────────
+    Sections: will only be seen within said sections
+    ───────────────────────────────────────────────*/
+    /* ----- Location: Project Section -----*/
+    .projects-heading {
+        padding-left:  5%;
+        padding-right: 5%;
+        z-index:       3;
+        position:      relative;
+    }
 
+    .projects-heading h2 {
+        display:       inline-block; 
+        margin-bottom: -20px;
+    }
+
+    .projects-heading h3 {margin-top: -10px;}
 
 /*========================================================================*/
 

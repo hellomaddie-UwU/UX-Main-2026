@@ -2,21 +2,22 @@
 Table of Contents:
 1. Divider
 2. Tags
-3. Notification Message
-4. Modal
-5. Infinite Marque
-6. Single Accordion Card
-7. Design System Top Bar Nav
-8. Gallery Placeholder Image
-9. Gallery Lightbox
-10. Breadcrumb
-11. Tooltip
-12. Disabled Nav Item
-13. Custom Cursor
-14. Thumbnail
-15. Projects
-16. Newletter Form
-17. Tools Icon Grid
+3. Simple Table
+4. Notification Message
+5. Modal
+6. Infinite Marque
+7. Single Accordion Card
+8. Design System Top Bar Nav
+9. Gallery Placeholder Image
+10. Gallery Lightbox
+11. Breadcrumb
+12. Tooltip
+13. Disabled Nav Item
+14. Custom Cursor
+15. Thumbnail
+16. Projects
+17. Newletter Form
+18. Tools Icon Grid
 */
 
 /*Divider*/
@@ -115,6 +116,50 @@ Table of Contents:
     color:            #F63D68;
 }
 
+/* _______ Simple Table _______ */
+.simple-table {
+    display:               grid;
+    grid-template-columns: max-content 1fr;
+    width:                 100%;
+    border:                0.5px solid var(--dialog-border);
+    border-radius:         var(--space-2);
+    overflow:              hidden;
+}
+
+/*Row wrapper drops out of the box model so its two children (label, value)
+become the grid's row cells directly; it becomes a real stacked column on
+mobile via the max-width:567px override in the Responsive Settings section
+at the bottom of this file*/
+.simple-table-row {display: contents;}
+
+.simple-table-label,
+.simple-table-value-wrap {
+    display:       flex;
+    align-items:   center;
+    width:         100%;
+    min-height:    48px;
+    padding:       10px 12px;
+    border-bottom: 0.5px solid var(--dialog-border);
+}
+
+.simple-table-label {
+    border-right: 0.5px solid var(--dialog-border);
+    white-space:  nowrap;
+    font-weight:  var(--font-weight-medium);
+}
+
+.simple-table-value-wrap {
+    flex-wrap: wrap;
+    gap:       6px;
+}
+
+.simple-table-value {white-space: nowrap;}
+
+.table-content-mt {margin-top: 0px;}
+
+.simple-table-row:last-child .simple-table-label,
+.simple-table-row:last-child .simple-table-value-wrap {border-bottom: none;}
+/* ────────────────────── */
 
 
 /*Notification Message*/
@@ -1469,12 +1514,40 @@ Responsive Settings section at the bottom of this file*/
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
-    .modal-primary-footer-cta {
+    /*Simple Table: single stacked column instead of the desktop two-column
+    grid; each row becomes a real flex column with the label above its value*/
+    .simple-table {
+        display:        flex;
         flex-direction: column;
+    }
+
+    .simple-table-row {
+        display:        flex;
+        flex-direction: column;
+        align-items:    flex-start;
+        gap:            4px;
+        width:          100%;
+        padding:        16px 16px;
+        border-bottom:  0.5px solid var(--dialog-border);
+    }
+
+    .simple-table-row:last-child {border-bottom: none;}
+
+    .simple-table-label,
+    .simple-table-value-wrap {
+        min-height: auto;
+        padding:    0;
+        border:     none;
+    }
+
+    .table-content-mt {margin-top: 4px;}
+
+    .modal-primary-footer-cta {
+        flex-direction:  column;
         justify-content: center;
-        width: 100%;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        width:           100%;
+        padding-top:     4px;
+        padding-bottom:  4px;
     }
 
     .modal-primary-footer-cta button {width: 100%;}
@@ -1482,13 +1555,11 @@ Responsive Settings section at the bottom of this file*/
     .client-logo-section-desktop {display: none;}
 
     .client-logo-section-mobile {
-        display: block;
-        padding-top: 32px;
+        display:        block;
+        padding-top:    32px;
         padding-bottom: 40px;
     }
-    .marquee-item img {
-        height: 50px;
-    }
+    .marquee-item img {height: 50px;}
 
 
     .increase-logo-size img {
