@@ -320,60 +320,6 @@ nav {z-index: 10;}
 
 /*========================================================================*/
 /*Container Settings START*/
-.testimonials-container {padding: 40px 5% 170px 5%;}
-
-.testimonials-row {
-    display: flex;
-    align-items: stretch;
-    gap: var(--space-5);
-    margin-top: var(--space-5);
-}
-
-.testimonial-card {
-    flex: 1 1 0;
-    display: flex;
-    position: relative;
-    z-index: 0;
-    background-color: white;
-}
-
-.gallery-wrapper {
-    display: flex;
-    gap: var(--space-4);
-    position: relative;
-    z-index: 1;
-}
-
-.newsletter {
-    background-color: white;
-    border-top: 1px solid #FFA1B7;
-}
-
-.newsletter-inner {
-    display: flex;
-    gap: var(--space-4);
-}
-
-.newsletter-copy {width: 25%;}
-
-.newsletter-form-col {
-    width: 75%;
-}
-
-.formkit-form[data-uid="2cce5a189f"] {max-width: none !important; width: 100%;}
-
-.formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding-top: 0 !important;}
-
-/*Newsletter Modal Kit Form*/
-.formkit-form[data-uid="e53b34d164"] {max-width: none !important; width: 100%;}
-
-.formkit-form[data-uid="e53b34d164"] [data-style="clean"] {padding: 0 !important;}
-
-.formkit-form[data-uid="e53b34d164"] .formkit-field {
-    flex: 1 1 100% !important;
-    width: 100%;
-}
-
 .newsletter-form {
     display: flex;
     gap: var(--space-3);
@@ -836,13 +782,6 @@ input:user-invalid {
 
     .tools-dialog {margin-top: 0;}
 
-    .gallery-wrapper {gap: 12px;}
-
-    .newsletter-copy, 
-    .newsletter-form-col {width: 50%;}
-
-    .newsletter-form-col {width: 100%;}
-
     .newsletter-form {
         display:        flex;
         flex-direction: column;
@@ -1017,13 +956,6 @@ input:user-invalid {
 
     .service-thumbnail {height: 300px;}
 
-    .testimonials-container {
-        margin-left: 0px;
-        width: auto;
-        padding-left: 4%;
-        padding-right: 4%;
-    }
-
     .lightbox-overlay.is-open .lightbox-dialog {
         width: min(780px, 100%);
     }
@@ -1065,17 +997,11 @@ input:user-invalid {
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    .formkit-form[data-uid="2cce5a189f"] .formkit-field {
-        flex: 1 1 100% !important;
-        width: 100%;
-    }
+    
 }
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
-    .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {
-        padding: 0 !important;
-    }
 
     .mobile-menu-overlay {
         position: fixed;
@@ -1113,13 +1039,6 @@ input:user-invalid {
         padding: 20px 0px;
     }
 
-    .newsletter-inner {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .gallery-wrapper {flex-direction: column; width: 100%;}
-
     .gallery-masonry {
         column-count: 1;
     }
@@ -1128,10 +1047,6 @@ input:user-invalid {
     .gallery-card-wide img {
         min-height: 0;
     }
-
-    .newsletter-copy {width: 100%;}
-
-    .newsletter-form-col {width: 100%;}
 
     .newsletter-submit {align-self:center; width: 100%;}
 

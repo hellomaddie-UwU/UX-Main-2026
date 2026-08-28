@@ -20,7 +20,9 @@ Table of Contents:
 18. Tools Icon Grid
 */
 
-/*Divider*/
+/* ───────────────────────────────────────────────
+Divider
+───────────────────────────────────────────────*/
 .divider {
     height: 0.5px; 
     width: 100%;
@@ -46,7 +48,9 @@ Table of Contents:
     width: 8px;
 }
 
-/*Tags*/
+/* ───────────────────────────────────────────────
+Tags/Labels
+───────────────────────────────────────────────*/
 .tag-purple {
     font-weight:    600;
     font-size:      14px;
@@ -54,7 +58,9 @@ Table of Contents:
     color:        #8722A9;
 }
 
-/*Pill*/
+/* ───────────────────────────────────────────────
+Pills
+───────────────────────────────────────────────*/
 .pill {
     border-radius: 99px;
     display:       inline-block;
