@@ -5,47 +5,54 @@ Table of Contents:
 3. Simple Table
 4. Notification Message
 5. Modal
-6. Infinite Marque
-7. Single Accordion Card
-8. Design System Top Bar Nav
-9. Gallery Placeholder Image
-10. Gallery Lightbox
-11. Breadcrumb
-12. Tooltip
-13. Disabled Nav Item
-14. Custom Cursor
-15. Thumbnail
-16. Projects
-17. Newletter Form
-18. Tools Icon Grid
+6. Modal Tabs
+7. Infinite Marque
+8. Single Accordion Card
+9. Design System Top Bar Nav
+10. Gallery Placeholder Image
+11. Gallery Lightbox
+12. Breadcrumb
+13. Tooltip
+14. Disabled Nav Item
+15. Custom Cursor
+16. Thumbnail
+17. Projects
+18. Newletter Form
+19. Tools Icon Grid
 */
 
 /* ───────────────────────────────────────────────
 Divider
 ───────────────────────────────────────────────*/
-.divider {
-    height: 0.5px; 
-    width: 100%;
+.divider { /*horizontal lavendar divider*/
+    height:           0.5px; 
+    width:            100%;
     background-color: var(--divider);
 }
 
-.breadcrumb-divider {
-        width: 1px;
-        height: 20px;
-        background-color: var(--razzmatazz-400);
-        rotate: 25deg;
-    }
+.breadcrumb-divider { /*pink diagonal divider*/
+    width:            1px;
+    height:           20px;
+    background-color: var(--razzmatazz-400);
+    rotate:           25deg;
+}
 
-.vertical-divider {
-    height: 100%;
-    width: 0.5px;
+.vertical-divider { /*vertical white divider*/
+    height:           100%;
+    width:            0.5px;
     background-color: var(--divider-on-dark);
+}
+
+.vertical-divider-blue { /*vertical blue divider*/
+    width:            1px;
+    height:           16px;
+    background-color: var(--gray-blue-400);
 }
 
 /*Dots*/
 .orange-dot {
     height: 8px;
-    width: 8px;
+    width:  8px;
 }
 
 /* ───────────────────────────────────────────────
@@ -120,6 +127,12 @@ Pills
     border:           1px solid #FECDD6;
     background-color: #FFF1F3;
     color:            #F63D68;
+}
+
+.pill-experience {
+    border:           1px solid #FFB7A0;
+    background-color: #FFF4F1;
+    color:            #F8693B;
 }
 
 /* _______ Simple Table _______ */
@@ -254,6 +267,95 @@ this stretches it back out without affecting flat (non-.row) content*/
     gap:             var(--space-3);
 }
 /*Modal END =====================================*/
+
+/*Modal Tabs START*/
+.modal-tabs-nav {
+    background-color: var(--clairvoyant-950);
+    padding:          var(--space-3) var(--space-4) 0;
+}
+
+.modal-tab {
+    appearance:        none;
+    background-color:  transparent;
+    border:            none;
+    border-top:        1px solid var(--tangerine-200);
+    border-right:      1px solid var(--tangerine-200);
+    border-top-right-radius: var(--space-3);
+    margin-right:      -10px;
+    padding:           var(--space-1) var(--space-6);
+    color:             white;
+    font-family:       'Poppins', sans-serif;
+    font-size:         var(--text-base);
+    font-weight:       var(--font-weight-regular);
+    line-height:       28px;
+    white-space:       nowrap;
+    cursor:            pointer;
+    position:          relative;
+}
+
+.modal-tab:last-child {margin-right: 0;}
+
+.modal-tab:nth-child(1) {z-index: 3;}
+.modal-tab:nth-child(2) {z-index: 2;}
+.modal-tab:nth-child(3) {z-index: 1;}
+
+.modal-tab.is-active {
+    background-color:        var(--razzmatazz-700);
+    border:                  none;
+    border-top-left-radius:  var(--space-1);
+    border-top-right-radius: var(--space-3);
+    font-weight:             var(--font-weight-medium);
+    z-index:                 4;
+}
+
+.modal-tabs-body {
+    height:            447px;
+    padding:           var(--space-4);
+    background-color:  var(--dialog-body);
+}
+
+.tab-panel {
+    overflow-y: auto;
+    padding-right: var(--space-3);
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray-blue-400) var(--gray-blue-100);
+}
+
+.tab-panel[hidden] {display: none;}
+
+.tab-panel::-webkit-scrollbar {width: 6px;}
+
+.tab-panel::-webkit-scrollbar-track {
+    background-color: var(--gray-blue-100);
+    border-radius:    99px;
+}
+
+.tab-panel::-webkit-scrollbar-thumb {
+    background-color: var(--gray-blue-400);
+    border-radius:     99px;
+}
+
+.experience-item {
+    display:        flex;
+    flex-direction: column;
+    gap:            2px;
+    width:          100%;
+}
+
+.experience-meta {
+    display:     flex;
+    flex-wrap:   wrap;
+    align-items: center;
+    gap:         var(--space-2);
+}
+
+.experience-divider {
+    width:             1px;
+    height:            16px;
+    background-color:  var(--gray-blue-400);
+}
+/*Modal Tabs END*/
 
 /*Infinite Marque START*/
 .client-marque-outer {

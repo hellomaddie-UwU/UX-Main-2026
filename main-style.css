@@ -71,15 +71,22 @@ html, body {
     --clairvoyant-600: #A12ECB;
     --clairvoyant-700: #8722A9;
     --clairvoyant-900: #5F1E71;
+    --clairvoyant-950: #4B095D;
 
     /*-- can delete this --*/
     --razzmatazz-400: #FF6D92;
     --razzmatazz-500: #F93A70;
+    --razzmatazz-700: #C30D4D;
 
     --tangerine-50:  #FFF4F1;
+    --tangerine-200: #FFD5C7;
     --tangerine-300: #FFB7A0;
     --tangerine-400: #FFA385;
+    --tangerine-500: #F8693B;
     --tangerine-600: #E54E1D;
+
+    --gray-blue-100: #EAECF5;
+    --gray-blue-400: #717BBC;
 
     /* ───────────────────────────────────────────────
     Primitive Tokens > Typography
@@ -320,39 +327,6 @@ nav {z-index: 10;}
 
 /*========================================================================*/
 /*Container Settings START*/
-.newsletter-form {
-    display: flex;
-    gap: var(--space-3);
-    align-items: end;
-}
-
-.newsletter-field {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
-    flex: 1 0 0;
-}
-
-.newsletter-field label {
-    color: var(--text-header);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28px;
-}
-
-.newsletter-field .form-control {
-    height: 44px;
-    border: 0.5px solid var(--clairvoyant-700);
-    border-radius: var(--space-1);
-    padding: var(--space-2) 10px;
-    box-shadow: none;
-}
-
-.newsletter-field .form-control:focus {
-    border-color: var(--clairvoyant-700);
-    box-shadow: none;
-}
-
 .formkit-input::placeholder {
     color: #717680 !important;
 }
@@ -361,14 +335,9 @@ nav {z-index: 10;}
     color: #717680;
 }
 
-.newsletter-submit {
-    flex-shrink: 0;
-    width: 184px;
-    text-align: center;
-}
-
 .w-67 {width: 67%;}
 .w-33 {width: 33%;}
+.w-70 {width: 70%;}
 
 .h-stack { /*equivalent of Auto Layout*/
     display: flex;
@@ -574,14 +543,20 @@ Typography Section
         position: relative;
     }
 
+    .lg-text {
+        font-size:   18px;
+        line-height: 23px;
+        font-weight: 600;
+    }
+
     .md-text {
-        font-size: 14px;
+        font-size:   14px;
         line-height: 23px;
         font-weight: 600;
     }
 
     .sm-text {
-        font-size: 14px;
+        font-size:   12px;
         line-height: 23px;
         font-weight: 400;
     }
@@ -781,16 +756,6 @@ input:user-invalid {
     .intro-tools-connector {display: none;}
 
     .tools-dialog {margin-top: 0;}
-
-    .newsletter-form {
-        display:        flex;
-        flex-direction: column;
-        gap:            var(--space-3);
-    }
-
-    .newsletter-field {width: 100%;}
-    
-    .newsletter-submit {align-self:flex-start;}
 
     footer {margin-left: 0px;}
 
@@ -997,7 +962,7 @@ input:user-invalid {
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    
+    .w-70 {width: 100%;}
 }
 
 /*Mobile*/ /*sm*/
@@ -1047,8 +1012,6 @@ input:user-invalid {
     .gallery-card-wide img {
         min-height: 0;
     }
-
-    .newsletter-submit {align-self:center; width: 100%;}
 
     .btn-primary-outline {text-align: center;}
 
