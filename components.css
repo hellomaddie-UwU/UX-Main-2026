@@ -309,7 +309,7 @@ this stretches it back out without affecting flat (non-.row) content*/
 }
 
 .modal-tabs-body {
-    height:            447px;
+    height:            400px;
     padding:           var(--space-4);
     background-color:  var(--dialog-body);
 }

@@ -47,6 +47,7 @@
         <link href="main-style.css" rel="stylesheet">
         <link href="components.css" rel="stylesheet">
         <link href="css/page.css" rel="stylesheet">
+        <link href="css/about-us.css" rel="stylesheet">
         <!--Stylesheet END-->
 
         <!--Fonts START-->
@@ -239,18 +240,36 @@
                     <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider">
                     <p class="current-bc">About Me</p>
                 </div>
+                
+                <h1 class="display-text mt-4 position-relative z-2">About Me</h1>
                 <!--
-                <h1 class="display-text">Page Name</h1><br>
                 <h3 class="display-paragraph">A short description.</h3>
                 -->
             </header>
             <!-- ===== Hero END ===== -->
 
+            <!-- ===== Introduction, Tools & Employment: gradients + connector overlay wrapper START ===== -->
+            <div class="intro-employment-wrapper">
+                <img class="about-gradient about-gradient-pink" src="imgs/pink%20gradient.png" alt="" aria-hidden="true">
+                <img class="about-gradient about-gradient-orange" src="imgs/orange%20gradient.png" alt="" aria-hidden="true">
+                <svg class="connector-overlay" id="connectorOverlay" aria-hidden="true" focusable="false">
+                    <defs>
+                        <mask id="connectorMask1" maskUnits="userSpaceOnUse">
+                            <path id="connectorMaskPath1" class="connector-mask-path"></path>
+                        </mask>
+                        <mask id="connectorMask2" maskUnits="userSpaceOnUse">
+                            <path id="connectorMaskPath2" class="connector-mask-path"></path>
+                        </mask>
+                    </defs>
+                    <path id="connectorPath1" class="connector-path" mask="url(#connectorMask1)"></path>
+                    <path id="connectorPath2" class="connector-path" mask="url(#connectorMask2)"></path>
+                </svg>
+
             <!-- ===== Introduction and Tools START ===== -->
             <div class="section-container-mt-0">
-                <div class="d-flex flex-wrap align-items-start justify-content-between">
+                <div class="intro-tools-row">
                     <!-- Introduction Dialog START -->
-                    <div class="modal-primary w-50">
+                    <div class="modal-primary reveal-up" id="introDialog">
                         <div class="modal-primary-head surface-dark">
                             <img src="imgs/control.svg" alt="dialog control icon">
                             <h6 class="text-center">Hi 🌸</h6>
@@ -270,10 +289,8 @@
                     </div>
                     <!-- Introduction Dialog END -->
 
-                    <img class="intro-tools-connector" src="imgs/intro-tools-connector.svg" alt="" aria-hidden="true">
-
                     <!-- Tools Dialog START -->
-                    <div class="modal-secondary tools-dialog">
+                    <div class="modal-secondary tools-dialog reveal-diagonal" id="toolsDialog">
                         <div class="modal-secondary-head surface-primary-800">
                             <img src="imgs/control.svg" alt="dialog control icon">
                             <h6 class="text-center">Tools</h6>
@@ -284,6 +301,10 @@
                                 <div class="tools-icon"><img src="imgs/tools/figma.svg" alt="Figma"></div>
                                 <div class="tools-icon"><img src="imgs/tools/procreate.svg" alt="Procreate"></div>
                                 <div class="tools-icon"><img src="imgs/tools/affinity.svg" alt="Affinity"></div>
+                                <div class="tools-icon"><img src="imgs/tools/keynote.svg" alt="Keynote"></div>
+                                <div class="tools-icon"><img src="imgs/tools/photoshop.svg" alt="Photoshop"></div>
+                                <div class="tools-icon"><img src="imgs/tools/illustrator.svg" alt="Illustrator"></div>
+                                <div class="tools-icon"><img src="imgs/tools/indesign.svg" alt="InDesign"></div>
                             </div>
                             <p class="tools-group-label">Build</p>
                             <div class="tools-icon-grid">
@@ -305,7 +326,7 @@
             <!-- ===== Employment History | Skill Set | Certification START ===== -->
             <div class="employment-info-section">
                 <!-- Info Dialog START -->
-                <div class="modal-primary w-70 mx-auto">
+                <div class="modal-primary w-70 mx-auto reveal-up" id="employmentDialog">
                     <div class="modal-primary-head surface-dark">
                         <img src="imgs/control.svg" alt="dialog control icon">
                         <h6 class="text-center">Employment Info</h6>
@@ -460,6 +481,8 @@
                 <!-- Info Dialog END -->
             </div>
             <!-- ===== Employment History | Skill Set | Certification END ===== -->
+            </div>
+            <!-- ===== Introduction, Tools & Employment: gradients + connector overlay wrapper END ===== -->
 
             <!-- ===== Newsletter CTA START ===== -->
             <div class="section-container newsletter">
@@ -522,6 +545,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
         <script src="script.js"></script>
+        <script src="intro-tools-connector.js"></script>
         <!-- ===== Script END ===== -->
     </body>
 </html>

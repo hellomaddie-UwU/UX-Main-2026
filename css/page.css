@@ -20,7 +20,7 @@ Table of Contents
 /* ───────────────────────────────────────────────
 Custom Width Measurements
 ───────────────────────────────────────────────*/
-.w-70 {width: 70%;}
+
 
 /* ───────────────────────────────────────────────
 Auto Layouts
@@ -200,6 +200,8 @@ Responsive Settings
         align-items:     center;
     }
 
+    .employment-info-section {padding: 40px 5% 160px 5%;}
+
 
     /* ───────────────────────────────────────────────
     Footer
@@ -258,7 +260,7 @@ Responsive Settings
     /* ───────────────────────────────────────────────
     Custom Width Measurements
     ───────────────────────────────────────────────*/
-    .w-70 {width: 100%;}
+
 
     /* ───────────────────────────────────────────────
     Newsletter CTA Banner
