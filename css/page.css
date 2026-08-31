@@ -20,12 +20,20 @@ Table of Contents
 /* ───────────────────────────────────────────────
 Custom Width Measurements
 ───────────────────────────────────────────────*/
-
+.w-70 {width: 70%;}
 
 /* ───────────────────────────────────────────────
 Auto Layouts
 ───────────────────────────────────────────────*/
+.h-stack { /*equivalent of Auto Layout*/
+    display:     flex;
+    align-items: flex-start;
+}
 
+.v-stack { /*equivalent of Auto Layout*/
+    display:        flex;
+    flex-direction: column;
+}
 
 /* ───────────────────────────────────────────────
 Main Page: the grid background
@@ -51,6 +59,7 @@ Navidation
 /* ───────────────────────────────────────────────
 Footer
 ───────────────────────────────────────────────*/
+footer {margin-left: 90px;}
 
 
 /* ───────────────────────────────────────────────
@@ -107,12 +116,23 @@ Blog Section
 /* ───────────────────────────────────────────────
 Galley Section
 ───────────────────────────────────────────────*/
-.gallery-wrapper {
+.gallery-container {
     display:  flex;
-    gap:      var(--space-4);
+    gap:      var(--space-5);
     position: relative;
     z-index:  1;
 }
+
+.gallery-wrapper-col-left, 
+.gallery-wrapper-col-right {
+    display:        flex;
+    flex-direction: column;
+    gap:            var(--space-5);
+}
+
+.gallery-wrapper-col-left {width: 67%;}
+
+.gallery-wrapper-col-right {width: 33%;}
 
 /* ───────────────────────────────────────────────
 Newsletter CTA Banner
@@ -181,6 +201,12 @@ Responsive Settings
     }
 
 
+    /* ───────────────────────────────────────────────
+    Footer
+    ───────────────────────────────────────────────*/
+    footer {margin-left: 0px;}
+
+
    /* ───────────────────────────────────────────────
     Global Section Container
     ───────────────────────────────────────────────*/
@@ -217,7 +243,7 @@ Responsive Settings
     /* ───────────────────────────────────────────────
     Galley Section
     ───────────────────────────────────────────────*/
-    .gallery-wrapper {gap: 12px;}
+    .gallery-container {gap: 12px;}
 
     /* ───────────────────────────────────────────────
     Newsletter CTA Banner
@@ -229,6 +255,15 @@ Responsive Settings
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    /* ───────────────────────────────────────────────
+    Custom Width Measurements
+    ───────────────────────────────────────────────*/
+    .w-70 {width: 100%;}
+
+    /* ───────────────────────────────────────────────
+    Newsletter CTA Banner
+    ───────────────────────────────────────────────*/
+    /* ----- Kit Embed Form ----- */
     .formkit-form[data-uid="2cce5a189f"] .formkit-field {
         flex:  1 1 100% !important;
         width: 100%;
@@ -258,10 +293,12 @@ Responsive Settings
     /* ───────────────────────────────────────────────
     Galley Section
     ───────────────────────────────────────────────*/
-    .gallery-wrapper {
+    .gallery-container {
         flex-direction: column; 
         width:          100%;
     }
+
+    .gallery-wrapper-col-left, .gallery-wrapper-col-right {gap: var(--space-3);}
 
     /* ───────────────────────────────────────────────
     Newsletter CTA Banner
@@ -273,5 +310,6 @@ Responsive Settings
 
     .newsletter-copy, .newsletter-form-col {width: 100%;}
 
+    /* ----- Kit Embed Form ----- */
     .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding: 0 !important;}
 }

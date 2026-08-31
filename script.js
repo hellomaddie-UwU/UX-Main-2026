@@ -1,10 +1,15 @@
 /* ───────────────────────────────────────────────
 Table of Contents
+1. Global Settings
+    1.A. 
+2. Custom Settings
+
 1. Navigation > Service Dropdown
 2. Table | Mobile Menu > Toggle Button
 3. Home > Case Study Section > Case Study Cards: 
     [fade + slide up into view on scroll] Animation: Desktop | Tablet View
 4. Mobile Menu > Dropdown Menu Functionality
+5. Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
 ───────────────────────────────────────────────*/
 
 /* ───────────────────────────────────────────────
@@ -160,7 +165,9 @@ if (btn && menu) {
 }
 
 
-// Current Passion Project: explanation card follows the mouse on hover
+/* ───────────────────────────────────────────────
+Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
+───────────────────────────────────────────────*/
 (function () {
     var containers = document.querySelectorAll('.cursor-coming-soon');
     if (!containers.length) return;
@@ -187,6 +194,7 @@ if (btn && menu) {
         });
     });
 }());
+
 
 // Tool icon tooltips: hover/focus a .tools-icon to see its tool name
 (function () {

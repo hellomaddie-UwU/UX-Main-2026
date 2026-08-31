@@ -147,6 +147,12 @@ nav {z-index: 10;}
 
 .brand-logo-tablet-mobile {display: none;}
 
+.nav-wrapper {
+    display:        flex;
+    flex-direction: column;
+    gap:            var(--space-3);
+}
+
 .nav-wrapper svg {
     width:         32px;
     height:        32px;
@@ -335,23 +341,6 @@ nav {z-index: 10;}
     color: #717680;
 }
 
-.w-67 {width: 67%;}
-.w-33 {width: 33%;}
-.w-70 {width: 70%;}
-
-.h-stack { /*equivalent of Auto Layout*/
-    display: flex;
-    align-items: flex-start;
-}
-
-.v-stack { /*equivalent of Auto Layout*/
-    display: flex;
-    flex-direction: column;
-}
-
-footer {
-    margin-left: 90px;
-}
 
 .end {
     background-color: #F8F9FC;
@@ -757,8 +746,6 @@ input:user-invalid {
 
     .tools-dialog {margin-top: 0;}
 
-    footer {margin-left: 0px;}
-
     .brand-logo-tablet-mobile {display: block;}
 
     .brand-logo-tablet-mobile img {height: 28px;}
@@ -962,7 +949,7 @@ input:user-invalid {
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
-    .w-70 {width: 100%;}
+    /*Insert Code Here*/
 }
 
 /*Mobile*/ /*sm*/
