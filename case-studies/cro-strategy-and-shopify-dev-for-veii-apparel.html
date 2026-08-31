@@ -10,6 +10,16 @@
 
           gtag('config', 'G-16N40MD9RW');
         </script>
+
+        <!-- MS Clarity tag -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "y8k08zp5aj");
+        </script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/svg" href="/imgs/favicon.svg">
@@ -38,6 +48,7 @@
         <link href="/main-style.css" rel="stylesheet">
         <link href="/components.css" rel="stylesheet">
         <link href="/case-study.css" rel="stylesheet">
+        <link href="/css/page.css" rel="stylesheet">
         <!--Stylesheet END-->
 
         <!--Fonts START-->
@@ -58,7 +69,7 @@
             </a>
             
             <!--Navigation Links-->
-            <div class="v-stack space-5 nav-wrapper text-center">
+            <div class="nav-wrapper text-center">
                 <!-- Home START -->
                 <a href="https://hellomaddie.com">
                     <div class="nav-item-link">
@@ -100,7 +111,6 @@
                 -->
                 <!-- Services END -->
 
-                <!--
                 <a href="about-me.html">
                     <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
@@ -109,7 +119,6 @@
                         <div class="nav-desktop-text">About Me</div>
                     </div>
                 </a>
-                -->
                 
                 <!-- Demos START -->
                 <!--
@@ -166,7 +175,7 @@
         </nav>
         
         <div class="mobile-menu-overlay"></div>
-        <!--Mobile Menu Content START-->
+        <!-- Mobile Menu Content START -->
         <div class="mobile-menu">
             <div class="mobile-nav-wrapper">
                 <a class="mobile-menu-item" href="https://hellomaddie.com">
@@ -175,10 +184,10 @@
                 <a class="mobile-menu-item" href="/case-study-catalogue.html">
                     <p>Case Studies</p>
                 </a>
-                <!--
                 <a class="mobile-menu-item" href="about-me.html">
                     <p>About Me</p>
                 </a>
+                <!--
                 <a class="mobile-menu-item mobile-menu-item-disabled" href="#" aria-disabled="true" tabindex="-1">
                     <p>Demos</p>
                 </a>
@@ -216,13 +225,16 @@
                 </div>
             </div>
         </div>
-        <!--Mobile Menu Content END-->
+        <!-- Mobile Menu Content END -->
         <!-- ===== Nav END ===== -->
 
         <div class="main-page">
-            <!--Hero Section START-->
+            <!-- ===== Hero START ===== -->
             <header class="section-container">
+
+                <!-- Breadcrumb START -->
                 <div class="site-breadcrumb">
+                    <!-- Mobile ver. START -->
                     <div class="breadcrumb-menu dropdown">
                         <button class="breadcrumb-menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open page menu">
                             <img src="/imgs/horizontal-menu.svg" alt="">
@@ -232,6 +244,9 @@
                             <li><a class="dropdown-item" href="https://hellomaddie.com/case-study-catalogue.html">Case Study Catalogue</a></li>
                         </ul>
                     </div>
+                    <!-- Mobile ver. END -->
+
+                    <!-- Desktop ver. START -->
                     <a href="https://hellomaddie.com" class="bc-home bc-desktop-only">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
@@ -242,28 +257,44 @@
                     <a href="https://hellomaddie.com/case-study-catalogue.html" class="bc-desktop-only">Case Studies</a>
                     <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="breadcrumb-divider">
                     <p class="current-bc">CRO Strategy and Shopify Development for Veii Apparel</p>
+                    <!-- Desktop ver. END -->
                 </div>
-                <div class="v-stack">
-                    <div class="h-stack space-2">
-                        <span class="pill pill-internal">Shopify Development</span>
-                        <span class="pill pill-e-commerce">E-commerce</span>
-                    </div>
-                    <h1 class="case-study-title">CRO Strategy and Shopify Development for Veii Apparel</h1>
-                </div>
+                <!-- Breadcrumb END -->
+
+                <h1 class="case-study-title">CRO Strategy and Shopify Development for Veii Apparel</h1>
+
                 <div class="case-study-featured-wrap">
                     <picture>
                         <source media="(max-width: 567px)" srcset="/imgs/featured-imgs/square-featured-img-3.png">
                         <img class="case-study-featured-img" src="/imgs/featured-imgs/featured-img-3.png" alt="">
                     </picture>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-7 col-md-12">
-                        <div class="d-flex align-items-center gap-2">
-                            <p class="fw-medium">Contract Period</p> 
-                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="dot divider">
-                            <p>Summer to Fall 2024</p> <!--contract date-->
+                        <div class="simple-table mb-4">
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Contract Duration</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <p class="simple-table-value">Summer to Fall 2024</p> <!--contract date-->
+                                </div>
+                            </div>
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Industry</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <span class="pill pill-e-commerce">E-commerce</span>
+                                </div>
+                            </div>
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Output Type</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <span class="pill pill-internal">Shopify Development</span>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="case-study-excerpt">A CRO strategy and Shopify front-end development using Microsoft Clarity's behavioral data to fix friction points. Later on launching a loyalty system program despite the structural challenge of selling cold-weather gear during a summer traffic window.</h5>                           
+
+                        <h5 class="case-study-excerpt">A CRO strategy and Shopify front-end development using Microsoft Clarity's behavioral data to fix friction points. Later on launching a loyalty system program despite the structural challenge of selling cold-weather gear during a summer traffic window.</h5>
+
                     </div>
                     <div class="col-lg-5 col-md-12 case-study-deliverables">
                         <div class="selection-container">
@@ -299,12 +330,13 @@
                     </div>
                 </div>
             </header>
-            <!--Hero Section END-->
+            <!-- ===== Hero END ===== -->
 
-            <!--Case Study Content START-->
+            <!-- ===== Case Study Content Container START ===== -->
             <div class="case-study-container">
                 <div class="section-container">
-                    <!--Progress Bar START-->
+
+                    <!-- Progress Bar START -->
                     <div class="progress-sticky-parent">
                         <div class="progress-section" aria-label="Reading progress tracker">
                             <div class="progress-track">
@@ -319,6 +351,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Mobile vr. of TOC START -->
                         <div class="mobile-table-of-contents"> <!--Button Component actually doesn't work-->
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -329,12 +363,6 @@
                                         <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#context">Context</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#impact">Impact</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#features">Features</a>
-                                    </li>
-                                    <li>
                                         <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#research-discovery">Research & Discovery</a>
                                     </li>
                                     <li>
@@ -343,15 +371,22 @@
                                     <li>
                                         <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#design-iterations">Design Iterations</a>
                                     </li>
+                                    <li>
+                                        <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#impact">Impact</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#features">Features</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- Mobile vr. of TOC END -->
                     </div>
                     <!--Progress Bar END-->
 
                     <div class="row">
-                        <!--TOC START-->
-                        <div class="col-3 toc-col">  
+                        <!-- Desktop vr. of TOC START-->
+                        <div class="col-3 toc-col">
                             <div class="selection-container">
                                 <!--Selector Boxes START-->
                                 <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selector-box">
@@ -367,74 +402,201 @@
                                         </div>
                                         <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
                                             <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#context">Context</a>
-                                            <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#impact">Impact</a>
-                                            <a style="margin-bottom:40px;" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#features">Features</a>
                                             <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#research-discovery">Research & Discovery</a>
                                             <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#key-insights">Key Insights</a>
-                                            <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#design-iterations">Design Iteration</a>
+                                            <a style="margin-bottom:40px;" href="cro-strategy-and-shopify-dev-for-veii-apparel.html#design-iterations">Design Iteration</a>
+                                            <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#impact">Impact</a>
+                                            <a href="cro-strategy-and-shopify-dev-for-veii-apparel.html#features">Features</a>
                                         </div>
-                                        <div class="row position-absolute" style="top: 103px;">
-                                            <img class="w-100" src="/imgs/the-ux-stuff.svg" alt="the-ux-stuff">
+                                        <div class="row position-absolute" style="bottom: 72px;">
+                                            <img class="w-100" src="/imgs/results-divider-mini.svg" alt="the-ux-stuff">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--TOC END-->
+                        <!-- Desktop vr. of TOC END-->
 
-                        <!--Case Study Content START-->
+                        <!-- ===== Case Study Content START ===== -->
                         <div class="col-9 case-study-content">
-                            <!--Content Start-->
-                            <!--Context-->
+
+                            <!-- ===== Context ===== -->
                             <div class="block v-stack space-5" id="context">
                                 <div class="v-stack space-5">
+                                    <!-- ----- Text Block ----- -->
                                     <div>
                                         <h5>Context</h5>
-                                        <p>Veii Apparel is a community-driven activewear brand selling performance hoodies, sweatshirts, and joggers through their own Shopify store. Around mid-2024, I was hired to be their CRO Strategist and Shopify Front-End Developer. The goal was to optimize the store's conversion rates and enhance the overall user experience. I mostly used Microsoft Clarity to get Veii's customer behavioral data. 
+                                        <p>Veii Apparel is a community-driven activewear brand selling performance hoodies, sweatshirts, and joggers through their own Shopify store. Around mid-2024, I was hired to be their CRO Strategist and Shopify Front-End Developer. The goal was to optimize the store's conversion rates and enhance the overall user experience. I mostly used Microsoft Clarity to get Veii's customer behavioral data.
                                         <br><br>
                                         The project spanned approximately three to four months, starting in the summer, which posed unique challenges given the seasonal nature of their cold-weather product catalog.
                                         </p>
                                     </div>
+
+                                    <!-- ----- No Outline Table ----- -->
                                     <div class="block-table">
                                         <div class="row">
                                             <div class="col-lg-2 col-md-4 col-sm-6">
                                                 <p class="thead">Team</p>
-                                                <p>Just Me</p>                                                   
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-6 block-table-col">
-                                                <p class="thead">Duration</p>
-                                                <p>3-4 months</p>
+                                                <p>Just Me</p>
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
-                                                <p class="thead">Role</p>
-                                                <p>CRO Strategist</p> 
+                                                <p class="thead">Roles</p>
+                                                <p>CRO Strategist</p>
                                                 <p>UX/UI Designer</p>
-                                                <p>Shopify Developer</p>                                    
+                                                <p>Shopify Developer</p>
                                             </div>
-                                            <div class="col-lg-5 col-md-5 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
-                                                <p class="thead">Skills</p>
-                                                <div class="d-flex justify-content-start align-items-start gap-2">
-                                                    <img class="orange-dot mt-2" src="/imgs/orange-dot.svg" alt="list point">
-                                                    <p>Researching & Conducting Competitor Analysis</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
-                                                    <p>A/B Testing</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
-                                                    <p>Prototyping & Wireframing</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
-                                                    <p>Data Gathering & Analysis</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- ----- Simple Table ----- -->
+                                    <div class="simple-table">
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Skills</p>
+                                            <div class="simple-table-value-wrap-vertical">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Researching & Conducting Competitor Analysis</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>A/B Testing</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Prototyping & Wireframing</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Data Gathering & Analysis</p>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                                                         
+                                            </div>
+                                        </div>
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Tools</p>
+                                            <div class="simple-table-value-wrap-horizontal">
+                                                <div class="tools-icon-grid">
+                                                    <div class="tools-icon"><img src="/imgs/tools/figma.svg" alt="Figma"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/shopify.svg" alt="Shopify"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/ms-clarity.png" alt="Microsoft Clarity"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/airtable.svg" alt="Airtable"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--Impact-->
+
+
+                            <!-- ===== Research & Discovery ===== -->
+                            <div class="block v-stack space-5" id="research-discovery">
+                                <div class="v-stack space-5">
+                                    <h5>Research & Discovery</h5>
+                                    <p>Microsoft Clarity was the sole research tool used throughout the project, installed by the founder before the engagement began. Session recordings and heatmap data surfaced three consistent behavioral patterns that shaped the prioritization of work:</p>
+                                    <div class="v-stack space-3 mt-2">
+                                        <div class="r-and-d-item">
+                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="a point">
+                                            <div class="v-stack">
+                                                <div class="case-study-subtitle">Mid-Page Drop-Off</div>
+                                                <p>The majority of visitors were leaving between the 50 and 75 percent scroll depth, suggesting friction or a loss of intent before reaching the CTA.</p>
+                                            </div>
+                                        </div>
+                                        <div class="r-and-d-item">
+                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="a point">
+                                            <div class="v-stack">
+                                                <div class="case-study-subtitle">Rage Clicks on Product Pages</div>
+                                                <p>Concentrated rage-click activity pointed to user frustration, most likely caused by sizing information being unavailable at the moment users needed it to commit to a purchase.</p>
+                                            </div>
+                                        </div>
+                                        <div class="r-and-d-item">
+                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="a point">
+                                            <div class="v-stack">
+                                                <div class="case-study-subtitle">Low Catalogue Exploration</div>
+                                                <p>No formal user interviews or surveys were conducted. All design decisions were grounded in Clarity's behavioral data.</p>
+                                            </div>
+                                        </div>                                                                                                                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Key Insights ===== -->
+                            <div class="block v-stack space-5" id="key-insights">
+                                <div class="v-stack space-5">
+                                    <h5>Key Insights</h5>
+                                    <div class="insight-accordion" data-insight-accordion>
+                                        <div class="insight-accordion-item is-open">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="insight point">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                    <p><span class="situation-bold">Because</span> the size chart had to be clicked by a button to be seen... <span class="situation-bold">it led to</span> visitors not purchasing as immediate as intended.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>Bringing out the size chart outside to the open, lessen the friction for visitors to find the sizing information; which is a critical factor for purchase decision.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="insight point">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
+                                                    <p><span class="situation-bold">Because</span> the product catalog was cold-weather dominant and the traffic window was summer... <span class="situation-bold">it led to</span> new-visitor acquisition having a structural ceiling that UX adjustments could not overcome.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>Targeting existing buyers through the reward system had more leverage, and the results reflected that.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="insight point">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
+                                                    <p><span class="situation-bold">Because</span> TikTok-referred users typically land directly on product pages... <span class="situation-bold">it led to</span> the top-level navigation changes having a limited opportunity to affect conversion behavior</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>The desktop navigation update was a stakeholder preference call rather than a data-driven one; the two-week results confirmed that it did not move the needle.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ===== Design Iterations ===== -->
+                            <div class="block v-stack space-5" id="design-iterations">
+                                <div class="v-stack space-5">
+                                    <h5>Design Iterations</h5>
+                                    <p>Each change followed a staging-first workflow: build in staging, review and approve with the founder, document the change, push live, then measure over a two-week window before prioritising the next initiative. This made the process methodical even when the contract was short and the measurement windows were limited.
+                                    <br><br>
+                                    The scope of the engagement expanded mid-contract when the founder realised the role included front-end Shopify development capability. The original brief was behavioral data analysis and friction-point fixes. By the end, the work also included a loyalty system and a campaign landing page, both of which went beyond the original CRO mandate.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="h-stack space-3 align-items-center my-5">
+                                <img class="results-divider-line" src="/imgs/dash-line.svg" alt="">
+                                <h6 class="results-divider-text text-center">The Results</h6>
+                                <img class="results-divider-line" src="/imgs/dash-line.svg" alt="">
+                            </div>
+
+                            <!-- ===== Impact ===== -->
                             <div class="block v-stack space-5" id="impact">
                                 <div class="v-stack space-5">
                                     <div>
@@ -469,7 +631,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Features-->
+
+                            <!-- ===== Features ===== -->
                             <div class="block v-stack space-5" id="features">
                                 <div class="v-stack space-5">
                                     <h5>Features</h5>     
@@ -632,103 +795,9 @@
                                     <!--Feature #4 END-->                                              
                                 </div>
                             </div>
-                            <!--Research & Discovery-->
-                            <div class="block v-stack space-5" id="research-discovery">
-                                <div class="v-stack space-5">
-                                    <h5>Research & Discovery</h5>
-                                    <p>Microsoft Clarity was the sole research tool used throughout the project, installed by the founder before the engagement began. Session recordings and heatmap data surfaced three consistent behavioral patterns that shaped the prioritization of work:</p>
-                                    <div class="v-stack space-3 mt-2">
-                                        <div class="r-and-d-item">
-                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="a point">
-                                            <div class="v-stack">
-                                                <div class="case-study-subtitle">Mid-Page Drop-Off</div>
-                                                <p>The majority of visitors were leaving between the 50 and 75 percent scroll depth, suggesting friction or a loss of intent before reaching the CTA.</p>
-                                            </div>
-                                        </div>
-                                        <div class="r-and-d-item">
-                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="a point">
-                                            <div class="v-stack">
-                                                <div class="case-study-subtitle">Rage Clicks on Product Pages</div>
-                                                <p>Concentrated rage-click activity pointed to user frustration, most likely caused by sizing information being unavailable at the moment users needed it to commit to a purchase.</p>
-                                            </div>
-                                        </div>
-                                        <div class="r-and-d-item">
-                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="a point">
-                                            <div class="v-stack">
-                                                <div class="case-study-subtitle">Low Catalogue Exploration</div>
-                                                <p>No formal user interviews or surveys were conducted. All design decisions were grounded in Clarity's behavioral data.</p>
-                                            </div>
-                                        </div>                                                                                                                                    
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Key Insights-->
-                            <div class="block v-stack space-5" id="key-insights">
-                                <div class="v-stack space-5">
-                                    <h5>Key Insights</h5>
-                                    <div class="insight-accordion" data-insight-accordion>
-                                        <div class="insight-accordion-item is-open">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="insight point">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
-                                                    <p><span class="situation-bold">Because</span> the size chart had to be clicked by a button to be seen... <span class="situation-bold">it led to</span> visitors not purchasing as immediate as intended.</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>Bringing out the size chart outside to the open, lessen the friction for visitors to find the sizing information; which is a critical factor for purchase decision.</p>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="insight-accordion-item">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="insight point">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
-                                                    <p><span class="situation-bold">Because</span> the product catalog was cold-weather dominant and the traffic window was summer... <span class="situation-bold">it led to</span> new-visitor acquisition having a structural ceiling that UX adjustments could not overcome.</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>Targeting existing buyers through the reward system had more leverage, and the results reflected that.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="insight-accordion-item">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="insight point">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
-                                                    <p><span class="situation-bold">Because</span> TikTok-referred users typically land directly on product pages... <span class="situation-bold">it led to</span> the top-level navigation changes having a limited opportunity to affect conversion behavior</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>The desktop navigation update was a stakeholder preference call rather than a data-driven one; the two-week results confirmed that it did not move the needle.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Design Iterations-->
-                            <div class="block v-stack space-5" id="design-iterations">
-                                <div class="v-stack space-5">
-                                    <h5>Design Iterations</h5>
-                                    <p>Each change followed a staging-first workflow: build in staging, review and approve with the founder, document the change, push live, then measure over a two-week window before prioritising the next initiative. This made the process methodical even when the contract was short and the measurement windows were limited.
-                                    <br><br>
-                                    The scope of the engagement expanded mid-contract when the founder realised the role included front-end Shopify development capability. The original brief was behavioral data analysis and friction-point fixes. By the end, the work also included a loyalty system and a campaign landing page, both of which went beyond the original CRO mandate.
-                                    </p>
-                                </div>
-                            </div>
                         </div>
-                        <!--Case Study Content END-->
+                        <!-- ===== Case Study Content END ===== -->
                     </div>
                 </div>
 
@@ -888,14 +957,13 @@
                 </footer>
                 <!-- ===== Footer END ===== -->
             </div>
-            <!--Case Study Content END-->
+            <!-- ===== Case Study Content Container END ===== -->
         </div>
 
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/script.js"></script>
         <script src="/breadcrumb.js"></script>
-        <script src="/mobile-menu-toggle.js"></script>
 
         <!--Case Study JS-->
         <script src="/progress-bar.js"></script>

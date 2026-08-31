@@ -1,0 +1,382 @@
+/* ─────────────────────────────────────────────── 
+Table of Contents
+1. Global Layout Settings
+    1.A. Custom Width Measurements
+    1.B. Auto Layouts
+2. Global Page Settings
+    2.A. Main Page
+    2.B. Navidation
+    2.C. Footer
+    2.D. Global Section Container
+3. Section Settings
+    3.A. Project Section
+    3.B. Testimonial Section
+    3.C. Blog Section
+    3.D. Galley Section
+    3.E. Newsletter CTA Banner
+    3.F. Employment | Info Section
+4. Custom Component Container
+    4.A. Selection Container
+5. Responsive Settings
+───────────────────────────────────────────────*/
+
+
+/* ───────────────────────────────────────────────
+Global Layout Settings
+───────────────────────────────────────────────*/
+    /* ───────────────────────────────────────────────
+    Custom Width Measurements
+    ───────────────────────────────────────────────*/
+
+
+    /* ───────────────────────────────────────────────
+    Auto Layouts
+    ───────────────────────────────────────────────*/
+    .h-stack { /*equivalent of Auto Layout*/
+        display:     flex;
+        align-items: flex-start;
+    }
+
+    .v-stack { /*equivalent of Auto Layout*/
+        display:        flex;
+        flex-direction: column;
+    }
+
+
+/* ───────────────────────────────────────────────
+Global Layout Settings
+───────────────────────────────────────────────*/    
+    /* ───────────────────────────────────────────────
+    Main Page: the grid background
+    ───────────────────────────────────────────────*/
+    .main-page, .grid-bg {
+        background-image:  url(../imgs/line\ bg.svg);
+        background-repeat: repeat;
+    }
+
+    /* ───────────────────────────────────────────────
+    Navidation
+    ───────────────────────────────────────────────*/
+    .nav-container {
+        width:           90px;
+        display:         inline-flex;
+        position:        fixed;
+        height:          100vh;
+        padding:         var(--space-8) var(--space-4);
+        flex-direction:  column;
+        justify-content: space-between;
+    }
+
+    /* ───────────────────────────────────────────────
+    Footer
+    ───────────────────────────────────────────────*/
+    footer {margin-left: 90px;}
+
+
+    /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+    .section-container,
+    .section-container-mt-0,
+    .projects-section,
+    .testimonials-container,
+    .blog-container {margin-left: 90px;}
+
+    .section-container {padding: 40px 5% 60px 5%;}
+
+    .section-container-mt-0 {padding: 0px 5% 60px 5%;}
+
+
+/* ───────────────────────────────────────────────
+Section Settings
+───────────────────────────────────────────────*/
+    /* ───────────────────────────────────────────────
+    Project Section
+    ───────────────────────────────────────────────*/
+    .projects-section {padding-top: 120px;}
+
+    .projects-row { 
+        display:    flex;
+        width:      100%;
+        margin-top: var(--space-5);
+    }
+
+    /* ───────────────────────────────────────────────
+    Testimonial Section, Container and Wrapper
+    ───────────────────────────────────────────────*/
+    .testimonials-container {padding: 40px 5% 170px 5%;}
+
+    .testimonials-row {
+        display:     flex;
+        align-items: stretch;
+        gap:         var(--space-5);
+        margin-top:  var(--space-5);
+    }
+
+    .testimonial-card {
+        flex:             1 1 0;
+        display:          flex;
+        position:         relative;
+        z-index:          0;
+        background-color: white;
+    }
+
+    /* ───────────────────────────────────────────────
+    Blog Section
+    ───────────────────────────────────────────────*/
+
+
+    /* ───────────────────────────────────────────────
+    Galley Section
+    ───────────────────────────────────────────────*/
+    .gallery-container {
+        display:  flex;
+        gap:      var(--space-5);
+        position: relative;
+        z-index:  1;
+    }
+
+    .gallery-wrapper-col-left, 
+    .gallery-wrapper-col-right {
+        display:        flex;
+        flex-direction: column;
+        gap:            var(--space-5);
+    }
+
+    .gallery-wrapper-col-left {width: 67%;}
+
+    .gallery-wrapper-col-right {width: 33%;}
+
+
+    /* ───────────────────────────────────────────────
+    Newsletter CTA Banner
+    ───────────────────────────────────────────────*/
+    .newsletter {
+        background-color: white;
+        border-top:       1px solid #FFA1B7;
+    }
+
+    .newsletter-inner {
+        display: flex;
+        gap:     var(--space-4);
+    }
+
+    .newsletter-copy {width: 25%;} /*the left col of the section*/
+
+    .newsletter-form-col {width: 75%;} /*the right col of the section*/
+
+        /* ----- Kit Embed Form ----- */
+        .formkit-form[data-uid="2cce5a189f"], 
+        .formkit-form[data-uid="e53b34d164"] {
+            max-width: none !important; 
+            width:     100%;
+        }
+
+        .formkit-form[data-uid="2cce5a189f"] [data-style="clean"],
+        .formkit-form[data-uid="e53b34d164"] [data-style="clean"] {padding-top: 0 !important;}
+
+        .formkit-form[data-uid="e53b34d164"] .formkit-field {
+            flex:  1 1 100% !important;
+            width: 100%;
+        }
+
+
+    /* ───────────────────────────────────────────────
+    Employment | Info Section
+    ───────────────────────────────────────────────*/
+    .employment-info-section {padding: 160px 5% 160px 5%;}
+
+
+/* ───────────────────────────────────────────────
+Custom Component Container
+───────────────────────────────────────────────*/
+    /* ───────────────────────────────────────────────
+    Selection Container
+    ───────────────────────────────────────────────*/
+    .selection-container {
+    margin:   10px;
+    position: relative;
+    }
+
+    .selection-content {
+        border:   0.5px #8722A9 solid;
+        overflow: hidden;
+        padding:  24px 32px;
+    }
+
+    .selection-content .row {--bs-gutter-x: 0;}
+
+    .selection-content .d-flex {min-width: 0;}
+
+    .selection-content p {
+        min-width:     0;
+        overflow-wrap: break-word;
+    }
+
+    .selector-box-top-left, 
+    .selector-box-top-right, 
+    .selector-box-bottom-left, 
+    .selector-box-bottom-right {position: absolute;}
+
+    .selector-box-top-left, .selector-box-top-right {top: -8px;}
+
+    .selector-box-bottom-left, .selector-box-bottom-right {bottom: -8px;}
+
+    .selector-box-top-left, .selector-box-bottom-left {left: -8px;}
+
+    .selector-box-top-right, .selector-box-bottom-right {right: -8px;}
+
+
+/* ───────────────────────────────────────────────
+Responsive Settings
+───────────────────────────────────────────────*/
+@media screen and (min-width: 1920px) {
+    /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+    .section-container {
+        padding-left:  15%;
+        padding-right: 15%;
+    }
+}
+
+/*Widescreen*/ /*xxl*/ 
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
+/*Tablet LG START*/ /*lg*/
+@media screen and (max-width: 992px) {
+    /* ───────────────────────────────────────────────
+    Navidation
+    ───────────────────────────────────────────────*/
+    .nav-container {
+        width:           100vw;
+        height:          80px;
+        position:        static;
+        padding:         16px 4%;
+        flex-direction:  row;
+        justify-content: space-between;
+        align-items:     center;
+    }
+
+    .employment-info-section {padding: 40px 5% 160px 5%;}
+
+
+    /* ───────────────────────────────────────────────
+    Footer
+    ───────────────────────────────────────────────*/
+    footer {margin-left: 0px;}
+
+
+   /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+
+    .section-container {
+        margin-left:   0px;
+        padding-left:  4%;
+        padding-right: 4%;
+    }
+
+    .section-container-mt-0 {
+        margin-left: 0px;
+        padding:     0px 4% 60px 4%;
+    }
+
+
+    /* ───────────────────────────────────────────────
+    Project Section
+    ───────────────────────────────────────────────*/
+    .projects-section {margin-left: 0px;}
+
+    .projects-row {flex-direction: column;}
+
+
+    /* ───────────────────────────────────────────────
+    Testimonial Section, Container and Wrapper
+    ───────────────────────────────────────────────*/
+    .testimonials-container {
+        margin-left:   0px;
+        width:         auto;
+        padding-left:  4%;
+        padding-right: 4%;
+    }
+
+
+    /* ───────────────────────────────────────────────
+    Galley Section
+    ───────────────────────────────────────────────*/
+    .gallery-container {gap: 12px;}
+
+
+    /* ───────────────────────────────────────────────
+    Newsletter CTA Banner
+    ───────────────────────────────────────────────*/
+    .newsletter-copy {width: 40%;}
+
+    .newsletter-form-col {width: 60%;}
+}
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+    /* ───────────────────────────────────────────────
+    Custom Width Measurements
+    ───────────────────────────────────────────────*/
+
+
+    /* ───────────────────────────────────────────────
+    Newsletter CTA Banner
+    ───────────────────────────────────────────────*/
+    /* ----- Kit Embed Form ----- */
+    .formkit-form[data-uid="2cce5a189f"] .formkit-field {
+        flex:  1 1 100% !important;
+        width: 100%;
+    }
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    /* ───────────────────────────────────────────────
+    Navidation
+    ───────────────────────────────────────────────*/
+    .nav-container {
+        padding:  16px 8%;
+        position: relative;
+        z-index:  4;
+    }
+
+    
+    /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+    .section-container {
+        margin-left:   0px;
+        padding-left:  8%;
+        padding-right: 8%;
+    }
+
+    /* ───────────────────────────────────────────────
+    Galley Section
+    ───────────────────────────────────────────────*/
+    .gallery-container {
+        flex-direction: column; 
+        width:          100%;
+    }
+
+    .gallery-wrapper-col-left, .gallery-wrapper-col-right {gap: var(--space-3);}
+
+
+    /* ───────────────────────────────────────────────
+    Newsletter CTA Banner
+    ───────────────────────────────────────────────*/
+    .newsletter-inner {
+        display:        flex;
+        flex-direction: column;
+    }
+
+    .newsletter-copy, .newsletter-form-col {width: 100%;}
+
+        /* ----- Kit Embed Form ----- */
+        .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding: 0 !important;}
+}

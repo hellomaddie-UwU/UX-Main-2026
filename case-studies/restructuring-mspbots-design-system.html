@@ -10,6 +10,16 @@
 
           gtag('config', 'G-16N40MD9RW');
         </script>
+
+        <!-- MS Clarity tag -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "y8k08zp5aj");
+        </script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/svg" href="/imgs/favicon.svg">
@@ -38,6 +48,7 @@
         <link href="/main-style.css" rel="stylesheet">
         <link href="/components.css" rel="stylesheet">
         <link href="/case-study.css" rel="stylesheet">
+        <link href="/css/page.css" rel="stylesheet">
         <!--Stylesheet END-->
 
         <!--Fonts START-->
@@ -58,7 +69,7 @@
             </a>
             
             <!--Navigation Links-->
-            <div class="v-stack space-5 nav-wrapper text-center">
+            <div class="nav-wrapper text-center">
                 <!-- Home START -->
                 <a href="/index.html">
                     <div class="nav-item-link">
@@ -100,7 +111,6 @@
                 -->
                 <!-- Services END -->
 
-                <!--
                 <a href="about-me.html">
                     <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
@@ -109,7 +119,6 @@
                         <div class="nav-desktop-text">About Me</div>
                     </div>
                 </a>
-                -->
                 
                 <!-- Demos START -->
                 <!--
@@ -166,7 +175,7 @@
         </nav>
         
         <div class="mobile-menu-overlay"></div>
-        <!--Mobile Menu Content START-->
+        <!-- Mobile Menu Content START -->
         <div class="mobile-menu">
             <div class="mobile-nav-wrapper">
                 <a class="mobile-menu-item" href="/index.html">
@@ -175,10 +184,10 @@
                 <a class="mobile-menu-item" href="/case-study-catalogue.html">
                     <p>Case Studies</p>
                 </a>
-                <!--
                 <a class="mobile-menu-item" href="about-me.html">
                     <p>About Me</p>
                 </a>
+                <!--
                 <a class="mobile-menu-item mobile-menu-item-disabled" href="#" aria-disabled="true" tabindex="-1">
                     <p>Demos</p>
                 </a>
@@ -216,13 +225,16 @@
                 </div>
             </div>
         </div>
-        <!--Mobile Menu Content END-->
+        <!-- Mobile Menu Content END -->
         <!-- ===== Nav END ===== -->
 
         <div class="main-page">
-            <!--Hero Section START-->
+            <!-- ===== Hero START ===== -->
             <header class="section-container">
+
+                <!-- Breadcrumb START -->
                 <div class="site-breadcrumb">
+                    <!-- Mobile ver. START -->
                     <div class="breadcrumb-menu dropdown">
                         <button class="breadcrumb-menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open page menu">
                             <img src="/imgs/horizontal-menu.svg" alt="Page menu toggle icon">
@@ -232,6 +244,9 @@
                             <li><a class="dropdown-item" href="https://hellomaddie.com/case-study-catalogue.html">Case Study Catalogue</a></li>
                         </ul>
                     </div>
+                    <!-- Mobile ver. END -->
+
+                    <!-- Desktop ver. START -->
                     <a href="http://hellomaddie.com" class="bc-home bc-desktop-only">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
@@ -242,28 +257,44 @@
                     <a href="https://hellomaddie.com/case-study-catalogue.html" class="bc-desktop-only">Case Studies</a>
                     <img src="/imgs/breadcrumb-divider.svg" alt="Breadcrumb separator icon" class="breadcrumb-divider">
                     <p class="current-bc">Restructuring MSPbot's Design System</p>
+                    <!-- Desktop ver. END -->
                 </div>
-                <div class="v-stack">
-                    <div class="h-stack space-2">
-                        <span class="pill pill-internal">Internal Documentation</span>
-                        <span class="pill pill-tech">AI & Technology</span>
-                    </div>
-                    <h1 class="case-study-title">Restructuring MSPbot's Design System</h1>
-                </div>
+                <!-- Breadcrumb END -->
+
+                <h1 class="case-study-title">Restructuring MSPbot's Design System</h1>
+
                 <div class="case-study-featured-wrap">
                     <picture>
                         <source media="(max-width: 567px)" srcset="/imgs/featured-imgs/square-featured-img-2.png">
                         <img class="case-study-featured-img" src="/imgs/featured-imgs/featured-img-2.png" alt="MSPbots Design System 2025 cover slide beside sample documentation pages for typography and components">
                     </picture>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-7 col-md-12">
-                        <div class="d-flex align-items-center gap-2">
-                            <p class="fw-medium">Contract Period</p> 
-                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="Dot divider icon">
-                            <p>Q1 - Q4 2025</p> <!--contract date-->
+                        <div class="simple-table mb-4">
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Contract Duration</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <p class="simple-table-value">Q1 - Q4 2025</p> <!--contract date-->
+                                </div>
+                            </div>
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Industry</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <span class="pill pill-internal">Internal Documentation</span>
+                                </div>
+                            </div>
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Output Type</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <span class="pill pill-tech">AI & Technology</span>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="case-study-excerpt">A year-long background project with my colleague, Nora Li, where I’ve documented and aligned all basic components, plus authored an Accessibility Doc and Writing Guidelines doc independently.</h5>                           
+
+                        <h5 class="case-study-excerpt">A year-long background project with my colleague, Nora Li, where I’ve documented and aligned all basic components, plus authored an Accessibility Doc and Writing Guidelines doc independently.</h5>
+
                     </div>
                     <div class="col-lg-5 col-md-12 case-study-deliverables">
                         <div class="selection-container">
@@ -295,12 +326,13 @@
                     </div>
                 </div>
             </header>
-            <!--Hero Section END-->
+            <!-- ===== Hero END ===== -->
 
-            <!--Case Study Content START-->
+            <!-- ===== Case Study Content Container START ===== -->
             <div class="case-study-container">
                 <div class="section-container">
-                    <!--Progress Bar START-->
+
+                    <!-- Progress Bar START -->
                     <div class="progress-sticky-parent">
                         <div class="progress-section" aria-label="Reading progress tracker">
                             <div class="progress-track">
@@ -315,6 +347,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Mobile vr. of TOC START -->
                         <div class="mobile-table-of-contents"> <!--Button Component actually doesn't work-->
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -325,12 +358,6 @@
                                         <a class="dropdown-item" href="restructuring-mspbots-design-system.html#context">Context</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="restructuring-mspbots-design-system.html#impact">Impact</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="restructuring-mspbots-design-system.html#features">Features</a>
-                                    </li>
-                                    <li>
                                         <a class="dropdown-item" href="restructuring-mspbots-design-system.html#research-discovery">Research & Discovery</a>
                                     </li>
                                     <li>
@@ -339,15 +366,22 @@
                                     <li>
                                         <a class="dropdown-item" href="restructuring-mspbots-design-system.html#design-iterations">Design Iterations</a>
                                     </li>
+                                    <li>
+                                        <a class="dropdown-item" href="restructuring-mspbots-design-system.html#impact">Impact</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="restructuring-mspbots-design-system.html#features">Features</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- Mobile vr. of TOC END -->
                     </div>
                     <!--Progress Bar END-->
 
                     <div class="row">
-                        <!--TOC START-->
-                        <div class="col-3 toc-col">  
+                        <!-- Desktop vr. of TOC START-->
+                        <div class="col-3 toc-col">
                             <div class="selection-container">
                                 <!--Selector Boxes START-->
                                 <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="Decorative corner bracket accent">
@@ -363,29 +397,30 @@
                                         </div>
                                         <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
                                             <a href="restructuring-mspbots-design-system.html#context">Context</a>
-                                            <a href="restructuring-mspbots-design-system.html#impact">Impact</a>
-                                            <a style="margin-bottom:40px;" href="restructuring-mspbots-design-system.html#features">Features</a>
                                             <a href="restructuring-mspbots-design-system.html#research-discovery">Research & Discovery</a>
                                             <a href="restructuring-mspbots-design-system.html#key-insights">Key Insights</a>
-                                            <a href="restructuring-mspbots-design-system.html#design-iterations">Design Iteration</a>
+                                            <a style="margin-bottom:40px;" href="restructuring-mspbots-design-system.html#design-iterations">Design Iteration</a>
+                                            <a href="restructuring-mspbots-design-system.html#impact">Impact</a>
+                                            <a href="restructuring-mspbots-design-system.html#features">Features</a>
                                         </div>
-                                        <div class="row position-absolute" style="top: 103px;">
-                                            <img class="w-100" src="/imgs/the-ux-stuff.svg" alt="&quot;The UX Stuff&quot; decorative text graphic">
+                                        <div class="row position-absolute" style="bottom: 72px;">
+                                            <img class="w-100" src="/imgs/results-divider-mini.svg" alt="&quot;The UX Stuff&quot; decorative text graphic">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--TOC END-->
+                        <!-- Desktop vr. of TOC END-->
 
-                        <!--Case Study Content START-->
+                        <!-- ===== Case Study Content START ===== -->
                         <div class="col-9 case-study-content">
-                            <!--Content Start-->
-                            <!--Context-->
+
+                            <!-- ===== Context ===== -->
                             <div class="block v-stack space-5" id="context">
                                 <div class="v-stack space-5">
+                                    <!-- ----- Text Block ----- -->
                                     <div>
-                                        <h5>Context</h5> 
+                                        <h5>Context</h5>
                                         <p>MSPbots’ design system at the time was originally rough and had a lot of missing components. Due to this, the library didn’t reflect the existing Legacy Product, forcing designers to spend extra time reconciling mockups against the real interface.</p>
                                         <br>
                                         <p>The restructuring project was initiated to fix the following: </p>
@@ -393,50 +428,288 @@
                                             <li>Have a design system that new designers could open and understand independently</li>
                                             <li>The components matching the actual product; and  </li>
                                             <li>The availability to replace the team's reliance on Element Plus' external documentation site. </li>
-                                        </ol>                                           
+                                        </ol>
                                         <p>The project was also formally scoped into three phases: documentation, enhancement, then UI application, but was consistently treated as a low-priority background task, worked on between higher-priority assignments throughout the year.</p>
                                     </div>
+
+                                    <!-- ----- No Outline Table ----- -->
                                     <div class="block-table">
                                         <div class="row">
                                             <div class="col-lg-2 col-md-4 col-sm-6">
                                                 <p class="thead">Team</p>
                                                 <p>Me</p>
                                                 <p>Nora Li</p>
-                                            </div>
-                                            <div class="col-lg-2 col-md-4 col-sm-6 block-table-col">
-                                                <p class="thead">Duration</p>
-                                                <p>1 Year</p>
-                                            </div>
-                                            <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
+                                            </div>                            
+                                            <div class="col-lg-6 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
                                                 <p class="thead">Role</p>
                                                 <p>UX/UI Designer</p>
                                                 <p>UX Writer</p>
                                                 <p>AI Agent Developer</p>
+                                            </div>                          
+                                        </div>
+                                    </div>
+
+                                    <!-- ----- Simple Table ----- -->
+                                    <div class="simple-table">
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Skills</p>
+                                            <div class="simple-table-value-wrap-vertical">
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>UI Auditing</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Writing</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-12">
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Designing and Project Management</p>
+                                                        </div>
+                                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                                            <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                            <p>Researching</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-lg-5 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
-                                                <p class="thead">Skills</p>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>UI Auditing</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>Writing</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>Designing and Project Management</p>
-                                                </div>
-                                                <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="List bullet icon">
-                                                    <p>Researching</p>
+                                        </div>
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Tools</p>
+                                            <div class="simple-table-value-wrap-horizontal">
+                                                <div class="tools-icon-grid">
+                                                    <div class="tools-icon"><img src="/imgs/tools/figma.svg" alt="Figma"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/clickup.svg" alt="Procreate"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--Impact-->
+
+                            <!-- ===== Research & Discovery ===== -->
+                            <div class="block v-stack space-5" id="research-discovery">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Research & Discovery</h5>
+                                        <p>
+                                            Discovery happened through these three primary inputs.
+                                        </p>
+                                    </div>                                     
+                                    <div class="discovery-accordion" data-discovery-accordion>
+                                        <div class="discovery-accordion-item is-open">
+                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="Decorative section marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-1" aria-expanded="true" aria-controls="discovery-panel-1">
+                                                    <h6>Legacy App Audit</h6>
+                                                    <div class="discovery-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-discovery discovery-accordion-panel" id="discovery-panel-1" role="region" aria-labelledby="discovery-trigger-1" aria-hidden="false">
+                                                    <p>I reviewed the legacy app page by page to identify how components actually appeared in the product(not how they were theoretically defined). This audit surfaced UI inconsistencies, undocumented component states, and the admin vs. client view discrepancies that later required dedicated documentation. The table component was the most complex example: its header varied based on grid style selection and changed entirely between admin and client views.</p>
+                                                    <img src="/imgs/case-study-imgs/02/research-discovery-1.png" alt="Legacy app audit screenshot showing a component's real on-screen appearance">
+                                                    <img src="/imgs/case-study-imgs/02/research-discovery-2.png" alt="Legacy app audit screenshot showing table component view differences">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="discovery-accordion-item">
+                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="Decorative section marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-2" aria-expanded="false" aria-controls="discovery-panel-2">
+                                                    <h6>Element Plus Documentation and Figma Library Element Plus</h6>
+                                                    <div class="discovery-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-discovery discovery-accordion-panel" id="discovery-panel-2" role="region" aria-labelledby="discovery-trigger-2" aria-hidden="true">
+                                                    <p>The official Element Plus Figma library was discovered early in the project. Screenshots of Element Plus instructions were used with minor adjustments where writing from scratch was not time-efficient.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="discovery-accordion-item">
+                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="Decorative section marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-3" aria-expanded="false" aria-controls="discovery-panel-3">
+                                                    <h6>Material Design 3</h6>
+                                                    <div class="discovery-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-discovery discovery-accordion-panel" id="discovery-panel-3" role="region" aria-labelledby="discovery-trigger-3" aria-hidden="true">
+                                                    <p>Used for the Accessibility Doc and Writing Guidelines, this was reviewed to benchmark language, structure, and coverage. Content was then adapted to MSPbot’s design system rather than reproduced directly.</p>
+                                                    <img src="/imgs/case-study-imgs/02/research-discovery-3.png" alt="Material Design 3 documentation referenced for the accessibility guidelines">
+                                                    <img src="/imgs/case-study-imgs/02/research-discovery-4.png" alt="Material Design 3 documentation referenced for the writing guidelines">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===== Key Insights ===== -->
+                            <div class="block v-stack space-5" id="key-insights">
+                                <div class="v-stack space-5">
+                                    <h5>Key Insights</h5>
+                                    <div class="insight-accordion" data-insight-accordion>
+                                        <div class="insight-accordion-item is-open">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
+                                                    <p><span class="situation-bold">Because</span> the existing design system was built for one person... <span class="situation-bold">it led to</span> the file needing to be rebuilt so it could scale for a team.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>Always going back to Nora for questions, clarifications, and history-related context on pages and specific components as her foundation work was extremely valuable to the project.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
+                                                    <p><span class="situation-bold">Because</span> the target audience shifted mid-way... <span class="situation-bold">it led to</span> the documentation portions had to rewritten, not just extended.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>Since PM-facing and Dev-facing instructions are fundamentally different, I changed my original approach(Do’s and Don’ts) to something like how Element Plus does it(attributes). The only components that still had the original format were the Foundational ones(i.e. Logo & Favicon, Typography, Colors, et)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
+                                                    <p><span class="situation-bold">Because</span> the Legacy App was never fully audited before the project started... <span class="situation-bold">it led to</span> the real scope actually being larger than anticipated.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>The page-by-page audit revealed that components had more states, more variations, and more view-dependent differences than expected. A pre-project audit would have produced a more accurate timeline estimate and potentially changed the three-phase plan.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="insight-accordion-item">
+                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
+                                            <div class="v-stack w-100 gap-3">
+                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-4" aria-expanded="false" aria-controls="insight-panel-4">
+                                                    <p><span class="situation-bold">Because</span> the project was always low-priority... <span class="situation-bold">it led to</span> the medium was never seriously questioned.</p>
+                                                    <div class="insight-chevron">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                    </div>
+                                                </button>
+                                                <div class="my-insight insight-accordion-panel" id="insight-panel-4" role="region" aria-labelledby="insight-trigger-4" aria-hidden="true">
+                                                    <div class="my-insight-title">My Insight</div>
+                                                    <p>A Figma file is the right home for design assets, but it’s not the right home for PM instructions, developer HTML attributes, accessibility standards, and writing guidelines. Personally, an internal documentation website would have served all three audiences more effectively and been significantly easier to maintain and update as the product evolved.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===== Design Iterations ===== -->
+                            <div class="block v-stack space-5" id="design-iterations">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Design Iterations</h5>
+                                    </div> 
+                                    <div class="design-iteration-accordion" data-design-iteration-accordion>
+                                        <div class="design-iteration-accordion-item is-open">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 1</div>
+                                                    <p>Atomic Design Proposal (Scrapped)</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
+                                                <p>Early in the project, an Atomic Design structure was proposed: organizing the system into Sub-atoms, Atoms, Molecules, Organisms, and so on. The proposal was reviewed and was actually approved, however over time, the feedbacks afterwards shifted to following Element Plus' existing documentation structure. 
+                                                <br><br>
+                                                <b>The Rationale</b><br>
+                                                Consistency with the external reference the team already used. 
+                                                <br><br>
+                                                <b>The Tradeoff</b><br>
+                                                A structure optimized for Element Plus rather than one that reflected the product's actual component hierarchy.</p>
+                                            </div>
+                                        </div>
+                                        <div class="design-iteration-accordion-item">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 2</div>
+                                                    <p>Documentation Method Evolved Over the Year</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
+                                                <p>Early component documentation was more manual and text-heavy. The discovery of the Element Plus official Figma library changed the production workflow mid-project with components being copy-pasted directly rather than building from scratch. Additionally, a cleaner method for displaying components alongside their states was developed later in the year. Earlier documented components predate this improvement and reflect a less refined presentation approach.</p>
+                                            </div>
+                                        </div>
+                                        <div class="design-iteration-accordion-item">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 3</div>
+                                                    <p>Scope Shifted from PM-facing to Dev-Facing</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
+                                                <p>From Q2 onward, the writing audience shifted from PMs needing instructional guidance to developers needing HTML attributes and technical documentation. This wasn't a minor tone adjustment, as it was a fundamental change in content type, requiring a different understanding of the reader's context and what counts as useful information for each audience.</p>
+                                            </div>
+                                        </div>  
+                                        <div class="design-iteration-accordion-item">
+                                            <button class="iteration-header" type="button" id="iteration-trigger-4" aria-expanded="false" aria-controls="iteration-panel-4">
+                                                <div>
+                                                    <div class="iteration-title">Iteration 4</div>
+                                                    <p>Self-Initiated Addition: Design System GPT Agent (currently incomplete)</p>
+                                                </div>
+                                                <div class="insight-chevron">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
+                                                </div>
+                                            </button>
+                                            <div class="iteration-content" id="iteration-panel-4" role="region" aria-labelledby="iteration-trigger-4" aria-hidden="true">
+                                                <p>As MSPbots moved toward an AI-first culture and required all employees to submit AI contributions, a GPT agent was initiated to serve as an interactive layer on top of the design system. The intent: allow any team member to query the system conversationally, receive component guidance, and assess mockup feasibility without needing to navigate the Figma file directly.
+                                                <br><br>
+                                                The agent was not completed before the layoff. A parallel initiative by teammate Nora, which was a vibe-coded website version of the design system was also left unfinished due to tooling friction with Cursor and a developer collaborator who was pulled to higher-priority tasks.
+                                                <br><br>
+                                                In hindsight, the more effective split would have been to swap contributions as the front-end development background required to vibe-code the website was already present on the team.</p>
+                                            </div>
+                                        </div>                                           
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="h-stack space-3 align-items-center my-5">
+                                <img class="results-divider-line" src="/imgs/dash-line.svg" alt="">
+                                <h6 class="results-divider-text text-center">The Results</h6>
+                                <img class="results-divider-line" src="/imgs/dash-line.svg" alt="">
+                            </div>
+
+                            <!-- ===== Impact ===== -->
                             <div class="block v-stack space-5" id="impact">
                                 <div class="v-stack space-5">
                                     <div>
@@ -459,7 +732,7 @@
                                                     <div class="case-study-subtitle">Result 2: Accessibility and Writing Standards Established</div>
                                                     <p>Two additional documentation layers were completed beyond the initial brief. The Accessibility & Writing Guidelines doc were self-initiated based on observed gaps, and they represent the only written standards of their kind for the Legacy Product design system.</p>
                                                 </div>
-                                            </div>                                                                                            
+                                            </div>
                                             <div class="impact-item">
                                                 <img class="mt-1" src="/imgs/pin-point-sad.svg" alt="Unresolved outcome marker icon">
                                                 <div class="v-stack">
@@ -485,7 +758,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Features-->
+
+                            <!-- ===== Features ===== -->
                             <div class="block v-stack space-5" id="features">
                                 <div class="v-stack space-5">
                                     <h5>Features</h5>     
@@ -738,216 +1012,9 @@
                                     <!--Feature #5 END-->            
                                 </div>
                             </div>
-                            <!--Research & Discovery-->
-                            <div class="block v-stack space-5" id="research-discovery">
-                                <div class="v-stack space-5">
-                                    <div>
-                                        <h5>Research & Discovery</h5>
-                                        <p>
-                                            Discovery happened through these three primary inputs.
-                                        </p>
-                                    </div>                                     
-                                    <div class="discovery-accordion" data-discovery-accordion>
-                                        <div class="discovery-accordion-item is-open">
-                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="Decorative section marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-1" aria-expanded="true" aria-controls="discovery-panel-1">
-                                                    <h6>Legacy App Audit</h6>
-                                                    <div class="discovery-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-discovery discovery-accordion-panel" id="discovery-panel-1" role="region" aria-labelledby="discovery-trigger-1" aria-hidden="false">
-                                                    <p>I reviewed the legacy app page by page to identify how components actually appeared in the product(not how they were theoretically defined). This audit surfaced UI inconsistencies, undocumented component states, and the admin vs. client view discrepancies that later required dedicated documentation. The table component was the most complex example: its header varied based on grid style selection and changed entirely between admin and client views.</p>
-                                                    <img src="/imgs/case-study-imgs/02/research-discovery-1.png" alt="Legacy app audit screenshot showing a component's real on-screen appearance">
-                                                    <img src="/imgs/case-study-imgs/02/research-discovery-2.png" alt="Legacy app audit screenshot showing table component view differences">
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="discovery-accordion-item">
-                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="Decorative section marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-2" aria-expanded="false" aria-controls="discovery-panel-2">
-                                                    <h6>Element Plus Documentation and Figma Library Element Plus</h6>
-                                                    <div class="discovery-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-discovery discovery-accordion-panel" id="discovery-panel-2" role="region" aria-labelledby="discovery-trigger-2" aria-hidden="true">
-                                                    <p>The official Element Plus Figma library was discovered early in the project. Screenshots of Element Plus instructions were used with minor adjustments where writing from scratch was not time-efficient.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="discovery-accordion-item">
-                                            <img class="r-and-d-icon" src="/imgs/pin-point.svg" alt="Decorative section marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation discovery-accordion-header" type="button" id="discovery-trigger-3" aria-expanded="false" aria-controls="discovery-panel-3">
-                                                    <h6>Material Design 3</h6>
-                                                    <div class="discovery-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-discovery discovery-accordion-panel" id="discovery-panel-3" role="region" aria-labelledby="discovery-trigger-3" aria-hidden="true">
-                                                    <p>Used for the Accessibility Doc and Writing Guidelines, this was reviewed to benchmark language, structure, and coverage. Content was then adapted to MSPbot’s design system rather than reproduced directly.</p>
-                                                    <img src="/imgs/case-study-imgs/02/research-discovery-3.png" alt="Material Design 3 documentation referenced for the accessibility guidelines">
-                                                    <img src="/imgs/case-study-imgs/02/research-discovery-4.png" alt="Material Design 3 documentation referenced for the writing guidelines">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Key Insights-->
-                            <div class="block v-stack space-5" id="key-insights">
-                                <div class="v-stack space-5">
-                                    <h5>Key Insights</h5>
-                                    <div class="insight-accordion" data-insight-accordion>
-                                        <div class="insight-accordion-item is-open">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
-                                                    <p><span class="situation-bold">Because</span> the existing design system was built for one person... <span class="situation-bold">it led to</span> the file needing to be rebuilt so it could scale for a team.</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>Always going back to Nora for questions, clarifications, and history-related context on pages and specific components as her foundation work was extremely valuable to the project.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="insight-accordion-item">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
-                                                    <p><span class="situation-bold">Because</span> the target audience shifted mid-way... <span class="situation-bold">it led to</span> the documentation portions had to rewritten, not just extended.</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>Since PM-facing and Dev-facing instructions are fundamentally different, I changed my original approach(Do’s and Don’ts) to something like how Element Plus does it(attributes). The only components that still had the original format were the Foundational ones(i.e. Logo & Favicon, Typography, Colors, et)</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="insight-accordion-item">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
-                                                    <p><span class="situation-bold">Because</span> the Legacy App was never fully audited before the project started... <span class="situation-bold">it led to</span> the real scope actually being larger than anticipated.</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>The page-by-page audit revealed that components had more states, more variations, and more view-dependent differences than expected. A pre-project audit would have produced a more accurate timeline estimate and potentially changed the three-phase plan.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="insight-accordion-item">
-                                            <img class="insight-icon" src="/imgs/pin-point-2.svg" alt="Decorative insight marker icon">
-                                            <div class="v-stack w-100 gap-3">
-                                                <button class="situation insight-accordion-header" type="button" id="insight-trigger-4" aria-expanded="false" aria-controls="insight-panel-4">
-                                                    <p><span class="situation-bold">Because</span> the project was always low-priority... <span class="situation-bold">it led to</span> the medium was never seriously questioned.</p>
-                                                    <div class="insight-chevron">
-                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                    </div>
-                                                </button>
-                                                <div class="my-insight insight-accordion-panel" id="insight-panel-4" role="region" aria-labelledby="insight-trigger-4" aria-hidden="true">
-                                                    <div class="my-insight-title">My Insight</div>
-                                                    <p>A Figma file is the right home for design assets, but it’s not the right home for PM instructions, developer HTML attributes, accessibility standards, and writing guidelines. Personally, an internal documentation website would have served all three audiences more effectively and been significantly easier to maintain and update as the product evolved.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Design Iterations-->
-                            <div class="block v-stack space-5" id="design-iterations">
-                                <div class="v-stack space-5">
-                                    <div>
-                                        <h5>Design Iterations</h5>
-                                    </div> 
-                                    <div class="design-iteration-accordion" data-design-iteration-accordion>
-                                        <div class="design-iteration-accordion-item is-open">
-                                            <button class="iteration-header" type="button" id="iteration-trigger-1" aria-expanded="true" aria-controls="iteration-panel-1">
-                                                <div>
-                                                    <div class="iteration-title">Iteration 1</div>
-                                                    <p>Atomic Design Proposal (Scrapped)</p>
-                                                </div>
-                                                <div class="insight-chevron">
-                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                </div>
-                                            </button>
-                                            <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
-                                                <p>Early in the project, an Atomic Design structure was proposed: organizing the system into Sub-atoms, Atoms, Molecules, Organisms, and so on. The proposal was reviewed and was actually approved, however over time, the feedbacks afterwards shifted to following Element Plus' existing documentation structure. 
-                                                <br><br>
-                                                <b>The Rationale</b><br>
-                                                Consistency with the external reference the team already used. 
-                                                <br><br>
-                                                <b>The Tradeoff</b><br>
-                                                A structure optimized for Element Plus rather than one that reflected the product's actual component hierarchy.</p>
-                                            </div>
-                                        </div>
-                                        <div class="design-iteration-accordion-item">
-                                            <button class="iteration-header" type="button" id="iteration-trigger-2" aria-expanded="false" aria-controls="iteration-panel-2">
-                                                <div>
-                                                    <div class="iteration-title">Iteration 2</div>
-                                                    <p>Documentation Method Evolved Over the Year</p>
-                                                </div>
-                                                <div class="insight-chevron">
-                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                </div>
-                                            </button>
-                                            <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
-                                                <p>Early component documentation was more manual and text-heavy. The discovery of the Element Plus official Figma library changed the production workflow mid-project with components being copy-pasted directly rather than building from scratch. Additionally, a cleaner method for displaying components alongside their states was developed later in the year. Earlier documented components predate this improvement and reflect a less refined presentation approach.</p>
-                                            </div>
-                                        </div>
-                                        <div class="design-iteration-accordion-item">
-                                            <button class="iteration-header" type="button" id="iteration-trigger-3" aria-expanded="false" aria-controls="iteration-panel-3">
-                                                <div>
-                                                    <div class="iteration-title">Iteration 3</div>
-                                                    <p>Scope Shifted from PM-facing to Dev-Facing</p>
-                                                </div>
-                                                <div class="insight-chevron">
-                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                </div>
-                                            </button>
-                                            <div class="iteration-content" id="iteration-panel-3" role="region" aria-labelledby="iteration-trigger-3" aria-hidden="true">
-                                                <p>From Q2 onward, the writing audience shifted from PMs needing instructional guidance to developers needing HTML attributes and technical documentation. This wasn't a minor tone adjustment, as it was a fundamental change in content type, requiring a different understanding of the reader's context and what counts as useful information for each audience.</p>
-                                            </div>
-                                        </div>  
-                                        <div class="design-iteration-accordion-item">
-                                            <button class="iteration-header" type="button" id="iteration-trigger-4" aria-expanded="false" aria-controls="iteration-panel-4">
-                                                <div>
-                                                    <div class="iteration-title">Iteration 4</div>
-                                                    <p>Self-Initiated Addition: Design System GPT Agent (currently incomplete)</p>
-                                                </div>
-                                                <div class="insight-chevron">
-                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="Expand or collapse arrow icon">
-                                                </div>
-                                            </button>
-                                            <div class="iteration-content" id="iteration-panel-4" role="region" aria-labelledby="iteration-trigger-4" aria-hidden="true">
-                                                <p>As MSPbots moved toward an AI-first culture and required all employees to submit AI contributions, a GPT agent was initiated to serve as an interactive layer on top of the design system. The intent: allow any team member to query the system conversationally, receive component guidance, and assess mockup feasibility without needing to navigate the Figma file directly.
-                                                <br><br>
-                                                The agent was not completed before the layoff. A parallel initiative by teammate Nora, which was a vibe-coded website version of the design system was also left unfinished due to tooling friction with Cursor and a developer collaborator who was pulled to higher-priority tasks.
-                                                <br><br>
-                                                In hindsight, the more effective split would have been to swap contributions as the front-end development background required to vibe-code the website was already present on the team.</p>
-                                            </div>
-                                        </div>                                           
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <!--Case Study Content END-->
+                        <!-- ===== Case Study Content END ===== -->
                     </div>
                 </div>
 
@@ -1112,14 +1179,13 @@
                 </footer>
                 <!-- ===== Footer END ===== -->
             </div>
-            <!--Case Study Content END-->
+            <!-- ===== Case Study Content Container END ===== -->
         </div>
 
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="/script.js"></script>
         <script src="/breadcrumb.js"></script>
-        <script src="/mobile-menu-toggle.js"></script>
 
         <!--Case Study JS-->
         <script src="/progress-bar.js"></script>

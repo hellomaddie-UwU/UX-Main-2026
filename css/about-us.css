@@ -1,0 +1,175 @@
+/* ───────────────────────────────────────────────
+Table of Contents
+1. Introduction, Tools & Employment Wrapper
+2. Gradient Accents
+3. Connector Line Overlay (SVG)
+4. Scroll Reveal Animations
+5. Responsive Settings
+───────────────────────────────────────────────*/
+
+/* ───────────────────────────────────────────────
+Introduction, Tools & Employment Wrapper
+───────────────────────────────────────────────*/
+.intro-employment-wrapper {
+    position: relative;
+}
+
+#introDialog,
+#toolsDialog,
+#employmentDialog {
+    position: relative;
+    z-index:  1;
+}
+
+#introDialog {width: 50%;}
+
+#employmentDialog {width: 70%;}
+
+.intro-tools-row {
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: space-between;
+    align-items:     flex-start;
+}
+
+/* ───────────────────────────────────────────────
+Gradient Accents
+───────────────────────────────────────────────*/
+.about-gradient {
+    position:       absolute;
+    z-index:        0;
+    max-width:      none;
+    pointer-events: none;
+    user-select:    none;
+}
+
+.about-gradient-pink {
+    top:   -60px;
+    left:  1%;
+    width: min(58%, 660px);
+}
+
+.about-gradient-orange {
+    top:   160px;
+    right: -6%;
+    width: min(50%, 580px);
+}
+
+/* ───────────────────────────────────────────────
+Connector Line Overlay (SVG)
+
+The visible path always keeps the real dashed
+stroke; a same-shaped white path inside a <mask>
+reveals it progressively as the user scrolls, so
+the reveal works cleanly forwards and backwards
+without ever swapping the dash pattern.
+───────────────────────────────────────────────*/
+.connector-overlay {
+    position:       absolute;
+    top:            0;
+    left:           0;
+    z-index:        0;
+    overflow:       visible;
+    pointer-events: none;
+}
+
+.connector-path {
+    fill:             none;
+    stroke:           var(--gray-blue-400, #717BBC);
+    stroke-width:     6px;
+    stroke-linecap:   square;
+    stroke-linejoin:  miter;
+    stroke-dasharray: 24 19;
+}
+
+.connector-mask-path {
+    fill:           none;
+    stroke:         white;
+    stroke-width:   16px;
+    stroke-linecap: round;
+}
+
+/* ───────────────────────────────────────────────
+Scroll Reveal Animations
+
+.reveal-up        -> Hi & Employment dialogs: fades
+                     up into place.
+.reveal-diagonal   -> Tools dialog: fades in on a
+                     diagonal.
+Below 993px, all three share this exact one-time
+triggered fade (see Responsive Settings). At 993px
+and up, Hi/Tools still use it as-is, but Employment
+switches to a GSAP scroll-scrub instead — its own
+media query below strips the transition so GSAP's
+per-frame updates aren't fighting a CSS transition.
+───────────────────────────────────────────────*/
+.reveal-up,
+.reveal-diagonal {
+    opacity:    0;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.reveal-up       {
+    --reveal-offset-y: 20px;
+    transform:         translateY(var(--reveal-offset-y));
+}
+.reveal-diagonal {transform: translate(20px, 20px);}
+
+.reveal-up.is-visible,
+.reveal-diagonal.is-visible {
+    opacity:   1;
+    transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-up,
+    .reveal-diagonal {
+        opacity:    1;
+        transform:  none;
+        transition: none;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    #employmentDialog.reveal-up {transition: none;}
+}
+
+/* ───────────────────────────────────────────────
+Responsive Settings
+───────────────────────────────────────────────*/
+@media screen and (max-width: 992px) {
+    .about-gradient-pink {
+        top:   -95px;
+        left:  0;
+    }
+
+    .about-gradient-orange {
+        top:   220px;
+        right: -12%;
+    }
+
+    #introDialog {width: 100%; margin-bottom: 80px;}
+
+    .intro-tools-row {
+        justify-content: center;
+        align-items:     center;
+    }
+
+    #toolsDialog {
+        width:      100%;
+        max-width:  70%;
+        flex:       1 1 100%;
+    }
+
+    #employmentDialog {width: 100%;}
+
+    .connector-overlay {display: none;}
+}
+
+@media screen and (max-width: 768px) {
+    .about-gradient {display: none;}
+}
+
+@media screen and (max-width: 567px) {
+    #toolsDialog {max-width: 100%;}
+}

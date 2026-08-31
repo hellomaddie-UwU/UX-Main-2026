@@ -1,4 +1,20 @@
-//nav service dropdown functionality
+/* ───────────────────────────────────────────────
+Table of Contents
+1. Global Settings
+    1.A. 
+2. Custom Settings
+
+1. Navigation > Service Dropdown
+2. Table | Mobile Menu > Toggle Button
+3. Home > Case Study Section > Case Study Cards: 
+    [fade + slide up into view on scroll] Animation: Desktop | Tablet View
+4. Mobile Menu > Dropdown Menu Functionality
+5. Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
+───────────────────────────────────────────────*/
+
+/* ───────────────────────────────────────────────
+Navigation > Service Dropdown
+───────────────────────────────────────────────*/
 (function () {
     var trigger = document.getElementById('desktopServicesBtn');
     var dropdown = document.getElementById('desktopServicesDropdown');
@@ -47,7 +63,10 @@
     });
 }());
 
-//mobile menu toggle
+
+/* ───────────────────────────────────────────────
+Table | Mobile Menu > Toggle Button
+───────────────────────────────────────────────*/
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
@@ -93,7 +112,10 @@ if (mobileMenuToggle && mobileMenu && mobileMenuOverlay) {
     window.addEventListener('resize', syncOverlayWithMenuState);
 };
 
-// Featured work cards: fade + slide up into view on scroll (desktop/tablet)
+/* ───────────────────────────────────────────────
+Home > Case Study Section > Case Study Cards: 
+    [fade + slide up into view on scroll] Animation: Desktop | Tablet View
+───────────────────────────────────────────────*/
 (function () {
     var cards = document.querySelectorAll('.featured-works-desktop .reveal-card');
     if (!cards.length) return;
@@ -120,7 +142,10 @@ if (mobileMenuToggle && mobileMenu && mobileMenuOverlay) {
     cards.forEach(function (card) { observer.observe(card); });
 }());
 
-// Dropdown Menu Functionality
+
+/* ───────────────────────────────────────────────
+Mobile Menu > Dropdown Menu Functionality
+───────────────────────────────────────────────*/
 const btn = document.getElementById('dropdownBtn');
 const menu = document.getElementById('dropdownMenu');
 
@@ -139,7 +164,10 @@ if (btn && menu) {
     });
 }
 
-// Current Passion Project: explanation card follows the mouse on hover
+
+/* ───────────────────────────────────────────────
+Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
+───────────────────────────────────────────────*/
 (function () {
     var containers = document.querySelectorAll('.cursor-coming-soon');
     if (!containers.length) return;
@@ -163,6 +191,56 @@ if (btn && menu) {
 
         container.addEventListener('mouseleave', function () {
             card.classList.remove('is-active');
+        });
+    });
+}());
+
+
+// Tool icon tooltips: hover/focus a .tools-icon to see its tool name
+(function () {
+    var toolIcons = document.querySelectorAll('.tools-icon');
+    if (!toolIcons.length) return;
+
+    toolIcons.forEach(function (icon) {
+        var img = icon.querySelector('img');
+        if (!img || !img.alt) return;
+
+        icon.classList.add('tooltip-wrap');
+        if (!icon.hasAttribute('tabindex')) {
+            icon.setAttribute('tabindex', '0');
+        }
+
+        var tooltip = document.createElement('span');
+        tooltip.className = 'tooltip tooltip-top';
+        tooltip.setAttribute('role', 'tooltip');
+        tooltip.textContent = img.alt;
+
+        icon.appendChild(tooltip);
+    });
+}());
+
+// Modal dialog tabs: switch .tab-panel content via a .modal-tabs[role=tablist]
+(function () {
+    var tabButtons = document.querySelectorAll('.modal-tab[data-tab-target]');
+    if (!tabButtons.length) return;
+
+    tabButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var tablist = btn.closest('[role="tablist"]');
+            var dialog = btn.closest('.modal-primary, .modal-secondary');
+            if (!tablist || !dialog) return;
+
+            tablist.querySelectorAll('.modal-tab').forEach(function (tab) {
+                var isActive = tab === btn;
+                tab.classList.toggle('is-active', isActive);
+                tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+                tab.setAttribute('tabindex', isActive ? '0' : '-1');
+            });
+
+            var targetId = btn.getAttribute('data-tab-target');
+            dialog.querySelectorAll('.tab-panel').forEach(function (panel) {
+                panel.hidden = panel.id !== targetId;
+            });
         });
     });
 }());

@@ -10,9 +10,19 @@
 
           gtag('config', 'G-16N40MD9RW');
         </script>
+
+        <!-- MS Clarity tag -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "y8k08zp5aj");
+        </script>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/svg" href="imgs/favicon.svg">
+        <link rel="icon" type="image/svg" href="/imgs/favicon.svg">
         <!--SEO START-->
         <title>Building WoofPay's Design System for Multiple Channels | hellomaddie</title>
         <meta name="description" content="#">
@@ -35,9 +45,10 @@
 
         <!--Stylesheet START-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="main-style.css" rel="stylesheet">
-        <link href="components.css" rel="stylesheet">
-        <link href="case-study.css" rel="stylesheet">
+        <link href="/main-style.css" rel="stylesheet">
+        <link href="/components.css" rel="stylesheet">
+        <link href="/case-study.css" rel="stylesheet">
+        <link href="/css/page.css" rel="stylesheet">
         <!--Stylesheet END-->
 
         <!--Fonts START-->
@@ -51,14 +62,14 @@
         <!-- ===== Nav START ===== -->
         <nav class="nav-container surface-dark">
             <a class="brand-logo-desktop" href="index.html">
-                <img src="imgs/logo-desktop.svg" alt="hellomaddie logo">
+                <img src="/imgs/logo-desktop.svg" alt="hellomaddie logo">
             </a>
             <a class="brand-logo-tablet-mobile" href="index.html">
-                <img src="imgs/hellomaddie-white-logo.svg" alt="hellomaddie logo">
+                <img src="/imgs/hellomaddie-white-logo.svg" alt="hellomaddie logo">
             </a>
             
             <!--Navigation Links-->
-            <div class="v-stack space-5 nav-wrapper text-center">
+            <div class="nav-wrapper text-center">
                 <!-- Home START -->
                 <a href="/index.html">
                     <div class="nav-item-link">
@@ -100,7 +111,6 @@
                 -->
                 <!-- Services END -->
 
-                <!--
                 <a href="about-me.html">
                     <div class="nav-item-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
@@ -109,7 +119,6 @@
                         <div class="nav-desktop-text">About Me</div>
                     </div>
                 </a>
-                -->
                 
                 <!-- Demos START -->
                 <!--
@@ -151,7 +160,7 @@
                 </a>
                 <!--
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                    <img src="imgs/twitter.svg" alt="Twitter">
+                    <img src="/imgs/twitter.svg" alt="Twitter">
                 -->
             </div>
             <!--Social Links END-->
@@ -166,7 +175,7 @@
         </nav>
         
         <div class="mobile-menu-overlay"></div>
-        <!--Mobile Menu Content START-->
+        <!-- Mobile Menu Content START -->
         <div class="mobile-menu">
             <div class="mobile-nav-wrapper">
                 <a class="mobile-menu-item" href="/index.html">
@@ -175,10 +184,10 @@
                 <a class="mobile-menu-item" href="/case-study-catalogue.html">
                     <p>Case Studies</p>
                 </a>
-                <!--
                 <a class="mobile-menu-item" href="about-me.html">
                     <p>About Me</p>
                 </a>
+                <!--
                 <a class="mobile-menu-item mobile-menu-item-disabled" href="#" aria-disabled="true" tabindex="-1">
                     <p>Demos</p>
                 </a>
@@ -186,7 +195,7 @@
                 <div class="mobile-dropdown">
                     <button type="button" class="mobile-menu-item mobile-dropdown-item" id="dropdownBtn">
                         Services
-                        <img src="imgs/chevron-arrow.svg" alt="toggle" class="dropdown-arrow">
+                        <img src="/imgs/chevron-arrow.svg" alt="toggle" class="dropdown-arrow">
                     </button>
                     <ul class="mobile-dropdown-menu" id="dropdownMenu">
                         <li><a href="ux-audit.html">Heuristic UX Audit & PRD Write-Up</a></li>
@@ -216,77 +225,99 @@
                 </div>
             </div>
         </div>
-        <!--Mobile Menu Content END-->
+        <!-- Mobile Menu Content END -->
         <!-- ===== Nav END ===== -->
 
         <div class="main-page">
-            <!--Hero Section START-->
+            <!-- ===== Hero START ===== -->
             <header class="section-container">
+
+                <!-- Breadcrumb START -->
                 <div class="site-breadcrumb">
+                    <!-- Mobile ver. START -->
                     <div class="breadcrumb-menu dropdown">
                         <button class="breadcrumb-menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open page menu">
-                            <img src="imgs/horizontal-menu.svg" alt="">
+                            <img src="/imgs/horizontal-menu.svg" alt="">
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="http://hellomaddie.com">Home</a></li>
                             <li><a class="dropdown-item" href="https://hellomaddie.com/case-study-catalogue.html">Case Study Catalogue</a></li>
                         </ul>
                     </div>
+                    <!-- Mobile ver. END -->
+
+                    <!-- Desktop ver. START -->
                     <a href="http://hellomaddie.com" class="bc-home bc-desktop-only">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M8.68701 1.26164C8.30151 0.897163 7.69849 0.897163 7.31299 1.26164L2.46948 5.84098C2.1698 6.12431 2 6.51853 2 6.93094V12.5002C2 13.3286 2.67157 14.0002 3.5 14.0002H5C5.82843 14.0002 6.5 13.3286 6.5 12.5002V10.0002C6.5 9.72407 6.72386 9.50021 7 9.50021H9C9.27614 9.50021 9.5 9.72407 9.5 10.0002V12.5002C9.5 13.3286 10.1716 14.0002 11 14.0002H12.5C13.3284 14.0002 14 13.3286 14 12.5002V6.93094C14 6.51853 13.8302 6.12431 13.5305 5.84098L8.68701 1.26164Z"/>
                         </svg>
                         Home
                     </a>
-                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="bc-desktop-only">
+                    <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="bc-desktop-only">
                     <a href="https://hellomaddie.com/case-study-catalogue.html" class="bc-desktop-only">Case Studies</a>
-                    <img src="imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="breadcrumb-divider">
+                    <img src="/imgs/breadcrumb-divider.svg" alt="breadcrumb divider" class="breadcrumb-divider">
                     <p class="current-bc">Building WoofPay's Design System for Multiple Channels</p>
+                    <!-- Desktop ver. END -->
                 </div>
-                <div class="v-stack">
-                    <div class="h-stack space-2">
-                        <span class="pill pill-internal">Internal Documentation</span>
-                        <span class="pill pill-tech">AI & Technology</span>
-                        <span class="pill pill-finance">Finance</span>
-                        <span class="pill pill-e-commerce">E-commerce</span>
-                        <span class="pill pill-event">Events</span>
-                        <span class="pill pill-market">Marketing</span>
-                    </div>
-                    <h1 class="case-study-title">Building WoofPay's Design System for Multiple Channels</h1>
-                </div>
+                <!-- Breadcrumb END -->
+
+                <h1 class="case-study-title">Building WoofPay's Design System for Multiple Channels</h1>
+
                 <div class="case-study-featured-wrap">
-                    <img class="case-study-featured-img" src="imgs/placeholder-img-sample.png" alt="featured image">
+                    <img class="case-study-featured-img" src="/imgs/placeholder-img-sample.png" alt="featured image">
                 </div>
+
                 <div class="row">
                     <div class="col-lg-7 col-md-12">
-                        <div class="d-flex align-items-center gap-2">
-                            <p class="fw-medium">Contract Period</p> 
-                            <img class="orange-dot" src="imgs/orange-dot.svg" alt="dot divider">
-                            <p>#</p> <!--contract date-->
+                        <div class="simple-table mb-4">
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Contract Duration</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <p class="simple-table-value">#</p> <!--contract date-->
+                                </div>
+                            </div>
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Industry</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <span class="pill pill-tech">AI & Technology</span>
+                                    <span class="pill pill-finance">Finance</span>
+                                    <span class="pill pill-e-commerce">E-commerce</span>
+                                    <span class="pill pill-event">Events</span>
+                                    <span class="pill pill-market">Marketing</span>
+                                </div>
+                            </div>
+                            <div class="simple-table-row">
+                                <p class="simple-table-label">Output Type</p>
+                                <div class="simple-table-value-wrap-horizontal">
+                                    <span class="pill pill-internal">Internal Documentation</span>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="case-study-excerpt">Insert Summary</h5>                           
+
+                        <h5 class="case-study-excerpt">Insert Summary</h5>
+
                     </div>
                     <div class="col-lg-5 col-md-12 case-study-deliverables">
                         <div class="selection-container">
                             <!--Selector Boxes START-->
-                            <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
-                            <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
-                            <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
-                            <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                            <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selector-box">
+                            <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selector-box">                    
+                            <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selector-box">
+                            <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selector-box">
                             <!--Selector Boxes END-->
                             <div class="selection-content">
                                 <div class="v-stack space-1">
                                     <p class="md-text">Deliverables</p>
                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                        <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
                                         <p>Figma Design System File</p>
                                     </div>
                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                        <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
                                         <p>Accessibility Documentation</p>
                                     </div>
                                     <div class="d-flex justify-content-start align-items-center gap-2">
-                                        <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                        <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
                                         <p>Writing Guidelines</p>
                                     </div>
                                 </div>
@@ -296,12 +327,13 @@
                     </div>
                 </div>
             </header>
-            <!--Hero Section END-->
+            <!-- ===== Hero END ===== -->
 
-            <!--Case Study Content START-->
+            <!-- ===== Case Study Content Container START ===== -->
             <div class="case-study-container">
                 <div class="section-container">
-                    <!--Progress Bar START-->
+
+                    <!-- Progress Bar START -->
                     <div class="progress-sticky-parent">
                         <div class="progress-section" aria-label="Reading progress tracker">
                             <div class="progress-track">
@@ -316,6 +348,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Mobile vr. of TOC START -->
                         <div class="mobile-table-of-contents"> <!--Button Component actually doesn't work-->
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -326,12 +360,6 @@
                                         <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#context">Context</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#impact">Impact</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#features">Features</a>
-                                    </li>
-                                    <li>
                                         <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#research-discovery">Research & Discovery</a>
                                     </li>
                                     <li>
@@ -340,51 +368,59 @@
                                     <li>
                                         <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#design-iterations">Design Iterations</a>
                                     </li>
+                                    <li>
+                                        <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#impact">Impact</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="building-woofpays-design-system-for-multiple-channels.html#features">Features</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
+                        <!-- Mobile vr. of TOC END -->
                     </div>
                     <!--Progress Bar END-->
 
                     <div class="row">
-                        <!--TOC START-->
-                        <div class="col-3 toc-col">  
+                        <!-- Desktop vr. of TOC START-->
+                        <div class="col-3 toc-col">
                             <div class="selection-container">
                                 <!--Selector Boxes START-->
-                                <img class="selector-box-top-left" src="imgs/selector-box.svg" alt="selector-box">
-                                <img class="selector-box-top-right" src="imgs/selector-box.svg" alt="selector-box">                    
-                                <img class="selector-box-bottom-left" src="imgs/selector-box.svg" alt="selector-box">
-                                <img class="selector-box-bottom-right" src="imgs/selector-box.svg" alt="selector-box">
+                                <img class="selector-box-top-left" src="/imgs/selector-box.svg" alt="selector-box">
+                                <img class="selector-box-top-right" src="/imgs/selector-box.svg" alt="selector-box">                    
+                                <img class="selector-box-bottom-left" src="/imgs/selector-box.svg" alt="selector-box">
+                                <img class="selector-box-bottom-right" src="/imgs/selector-box.svg" alt="selector-box">
                                 <!--Selector Boxes END-->
                                 <div class="selection-content">
                                     <p class="table-of-contents">Table of Contents</p>
                                     <div id="toc-heart-row" class="d-flex gap-2">
                                         <div id="toc-heart-wrapper" style="width: 10%;">
-                                            <img src="imgs/heart-point.svg" alt="heart-point">
+                                            <img src="/imgs/heart-point.svg" alt="heart-point">
                                         </div>
                                         <div id="toc-links" class="d-flex flex-column gap-2 table-of-contents-link">
                                             <a href="building-woofpays-design-system-for-multiple-channels.html#context">Context</a>
-                                            <a href="building-woofpays-design-system-for-multiple-channels.html#impact">Impact</a>
-                                            <a style="margin-bottom:40px;" href="building-woofpays-design-system-for-multiple-channels.html#features">Features</a>
                                             <a href="building-woofpays-design-system-for-multiple-channels.html#research-discovery">Research & Discovery</a>
                                             <a href="building-woofpays-design-system-for-multiple-channels.html#key-insights">Key Insights</a>
-                                            <a href="building-woofpays-design-system-for-multiple-channels.html#design-iterations">Design Iteration</a>
+                                            <a style="margin-bottom:40px;" href="building-woofpays-design-system-for-multiple-channels.html#design-iterations">Design Iteration</a>
+                                            <a href="building-woofpays-design-system-for-multiple-channels.html#impact">Impact</a>
+                                            <a href="building-woofpays-design-system-for-multiple-channels.html#features">Features</a>
                                         </div>
-                                        <div class="row position-absolute" style="top: 103px;">
-                                            <img class="w-100" src="imgs/the-ux-stuff.svg" alt="the-ux-stuff">
+                                        <div class="row position-absolute" style="bottom: 72px;">
+                                            <img class="w-100" src="/imgs/results-divider-mini.svg" alt="the-ux-stuff">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--TOC END-->
+                        <!-- Desktop vr. of TOC END-->
 
-                        <!--Case Study Content START-->
+                        <!-- ===== Case Study Content START ===== -->
                         <div class="col-9 case-study-content">
-                            <!--Content Start-->
-                            <!--Context-->
+
+                            <!-- ===== Context ===== -->
                             <div class="block v-stack space-5" id="context">
                                 <div class="v-stack space-5">
+                                    <!-- ----- Text Block ----- -->
                                     <div>
                                         <h5>Context</h5>
                                         <p>WoofPay was a passion project initiated by my boss at Webpuppies, a Singaporean IT company. The product vision was two-fold:</p>
@@ -397,6 +433,8 @@
                                         <br><br>
                                         <p>With no existing brand, no prior design system, and a one-month window, a design system needed to be built from scratch while product screens were being designed simultaneously. As the sole UX/UI Designer at Webpuppies, the design system was both a deliverable and a personal necessity. </p>
                                     </div>
+
+                                    <!-- ----- No Outline Table ----- -->
                                     <div class="block-table">
                                         <div class="row">
                                             <div class="col-lg-3 col-md-4 col-sm-6">
@@ -410,228 +448,53 @@
                                             </div>
                                             <div class="col-lg-3 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
                                                 <p class="thead">Role</p>
-                                                <p>UX/UI Designer</p>                                     
+                                                <p>UX/UI Designer</p>
                                             </div>
                                             <div class="col-lg-4 col-md-4 col-sm-6 pt-lg-0 pt-md-0 pt-sm-3 block-table-col">
                                                 <p class="thead">Skills</p>
                                                 <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
                                                     <p>UI Researcher</p>
                                                 </div>
                                                 <div class="d-flex justify-content-start align-items-center gap-2">
-                                                    <img class="orange-dot" src="imgs/orange-dot.svg" alt="list point">
+                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="list point">
                                                     <p>Designing and Project Management</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <!--Impact-->
-                            <div class="block v-stack space-5" id="impact">
-                                <div class="v-stack space-5">
-                                    <div>
-                                        <h5>Impact</h5>
-                                        <p>The design system was built to serve a lean team moving fast. It’s success was measured by how scalable and easily adaptable it was for the Dev Team.</p>
-                                    </div>
-                                    <div>
-                                        <h6 class="w-600">The Design System's Outcome</h6>
-                                        <div class="v-stack space-3 mt-2">
-                                            <div class="impact-item">
-                                                <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
-                                                <div class="v-stack">
-                                                    <div class="case-study-subtitle">Result 1: Development Proceeded Without Interruption</div>
-                                                    <p>Richard worked from the design system for two months after handoff without returning with questions or requests. Richard was known to reach out when something was unclear, so his continued silence throughout development is interpreted as a signal that the system was coherent and complete enough to build from independently.</p>
+
+                                    <!-- ----- Simple Table ----- -->
+                                    <div class="simple-table">
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Skills</p>
+                                            <div class="simple-table-value-wrap-vertical">
+                                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                    <p>UI Researcher</p>
+                                                </div>
+                                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                                    <img class="orange-dot" src="/imgs/orange-dot.svg" alt="orange dot">
+                                                    <p>Designing and Project Management</p>
                                                 </div>
                                             </div>
-                                            <div class="impact-item">
-                                                <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
-                                                <div class="v-stack">
-                                                    <div class="case-study-subtitle">Result 2: Consistent Visual Foundation Across Two Products</div>
-                                                    <p>By establishing the design system before development began in earnest, both WoofPay Payments and WoofEvents were built from the same visual foundation(same tokens, components, and interaction patterns); rather than diverging as separate implementations.</p>
+                                        </div>
+                                        <div class="simple-table-row">
+                                            <p class="simple-table-label simple-table-context-first-col">Tools</p>
+                                            <div class="simple-table-value-wrap-horizontal">
+                                                <div class="tools-icon-grid">
+                                                    <div class="tools-icon"><img src="/imgs/tools/figma.svg" alt="Figma"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/procreate.svg" alt="Procreate"></div>
+                                                    <div class="tools-icon"><img src="/imgs/tools/affinity.svg" alt="Affinity"></div>
                                                 </div>
                                             </div>
-                                            <div class="impact-item">
-                                                <img class="mt-1" src="imgs/pin-point-sparkles.svg" alt="a good impact">
-                                                <div class="v-stack">
-                                                    <div class="case-study-subtitle">Result 3: Scope Was Clean and Held</div>
-                                                    <p>No components were requested retroactively and no gaps were identified post-handoff. The scope was delivered as planned and submission happened upfront between the dev team and the product owner.</p>
-                                                </div>
-                                            </div>                                                                                                                                          
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!--Features-->
-                            <div class="block v-stack space-5" id="features">
-                                <div class="v-stack space-5">
-                                    <h5>Features</h5>     
-                                    <!--Feature #1 START-->
-                                    <div class="feature-block">
-                                        <div class="feature-info">
-                                            <div class="label-primary">FEATURE 1</div>
-                                            <h6 class="features-title">Brand-New Visual Identity System</h6>
-                                            <p>WoofPay had no existing brand when the project began. Style guide options were presented to the boss upfront. His selection became the locked creative direction for the entire project and all future outputs. This approach prevented mid-project pivots and gave me a stable visual reference from day one.</p>
-                                        </div>
-                                        <div class="feature-display">                                               
-                                                <div class="indiv-case-study-img-container">
-                                                    <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
-                                                        <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                    </div>                                                
-                                                    <div class="case-study-img-caption">image caption</div>
-                                                </div>                  
-                                        </div>
-                                    </div>   
-                                    <!--Feature #1 END-->                                
-                                    <!--Feature #2 START-->
-                                    <div class="feature-block">
-                                        <div class="feature-info">
-                                            <div class="label-primary">FEATURE 2</div>
-                                            <h6 class="features-title">Cross-Product Component Consistency</h6>
-                                            <p>All basic components were designed to work across both WoofPay Payments and WoofEvents, ensuring that shared UI patterns (buttons, forms, inputs, navigation) were visually and functionally consistent regardless of which product a user was in.</p>
-                                        </div>
-                                        <div class="feature-display">
-                                            <div class="cs-carousel mb-5">
-                                                <!-- Controls -->
-                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
-                                                    <div class="case-study-subtitle">WoofPay</div>
-                                                    <div>
-                                                        <button class="cs-carousel__btn-prev" type="button">           
-                                                            <span aria-hidden="true">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                            </span>                                               
-                                                        </button>
-                                                        <button class="cs-carousel__btn-next" type="button">                                                  
-                                                            <span aria-hidden="true">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                            </span>                                                     
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <!-- Slides -->
-                                                <div class="cs-carousel__track">
-                                                    <div class="cs-carousel__slide">
-                                                        <div class="case-study-img-container">
-                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                            </div>
-                                                            <div class="case-study-img-caption">image caption</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cs-carousel__slide">
-                                                        <div class="case-study-img-container">
-                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                            </div>
-                                                            <div class="case-study-img-caption">image caption</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cs-carousel__slide">
-                                                        <div class="case-study-img-container">
-                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                            </div>
-                                                            <div class="case-study-img-caption">image caption</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                            <div class="cs-carousel">
-                                                <!-- Controls -->
-                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
-                                                    <div class="case-study-subtitle">WoofEvents</div>
-                                                    <div>
-                                                        <button class="cs-carousel__btn-prev" type="button">           
-                                                            <span aria-hidden="true">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                            </span>                                               
-                                                        </button>
-                                                        <button class="cs-carousel__btn-next" type="button">                                                  
-                                                            <span aria-hidden="true">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
-                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                            </span>                                                     
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <!-- Slides -->
-                                                <div class="cs-carousel__track">
-                                                    <div class="cs-carousel__slide">
-                                                        <div class="case-study-img-container">
-                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                            </div>
-                                                            <div class="case-study-img-caption">image caption</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cs-carousel__slide">
-                                                        <div class="case-study-img-container">
-                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                            </div>
-                                                            <div class="case-study-img-caption">image caption</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cs-carousel__slide">
-                                                        <div class="case-study-img-container">
-                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                            </div>
-                                                            <div class="case-study-img-caption">image caption</div>
-                                                        </div>
-                                                    </div>                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>   
-                                    <!--Feature #2 END-->   
-                                    <!--Feature #3 START-->
-                                    <div class="feature-block">
-                                        <div class="feature-info">
-                                            <div class="label-primary">FEATURE 3</div>
-                                            <h6 class="features-title">Tax Filling Flow on WoofPay</h6>
-                                            <p>I created a custom flow built on top of the basic components I made was informed by my direct research into Xero’s tax filing structure and Paymaya’s overall user journey flows. The complexity of Xero’s American-oriented tax system pushed me to apply a simplified tax flow that’s accessible and easy to use for all types of users(beginners to seasoned business owners).</p>
-                                        </div>
-                                        <div class="feature-display">                                               
-                                                <div class="indiv-case-study-img-container">
-                                                    <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
-                                                        <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                    </div>                                                
-                                                    <div class="case-study-img-caption">image caption</div>
-                                                </div>                  
-                                        </div>
-                                    </div>   
-                                    <!--Feature #3 END-->
-                                    <!--Feature #4 START-->
-                                    <div class="feature-block">
-                                        <div class="feature-info">
-                                            <div class="label-primary">FEATURE 4</div>
-                                            <h6 class="features-title">Social Media Post Generator Flow on WoofEvents</h6>
-                                            <p>
-                                            A custom Typeform-inspired form flow that outputs a ready-to-edit social media post is the core product experience of WoofEvents. The editing interface was intentionally simplified per my boss's direction: no lasso tools or Photoshop-adjacent features; just a text editor and basic shape controls. 
-                                            <br><br>
-                                            The rationale was reducing cognitive load for small business owners who weren't designers.</p>
-                                        </div>
-                                        <div class="feature-display">                                               
-                                            <div class="indiv-case-study-img-container">
-                                                <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
-                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
-                                                </div>                                                
-                                                <div class="case-study-img-caption">image caption</div>
-                                            </div>                  
-                                        </div>
-                                    </div>   
-                                    <!--Feature #4 END-->                                              
-                                </div>
-                            </div>
-                            <!--Research & Discovery-->
+
+
+                            <!-- ===== Research & Discovery ===== -->
                             <div class="block v-stack space-5" id="research-discovery">
                                 <div class="v-stack space-5">
                                     <h5>Research & Discovery</h5>
@@ -671,7 +534,7 @@
                                                     <div class="cs-carousel__slide">
                                                         <div class="case-study-img-container">
                                                             <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                             </div>
                                                             <div class="case-study-img-caption">image caption</div>
                                                         </div>
@@ -679,7 +542,7 @@
                                                     <div class="cs-carousel__slide">
                                                         <div class="case-study-img-container">
                                                             <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                             </div>
                                                             <div class="case-study-img-caption">image caption</div>
                                                         </div>
@@ -687,7 +550,7 @@
                                                     <div class="cs-carousel__slide">
                                                         <div class="case-study-img-container">
                                                             <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                             </div>
                                                             <div class="case-study-img-caption">image caption</div>
                                                         </div>
@@ -731,7 +594,7 @@
                                                     <div class="cs-carousel__slide">
                                                         <div class="case-study-img-container">
                                                             <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                             </div>
                                                             <div class="case-study-img-caption">image caption</div>
                                                         </div>
@@ -739,7 +602,7 @@
                                                     <div class="cs-carousel__slide">
                                                         <div class="case-study-img-container">
                                                             <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                             </div>
                                                             <div class="case-study-img-caption">image caption</div>
                                                         </div>
@@ -747,7 +610,7 @@
                                                     <div class="cs-carousel__slide">
                                                         <div class="case-study-img-container">
                                                             <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
-                                                                <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                             </div>
                                                             <div class="case-study-img-caption">image caption</div>
                                                         </div>
@@ -768,7 +631,7 @@
                                         <div class="discovery-display">    
                                             <div class="indiv-case-study-img-container">
                                                 <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
-                                                    <img src="imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                    <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
                                                 </div>                                                
                                                 <div class="case-study-img-caption">image caption</div>
                                             </div>                                                                                                        
@@ -777,18 +640,18 @@
                                     <!--Discover #3 END--> 
                                 </div>
                             </div>
-                            <!--Key Insights-->
+                            <!-- ===== Key Insights ===== -->
                             <div class="block v-stack space-5" id="key-insights">
                                 <div class="v-stack space-5">
                                     <h5>Key Insights</h5>
                                     <div class="insight-accordion" data-insight-accordion>
                                         <div class="insight-accordion-item is-open">
-                                            <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight point">
+                                            <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
                                             <div class="v-stack w-100 gap-3">
                                                 <button class="situation insight-accordion-header" type="button" id="insight-trigger-1" aria-expanded="true" aria-controls="insight-panel-1">
                                                     <p><span class="situation-bold">Because</span> the developer could extrapolate from clear basics... <span class="situation-bold">it led to</span> completeness mattered more than comprehensiveness.</p>
                                                     <div class="insight-chevron">
-                                                        <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
                                                     </div>
                                                 </button>
                                                 <div class="my-insight insight-accordion-panel" id="insight-panel-1" role="region" aria-labelledby="insight-trigger-1" aria-hidden="false">
@@ -799,12 +662,12 @@
                                         </div>
 
                                         <div class="insight-accordion-item">
-                                            <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight point">
+                                            <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
                                             <div class="v-stack w-100 gap-3">
                                                 <button class="situation insight-accordion-header" type="button" id="insight-trigger-2" aria-expanded="false" aria-controls="insight-panel-2">
                                                     <p><span class="situation-bold">Because</span> both products shared a user base... <span class="situation-bold">it led to</span> the design system having to translate across two very different product experiences.</p>
                                                     <div class="insight-chevron">
-                                                        <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
                                                     </div>
                                                 </button>
                                                 <div class="my-insight insight-accordion-panel" id="insight-panel-2" role="region" aria-labelledby="insight-trigger-2" aria-hidden="true">
@@ -815,12 +678,12 @@
                                         </div>
 
                                         <div class="insight-accordion-item">
-                                            <img class="mt-1" src="imgs/pin-point-2.svg" alt="insight point">
+                                            <img class="mt-1" src="/imgs/pin-point-2.svg" alt="insight point">
                                             <div class="v-stack w-100 gap-3">
                                                 <button class="situation insight-accordion-header" type="button" id="insight-trigger-3" aria-expanded="false" aria-controls="insight-panel-3">
                                                     <p><span class="situation-bold">Because</span> the project was a one-month engagement... <span class="situation-bold">it led to</span> medium fidelity mattering more.</p>
                                                     <div class="insight-chevron">
-                                                        <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                        <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
                                                     </div>
                                                 </button>
                                                 <div class="my-insight insight-accordion-panel" id="insight-panel-3" role="region" aria-labelledby="insight-trigger-3" aria-hidden="true">
@@ -832,7 +695,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!--Design Iterations-->
+                            <!-- ===== Design Iterations ===== -->
                             <div class="block v-stack space-5" id="design-iterations">
                                 <div class="v-stack space-5">
                                     <div>
@@ -846,7 +709,7 @@
                                                     <p>WoofEvents Editing Interface Simplified</p>
                                                 </div>
                                                 <div class="insight-chevron">
-                                                    <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
                                                 </div>
                                             </button>
                                             <div class="iteration-content" id="iteration-panel-1" role="region" aria-labelledby="iteration-trigger-1" aria-hidden="false">
@@ -860,7 +723,7 @@
                                                     <p>Component Scope Closed Early by Developer</p>
                                                 </div>
                                                 <div class="insight-chevron">
-                                                    <img src="imgs/chevron-arrow-dark.svg" alt="arrow">
+                                                    <img src="/imgs/chevron-arrow-dark.svg" alt="arrow">
                                                 </div>
                                             </button>
                                             <div class="iteration-content" id="iteration-panel-2" role="region" aria-labelledby="iteration-trigger-2" aria-hidden="true">
@@ -870,8 +733,222 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Divider -->
+                            <div class="h-stack space-3 align-items-center my-5">
+                                <img class="results-divider-line" src="/imgs/dash-line.svg" alt="">
+                                <h6 class="results-divider-text text-center">The Results</h6>
+                                <img class="results-divider-line" src="/imgs/dash-line.svg" alt="">
+                            </div>
+
+                            <!-- ===== Impact ===== -->
+                            <div class="block v-stack space-5" id="impact">
+                                <div class="v-stack space-5">
+                                    <div>
+                                        <h5>Impact</h5>
+                                        <p>The design system was built to serve a lean team moving fast. It’s success was measured by how scalable and easily adaptable it was for the Dev Team.</p>
+                                    </div>
+                                    <div>
+                                        <h6 class="w-600">The Design System's Outcome</h6>
+                                        <div class="v-stack space-3 mt-2">
+                                            <div class="impact-item">
+                                                <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="a good impact">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Result 1: Development Proceeded Without Interruption</div>
+                                                    <p>Richard worked from the design system for two months after handoff without returning with questions or requests. Richard was known to reach out when something was unclear, so his continued silence throughout development is interpreted as a signal that the system was coherent and complete enough to build from independently.</p>
+                                                </div>
+                                            </div>
+                                            <div class="impact-item">
+                                                <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="a good impact">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Result 2: Consistent Visual Foundation Across Two Products</div>
+                                                    <p>By establishing the design system before development began in earnest, both WoofPay Payments and WoofEvents were built from the same visual foundation(same tokens, components, and interaction patterns); rather than diverging as separate implementations.</p>
+                                                </div>
+                                            </div>
+                                            <div class="impact-item">
+                                                <img class="mt-1" src="/imgs/pin-point-sparkles.svg" alt="a good impact">
+                                                <div class="v-stack">
+                                                    <div class="case-study-subtitle">Result 3: Scope Was Clean and Held</div>
+                                                    <p>No components were requested retroactively and no gaps were identified post-handoff. The scope was delivered as planned and submission happened upfront between the dev team and the product owner.</p>
+                                                </div>
+                                            </div>                                                                                                                                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ===== Features ===== -->
+                            <div class="block v-stack space-5" id="features">
+                                <div class="v-stack space-5">
+                                    <h5>Features</h5>     
+                                    <!--Feature #1 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 1</div>
+                                            <h6 class="features-title">Brand-New Visual Identity System</h6>
+                                            <p>WoofPay had no existing brand when the project began. Style guide options were presented to the boss upfront. His selection became the locked creative direction for the entire project and all future outputs. This approach prevented mid-project pivots and gave me a stable visual reference from day one.</p>
+                                        </div>
+                                        <div class="feature-display">                                               
+                                                <div class="indiv-case-study-img-container">
+                                                    <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                        <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                    </div>                                                
+                                                    <div class="case-study-img-caption">image caption</div>
+                                                </div>                  
+                                        </div>
+                                    </div>   
+                                    <!--Feature #1 END-->                                
+                                    <!--Feature #2 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 2</div>
+                                            <h6 class="features-title">Cross-Product Component Consistency</h6>
+                                            <p>All basic components were designed to work across both WoofPay Payments and WoofEvents, ensuring that shared UI patterns (buttons, forms, inputs, navigation) were visually and functionally consistent regardless of which product a user was in.</p>
+                                        </div>
+                                        <div class="feature-display">
+                                            <div class="cs-carousel mb-5">
+                                                <!-- Controls -->
+                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                    <div class="case-study-subtitle">WoofPay</div>
+                                                    <div>
+                                                        <button class="cs-carousel__btn-prev" type="button">           
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                               
+                                                        </button>
+                                                        <button class="cs-carousel__btn-next" type="button">                                                  
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                                     
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Slides -->
+                                                <div class="cs-carousel__track">
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                            </div>
+                                                            <div class="case-study-img-caption">image caption</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                            </div>
+                                                            <div class="case-study-img-caption">image caption</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                            </div>
+                                                            <div class="case-study-img-caption">image caption</div>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                            <div class="cs-carousel">
+                                                <!-- Controls -->
+                                                <div class="d-flex justify-content-between align-items-center space-2 mb-2">
+                                                    <div class="case-study-subtitle">WoofEvents</div>
+                                                    <div>
+                                                        <button class="cs-carousel__btn-prev" type="button">           
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M25 8H1M8 15L1 8L8 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                               
+                                                        </button>
+                                                        <button class="cs-carousel__btn-next" type="button">                                                  
+                                                            <span aria-hidden="true">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16" fill="none">
+                                                                    <path d="M1 8H25M18 15L25 8L18 1" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>                                                     
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Slides -->
+                                                <div class="cs-carousel__track">
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                            </div>
+                                                            <div class="case-study-img-caption">image caption</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                            </div>
+                                                            <div class="case-study-img-caption">image caption</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cs-carousel__slide">
+                                                        <div class="case-study-img-container">
+                                                            <div class="case-study-img-frame" style="height: 400px;"> <!--placeholder size-->
+                                                                <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                            </div>
+                                                            <div class="case-study-img-caption">image caption</div>
+                                                        </div>
+                                                    </div>                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <!--Feature #2 END-->   
+                                    <!--Feature #3 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 3</div>
+                                            <h6 class="features-title">Tax Filling Flow on WoofPay</h6>
+                                            <p>I created a custom flow built on top of the basic components I made was informed by my direct research into Xero’s tax filing structure and Paymaya’s overall user journey flows. The complexity of Xero’s American-oriented tax system pushed me to apply a simplified tax flow that’s accessible and easy to use for all types of users(beginners to seasoned business owners).</p>
+                                        </div>
+                                        <div class="feature-display">                                               
+                                                <div class="indiv-case-study-img-container">
+                                                    <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                        <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                    </div>                                                
+                                                    <div class="case-study-img-caption">image caption</div>
+                                                </div>                  
+                                        </div>
+                                    </div>   
+                                    <!--Feature #3 END-->
+                                    <!--Feature #4 START-->
+                                    <div class="feature-block">
+                                        <div class="feature-info">
+                                            <div class="label-primary">FEATURE 4</div>
+                                            <h6 class="features-title">Social Media Post Generator Flow on WoofEvents</h6>
+                                            <p>
+                                            A custom Typeform-inspired form flow that outputs a ready-to-edit social media post is the core product experience of WoofEvents. The editing interface was intentionally simplified per my boss's direction: no lasso tools or Photoshop-adjacent features; just a text editor and basic shape controls. 
+                                            <br><br>
+                                            The rationale was reducing cognitive load for small business owners who weren't designers.</p>
+                                        </div>
+                                        <div class="feature-display">                                               
+                                            <div class="indiv-case-study-img-container">
+                                                <div class="indiv-case-study-img" style="height: 500px;"> <!--placeholder size-->
+                                                    <img src="/imgs/placeholder-img-sample.png" alt="insert-image-description">
+                                                </div>                                                
+                                                <div class="case-study-img-caption">image caption</div>
+                                            </div>                  
+                                        </div>
+                                    </div>   
+                                    <!--Feature #4 END-->                                              
+                                </div>
+                            </div>
+
                         </div>
-                        <!--Case Study Content END-->
+                        <!-- ===== Case Study Content END ===== -->
                     </div>
                 </div>
 
@@ -880,7 +957,7 @@
                     <!--Reflection START-->
                     <div class="row">
                         <div class="col-lg-2 col-md-12 text-md-center text-sm-start mb-4">
-                            <img class="ty-bunny-badge" src="imgs/ty-badge.svg" alt="Illustrated thank-you bunny badge">
+                            <img class="ty-bunny-badge" src="/imgs/ty-badge.svg" alt="Illustrated thank-you bunny badge">
                         </div>
                         <div class="col-lg-10 col-md-12">
                             <div class="v-stack space-5">
@@ -890,7 +967,7 @@
                                         <button class="reflection-header" type="button" id="reflection-trigger-1" aria-expanded="false" aria-controls="reflection-panel-1">
                                             <h6>What Worked</h6>
                                             <div class="reflection-plus">
-                                                <img src="imgs/plus.svg" alt="plus">
+                                                <img src="/imgs/plus.svg" alt="plus">
                                             </div>
                                         </button>
                                         <div class="reflection-content" id="reflection-panel-1" role="region" aria-labelledby="reflection-trigger-1" aria-hidden="true">
@@ -901,7 +978,7 @@
                                         <button class="reflection-header" type="button" id="reflection-trigger-2" aria-expanded="false" aria-controls="reflection-panel-2">
                                             <h6>What Remained Unsolved</h6>
                                             <div class="reflection-plus">
-                                                <img src="imgs/plus.svg" alt="plus">
+                                                <img src="/imgs/plus.svg" alt="plus">
                                             </div>
                                         </button>
                                         <div class="reflection-content" id="reflection-panel-2" role="region" aria-labelledby="reflection-trigger-2" aria-hidden="true">
@@ -912,7 +989,7 @@
                                         <button class="reflection-header" type="button" id="reflection-trigger-3" aria-expanded="false" aria-controls="reflection-panel-3">
                                             <h6>What I’d Do Differently</h6>
                                             <div class="reflection-plus">
-                                                <img src="imgs/plus.svg" alt="plus">
+                                                <img src="/imgs/plus.svg" alt="plus">
                                             </div>
                                         </button>
                                         <div class="reflection-content" id="reflection-panel-3" role="region" aria-labelledby="reflection-trigger-3" aria-hidden="true">
@@ -941,21 +1018,21 @@
                             <div class="col-12 col-lg-9">
                                 <div class="h-stack space-5 other-case-study-cards">
                                     <div class="other-case-study-card">
-                                        <img class="other-case-study-img" src="imgs/featured-imgs/square-featured-img-2.png" alt="">
+                                        <img class="other-case-study-img" src="/imgs/featured-imgs/square-featured-img-2.png" alt="">
                                         <span class="pill pill-internal">Internal Documentation</span>
                                         <span class="pill pill-tech">AI & Technology</span>
                                         <h6>Restructuring MSPbot's Design System</h6>
                                         <a href="restructuring-mspbots-design-system.html">Read More</a>
                                     </div>
                                     <div class="other-case-study-card">
-                                        <img class="other-case-study-img" src="imgs/featured-imgs/square-featured-img-2.png" alt="">
+                                        <img class="other-case-study-img" src="/imgs/featured-imgs/square-featured-img-2.png" alt="">
                                         <span class="pill pill-internal">Internal Documentation</span>
                                         <span class="pill pill-tech">AI & Technology</span>
                                         <h6>Case Study Title</h6>
                                         <a href="#">Read More</a>
                                     </div>
                                     <div class="other-case-study-card">
-                                        <img class="other-case-study-img" src="imgs/featured-imgs/square-featured-img-2.png" alt="">
+                                        <img class="other-case-study-img" src="/imgs/featured-imgs/square-featured-img-2.png" alt="">
                                         <span class="pill pill-internal">Internal Documentation</span>
                                         <span class="pill pill-tech">AI & Technology</span>
                                         <h6>Case Study Title</h6>
@@ -972,14 +1049,13 @@
                 </div>
                 <!--End END-->
             </div>
-            <!--Case Study Content END-->
+            <!-- ===== Case Study Content Container END ===== -->
         </div>
 
         <!--scripts START-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="script.js"></script>
+        <script src="/script.js"></script>
         <script src="/breadcrumb.js"></script>
-        <script src="mobile-menu-toggle.js"></script>
 
         <!--Case Study JS-->
         <script src="progress-bar.js"></script>

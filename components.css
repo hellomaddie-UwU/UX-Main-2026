@@ -2,43 +2,62 @@
 Table of Contents:
 1. Divider
 2. Tags
-3. Notification Message
-4. Modal
-5. Infinite Marque
-6. Single Accordion Card
-7. Design System Top Bar Nav
-8. Gallery Placeholder Image
-9. Gallery Lightbox
-10. Breadcrumb
-11. Tooltip
-12. Disabled Nav Item
-13. Custom Cursor
-14. Thumbnail
-15. Projects
-16. Newletter Form
+3. Simple Table
+4. Notification Message
+5. Modal
+6. Modal Tabs
+7. Infinite Marque
+8. Single Accordion Card
+9. Design System Top Bar Nav
+10. Gallery Placeholder Image
+11. Gallery Lightbox
+12. Breadcrumb
+13. Tooltip
+14. Disabled Nav Item
+15. Custom Cursor
+16. Thumbnail
+17. Projects
+18. Newletter Form
+19. Tools Icon Grid
 */
 
-/*Divider*/
-.divider {
-    height: 0.5px; 
-    width: 100%;
-    background-color: #D17FF3;
+/* ───────────────────────────────────────────────
+Divider
+───────────────────────────────────────────────*/
+.divider { /*horizontal lavendar divider*/
+    height:           0.5px; 
+    width:            100%;
+    background-color: var(--divider);
 }
 
-.breadcrumb-divider {
-        width: 1px;
-        height: 20px;
-        background-color: var(--razzmatazz-400);
-        rotate: 25deg;
-    }
+.breadcrumb-divider { /*pink diagonal divider*/
+    width:            1px;
+    height:           20px;
+    background-color: var(--razzmatazz-400);
+    rotate:           25deg;
+}
+
+.vertical-divider { /*vertical white divider*/
+    height:           100%;
+    width:            0.5px;
+    background-color: var(--divider-on-dark);
+}
+
+.vertical-divider-blue { /*vertical blue divider*/
+    width:            1px;
+    height:           16px;
+    background-color: var(--gray-blue-400);
+}
 
 /*Dots*/
 .orange-dot {
     height: 8px;
-    width: 8px;
+    width:  8px;
 }
 
-/*Tags*/
+/* ───────────────────────────────────────────────
+Tags/Labels
+───────────────────────────────────────────────*/
 .tag-purple {
     font-weight:    600;
     font-size:      14px;
@@ -46,7 +65,9 @@ Table of Contents:
     color:        #8722A9;
 }
 
-/*Pill*/
+/* ───────────────────────────────────────────────
+Pills
+───────────────────────────────────────────────*/
 .pill {
     border-radius: 99px;
     display:       inline-block;
@@ -58,6 +79,14 @@ Table of Contents:
     font-weight:    500;
     letter-spacing: 0.26px;
     text-align:     center;
+}
+
+/*Pill Sizes: stack onto .pill (e.g. class="pill pill-lg pill-skill") to
+override its default padding/font-size — leave off for the default size*/
+.pill-lg {
+    padding:     4px 20px;
+    font-size:   16px;
+    line-height: 20px;
 }
 
 .pill-internal {
@@ -108,6 +137,87 @@ Table of Contents:
     color:            #F63D68;
 }
 
+.pill-experience {
+    border:           1px solid #FFB7A0;
+    background-color: #FFF4F1;
+    color:            #F8693B;
+}
+
+.pill-skill {
+    border:           1px solid #FFCCD8;
+    background-color: #FFF1F4;
+    color:            #D91656;
+}
+
+/* _______ Simple Table _______ */
+.simple-table {
+    display:               grid;
+    grid-template-columns: max-content 1fr;
+    width:                 100%;
+    border:                0.5px solid var(--dialog-border);
+    border-radius:         var(--space-2);
+    overflow:              hidden;
+}
+
+/*Row wrapper drops out of the box model so its two children (label, value)
+become the grid's row cells directly; it becomes a real stacked column on
+mobile via the max-width:567px override in the Responsive Settings section
+at the bottom of this file*/
+.simple-table-row {display: contents;}
+
+.simple-table-label,
+.simple-table-value-wrap-horizontal,
+.simple-table-value-wrap-vertical {
+    display:       flex;
+    width:         100%;
+    min-height:    48px;
+    padding:       12px 16px;
+    border-bottom: 0.5px solid var(--dialog-border);
+}
+
+.simple-table-label,
+.simple-table-value-wrap-horizontal {
+    align-items: center;
+}
+
+.simple-table-label {
+    border-right: 0.5px solid var(--dialog-border);
+    font-weight:  var(--font-weight-medium);
+}
+
+.simple-table-context-first-col {
+    width: 100px;
+    font-weight:  var(--font-weight-medium) !important;
+}
+
+.simple-table-value-wrap-horizontal {
+    flex-wrap: wrap;
+    gap:       6px;
+}
+
+/*Already stacked on desktop, so it stays stacked at the mobile breakpoint
+too — no override needed in the Responsive Settings section for direction,
+just the same padding/border reset as the other value cell*/
+.simple-table-value-wrap-vertical {
+    flex-direction: column;
+    align-items:    flex-start;
+    gap:            4px;
+}
+
+/*align-items:flex-start above lets plain stacked text/pills hug their own
+content width, but it also shrinks a nested Bootstrap .row to fit-content
+instead of the 100% width its .col-* percentages need to compute against —
+this stretches it back out without affecting flat (non-.row) content*/
+.simple-table-value-wrap-vertical .row {width: 100%;}
+
+.simple-table-value {white-space: nowrap;}
+
+.table-content-mt {margin-top: 0px;}
+
+.simple-table-row:last-child .simple-table-label,
+.simple-table-row:last-child .simple-table-value-wrap-horizontal,
+.simple-table-row:last-child .simple-table-value-wrap-vertical {border-bottom: none;}
+/* ────────────────────── */
 
 
 /*Notification Message*/
@@ -171,6 +281,111 @@ Table of Contents:
     gap:             var(--space-3);
 }
 /*Modal END =====================================*/
+
+/*Modal Tabs START*/
+.modal-tabs-nav {
+    background-color: var(--clairvoyant-950);
+    padding:          var(--space-3) var(--space-4) 0;
+}
+
+.modal-tab {
+    appearance:              none;
+    background-color:        var(--clairvoyant-950);
+    border:                  none;
+    border-top:              1px solid var(--tangerine-200);
+    border-right:            1px solid var(--tangerine-200);
+    border-top-right-radius: var(--space-3);
+    margin-right:            -10px;
+    padding-top:             8px;
+    padding-bottom:          8px;
+    color:                   white;
+    font-family:             'Poppins', sans-serif;
+    font-size:               var(--text-base);
+    font-weight:             var(--font-weight-regular);
+    line-height:             28px;
+    white-space:             nowrap;
+    cursor:                  pointer;
+    position:                relative;
+}
+
+.modal-tab:first-child {
+    border-left:             1px solid var(--tangerine-200);
+    border-top-left-radius:  var(--space-1);
+}
+
+.modal-tab:last-child {margin-right: 0;}
+
+/*Stacking order is purely position-based (left tab always on top of the
+ones to its right) and does not change when a tab becomes active — matches
+the Figma source, where the active tab keeps its own position's z-index
+instead of jumping to the front.*/
+.modal-tab:nth-child(1) {z-index: 3;}
+.modal-tab:nth-child(2) {z-index: 2;}
+.modal-tab:nth-child(3) {z-index: 1;}
+
+.modal-tab.is-active {
+    background-color:        var(--razzmatazz-700);
+    border-top:              1px solid var(--razzmatazz-700);
+    border-right:            1px solid var(--razzmatazz-700);
+    border-left:             1px solid var(--razzmatazz-700);;
+    border-top-right-radius: var(--space-3);
+}
+
+/*Per-tab horizontal padding — hugs each label's width per the Figma spec.
+Stays constant across default/active states; only background and border
+change with state.*/
+#tab-recent-roles   {padding-left: 16px; padding-right: 28px;}
+#tab-skills         {padding-left: 35px; padding-right: 33px;}
+#tab-certifications {padding-left: 31px; padding-right: 25px;}
+
+.modal-tabs-body {
+    height:            400px;
+    padding:           var(--space-4);
+    background-color:  var(--dialog-body);
+}
+
+.tab-panel {
+    overflow-y: auto;
+    padding-right: var(--space-3);
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--gray-blue-400) var(--gray-blue-100);
+}
+
+.tab-panel[hidden] {display: none;}
+
+.tab-panel::-webkit-scrollbar {width: 6px;}
+
+.tab-panel::-webkit-scrollbar-track {
+    background-color: var(--gray-blue-100);
+    border-radius:    99px;
+}
+
+.tab-panel::-webkit-scrollbar-thumb {
+    background-color: var(--gray-blue-400);
+    border-radius:     99px;
+}
+
+.experience-item {
+    display:        flex;
+    flex-direction: column;
+    gap:            2px;
+    width:          100%;
+}
+
+.experience-meta {
+    display:     flex;
+    flex-wrap:   wrap;
+    align-items: center;
+    gap:         var(--space-2);
+}
+
+.experience-divider {
+    width:             1px;
+    height:            16px;
+    background-color:  var(--gray-blue-400);
+}
+/*Modal Tabs END*/
 
 /*Infinite Marque START*/
 .client-marque-outer {
@@ -1366,6 +1581,41 @@ Responsive Settings section at the bottom of this file*/
 }
 /*Newsletter Form END*/
 
+/*Tools Icon Grid START*/
+.tools-group-label {
+    font-weight:   500;
+    font-size:     14px;
+    line-height:   23px;
+    color:         var(--text-header);
+    margin-bottom: 0;
+}
+
+.tools-icon-grid {
+    display:   flex;
+    flex-wrap: wrap;
+    gap:       10px;
+    width:     100%;
+}
+
+.tools-icon {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    width:           68px;
+    height:          68px;
+    padding:         10px;
+    border:          1px dashed #B3B8DB;
+    border-radius:   var(--space-2);
+}
+
+.tools-icon img {
+    max-width:  48px;
+    max-height: 48px;
+    width:      auto;
+    height:     auto;
+}
+/*Tools Icon Grid END*/
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -1427,12 +1677,41 @@ Responsive Settings section at the bottom of this file*/
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
-    .modal-primary-footer-cta {
+    /*Simple Table: single stacked column instead of the desktop two-column
+    grid; each row becomes a real flex column with the label above its value*/
+    .simple-table {
+        display:        flex;
         flex-direction: column;
+    }
+
+    .simple-table-row {
+        display:        flex;
+        flex-direction: column;
+        align-items:    flex-start;
+        gap:            4px;
+        width:          100%;
+        padding:        16px 16px;
+        border-bottom:  0.5px solid var(--dialog-border);
+    }
+
+    .simple-table-row:last-child {border-bottom: none;}
+
+    .simple-table-label,
+    .simple-table-value-wrap-horizontal,
+    .simple-table-value-wrap-vertical {
+        min-height: auto;
+        padding:    0;
+        border:     none;
+    }
+
+    .table-content-mt {margin-top: 4px;}
+
+    .modal-primary-footer-cta {
+        flex-direction:  column;
         justify-content: center;
-        width: 100%;
-        padding-top: 4px;
-        padding-bottom: 4px;
+        width:           100%;
+        padding-top:     4px;
+        padding-bottom:  4px;
     }
 
     .modal-primary-footer-cta button {width: 100%;}
@@ -1440,13 +1719,11 @@ Responsive Settings section at the bottom of this file*/
     .client-logo-section-desktop {display: none;}
 
     .client-logo-section-mobile {
-        display: block;
-        padding-top: 32px;
+        display:        block;
+        padding-top:    32px;
         padding-bottom: 40px;
     }
-    .marquee-item img {
-        height: 50px;
-    }
+    .marquee-item img {height: 50px;}
 
 
     .increase-logo-size img {
