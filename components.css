@@ -81,6 +81,14 @@ Pills
     text-align:     center;
 }
 
+/*Pill Sizes: stack onto .pill (e.g. class="pill pill-lg pill-skill") to
+override its default padding/font-size — leave off for the default size*/
+.pill-lg {
+    padding:     4px 20px;
+    font-size:   16px;
+    line-height: 20px;
+}
+
 .pill-internal {
     border:           1px solid var(--clairvoyant-200);
     background-color: var(--clairvoyant-50);
@@ -133,6 +141,12 @@ Pills
     border:           1px solid #FFB7A0;
     background-color: #FFF4F1;
     color:            #F8693B;
+}
+
+.pill-skill {
+    border:           1px solid #FFCCD8;
+    background-color: #FFF1F4;
+    color:            #D91656;
 }
 
 /* _______ Simple Table _______ */
@@ -275,38 +289,54 @@ this stretches it back out without affecting flat (non-.row) content*/
 }
 
 .modal-tab {
-    appearance:        none;
-    background-color:  transparent;
-    border:            none;
-    border-top:        1px solid var(--tangerine-200);
-    border-right:      1px solid var(--tangerine-200);
+    appearance:              none;
+    background-color:        var(--clairvoyant-950);
+    border:                  none;
+    border-top:              1px solid var(--tangerine-200);
+    border-right:            1px solid var(--tangerine-200);
     border-top-right-radius: var(--space-3);
-    margin-right:      -10px;
-    padding:           var(--space-1) var(--space-6);
-    color:             white;
-    font-family:       'Poppins', sans-serif;
-    font-size:         var(--text-base);
-    font-weight:       var(--font-weight-regular);
-    line-height:       28px;
-    white-space:       nowrap;
-    cursor:            pointer;
-    position:          relative;
+    margin-right:            -10px;
+    padding-top:             8px;
+    padding-bottom:          8px;
+    color:                   white;
+    font-family:             'Poppins', sans-serif;
+    font-size:               var(--text-base);
+    font-weight:             var(--font-weight-regular);
+    line-height:             28px;
+    white-space:             nowrap;
+    cursor:                  pointer;
+    position:                relative;
+}
+
+.modal-tab:first-child {
+    border-left:             1px solid var(--tangerine-200);
+    border-top-left-radius:  var(--space-1);
 }
 
 .modal-tab:last-child {margin-right: 0;}
 
+/*Stacking order is purely position-based (left tab always on top of the
+ones to its right) and does not change when a tab becomes active — matches
+the Figma source, where the active tab keeps its own position's z-index
+instead of jumping to the front.*/
 .modal-tab:nth-child(1) {z-index: 3;}
 .modal-tab:nth-child(2) {z-index: 2;}
 .modal-tab:nth-child(3) {z-index: 1;}
 
 .modal-tab.is-active {
     background-color:        var(--razzmatazz-700);
-    border:                  none;
-    border-top-left-radius:  var(--space-1);
+    border-top:              1px solid var(--razzmatazz-700);
+    border-right:            1px solid var(--razzmatazz-700);
+    border-left:             1px solid var(--razzmatazz-700);;
     border-top-right-radius: var(--space-3);
-    font-weight:             var(--font-weight-medium);
-    z-index:                 4;
 }
+
+/*Per-tab horizontal padding — hugs each label's width per the Figma spec.
+Stays constant across default/active states; only background and border
+change with state.*/
+#tab-recent-roles   {padding-left: 16px; padding-right: 28px;}
+#tab-skills         {padding-left: 35px; padding-right: 33px;}
+#tab-certifications {padding-left: 31px; padding-right: 25px;}
 
 .modal-tabs-body {
     height:            400px;

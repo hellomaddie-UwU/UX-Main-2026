@@ -1,4 +1,4 @@
-/* ───────────────────────────────────────────────
+/* ─────────────────────────────────────────────── 
 Table of Contents
 1. Global Layout Settings
     1.A. Custom Width Measurements
@@ -14,157 +14,217 @@ Table of Contents
     3.C. Blog Section
     3.D. Galley Section
     3.E. Newsletter CTA Banner
-4. Responsive Settings
-───────────────────────────────────────────────*/
-
-/* ───────────────────────────────────────────────
-Custom Width Measurements
-───────────────────────────────────────────────*/
-
-
-/* ───────────────────────────────────────────────
-Auto Layouts
-───────────────────────────────────────────────*/
-.h-stack { /*equivalent of Auto Layout*/
-    display:     flex;
-    align-items: flex-start;
-}
-
-.v-stack { /*equivalent of Auto Layout*/
-    display:        flex;
-    flex-direction: column;
-}
-
-/* ───────────────────────────────────────────────
-Main Page: the grid background
-───────────────────────────────────────────────*/
-.main-page, .grid-bg {
-    background-image:  url(../imgs/line\ bg.svg);
-    background-repeat: repeat;
-}
-
-/* ───────────────────────────────────────────────
-Navidation
-───────────────────────────────────────────────*/
-.nav-container {
-    width:           90px;
-    display:         inline-flex;
-    position:        fixed;
-    height:          100vh;
-    padding:         var(--space-8) var(--space-4);
-    flex-direction:  column;
-    justify-content: space-between;
-}
-
-/* ───────────────────────────────────────────────
-Footer
-───────────────────────────────────────────────*/
-footer {margin-left: 90px;}
-
-
-/* ───────────────────────────────────────────────
-Global Section Container
-───────────────────────────────────────────────*/
-.section-container,
-.section-container-mt-0,
-.projects-section,
-.testimonials-container,
-.blog-container {margin-left: 90px;}
-
-.section-container {padding: 40px 5% 60px 5%;}
-
-.section-container-mt-0 {padding: 0px 5% 60px 5%;}
-
-.employment-info-section {padding: 160px 5% 160px 5%;}
-
-/* ───────────────────────────────────────────────
-Project Section
-───────────────────────────────────────────────*/
-.projects-section {padding-top: 120px;}
-
-.projects-row { 
-    display:    flex;
-    width:      100%;
-    margin-top: var(--space-5);
-}
-
-/* ───────────────────────────────────────────────
-Testimonial Section, Container and Wrapper
-───────────────────────────────────────────────*/
-.testimonials-container {padding: 40px 5% 170px 5%;}
-
-.testimonials-row {
-    display:     flex;
-    align-items: stretch;
-    gap:         var(--space-5);
-    margin-top:  var(--space-5);
-}
-
-.testimonial-card {
-    flex:             1 1 0;
-    display:          flex;
-    position:         relative;
-    z-index:          0;
-    background-color: white;
-}
-
-/* ───────────────────────────────────────────────
-Blog Section
+    3.F. Employment | Info Section
+4. Custom Component Container
+    4.A. Selection Container
+5. Responsive Settings
 ───────────────────────────────────────────────*/
 
 
 /* ───────────────────────────────────────────────
-Galley Section
+Global Layout Settings
 ───────────────────────────────────────────────*/
-.gallery-container {
-    display:  flex;
-    gap:      var(--space-5);
+    /* ───────────────────────────────────────────────
+    Custom Width Measurements
+    ───────────────────────────────────────────────*/
+
+
+    /* ───────────────────────────────────────────────
+    Auto Layouts
+    ───────────────────────────────────────────────*/
+    .h-stack { /*equivalent of Auto Layout*/
+        display:     flex;
+        align-items: flex-start;
+    }
+
+    .v-stack { /*equivalent of Auto Layout*/
+        display:        flex;
+        flex-direction: column;
+    }
+
+
+/* ───────────────────────────────────────────────
+Global Layout Settings
+───────────────────────────────────────────────*/    
+    /* ───────────────────────────────────────────────
+    Main Page: the grid background
+    ───────────────────────────────────────────────*/
+    .main-page, .grid-bg {
+        background-image:  url(../imgs/line\ bg.svg);
+        background-repeat: repeat;
+    }
+
+    /* ───────────────────────────────────────────────
+    Navidation
+    ───────────────────────────────────────────────*/
+    .nav-container {
+        width:           90px;
+        display:         inline-flex;
+        position:        fixed;
+        height:          100vh;
+        padding:         var(--space-8) var(--space-4);
+        flex-direction:  column;
+        justify-content: space-between;
+    }
+
+    /* ───────────────────────────────────────────────
+    Footer
+    ───────────────────────────────────────────────*/
+    footer {margin-left: 90px;}
+
+
+    /* ───────────────────────────────────────────────
+    Global Section Container
+    ───────────────────────────────────────────────*/
+    .section-container,
+    .section-container-mt-0,
+    .projects-section,
+    .testimonials-container,
+    .blog-container {margin-left: 90px;}
+
+    .section-container {padding: 40px 5% 60px 5%;}
+
+    .section-container-mt-0 {padding: 0px 5% 60px 5%;}
+
+
+/* ───────────────────────────────────────────────
+Section Settings
+───────────────────────────────────────────────*/
+    /* ───────────────────────────────────────────────
+    Project Section
+    ───────────────────────────────────────────────*/
+    .projects-section {padding-top: 120px;}
+
+    .projects-row { 
+        display:    flex;
+        width:      100%;
+        margin-top: var(--space-5);
+    }
+
+    /* ───────────────────────────────────────────────
+    Testimonial Section, Container and Wrapper
+    ───────────────────────────────────────────────*/
+    .testimonials-container {padding: 40px 5% 170px 5%;}
+
+    .testimonials-row {
+        display:     flex;
+        align-items: stretch;
+        gap:         var(--space-5);
+        margin-top:  var(--space-5);
+    }
+
+    .testimonial-card {
+        flex:             1 1 0;
+        display:          flex;
+        position:         relative;
+        z-index:          0;
+        background-color: white;
+    }
+
+    /* ───────────────────────────────────────────────
+    Blog Section
+    ───────────────────────────────────────────────*/
+
+
+    /* ───────────────────────────────────────────────
+    Galley Section
+    ───────────────────────────────────────────────*/
+    .gallery-container {
+        display:  flex;
+        gap:      var(--space-5);
+        position: relative;
+        z-index:  1;
+    }
+
+    .gallery-wrapper-col-left, 
+    .gallery-wrapper-col-right {
+        display:        flex;
+        flex-direction: column;
+        gap:            var(--space-5);
+    }
+
+    .gallery-wrapper-col-left {width: 67%;}
+
+    .gallery-wrapper-col-right {width: 33%;}
+
+
+    /* ───────────────────────────────────────────────
+    Newsletter CTA Banner
+    ───────────────────────────────────────────────*/
+    .newsletter {
+        background-color: white;
+        border-top:       1px solid #FFA1B7;
+    }
+
+    .newsletter-inner {
+        display: flex;
+        gap:     var(--space-4);
+    }
+
+    .newsletter-copy {width: 25%;} /*the left col of the section*/
+
+    .newsletter-form-col {width: 75%;} /*the right col of the section*/
+
+        /* ----- Kit Embed Form ----- */
+        .formkit-form[data-uid="2cce5a189f"], 
+        .formkit-form[data-uid="e53b34d164"] {
+            max-width: none !important; 
+            width:     100%;
+        }
+
+        .formkit-form[data-uid="2cce5a189f"] [data-style="clean"],
+        .formkit-form[data-uid="e53b34d164"] [data-style="clean"] {padding-top: 0 !important;}
+
+        .formkit-form[data-uid="e53b34d164"] .formkit-field {
+            flex:  1 1 100% !important;
+            width: 100%;
+        }
+
+
+    /* ───────────────────────────────────────────────
+    Employment | Info Section
+    ───────────────────────────────────────────────*/
+    .employment-info-section {padding: 160px 5% 160px 5%;}
+
+
+/* ───────────────────────────────────────────────
+Custom Component Container
+───────────────────────────────────────────────*/
+    /* ───────────────────────────────────────────────
+    Selection Container
+    ───────────────────────────────────────────────*/
+    .selection-container {
+    margin:   10px;
     position: relative;
-    z-index:  1;
-}
+    }
 
-.gallery-wrapper-col-left, 
-.gallery-wrapper-col-right {
-    display:        flex;
-    flex-direction: column;
-    gap:            var(--space-5);
-}
+    .selection-content {
+        border:   0.5px #8722A9 solid;
+        overflow: hidden;
+        padding:  24px 32px;
+    }
 
-.gallery-wrapper-col-left {width: 67%;}
+    .selection-content .row {--bs-gutter-x: 0;}
 
-.gallery-wrapper-col-right {width: 33%;}
+    .selection-content .d-flex {min-width: 0;}
 
-/* ───────────────────────────────────────────────
-Newsletter CTA Banner
-───────────────────────────────────────────────*/
-.newsletter {
-    background-color: white;
-    border-top:       1px solid #FFA1B7;
-}
+    .selection-content p {
+        min-width:     0;
+        overflow-wrap: break-word;
+    }
 
-.newsletter-inner {
-    display: flex;
-    gap:     var(--space-4);
-}
+    .selector-box-top-left, 
+    .selector-box-top-right, 
+    .selector-box-bottom-left, 
+    .selector-box-bottom-right {position: absolute;}
 
-.newsletter-copy {width: 25%;} /*the left col of the section*/
+    .selector-box-top-left, .selector-box-top-right {top: -8px;}
 
-.newsletter-form-col {width: 75%;} /*the right col of the section*/
+    .selector-box-bottom-left, .selector-box-bottom-right {bottom: -8px;}
 
-/* ----- Kit Embed Form ----- */
-.formkit-form[data-uid="2cce5a189f"], 
-.formkit-form[data-uid="e53b34d164"] {
-    max-width: none !important; 
-    width:     100%;
-}
+    .selector-box-top-left, .selector-box-bottom-left {left: -8px;}
 
-.formkit-form[data-uid="2cce5a189f"] [data-style="clean"],
-.formkit-form[data-uid="e53b34d164"] [data-style="clean"] {padding-top: 0 !important;}
-
-.formkit-form[data-uid="e53b34d164"] .formkit-field {
-    flex:  1 1 100% !important;
-    width: 100%;
-}
+    .selector-box-top-right, .selector-box-bottom-right {right: -8px;}
 
 
 /* ───────────────────────────────────────────────
@@ -232,6 +292,7 @@ Responsive Settings
 
     .projects-row {flex-direction: column;}
 
+
     /* ───────────────────────────────────────────────
     Testimonial Section, Container and Wrapper
     ───────────────────────────────────────────────*/
@@ -242,10 +303,12 @@ Responsive Settings
         padding-right: 4%;
     }
 
+
     /* ───────────────────────────────────────────────
     Galley Section
     ───────────────────────────────────────────────*/
     .gallery-container {gap: 12px;}
+
 
     /* ───────────────────────────────────────────────
     Newsletter CTA Banner
@@ -283,6 +346,7 @@ Responsive Settings
         z-index:  4;
     }
 
+    
     /* ───────────────────────────────────────────────
     Global Section Container
     ───────────────────────────────────────────────*/
@@ -302,6 +366,7 @@ Responsive Settings
 
     .gallery-wrapper-col-left, .gallery-wrapper-col-right {gap: var(--space-3);}
 
+
     /* ───────────────────────────────────────────────
     Newsletter CTA Banner
     ───────────────────────────────────────────────*/
@@ -312,6 +377,6 @@ Responsive Settings
 
     .newsletter-copy, .newsletter-form-col {width: 100%;}
 
-    /* ----- Kit Embed Form ----- */
-    .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding: 0 !important;}
+        /* ----- Kit Embed Form ----- */
+        .formkit-form[data-uid="2cce5a189f"] [data-style="clean"] {padding: 0 !important;}
 }
