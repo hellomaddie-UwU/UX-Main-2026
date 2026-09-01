@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["--yes", "serve", "-l", "4173", "."],
       "port": 4173
+    },
+    {
+      "name": "eleventy",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["eleventy", "--serve", "--port=8080"],
+      "port": 8080
     }
   ]
 }
