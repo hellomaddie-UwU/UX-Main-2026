@@ -1,7 +1,7 @@
 /* ─────────────────────────────────────────────── 
 Table of Contents
 1. Global Layout Settings
-    1.A. Custom Width Measurements
+    1.A. Custom Width Measurements & Alignments
     1.B. Auto Layouts
 2. Global Page Settings
     2.A. Main Page
@@ -25,9 +25,16 @@ Table of Contents
 Global Layout Settings
 ───────────────────────────────────────────────*/
     /* ───────────────────────────────────────────────
-    Custom Width Measurements
+    Custom Width Measurements & Alignments
     ───────────────────────────────────────────────*/
-
+    .page-header-gradient {
+        position:   absolute;
+        right:      0;
+        top:        0;
+        width:      50%;
+        z-index:    0;
+        margin-top: -40px;
+    }
 
     /* ───────────────────────────────────────────────
     Auto Layouts
@@ -72,6 +79,14 @@ Global Layout Settings
     ───────────────────────────────────────────────*/
     footer {margin-left: 90px;}
 
+    .end { /*2nd section within footer*/
+        background-color: #F8F9FC;
+        padding:          10px 5%;
+        width:            100%;
+        display:          flex;
+        justify-content:  space-between;
+    }
+
 
     /* ───────────────────────────────────────────────
     Global Section Container
@@ -79,8 +94,7 @@ Global Layout Settings
     .section-container,
     .section-container-mt-0,
     .projects-section,
-    .testimonials-container,
-    .blog-container {margin-left: 90px;}
+    .testimonials-container {margin-left: 90px;}
 
     .section-container {padding: 40px 5% 60px 5%;}
 
@@ -180,6 +194,7 @@ Section Settings
             width: 100%;
         }
 
+        .formkit-input::placeholder, .form-select:required:invalid {color: #717680 !important;}
 
     /* ───────────────────────────────────────────────
     Employment | Info Section
@@ -303,6 +318,7 @@ Responsive Settings
         padding-right: 4%;
     }
 
+    .testimonials-row {flex-direction: column;}
 
     /* ───────────────────────────────────────────────
     Galley Section
@@ -344,6 +360,15 @@ Responsive Settings
         padding:  16px 8%;
         position: relative;
         z-index:  4;
+    }
+
+
+    /* ───────────────────────────────────────────────
+    Footer
+    ───────────────────────────────────────────────*/
+    .end {
+        flex-direction: column;
+        align-items:    center;
     }
 
     

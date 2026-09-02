@@ -24,36 +24,52 @@ Table of Contents:
 /* ───────────────────────────────────────────────
 Divider
 ───────────────────────────────────────────────*/
-.divider { /*horizontal lavendar divider*/
-    height:           0.5px; 
-    width:            100%;
-    background-color: var(--divider);
-}
+    /* ───────────────────────────────────────────────
+    Lines
+    ───────────────────────────────────────────────*/
+    .divider { /*horizontal lavendar divider*/
+        height:           0.5px; 
+        width:            100%;
+        background-color: var(--divider);
+    }
 
-.breadcrumb-divider { /*pink diagonal divider*/
-    width:            1px;
-    height:           20px;
-    background-color: var(--razzmatazz-400);
-    rotate:           25deg;
-}
+    .breadcrumb-divider { /*pink diagonal divider*/
+        width:            1px;
+        height:           20px;
+        background-color: var(--razzmatazz-400);
+        rotate:           25deg;
+    }
 
-.vertical-divider { /*vertical white divider*/
-    height:           100%;
-    width:            0.5px;
-    background-color: var(--divider-on-dark);
-}
+    .vertical-divider { /*vertical white divider*/
+        height:           100%;
+        width:            0.5px;
+        background-color: var(--divider-on-dark);
+    }
 
-.vertical-divider-blue { /*vertical blue divider*/
-    width:            1px;
-    height:           16px;
-    background-color: var(--gray-blue-400);
-}
+    .vertical-divider-blue { /*vertical blue divider*/
+        width:            1px;
+        height:           16px;
+        background-color: var(--gray-blue-400);
+    }
 
-/*Dots*/
-.orange-dot {
-    height: 8px;
-    width:  8px;
-}
+    /* ───────────────────────────────────────────────
+    Dots
+    ───────────────────────────────────────────────*/
+    .orange-dot {
+        height: 8px;
+        width:  8px;
+    }
+
+    /* ───────────────────────────────────────────────
+    Images
+    ───────────────────────────────────────────────*/
+    .flower-divider {
+        width:               100%;
+        height:              52px;
+        background-image:    url(imgs/flower-divider.svg);
+        background-repeat:   repeat-x;
+        background-position: left center;
+    }
 
 /* ───────────────────────────────────────────────
 Tags/Labels
@@ -281,6 +297,15 @@ this stretches it back out without affecting flat (non-.row) content*/
     gap:             var(--space-3);
 }
 /*Modal END =====================================*/
+
+/*Tools Modal START*/
+.tools-dialog {
+    flex:       0 1 380px;
+    max-width:  413px;
+    min-width:  300px;
+    margin-top: 200px;
+}
+/*Tools Modal END*/
 
 /*Modal Tabs START*/
 .modal-tabs-nav {
@@ -1635,6 +1660,8 @@ Responsive Settings section at the bottom of this file*/
         flex: 0 0 auto;
         height: 400px;
     }
+
+    .tools-dialog {margin-top: 0;}
 }
 
 /*Tablet*/ /*md*/

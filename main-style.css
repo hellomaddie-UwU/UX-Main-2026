@@ -4,16 +4,13 @@ Table of Contents
     A. Color Settings
     B. Navigation
     C. Spacing
-2. Container Settings
-    A. Navigation
-    B. Page Layout
-3. Typography Settings
+2. Typography Settings
     A. Global
     B. Custom: reusable
     C. Sections: will only be seen within said sections
-4. Control Settings
+3. Control Settings
     A. Buttons
-5. Responsive Settings
+4. Responsive Settings
 ───────────────────────────────────────────────*/
 
 /* ───────────────────────────────────────────────
@@ -328,65 +325,6 @@ nav {z-index: 10;}
 /*--Spacing END--*/
 /*Global Setting END*/
 
-/*========================================================================*/
-/*Container Settings START*/
-.formkit-input::placeholder {
-    color: #717680 !important;
-}
-
-.form-select:required:invalid {
-    color: #717680;
-}
-
-
-.end {
-    background-color: #F8F9FC;
-    padding: 10px 5%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.end p, .end a {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.end a {
-    text-decoration: none;
-    color: #3E4784;
-}
-
-.service-thumbnail {height: 650px;}
-
-.page-header-gradient {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    z-index: 0;
-    margin-top: -40px;
-}
-
-.flower-divider {
-    width:               100%;
-    height:              52px;
-    background-image:    url(imgs/flower-divider.svg);
-    background-repeat:   repeat-x;
-    background-position: left center;
-}
-
-.tools-dialog {
-    flex:       0 1 380px;
-    max-width:  413px;
-    min-width:  300px;
-    margin-top: 200px;
-}
-
-
-/*Container Settings END*/
-/*========================================================================*/
-
 /* ───────────────────────────────────────────────
 Typography Section
 ───────────────────────────────────────────────*/
@@ -580,6 +518,16 @@ Typography Section
         font-weight: 600;
     }
 
+    .end p, .end a {
+        font-size:   14px;
+        font-weight: 500;
+    }
+
+    .end a {
+        text-decoration: none;
+        color:           #3E4784;
+    }
+
     /* ───────────────────────────────────────────────
     Sections: will only be seen within said sections
     ───────────────────────────────────────────────*/
@@ -689,18 +637,10 @@ input:user-invalid {
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
-    .blog-container {
-        margin-left: 0px;
-    }
-
     .projects-heading {
         padding-left:  4%;
         padding-right: 4%;
     }
-
-    .testimonials-row {flex-direction: column;}
-
-    .tools-dialog {margin-top: 0;}
 
     .brand-logo-tablet-mobile {display: block;}
 
@@ -862,8 +802,6 @@ input:user-invalid {
 
     .display-section-text {font-size: 78px;}
 
-    .service-thumbnail {height: 300px;}
-
     .lightbox-overlay.is-open .lightbox-dialog {
         width: min(780px, 100%);
     }
@@ -925,11 +863,6 @@ input:user-invalid {
     .display-section-text, .display-text {
         font-size: 64px;
         line-height: 59px;
-    }
-
-    .end {
-        flex-direction: column;
-        align-items: center;
     }
 
     .mobile-menu {
