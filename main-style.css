@@ -834,11 +834,6 @@ input:user-invalid {
     .lightbox-overlay.is-open .lightbox-title {
         font-size: 24px;
     }
-
-    .gallery-masonry {
-        column-count: 2;
-        column-gap: 20px;
-    }
 }
 
 /*Tablet*/ /*md*/
@@ -878,10 +873,6 @@ input:user-invalid {
 
     .mobile-menu-item {
         padding: 20px 0px;
-    }
-
-    .gallery-masonry {
-        column-count: 1;
     }
 
     .gallery-card-tall img,
