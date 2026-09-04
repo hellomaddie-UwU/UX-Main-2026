@@ -49,7 +49,7 @@
 
 .catalogue-filter-select:focus {
     outline: none;
-    border-color: var(--clairvoyant-600);
+    border-color: var(--link);
     box-shadow: 0 0 0 2px rgba(135, 34, 169, 0.15);
 }
 

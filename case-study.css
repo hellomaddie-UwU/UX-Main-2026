@@ -679,7 +679,7 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
     font-size: 14px;
     font-weight: 600;
     line-height: 23px;
-    color: var(--clairvoyant-600);
+    color: var(--link);
     margin-bottom: 0;
 }
 
@@ -828,7 +828,7 @@ never gets applied to (and leak into) the opaque image/close button sitting on t
 }
 
 .feature-modal-dots .dot.is-active {
-    background-color: var(--clairvoyant-600);
+    background-color: var(--link);
 }
 /* Feature Modal END */
 

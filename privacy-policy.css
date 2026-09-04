@@ -43,7 +43,7 @@ Table of Contents:
 }
 
 .privacy-toc-links a:hover {
-    color: var(--clairvoyant-600);
+    color: var(--link);
     border-left-color: var(--tangerine-400);
 }
 /*Layout / Table of Contents END*/
@@ -74,7 +74,7 @@ Table of Contents:
 .privacy-mobile-toc .dropdown-item:hover,
 .privacy-mobile-toc .dropdown-item:focus {
     background-color: var(--clairvoyant-50);
-    color: var(--clairvoyant-600);
+    color: var(--link);
 }
 /*Mobile Dropdown TOC END*/
 

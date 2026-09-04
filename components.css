@@ -108,7 +108,7 @@ override its default padding/font-size — leave off for the default size*/
 .pill-internal {
     border:           1px solid var(--clairvoyant-200);
     background-color: var(--clairvoyant-50);
-    color:            var(--clairvoyant-600);
+    color:            var(--link);
 }
 
 .pill-tech {
@@ -730,7 +730,7 @@ clears the close button that sits inside the card's top-right corner*/
     font-weight: 600;
     line-height: 23px;
     text-transform: uppercase;
-    color: var(--clairvoyant-600);
+    color: var(--link);
 }
 
 .lightbox-date {
@@ -820,12 +820,12 @@ clears the close button that sits inside the card's top-right corner*/
 }
 
 
-.site-breadcrumb a:hover, .bc-home:hover {color: var(--clairvoyant-600);}
+.site-breadcrumb a:hover, .bc-home:hover {color: var(--link);}
 
 .site-breadcrumb a:hover svg,
 .bc-home:hover svg,
 .bc-home svg:hover {
-    fill: var(--clairvoyant-600);
+    fill: var(--link);
 }
 
 .bc-home svg {fill: #717BBC;}

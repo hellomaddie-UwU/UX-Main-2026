@@ -1,21 +1,270 @@
 /* ─────────────────────────────────────────────── 
 Table of Contents
-1. Global Layout Settings
-    1.A. Custom Width Measurements & Alignments
-    1.B. Auto Layouts
-2. Global Page Settings
-    2.A. Main Page
-    2.B. Navidation
-    2.C. Footer
-    2.D. Global Section Container
-3. Section Settings
-    3.A. Project Section
-    3.B. Testimonial Section
-    3.C. Blog Section
-    3.D. Galley Section
-    3.E. Newsletter CTA Banner
-    3.F. Employment | Info Section
-4. Custom Component Container
-    4.A. Selection Container
-5. Responsive Settings
+1. Global Settings
+2. Custom Settings
+3. Section-Only Settings
+4. Responsive Settings
 ───────────────────────────────────────────────*/
+    
+/* ───────────────────────────────────────────────
+Global Settings
+───────────────────────────────────────────────*/
+    /* ───────────────────────────────────────────────
+    Text
+    ───────────────────────────────────────────────*/
+    h1, h2, h3, h4, h5, h6 {
+        color:         var(--text-header); 
+        margin-bottom: 0px;
+    }
+
+    h1, h2, h4, h5, h6, .lg-text, .md-text {font-weight: var(--font-weight-semibold);}
+
+    p, .display-text, .sm-text {font-weight: var(--font-weight-regular);}
+
+    h1 {
+        font-size:   var(--text-5xl);
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size:   var(--text-4xl);
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size:   var(--text-3xl);
+        line-height: 36px;
+        font-weight: var(--font-weight-medium);
+    }
+
+    h4 {
+        font-size:   var(--text-2xl);
+        line-height: 36px;
+    }
+
+    h5 {
+        font-size:   var(--text-xl);
+        font-style:  normal;
+        line-height: 38px;
+    }
+
+    h6 {
+        font-size:   var(--text-lg);
+        line-height: 28px;
+    }
+
+    .lg-text {
+        font-size:   var(--text-md);
+        line-height: 28px;
+    }
+
+    p {
+        color:         var(--text-body);
+        font-size:     var(--text-base);
+        font-style:    normal;
+        line-height:   28px;
+        margin-bottom: 0px;
+    }
+
+    .md-text {
+        font-size:   var(--text-sm);
+        line-height: 23px;
+    }
+
+    .sm-text {
+        font-size:   var(--text-xs);
+        line-height: 23px;
+    }
+
+    /* ───────────────────────────────────────────────
+    Weight
+    ───────────────────────────────────────────────*/
+    .w-300 {font-weight: var(--font-weight-light);}     /*-300-*/
+    .w-400 {font-weight: var(--font-weight-regular);}   /*-400-*/
+    .w-500 {font-weight: var(--font-weight-medium);}    /*-500-*/
+    .w-600 {font-weight: var(--font-weight-semibold);}  /*-600-*/
+    .w-700 {font-weight: var(--font-weight-bold);}      /*-700-*/
+    .w-800 {font-weight: var(--font-weight-extrabold);} /*-800-*/
+
+    /* ───────────────────────────────────────────────
+    Colors
+    ───────────────────────────────────────────────*/
+    a, .underline {color: var(--link);}
+
+/* ───────────────────────────────────────────────
+Custom Settings
+───────────────────────────────────────────────*/
+.display-text { /*The pink one*/
+    color:                     var(--razzmatazz-400);
+    font-family:               "Hello Radio";
+    font-size:                 94px;
+    line-height:               60px; /* 63.83% */
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--Brand-Razzmatazz-50, #FFF1F4);
+    paint-order:               stroke fill;
+    transform:                 rotate(-7.45deg);
+    display:                   inline-block;
+}
+
+.display-paragraph {
+    color:       var(--text-body);
+    font-family: "Hello Radio";
+    font-size:   50px;
+    font-weight: var(--font-weight-regular);
+    line-height: 46px; /* 92% */
+
+    transform:   rotate(-7deg);
+    display:     inline-block;
+    margin-top:  -12px;
+}
+
+.display-section-text { /*The white one with the pink stroke*/
+    color:                     var(--dialog-body);
+    font-family:               "Hello Radio";
+    font-size:                 80px;
+    font-style:                normal;
+    font-weight:               var(--font-weight-regular);
+    line-height:               73px; /* 77.66% */
+
+    text-shadow:               -3px 3px 0 var(--text-shadow-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--dialog-border);
+    paint-order:               stroke fill;
+    transform:                 rotate(-7.45deg);
+    z-index:                   2;
+    position:                  relative;
+}
+
+.small-title {font-weight: 600;}
+
+.text-clairvoyant-600 {color: var(--link);}
+
+.required-point {color: #F63D68;}
+
+.label-primary, .label-secondary {
+    font-size:      14px;
+    font-weight:    600;
+    text-transform: uppercase;
+}
+
+.label-primary {color: var(--link);}
+
+.label-secondary {color: #3E4784;}
+
+.side-note {
+    color:       var(--link);
+    font-size:   14px;
+    font-style:  italic;
+    font-weight: 600;
+    line-height: 23px; /* 164.286% */
+}
+
+/* ───────────────────────────────────────────────
+Section-Only Settings
+───────────────────────────────────────────────*/
+/* ----- Location: Case Study Section -----*/
+.case-study-point {
+    color:          var(--link);
+    font-size:      14px;
+    font-weight:    600;
+    line-height:    23px;
+    text-transform: uppercase;
+}
+
+.case-study-img-caption {
+    color:       var(--text-body);
+    font-size:   14px;
+    font-weight: 400;
+    line-height: 23px;
+    margin-top:  var(--space-1);
+}
+
+.case-study-subtitle, 
+.features-title, 
+.discovery-title {
+    color:       var(--text-body);
+    font-size:   17px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+/* ----- Location: Service Section -----*/
+.side-note-2 { /*Used for additional context na <h6> and above.*/
+    color:     var(--text-body);
+    font-size: 19px;
+} 
+
+.service-extended-title {
+    color:       var(--clairvoyant-500);
+    font-size:   26px;
+    font-weight: 500;
+    line-height: 38px; /* 146.154% */
+}
+
+.ICP-header-section {
+    font-size:   19px;
+    font-weight: 600;
+}
+
+/* ----- Location: Project Section -----*/
+.projects-heading {
+    padding-left:  5%;
+    padding-right: 5%;
+    z-index:       3;
+    position:      relative;
+}
+
+.projects-heading h2 {
+    display:       inline-block; 
+    margin-bottom: -20px;
+}
+
+.projects-heading h3 {margin-top: -10px;}
+
+/* ----- Location: End Section -----*/
+.end p, .end a {
+    font-size:   14px;
+    font-weight: 500;
+}
+
+.end a {
+    text-decoration: none;
+    color:           #3E4784;
+}
+
+/* ───────────────────────────────────────────────
+Responsive Settings
+───────────────────────────────────────────────*/
+@media screen and (min-width: 1920px) {
+    /*insert code*/
+}
+
+/*Widescreen*/ /*xxl*/
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
+/*Tablet LG*/ /*lg*/
+@media screen and (max-width: 992px) {
+    .projects-heading {
+        padding-left:  4%;
+        padding-right: 4%;
+    }
+
+    .display-section-text {font-size: 78px;}
+}
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+    /*insert code*/
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    .display-section-text, 
+    .display-text {
+        font-size:   64px;
+        line-height: 59px;
+    }
+}
