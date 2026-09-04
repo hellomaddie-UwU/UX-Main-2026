@@ -1,7 +1,8 @@
 /* ─────────────────────────────────────────────── 
 Table of Contents
 1. Global Settings
-2. Custom Settings
+2. Custom Global Settings
+    2.A. Case Study & Article Page
 3. Section-Only Settings
 4. Responsive Settings
 ───────────────────────────────────────────────*/
@@ -92,7 +93,7 @@ Global Settings
     a, .underline {color: var(--link);}
 
 /* ───────────────────────────────────────────────
-Custom Settings
+Custom Global Settings
 ───────────────────────────────────────────────*/
 .display-text { /*The pink one*/
     color:                     var(--razzmatazz-400);
@@ -159,6 +160,23 @@ Custom Settings
     font-weight: 600;
     line-height: 23px; /* 164.286% */
 }
+
+    /* ───────────────────────────────────────────────
+    Case Study & Article Page
+    ───────────────────────────────────────────────*/
+    .article-title {
+        color:       var(--text-header);
+        font-size:   47px;
+        font-weight: var(--font-weight-medium);
+        line-height: 60px;
+    }
+
+    .article-summary {
+        color:       var(--text-body);
+        font-size:   var(--text-xl);
+        font-weight: var(--font-weight-regular);
+        line-height: 38px;
+    }
 
 /* ───────────────────────────────────────────────
 Section-Only Settings

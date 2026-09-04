@@ -294,6 +294,36 @@ wraps -- (28px line-height - 8px dot) / 2*/
 /* ────────────────────── */
 
 
+/* _______ Featured Image Wrap _______ */
+/*Article hero image frame, shared by the case study and blog templates. The
+<picture> inside can swap to a different crop on mobile*/
+.featured-image-wrap {
+    position:      relative;
+    width:         100%;
+    height:        560px;
+    border-radius: 16px;
+    overflow:      hidden;
+    margin-top:    8px;
+    margin-bottom: var(--space-5);
+}
+
+.featured-image-wrap::after {
+    content:        "";
+    position:       absolute;
+    inset:          0;
+    pointer-events: none;
+    box-shadow:     0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
+}
+
+.featured-image {
+    width:      100%;
+    height:     100%;
+    object-fit: cover;
+    display:    block;
+}
+/* ────────────────────── */
+
+
 /* _______ Style 01 Table _______ */
 /*Two-column table. Rows use display:contents so their cells become direct grid
 items, the same pattern as .simple-table above. Cells are styled by position, so
@@ -1791,6 +1821,8 @@ Responsive Settings section at the bottom of this file*/
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
+    .featured-image-wrap {height: auto;}
+
     /* Stopgap until the tablet mockup for the Projects section is ready */
     .project-thumbnail {
         flex: 0 0 auto;
@@ -1802,6 +1834,8 @@ Responsive Settings section at the bottom of this file*/
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .featured-image-wrap {border-radius: 10px;}
+
     /*Collapsed breadcrumb: Home, first divider, and the section link give way
     to the menu dropdown; the menu icon centers next to a wrapped title, while
     the divider (given its own align-self) still stretches to match its height
@@ -1840,6 +1874,8 @@ Responsive Settings section at the bottom of this file*/
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .featured-image-wrap {height: auto;}
+
     /*Simple Table: single stacked column instead of the desktop two-column
     grid; each row becomes a real flex column with the label above its value*/
     .simple-table {

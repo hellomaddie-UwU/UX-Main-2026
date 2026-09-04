@@ -1,0 +1,140 @@
+/* ───────────────────────────────────────────────
+Table of Contents
+1. Author & Date
+2. Reading Progress
+3. Text Block
+4. Blog Image
+5. Responsive Settings
+───────────────────────────────────────────────*/
+
+/* ───────────────────────────────────────────────
+Author & Date
+───────────────────────────────────────────────*/
+/*Byline text. The row itself uses the existing .h-stack utility, with an
+orange-dot image between the two*/
+.author {font-weight: var(--font-weight-semibold);}
+
+.date {font-weight: var(--font-weight-medium);}
+
+
+/* ───────────────────────────────────────────────
+Reading Progress
+───────────────────────────────────────────────*/
+/*Sticks to the top of the viewport once the article starts scrolling. The fill
+width is driven by blog-reading-progress.js*/
+.reading-progress {
+    position:         sticky;
+    top:              0px;
+    z-index:          50;
+    background-color: white;
+
+    /*Longhand, not the padding shorthand -- the shorthand would zero the 5%
+    horizontal padding this element inherits from .section-container-mt-0 and
+    let the bar run full-bleed*/
+    padding-top:      20px;
+    padding-bottom:   20px;
+}
+
+.reading-progress-track {
+    width:            100%;
+    height:           10px;
+    border-radius:    99px;
+    overflow:         hidden;
+    background-color: #FFE2D8;
+}
+
+.reading-progress-fill {
+    width:         0;
+    height:        100%;
+    border-radius: 99px;
+    background:    linear-gradient(90deg, var(--tangerine-400) 0%, var(--clairvoyant-500) 100%);
+    transition:    width 0.1s linear;
+}
+
+
+/* ───────────────────────────────────────────────
+Text Block
+───────────────────────────────────────────────*/
+/*Body copy sits in a narrower measure than the featured image above it*/
+.text-block {
+    width:         80%;
+    margin-left:   auto;
+    margin-right:  auto;
+}
+
+
+/* ───────────────────────────────────────────────
+Blog Image
+───────────────────────────────────────────────*/
+/*In-article illustration. Shares the text block's measure so the two align*/
+.blog-image {
+    position:      relative;
+    width:         80%;
+    margin-left:   auto;
+    margin-right:  auto;
+    border-radius: 16px;
+    overflow:      hidden;
+}
+
+.blog-image img {
+    display:    block;
+    width:      100%;
+    height:     auto;
+}
+
+/*Credit badge, pinned bottom-right over the artwork*/
+.blog-image-credit {
+    position:        absolute;
+    right:           23px;
+    bottom:          15px;
+    display:         flex;
+    align-items:     center;
+    gap:             var(--space-1);
+    color:           var(--on-dark-text);
+    font-weight:     var(--font-weight-semibold);
+    text-decoration: none;
+}
+
+.blog-image-credit:hover {color: var(--tangerine-400);}
+
+.blog-image-credit img {
+    width:  28px;
+    height: auto;
+}
+
+
+/* ───────────────────────────────────────────────
+Responsive Settings
+───────────────────────────────────────────────*/
+@media screen and (min-width: 1920px) {
+    /*insert code*/
+}
+
+/*Widescreen*/ /*xxl*/
+@media screen and (min-width: 1440px) {
+    /*insert code*/
+}
+
+/*Tablet LG*/ /*lg*/
+@media screen and (max-width: 992px) {
+    /*Body copy takes the full container once the measure gets short enough*/
+    .text-block,
+    .blog-image {width: 100%;}
+}
+
+/*Tablet*/ /*md*/
+@media screen and (max-width: 768px) {
+    /*insert code*/
+}
+
+/*Mobile*/ /*sm*/
+@media screen and (max-width: 567px) {
+    .blog-image {border-radius: 10px;}
+
+    .blog-image-credit {
+        right:  12px;
+        bottom: 10px;
+    }
+
+    .reading-progress {padding: 12px 0px;}
+}
