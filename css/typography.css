@@ -267,4 +267,10 @@ Responsive Settings
         font-size:   64px;
         line-height: 59px;
     }
+
+    .display-text, 
+    .display-paragraph, 
+    .display-section-text {transform: none;}
+
+    .display-paragraph {margin-top: 0px;}
 }

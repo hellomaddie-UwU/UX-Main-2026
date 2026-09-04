@@ -532,6 +532,26 @@ change with state.*/
     aspect-ratio: 1212 / 560;
 }
 
+/*Home-page card frame. Mirrors .case-study-featured-wrap (case-study.css) at the
+sizes this slider actually renders, minus its margin-bottom -- kept standalone so
+changes to the article wrap can't reach the home cards*/
+.home-featured-wrap-mobile {
+    position:      relative;
+    width:         100%;
+    height:        auto;
+    border-radius: 10px;
+    overflow:      hidden;
+    margin-top:    8px;
+}
+
+.home-featured-wrap-mobile::after {
+    content:        "";
+    position:       absolute;
+    inset:          0;
+    pointer-events: none;
+    box-shadow:     0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
+}
+
 .cs2-slider__excerpt {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -640,6 +660,7 @@ never gets applied to (and leak into) the opaque modal content sitting on top of
 .lightbox-dialog {
     width: min(1150px, 100%);
     max-height: calc(100vh - 48px);
+    max-height: calc(100dvh - 48px);
     position: relative;
     z-index: 1;
 }
@@ -654,7 +675,9 @@ resolves against a stable number instead of a content-dependent one*/
     border-radius: 12px;
     overflow: hidden;
     height: 90vh;
+    height: 90dvh;
     max-height: calc(100vh - 48px);
+    max-height: calc(100dvh - 48px);
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -1779,8 +1802,10 @@ Responsive Settings section at the bottom of this file*/
     }
 
 
-    .featured-works-desktop {display: none;}
+    /*Scoped to the section so these beat .v-stack {display:flex} in page.css --
+    both are (0,1,0) on their own, so whichever file loads last would otherwise win*/
+    .case-study-home-container .featured-works-desktop {display: none;}
 
-    .featured-works-mobile {display: block;}
+    .case-study-home-container .featured-works-mobile {display: block;}
 }
 /*========================================================================*/

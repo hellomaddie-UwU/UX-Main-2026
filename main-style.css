@@ -588,6 +588,7 @@ input:user-invalid {
     .lightbox-overlay.is-open .lightbox-image {
         max-width: 100%;
         max-height: 50vh;
+        max-height: 50dvh;
         width: auto;
         height: auto;
     }
@@ -651,10 +652,12 @@ input:user-invalid {
     .lightbox-overlay.is-open .lightbox-dialog {
         width: 100%;
         max-height: calc(100vh - 24px);
+        max-height: calc(100dvh - 24px);
     }
 
     .lightbox-overlay.is-open .lightbox-card {
         max-height: calc(100vh - 24px);
+        max-height: calc(100dvh - 24px);
     }
 
     .lightbox-overlay.is-open .lightbox-media {
@@ -664,6 +667,7 @@ input:user-invalid {
     .lightbox-overlay.is-open .lightbox-media-frame,
     .lightbox-overlay.is-open .lightbox-image {
         max-height: 46vh;
+        max-height: 46dvh;
     }
 
     .lightbox-overlay.is-open .lightbox-info {

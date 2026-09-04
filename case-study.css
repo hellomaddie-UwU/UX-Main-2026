@@ -12,7 +12,7 @@
     border-radius: 16px;
     overflow:      hidden;
     margin-top:    8px;
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-5);
 }
 
 .case-study-featured-wrap::after {
