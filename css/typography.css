@@ -150,7 +150,7 @@ Custom Settings
 
 .label-primary {color: var(--link);}
 
-.label-secondary {color: #3E4784;}
+.label-secondary {color: var(--text-body);}
 
 .side-note {
     color:       var(--link);
@@ -230,7 +230,7 @@ Section-Only Settings
 
 .end a {
     text-decoration: none;
-    color:           #3E4784;
+    color:           var(--text-body);
 }
 
 /* ───────────────────────────────────────────────

@@ -50,7 +50,7 @@
 .hero-dialog-text h4, 
 .hero-dialog-text h6  {
     font-weight: 400;
-    color:     #3E4784;
+    color:     var(--text-body);
 }
 
 .hero-dialog-text h4 {line-height: 41px;}

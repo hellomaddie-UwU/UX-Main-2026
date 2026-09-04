@@ -65,7 +65,7 @@
 
 .table-of-contents-link a {
     text-decoration: none;
-    color: #3E4784;
+    color: var(--text-body);
     font-weight: 400;
 }
 
@@ -437,7 +437,7 @@ margin-top: var(--space-3);
 
 .discovery-accordion-header > h6 {
     font-weight: 500; 
-    color:#3E4784;
+    color:var(--text-body);
 }
 
 .reflection-header p, .reflection-header h6, .reflection-content p {color: white;}

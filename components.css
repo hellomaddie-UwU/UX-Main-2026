@@ -53,6 +53,12 @@ Divider
         background-color: var(--gray-blue-400);
     }
 
+    .vertical-divider-pink { /*vertical pink divider*/
+        width:            1px;
+        height:           28px;
+        background-color: var(--divider-on-dark);
+    }
+
     /* ───────────────────────────────────────────────
     Dots
     ───────────────────────────────────────────────*/
@@ -192,6 +198,11 @@ Pills
     overflow:              hidden;
 }
 
+/*Set explicitly rather than inherited from the global p rule, so the table keeps
+its own colour if that rule ever moves. Covers labels, values and list items --
+the label is separated by weight, not colour*/
+.simple-table p {color: var(--text-body);}
+
 /*Row wrapper drops out of the box model so its two children (label, value)
 become the grid's row cells directly; it becomes a real stacked column on
 mobile via the max-width:567px override in the Responsive Settings section
@@ -244,6 +255,35 @@ this stretches it back out without affecting flat (non-.row) content*/
 .simple-table-value-wrap-vertical .row {width: 100%;}
 
 .simple-table-value {white-space: nowrap;}
+
+/*Two-column bulleted list for the Team/Roles/Skills cells. column-count fills
+column-major and balances by height, which is how the Figma tables distribute*/
+.simple-table-list-2col {
+    width:        100%;
+    column-count: 2;
+    column-gap:   var(--space-4);
+}
+
+.simple-table-list-item {
+    display:       flex;
+    align-items:   flex-start;
+    gap:           var(--space-2);
+    break-inside:  avoid;
+    margin-bottom: 10px;
+}
+
+.simple-table-list-2col .simple-table-list-item:last-child {margin-bottom: 0px;}
+
+/*column-count balances by height, so a wrapped item can pull the split to the
+wrong place. Add this to the item that should END the first column*/
+.simple-table-list-break {break-after: column;}
+
+/*Holds the dot on the centre of the FIRST line so it stays put when an item
+wraps -- (28px line-height - 8px dot) / 2*/
+.simple-table-list-item .orange-dot {
+    flex-shrink: 0;
+    margin-top:  10px;
+}
 
 .table-content-mt {margin-top: 0px;}
 
@@ -1772,6 +1812,8 @@ Responsive Settings section at the bottom of this file*/
     }
 
     .table-content-mt {margin-top: 4px;}
+
+    .simple-table-list-2col {column-count: 1;}
 
     .modal-primary-footer-cta {
         flex-direction:  column;
