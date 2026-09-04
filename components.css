@@ -4,22 +4,23 @@ Table of Contents:
 2. Tags
 3. Pills
 4. Simple Table
-5. Notification Message
-6. Modal
-7. Modal Tabs
-8. Infinite Marque
-9. Single Accordion Card
-10. Design System Top Bar Nav
-11. Gallery Placeholder Image
-12. Gallery Lightbox
-13. Breadcrumb
-14. Tooltip
-15. Disabled Nav Item
-16. Custom Cursor
-17. Thumbnail
-18. Projects
-19. Newletter Form
-20. Tools Icon Grid
+5. Style 01 Table
+6. Notification Message
+7. Modal
+8. Modal Tabs
+9. Infinite Marque
+10. Single Accordion Card
+11. Design System Top Bar Nav
+12. Gallery Placeholder Image
+13. Gallery Lightbox
+14. Breadcrumb
+15. Tooltip
+16. Disabled Nav Item
+17. Custom Cursor
+18. Thumbnail
+19. Projects
+20. Newletter Form
+21. Tools Icon Grid
 */
 
 /* ───────────────────────────────────────────────
@@ -290,6 +291,61 @@ wraps -- (28px line-height - 8px dot) / 2*/
 .simple-table-row:last-child .simple-table-label,
 .simple-table-row:last-child .simple-table-value-wrap-horizontal,
 .simple-table-row:last-child .simple-table-value-wrap-vertical {border-bottom: none;}
+/* ────────────────────── */
+
+
+/* _______ Style 01 Table _______ */
+/*Two-column table. Rows use display:contents so their cells become direct grid
+items, the same pattern as .simple-table above. Cells are styled by position, so
+the markup needs no per-cell classes -- just .style-01-table + .style-01-table-row*/
+.style-01-table {
+    display:               grid;
+    grid-template-columns: max-content 1fr;
+    column-gap:            12px;
+    width:                 100%;
+    background-color:      white;
+}
+
+.style-01-table-row {display: contents;}
+
+/*The rule lives on the row, not the cells, so it stays unbroken across the
+12px gutter -- it's a grid item spanning both columns*/
+.style-01-table-row::after {
+    content:          "";
+    grid-column:      1 / -1;
+    height:           1px;
+    margin-bottom:    4px;
+    background-color: var(--divider);
+}
+
+/*Header row carries no rule -- height:0 rather than a transparent 1px, so the
+first data row sits exactly 4px below the header*/
+.style-01-table-row:first-child::after {height: 0;}
+
+/*No trailing gap under the final rule*/
+.style-01-table-row:last-child::after {margin-bottom: 0px;}
+
+.style-01-table-row > * {
+    display:     flex;
+    align-items: center;
+    min-height:  48px;
+    padding:     10px 12px;
+}
+
+/*Header row -- first row of the table*/
+.style-01-table-row:first-child > * {
+    background-color: var(--clairvoyant-50);
+    border-radius:    var(--space-2);
+    color:            var(--text-header);
+    font-weight:      var(--font-weight-semibold);
+}
+
+/*Label column -- first cell of every data row. The second column needs no rule
+at all; it already resolves to --text-body at weight 400*/
+.style-01-table-row:not(:first-child) > *:first-child {
+    color:       var(--text-header);
+    font-weight: var(--font-weight-medium);
+}
 /* ────────────────────── */
 
 
@@ -1814,6 +1870,43 @@ Responsive Settings section at the bottom of this file*/
     .table-content-mt {margin-top: 4px;}
 
     .simple-table-list-2col {column-count: 1;}
+
+    /*Style 01 Table: same single stacked column as .simple-table. Only the
+    Attribute header is kept -- the Detail header is dropped*/
+    .style-01-table {
+        display:        flex;
+        flex-direction: column;
+    }
+
+    .style-01-table-row {
+        display:        flex;
+        flex-direction: column;
+        align-items:    flex-start;
+        gap:            4px;
+        width:          100%;
+    }
+
+    /*Separates a row from the rule above it -- the header row has no rule above
+    it, so it is excluded*/
+    .style-01-table-row:not(:first-child) {padding-top: 12px;}
+
+    /*Second header cell is dropped -- only the label header stays*/
+    .style-01-table-row:first-child > *:last-child {display: none;}
+
+    .style-01-table-row:first-child > *  {width: 100%;}
+
+    .style-01-table-row:not(:first-child) > * {
+        min-height: auto;
+        padding:    0;
+    }
+
+    .style-01-table-row::after {
+        width:      100%;
+        margin-top: 12px;
+    }
+
+    /*The header's rule is height:0, so its top margin is space around nothing*/
+    .style-01-table-row:first-child::after {margin-top: 0px;}
 
     .modal-primary-footer-cta {
         flex-direction:  column;

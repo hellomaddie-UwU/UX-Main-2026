@@ -134,11 +134,6 @@
 
 .ending-case a {text-decoration: none; color: var(--tangerine-400);}
 
-.block p {
-    font-weight: 400;
-    line-height: 28px;
-}
-
 .block-table .thead {font-weight: 600;}
 
 .block-table-col {padding-top: 0px;}
