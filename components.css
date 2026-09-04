@@ -2,23 +2,24 @@
 Table of Contents:
 1. Divider
 2. Tags
-3. Simple Table
-4. Notification Message
-5. Modal
-6. Modal Tabs
-7. Infinite Marque
-8. Single Accordion Card
-9. Design System Top Bar Nav
-10. Gallery Placeholder Image
-11. Gallery Lightbox
-12. Breadcrumb
-13. Tooltip
-14. Disabled Nav Item
-15. Custom Cursor
-16. Thumbnail
-17. Projects
-18. Newletter Form
-19. Tools Icon Grid
+3. Pills
+4. Simple Table
+5. Notification Message
+6. Modal
+7. Modal Tabs
+8. Infinite Marque
+9. Single Accordion Card
+10. Design System Top Bar Nav
+11. Gallery Placeholder Image
+12. Gallery Lightbox
+13. Breadcrumb
+14. Tooltip
+15. Disabled Nav Item
+16. Custom Cursor
+17. Thumbnail
+18. Projects
+19. Newletter Form
+20. Tools Icon Grid
 */
 
 /* ───────────────────────────────────────────────
@@ -84,86 +85,102 @@ Tags/Labels
 /* ───────────────────────────────────────────────
 Pills
 ───────────────────────────────────────────────*/
-.pill {
-    border-radius: 99px;
-    display:       inline-block;
-    padding:       0px 12px;
-    width:         fit-content;
+    /* ───────────────────────────────────────────────
+    Main Class
+    ───────────────────────────────────────────────*/
+    .pill {
+        border-radius: 99px;
+        display:       inline-block;
+        padding:       0px 12px;
+        width:         fit-content;
 
-    font-size:      12px;
-    font-style:     normal;
-    font-weight:    500;
-    letter-spacing: 0.26px;
-    text-align:     center;
-}
+        font-size:      var(--text-xs);
+        font-style:     normal;
+        font-weight:    var(--font-weight-medium);
+        letter-spacing: 0.26px;
+        text-align:     center;
+    }
 
-/*Pill Sizes: stack onto .pill (e.g. class="pill pill-lg pill-skill") to
-override its default padding/font-size — leave off for the default size*/
-.pill-lg {
-    padding:     4px 20px;
-    font-size:   16px;
-    line-height: 20px;
-}
+    /* ───────────────────────────────────────────────
+    Other Sizes
+    ───────────────────────────────────────────────*/
+    .pill-lg {
+        padding:     4px 20px;
+        font-size:   var(--text-base);
+        line-height: 20px;
+    }
 
-.pill-internal {
-    border:           1px solid var(--clairvoyant-200);
-    background-color: var(--clairvoyant-50);
-    color:            var(--link);
-}
+    /* ───────────────────────────────────────────────
+    Case Study & Project Categories
+    ───────────────────────────────────────────────*/
+    .pill-deliverable {
+        border:           1px solid var(--clairvoyant-200);
+        background-color: var(--clairvoyant-50);
+        color:            var(--link);
+    }
 
-.pill-tech {
-    border:           1px solid #B2DDFF;
-    background-color: #ECFDFF;
-    color:            #1570EF;
-}
+    .pill-ai-tech, 
+    .pill-medical {
+        border:           1px solid #B2DDFF;
+        background-color: #ECFDFF;
+        color:            #1570EF;
+    }
 
-.pill-health {
-    border:           1px solid #99F6E0;
-    background-color: #F0FDF9;
-    color:            #0E9384;
-}
+    .pill-finance {
+        border:           1px solid #D0F8AB;
+        background-color: #F3FEE7;
+        color:            #4CA30D;
+    }
 
-.pill-finance {
-    border:           1px solid #D0F8AB;
-    background-color: #F3FEE7;
-    color:            #4CA30D;
-}
+    .pill-health {
+        border:           1px solid #99F6E0;
+        background-color: #F0FDF9;
+        color:            #0E9384;
+    }
 
-.pill-e-commerce {
-    border:           1px solid #C7D7FE;
-    background-color: #EEF4FF;
-    color:            #6172F3;
-}
+    .pill-education, 
+    .pill-marketing {
+        border:           1px solid #FFD5C7;
+        background-color: #FFF4F1;
+        color:            #F8693B;
+    }
 
-.pill-education {
-    border:           1px solid #C7D7FE;
-    background-color: #EEF4FF;
-    color:            #6172F3;
-}
+    .pill-e-commerce {
+        border:           1px solid #C7D7FE;
+        background-color: #EEF4FF;
+        color:            #6172F3;
+    }
 
-.pill-event {
-    border:           1px solid #FEEE95;
-    background-color: #FEFBE8;
-    color:            #CA8504;
-}
+    .pill-events, 
+    .pill-government {
+        border:           1px solid #FEEE95;
+        background-color: #FEFBE8;
+        color:            #CA8504;
+    }
 
-.pill-market {
-    border:           1px solid #FECDD6;
-    background-color: #FFF1F3;
-    color:            #F63D68;
-}
+    .pill-fashion, 
+    .pill-robotics {
+        border:           1px solid #FECDD6;
+        background-color: #FFF1F3;
+        color:            #F63D68;
+    }
 
-.pill-experience {
-    border:           1px solid #FFB7A0;
-    background-color: #FFF4F1;
-    color:            #F8693B;
-}
 
-.pill-skill {
-    border:           1px solid #FFCCD8;
-    background-color: #FFF1F4;
-    color:            #D91656;
-}
+    /* ───────────────────────────────────────────────
+    About Me
+    ───────────────────────────────────────────────*/
+    .pill-experience {
+        border:           1px solid #FFB7A0;
+        background-color: #FFF4F1;
+        color:            #F8693B;
+    }
+
+    .pill-skill {
+        border:           1px solid #FFCCD8;
+        background-color: #FFF1F4;
+        color:            #D91656;
+    }
+
 
 /* _______ Simple Table _______ */
 .simple-table {
