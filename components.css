@@ -439,6 +439,101 @@ at all; it already resolves to --text-body at weight 400*/
     justify-content: end;
     gap:             var(--space-3);
 }
+/*Contact Modal START ===========================*/
+/*Overlay for the hero's "Hit Me Up" form. The dialog itself reuses
+.modal-primary, so only the overlay, column split and close button are new*/
+.contact-modal {
+    display:  none;
+    position: fixed;
+    inset:    0;
+    z-index:  99;
+    padding:  24px;
+}
+
+.contact-modal.is-open {
+    display:     grid;
+    place-items: center;
+}
+
+/*Backdrop is a sibling behind the dialog, not a wrapper, so its opacity can
+never leak into the opaque modal content -- same approach as .lightbox-backdrop*/
+.contact-modal-backdrop {
+    position:         absolute;
+    inset:            0;
+    background-color: var(--surface-dark);
+    mix-blend-mode:   multiply;
+    opacity:          0.9;
+}
+
+.contact-modal-dialog {
+    position: relative;
+    z-index:  1;
+
+    /*The 176px reserve keeps room for .contact-modal-close, which hangs outside
+    the dialog's right edge. Without it the button lands off-screen on tablet*/
+    width:    min(808px, 100% - 176px);
+}
+
+/*The body scrolls, not the dialog -- .contact-modal-close hangs 68px outside
+the dialog's box, so any overflow on the dialog would clip it and add a
+horizontal scrollbar*/
+.contact-modal .modal-primary-body {
+    max-height: calc(100vh - 96px);
+    max-height: calc(100dvh - 96px);
+    overflow-y: auto;
+}
+
+/*Sits just outside the dialog's top-right corner*/
+.contact-modal-close {
+    position:         absolute;
+    top:              0;
+    right:            -68px;
+    width:            44px;
+    height:           44px;
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    padding:          0;
+    border:           none;
+    border-radius:    50%;
+    cursor:           pointer;
+    background-color: var(--link);
+}
+
+.contact-modal-close:hover {background-color: var(--tangerine-400);}
+
+/*Two columns either side of a vertical rule. 3fr/2fr splits the space left
+over after the rule and gaps 60/40 -- the form needs the room, the contact
+details do not*/
+.contact-modal-grid {
+    display:               grid;
+    grid-template-columns: 3fr 1px 2fr;
+    column-gap:            24px;
+    align-items:           start;
+}
+
+.contact-modal-divider {
+    width:            1px;
+    height:           100%;
+    background-color: #FBCDD9;
+}
+
+/*Back link replaces the close button on mobile -- hidden until then*/
+.contact-modal-back {
+    display:         none;
+    align-items:     center;
+    gap:             var(--space-1);
+    color:           var(--link);
+    font-weight:     var(--font-weight-semibold);
+    text-decoration: none;
+}
+
+.contact-modal-back img {
+    width:  8px;
+    height: auto;
+}
+/*Contact Modal END =============================*/
+
 /*Modal END =====================================*/
 
 /*Tools Modal START*/
@@ -1823,6 +1918,17 @@ Responsive Settings section at the bottom of this file*/
 @media screen and (max-width: 992px) {
     .featured-image-wrap {height: auto;}
 
+    /*Contact modal collapses to one column, the rule turning horizontal*/
+    .contact-modal-grid {
+        grid-template-columns: 1fr;
+        row-gap:               24px;
+    }
+
+    .contact-modal-divider {
+        width:  100%;
+        height: 1px;
+    }
+
     /* Stopgap until the tablet mockup for the Projects section is ready */
     .project-thumbnail {
         flex: 0 0 auto;
@@ -1875,6 +1981,16 @@ Responsive Settings section at the bottom of this file*/
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
     .featured-image-wrap {height: auto;}
+
+    /*Close button gives way to the Back link inside the body*/
+    .contact-modal {padding: 12px;}
+
+    /*No outside close button here, so the dialog can use the full width*/
+    .contact-modal-dialog {width: 100%;}
+
+    .contact-modal-close {display: none;}
+
+    .contact-modal-back {display: inline-flex;}
 
     /*Simple Table: single stacked column instead of the desktop two-column
     grid; each row becomes a real flex column with the label above its value*/

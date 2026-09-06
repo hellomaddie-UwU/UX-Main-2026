@@ -259,9 +259,7 @@
                                         <a href="Resume_CV 2026.pdf" download>
                                             <button class="btn-secondary">Download UX Resume</button>
                                         </a>
-                                        <a href="#contact">
-                                            <button class="btn-primary">Hit Me Up</button>
-                                        </a>
+                                        <button class="btn-primary" type="button" data-contact-modal-open>Hit Me Up</button>
                                     </div>
                                 </div>
                             </div>
@@ -943,8 +941,6 @@
                                         <h6 class="text-center">Hit Me Up!</h6>
                                     </div>
                                     <div class="modal-primary-body">
-                                        <p>Please fill out this form and we can talk about your project. I typically respond within 24 hours.</p>
-                                        <br>
                                         <input type="hidden" name="_subject" value="New portfolio inquiry from hellomaddie.com">
                                         <input type="hidden" name="page_url" value="">
                                         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0;">
@@ -1144,6 +1140,103 @@
             </div>
         </div>
         <!--Project Modal END-->
+
+        <!--Contact Modal START-->
+        <div class="contact-modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+            <div class="contact-modal-backdrop" data-contact-modal-close></div>
+            <div class="contact-modal-dialog">
+                <div class="modal-primary">
+                    <div class="modal-primary-head surface-dark">
+                        <img src="imgs/control.svg" alt="dialog control icon">
+                        <h6 class="text-center" id="contactModalTitle">Hit Me Up!</h6>
+                    </div>
+                    <div class="modal-primary-body no-modal-footer">
+                        <!--Replaces the close button on mobile-->
+                        <a class="contact-modal-back" href="#" data-contact-modal-close>
+                            <img src="imgs/chevron-left.svg" alt="" aria-hidden="true">
+                            Back
+                        </a>
+
+                        <div class="contact-modal-grid">
+                            <!--Form column-->
+                            <form id="contactFormModal" class="form" action="https://formspree.io/f/maqvzdbo" method="POST" novalidate>                    
+                                <input type="hidden" name="_subject" value="New portfolio inquiry from hellomaddie.com">
+                                <input type="hidden" name="page_url" value="">
+                                <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position: absolute; left: -9999px; opacity: 0;">
+                                <!--Client Name-->
+                                <div class="row mb-2">
+                                    <!--FName-->
+                                    <div class="col-12 col-sm-6">
+                                        <label for="FirstNameModal">First Name<span class="required-point">*</span></label>
+                                        <input type="text" id="FirstNameModal" name="first_name" class="form-control" aria-label="First name" required>
+                                    </div>
+                                    <!--LName-->
+                                    <div class="col-12 col-sm-6">
+                                        <label for="LastNameModal">Last Name<span class="required-point">*</span></label>
+                                        <input type="text" id="LastNameModal" name="last_name" class="form-control" aria-label="Last name" required>
+                                    </div>
+                                </div>
+                                <!--Email Address-->
+                                <div class="mb-2">
+                                    <label for="EmailModal">Email Address<span class="required-point">*</span></label>
+                                    <input type="text" id="EmailModal" name="email" class="form-control" aria-label="email" required>
+                                </div>
+                                <!--Organization-->
+                                <div class="mb-2">
+                                    <label for="OrganizationModal">Organization<span class="required-point">*</span></label>
+                                    <input type="text" id="OrganizationModal" name="organization" class="form-control" aria-label="Organization" required>
+                                </div>
+                                <!--Service-->
+                                <div class="mb-2">
+                                    <label for="ServiceModal">Subject<span class="required-point">*</span></label>
+                                    <select id="ServiceModal" name="service" class="form-select" aria-label="Service" required>
+                                        <option value="" selected disabled>Select</option>
+                                        <option value="UX/UI Design Project">UX/UI Design Project</option>
+                                        <option value="Design System / Style Guide">Design System / Style Guide</option>
+                                        <option value="Web Development / Shopify">Web Development / Shopify</option>
+                                        <option value="Illustration &amp; Graphic Design">Illustration &amp; Graphic Design</option>
+                                        <option value="Job Opportunity">Job Opportunity</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                                <!--Brief Project Description-->
+                                <div class="mb-4">
+                                    <label for="ProjectDescriptionModal">Brief Project Description<span class="required-point">*</span></label>
+                                    <textarea id="ProjectDescriptionModal" name="project_description" class="form-control" rows="4" placeholder="Type here..." required></textarea>
+                                </div>
+                                <!--Submit-->
+                                <div class="d-flex align-items-center gap-2">
+                                    <button class="btn-primary" type="submit">Submit</button>
+                                    <p id="contactFormModalStatus" class="mb-0 small" role="status" aria-live="polite" hidden></p>
+                                </div>
+                            </form>
+
+                            <div class="contact-modal-divider"></div>
+
+                            <!--Contact details column-->
+                            <div>
+                                <h6 class="fw-medium">Contact Details</h6>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <img src="imgs/mail-01.svg" alt="">
+                                    <p>hellomaddie.uwu@gmail.com</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <img src="imgs/marker-pin-01.svg" alt="">
+                                    <p>Metro Manila, PH</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="contact-modal-close" type="button" data-contact-modal-close aria-label="Close contact form">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="#FBF4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!--Contact Modal END-->
 
         <!-- ===== Scripts START ===== -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
