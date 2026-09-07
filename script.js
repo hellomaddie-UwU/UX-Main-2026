@@ -347,6 +347,11 @@ Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
                     var data = await response.json();
                     if (data && data.errors && data.errors.length > 0 && data.errors[0].message) {
                         message = data.errors[0].message;
+                    } else if (data && data.error) {
+                        /* Formspree reports configuration problems as a singular
+                           "error" string (e.g. reCAPTCHA blocking AJAX). Those are
+                           for us, not the visitor -- log it, keep the generic copy */
+                        console.error('Formspree rejected the submission:', data.error);
                     }
                 } catch (_error) {
                     // Keep the default message when no JSON error payload is present.
