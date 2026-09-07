@@ -1,7 +1,7 @@
 /* ─────────────────────────────────────────────── 
 Table of Contents
 1. Global Layout Settings
-    1.A. Custom Width Measurements
+    1.A. Custom Width Measurements & Alignments
     1.B. Auto Layouts
 2. Global Page Settings
     2.A. Main Page
@@ -25,9 +25,16 @@ Table of Contents
 Global Layout Settings
 ───────────────────────────────────────────────*/
     /* ───────────────────────────────────────────────
-    Custom Width Measurements
+    Custom Width Measurements & Alignments
     ───────────────────────────────────────────────*/
-
+    .page-header-gradient {
+        position:   absolute;
+        right:      0;
+        top:        0;
+        width:      50%;
+        z-index:    0;
+        margin-top: -40px;
+    }
 
     /* ───────────────────────────────────────────────
     Auto Layouts
@@ -72,6 +79,14 @@ Global Layout Settings
     ───────────────────────────────────────────────*/
     footer {margin-left: 90px;}
 
+    .end { /*2nd section within footer*/
+        background-color: #F8F9FC;
+        padding:          10px 5%;
+        width:            100%;
+        display:          flex;
+        justify-content:  space-between;
+    }
+
 
     /* ───────────────────────────────────────────────
     Global Section Container
@@ -79,8 +94,7 @@ Global Layout Settings
     .section-container,
     .section-container-mt-0,
     .projects-section,
-    .testimonials-container,
-    .blog-container {margin-left: 90px;}
+    .testimonials-container {margin-left: 90px;}
 
     .section-container {padding: 40px 5% 60px 5%;}
 
@@ -180,6 +194,7 @@ Section Settings
             width: 100%;
         }
 
+        .formkit-input::placeholder, .form-select:required:invalid {color: #717680 !important;}
 
     /* ───────────────────────────────────────────────
     Employment | Info Section
@@ -253,7 +268,10 @@ Responsive Settings
     .nav-container {
         width:           100vw;
         height:          80px;
-        position:        static;
+        /*relative, not static -- z-index only applies to positioned elements, and
+        static here silently disabled nav's z-index:10, letting the absolutely
+        positioned .page-header-gradient paint over the nav*/
+        position:        relative;
         padding:         16px 4%;
         flex-direction:  row;
         justify-content: space-between;
@@ -303,6 +321,7 @@ Responsive Settings
         padding-right: 4%;
     }
 
+    .testimonials-row {flex-direction: column;}
 
     /* ───────────────────────────────────────────────
     Galley Section
@@ -326,6 +345,15 @@ Responsive Settings
 
 
     /* ───────────────────────────────────────────────
+    Galley Section
+    ───────────────────────────────────────────────*/
+    /*Bootstrap's gap-lg-4 / gap-md-3 on the pair rows are min-width rules, so the
+    gap between paired images collapses to 0 from 568px down. Restore it to match
+    the column gap. Inert at <=567px, where the row becomes display:contents*/
+    .gallery-wrapper-col-left > .d-flex {gap: var(--space-3);}
+
+
+    /* ───────────────────────────────────────────────
     Newsletter CTA Banner
     ───────────────────────────────────────────────*/
     /* ----- Kit Embed Form ----- */
@@ -346,6 +374,15 @@ Responsive Settings
         z-index:  4;
     }
 
+
+    /* ───────────────────────────────────────────────
+    Footer
+    ───────────────────────────────────────────────*/
+    .end {
+        flex-direction: column;
+        align-items:    center;
+    }
+
     
     /* ───────────────────────────────────────────────
     Global Section Container
@@ -359,12 +396,31 @@ Responsive Settings
     /* ───────────────────────────────────────────────
     Galley Section
     ───────────────────────────────────────────────*/
+    /*Both columns collapse into one 2-up grid -- the column and row wrappers
+    dissolve with display:contents so every image cell becomes a direct grid item*/
     .gallery-container {
-        flex-direction: column; 
-        width:          100%;
+        display:               grid;
+        grid-template-columns: 1fr 1fr;
+        gap:                   var(--space-3);
+        width:                 100%;
     }
 
-    .gallery-wrapper-col-left, .gallery-wrapper-col-right {gap: var(--space-3);}
+    .gallery-wrapper-col-left, 
+    .gallery-wrapper-col-right {display: contents;}
+
+    /*!important beats Bootstrap's own .d-flex {display:flex !important}*/
+    .gallery-wrapper-col-left > .d-flex {display: contents !important;}
+
+    /*!important beats Bootstrap's own .w-50 {width:50% !important}*/
+    .gallery-wrapper-col-left .w-50 {width: 100% !important;}
+
+    /*!important is needed to beat the per-image inline aspect-ratio in the markup*/
+    .gallery-container .gallery-img {aspect-ratio: 1 / 1 !important;}
+
+    /*A lone image in the left column spans both columns and keeps its own shape*/
+    .gallery-wrapper-col-left > div:not([class]) {grid-column: 1 / -1;}
+
+    .gallery-wrapper-col-left > div:not([class]) .gallery-img {aspect-ratio: auto !important;}
 
 
     /* ───────────────────────────────────────────────

@@ -244,3 +244,122 @@ Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
         });
     });
 }());
+
+/* ── Contact Modal ────────────────────────────────────────────────────────
+   Opens the hero's "Hit Me Up" form as an overlay. Closes on the X, the
+   mobile Back link, a click on the backdrop, or Escape.
+   The modal form is a separate instance from the one in the contact section,
+   so it carries its own IDs and its own submit handler; contact-form.js
+   continues to own #contactForm untouched. */
+(function () {
+    var modal = document.getElementById('contactModal');
+    if (!modal) return;
+
+    var openers = document.querySelectorAll('[data-contact-modal-open]');
+    var lastFocused = null;
+    var previousBodyOverflow = '';
+
+    function openModal(trigger) {
+        /* Guard: opening while already open would overwrite previousBodyOverflow
+           with 'hidden', and the page would stay locked after closing */
+        if (modal.classList.contains('is-open')) return;
+
+        lastFocused = trigger || document.activeElement;
+        previousBodyOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        modal.classList.add('is-open');
+
+        var firstField = modal.querySelector('input:not([type="hidden"]):not([tabindex="-1"]), select, textarea');
+        if (firstField) firstField.focus();
+    }
+
+    function closeModal() {
+        modal.classList.remove('is-open');
+        document.body.style.overflow = previousBodyOverflow;
+        if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+    }
+
+    openers.forEach(function (btn) {
+        btn.addEventListener('click', function (event) {
+            event.preventDefault();
+            openModal(btn);
+        });
+    });
+
+    modal.addEventListener('click', function (event) {
+        var closer = event.target.closest('[data-contact-modal-close]');
+        if (!closer) return;
+        event.preventDefault();
+        closeModal();
+    });
+
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+    });
+
+    /* Submit handling — mirrors contact-form.js, scoped to the modal instance */
+    var form = document.getElementById('contactFormModal');
+    if (!form) return;
+
+    var statusEl = document.getElementById('contactFormModalStatus');
+    var submitButton = form.querySelector('button[type="submit"]');
+    var pageUrlField = form.querySelector('input[name="page_url"]');
+
+    if (pageUrlField) pageUrlField.value = window.location.href;
+
+    function setStatus(message, type) {
+        if (!statusEl) return;
+        statusEl.hidden = false;
+        statusEl.textContent = message;
+        statusEl.classList.remove('text-success', 'text-danger', 'text-body');
+        if (type === 'success') statusEl.classList.add('text-success');
+        else if (type === 'error') statusEl.classList.add('text-danger');
+        else statusEl.classList.add('text-body');
+    }
+
+    form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+        }
+        setStatus('Sending your message...', 'pending');
+
+        try {
+            var response = await fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: { Accept: 'application/json' }
+            });
+
+            if (response.ok) {
+                setStatus('Thank you. Your message has been sent successfully!', 'success');
+                form.reset();
+            } else {
+                var message = 'Something went wrong. Please try again in a moment.';
+                try {
+                    var data = await response.json();
+                    if (data && data.errors && data.errors.length > 0 && data.errors[0].message) {
+                        message = data.errors[0].message;
+                    }
+                } catch (_error) {
+                    // Keep the default message when no JSON error payload is present.
+                }
+                setStatus(message, 'error');
+            }
+        } catch (_error) {
+            setStatus('Network issue detected. Please check your connection and try again.', 'error');
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Submit';
+            }
+        }
+    });
+}());

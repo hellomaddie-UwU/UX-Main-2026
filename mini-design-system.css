@@ -168,7 +168,7 @@
 
     .ds-sidebar a {
         text-decoration: none; 
-        color: #3E4784;
+        color: var(--text-body);
     }
 
     .ds-sidebar a:hover {

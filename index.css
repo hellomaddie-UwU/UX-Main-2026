@@ -50,7 +50,7 @@
 .hero-dialog-text h4, 
 .hero-dialog-text h6  {
     font-weight: 400;
-    color:     #3E4784;
+    color:     var(--text-body);
 }
 
 .hero-dialog-text h4 {line-height: 41px;}
@@ -440,6 +440,7 @@
     position:          relative;
     overflow-x:        hidden;
     background-color:  #390646;
+    margin-left:       90px;
     padding:           60px 5% 160px 5%;
 }
 
@@ -596,6 +597,8 @@
         width:        120%;
         margin-left: -7.5%;
     }
+
+    .blog-container {margin-left: 0px;}
 }
 
 /*Tablet*/ /*md*/

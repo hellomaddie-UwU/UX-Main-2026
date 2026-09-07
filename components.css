@@ -2,58 +2,82 @@
 Table of Contents:
 1. Divider
 2. Tags
-3. Simple Table
-4. Notification Message
-5. Modal
-6. Modal Tabs
-7. Infinite Marque
-8. Single Accordion Card
-9. Design System Top Bar Nav
-10. Gallery Placeholder Image
-11. Gallery Lightbox
-12. Breadcrumb
-13. Tooltip
-14. Disabled Nav Item
-15. Custom Cursor
-16. Thumbnail
-17. Projects
-18. Newletter Form
-19. Tools Icon Grid
+3. Pills
+4. Simple Table
+5. Style 01 Table
+6. Notification Message
+7. Modal
+8. Modal Tabs
+9. Infinite Marque
+10. Single Accordion Card
+11. Design System Top Bar Nav
+12. Gallery Placeholder Image
+13. Gallery Lightbox
+14. Breadcrumb
+15. Tooltip
+16. Disabled Nav Item
+17. Custom Cursor
+18. Thumbnail
+19. Projects
+20. Newletter Form
+21. Tools Icon Grid
 */
 
 /* ───────────────────────────────────────────────
 Divider
 ───────────────────────────────────────────────*/
-.divider { /*horizontal lavendar divider*/
-    height:           0.5px; 
-    width:            100%;
-    background-color: var(--divider);
-}
+    /* ───────────────────────────────────────────────
+    Lines
+    ───────────────────────────────────────────────*/
+    .divider { /*horizontal lavendar divider*/
+        height:           0.5px; 
+        width:            100%;
+        background-color: var(--divider);
+    }
 
-.breadcrumb-divider { /*pink diagonal divider*/
-    width:            1px;
-    height:           20px;
-    background-color: var(--razzmatazz-400);
-    rotate:           25deg;
-}
+    .breadcrumb-divider { /*pink diagonal divider*/
+        width:            1px;
+        height:           20px;
+        background-color: var(--razzmatazz-400);
+        rotate:           25deg;
+    }
 
-.vertical-divider { /*vertical white divider*/
-    height:           100%;
-    width:            0.5px;
-    background-color: var(--divider-on-dark);
-}
+    .vertical-divider { /*vertical white divider*/
+        height:           100%;
+        width:            0.5px;
+        background-color: var(--divider-on-dark);
+    }
 
-.vertical-divider-blue { /*vertical blue divider*/
-    width:            1px;
-    height:           16px;
-    background-color: var(--gray-blue-400);
-}
+    .vertical-divider-blue { /*vertical blue divider*/
+        width:            1px;
+        height:           16px;
+        background-color: var(--gray-blue-400);
+    }
 
-/*Dots*/
-.orange-dot {
-    height: 8px;
-    width:  8px;
-}
+    .vertical-divider-pink { /*vertical pink divider*/
+        width:            1px;
+        height:           28px;
+        background-color: var(--divider-on-dark);
+    }
+
+    /* ───────────────────────────────────────────────
+    Dots
+    ───────────────────────────────────────────────*/
+    .orange-dot {
+        height: 8px;
+        width:  8px;
+    }
+
+    /* ───────────────────────────────────────────────
+    Images
+    ───────────────────────────────────────────────*/
+    .flower-divider {
+        width:               100%;
+        height:              52px;
+        background-image:    url(imgs/flower-divider.svg);
+        background-repeat:   repeat-x;
+        background-position: left center;
+    }
 
 /* ───────────────────────────────────────────────
 Tags/Labels
@@ -68,86 +92,102 @@ Tags/Labels
 /* ───────────────────────────────────────────────
 Pills
 ───────────────────────────────────────────────*/
-.pill {
-    border-radius: 99px;
-    display:       inline-block;
-    padding:       0px 12px;
-    width:         fit-content;
+    /* ───────────────────────────────────────────────
+    Main Class
+    ───────────────────────────────────────────────*/
+    .pill {
+        border-radius: 99px;
+        display:       inline-block;
+        padding:       0px 12px;
+        width:         fit-content;
 
-    font-size:      12px;
-    font-style:     normal;
-    font-weight:    500;
-    letter-spacing: 0.26px;
-    text-align:     center;
-}
+        font-size:      var(--text-xs);
+        font-style:     normal;
+        font-weight:    var(--font-weight-medium);
+        letter-spacing: 0.26px;
+        text-align:     center;
+    }
 
-/*Pill Sizes: stack onto .pill (e.g. class="pill pill-lg pill-skill") to
-override its default padding/font-size — leave off for the default size*/
-.pill-lg {
-    padding:     4px 20px;
-    font-size:   16px;
-    line-height: 20px;
-}
+    /* ───────────────────────────────────────────────
+    Other Sizes
+    ───────────────────────────────────────────────*/
+    .pill-lg {
+        padding:     4px 20px;
+        font-size:   var(--text-base);
+        line-height: 20px;
+    }
 
-.pill-internal {
-    border:           1px solid var(--clairvoyant-200);
-    background-color: var(--clairvoyant-50);
-    color:            var(--clairvoyant-600);
-}
+    /* ───────────────────────────────────────────────
+    Case Study & Project Categories
+    ───────────────────────────────────────────────*/
+    .pill-deliverable {
+        border:           1px solid var(--clairvoyant-200);
+        background-color: var(--clairvoyant-50);
+        color:            var(--link);
+    }
 
-.pill-tech {
-    border:           1px solid #B2DDFF;
-    background-color: #ECFDFF;
-    color:            #1570EF;
-}
+    .pill-ai-tech, 
+    .pill-medical {
+        border:           1px solid #B2DDFF;
+        background-color: #ECFDFF;
+        color:            #1570EF;
+    }
 
-.pill-health {
-    border:           1px solid #99F6E0;
-    background-color: #F0FDF9;
-    color:            #0E9384;
-}
+    .pill-finance {
+        border:           1px solid #D0F8AB;
+        background-color: #F3FEE7;
+        color:            #4CA30D;
+    }
 
-.pill-finance {
-    border:           1px solid #D0F8AB;
-    background-color: #F3FEE7;
-    color:            #4CA30D;
-}
+    .pill-health {
+        border:           1px solid #99F6E0;
+        background-color: #F0FDF9;
+        color:            #0E9384;
+    }
 
-.pill-e-commerce {
-    border:           1px solid #C7D7FE;
-    background-color: #EEF4FF;
-    color:            #6172F3;
-}
+    .pill-education, 
+    .pill-marketing {
+        border:           1px solid #FFD5C7;
+        background-color: #FFF4F1;
+        color:            #F8693B;
+    }
 
-.pill-education {
-    border:           1px solid #C7D7FE;
-    background-color: #EEF4FF;
-    color:            #6172F3;
-}
+    .pill-e-commerce {
+        border:           1px solid #C7D7FE;
+        background-color: #EEF4FF;
+        color:            #6172F3;
+    }
 
-.pill-event {
-    border:           1px solid #FEEE95;
-    background-color: #FEFBE8;
-    color:            #CA8504;
-}
+    .pill-events, 
+    .pill-government {
+        border:           1px solid #FEEE95;
+        background-color: #FEFBE8;
+        color:            #CA8504;
+    }
 
-.pill-market {
-    border:           1px solid #FECDD6;
-    background-color: #FFF1F3;
-    color:            #F63D68;
-}
+    .pill-fashion, 
+    .pill-robotics {
+        border:           1px solid #FECDD6;
+        background-color: #FFF1F3;
+        color:            #F63D68;
+    }
 
-.pill-experience {
-    border:           1px solid #FFB7A0;
-    background-color: #FFF4F1;
-    color:            #F8693B;
-}
 
-.pill-skill {
-    border:           1px solid #FFCCD8;
-    background-color: #FFF1F4;
-    color:            #D91656;
-}
+    /* ───────────────────────────────────────────────
+    About Me
+    ───────────────────────────────────────────────*/
+    .pill-experience {
+        border:           1px solid #FFB7A0;
+        background-color: #FFF4F1;
+        color:            #F8693B;
+    }
+
+    .pill-skill {
+        border:           1px solid #FFCCD8;
+        background-color: #FFF1F4;
+        color:            #D91656;
+    }
+
 
 /* _______ Simple Table _______ */
 .simple-table {
@@ -158,6 +198,11 @@ override its default padding/font-size — leave off for the default size*/
     border-radius:         var(--space-2);
     overflow:              hidden;
 }
+
+/*Set explicitly rather than inherited from the global p rule, so the table keeps
+its own colour if that rule ever moves. Covers labels, values and list items --
+the label is separated by weight, not colour*/
+.simple-table p {color: var(--text-body);}
 
 /*Row wrapper drops out of the box model so its two children (label, value)
 become the grid's row cells directly; it becomes a real stacked column on
@@ -212,11 +257,125 @@ this stretches it back out without affecting flat (non-.row) content*/
 
 .simple-table-value {white-space: nowrap;}
 
+/*Two-column bulleted list for the Team/Roles/Skills cells. column-count fills
+column-major and balances by height, which is how the Figma tables distribute*/
+.simple-table-list-2col {
+    width:        100%;
+    column-count: 2;
+    column-gap:   var(--space-4);
+}
+
+.simple-table-list-item {
+    display:       flex;
+    align-items:   flex-start;
+    gap:           var(--space-2);
+    break-inside:  avoid;
+    margin-bottom: 10px;
+}
+
+.simple-table-list-2col .simple-table-list-item:last-child {margin-bottom: 0px;}
+
+/*column-count balances by height, so a wrapped item can pull the split to the
+wrong place. Add this to the item that should END the first column*/
+.simple-table-list-break {break-after: column;}
+
+/*Holds the dot on the centre of the FIRST line so it stays put when an item
+wraps -- (28px line-height - 8px dot) / 2*/
+.simple-table-list-item .orange-dot {
+    flex-shrink: 0;
+    margin-top:  10px;
+}
+
 .table-content-mt {margin-top: 0px;}
 
 .simple-table-row:last-child .simple-table-label,
 .simple-table-row:last-child .simple-table-value-wrap-horizontal,
 .simple-table-row:last-child .simple-table-value-wrap-vertical {border-bottom: none;}
+/* ────────────────────── */
+
+
+/* _______ Featured Image Wrap _______ */
+/*Article hero image frame, shared by the case study and blog templates. The
+<picture> inside can swap to a different crop on mobile*/
+.featured-image-wrap {
+    position:      relative;
+    width:         100%;
+    height:        560px;
+    border-radius: 16px;
+    overflow:      hidden;
+    margin-top:    8px;
+    margin-bottom: var(--space-5);
+}
+
+.featured-image-wrap::after {
+    content:        "";
+    position:       absolute;
+    inset:          0;
+    pointer-events: none;
+    box-shadow:     0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
+}
+
+.featured-image {
+    width:      100%;
+    height:     100%;
+    object-fit: cover;
+    display:    block;
+}
+/* ────────────────────── */
+
+
+/* _______ Style 01 Table _______ */
+/*Two-column table. Rows use display:contents so their cells become direct grid
+items, the same pattern as .simple-table above. Cells are styled by position, so
+the markup needs no per-cell classes -- just .style-01-table + .style-01-table-row*/
+.style-01-table {
+    display:               grid;
+    grid-template-columns: max-content 1fr;
+    column-gap:            12px;
+    width:                 100%;
+    background-color:      white;
+}
+
+.style-01-table-row {display: contents;}
+
+/*The rule lives on the row, not the cells, so it stays unbroken across the
+12px gutter -- it's a grid item spanning both columns*/
+.style-01-table-row::after {
+    content:          "";
+    grid-column:      1 / -1;
+    height:           1px;
+    margin-bottom:    4px;
+    background-color: var(--divider);
+}
+
+/*Header row carries no rule -- height:0 rather than a transparent 1px, so the
+first data row sits exactly 4px below the header*/
+.style-01-table-row:first-child::after {height: 0;}
+
+/*No trailing gap under the final rule*/
+.style-01-table-row:last-child::after {margin-bottom: 0px;}
+
+.style-01-table-row > * {
+    display:     flex;
+    align-items: center;
+    min-height:  48px;
+    padding:     10px 12px;
+}
+
+/*Header row -- first row of the table*/
+.style-01-table-row:first-child > * {
+    background-color: var(--clairvoyant-50);
+    border-radius:    var(--space-2);
+    color:            var(--text-header);
+    font-weight:      var(--font-weight-semibold);
+}
+
+/*Label column -- first cell of every data row. The second column needs no rule
+at all; it already resolves to --text-body at weight 400*/
+.style-01-table-row:not(:first-child) > *:first-child {
+    color:       var(--text-header);
+    font-weight: var(--font-weight-medium);
+}
 /* ────────────────────── */
 
 
@@ -280,7 +439,111 @@ this stretches it back out without affecting flat (non-.row) content*/
     justify-content: end;
     gap:             var(--space-3);
 }
+/*Contact Modal START ===========================*/
+/*Overlay for the hero's "Hit Me Up" form. The dialog itself reuses
+.modal-primary, so only the overlay, column split and close button are new*/
+.contact-modal {
+    display:  none;
+    position: fixed;
+    inset:    0;
+    z-index:  99;
+    padding:  24px;
+}
+
+.contact-modal.is-open {
+    display:     grid;
+    place-items: center;
+}
+
+/*Backdrop is a sibling behind the dialog, not a wrapper, so its opacity can
+never leak into the opaque modal content -- same approach as .lightbox-backdrop*/
+.contact-modal-backdrop {
+    position:         absolute;
+    inset:            0;
+    background-color: var(--surface-dark);
+    mix-blend-mode:   multiply;
+    opacity:          0.9;
+}
+
+.contact-modal-dialog {
+    position: relative;
+    z-index:  1;
+
+    /*The 176px reserve keeps room for .contact-modal-close, which hangs outside
+    the dialog's right edge. Without it the button lands off-screen on tablet*/
+    width:    min(808px, 100% - 176px);
+}
+
+/*The body scrolls, not the dialog -- .contact-modal-close hangs 68px outside
+the dialog's box, so any overflow on the dialog would clip it and add a
+horizontal scrollbar*/
+.contact-modal .modal-primary-body {
+    max-height: calc(100vh - 96px);
+    max-height: calc(100dvh - 96px);
+    overflow-y: auto;
+}
+
+/*Sits just outside the dialog's top-right corner*/
+.contact-modal-close {
+    position:         absolute;
+    top:              0;
+    right:            -68px;
+    width:            44px;
+    height:           44px;
+    display:          flex;
+    align-items:      center;
+    justify-content:  center;
+    padding:          0;
+    border:           none;
+    border-radius:    50%;
+    cursor:           pointer;
+    background-color: var(--link);
+}
+
+.contact-modal-close:hover {background-color: var(--tangerine-400);}
+
+/*Two columns either side of a vertical rule. 3fr/2fr splits the space left
+over after the rule and gaps 60/40 -- the form needs the room, the contact
+details do not*/
+.contact-modal-grid {
+    display:               grid;
+    grid-template-columns: 3fr 1px 2fr;
+    column-gap:            24px;
+    align-items:           start;
+}
+
+.contact-modal-divider {
+    width:            1px;
+    height:           100%;
+    background-color: #FBCDD9;
+}
+
+/*Back link replaces the close button on mobile -- hidden until then*/
+.contact-modal-back {
+    display:         none;
+    align-items:     center;
+    gap:             var(--space-1);
+    color:           var(--link);
+    font-weight:     var(--font-weight-semibold);
+    text-decoration: none;
+}
+
+.contact-modal-back img {
+    width:  8px;
+    height: auto;
+}
+/*Contact Modal END =============================*/
+
 /*Modal END =====================================*/
+
+/*Tools Modal START*/
+.tools-dialog {
+    flex:       0 1 380px;
+    max-width:  413px;
+    min-width:  300px;
+    margin-top: 200px;
+}
+/*Tools Modal END*/
 
 /*Modal Tabs START*/
 .modal-tabs-nav {
@@ -490,6 +753,26 @@ change with state.*/
     aspect-ratio: 1212 / 560;
 }
 
+/*Home-page card frame. Mirrors .case-study-featured-wrap (case-study.css) at the
+sizes this slider actually renders, minus its margin-bottom -- kept standalone so
+changes to the article wrap can't reach the home cards*/
+.home-featured-wrap-mobile {
+    position:      relative;
+    width:         100%;
+    height:        auto;
+    border-radius: 10px;
+    overflow:      hidden;
+    margin-top:    8px;
+}
+
+.home-featured-wrap-mobile::after {
+    content:        "";
+    position:       absolute;
+    inset:          0;
+    pointer-events: none;
+    box-shadow:     0 0 10px 0 rgba(113, 30, 138, 0.30) inset;
+}
+
 .cs2-slider__excerpt {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -598,6 +881,7 @@ never gets applied to (and leak into) the opaque modal content sitting on top of
 .lightbox-dialog {
     width: min(1150px, 100%);
     max-height: calc(100vh - 48px);
+    max-height: calc(100dvh - 48px);
     position: relative;
     z-index: 1;
 }
@@ -612,7 +896,9 @@ resolves against a stable number instead of a content-dependent one*/
     border-radius: 12px;
     overflow: hidden;
     height: 90vh;
+    height: 90dvh;
     max-height: calc(100vh - 48px);
+    max-height: calc(100dvh - 48px);
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -705,7 +991,7 @@ clears the close button that sits inside the card's top-right corner*/
     font-weight: 600;
     line-height: 23px;
     text-transform: uppercase;
-    color: var(--clairvoyant-600);
+    color: var(--link);
 }
 
 .lightbox-date {
@@ -795,12 +1081,12 @@ clears the close button that sits inside the card's top-right corner*/
 }
 
 
-.site-breadcrumb a:hover, .bc-home:hover {color: var(--clairvoyant-600);}
+.site-breadcrumb a:hover, .bc-home:hover {color: var(--link);}
 
 .site-breadcrumb a:hover svg,
 .bc-home:hover svg,
 .bc-home svg:hover {
-    fill: var(--clairvoyant-600);
+    fill: var(--link);
 }
 
 .bc-home svg {fill: #717BBC;}
@@ -1630,15 +1916,32 @@ Responsive Settings section at the bottom of this file*/
 
 /*Tablet LG START*/ /*lg*/
 @media screen and (max-width: 992px) {
+    .featured-image-wrap {height: auto;}
+
+    /*Contact modal collapses to one column, the rule turning horizontal*/
+    .contact-modal-grid {
+        grid-template-columns: 1fr;
+        row-gap:               24px;
+    }
+
+    .contact-modal-divider {
+        width:  100%;
+        height: 1px;
+    }
+
     /* Stopgap until the tablet mockup for the Projects section is ready */
     .project-thumbnail {
         flex: 0 0 auto;
         height: 400px;
     }
+
+    .tools-dialog {margin-top: 0;}
 }
 
 /*Tablet*/ /*md*/
 @media screen and (max-width: 768px) {
+    .featured-image-wrap {border-radius: 10px;}
+
     /*Collapsed breadcrumb: Home, first divider, and the section link give way
     to the menu dropdown; the menu icon centers next to a wrapped title, while
     the divider (given its own align-self) still stretches to match its height
@@ -1677,6 +1980,18 @@ Responsive Settings section at the bottom of this file*/
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    .featured-image-wrap {height: auto;}
+
+    /*Close button gives way to the Back link inside the body*/
+    .contact-modal {padding: 12px;}
+
+    /*No outside close button here, so the dialog can use the full width*/
+    .contact-modal-dialog {width: 100%;}
+
+    .contact-modal-close {display: none;}
+
+    .contact-modal-back {display: inline-flex;}
+
     /*Simple Table: single stacked column instead of the desktop two-column
     grid; each row becomes a real flex column with the label above its value*/
     .simple-table {
@@ -1705,6 +2020,45 @@ Responsive Settings section at the bottom of this file*/
     }
 
     .table-content-mt {margin-top: 4px;}
+
+    .simple-table-list-2col {column-count: 1;}
+
+    /*Style 01 Table: same single stacked column as .simple-table. Only the
+    Attribute header is kept -- the Detail header is dropped*/
+    .style-01-table {
+        display:        flex;
+        flex-direction: column;
+    }
+
+    .style-01-table-row {
+        display:        flex;
+        flex-direction: column;
+        align-items:    flex-start;
+        gap:            4px;
+        width:          100%;
+    }
+
+    /*Separates a row from the rule above it -- the header row has no rule above
+    it, so it is excluded*/
+    .style-01-table-row:not(:first-child) {padding-top: 12px;}
+
+    /*Second header cell is dropped -- only the label header stays*/
+    .style-01-table-row:first-child > *:last-child {display: none;}
+
+    .style-01-table-row:first-child > *  {width: 100%;}
+
+    .style-01-table-row:not(:first-child) > * {
+        min-height: auto;
+        padding:    0;
+    }
+
+    .style-01-table-row::after {
+        width:      100%;
+        margin-top: 12px;
+    }
+
+    /*The header's rule is height:0, so its top margin is space around nothing*/
+    .style-01-table-row:first-child::after {margin-top: 0px;}
 
     .modal-primary-footer-cta {
         flex-direction:  column;
@@ -1735,8 +2089,10 @@ Responsive Settings section at the bottom of this file*/
     }
 
 
-    .featured-works-desktop {display: none;}
+    /*Scoped to the section so these beat .v-stack {display:flex} in page.css --
+    both are (0,1,0) on their own, so whichever file loads last would otherwise win*/
+    .case-study-home-container .featured-works-desktop {display: none;}
 
-    .featured-works-mobile {display: block;}
+    .case-study-home-container .featured-works-mobile {display: block;}
 }
 /*========================================================================*/
