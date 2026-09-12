@@ -1,13 +1,13 @@
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
         var overlay = document.getElementById('projectModal');
-        var triggers = Array.prototype.slice.call(document.querySelectorAll('.project-thumbnail-cta'));
+        var triggers = Array.prototype.slice.call(document.querySelectorAll('.project-thumbnail-cta, .past-project-cta'));
         if (!overlay || !triggers.length) return;
 
         var projects = triggers.map(function (button) {
-            var card = button.closest('.project-thumbnail');
-            var tagsEl = card ? card.querySelector('.project-thumbnail-tags') : null;
-            var titleEl = card ? card.querySelector('.project-thumbnail-title') : null;
+            var card = button.closest('.project-thumbnail, .past-project-card');
+            var tagsEl = card ? card.querySelector('.project-thumbnail-tags, .past-project-pills') : null;
+            var titleEl = card ? card.querySelector('.project-thumbnail-title, .past-project-title') : null;
             var logoEl = card ? card.querySelector('.project-thumbnail-logo') : null;
             var copyTemplate = card ? card.querySelector('.project-modal-copy') : null;
             var copyContent = copyTemplate ? copyTemplate.content : null;

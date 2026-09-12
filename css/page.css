@@ -15,6 +15,7 @@ Table of Contents
     3.D. Galley Section
     3.E. Newsletter CTA Banner
     3.F. Employment | Info Section
+    3.G. Other Client Work Section
 4. Custom Component Container
     4.A. Selection Container
 5. Responsive Settings
@@ -202,6 +203,40 @@ Section Settings
     .employment-info-section {padding: 160px 5% 160px 5%;}
 
 
+    /* ───────────────────────────────────────────────
+    Other Client Work Section
+    ───────────────────────────────────────────────*/
+    /*Top padding matches the mockup's 80px. The bottom is dropped because the
+    Opening Statement that now closes this section carries its own trailing
+    space*/
+    .other-client-work-container {
+        padding-top: 120px;
+        border-top:  1px solid var(--razzmatazz-400);
+    }
+
+    .other-client-work-main {
+        position:    relative;
+        flex:        1 1 0;
+        min-width:   0;
+        padding-top: 79px;
+    }
+
+    /*The heading is pulled out of flow so the card always starts at the same
+    offset no matter how tall "Hello Radio" renders -- the script letters are
+    meant to cross the card's top-left corner, the way they do in the mockup*/
+    .other-client-work-heading {
+        position:      absolute;
+        top:          -17px;
+        left:          0;
+        margin-bottom: 0;
+    }
+
+    .extended-demo {
+        flex:      0 0 376px;
+        max-width: 376px;
+    }
+
+
 /* ───────────────────────────────────────────────
 Custom Component Container
 ───────────────────────────────────────────────*/
@@ -309,6 +344,31 @@ Responsive Settings
     .projects-section {margin-left: 0px;}
 
     .projects-row {flex-direction: column;}
+
+
+    /* ───────────────────────────────────────────────
+    Other Client Work Section
+    ───────────────────────────────────────────────*/
+    /*Card and demo stack from here down -- the same breakpoint the rest of the
+    page's two-up rows collapse at*/
+    .other-client-work-row {
+        flex-direction: column;
+        gap:            52px;
+    }
+
+    .other-client-work-main {
+        flex:        0 0 auto;
+        width:       100%;
+        padding-top: 68px;
+    }
+
+    .other-client-work-heading {top: -19px;}
+
+    .extended-demo {
+        flex:      0 0 auto;
+        width:     100%;
+        max-width: none;
+    }
 
 
     /* ───────────────────────────────────────────────
