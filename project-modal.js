@@ -96,6 +96,13 @@
             document.body.style.overflow = 'hidden';
             overlay.classList.add('is-open');
             overlay.setAttribute('aria-hidden', 'false');
+
+            /*Tags only get a real width once the modal is on screen, so the
+            two-row fit has to be measured here rather than in renderProject*/
+            if (window.catalogueWrapper) {
+                window.catalogueWrapper.fit(tagsEl);
+            }
+
             closeBtn.focus();
         }
 

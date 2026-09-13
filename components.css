@@ -89,6 +89,26 @@ Tags/Labels
     color:        #8722A9;
 }
 
+/*Written by catalogue-wrapper.js when pills overflow the row budget -- the
+number is how many pills were dropped*/
+.tag-count {
+    display:         inline-flex;
+    align-items:     center;
+    justify-content: center;
+    flex-shrink:     0;
+    min-width:       19px;
+    padding:         0px 5px;
+    border:          1px solid #D5D7DA;
+    border-radius:   3px;
+    background:      #F5F5F5;
+
+    color:       #414651;
+    font-size:   13px;
+    font-weight: var(--font-weight-medium);
+    line-height: 20px;
+    text-align:  center;
+}
+
 /* ───────────────────────────────────────────────
 Pills
 ───────────────────────────────────────────────*/
@@ -187,6 +207,21 @@ Pills
         background-color: #FFF1F4;
         color:            #D91656;
     }
+
+
+    /* ───────────────────────────────────────────────
+    Catalogue Wrapper
+    ───────────────────────────────────────────────*/
+    /*Holds [industry pills] | divider | [output-type pills]. Wraps freely --
+    catalogue-wrapper.js is what caps it at two rows and adds the count chip*/
+    .catalogue-wrapper {
+        flex-wrap:   wrap;
+        align-items: center;
+    }
+
+    /*The shared pink divider is 28px, sized for the case study pages. Here it
+    sits in a row of 20px pills, so it matches their height instead*/
+    .catalogue-wrapper .vertical-divider-pink {height: 20px;}
 
 
     /* ───────────────────────────────────────────────
