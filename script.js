@@ -197,26 +197,103 @@ Current Passion Project Thumbnail: [cursor image] Desktop | Tablet View
 
 
 // Tool icon tooltips: hover/focus a .tools-icon to see its tool name
+// Exposed as window.toolIconTooltips so markup rendered later -- the project
+// modal builds its tool icons on open -- can attach tooltips to its own icons.
 (function () {
-    var toolIcons = document.querySelectorAll('.tools-icon');
-    if (!toolIcons.length) return;
+    function init(root) {
+        var scope = root || document;
+        var toolIcons = scope.querySelectorAll('.tools-icon');
+        if (!toolIcons.length) return;
 
-    toolIcons.forEach(function (icon) {
-        var img = icon.querySelector('img');
-        if (!img || !img.alt) return;
+        Array.prototype.forEach.call(toolIcons, function (icon) {
+            var img = icon.querySelector('img');
+            if (!img || !img.alt) return;
 
-        icon.classList.add('tooltip-wrap');
-        if (!icon.hasAttribute('tabindex')) {
-            icon.setAttribute('tabindex', '0');
+            /*Already wired -- a re-render would otherwise stack duplicates*/
+            if (icon.querySelector('.tooltip')) return;
+
+            icon.classList.add('tooltip-wrap');
+            if (!icon.hasAttribute('tabindex')) {
+                icon.setAttribute('tabindex', '0');
+            }
+
+            var tooltip = document.createElement('span');
+            tooltip.className = 'tooltip tooltip-top';
+            tooltip.setAttribute('role', 'tooltip');
+            tooltip.textContent = img.alt;
+
+            icon.appendChild(tooltip);
+            escapeClipping(icon, tooltip);
+        });
+    }
+
+    /*A tooltip inside a scrolling or hidden ancestor gets clipped by it. That
+    is an overflow clip, not a paint order problem, so no z-index escapes it --
+    the tooltip has to stop being positioned by that ancestor. Switching it to
+    position:fixed while it is shown does exactly that.*/
+    function isClipped(el) {
+        var node = el.parentElement;
+
+        while (node && node !== document.body) {
+            if (getComputedStyle(node).overflow !== 'visible') return true;
+            node = node.parentElement;
         }
 
-        var tooltip = document.createElement('span');
-        tooltip.className = 'tooltip tooltip-top';
-        tooltip.setAttribute('role', 'tooltip');
-        tooltip.textContent = img.alt;
+        return false;
+    }
 
-        icon.appendChild(tooltip);
-    });
+    /*transform, filter and perspective all make an ancestor the containing
+    block for position:fixed descendants -- the tooltip would then be measured
+    against that ancestor instead of the viewport, and clipped by it anyway.
+    The swipe-up sheet is transformed, so this is a live case, not a hypothetical*/
+    function hasFixedContainingBlock(el) {
+        var node = el.parentElement;
+
+        while (node && node !== document.body) {
+            var style = getComputedStyle(node);
+
+            if (style.transform !== 'none' ||
+                style.filter !== 'none' ||
+                style.perspective !== 'none') {
+                return true;
+            }
+
+            node = node.parentElement;
+        }
+
+        return false;
+    }
+
+    function escapeClipping(icon, tooltip) {
+        function show() {
+            if (!isClipped(icon) || hasFixedContainingBlock(icon)) return;
+
+            var rect = icon.getBoundingClientRect();
+
+            /*Centred on the trigger and sitting 16px above it, matching what
+            .tooltip-top does when it can position normally*/
+            tooltip.style.position = 'fixed';
+            tooltip.style.top = 'auto';
+            tooltip.style.left = (rect.left + rect.width / 2) + 'px';
+            tooltip.style.bottom = (window.innerHeight - rect.top + 16) + 'px';
+        }
+
+        function hide() {
+            tooltip.style.position = '';
+            tooltip.style.top = '';
+            tooltip.style.left = '';
+            tooltip.style.bottom = '';
+        }
+
+        icon.addEventListener('mouseenter', show);
+        icon.addEventListener('focus', show);
+        icon.addEventListener('mouseleave', hide);
+        icon.addEventListener('blur', hide);
+    }
+
+    window.toolIconTooltips = {init: init};
+
+    init();
 }());
 
 // Modal dialog tabs: switch .tab-panel content via a .modal-tabs[role=tablist]

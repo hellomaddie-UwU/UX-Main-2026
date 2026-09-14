@@ -21,6 +21,7 @@ Table of Contents:
 19. Projects
 20. Newletter Form
 21. Tools Icon Grid
+22. Info Message
 */
 
 /* ───────────────────────────────────────────────
@@ -87,6 +88,26 @@ Tags/Labels
     font-size:      14px;
     text-transform: uppercase;
     color:        #8722A9;
+}
+
+/*Written by catalogue-wrapper.js when pills overflow the row budget -- the
+number is how many pills were dropped*/
+.tag-count {
+    display:         inline-flex;
+    align-items:     center;
+    justify-content: center;
+    flex-shrink:     0;
+    min-width:       19px;
+    padding:         0px 5px;
+    border:          1px solid #D5D7DA;
+    border-radius:   3px;
+    background:      #F5F5F5;
+
+    color:       #414651;
+    font-size:   13px;
+    font-weight: var(--font-weight-medium);
+    line-height: 20px;
+    text-align:  center;
 }
 
 /* ───────────────────────────────────────────────
@@ -186,6 +207,33 @@ Pills
         border:           1px solid #FFCCD8;
         background-color: #FFF1F4;
         color:            #D91656;
+    }
+
+
+    /* ───────────────────────────────────────────────
+    Catalogue Wrapper
+    ───────────────────────────────────────────────*/
+    /*Holds [industry pills] | divider | [output-type pills]. Wraps freely --
+    catalogue-wrapper.js is what caps it at two rows and adds the count chip*/
+    .catalogue-wrapper {
+        flex-wrap:   wrap;
+        align-items: center;
+    }
+
+    /*The shared pink divider is 28px, sized for the case study pages. Here it
+    sits in a row of 20px pills, so it matches their height instead*/
+    .catalogue-wrapper .vertical-divider-pink {height: 20px;}
+
+
+    /* ───────────────────────────────────────────────
+    Status
+    ───────────────────────────────────────────────*/
+    /*Its own group because a status is not a catalogue category, but it is
+    still a .pill -- this only swaps the colors*/
+    .pill-coming-soon {
+        border:           1px solid #E9EAEB;
+        background-color: #FAFAFA;
+        color:            #414651;
     }
 
 
@@ -1269,6 +1317,36 @@ Responsive Settings section at the bottom of this file*/
 }
 /*Thumbnail END*/
 
+/*Projects START*/
+/*Past project card. The frame, border and corner handles come from the shared
+.selection-container / .selector-box-* pattern in page.css -- only the card's
+own spacing and content live here*/
+.past-project-content {
+    padding:          var(--space-5);
+    background-color: #FFF;
+}
+
+.past-project-thumbnail {
+    display:       block;
+    width:         100%;
+    height:        313px;
+    object-fit:    cover;
+    border-radius: var(--space-2);
+}
+
+.past-project-info {align-items: flex-start;}
+
+.past-project-pills {flex-wrap: wrap;}
+
+.past-project-cta {margin-top: var(--space-1);}
+
+
+/*Extended scope demo: the "coming soon" companion beside the card. Its
+thumbnail reuses .current-passion-prj-thumbnail (17. Custom Cursor / 18.
+Thumbnail) so the cursor-follow card keeps working*/
+.extended-demo-text {align-items: flex-start;}
+/*Projects END*/
+
 /*Newletter Form START*/
 /* Newsletter (Kit / ConvertKit) embed styles
    Moved out of the inline <style> block Kit injects into every embedded
@@ -1902,6 +1980,42 @@ Responsive Settings section at the bottom of this file*/
 }
 /*Tools Icon Grid END*/
 
+/*Info Message START*/
+/*Slate callout used inside the project modal's right column to add an aside
+that isn't part of the main narrative*/
+.info-message {
+    display:          flex;
+    align-items:      flex-start;
+    gap:              var(--space-3);
+    padding:          var(--space-3) var(--space-8) var(--space-3) var(--space-3);
+    border-radius:    var(--space-2);
+    background-color: #F5F7FA;
+}
+
+.info-message-icon {
+    display:     block;
+    flex-shrink: 0;
+    width:       26px;
+    height:      26px;
+}
+
+.info-message-body {
+    display:        flex;
+    flex-direction: column;
+    flex:           1 1 0;
+    min-width:      0;
+}
+
+.info-message-body p {
+    color:         #606266;
+    font-size:     var(--text-sm);
+    line-height:   23px;
+    margin-bottom: 0;
+}
+
+.info-message-title {font-weight: var(--font-weight-semibold);}
+/*Info Message END*/
+
 /*========================================================================*/
 
 /*Responsive Settings*/
@@ -1980,6 +2094,15 @@ Responsive Settings section at the bottom of this file*/
 
 /*Mobile*/ /*sm*/
 @media screen and (max-width: 567px) {
+    /*Projects START*/
+    .past-project-info {gap: var(--space-2);}
+
+    .past-project-cta {
+        width:      100%;
+        text-align: center;
+    }
+    /*Projects END*/
+
     .featured-image-wrap {height: auto;}
 
     /*Close button gives way to the Back link inside the body*/

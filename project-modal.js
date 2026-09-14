@@ -1,13 +1,13 @@
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
         var overlay = document.getElementById('projectModal');
-        var triggers = Array.prototype.slice.call(document.querySelectorAll('.project-thumbnail-cta'));
+        var triggers = Array.prototype.slice.call(document.querySelectorAll('.project-thumbnail-cta, .past-project-cta'));
         if (!overlay || !triggers.length) return;
 
         var projects = triggers.map(function (button) {
-            var card = button.closest('.project-thumbnail');
-            var tagsEl = card ? card.querySelector('.project-thumbnail-tags') : null;
-            var titleEl = card ? card.querySelector('.project-thumbnail-title') : null;
+            var card = button.closest('.project-thumbnail, .past-project-card');
+            var tagsEl = card ? card.querySelector('.project-thumbnail-tags, .past-project-pills') : null;
+            var titleEl = card ? card.querySelector('.project-thumbnail-title, .past-project-title') : null;
             var logoEl = card ? card.querySelector('.project-thumbnail-logo') : null;
             var copyTemplate = card ? card.querySelector('.project-modal-copy') : null;
             var copyContent = copyTemplate ? copyTemplate.content : null;
@@ -17,16 +17,6 @@
             var behindEl = copyContent ? copyContent.querySelector('.project-modal-copy-behind') : null;
             var resultsEl = copyContent ? copyContent.querySelector('.project-modal-copy-results') : null;
             var contentEl = copyContent ? copyContent.querySelector('.project-modal-content') : null;
-            var contentItems = contentEl ? Array.prototype.slice.call(contentEl.children).map(function (el) {
-                if (el.tagName === 'IMG') {
-                    return { type: 'image', src: el.getAttribute('src') || '', alt: el.getAttribute('alt') || '' };
-                }
-                var img = el.querySelector('img');
-                if (img) {
-                    return { type: 'image', src: img.getAttribute('src') || '', alt: img.getAttribute('alt') || '' };
-                }
-                return { type: 'label', text: el.textContent.trim() };
-            }) : [];
 
             return {
                 tagsHTML: tagsEl ? tagsEl.innerHTML : '',
@@ -40,7 +30,9 @@
                 context: contextEl ? contextEl.innerHTML.trim() : '',
                 behind: behindEl ? behindEl.innerHTML.trim() : '',
                 results: resultsEl ? resultsEl.innerHTML.trim() : '',
-                content: contentItems
+                /*Copied verbatim so the right column can be authored as ordinary
+                markup -- headings, figures, info messages, placeholders*/
+                content: contentEl ? contentEl.innerHTML.trim() : ''
             };
         });
 
@@ -73,16 +65,19 @@
             behindEl.innerHTML = project.behind;
             resultsEl.innerHTML = project.results;
 
+            /*.tools-icon carries the dashed box and, once script.js has seen it,
+            the name-on-hover tooltip*/
             toolsEl.innerHTML = project.tools.map(function (tool) {
-                return '<li><img src="' + tool.src + '" alt="' + tool.alt + '"></li>';
+                return '<li class="tools-icon"><img src="' + tool.src + '" alt="' + tool.alt + '"></li>';
             }).join('');
 
-            contentEl.innerHTML = project.content.map(function (item) {
-                if (item.type === 'label') {
-                    return '<p class="project-modal-image-label">' + item.text + '</p>';
-                }
-                return '<img class="project-modal-image" src="' + item.src + '" alt="' + item.alt + '">';
-            }).join('');
+            contentEl.innerHTML = project.content;
+
+            /*Tooltips are built at DOMContentLoaded, long before these icons
+            exist, so they have to be attached again after every render*/
+            if (window.toolIconTooltips) {
+                window.toolIconTooltips.init(toolsEl);
+            }
 
             scrollEl.scrollTop = 0;
             contentEl.scrollTop = 0;
@@ -96,6 +91,13 @@
             document.body.style.overflow = 'hidden';
             overlay.classList.add('is-open');
             overlay.setAttribute('aria-hidden', 'false');
+
+            /*Tags only get a real width once the modal is on screen, so the
+            two-row fit has to be measured here rather than in renderProject*/
+            if (window.catalogueWrapper) {
+                window.catalogueWrapper.fit(tagsEl);
+            }
+
             closeBtn.focus();
         }
 

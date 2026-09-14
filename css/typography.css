@@ -291,4 +291,9 @@ Responsive Settings
     .display-section-text {transform: none;}
 
     .display-paragraph {margin-top: 0px;}
+
+    /*Mockup drops to a single sparkle sitting on its own line*/
+    .wavy-speech-sparkle {display: block;}
+
+    .wavy-speech-sparkle-trailing {display: none;}
 }
