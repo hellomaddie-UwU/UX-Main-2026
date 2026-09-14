@@ -17,16 +17,6 @@
             var behindEl = copyContent ? copyContent.querySelector('.project-modal-copy-behind') : null;
             var resultsEl = copyContent ? copyContent.querySelector('.project-modal-copy-results') : null;
             var contentEl = copyContent ? copyContent.querySelector('.project-modal-content') : null;
-            var contentItems = contentEl ? Array.prototype.slice.call(contentEl.children).map(function (el) {
-                if (el.tagName === 'IMG') {
-                    return { type: 'image', src: el.getAttribute('src') || '', alt: el.getAttribute('alt') || '' };
-                }
-                var img = el.querySelector('img');
-                if (img) {
-                    return { type: 'image', src: img.getAttribute('src') || '', alt: img.getAttribute('alt') || '' };
-                }
-                return { type: 'label', text: el.textContent.trim() };
-            }) : [];
 
             return {
                 tagsHTML: tagsEl ? tagsEl.innerHTML : '',
@@ -40,7 +30,9 @@
                 context: contextEl ? contextEl.innerHTML.trim() : '',
                 behind: behindEl ? behindEl.innerHTML.trim() : '',
                 results: resultsEl ? resultsEl.innerHTML.trim() : '',
-                content: contentItems
+                /*Copied verbatim so the right column can be authored as ordinary
+                markup -- headings, figures, info messages, placeholders*/
+                content: contentEl ? contentEl.innerHTML.trim() : ''
             };
         });
 
@@ -73,16 +65,19 @@
             behindEl.innerHTML = project.behind;
             resultsEl.innerHTML = project.results;
 
+            /*.tools-icon carries the dashed box and, once script.js has seen it,
+            the name-on-hover tooltip*/
             toolsEl.innerHTML = project.tools.map(function (tool) {
-                return '<li><img src="' + tool.src + '" alt="' + tool.alt + '"></li>';
+                return '<li class="tools-icon"><img src="' + tool.src + '" alt="' + tool.alt + '"></li>';
             }).join('');
 
-            contentEl.innerHTML = project.content.map(function (item) {
-                if (item.type === 'label') {
-                    return '<p class="project-modal-image-label">' + item.text + '</p>';
-                }
-                return '<img class="project-modal-image" src="' + item.src + '" alt="' + item.alt + '">';
-            }).join('');
+            contentEl.innerHTML = project.content;
+
+            /*Tooltips are built at DOMContentLoaded, long before these icons
+            exist, so they have to be attached again after every render*/
+            if (window.toolIconTooltips) {
+                window.toolIconTooltips.init(toolsEl);
+            }
 
             scrollEl.scrollTop = 0;
             contentEl.scrollTop = 0;

@@ -624,6 +624,7 @@
                                             <img class="project-modal-copy-logo" src="imgs/client-logos/mspbots-colored.svg" alt="MSPbots">
                                             <ul class="project-modal-copy-tools">
                                                 <li><img src="imgs/tools/figma.svg" alt="Figma"></li>
+                                                <li><img src="imgs/tools/adobe_after_effects.svg" alt="Adobe After Effects"></li>
                                                 <li><img src="imgs/tools/webflow.svg" alt="Webflow"></li>
                                             </ul>
                                             <div class="project-modal-copy-context">
@@ -654,14 +655,60 @@
                                                 <p>Each new page increased profile registration within their respective marketing campaign. Marketing team also reported instead traffic onto the website.</p>
                                             </div>       
                                             <div class="project-modal-content">
-                                                <h6>New Pages</h6>
-                                                <img src="imgs/project-imgs/1.png" alt="">
-                                                <img src="imgs/project-imgs/2.png" alt="">
-                                                <img src="imgs/project-imgs/3.png" alt="">
-                                                <img src="imgs/project-imgs/4.gif" alt="">
-                                                <img src="imgs/project-imgs/5.gif" alt="">
-                                                <img src="imgs/project-imgs/6.png" alt="">
-                                                <h6>Revamped Pages</h6>
+                                                <div class="project-modal-section">
+                                                    <h6>Pages Before</h6>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/mspbots-website-before.png" alt="The five original MSPbots product pages laid out side by side">
+                                                    </figure>
+                                                    <div class="project-modal-block">
+                                                        <p>Before starting any revamp, I prefer getting a bird&rsquo;s eye view on how all the pages are, noting any recurring patterns that can be retained and what&rsquo;s missing.</p>
+                                                        <br>
+                                                        <p>On the original website, the containers were incredibly wide, and lacked context on the product itself. Asset visuals were also inconsistent. Lastly, royalty-free images were used as fillers rather than additional context that could help persuade a visitor to convert.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="project-modal-section">
+                                                    <h6>Competitor Research</h6>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/competitor-research-mspbots-website.png" alt="Product pages from IBM, Notion, Microsoft Power BI and ClickUp collected for reference">
+                                                    </figure>
+                                                    <div class="project-modal-block">
+                                                        <p>Before starting, I needed to know what our competitors looked like, more so how they presented their own product. The websites explored were IBM, Notion, Microsoft&rsquo;s Power BI, and ClickUp on the visuals.</p>
+                                                        <br>
+                                                        <p>Noticeable patterns:</p>
+                                                        <ol>
+                                                            <li>Incorporating Lottie animations of a feature within an accordion(Power BI and IBM)</li>
+                                                            <li>Stating strong credibility and included integrations within hero banner(ClickUp)</li>
+                                                        </ol>
+                                                    </div>
+                                                    <div class="info-message">
+                                                        <img class="info-message-icon" src="imgs/info-icon.svg" alt="" aria-hidden="true">
+                                                        <div class="info-message-body">
+                                                            <p class="info-message-title">FYI</p>
+                                                            <p>The hero banner peg was applied on the next site-wide revision as I had to still follow the current established template at the time.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="project-modal-section">
+                                                    <h6>New Pages</h6>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/1.png" alt="">
+                                                    </figure>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/2.png" alt="">
+                                                    </figure>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/3.png" alt="">
+                                                    </figure>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/4.gif" alt="">
+                                                    </figure>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/5.gif" alt="">
+                                                    </figure>
+                                                    <figure class="project-modal-figure">
+                                                        <img class="project-modal-image" src="imgs/project-imgs/6.png" alt="">
+                                                    </figure>
+                                                </div>  
                                             </div>
                                         </template>
                                     </div>
@@ -1207,7 +1254,7 @@
         </div>
 
         <!--Project Modal START-->
-        <div class="cs-lightbox-overlay" id="projectModal" aria-hidden="true">
+        <div class="cs-lightbox-overlay project-modal-overlay" id="projectModal" aria-hidden="true">
             <div class="cs-lightbox-backdrop"></div>
             <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
                 <div class="project-modal-left">
@@ -1361,6 +1408,7 @@
         <script src="wavy-text-lottie.js"></script>
         <script src="project-modal.js"></script>
         <script src="catalogue-wrapper.js"></script>
+        <script src="popup-modal-v3.js"></script>
         <!-- ===== Scripts END ===== -->
     </body>
 </html>
